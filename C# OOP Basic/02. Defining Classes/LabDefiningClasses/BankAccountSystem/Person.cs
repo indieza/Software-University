@@ -7,7 +7,7 @@ public class Person
     private int age;
     private List<BankAccount> accounts;
 
-    public Person(string name , int age)
+    public Person(string name, int age)
     {
         this.name = name;
         this.age = age;
