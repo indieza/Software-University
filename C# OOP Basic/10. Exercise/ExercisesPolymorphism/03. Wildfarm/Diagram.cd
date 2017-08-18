@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Animal" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEBIAAIAIAAAACAAAABAAAKAAAAAAAgAAAAA=</HashCode>
+      <FileName>Animals\Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cat" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAEAAAAAAEAAAAAAAAAAAAACAAAAAAACAAAAA=</HashCode>
+      <FileName>Animals\Mammals\Felimes\Cat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Felime" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Mammals\Felimes\Felime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tiger" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Mammals\Felimes\Tiger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mammal" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Mammals\Mammal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mouse" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Mammals\Mouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zebra" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Mammals\Zebra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Food" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Food\Food.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meat" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Food\Meat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vegetable" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Food\Vegetable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WildfarmMain" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAIAAABAAAAAA=</HashCode>
+      <FileName>WildfarmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
