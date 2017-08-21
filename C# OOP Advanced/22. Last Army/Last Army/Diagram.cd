@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Engine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Core\Engine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABQBACAAAAAAAAAAAAAAAAAAAAAIAglAQABIAEAQA=</HashCode>
+      <FileName>Core\GameController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MissionController" Collapsed="true">
+    <Position X="24.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAhAAAAgDAAgAAAAAAAAACACAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Core\MissionController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WareHouse" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\WareHouse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Ammunition" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAgAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\Ammunition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AutomaticMachine" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\AutomaticMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gun" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\Gun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helmet" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\Helmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Knife" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\Knife.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MachineGun" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\MachineGun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NightVision" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\NightVision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ammunitions\RPG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Easy" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAABCAA=</HashCode>
+      <FileName>Entities\Missions\Easy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hard" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAABCAA=</HashCode>
+      <FileName>Entities\Missions\Hard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medium" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAABCAA=</HashCode>
+      <FileName>Entities\Missions\Medium.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mission" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAAAAABCAA=</HashCode>
+      <FileName>Entities\Missions\Mission.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MissionFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Missions\MissionFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Army" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Soldiers\Army.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Corporal" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entities\Soldiers\Corporal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ranker" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entities\Soldiers\Ranker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Soldier" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAECEAAAAwAAgAAgAAIAAAAAAgAQBA=</HashCode>
+      <FileName>Entities\Soldiers\Soldier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpecialForce" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entities\Soldiers\SpecialForce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AmmunitionFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\AmmunitionFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SoldierFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\SoldierFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConsoleReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IO\ConsoleReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConsoleWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IO\ConsoleWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LastArmyMain" Collapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>LastArmyMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OutputMessages" Collapsed="true">
+    <Position X="21" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAggAAIiVBAABBwAABIgABAEAAAiQAAQAQCBAAQA=</HashCode>
+      <FileName>Utilities\OutputMessages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IAmmunition" Collapsed="true">
+    <Position X="19.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAgAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Default Interfaces\IAmmunition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IAmmunitionFactory" Collapsed="true">
+    <Position X="21" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Default Interfaces\IAmmunitionFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IArmy" Collapsed="true">
+    <Position X="22.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Default Interfaces\IArmy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IMission" Collapsed="true">
+    <Position X="21" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAAAAABCAA=</HashCode>
+      <FileName>Interfaces\Default Interfaces\IMission.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IMissionFactory" Collapsed="true">
+    <Position X="22.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Default Interfaces\IMissionFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ISoldier" Collapsed="true">
+    <Position X="19.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAACEAAAAQAAgAAAAAAAAAAAAgAQBA=</HashCode>
+      <FileName>Interfaces\Default Interfaces\ISoldier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ISoldierFactory" Collapsed="true">
+    <Position X="21" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Default Interfaces\ISoldierFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IEngine" Collapsed="true">
+    <Position X="24.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Interfaces\IEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IGameController" Collapsed="true">
+    <Position X="19.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAABAAABAAAAAA=</HashCode>
+      <FileName>Interfaces\IGameController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IReader" Collapsed="true">
+    <Position X="24.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IO\IReader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IWriter" Collapsed="true">
+    <Position X="24.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IO\IWriter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IWareHouse" Collapsed="true">
+    <Position X="22.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IWareHouse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
