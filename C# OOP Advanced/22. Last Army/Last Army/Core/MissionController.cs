@@ -5,10 +5,6 @@ using System.Text;
 public class MissionController
 {
     private Queue<IMission> missionQueue;
-    public int SuccessMissionCounter { get; private set; }
-
-    public int FailedMissionCounter { get; private set; }
-
     private IArmy army;
     private IWareHouse wareHouse;
 
@@ -20,6 +16,10 @@ public class MissionController
     }
 
     public Queue<IMission> Missions => this.missionQueue;
+
+    public int SuccessMissionCounter { get; private set; }
+
+    public int FailedMissionCounter { get; private set; }
 
     public string PerformMission(IMission mission)
     {
@@ -63,6 +63,7 @@ public class MissionController
             {
                 soldier.CompleteMission(mission);
             }
+
             this.SuccessMissionCounter++;
             return true;
         }

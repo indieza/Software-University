@@ -6,7 +6,8 @@ public class SoldierFactory : ISoldierFactory
 {
     public ISoldier CreateSoldier(string soldierTypeName, string name, int age, double experience, double endurance)
     {
-        Type type = Assembly.GetExecutingAssembly().GetTypes().FirstOrDefault(s => s.Name == soldierTypeName);
-        return (ISoldier)Activator.CreateInstance(type, name, age, experience, endurance);
+        Type soldierType = Assembly.GetExecutingAssembly().GetTypes().FirstOrDefault(m => m.Name == soldierTypeName);
+
+        return (ISoldier)Activator.CreateInstance(soldierType, name, age, experience, endurance);
     }
 }

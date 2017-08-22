@@ -5,87 +5,111 @@ using System.Reflection;
 
 public class GameController : IGameController
 {
-    private MissionController missionControllerField;
-    private SoldierFactory soldierFactory;
-    private MissionFactory missionFactory;
-    private IArmy army;
-    private IWareHouse wareHouse;
+    private const string Process = "Parse";
+    private const string Command = "Command";
+    private const string Regenerate = "Regenerate";
+    private const string Results = "Results:";
+    private const string Soldiers = "Soldiers:";
+    private readonly MissionController missionController;
+    private readonly IArmy army;
+    private readonly ISoldierFactory soldierFactory;
+    private readonly IMissionFactory missionFactory;
+    private readonly IWareHouse wareHouse;
+    private IWriter writer;
 
-    public GameController()
+    public GameController(IWriter writer)
     {
-        this.Army = new Army();
-        this.WearHouse = new WareHouse();
-        this.MissionControllerField = new MissionController(this.army, this.wareHouse);
+        this.army = new Army();
+        this.wareHouse = new WareHouse();
+        this.Writer = writer;
+        this.missionFactory = new MissionFactory();
+        this.soldierFactory = new SoldierFactory();
+        this.missionController = new MissionController(this.army, this.wareHouse);
     }
 
-    public IArmy Army
+    public IWriter Writer
     {
-        get { return army; }
-        set { this.army = value; }
-    }
-
-    public IWareHouse WearHouse
-    {
-        get { return this.wareHouse; }
-        set { this.wareHouse = value; }
-    }
-
-    public MissionController MissionControllerField
-    {
-        get { return this.missionControllerField; }
-        set { this.missionControllerField = value; }
-    }
-
-    public SoldierFactory SoldierFactory
-    {
-        get { return this.soldierFactory; }
-        set { this.soldierFactory = value; }
-    }
-
-    public MissionFactory MissionFactory
-    {
-        get { return this.missionFactory; }
-        set { this.missionFactory = value; }
+        get { return this.writer; }
+        set { this.writer = value; }
     }
 
     public void ProcessCommand(string input)
     {
-        List<string> items = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-        string commandType = items[0];
-        string commandPattern = OutputMessages.Process + commandType + OutputMessages.Command;
-        List<string> data = items.Skip(0).ToList();
-
+        List<string> data = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+        string commandExecute = data[0];
+        data.RemoveAt(0);
+        string pattern = Process + commandExecute + Command;
         try
         {
-            this.GetType().GetMethod(commandPattern, BindingFlags.Instance | BindingFlags.NonPublic).Invoke(this, new object[] { data });
+            this.GetType()
+                .GetMethod(pattern, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public)
+                .Invoke(this, new object[] { data });
         }
-        catch (Exception e)
+        catch (Exception exception)
         {
-            Console.WriteLine(e.Message);
+            this.Writer.StoreMessage(exception.InnerException.Message);
         }
     }
 
-    public void ProcessSoldierCommand(List<string> items)
+    private void ParseWareHouseCommand(List<string> data)
     {
-        if (items[0].Equals("Regenerate"))
-        {
-            this.army.RegenerateTeam(items[1]);
-        }
-        this.AddSoldierToArmy(items);
+        string name = data[0];
+        int quantity = int.Parse(data[1]);
+        this.wareHouse.AddAmmunitions(name, quantity);
     }
 
-    private void AddSoldierToArmy(List<string> items)
+    private void ParseSoldierCommand(List<string> data)
     {
-        string type = items[0];
-        string name = items[1];
-        int age = int.Parse(items[2]);
-        double experience = double.Parse(items[3]);
-        double endurance = double.Parse(items[4]);
+        if (data[0] == Regenerate)
+        {
+            this.army.RegenerateTeam(data[1]);
+        }
+        else
+        {
+            this.AddSoldier(data);
+        }
+    }
+
+    private void ParseMissionCommand(List<string> data)
+    {
+        string type = data[0];
+        double scoreToComplete = double.Parse(data[1]);
+        IMission mission = this.missionFactory.CreateMission(type, scoreToComplete);
+        this.Writer.StoreMessage(this.missionController.PerformMission(mission));
+    }
+
+    private void AddSoldier(List<string> data)
+    {
+        string type = data[0];
+        string name = data[1];
+        int age = int.Parse(data[2]);
+        double experience = double.Parse(data[3]);
+        double endurance = double.Parse(data[4]);
 
         ISoldier soldier = this.soldierFactory.CreateSoldier(type, name, age, experience, endurance);
+
+        if (!this.wareHouse.TryEquipSoldier(soldier))
+        {
+            throw new ArgumentException(string.Format(OutputMessages.NoWeaponsForSoldier, type, name));
+        }
+
+        this.army.AddSoldier(soldier);
     }
 
-    public void ProduceSummury()
+    public void ProduceSummary()
     {
+        List<ISoldier> soldiers = this.army.Soldiers.OrderByDescending(s => s.OverallSkill).ToList();
+        this.missionController.FailMissionsOnHold();
+
+        this.Writer.StoreMessage(Results);
+        this.Writer.StoreMessage(string.Format(OutputMessages.MissionsSummurySuccessful, this.missionController.SuccessMissionCounter));
+        this.Writer.StoreMessage(string.Format(OutputMessages.MissionsSummuryFailed, this.missionController.FailedMissionCounter));
+
+        this.Writer.StoreMessage(Soldiers);
+
+        foreach (var soldier in soldiers)
+        {
+            this.Writer.StoreMessage(soldier.ToString());
+        }
     }
 }

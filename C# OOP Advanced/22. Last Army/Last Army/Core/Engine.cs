@@ -1,32 +1,37 @@
 ﻿using System;
-using System.Text;
 
 public class Engine : IEngine
 {
+    private IReader reader;
+    private IWriter writer;
+    private IGameController gameController;
+
+    public Engine(IReader reader, IWriter writer, IGameController gameController)
+    {
+        this.reader = reader;
+        this.writer = writer;
+        this.gameController = gameController;
+    }
+
     public void Run()
     {
-        ConsoleReader consoleReader = new ConsoleReader();
-        ConsoleWriter consoleWriter = new ConsoleWriter();
-
-        var input = consoleReader.ReadLine();
-        var gameController = new GameController();
-
-        var result = new StringBuilder();
+        var input = this.reader.ReadLine();
 
         while (!input.Equals("Enough! Pull back!"))
         {
             try
             {
-                gameController.ProcessCommand(input);
+                this.gameController.ProcessCommand(input);
             }
             catch (ArgumentException arg)
             {
-                result.AppendLine(arg.Message);
+                this.writer.StoreMessage(arg.Message);
             }
-            input = consoleReader.ReadLine();
+
+            input = this.reader.ReadLine();
         }
 
-        gameController.ProduceSummury();
-        consoleWriter.WriteLine(result.ToString());
+        this.gameController.ProduceSummary();
+        this.writer.WriteLine(this.writer.StoredMessage());
     }
 }

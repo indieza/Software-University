@@ -10,10 +10,7 @@ public class Army : IArmy
         this.soldiers = new List<ISoldier>();
     }
 
-    public IReadOnlyList<ISoldier> Soldiers
-    {
-        get { return this.soldiers; }
-    }
+    public IReadOnlyList<ISoldier> Soldiers => this.soldiers;
 
     public void AddSoldier(ISoldier soldier)
     {
@@ -22,7 +19,7 @@ public class Army : IArmy
 
     public void RegenerateTeam(string soldierType)
     {
-        foreach (var soldier in this.soldiers.Where(s => s.GetType().Name == soldierType))
+        foreach (var soldier in this.Soldiers.Where(s => s.GetType().Name == soldierType))
         {
             soldier.Regenerate();
         }

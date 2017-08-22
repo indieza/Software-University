@@ -9,7 +9,7 @@
 
     public abstract double EnduranceRequired { get; }
 
-    public double ScoreToComplete { get; }
+    public double ScoreToComplete { get; protected set; }
 
     public abstract double WearLevelDecrement { get; }
 }

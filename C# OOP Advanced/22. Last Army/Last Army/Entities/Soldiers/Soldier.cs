@@ -4,36 +4,53 @@ using System.Linq;
 
 public abstract class Soldier : ISoldier
 {
+    private const double MaxEnduranceLevel = 100;
+    private const double RegenerateValue = 10;
     private double endurance;
 
-    protected Soldier(string name, int age, double experience, double endurance, double overrallSkill)
+    protected Soldier(string name, int age, double experience, double endurance)
     {
         this.Name = name;
         this.Age = age;
         this.Experience = experience;
         this.Endurance = endurance;
-        this.OverallSkill = overrallSkill;
+        this.Weapons = this.AddWeapons();
     }
 
-    public string Name { get; set; }
+    public string Name { get; protected set; }
 
-    public int Age { get; set; }
+    public int Age { get; protected set; }
 
-    public double Experience { get; set; }
+    public double Experience { get; protected set; }
 
     public double Endurance
     {
         get { return this.endurance; }
-        set { this.endurance = Math.Min(value, OutputMessages.MaxEnduranceLevel); }
+        protected set { this.endurance = Math.Min(value, MaxEnduranceLevel); }
     }
 
-    public double OverallSkill { get; set; }
+    public virtual double OverallSkill => this.Age + this.Experience;
 
-    public IDictionary<string, IAmmunition> Weapons { get; set; }
+    public IDictionary<string, IAmmunition> Weapons { get; protected set; }
+
+    private IDictionary<string, IAmmunition> AddWeapons()
+    {
+        Dictionary<string, IAmmunition> weapons = new Dictionary<string, IAmmunition>();
+
+        foreach (var weapon in this.WeaponsAllowed)
+        {
+            weapons.Add(weapon, null);
+        }
+
+        return weapons;
+    }
 
     protected abstract IReadOnlyList<string> WeaponsAllowed { get; }
 
-    public abstract void Regenerate();
+    public virtual void Regenerate()
+    {
+        this.Endurance += this.Age + RegenerateValue;
+    }
 
     public bool ReadyForMission(IMission mission)
     {
@@ -54,7 +71,9 @@ public abstract class Soldier : ISoldier
 
     public void CompleteMission(IMission mission)
     {
-        throw new System.NotImplementedException();
+        this.Endurance -= mission.EnduranceRequired;
+        this.Experience += mission.EnduranceRequired;
+        this.AmmunitionRevision(mission.WearLevelDecrement);
     }
 
     private void AmmunitionRevision(double missionWearLevelDecrement)

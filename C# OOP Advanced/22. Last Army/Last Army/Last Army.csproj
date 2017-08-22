@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Last_Army</RootNamespace>
     <AssemblyName>Last Army</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,18 +46,18 @@
     <Compile Include="Core\Engine.cs" />
     <Compile Include="Core\GameController.cs" />
     <Compile Include="Core\MissionController.cs" />
-    <Compile Include="Core\WareHouse.cs" />
     <Compile Include="Entities\Ammunitions\Ammunition.cs" />
+    <Compile Include="Entities\Ammunitions\Factory\AmmunitionFactory.cs" />
+    <Compile Include="Entities\Ammunitions\Factory\WareHouse.cs" />
     <Compile Include="Entities\Missions\Easy.cs" />
+    <Compile Include="Entities\Missions\Factory\MissionFactory.cs" />
     <Compile Include="Entities\Missions\Hard.cs" />
     <Compile Include="Entities\Missions\Medium.cs" />
     <Compile Include="Entities\Missions\Mission.cs" />
-    <Compile Include="Entities\Missions\MissionFactory.cs" />
     <Compile Include="Entities\Soldiers\Army.cs" />
     <Compile Include="Entities\Soldiers\Corporal.cs" />
+    <Compile Include="Entities\Soldiers\Factory\SoldierFactory.cs" />
     <Compile Include="Entities\Soldiers\Ranker.cs" />
-    <Compile Include="Factory\AmmunitionFactory.cs" />
-    <Compile Include="Factory\SoldierFactory.cs" />
     <Compile Include="Entities\Ammunitions\AutomaticMachine.cs" />
     <Compile Include="Entities\Ammunitions\Gun.cs" />
     <Compile Include="Entities\Ammunitions\Helmet.cs" />
@@ -64,15 +65,15 @@
     <Compile Include="Interfaces\Default Interfaces\IAmmunition.cs" />
     <Compile Include="Interfaces\Default Interfaces\IAmmunitionFactory.cs" />
     <Compile Include="Interfaces\Default Interfaces\IArmy.cs" />
-    <Compile Include="Interfaces\IEngine.cs" />
     <Compile Include="Interfaces\Default Interfaces\IMission.cs" />
     <Compile Include="Interfaces\Default Interfaces\IMissionFactory.cs" />
-    <Compile Include="Interfaces\IGameController.cs" />
-    <Compile Include="Interfaces\IO\IReader.cs" />
     <Compile Include="Interfaces\Default Interfaces\ISoldier.cs" />
     <Compile Include="Interfaces\Default Interfaces\ISoldierFactory.cs" />
-    <Compile Include="Interfaces\IWareHouse.cs" />
+    <Compile Include="Interfaces\IEngine.cs" />
+    <Compile Include="Interfaces\IGameController.cs" />
+    <Compile Include="Interfaces\IO\IReader.cs" />
     <Compile Include="Interfaces\IO\IWriter.cs" />
+    <Compile Include="Interfaces\IWareHouse.cs" />
     <Compile Include="IO\ConsoleReader.cs" />
     <Compile Include="IO\ConsoleWriter.cs" />
     <Compile Include="LastArmyMain.cs" />
@@ -86,7 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Diagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

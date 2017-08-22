@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
-using System.Text;
 
 public class SpecialForce : Soldier
 {
-    private List<string> weaponsAllowed = new List<string>
+    private const double OverallSkillMiltiplier = 3.5;
+    private const double RegenerateValue = 30;
+
+    private readonly List<string> weaponsAllowed = new List<string>
         {
             nameof(Gun),
             nameof(AutomaticMachine),
@@ -15,17 +17,16 @@ public class SpecialForce : Soldier
         };
 
     public SpecialForce(string name, int age, double experience, double endurance)
-        : base(name, age, experience, endurance, (age + experience) * OutputMessages.SpecialForceMultiply)
+        : base(name, age, experience, endurance)
     {
     }
 
-    protected override IReadOnlyList<string> WeaponsAllowed
-    {
-        get { return this.weaponsAllowed; }
-    }
+    public override double OverallSkill => base.OverallSkill * OverallSkillMiltiplier;
+
+    protected override IReadOnlyList<string> WeaponsAllowed => this.weaponsAllowed;
 
     public override void Regenerate()
     {
-        this.Endurance += OutputMessages.RegenerateSpecialForce + this.Age;
+        this.Endurance += this.Age + RegenerateValue;
     }
 }

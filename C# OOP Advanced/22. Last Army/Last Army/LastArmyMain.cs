@@ -2,7 +2,10 @@
 {
     private static void Main()
     {
-        Engine engine = new Engine();
+        IReader reader = new ConsoleReader();
+        IWriter writer = new ConsoleWriter();
+        IGameController gameController = new GameController(writer);
+        Engine engine = new Engine(reader, writer, gameController);
         engine.Run();
     }
 }

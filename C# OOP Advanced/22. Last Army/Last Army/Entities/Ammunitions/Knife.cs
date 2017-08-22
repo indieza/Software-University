@@ -1,7 +1,9 @@
 ﻿public class Knife : Ammunition
 {
+    public const double KnifeWeight = 0.4;
+
     public Knife(string name)
-        : base(name, OutputMessages.KnifeWeight, OutputMessages.KnifeWeight * 100)
+    : base(name, KnifeWeight)
     {
     }
 }

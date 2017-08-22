@@ -1,20 +1,19 @@
 ﻿public abstract class Ammunition : IAmmunition
 {
-    protected Ammunition(string name, double weight, double wearLevel)
+    private const double WeightMultiply = 100;
+
+    protected Ammunition(string name, double weight)
     {
         this.Name = name;
         this.Weight = weight;
-        this.WearLevel = wearLevel;
+        this.WearLevel = weight * WeightMultiply;
     }
 
-    public string Name { get; }
+    public string Name { get; protected set; }
 
-    public double Weight { get; }
+    public double Weight { get; protected set; }
 
-    public double WearLevel { get; set; }
+    public double WearLevel { get; protected set; }
 
-    public void DecreaseWearLevel(double wearAmount)
-    {
-        this.WearLevel -= wearAmount;
-    }
+    public void DecreaseWearLevel(double wearAmount) => this.WearLevel -= wearAmount;
 }
