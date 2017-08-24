@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Regeh", "01. Regeh\01. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. KnightGame", "02. KnightGame\02. KnightGame.csproj", "{3EB76713-B7C2-438D-A640-0910C9C0C9E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. NumberWars", "03. NumberWars\03. NumberWars.csproj", "{7B40891A-7531-4294-8EFE-A241ADEC5727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Hospital", "04. Hospital\04. Hospital.csproj", "{C543D429-DC00-4B30-BF35-68018E085ED8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3EB76713-B7C2-438D-A640-0910C9C0C9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EB76713-B7C2-438D-A640-0910C9C0C9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EB76713-B7C2-438D-A640-0910C9C0C9E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B40891A-7531-4294-8EFE-A241ADEC5727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B40891A-7531-4294-8EFE-A241ADEC5727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B40891A-7531-4294-8EFE-A241ADEC5727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B40891A-7531-4294-8EFE-A241ADEC5727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C543D429-DC00-4B30-BF35-68018E085ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C543D429-DC00-4B30-BF35-68018E085ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C543D429-DC00-4B30-BF35-68018E085ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C543D429-DC00-4B30-BF35-68018E085ED8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
