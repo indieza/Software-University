@@ -1,7 +1,0 @@
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\02. JediGalaxy\bin\Debug\_02.JediGalaxy.exe.config
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\02. JediGalaxy\bin\Debug\_02.JediGalaxy.exe
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\02. JediGalaxy\bin\Debug\_02.JediGalaxy.pdb
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\02. JediGalaxy\obj\Debug\02. JediGalaxy.csprojResolveAssemblyReference.cache
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\02. JediGalaxy\obj\Debug\02. JediGalaxy.csproj.CoreCompileInputs.cache
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\02. JediGalaxy\obj\Debug\_02.JediGalaxy.exe
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\02. JediGalaxy\obj\Debug\_02.JediGalaxy.pdb

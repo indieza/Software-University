@@ -1,7 +1,0 @@
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\03. JediCodeX\bin\Debug\_03.JediCodeX.exe.config
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\03. JediCodeX\bin\Debug\_03.JediCodeX.exe
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\03. JediCodeX\bin\Debug\_03.JediCodeX.pdb
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\03. JediCodeX\obj\Debug\03. JediCodeX.csprojResolveAssemblyReference.cache
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\03. JediCodeX\obj\Debug\03. JediCodeX.csproj.CoreCompileInputs.cache
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\03. JediCodeX\obj\Debug\_03.JediCodeX.exe
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\03. JediCodeX\obj\Debug\_03.JediCodeX.pdb

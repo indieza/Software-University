@@ -1,7 +1,0 @@
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\01. JediMeditation\bin\Debug\_01.JediMeditation.exe.config
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\01. JediMeditation\bin\Debug\_01.JediMeditation.exe
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\01. JediMeditation\bin\Debug\_01.JediMeditation.pdb
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\01. JediMeditation\obj\Debug\01. JediMeditation.csprojResolveAssemblyReference.cache
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\01. JediMeditation\obj\Debug\01. JediMeditation.csproj.CoreCompileInputs.cache
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\01. JediMeditation\obj\Debug\_01.JediMeditation.exe
-D:\Users\valev\Desktop\C# Advanced Sample Exam 13 June 2016\Exam\01. JediMeditation\obj\Debug\_01.JediMeditation.pdb
