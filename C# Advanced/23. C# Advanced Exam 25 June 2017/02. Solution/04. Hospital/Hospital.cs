@@ -8,68 +8,71 @@ namespace _04.Hospital
     {
         private static void Main()
         {
-            string input = Console.ReadLine();
-            List<Patient> list = new List<Patient>();
+            string line = Console.ReadLine();
+            List<Patient> patients = new List<Patient>();
 
-            while (input != "Output")
+            while (line != "Output")
             {
-                string[] parts = input.Split(' ');
+                string[] items = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                string department = items[0];
+                string doctor = items[1] + " " + items[2];
+                string name = items[3];
 
-                Patient patient = new Patient
-                {
-                    Department = parts[0],
-                    Doctor = parts[1] + " " + parts[2],
-                    Name = parts[3]
-                };
+                int room = patients.Count(p => p.Department == department) / 3 + 1;
 
-                int room = list.Count(s => s.Department == parts[0]) / 3 + 1;
+                patients.Add(new Patient(department, doctor, name, room));
 
-                patient.Room = room;
-                list.Add(patient);
-
-                input = Console.ReadLine();
+                line = Console.ReadLine();
             }
 
-            input = Console.ReadLine();
+            line = Console.ReadLine();
 
-            while (input != "End")
+            while (line != "End")
             {
-                string[] parts = input.Split(' ');
+                string[] items = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-                if (parts.Length == 1)
+                if (items.Length == 1)
                 {
-                    foreach (Patient patient in list.Where(p => p.Department == parts[0]))
+                    foreach (Patient patient in patients.Where(p => p.Department == items[0]))
                     {
                         Console.WriteLine(patient.Name);
                     }
                 }
                 else
                 {
-                    int count;
+                    int index = 0;
 
-                    if (int.TryParse(parts[1], out count))
+                    if (int.TryParse(items[1], out index))
                     {
-                        foreach (Patient p in list.Where(p => p.Department == parts[0] && p.Room == count).OrderBy(s => s.Name))
+                        foreach (Patient patient in patients.Where(p => p.Department == items[0] && p.Room == int.Parse(items[1])).OrderBy(p => p.Name))
                         {
-                            Console.WriteLine(p.Name);
+                            Console.WriteLine(patient.Name);
                         }
                     }
                     else
                     {
-                        foreach (Patient p in list.Where(p => p.Doctor == parts[0] + " " + parts[1]).OrderBy(s => s.Name))
+                        foreach (Patient patient in patients.Where(p => p.Doctor == items[0] + " " + items[1]).OrderBy(p => p.Name))
                         {
-                            Console.WriteLine(p.Name);
+                            Console.WriteLine(patient.Name);
                         }
                     }
                 }
 
-                input = Console.ReadLine();
+                line = Console.ReadLine();
             }
         }
     }
 
     public class Patient
     {
+        public Patient(string department, string doctor, string name, int room)
+        {
+            this.Department = department;
+            this.Doctor = doctor;
+            this.Name = name;
+            this.Room = room;
+        }
+
         public string Department { get; set; }
 
         public string Doctor { get; set; }
