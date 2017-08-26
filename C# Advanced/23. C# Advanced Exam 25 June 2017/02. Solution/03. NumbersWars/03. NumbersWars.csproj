@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B40891A-7531-4294-8EFE-A241ADEC5727}</ProjectGuid>
+    <ProjectGuid>{5E5E7FB3-55E9-4B79-967B-7A7D23F2FE82}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_03.NumberWars</RootNamespace>
-    <AssemblyName>_03.NumberWars</AssemblyName>
+    <RootNamespace>_03.NumbersWars</RootNamespace>
+    <AssemblyName>_03.NumbersWars</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberWars.cs" />
+    <Compile Include="NumbersWars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

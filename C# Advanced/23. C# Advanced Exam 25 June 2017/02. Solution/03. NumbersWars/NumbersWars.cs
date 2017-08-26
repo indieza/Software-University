@@ -2,36 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 
-internal class NumberWars
+internal class NumbersWars
 {
     public static readonly string Alphabet = "#abcdefghijklmnopqrstuvwxyz";
 
     private static void Main()
     {
-        var turns = 0;
-        bool draw = false;
+        string[] line1 = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] line2 = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
         Queue<Card> playerOneDeck = new Queue<Card>();
         Queue<Card> playerTwoDeck = new Queue<Card>();
 
-        var playerOneInputLine = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        var playerTwoInputLine = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-        foreach (var card in playerOneInputLine)
+        foreach (string s in line1)
         {
-            int digit = int.Parse(card.Substring(0, card.Length - 1));
-            string letter = card.Substring(card.Length - 1);
+            int digit = int.Parse(s.Substring(0, s.Length - 1));
+            string letter = s.Substring(s.Length - 1);
             playerOneDeck.Enqueue(new Card(digit, letter));
         }
 
-        foreach (var card in playerTwoInputLine)
+        foreach (string s in line2)
         {
-            int digit = int.Parse(card.Substring(0, card.Length - 1));
-            string letter = card.Substring(card.Length - 1);
+            int digit = int.Parse(s.Substring(0, s.Length - 1));
+            string letter = s.Substring(s.Length - 1);
             playerTwoDeck.Enqueue(new Card(digit, letter));
         }
 
-        bool outOfcards = false;
+        int turns = 0;
+
+        bool outOfCards = false;
+        bool draw = false;
 
         while (turns < 1000000 && playerOneDeck.Count > 0 && playerTwoDeck.Count > 0)
         {
@@ -43,34 +43,34 @@ internal class NumberWars
 
             List<Card> playedCards = new List<Card>();
 
-            var playerOneCard = playerOneDeck.Dequeue();
-            var playerTwoCard = playerTwoDeck.Dequeue();
+            Card playerOneCard = playerOneDeck.Dequeue();
+            Card playerTwoCard = playerTwoDeck.Dequeue();
 
             playedCards.Add(playerOneCard);
             playedCards.Add(playerTwoCard);
 
             if (playerOneCard.Digit > playerTwoCard.Digit)
             {
-                foreach (var card in playedCards.OrderByDescending(x => x.Digit).ThenByDescending(c => c.Name))
+                foreach (Card card in playedCards.OrderByDescending(c => c.Digit).ThenByDescending(c => c.Name))
                 {
                     playerOneDeck.Enqueue(card);
                 }
             }
             else if (playerOneCard.Digit < playerTwoCard.Digit)
             {
-                foreach (var card in playedCards.OrderByDescending(x => x.Digit).ThenByDescending(c => c.Name))
+                foreach (Card card in playedCards.OrderByDescending(c => c.Digit).ThenByDescending(c => c.Name))
                 {
                     playerTwoDeck.Enqueue(card);
                 }
             }
             else
             {
-                var haveWinner = false;
+                bool haveWinner = false;
 
                 if (playerOneDeck.Count - 3 < 0 || playerTwoDeck.Count - 3 < 0)
                 {
                     haveWinner = true;
-                    outOfcards = true;
+                    outOfCards = true;
 
                     if (playerOneDeck.Count == playerTwoDeck.Count)
                     {
@@ -82,7 +82,7 @@ internal class NumberWars
                 {
                     if (playerOneDeck.Count - 3 < 0 || playerTwoDeck.Count - 3 < 0)
                     {
-                        outOfcards = true;
+                        outOfCards = true;
 
                         if (playerOneDeck.Count == playerTwoDeck.Count)
                         {
@@ -92,25 +92,25 @@ internal class NumberWars
                         break;
                     }
 
-                    List<Card> p1DrawCards = new List<Card>();
-                    List<Card> p2DrawCards = new List<Card>();
+                    List<Card> playerOneDrawCards = new List<Card>();
+                    List<Card> playerTwoDrawCards = new List<Card>();
 
-                    for (int k = 0; k < 3; k++)
+                    for (int i = 0; i < 3; i++)
                     {
-                        p1DrawCards.Add(playerOneDeck.Dequeue());
-                        p2DrawCards.Add(playerTwoDeck.Dequeue());
+                        playerOneDrawCards.Add(playerOneDeck.Dequeue());
+                        playerTwoDrawCards.Add(playerTwoDeck.Dequeue());
                     }
 
-                    var drawResult = GetDrawWinner(p1DrawCards, p2DrawCards);
+                    int drawResult = GetDrawWinner(playerOneDrawCards, playerTwoDrawCards);
 
-                    playedCards.AddRange(p1DrawCards);
-                    playedCards.AddRange(p2DrawCards);
+                    playedCards.AddRange(playerOneDrawCards);
+                    playedCards.AddRange(playerTwoDrawCards);
 
                     if (drawResult == 1)
                     {
                         haveWinner = true;
 
-                        foreach (var card in playedCards.OrderByDescending(x => x.Digit).ThenByDescending(c => c.Name))
+                        foreach (Card card in playedCards.OrderByDescending(c => c.Digit).ThenByDescending(c => c.Name))
                         {
                             playerOneDeck.Enqueue(card);
                         }
@@ -118,7 +118,8 @@ internal class NumberWars
                     else if (drawResult == 2)
                     {
                         haveWinner = true;
-                        foreach (var card in playedCards.OrderByDescending(x => x.Digit).ThenByDescending(c => c.Name))
+
+                        foreach (Card card in playedCards.OrderByDescending(c => c.Digit).ThenByDescending(c => c.Name))
                         {
                             playerTwoDeck.Enqueue(card);
                         }
@@ -128,12 +129,11 @@ internal class NumberWars
 
             turns++;
 
-            if (outOfcards)
+            if (outOfCards)
             {
                 break;
             }
         }
-
         if (draw)
         {
             Console.WriteLine($"Draw after {turns} turns");
@@ -146,24 +146,24 @@ internal class NumberWars
         }
     }
 
-    private static int GetDrawWinner(List<Card> playerOneDrawCards, List<Card> playerTwoDrawCards)
+    private static int GetDrawWinner(List<Card> firstDeck, List<Card> secondDeck)
     {
-        string playerOneChar = string.Join(string.Empty, playerOneDrawCards.Select(x => x.Name)).ToLower();
-        string playerTwoChar = string.Join(string.Empty, playerTwoDrawCards.Select(x => x.Name)).ToLower();
+        string playerOneChars = string.Join(string.Empty, firstDeck.Select(c => c.Name)).ToLower();
+        string playerTwoChars = string.Join(string.Empty, secondDeck.Select(c => c.Name)).ToLower();
 
-        var playerOneSum = 0;
-        var playerTwoSum = 0;
+        int playerOneSum = 0;
+        int playerTwoSum = 0;
 
-        for (int i = 0; i < playerOneChar.Length; i++)
+        for (int i = 0; i < playerOneChars.Length; i++)
         {
-            var num = Alphabet.IndexOf(playerOneChar[i]);
-            playerOneSum += num;
+            int number = Alphabet.IndexOf(playerOneChars[i]);
+            playerOneSum += number;
         }
 
-        for (int i = 0; i < playerOneChar.Length; i++)
+        for (int i = 0; i < playerTwoChars.Length; i++)
         {
-            var num = Alphabet.IndexOf(playerTwoChar[i]);
-            playerTwoSum += num;
+            int number = Alphabet.IndexOf(playerTwoChars[i]);
+            playerTwoSum += number;
         }
 
         if (playerOneSum > playerTwoSum)

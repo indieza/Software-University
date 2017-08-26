@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3EB76713-B7C2-438D-A640-0910C9C0C9E4}</ProjectGuid>
+    <ProjectGuid>{B02A90A5-327C-4DDE-B6D7-3E04FB4E428C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_02.KnightGame</RootNamespace>
     <AssemblyName>_02.KnightGame</AssemblyName>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="KnightGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

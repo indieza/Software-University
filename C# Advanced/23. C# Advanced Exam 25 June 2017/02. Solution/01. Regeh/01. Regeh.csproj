@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2AC3DB2E-DBC2-421A-A952-2BA72D9CDF33}</ProjectGuid>
+    <ProjectGuid>{6F0705B3-D9C8-4AEF-BD4C-E84EA72DC546}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_01.Regeh</RootNamespace>
     <AssemblyName>_01.Regeh</AssemblyName>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="Regeh.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

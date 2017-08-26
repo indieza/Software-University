@@ -4,18 +4,16 @@ using System.Text.RegularExpressions;
 
 internal class Regeh
 {
-    private const string Template = @"\[[^\s\[]+<(\d+)REGEH(\d+)>[^]\s]+]";
-
     private static void Main()
     {
         string line = Console.ReadLine();
-        Regex pattern = new Regex(Template);
-        MatchCollection matchCollection = pattern.Matches(line);
 
-        string resultText = string.Empty;
-        List<int> numbers = new List<int>();
+        Regex regex = new Regex(@"\[[^\[\s]+<(\d+)REGEH(\d+)>[^\]\s]+]");
+        MatchCollection matchCollection = regex.Matches(line);
 
         int save = 0;
+
+        List<int> numbers = new List<int>();
 
         foreach (Match match in matchCollection)
         {
@@ -25,19 +23,20 @@ internal class Regeh
             numbers.Add(start);
             numbers.Add(end);
         }
+        string result = string.Empty;
 
-        foreach (var number in numbers)
+        foreach (int number in numbers)
         {
             if (number > line.Length)
             {
-                resultText += line[number % line.Length + 1];
+                result += line[number % line.Length + 1];
             }
             else
             {
-                resultText += line[number % line.Length];
+                result += line[number];
             }
         }
 
-        Console.WriteLine(resultText);
+        Console.WriteLine(result);
     }
 }

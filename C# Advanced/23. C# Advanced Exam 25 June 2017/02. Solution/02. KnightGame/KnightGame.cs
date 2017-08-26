@@ -4,102 +4,100 @@ internal class KnightGame
 {
     private static void Main()
     {
-        var n = int.Parse(Console.ReadLine());
-        var matrix = FillMatrix(n);
+        int n = int.Parse(Console.ReadLine());
+        char[,] matrix = new char[n, n];
 
-        var bestRow = 0;
-        var bestCol = 0;
-        var hittedHorses = 0;
-        var counter = 0;
+        FillMatrix(n, matrix);
+
+        int hittedHourse = 0;
+        int bestRow = 0;
+        int bestCol = 0;
+        int counter = 0;
 
         while (true)
         {
-            var savedHorse = 0;
+            int savedHourse = 0;
 
-            for (var row = 0; row < n; row++)
+            for (int row = 0; row < n; row++)
             {
-                for (var col = 0; col < n; col++)
+                for (int col = 0; col < n; col++)
                 {
-                    hittedHorses = CheckHittedHorses(matrix, row, col, n, hittedHorses);
+                    hittedHourse = CheckMatrix(matrix, row, col, n, hittedHourse);
 
-                    if (hittedHorses > savedHorse)
+                    if (hittedHourse > savedHourse)
                     {
-                        savedHorse = hittedHorses;
+                        savedHourse = hittedHourse;
                         bestRow = row;
                         bestCol = col;
                     }
 
-                    hittedHorses = 0;
+                    hittedHourse = 0;
                 }
             }
-
-            if (savedHorse <= 0)
+            if (savedHourse == 0)
             {
                 break;
             }
 
             matrix[bestRow, bestCol] = '0';
+            counter++;
             bestRow = 0;
             bestCol = 0;
-            counter++;
         }
 
         Console.WriteLine(counter);
     }
 
-    private static int CheckHittedHorses(char[,] matrix, int row, int col, int n, int hittedHorses)
+    private static int CheckMatrix(char[,] matrix, int row, int col, int n, int hittedHourse)
     {
         if (matrix[row, col] == 'K')
         {
             if (row - 2 >= 0 && col + 1 < n && matrix[row - 2, col + 1] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
             if (row - 1 >= 0 && col + 2 < n && matrix[row - 1, col + 2] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
             if (row + 1 < n && col + 2 < n && matrix[row + 1, col + 2] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
             if (row + 2 < n && col + 1 < n && matrix[row + 2, col + 1] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
             if (row + 2 < n && col - 1 >= 0 && matrix[row + 2, col - 1] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
             if (row + 1 < n && col - 2 >= 0 && matrix[row + 1, col - 2] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
             if (row - 1 >= 0 && col - 2 >= 0 && matrix[row - 1, col - 2] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
             if (row - 2 >= 0 && col - 1 >= 0 && matrix[row - 2, col - 1] == 'K')
             {
-                hittedHorses++;
+                hittedHourse++;
             }
         }
-        return hittedHorses;
+        return hittedHourse;
     }
 
-    private static char[,] FillMatrix(int n)
+    private static void FillMatrix(int n, char[,] matrix)
     {
-        var matrix = new char[n, n];
-
-        for (var i = 0; i < n; i++)
+        for (int row = 0; row < n; row++)
         {
-            var line = Console.ReadLine().ToCharArray();
+            char[] line = Console.ReadLine().ToCharArray();
 
-            for (var j = 0; j < n; j++)
+            for (int col = 0; col < n; col++)
             {
-                matrix[i, j] = line[j];
+                matrix[row, col] = line[col];
             }
         }
-        return matrix;
     }
 }
