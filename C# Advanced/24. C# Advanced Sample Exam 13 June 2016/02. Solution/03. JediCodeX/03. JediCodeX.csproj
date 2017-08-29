@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5DD9E0B0-3EF4-47EF-975C-5B5BC0592D6E}</ProjectGuid>
+    <ProjectGuid>{DAD5630D-062E-4EFD-8D5B-31AAF1199715}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_03.JediCodeX</RootNamespace>
     <AssemblyName>_03.JediCodeX</AssemblyName>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="JediCodeX.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

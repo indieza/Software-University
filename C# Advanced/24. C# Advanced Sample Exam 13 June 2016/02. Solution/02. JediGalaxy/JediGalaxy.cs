@@ -6,67 +6,62 @@ internal class JediGalaxy
     private static void Main()
     {
         int[] dimensions = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
         int rows = dimensions[0];
         int cols = dimensions[1];
 
         int[,] matrix = new int[rows, cols];
-
-        int couonter = 0;
+        int count = 0;
 
         for (int row = 0; row < rows; row++)
         {
             for (int col = 0; col < cols; col++)
             {
-                matrix[row, col] = couonter;
-                couonter++;
+                matrix[row, col] = count;
+                count++;
             }
         }
 
         string line = Console.ReadLine();
 
-        long result = 0;
+        long ivoStars = 0;
 
         while (line != "Let the Force be with you")
         {
-            int[] cordinatesJedi = line.Split().Select(int.Parse).ToArray();
-            int[] cordinatesEvil = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] ivoItems = line.Split().Select(int.Parse).ToArray();
+            int[] devilItems = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            int jediRow = cordinatesJedi[0];
-            int jediCol = cordinatesJedi[1];
+            int devilRows = devilItems[0];
+            int devilCols = devilItems[1];
 
-            int evellRow = cordinatesEvil[0];
-            int evilCol = cordinatesEvil[1];
-
-            while (evellRow >= 0 && evilCol >= 0)
+            while (devilRows >= 0 && devilCols >= 0)
             {
-                if (Checkmatrix(evellRow, evilCol, matrix))
+                if (devilRows < rows && devilCols < cols)
                 {
-                    matrix[evellRow, evilCol] = 0;
+                    matrix[devilRows, devilCols] = 0;
                 }
 
-                evellRow--;
-                evilCol--;
+                devilRows--;
+                devilCols--;
             }
 
-            while (jediRow >= 0 && jediCol < cols)
+            int ivoRows = ivoItems[0];
+            int ivoCols = ivoItems[1];
+
+            while (ivoRows >= 0 && ivoCols < cols)
             {
-                if (Checkmatrix(jediRow, jediCol, matrix))
+                if (ivoRows >= 0 && ivoRows < rows && ivoCols >= 0 && ivoCols < cols)
                 {
-                    result += matrix[jediRow, jediCol];
+                    ivoStars += matrix[ivoRows, ivoCols];
                 }
 
-                jediRow--;
-                jediCol++;
+                ivoRows--;
+                ivoCols++;
             }
+
             line = Console.ReadLine();
         }
 
-        Console.WriteLine(result);
-    }
-
-    private static bool Checkmatrix(int rows, int cols, int[,] matrix)
-    {
-        bool check = rows >= 0 && cols >= 0 && rows < matrix.GetLength(0) && cols < matrix.GetLength(1);
-        return check;
+        Console.WriteLine(ivoStars);
     }
 }

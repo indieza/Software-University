@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFD0AFE8-F9F5-48FA-9590-6342652ABD43}</ProjectGuid>
+    <ProjectGuid>{CD7FB6F6-34E3-4971-89C1-F18DA03EDD39}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_04.JediDreams</RootNamespace>
     <AssemblyName>_04.JediDreams</AssemblyName>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="JediDreams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

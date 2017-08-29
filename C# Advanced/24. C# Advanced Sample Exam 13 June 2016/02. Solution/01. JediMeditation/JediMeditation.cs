@@ -6,45 +6,45 @@ internal class JediMeditation
     private static void Main()
     {
         int n = int.Parse(Console.ReadLine());
-        List<string> jediMaster = new List<string>();
-        List<string> jediKnight = new List<string>();
-        List<string> jediPadawan = new List<string>();
-        List<string> toshkoAndSlavPadawan = new List<string>();
+
+        List<string> jediMasters = new List<string>();
+        List<string> jediKnights = new List<string>();
+        List<string> jediPadavans = new List<string>();
+        List<string> toshkoAndSlavPadavans = new List<string>();
+
         bool isYodaHere = false;
 
-        for (int i = 0; i < n; i++)
+        for (int item = 0; item < n; item++)
         {
-            string[] items = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            foreach (string item in items)
+            string[] items = Console.ReadLine().Split();
+            foreach (string jedi in items)
             {
-                string id = item[0].ToString();
-                if (id == "y")
-                {
-                    isYodaHere = true;
-                    continue;
-                }
+                string indicator = jedi[0].ToString();
 
-                switch (id)
+                switch (indicator)
                 {
                     case "m":
-                        jediMaster.Add(item);
+                        jediMasters.Add(jedi);
                         break;
 
                     case "k":
-                        jediKnight.Add(item);
+                        jediKnights.Add(jedi);
                         break;
 
                     case "p":
-                        jediPadawan.Add(item);
+                        jediPadavans.Add(jedi);
                         break;
 
                     case "t":
-                        toshkoAndSlavPadawan.Add(item);
+                        toshkoAndSlavPadavans.Add(jedi);
                         break;
 
                     case "s":
-                        toshkoAndSlavPadawan.Add(item);
+                        toshkoAndSlavPadavans.Add(jedi);
+                        break;
+
+                    case "y":
+                        isYodaHere = true;
                         break;
                 }
             }
@@ -52,19 +52,19 @@ internal class JediMeditation
 
         List<string> result = new List<string>();
 
-        if (isYodaHere)
+        if (!isYodaHere)
         {
-            result.AddRange(jediMaster);
-            result.AddRange(jediKnight);
-            result.AddRange(toshkoAndSlavPadawan);
-            result.AddRange(jediPadawan);
+            result.AddRange(toshkoAndSlavPadavans);
+            result.AddRange(jediMasters);
+            result.AddRange(jediKnights);
+            result.AddRange(jediPadavans);
         }
         else
         {
-            result.AddRange(toshkoAndSlavPadawan);
-            result.AddRange(jediMaster);
-            result.AddRange(jediKnight);
-            result.AddRange(jediPadawan);
+            result.AddRange(jediMasters);
+            result.AddRange(jediKnights);
+            result.AddRange(toshkoAndSlavPadavans);
+            result.AddRange(jediPadavans);
         }
 
         Console.WriteLine(string.Join(" ", result));

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{760329EC-6DE7-42F3-B8E0-1FA25B33DD8B}</ProjectGuid>
+    <ProjectGuid>{833631F4-F3D0-40C4-8541-37A28556BD9F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_01.JediMeditation</RootNamespace>
     <AssemblyName>_01.JediMeditation</AssemblyName>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="JediMeditation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

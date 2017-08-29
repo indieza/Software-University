@@ -9,48 +9,49 @@ internal class JediCodeX
     private static void Main()
     {
         int n = int.Parse(Console.ReadLine());
+
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < n; i++)
+        for (int item = 0; item < n; item++)
         {
             sb.Append(Console.ReadLine());
         }
 
-        string nPat = Console.ReadLine();
-        string mPat = Console.ReadLine();
+        string patternName = Console.ReadLine();
+        string patternMessage = Console.ReadLine();
 
-        string patternName = Regex.Escape(nPat) + @"([a-zA-Z]{" + nPat.Length + @"})(?![a-zA-Z])";
-        string patternMsg = Regex.Escape(mPat) + @"([a-zA-Z0-9]{" + mPat.Length + @"})(?![a-zA-Z0-9])";
+        string patternNameForRegex = Regex.Escape(patternName) + @"([a-zA-Z]{" + patternName.Length + @"})(?![a-zA-Z])";
+        string patternMessageForRegex = Regex.Escape(patternMessage) + @"([a-zA-Z0-9]{" + patternMessage.Length + @"})(?![a-zA-Z0-9])";
 
-        Regex nRgx = new Regex(patternName);
-        Regex mRgx = new Regex(patternMsg);
+        Regex nameRegex = new Regex(patternNameForRegex);
+        Regex messageRegex = new Regex(patternMessageForRegex);
 
-        var names = nRgx.Matches(sb.ToString());
-        var messagesRaw = mRgx.Matches(sb.ToString());
+        MatchCollection nameCollection = nameRegex.Matches(sb.ToString());
+        MatchCollection messageCollection = messageRegex.Matches(sb.ToString());
 
-        var messages = new List<string>();
-        var jedisMsgs = new List<Jedi>();
+        List<string> messages = new List<string>();
+        List<Jedi> jediMessages = new List<Jedi>();
 
-        foreach (Match name in names)
+        foreach (Match match in nameCollection)
         {
-            jedisMsgs.Add(new Jedi(name.Groups[1].Value));
+            jediMessages.Add(new Jedi(match.Groups[1].Value));
         }
 
-        foreach (Match msg in messagesRaw)
+        foreach (Match match in messageCollection)
         {
-            messages.Add(msg.Groups[1].Value);
+            messages.Add(match.Groups[1].Value);
         }
 
         Queue<int> indexes = new Queue<int>(Console.ReadLine().Split().Select(int.Parse).Where(x => x <= messages.Count));
 
-        var limit = Math.Min(jedisMsgs.Count, indexes.Count);
+        var limit = Math.Min(jediMessages.Count, indexes.Count);
 
         for (int j = 0; j < limit; j++)
         {
-            jedisMsgs[j].Message += messages[indexes.Dequeue() - 1];
+            jediMessages[j].Message += messages[indexes.Dequeue() - 1];
         }
 
-        foreach (var jed in jedisMsgs.Where(x => x.Message.Length > 0))
+        foreach (var jed in jediMessages.Where(x => x.Message.Length > 0))
         {
             Console.WriteLine($"{jed.Name} - {jed.Message}");
         }
