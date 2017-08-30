@@ -1,5 +1,0 @@
-D:\Users\valev\Desktop\Advanced C# Exam 13 March 2016\Exam\04. ChampionsLeague\bin\Debug\_04.ChampionsLeague.exe
-D:\Users\valev\Desktop\Advanced C# Exam 13 March 2016\Exam\04. ChampionsLeague\bin\Debug\_04.ChampionsLeague.pdb
-D:\Users\valev\Desktop\Advanced C# Exam 13 March 2016\Exam\04. ChampionsLeague\obj\Debug\04. ChampionsLeague.csproj.CoreCompileInputs.cache
-D:\Users\valev\Desktop\Advanced C# Exam 13 March 2016\Exam\04. ChampionsLeague\obj\Debug\_04.ChampionsLeague.exe
-D:\Users\valev\Desktop\Advanced C# Exam 13 March 2016\Exam\04. ChampionsLeague\obj\Debug\_04.ChampionsLeague.pdb
