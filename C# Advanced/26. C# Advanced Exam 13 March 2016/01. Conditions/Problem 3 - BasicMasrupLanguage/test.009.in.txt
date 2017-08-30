@@ -1,0 +1,7 @@
+<inverse	 content	=	"  HelloWorlD  "		/>
+< reverse content="  helloworld  "/>
+< reverse content="  helloworld    "/>
+<repeat value="0" content="helasdrld"/>
+<repeat value="0" content="helasdrld"/>
+<repeat value="0" content="heasdasdlasdasdld"/>
+<stop/>

@@ -1,0 +1,27 @@
+Manchester United
+- Wins: 4
+- Opponents: Bayern Munich, Chelsea, Juventus, Liverpool, Real Madrid
+Real Madrid
+- Wins: 4
+- Opponents: Arsenal, Barcelona, Bayern Munchen, Chelsea, Liverpool, Manchester United
+Chelsea
+- Wins: 3
+- Opponents: Arsenal, Barcelona, Juventus, Manchester United, Real Madrid
+Arsenal
+- Wins: 2
+- Opponents: Barcelona, Chelsea, Juventus, Real Madrid
+Juventus
+- Wins: 2
+- Opponents: Arsenal, Bayern Munich, Chelsea, Liverpool, Manchester United
+Bayern Munchen
+- Wins: 1
+- Opponents: Real Madrid
+Bayern Munich
+- Wins: 1
+- Opponents: Juventus, Manchester United
+Barcelona
+- Wins: 0
+- Opponents: Arsenal, Chelsea, Real Madrid
+Liverpool
+- Wins: 0
+- Opponents: Juventus, Manchester United, Real Madrid

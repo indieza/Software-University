@@ -1,0 +1,8 @@
+Real Madrid | Barcelona | 0:0 | 1:1
+Real Madrid | Chelsea | 0:0 | 1:1
+Barcelona | Arsenal | 2:0 | 0:2
+Liverpool | Manchester United | 2:0 | 0:0
+Arsenal | Manchester United | 2:0 | 0:0
+Bayern Munich | Juventus | 2:1 | 3:2
+Arsenal | Juventus | 2:1 | 3:2
+stop

@@ -1,0 +1,21 @@
+Manchester United
+- Wins: 6
+- Opponents: Arsenal, Aston Villa, Chelsea, Leicester, Liverpool, Southampton
+Arsenal
+- Wins: 0
+- Opponents: Manchester United
+Aston Villa
+- Wins: 0
+- Opponents: Manchester United
+Chelsea
+- Wins: 0
+- Opponents: Manchester United
+Leicester
+- Wins: 0
+- Opponents: Manchester United
+Liverpool
+- Wins: 0
+- Opponents: Manchester United
+Southampton
+- Wins: 0
+- Opponents: Manchester United

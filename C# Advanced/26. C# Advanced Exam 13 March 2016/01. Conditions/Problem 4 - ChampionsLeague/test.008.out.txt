@@ -1,0 +1,33 @@
+Beroe
+- Wins: 1
+- Opponents: Barcelona
+Botev
+- Wins: 1
+- Opponents: Barcelona
+Cherno More
+- Wins: 1
+- Opponents: Barcelona
+Cska
+- Wins: 1
+- Opponents: Barcelona
+Levski
+- Wins: 1
+- Opponents: Barcelona
+Litex
+- Wins: 1
+- Opponents: Barcelona
+Lokomotiv Sofia
+- Wins: 1
+- Opponents: Barcelona
+Ludogorets
+- Wins: 1
+- Opponents: Barcelona
+Marek
+- Wins: 1
+- Opponents: Barcelona
+Pirin
+- Wins: 1
+- Opponents: Barcelona
+Barcelona
+- Wins: 0
+- Opponents: Beroe, Botev, Cherno More, Cska, Levski, Litex, Lokomotiv Sofia, Ludogorets, Marek, Pirin

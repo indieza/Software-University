@@ -1,0 +1,39 @@
+Liverpool
+- Wins: 4
+- Opponents: Arsenal, Aston Villa, Leeds United, Newcastle United
+Barcelona
+- Wins: 3
+- Opponents: Arsenal, Real Madrid, Sevilla, Valencia
+Bayern Munich
+- Wins: 2
+- Opponents: Inter, Juventus
+Arsenal
+- Wins: 1
+- Opponents: Barcelona, Liverpool, Real Madrid
+Inter
+- Wins: 1
+- Opponents: Bayern Munich, Juventus
+Manchester United
+- Wins: 1
+- Opponents: Real Madrid
+Real Madrid
+- Wins: 1
+- Opponents: Arsenal, Barcelona, Manchester United
+Aston Villa
+- Wins: 0
+- Opponents: Liverpool
+Juventus
+- Wins: 0
+- Opponents: Bayern Munich, Inter
+Leeds United
+- Wins: 0
+- Opponents: Liverpool
+Newcastle United
+- Wins: 0
+- Opponents: Liverpool
+Sevilla
+- Wins: 0
+- Opponents: Barcelona
+Valencia
+- Wins: 0
+- Opponents: Barcelona

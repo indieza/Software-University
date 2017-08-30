@@ -1,0 +1,14 @@
+Gone to jail at turn 0.
+Bought a hotel for 50. Total hotels: 1.
+Spent 3 money at the shop.
+Gone to jail at turn 6.
+Bought a hotel for 57. Total hotels: 2.
+Spent 4 money at the shop.
+Gone to jail at turn 12.
+Bought a hotel for 116. Total hotels: 3.
+Spent 9 money at the shop.
+Gone to jail at turn 18.
+Bought a hotel for 171. Total hotels: 4.
+Spent 8 money at the shop.
+Turns 24
+Money 112

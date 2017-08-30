@@ -1,0 +1,24 @@
+Arsenal
+- Wins: 2
+- Opponents: Barcelona, Juventus, Manchester United
+Real Madrid
+- Wins: 2
+- Opponents: Barcelona, Chelsea
+Barcelona
+- Wins: 1
+- Opponents: Arsenal, Real Madrid
+Bayern Munich
+- Wins: 1
+- Opponents: Juventus
+Liverpool
+- Wins: 1
+- Opponents: Manchester United
+Chelsea
+- Wins: 0
+- Opponents: Real Madrid
+Juventus
+- Wins: 0
+- Opponents: Arsenal, Bayern Munich
+Manchester United
+- Wins: 0
+- Opponents: Arsenal, Liverpool

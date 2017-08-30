@@ -1,0 +1,7 @@
+Gone to jail at turn 0.
+Gone to jail at turn 3.
+Gone to jail at turn 6.
+Gone to jail at turn 9.
+Gone to jail at turn 12.
+Turns 15
+Money 50

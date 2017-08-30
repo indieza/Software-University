@@ -1,0 +1,13 @@
+Real Madrid | Barcelona | 0:0 | 1:1
+Real Madrid | Cska | 0:0 | 1:1
+Real Madrid | Levski | 0:0 | 1:1
+Real Madrid | Beroe | 0:0 | 1:1
+Real Madrid | Sportist | 0:0 | 1:1
+Real Madrid | Litex | 0:0 | 1:1
+Real Madrid | Ludogorets | 0:0 | 1:1
+Real Madrid | Marek | 0:0 | 1:1
+Real Madrid | Pirin | 0:0 | 1:1
+Real Madrid | Cherno More | 0:0 | 1:1
+Real Madrid | Botev | 0:0 | 1:1
+Real Madrid | Lokomotiv | 0:0 | 1:1
+stop

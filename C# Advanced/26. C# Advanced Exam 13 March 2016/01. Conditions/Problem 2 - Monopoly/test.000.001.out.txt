@@ -1,0 +1,6 @@
+Bought a hotel for 50. Total hotels: 1.
+Bought a hotel for 10. Total hotels: 2.
+Bought a hotel for 20. Total hotels: 3.
+Spent 3 money at the shop.
+Turns 16
+Money 417

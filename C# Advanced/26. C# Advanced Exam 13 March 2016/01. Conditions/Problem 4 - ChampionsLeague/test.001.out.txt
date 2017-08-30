@@ -1,0 +1,21 @@
+Barcelona
+- Wins: 1
+- Opponents: Celta Vigo, Chelsea
+Bayern Munich
+- Wins: 1
+- Opponents: Bayer Leverkusen
+Celta Vigo
+- Wins: 1
+- Opponents: Barcelona
+Liverpool
+- Wins: 1
+- Opponents: Arsenal
+Arsenal
+- Wins: 0
+- Opponents: Liverpool
+Bayer Leverkusen
+- Wins: 0
+- Opponents: Bayern Munich
+Chelsea
+- Wins: 0
+- Opponents: Barcelona

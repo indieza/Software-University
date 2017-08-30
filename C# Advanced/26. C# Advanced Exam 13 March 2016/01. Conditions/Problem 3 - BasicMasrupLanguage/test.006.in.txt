@@ -1,0 +1,5 @@
+    <  inverse content="  HelloWorlD   "       />
+       <  reverse content = "helloworld		"              />
+         <  reverse content	= 	" helloworld 	"       />
+	<   repeat value    =    "2"   content  =  "    	helloworld 		"                 />
+<stop/>

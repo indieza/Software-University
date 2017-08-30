@@ -1,0 +1,30 @@
+Barcelona
+- Wins: 3
+- Opponents: Arsenal, Cska, Levski, Real Madrid
+Bayern Munich
+- Wins: 3
+- Opponents: Borussia Dortmund, Juventus, Manchester United
+Liverpool
+- Wins: 3
+- Opponents: Borussia Dortmund, Manchester United, Real Madrid
+Real Madrid
+- Wins: 2
+- Opponents: Barcelona, Cska, Liverpool
+Levski
+- Wins: 1
+- Opponents: Barcelona, Cska
+Arsenal
+- Wins: 0
+- Opponents: Barcelona
+Borussia Dortmund
+- Wins: 0
+- Opponents: Bayern Munich, Liverpool
+Cska
+- Wins: 0
+- Opponents: Barcelona, Levski, Real Madrid
+Juventus
+- Wins: 0
+- Opponents: Bayern Munich
+Manchester United
+- Wins: 0
+- Opponents: Bayern Munich, Liverpool

@@ -1,0 +1,11 @@
+<inverse content="HelloWorlD"/>
+<inverse content=" 123HelloWorlD123 "/>
+<inverse content=" 123HelloWorlD   "/>
+<inverse content="   HelloWorlD "/>
+<reverse content=" 123  he  ll owo rld 2 3 23  "/>
+<reverse content="helloworld"/>
+<repeat     value="0" content=  "helloworld"/>
+<repeat     value="2" content=  " helloworld   2"/>
+<repeat     value="0" content=  "helloworld"/>
+<repeat     value="2" content=  " helloworld   2"/>
+<stop/>

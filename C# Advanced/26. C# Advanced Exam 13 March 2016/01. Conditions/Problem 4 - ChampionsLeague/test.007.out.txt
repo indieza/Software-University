@@ -1,0 +1,12 @@
+Barcelona
+- Wins: 3
+- Opponents: Real Madrid, Sevilla, Valencia
+Valencia
+- Wins: 2
+- Opponents: Barcelona, Real Madrid, Sevilla
+Sevilla
+- Wins: 1
+- Opponents: Barcelona, Real Madrid, Valencia
+Real Madrid
+- Wins: 0
+- Opponents: Barcelona, Sevilla, Valencia

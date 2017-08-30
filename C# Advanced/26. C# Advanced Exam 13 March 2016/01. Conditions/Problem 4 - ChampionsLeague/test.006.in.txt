@@ -1,0 +1,14 @@
+Real Madrid | Barcelona | 0:0 | 1:1
+Real Madrid | Manchester United | 2:2 | 1:1
+Real Madrid | Arsenal | 5:5 | 1:1
+Barcelona | Arsenal | 2:0 | 0:2
+Barcelona | Valencia | 2:0 | 0:2
+Barcelona | Sevilla | 2:0 | 0:2
+Liverpool | Newcastle United | 2:0 | 0:0
+Liverpool | Leeds United | 2:0 | 2:2
+Liverpool | Aston Villa | 2:1 | 1:5
+Liverpool | Arsenal | 1:0 | 0:0
+Bayern Munich | Juventus | 2:1 | 3:2
+Inter | Juventus | 2:1 | 1:2
+Bayern Munich | Inter | 2:1 | 4:3
+stop

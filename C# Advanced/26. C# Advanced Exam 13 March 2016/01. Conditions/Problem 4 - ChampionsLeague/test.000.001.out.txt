@@ -1,0 +1,21 @@
+Barcelona
+- Wins: 1
+- Opponents: Arsenal, Real Madrid
+Bayern Munich
+- Wins: 1
+- Opponents: Juventus
+Liverpool
+- Wins: 1
+- Opponents: Manchester United
+Real Madrid
+- Wins: 1
+- Opponents: Barcelona
+Arsenal
+- Wins: 0
+- Opponents: Barcelona
+Juventus
+- Wins: 0
+- Opponents: Bayern Munich
+Manchester United
+- Wins: 0
+- Opponents: Liverpool

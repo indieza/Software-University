@@ -1,0 +1,8 @@
+<inverse content=""/>
+<reverse content=""/>
+<reverse content="	"/>
+<repeat value="0" content="helloworld"/>
+<reverse content="	 "/>
+<reverse content=" 		"/>
+< inverse  content = "asdDSA" />
+<stop/>

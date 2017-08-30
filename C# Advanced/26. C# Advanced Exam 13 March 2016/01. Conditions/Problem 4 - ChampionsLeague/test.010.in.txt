@@ -1,0 +1,13 @@
+Real Madrid | Barcelona | 0:0 | 1:1
+Barcelona | Arsenal | 2:0 | 0:2
+Liverpool | Manchester United | 2:0 | 0:0
+Bayern Munich | Juventus | 2:1 | 3:2
+Levski | Cska | 0:0 | 1:1
+Barcelona | Levski | 2:0 | 0:2
+Liverpool | Borussia Dortmund | 2:0 | 0:0
+Bayern Munich | Borussia Dortmund | 2:1 | 3:2
+Real Madrid | Cska | 0:0 | 1:1
+Barcelona | Cska | 2:0 | 0:2
+Liverpool | Real Madrid | 2:0 | 0:0
+Bayern Munich | Manchester United | 2:1 | 3:2
+stop

@@ -1,0 +1,7 @@
+Liverpool | Manchester United | 2:0 | 3:0
+Arsenal | Manchester United | 2:0 | 3:0
+Chelsea | Manchester United | 2:0 | 5:0
+Leicester | Manchester United | 2:0 | 3:0
+Southampton | Manchester United | 2:0 | 4:1
+Aston Villa | Manchester United | 2:0 | 4:1
+stop

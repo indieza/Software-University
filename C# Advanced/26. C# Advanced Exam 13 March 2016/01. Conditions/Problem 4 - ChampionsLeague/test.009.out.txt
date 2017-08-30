@@ -1,0 +1,39 @@
+Real Madrid
+- Wins: 12
+- Opponents: Barcelona, Beroe, Botev, Cherno More, Cska, Levski, Litex, Lokomotiv, Ludogorets, Marek, Pirin, Sportist
+Barcelona
+- Wins: 0
+- Opponents: Real Madrid
+Beroe
+- Wins: 0
+- Opponents: Real Madrid
+Botev
+- Wins: 0
+- Opponents: Real Madrid
+Cherno More
+- Wins: 0
+- Opponents: Real Madrid
+Cska
+- Wins: 0
+- Opponents: Real Madrid
+Levski
+- Wins: 0
+- Opponents: Real Madrid
+Litex
+- Wins: 0
+- Opponents: Real Madrid
+Lokomotiv
+- Wins: 0
+- Opponents: Real Madrid
+Ludogorets
+- Wins: 0
+- Opponents: Real Madrid
+Marek
+- Wins: 0
+- Opponents: Real Madrid
+Pirin
+- Wins: 0
+- Opponents: Real Madrid
+Sportist
+- Wins: 0
+- Opponents: Real Madrid

@@ -1,0 +1,11 @@
+Bought a hotel for 50. Total hotels: 1.
+Bought a hotel for 10. Total hotels: 2.
+Bought a hotel for 20. Total hotels: 3.
+Bought a hotel for 30. Total hotels: 4.
+Bought a hotel for 40. Total hotels: 5.
+Bought a hotel for 50. Total hotels: 6.
+Gone to jail at turn 6.
+Bought a hotel for 240. Total hotels: 7.
+Bought a hotel for 140. Total hotels: 8.
+Turns 12
+Money 80

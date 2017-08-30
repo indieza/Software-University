@@ -1,0 +1,7 @@
+Real Madrid | Barcelona | 2:2 | 1:1
+Real Madrid | Valencia | 0:1 | 1:1
+Real Madrid | Sevilla | 0:5 | 1:1
+Barcelona | Sevilla | 2:0 | 0:2
+Barcelona | Valencia | 2:0 | 0:2
+Valencia | Sevilla | 3:1 | 1:3
+stop
