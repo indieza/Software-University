@@ -1,0 +1,6 @@
+gold_1 wood_2 stone_3 gold_4 gold_1 wood_2 stone_3 gold_4 gold_1 wood_2 stone_3 gold_4
+4
+1 13
+1 12
+1 9
+1 11

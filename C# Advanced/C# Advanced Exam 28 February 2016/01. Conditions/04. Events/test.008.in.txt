@@ -1,0 +1,12 @@
+10
+#gosho: @asj 12:12
+#gosho: @asi 12:11
+#gosho: @ash 12:10
+#gosho: @asg 12:09
+#gosho: @asf 12:08
+#gosho: @ase 12:07
+#gosho: @asd 12:06
+#gosho: @asc 12:05
+#gosho: @asb 12:04
+#gosho: @asa 12:03
+asd,asf,asg,ase,asb,asj,ash,asc,asi,asa

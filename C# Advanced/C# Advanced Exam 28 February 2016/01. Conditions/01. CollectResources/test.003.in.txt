@@ -1,0 +1,5 @@
+stone_500 gold_200 wood_700 metal metal stone_1 stone
+3
+0 3
+0 2
+5 100000

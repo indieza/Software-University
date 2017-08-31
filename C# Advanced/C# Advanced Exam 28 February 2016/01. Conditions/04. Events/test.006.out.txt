@@ -1,0 +1,5 @@
+pppp:
+1. aaaaa -> 10:04
+2. mmmmm -> 10:03
+3. nnnnn -> 10:02
+4. qqqqq -> 10:01

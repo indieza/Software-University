@@ -1,0 +1,5 @@
+stone stone food wood gold gold
+3
+0 3
+1 4
+0 2

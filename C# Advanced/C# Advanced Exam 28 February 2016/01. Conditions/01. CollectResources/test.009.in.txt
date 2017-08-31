@@ -1,0 +1,6 @@
+mandja_2 stone_5 gold_2 wood_7 metal_17
+4
+0 1
+0 2
+0 3
+0 14

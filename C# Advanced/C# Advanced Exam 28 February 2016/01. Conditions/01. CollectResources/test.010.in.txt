@@ -1,0 +1,5 @@
+stone_5 gold_2 wood_7 food_2 stone_5 gold_2 wood_7 food_2
+3
+0 4
+0 2
+0 1

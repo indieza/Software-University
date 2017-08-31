@@ -1,0 +1,20 @@
+asa:
+1. gosho -> 12:03
+asb:
+1. gosho -> 12:04
+asc:
+1. gosho -> 12:05
+asd:
+1. gosho -> 12:06
+ase:
+1. gosho -> 12:07
+asf:
+1. gosho -> 12:08
+asg:
+1. gosho -> 12:09
+ash:
+1. gosho -> 12:10
+asi:
+1. gosho -> 12:11
+asj:
+1. gosho -> 12:12

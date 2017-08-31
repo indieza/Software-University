@@ -1,0 +1,8 @@
+6
+#Pesho: @Sofia 16:00
+#Ani: @Sofia 22:00
+#Ani: @Sofia 16:00
+#Mincho: @Plovdiv16:00
+#TriFon: @Plovdiv 22:00
+#TriFon: @Plovd1v 23:00
+Sofia,Plovdiv

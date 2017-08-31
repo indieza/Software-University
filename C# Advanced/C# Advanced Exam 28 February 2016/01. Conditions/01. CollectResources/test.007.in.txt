@@ -1,0 +1,12 @@
+stone_5 gold_2 wood_7 metal_17 stone_8 stone stone stone stone food food granite
+10
+2 2
+7 1
+2 8
+6 6
+3 123123
+1 2000001
+5 2000005
+8 1293
+2 19283
+0 18

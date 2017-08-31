@@ -1,0 +1,8 @@
+6
+#Pesho: @Sofia 16:00
+#Minka: @Sofia 22:00
+#Strahil: @Sofia 16:00
+#TriFon: @Plovdiv 22:00
+#trifon: @Plovdiv 23:00
+#trifoN: @Plovdiv 23:00
+Plovdiv,Burgas
