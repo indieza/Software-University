@@ -1,28 +1,7 @@
-﻿public class AmmunitionFactory
+﻿public class AmmunitionFactory : IAmmunitionFactory
 {
-    public static IAmmunition CreateAmmunition(string name)
+    public IAmmunition CreateAmmunition(string ammunitionName)
     {
-        switch (name)
-        {
-            case "Helmet":
-                return new Helmet(name);
-
-            case "Knife":
-                return new Knife(name);
-
-            case "NightVision":
-                return new NightVision(name);
-
-            case "AutomaticMachine":
-                return new AutomaticMachine(name);
-
-            case "Gun":
-                return new Gun(name);
-
-            case "MachineGun":
-                return new MachineGun(name);
-        }
-
-        return new RPG(name);
+        throw new System.NotImplementedException();
     }
 }
