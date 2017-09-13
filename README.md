@@ -1,2 +1,2 @@
 # Software - University
-Software University - Homework, Exercises, Labs and Exams
+All Of My SoftUni Homework Assignments
