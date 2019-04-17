@@ -1,0 +1,7 @@
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\01. ClubParty\bin\Debug\_01.ClubParty.exe.config
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\01. ClubParty\bin\Debug\_01.ClubParty.exe
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\01. ClubParty\bin\Debug\_01.ClubParty.pdb
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\01. ClubParty\obj\Debug\01. ClubParty.csprojAssemblyReference.cache
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\01. ClubParty\obj\Debug\01. ClubParty.csproj.CoreCompileInputs.cache
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\01. ClubParty\obj\Debug\_01.ClubParty.exe
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\01. ClubParty\obj\Debug\_01.ClubParty.pdb
