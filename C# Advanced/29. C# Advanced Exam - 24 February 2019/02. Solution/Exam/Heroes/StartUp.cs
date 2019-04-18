@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03.Heroes
+namespace Heroes
 {
     public class StartUp
     {
