@@ -1,0 +1,7 @@
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\02. TronRacers\bin\Debug\_02.TronRacers.exe.config
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\02. TronRacers\bin\Debug\_02.TronRacers.exe
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\02. TronRacers\bin\Debug\_02.TronRacers.pdb
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\02. TronRacers\obj\Debug\02. TronRacers.csprojAssemblyReference.cache
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\02. TronRacers\obj\Debug\02. TronRacers.csproj.CoreCompileInputs.cache
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\02. TronRacers\obj\Debug\_02.TronRacers.exe
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\02. TronRacers\obj\Debug\_02.TronRacers.pdb

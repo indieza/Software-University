@@ -1,0 +1,7 @@
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\Heroes\obj\Debug\Heroes.csprojAssemblyReference.cache
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\Heroes\obj\Debug\Heroes.csproj.CoreCompileInputs.cache
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\Heroes\bin\Debug\Heroes.exe.config
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\Heroes\bin\Debug\Heroes.exe
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\Heroes\bin\Debug\Heroes.pdb
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\Heroes\obj\Debug\Heroes.exe
+D:\Software-University\C# Advanced\29. C# Advanced Exam - 24 February 2019\02. Solution\Exam\Heroes\obj\Debug\Heroes.pdb
