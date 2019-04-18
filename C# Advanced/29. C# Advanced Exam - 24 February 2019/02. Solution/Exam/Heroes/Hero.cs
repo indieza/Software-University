@@ -62,7 +62,7 @@ namespace Heroes
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Hero: {this.Name} – {this.Level}lvl");
-            sb.Append(base.ToString());
+            sb.AppendLine(item.ToString());
             return sb.ToString();
         }
     }

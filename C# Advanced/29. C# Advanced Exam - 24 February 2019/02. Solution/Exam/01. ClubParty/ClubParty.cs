@@ -65,7 +65,7 @@ namespace _01.ClubParty
                                 halls.RemoveAt(0);
                                 saveCapacity = 0;
 
-                                if (int.Parse(item) <= hallsCapacity)
+                                if (int.Parse(item) <= hallsCapacity && halls.Count != 0)
                                 {
                                     capacity.Add(int.Parse(item));
                                     saveCapacity += int.Parse(item);

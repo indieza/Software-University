@@ -9,6 +9,7 @@ namespace Heroes
     public class HeroRepository
     {
         private List<Hero> data;
+        private int count;
 
         public HeroRepository()
         {
@@ -27,31 +28,62 @@ namespace Heroes
             }
         }
 
-        private int Count => this.Data.Count;
+        public int Count
+        {
+            get
+            {
+                return this.data.Count;
+            }
+            set
+            {
+                this.count = value;
+            }
+        }
 
-        private void Add(Hero hero)
+        public void Add(Hero hero)
         {
-        }
-        private void Remove(string name)
-        {
+            data.Add(new Hero(hero.Name, hero.Level, hero.Item));
         }
 
-        private Hero GetHeroWithHighestStrength()
+        public void Remove(string name)
         {
-            return data[0];
+            for (int i = 0; i < data.Count; i++)
+            {
+                if (data[i].Name == name)
+                {
+                    data.RemoveAt(i);
+                }
+            }
         }
-        private Hero GetHeroWithHighestAbility()
+
+        public Hero GetHeroWithHighestStrength()
         {
-            return data[0];
+            Hero h = data.OrderByDescending(p => p.Item.Strength).FirstOrDefault();
+            return h;
         }
-        private Hero GetHeroWithHighestIntelligence()
+
+        public Hero GetHeroWithHighestAbility()
         {
-            return data[0];
+            Hero h = data.OrderByDescending(p => p.Item.Ability).FirstOrDefault();
+            return h;
+        }
+
+        public Hero GetHeroWithHighestIntelligence()
+        {
+            Hero h = data.OrderByDescending(p => p.Item.Intelligence).FirstOrDefault();
+            return h;
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var item in data)
+            {
+                sb.AppendLine(item.ToString());
+            }
+
+            return sb.ToString();
         }
     }
 }
