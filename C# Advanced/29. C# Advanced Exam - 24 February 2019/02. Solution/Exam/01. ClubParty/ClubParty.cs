@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace _01.ClubParty
 {
@@ -22,6 +20,10 @@ namespace _01.ClubParty
             List<string> halls = new List<string>();
             List<int> capacity = new List<int>();
 
+            string result = string.Empty;
+            int saveCapacity = 0;
+            bool fillRoom = false;
+
             for (int i = items.Length - 1; i >= 0; i--)
             {
                 string item = items[i];
@@ -32,25 +34,58 @@ namespace _01.ClubParty
                 }
                 else if (NumsPattern.IsMatch(item))
                 {
-                    capacity.Add(int.Parse(item.ToString()));
+                    if (halls.Count == 0)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        if (fillRoom)
+                        {
+                            if (saveCapacity + int.Parse(item) <= hallsCapacity)
+                            {
+                                if (saveCapacity + int.Parse(item) == hallsCapacity)
+                                {
+                                    capacity.Add(int.Parse(item));
+                                    Print(capacity, halls[0]);
+                                    capacity.Clear();
+                                    halls.RemoveAt(0);
+                                    saveCapacity = 0;
+                                }
+                                else
+                                {
+                                    capacity.Add(int.Parse(item));
+                                    saveCapacity += int.Parse(item);
+                                }
+                            }
+                            else
+                            {
+                                Print(capacity, halls[0]);
+                                capacity.Clear();
+                                halls.RemoveAt(0);
+                                saveCapacity = 0;
+
+                                if (int.Parse(item) <= hallsCapacity)
+                                {
+                                    capacity.Add(int.Parse(item));
+                                    saveCapacity += int.Parse(item);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            capacity.Add(int.Parse(item));
+                            saveCapacity += int.Parse(item);
+                            fillRoom = true;
+                        }
+                    }
                 }
             }
+        }
 
-            int saveCapacity = 0;
-
-            while (halls.Count != 0 || capacity.Count != 0)
-            {
-                int currentCapacity = capacity[0];
-
-                if (currentCapacity > hallsCapacity)
-                {
-                    capacity.RemoveAt(0);
-                }
-                else
-                {
-                    saveCapacity += currentCapacity;
-                }
-            }
+        private static void Print(List<int> capacity, string hall)
+        {
+            Console.WriteLine($"{hall} -> {string.Join(", ", capacity)}");
         }
     }
 }
