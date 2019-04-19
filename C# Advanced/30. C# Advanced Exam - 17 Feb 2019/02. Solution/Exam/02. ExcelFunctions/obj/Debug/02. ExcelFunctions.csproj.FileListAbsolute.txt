@@ -5,3 +5,10 @@ D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Fe
 D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\obj\Debug\02. ExcelFunctions.csproj.CoreCompileInputs.cache
 D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\obj\Debug\_02.ExcelFunctions.exe
 D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\obj\Debug\_02.ExcelFunctions.pdb
+D:\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\bin\Debug\_02.ExcelFunctions.exe.config
+D:\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\bin\Debug\_02.ExcelFunctions.exe
+D:\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\bin\Debug\_02.ExcelFunctions.pdb
+D:\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\obj\Debug\02. ExcelFunctions.csprojAssemblyReference.cache
+D:\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\obj\Debug\02. ExcelFunctions.csproj.CoreCompileInputs.cache
+D:\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\obj\Debug\_02.ExcelFunctions.exe
+D:\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\02. ExcelFunctions\obj\Debug\_02.ExcelFunctions.pdb
