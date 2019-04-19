@@ -6,7 +6,7 @@ namespace Repository
     {
         public static void Main()
         {
-            Repository = new Repository();
+            Repository repository = new Repository();
 
             repository.Add(new Person("George", 10, new DateTime(2009, 05, 04)));
             repository.Add(new Person("Peter", 5, new DateTime(2014, 05, 24)));
