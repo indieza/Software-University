@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\Repository\bin\Debug\Repository.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\Repository\bin\Debug\Repository.exe
+D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\Repository\bin\Debug\Repository.pdb
+D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\Repository\obj\Debug\Repository.exe
+D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\Repository\obj\Debug\Repository.pdb

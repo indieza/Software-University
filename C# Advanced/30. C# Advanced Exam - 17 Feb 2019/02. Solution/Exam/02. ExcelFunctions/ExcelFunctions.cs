@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02.ExcelFunctions
 {
@@ -11,6 +9,7 @@ namespace _02.ExcelFunctions
         private static int n = 0;
         private static string[] header;
         private static string[,] table;
+
         private static void Main()
         {
             n = int.Parse(Console.ReadLine());
@@ -26,14 +25,21 @@ namespace _02.ExcelFunctions
             switch (commandItems[0])
             {
                 case "sort":
+                    {
+                        string header = commandItems[1];
+                        int col = FilterCol(header);
+                        SortTable(col);
+                    }
                     break;
+
                 case "hide":
                     {
                         string header = commandItems[1];
                         int col = FilterCol(header);
-                        RemoveCol(col);
+                        ClearTable(col);
                     }
                     break;
+
                 case "filter":
                     {
                         string header = commandItems[1];
@@ -43,39 +49,54 @@ namespace _02.ExcelFunctions
                         PrintFilteredRow(row);
                     }
                     break;
+
                 default:
                     break;
             }
         }
 
-        private static void RemoveCol(int colIndex)
+        private static void SortTable(int colIndex)
         {
-            RemoveHeaderCol(colIndex);
+            Dictionary<int, string> saveInfo = new Dictionary<int, string>();
 
-            for (int row = 0; row < n; row++)
+            for (int row = 1; row < n; row++)
             {
-                table[row, colIndex] = string.Empty;
+                saveInfo.Add(row, table[row, colIndex]);
             }
 
-            List<string> newRow = new List<string>();
-            // --------------------------------------------------Here
+            saveInfo = saveInfo.OrderBy(p => p.Value).ToDictionary(k => k.Key, v => v.Value);
 
+            Console.WriteLine(string.Join(" | ", header));
+
+            foreach (var item in saveInfo)
+            {
+                List<string> line = new List<string>();
+
+                for (int col = 0; col < header.Length; col++)
+                {
+                    line.Add(table[item.Key, col]);
+                }
+
+                Console.WriteLine(string.Join(" | ", line));
+            }
         }
 
-        private static void RemoveHeaderCol(int colIndex)
+        private static void ClearTable(int colIndex)
         {
-            header[colIndex] = string.Empty;
-            List<string> newHeader = new List<string>();
-
-            for (int col = 0; col < header.Length; col++)
+            for (int row = 0; row < table.GetLength(0); row++)
             {
-                if (!(header[col] == string.Empty))
-                {
-                    newHeader.Add(header[col]);
-                }
-            }
+                List<string> resultLine = new List<string>();
 
-            header = newHeader.ToArray();
+                for (int col = 0; col < table.GetLength(1); col++)
+                {
+                    if (col != colIndex)
+                    {
+                        resultLine.Add(table[row, col]);
+                    }
+                }
+
+                Console.WriteLine(string.Join(" | ", resultLine));
+            }
         }
 
         private static void PrintFilteredRow(int row)
@@ -95,7 +116,7 @@ namespace _02.ExcelFunctions
         {
             int rowResult = 0;
 
-            for (int row = 0; row < n; row++)
+            for (int row = 1; row < n; row++)
             {
                 if (table[row, col] == value)
                 {
@@ -134,6 +155,7 @@ namespace _02.ExcelFunctions
             for (int row = 1; row < n; row++)
             {
                 string[] info = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+
                 for (int col = 0; col < header.Length; col++)
                 {
                     table[row, col] = info[col];
