@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace _02.ExcelFunctions
 {
     public class ExcelFunctions
     {
         private static int n = 0;
-        private static string[] header;
+        private static string[] headerTable;
         private static string[,] table;
 
         private static void Main()
         {
             n = int.Parse(Console.ReadLine());
-            header = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+            headerTable = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
 
-            table = new string[n, header.Length];
+            table = new string[n, headerTable.Length];
 
             FillFirstRoll();
             FillTable();
@@ -66,13 +68,13 @@ namespace _02.ExcelFunctions
 
             saveInfo = saveInfo.OrderBy(p => p.Value).ToDictionary(k => k.Key, v => v.Value);
 
-            Console.WriteLine(string.Join(" | ", header));
+            Console.WriteLine(string.Join(" | ", headerTable));
 
             foreach (var item in saveInfo)
             {
                 List<string> line = new List<string>();
 
-                for (int col = 0; col < header.Length; col++)
+                for (int col = 0; col < headerTable.Length; col++)
                 {
                     line.Add(table[item.Key, col]);
                 }
@@ -87,7 +89,7 @@ namespace _02.ExcelFunctions
             {
                 List<string> resultLine = new List<string>();
 
-                for (int col = 0; col < table.GetLength(1); col++)
+                for (int col = 0; col < headerTable.Length; col++)
                 {
                     if (col != colIndex)
                     {
@@ -101,10 +103,10 @@ namespace _02.ExcelFunctions
 
         private static void PrintFilteredRow(int row)
         {
-            Console.WriteLine(string.Join(" | ", header));
+            Console.WriteLine(string.Join(" | ", headerTable));
             List<string> info = new List<string>();
 
-            for (int col = 0; col < table.GetLength(1); col++)
+            for (int col = 0; col < headerTable.Length; col++)
             {
                 info.Add(table[row, col]);
             }
@@ -131,7 +133,7 @@ namespace _02.ExcelFunctions
         {
             int colResult = 0;
 
-            for (int col = 0; col < table.GetLength(1); col++)
+            for (int col = 0; col < headerTable.Length; col++)
             {
                 if (table[0, col] == header)
                 {
@@ -144,9 +146,9 @@ namespace _02.ExcelFunctions
 
         private static void FillFirstRoll()
         {
-            for (int col = 0; col < header.Length; col++)
+            for (int col = 0; col < headerTable.Length; col++)
             {
-                table[0, col] = header[col];
+                table[0, col] = headerTable[col];
             }
         }
 
@@ -156,7 +158,7 @@ namespace _02.ExcelFunctions
             {
                 string[] info = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
 
-                for (int col = 0; col < header.Length; col++)
+                for (int col = 0; col < headerTable.Length; col++)
                 {
                     table[row, col] = info[col];
                 }
