@@ -1,54 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02.ExcelFunctions
 {
     public class ExcelFunctions
     {
-        private static int n = 0;
-        private static string[] headerTable;
+        private static int rows;
+        private static int cols;
         private static string[,] table;
+        private static string[] header;
 
         private static void Main()
         {
-            n = int.Parse(Console.ReadLine());
-            headerTable = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+            rows = int.Parse(Console.ReadLine());
+            header = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+            cols = header.Length;
+            table = new string[rows, cols];
 
-            table = new string[n, headerTable.Length];
+            FillTabel();
 
-            FillFirstRoll();
-            FillTable();
-
-            string[] commandItems = Console.ReadLine().Split();
+            string[] commandItems = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
 
             switch (commandItems[0])
             {
-                case "sort":
+                case "hide":
                     {
-                        string header = commandItems[1];
-                        int col = FilterCol(header);
-                        SortTable(col);
+                        int col = ExecuteCol(commandItems[1]);
+                        table = HideCol(col);
+                        cols--;
+                        PrintTable();
                     }
                     break;
 
-                case "hide":
+                case "sort":
                     {
-                        string header = commandItems[1];
-                        int col = FilterCol(header);
-                        ClearTable(col);
+                        int col = ExecuteCol(commandItems[1]);
+                        SortTable(col);
                     }
                     break;
 
                 case "filter":
                     {
-                        string header = commandItems[1];
-                        string value = commandItems[2];
-                        int col = FilterCol(header);
-                        int row = FilterRow(col, value);
-                        PrintFilteredRow(row);
+                        int col = ExecuteCol(commandItems[1]);
+                        List<int> resultRows = ExecuteRow(col, commandItems[2]);
+                        PrintFilteredRow(resultRows);
                     }
                     break;
 
@@ -57,24 +53,56 @@ namespace _02.ExcelFunctions
             }
         }
 
+        private static void PrintFilteredRow(List<int> resultRows)
+        {
+            Console.WriteLine(string.Join(" | ", header));
+
+            foreach (var row in resultRows)
+            {
+                List<string> info = new List<string>();
+
+                for (int col = 0; col < cols; col++)
+                {
+                    info.Add(table[row, col]);
+                }
+
+                Console.WriteLine(string.Join(" | ", info));
+            }
+        }
+
+        private static List<int> ExecuteRow(int col, string v)
+        {
+            List<int> resultRows = new List<int>();
+
+            for (int row = 1; row < rows; row++)
+            {
+                if (table[row, col] == v)
+                {
+                    resultRows.Add(row);
+                }
+            }
+
+            return resultRows;
+        }
+
         private static void SortTable(int colIndex)
         {
             Dictionary<int, string> saveInfo = new Dictionary<int, string>();
 
-            for (int row = 1; row < n; row++)
+            for (int row = 1; row < rows; row++)
             {
                 saveInfo.Add(row, table[row, colIndex]);
             }
 
             saveInfo = saveInfo.OrderBy(p => p.Value).ToDictionary(k => k.Key, v => v.Value);
 
-            Console.WriteLine(string.Join(" | ", headerTable));
+            Console.WriteLine(string.Join(" | ", header));
 
             foreach (var item in saveInfo)
             {
                 List<string> line = new List<string>();
 
-                for (int col = 0; col < headerTable.Length; col++)
+                for (int col = 0; col < cols; col++)
                 {
                     line.Add(table[item.Key, col]);
                 }
@@ -83,84 +111,74 @@ namespace _02.ExcelFunctions
             }
         }
 
-        private static void ClearTable(int colIndex)
+        private static void PrintTable()
         {
-            for (int row = 0; row < table.GetLength(0); row++)
+            for (int row = 0; row < rows; row++)
             {
-                List<string> resultLine = new List<string>();
+                List<string> items = new List<string>();
 
-                for (int col = 0; col < headerTable.Length; col++)
+                for (int col = 0; col < cols; col++)
+                {
+                    items.Add(table[row, col]);
+                }
+
+                Console.WriteLine(string.Join(" | ", items));
+            }
+        }
+
+        private static string[,] HideCol(int colIndex)
+        {
+            string[,] newTable = new string[rows, cols - 1];
+            string[] newHeader = new string[header.Length - 1];
+
+            for (int row = 0; row < rows; row++)
+            {
+                int saveCols = 0;
+
+                for (int col = 0; col < cols; col++)
                 {
                     if (col != colIndex)
                     {
-                        resultLine.Add(table[row, col]);
+                        newTable[row, saveCols] = table[row, col];
+                        newHeader[saveCols] = header[col];
+                        saveCols++;
                     }
                 }
-
-                Console.WriteLine(string.Join(" | ", resultLine));
-            }
-        }
-
-        private static void PrintFilteredRow(int row)
-        {
-            Console.WriteLine(string.Join(" | ", headerTable));
-            List<string> info = new List<string>();
-
-            for (int col = 0; col < headerTable.Length; col++)
-            {
-                info.Add(table[row, col]);
             }
 
-            Console.WriteLine(string.Join(" | ", info));
+            header = newHeader;
+            return newTable;
         }
 
-        private static int FilterRow(int col, string value)
+        private static int ExecuteCol(string key)
         {
-            int rowResult = 0;
+            int resultCol = 0;
 
-            for (int row = 1; row < n; row++)
+            for (int col = 0; col < cols; col++)
             {
-                if (table[row, col] == value)
+                if (table[0, col] == key)
                 {
-                    rowResult = row;
+                    resultCol = col;
                 }
             }
 
-            return rowResult;
+            return resultCol;
         }
 
-        private static int FilterCol(string header)
+        private static void FillTabel()
         {
-            int colResult = 0;
-
-            for (int col = 0; col < headerTable.Length; col++)
+            for (int col = 0; col < cols; col++)
             {
-                if (table[0, col] == header)
-                {
-                    colResult = col;
-                }
+                table[0, col] = header[col];
             }
 
-            return colResult;
-        }
-
-        private static void FillFirstRoll()
-        {
-            for (int col = 0; col < headerTable.Length; col++)
+            for (int row = 1; row < rows; row++)
             {
-                table[0, col] = headerTable[col];
-            }
-        }
+                string[] items = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
 
-        private static void FillTable()
-        {
-            for (int row = 1; row < n; row++)
-            {
-                string[] info = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
-
-                for (int col = 0; col < headerTable.Length; col++)
+                for (int col = 0; col < cols; col++)
                 {
-                    table[row, col] = info[col];
+                    table[row, col] = items[col];
                 }
             }
         }

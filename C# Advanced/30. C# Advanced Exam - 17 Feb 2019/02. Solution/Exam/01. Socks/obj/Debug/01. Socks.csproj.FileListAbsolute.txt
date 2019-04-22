@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\01. Socks\bin\Debug\_01.Socks.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\01. Socks\bin\Debug\_01.Socks.exe
-D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\01. Socks\bin\Debug\_01.Socks.pdb
-D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\01. Socks\obj\Debug\01. Socks.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\01. Socks\obj\Debug\_01.Socks.exe
-D:\Documents\GitHub\Software-University\C# Advanced\30. C# Advanced Exam - 17 Feb 2019\02. Solution\Exam\01. Socks\obj\Debug\_01.Socks.pdb
