@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced\31. C# Advanced Sample Exam\02. Solution\Exam\01. Hospital\bin\Debug\_01.Hospital.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced\31. C# Advanced Sample Exam\02. Solution\Exam\01. Hospital\bin\Debug\_01.Hospital.exe
+D:\Documents\GitHub\Software-University\C# Advanced\31. C# Advanced Sample Exam\02. Solution\Exam\01. Hospital\bin\Debug\_01.Hospital.pdb
+D:\Documents\GitHub\Software-University\C# Advanced\31. C# Advanced Sample Exam\02. Solution\Exam\01. Hospital\obj\Debug\01. Hospital.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced\31. C# Advanced Sample Exam\02. Solution\Exam\01. Hospital\obj\Debug\_01.Hospital.exe
+D:\Documents\GitHub\Software-University\C# Advanced\31. C# Advanced Sample Exam\02. Solution\Exam\01. Hospital\obj\Debug\_01.Hospital.pdb
