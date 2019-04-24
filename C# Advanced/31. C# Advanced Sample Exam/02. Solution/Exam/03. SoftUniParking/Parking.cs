@@ -23,7 +23,7 @@ namespace _03.SoftUniParking
             {
                 return this.cars;
             }
-            set
+            private set
             {
                 this.cars = value;
             }
@@ -35,7 +35,7 @@ namespace _03.SoftUniParking
             {
                 return this.capacity;
             }
-            set
+            private set
             {
                 this.capacity = value;
             }
@@ -47,15 +47,15 @@ namespace _03.SoftUniParking
             {
                 return this.Cars.Count;
             }
-            set
+            private set
             {
                 this.count = this.Cars.Count;
             }
         }
 
-        public string AddCar(Car newCar)
+        public string AddCar(Car car)
         {
-            if (this.Cars.Any(c => c.RegistrationNumber == newCar.RegistrationNumber))
+            if (this.Cars.Any(c => c.RegistrationNumber == car.RegistrationNumber))
             {
                 return "Car with that registration number, already exists!";
             }
@@ -65,14 +65,21 @@ namespace _03.SoftUniParking
             }
             else
             {
-                this.Cars.Add(new Car(newCar.Make, newCar.Model, newCar.HorsePower, newCar.RegistrationNumber));
-                return $"Successfully added new car {newCar.Make} {newCar.RegistrationNumber}";
+                this.Cars.Add(new Car(car.Make, car.Model, car.HorsePower, car.RegistrationNumber));
+                return $"Successfully added new car {car.Make} {car.RegistrationNumber}";
             }
         }
 
         public string GetCar(string registrationNumber)
         {
-            return this.Cars.FirstOrDefault(c => c.RegistrationNumber == registrationNumber).ToString();
+            if (!this.Cars.Any(c => c.RegistrationNumber == registrationNumber))
+            {
+                return "Car with that registration number, doesn't exist!";
+            }
+            else
+            {
+                return this.Cars.FirstOrDefault(c => c.RegistrationNumber == registrationNumber).ToString();
+            }
         }
 
         public string RemoveCar(string registrationNumber)

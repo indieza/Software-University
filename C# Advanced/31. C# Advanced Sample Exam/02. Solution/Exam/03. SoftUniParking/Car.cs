@@ -23,7 +23,7 @@ namespace _03.SoftUniParking
             {
                 return this.make;
             }
-            set
+            private set
             {
                 this.make = value;
             }
@@ -35,7 +35,7 @@ namespace _03.SoftUniParking
             {
                 return this.model;
             }
-            set
+            private set
             {
                 this.model = value;
             }
@@ -47,7 +47,7 @@ namespace _03.SoftUniParking
             {
                 return this.horsePower;
             }
-            set
+            private set
             {
                 this.horsePower = value;
             }
@@ -59,7 +59,7 @@ namespace _03.SoftUniParking
             {
                 return this.registrationNumber;
             }
-            set
+            private set
             {
                 this.registrationNumber = value;
             }
