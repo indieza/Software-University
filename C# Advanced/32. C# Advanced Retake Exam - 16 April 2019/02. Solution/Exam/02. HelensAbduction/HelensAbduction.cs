@@ -65,23 +65,7 @@ namespace _02.HelensAbduction
                             }
                             else
                             {
-                                if (matrix[parisRow, parisCol] == 'H')
-                                {
-                                    FindHelena();
-                                }
-                                else if (matrix[parisRow, parisCol] == 'S')
-                                {
-                                    parisEnergy -= 2;
-
-                                    if (parisEnergy <= 0)
-                                    {
-                                        ParisDie();
-                                    }
-                                    else
-                                    {
-                                        matrix[parisRow, parisCol] = 'P';
-                                    }
-                                }
+                                HelenaOrEnemy();
                             }
                         }
                         break;
@@ -108,23 +92,7 @@ namespace _02.HelensAbduction
                             }
                             else
                             {
-                                if (matrix[parisRow, parisCol] == 'H')
-                                {
-                                    FindHelena();
-                                }
-                                else if (matrix[parisRow, parisCol] == 'S')
-                                {
-                                    parisEnergy -= 2;
-
-                                    if (parisEnergy <= 0)
-                                    {
-                                        ParisDie();
-                                    }
-                                    else
-                                    {
-                                        matrix[parisRow, parisCol] = 'P';
-                                    }
-                                }
+                                HelenaOrEnemy();
                             }
                         }
                         break;
@@ -151,23 +119,7 @@ namespace _02.HelensAbduction
                             }
                             else
                             {
-                                if (matrix[parisRow, parisCol] == 'H')
-                                {
-                                    FindHelena();
-                                }
-                                else if (matrix[parisRow, parisCol] == 'S')
-                                {
-                                    parisEnergy -= 2;
-
-                                    if (parisEnergy <= 0)
-                                    {
-                                        ParisDie();
-                                    }
-                                    else
-                                    {
-                                        matrix[parisRow, parisCol] = 'P';
-                                    }
-                                }
+                                HelenaOrEnemy();
                             }
                         }
                         break;
@@ -185,7 +137,7 @@ namespace _02.HelensAbduction
                         else
                         {
                             matrix[parisRow, parisCol] = '-';
-                            parisCol--;
+                            parisCol++;
                             parisEnergy--;
 
                             if (parisEnergy <= 0)
@@ -194,23 +146,7 @@ namespace _02.HelensAbduction
                             }
                             else
                             {
-                                if (matrix[parisRow, parisCol] == 'H')
-                                {
-                                    FindHelena();
-                                }
-                                else if (matrix[parisRow, parisCol] == 'S')
-                                {
-                                    parisEnergy -= 2;
-
-                                    if (parisEnergy <= 0)
-                                    {
-                                        ParisDie();
-                                    }
-                                    else
-                                    {
-                                        matrix[parisRow, parisCol] = 'P';
-                                    }
-                                }
+                                HelenaOrEnemy();
                             }
                         }
                         break;
@@ -221,6 +157,27 @@ namespace _02.HelensAbduction
             }
 
             PrintMatrix();
+        }
+
+        private static void HelenaOrEnemy()
+        {
+            if (matrix[parisRow, parisCol] == 'H')
+            {
+                FindHelena();
+            }
+            else if (matrix[parisRow, parisCol] == 'S')
+            {
+                parisEnergy -= 2;
+
+                if (parisEnergy <= 0)
+                {
+                    ParisDie();
+                }
+                else
+                {
+                    matrix[parisRow, parisCol] = 'P';
+                }
+            }
         }
 
         private static void FindHelena()
