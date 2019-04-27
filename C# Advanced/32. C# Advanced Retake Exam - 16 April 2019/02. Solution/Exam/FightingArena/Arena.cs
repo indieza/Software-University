@@ -26,6 +26,14 @@ namespace FightingArena
             }
         }
 
+        public int Count
+        {
+            get
+            {
+                return this.gladiators.Count;
+            }
+        }
+
         public void Add(Gladiator gladiator)
         {
             gladiators.Add(new Gladiator(gladiator.Name, gladiator.Stat, gladiator.Weapon));
@@ -33,16 +41,8 @@ namespace FightingArena
 
         public void Remove(string name)
         {
-            var item = this.gladiators.FirstOrDefault(g => g.Name == name);
+            Gladiator item = this.gladiators.FirstOrDefault(g => g.Name == name);
             this.gladiators.Remove(item);
-        }
-
-        public int Count
-        {
-            get
-            {
-                return this.gladiators.Count;
-            }
         }
 
         public Gladiator GetGladitorWithHighestStatPower()

@@ -57,7 +57,7 @@ namespace FightingArena
             sum += this.Stat.Strength
                 + this.Stat.Flexibility
                 + this.Stat.Agility
-                + this.stat.Skills
+                + this.Stat.Skills
                 + this.Stat.Intelligence;
             sum += this.Weapon.Size
                 + this.Weapon.Solidity
@@ -82,7 +82,7 @@ namespace FightingArena
             sum += this.Stat.Strength
                + this.Stat.Flexibility
                + this.Stat.Agility
-               + this.stat.Skills
+               + this.Stat.Skills
                + this.Stat.Intelligence;
 
             return sum;
