@@ -10,6 +10,8 @@ namespace _01.TrojanInvasion
     {
         private static void Main()
         {
+            int waves = int.Parse(Console.ReadLine());
+            List<int> platesSpartanDefense = Console.ReadLine().Split().Select(int.Parse).ToList();
         }
     }
 }

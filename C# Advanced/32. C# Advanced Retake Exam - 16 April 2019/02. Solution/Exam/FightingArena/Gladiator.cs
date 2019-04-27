@@ -54,15 +54,7 @@ namespace FightingArena
         public int GetTotalPower()
         {
             int sum = 0;
-            sum += this.Stat.Strength
-                + this.Stat.Flexibility
-                + this.Stat.Agility
-                + this.Stat.Skills
-                + this.Stat.Intelligence;
-            sum += this.Weapon.Size
-                + this.Weapon.Solidity
-                + this.Weapon.Sharpness;
-
+            sum += this.GetWeaponPower() + this.GetStatPower();
             return sum;
         }
 
@@ -94,7 +86,7 @@ namespace FightingArena
             sb.AppendLine($"[{this.Name}] - [{this.GetTotalPower()}]"); ;
             sb.AppendLine($"  Weapon Power: [{this.GetWeaponPower()}]");
             sb.AppendLine($"  Stat Power: [{this.GetStatPower()}]");
-            return sb.ToString();
+            return sb.ToString().TrimEnd();
         }
     }
 }

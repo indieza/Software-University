@@ -36,7 +36,7 @@ namespace FightingArena
 
         public void Add(Gladiator gladiator)
         {
-            gladiators.Add(new Gladiator(gladiator.Name, gladiator.Stat, gladiator.Weapon));
+            gladiators.Add(gladiator);
         }
 
         public void Remove(string name)
@@ -47,20 +47,50 @@ namespace FightingArena
 
         public Gladiator GetGladitorWithHighestStatPower()
         {
-            int maxStat = gladiators.Max(g => g.GetStatPower());
-            return gladiators.FirstOrDefault(g => g.GetStatPower() == maxStat);
+            int maxGladiatorStatPower = 0;
+
+            foreach (var gladiator in gladiators)
+            {
+                if (maxGladiatorStatPower < gladiator.GetStatPower())
+                {
+                    maxGladiatorStatPower = gladiator.GetStatPower();
+                }
+            }
+
+            Gladiator currentGladiator = gladiators.FirstOrDefault(x => x.GetStatPower() == maxGladiatorStatPower);
+            return currentGladiator;
         }
 
         public Gladiator GetGladitorWithHighestWeaponPower()
         {
-            int maxWeapon = gladiators.Max(g => g.GetWeaponPower());
-            return gladiators.FirstOrDefault(g => g.GetWeaponPower() == maxWeapon);
+            int maxGladiatorWeaponPower = 0;
+
+            foreach (var gladiator in gladiators)
+            {
+                if (maxGladiatorWeaponPower < gladiator.GetWeaponPower())
+                {
+                    maxGladiatorWeaponPower = gladiator.GetWeaponPower();
+                }
+            }
+
+            Gladiator currentGladiator = gladiators.FirstOrDefault(x => x.GetWeaponPower() == maxGladiatorWeaponPower);
+            return currentGladiator;
         }
 
         public Gladiator GetGladitorWithHighestTotalPower()
         {
-            int maxTotal = gladiators.Max(g => g.GetTotalPower());
-            return gladiators.FirstOrDefault(g => g.GetTotalPower() == maxTotal);
+            int maxGladiatorTotalPower = 0;
+
+            foreach (var gladiator in gladiators)
+            {
+                if (maxGladiatorTotalPower < gladiator.GetTotalPower())
+                {
+                    maxGladiatorTotalPower = gladiator.GetTotalPower();
+                }
+            }
+
+            Gladiator currentGladiator = gladiators.FirstOrDefault(x => x.GetTotalPower() == maxGladiatorTotalPower);
+            return currentGladiator;
         }
 
         public override string ToString()
