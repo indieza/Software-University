@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02.ParkingFeud
 {
@@ -66,14 +63,12 @@ namespace _02.ParkingFeud
             ParkSuccess(parkingSpot, totalDistance);
         }
 
-        //Prints the result on the console
         private static void ParkSuccess(string parkingSpot, int totalDistance)
         {
             Console.WriteLine($"Parked successfully at {parkingSpot}.");
             Console.WriteLine($"Total Distance Passed: {totalDistance}");
         }
 
-        //Calculates the distance from an entrance to the parking spot
         private static int CalculateDistance(int entranceNumber, string targetParkingSpot, int finalColumnIndex)
         {
             bool goingLeft = true;
@@ -85,13 +80,11 @@ namespace _02.ParkingFeud
             {
                 distance++;
 
-                //Move the car
                 currentPosition[1] += goingLeft ? 1 : -1;
 
                 bool reachedTheEnd = currentPosition[1] == finalColumnIndex && goingLeft ||
                     currentPosition[1] == 0 && !goingLeft;
 
-                //If you reach the end of the row, go up/down and change direction
                 if (reachedTheEnd)
                 {
                     bool targetRowIsAbove = currentPosition[0] > parkingSpotPosition[0];
@@ -104,7 +97,6 @@ namespace _02.ParkingFeud
             return distance;
         }
 
-        //Checks if the car is next to the desired spot
         private static bool AtSpot(int[] currentPosition, int[] parkingSpotPosition)
         {
             bool sameCol = currentPosition[1] == parkingSpotPosition[1];
@@ -116,7 +108,6 @@ namespace _02.ParkingFeud
             return sameCol && rowNextToSpot;
         }
 
-        //Gets the coordinates of a spot
         private static int[] GetParkingSpotPosition(string parkingSpot)
         {
             char letter = parkingSpot[0];
@@ -126,7 +117,6 @@ namespace _02.ParkingFeud
             return new int[] { row, column };
         }
 
-        //Initiates the parking lot, not really necessary
         private static bool[][] CreateParking()
         {
             int[] dimensions = Console.ReadLine().Split().Select(int.Parse).ToArray();
