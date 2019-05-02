@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AnimalCentre.Entities
 {
-    public class Animal : IAnimal
+    public abstract class Animal : IAnimal
     {
         private string name;
         private int happines;
@@ -16,7 +16,7 @@ namespace AnimalCentre.Entities
         private bool isChipped;
         private bool isVaccinated;
 
-        public Animal(string name, int energy, int happines, int procedureTime)
+        protected Animal(string name, int energy, int happines, int procedureTime)
         {
             this.Name = name;
             this.Energy = energy;
