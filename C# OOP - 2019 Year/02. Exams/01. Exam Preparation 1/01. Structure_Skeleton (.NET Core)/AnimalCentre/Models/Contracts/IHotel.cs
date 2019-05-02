@@ -4,6 +4,11 @@
 
     public interface IHotel
     {
-       //Implement me
+        int Capacity { get; }
+        IDictionary<string, IAnimal> Animals { get; }
+
+        void Accommodate(IAnimal animal);
+
+        void Adopt(string animalName, string owner);
     }
 }

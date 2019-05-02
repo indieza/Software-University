@@ -25,5 +25,9 @@ namespace AnimalCentre.Entities
                 this.procedureHistory = value;
             }
         }
+
+        public abstract void DoService(IAnimal animal, int procedureTime);
+
+        public abstract string History();
     }
 }

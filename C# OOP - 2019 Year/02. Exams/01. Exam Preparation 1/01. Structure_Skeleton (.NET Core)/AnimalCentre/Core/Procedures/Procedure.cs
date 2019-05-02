@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AnimalCentre.Core
 {
-    public class Procedure : IProcedure
+    public abstract class Procedure : IProcedure
     {
         private ICollection<IAnimal> procedureHistory;
 
@@ -25,5 +25,9 @@ namespace AnimalCentre.Core
                 this.procedureHistory = value;
             }
         }
+
+        public abstract void DoService(IAnimal animal, int procedureTime);
+
+        public abstract string History();
     }
 }
