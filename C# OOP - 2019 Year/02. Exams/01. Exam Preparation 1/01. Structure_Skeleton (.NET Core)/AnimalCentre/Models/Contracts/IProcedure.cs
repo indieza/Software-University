@@ -1,7 +1,9 @@
-﻿namespace AnimalCentre.Models.Contracts
+﻿using System.Collections.Generic;
+
+namespace AnimalCentre.Models.Contracts
 {
     public interface IProcedure
     {
-       //Implement me
+        ICollection<IAnimal> ProcedureHistory { get; }
     }
 }
