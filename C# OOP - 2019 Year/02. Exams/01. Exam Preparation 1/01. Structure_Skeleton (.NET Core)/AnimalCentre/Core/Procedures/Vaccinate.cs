@@ -5,7 +5,7 @@ using AnimalCentre.Models.Contracts;
 
 namespace AnimalCentre.Core
 {
-    public class Vaccinate : Procedure
+    public class Vaccinate : Procedure, IProcedure
     {
         public override void DoService(IAnimal animal, int procedureTime)
         {

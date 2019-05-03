@@ -1,10 +1,11 @@
-﻿using System;
+﻿using AnimalCentre.Models.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AnimalCentre.Entities.Types
 {
-    public class Dog : Animal
+    public class Dog : Animal, IAnimal
     {
         public Dog(string name, int energy, int happines, int procedureTime)
             : base(name, energy, happines, procedureTime)
