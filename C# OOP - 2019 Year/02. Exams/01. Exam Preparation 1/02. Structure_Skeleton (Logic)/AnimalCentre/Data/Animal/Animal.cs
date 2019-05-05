@@ -58,7 +58,7 @@ namespace AnimalCentre.Data.Animal
 
         public int ProcedureTime { get; set; }
 
-        public string Owner { get; private set; }
+        public string Owner { get; set; }
 
         public bool IsAdopt { get; set; }
 
