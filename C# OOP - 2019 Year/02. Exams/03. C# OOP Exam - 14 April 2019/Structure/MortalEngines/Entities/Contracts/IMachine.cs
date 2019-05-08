@@ -1,7 +1,7 @@
-﻿namespace MortalEngines.Entities.Contracts
-{
-    using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
+namespace MortalEngines.Entities.Contracts
+{
     public interface IMachine
     {
         string Name { get; }
