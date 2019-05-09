@@ -1,0 +1,11 @@
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\bin\Debug\netcoreapp2.1\MortalEngines.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\02. Exams\03. C# OOP Exam - 14 April 2019\Logic\MortalEngines\obj\Debug\netcoreapp2.1\MortalEngines.pdb

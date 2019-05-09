@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\02. Exams\\03. C# OOP Exam - 14 April 2019\\Logic\\MortalEngines\\MortalEngines.csproj": {}
+  },
+  "projects": {
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\02. Exams\\03. C# OOP Exam - 14 April 2019\\Logic\\MortalEngines\\MortalEngines.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\02. Exams\\03. C# OOP Exam - 14 April 2019\\Logic\\MortalEngines\\MortalEngines.csproj",
+        "projectName": "MortalEngines",
+        "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\02. Exams\\03. C# OOP Exam - 14 April 2019\\Logic\\MortalEngines\\MortalEngines.csproj",
+        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\02. Exams\\03. C# OOP Exam - 14 April 2019\\Logic\\MortalEngines\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
