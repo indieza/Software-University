@@ -6,18 +6,21 @@
     using MortalEngines.Entities.Machines;
     using System.Collections;
     using System.Collections.Generic;
+    using MortalEngines.Common;
 
     public class MachinesManager : IMachinesManager
     {
         private IList<IPilot> pilots;
         private IList<ITank> tanks;
         private IList<IFighter> fighters;
+        private IList<IMachine> machines;
 
         public MachinesManager()
         {
             this.pilots = new List<IPilot>();
             this.tanks = new List<ITank>();
             this.fighters = new List<IFighter>();
+            this.machines = new List<IMachine>();
         }
 
         public string HirePilot(string name)
@@ -26,12 +29,12 @@
 
             if (pilots.Contains(pilot))
             {
-                return $"Pilot {name} is hired already";
+                return string.Format(OutputMessages.PilotExists, name);
             }
             else
             {
                 pilots.Add(pilot);
-                return $"Pilot {name} hired";
+                return string.Format(OutputMessages.PilotHired, name);
             }
         }
 
@@ -41,12 +44,12 @@
 
             if (tanks.Contains(tank))
             {
-                return $"Machine {name} is manufactured already";
+                return string.Format(OutputMessages.MachineExists, name);
             }
             else
             {
                 tanks.Add(tank);
-                return $"Tank {name} manufactured - attack: {attackPoints}; defense: {defensePoints}";
+                return string.Format(OutputMessages.TankManufactured, name, attackPoints, defensePoints);
             }
         }
 
@@ -56,12 +59,12 @@
 
             if (fighters.Contains(fighter))
             {
-                return $"Machine {name} is manufactured already";
+                return string.Format(OutputMessages.MachineExists, name);
             }
             else
             {
                 fighters.Add(fighter);
-                return $"Fighter {name} manufactured - attack: {attackPoints}; defense: {defensePoints}; aggressive: ON";
+                return string.Format(OutputMessages.FighterManufactured, name, attackPoints, defensePoints, fighter.AggressiveMode == true ? "ON" : "OFF");
             }
         }
 
@@ -72,7 +75,33 @@
 
         public string AttackMachines(string attackingMachineName, string defendingMachineName)
         {
-            throw new System.NotImplementedException();
+            IMachine machineOne = machines.FirstOrDefault(m => m.Name == attackingMachineName);
+            IMachine machineTwo = machines.FirstOrDefault(m => m.Name == defendingMachineName);
+
+            if (machineOne == null)
+            {
+                return string.Format(OutputMessages.MachineNotFound, machineOne.Name);
+            }
+            else if (machineTwo == null)
+            {
+                return string.Format(OutputMessages.MachineNotFound, machineTwo.Name);
+            }
+            else if (machineOne.HealthPoints == 0)
+            {
+                return string.Format(OutputMessages.DeadMachineCannotAttack, machineOne.Name);
+            }
+            else if (machineTwo.HealthPoints == 0)
+            {
+                return string.Format(OutputMessages.DeadMachineCannotAttack, machineTwo.Name);
+            }
+            else
+            {
+                machineOne.Attack(machineTwo);
+                return string.Format(OutputMessages.AttackSuccessful,
+                    defendingMachineName,
+                    attackingMachineName,
+                    machineTwo.HealthPoints);
+            }
         }
 
         public string PilotReport(string pilotReporting)
@@ -92,7 +121,17 @@
 
         public string MachineReport(string machineName)
         {
-            throw new System.NotImplementedException();
+            string result = string.Empty;
+
+            foreach (var machine in machines)
+            {
+                if (machine.Name == machineName)
+                {
+                    result = machine.ToString();
+                }
+            }
+
+            return result.TrimEnd();
         }
 
         public string ToggleFighterAggressiveMode(string fighterName)
@@ -102,11 +141,11 @@
                 if (fighter.Name == fighterName)
                 {
                     fighter.ToggleAggressiveMode();
-                    return $"Fighter {fighterName} toggled aggressive mode";
+                    return string.Format(OutputMessages.FighterOperationSuccessful, fighterName);
                 }
             }
 
-            return $"Machine {fighterName} could not be found";
+            return string.Format(OutputMessages.MachineNotFound, fighterName);
         }
 
         public string ToggleTankDefenseMode(string tankName)
@@ -116,11 +155,11 @@
                 if (tank.Name == tankName)
                 {
                     tank.ToggleDefenseMode();
-                    return $"Tank {tankName} toggled defense mode";
+                    return string.Format(OutputMessages.TankOperationSuccessful, tankName);
                 }
             }
 
-            return $"Machine {tankName} could not be found";
+            return string.Format(OutputMessages.MachineNotFound, tankName);
         }
     }
 }
