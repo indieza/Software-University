@@ -6,9 +6,14 @@ namespace MortalEngines.Entities.Machines
     public class Fighter : BaseMachine, IFighter
     {
         private const int fighterHealthPoints = 200;
+        private const int attackPointsIncreased = 50;
+        private const int defensePointDecreased = 25;
 
         public Fighter(string name, double attackPoints, double defensePoints)
-            : base(name, attackPoints, defensePoints, fighterHealthPoints)
+            : base(name, 
+                  attackPoints + attackPointsIncreased,
+                  defensePoints - defensePointDecreased, 
+                  fighterHealthPoints)
         {
             this.AggressiveMode = true;
         }

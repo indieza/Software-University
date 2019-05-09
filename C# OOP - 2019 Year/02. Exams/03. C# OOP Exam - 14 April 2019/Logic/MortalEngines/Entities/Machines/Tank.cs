@@ -6,9 +6,11 @@ namespace MortalEngines.Entities.Machines
     public class Tank : BaseMachine, ITank
     {
         private const int tankHealthPoints = 100;
+        private const int attackPointsDecreased = 40;
+        private const int defensePointIncreased = 30;
 
         public Tank(string name, double attackPoints, double defensePoints)
-            : base(name, attackPoints, defensePoints, tankHealthPoints)
+            : base(name, attackPoints-attackPointsDecreased, defensePoints+defensePointIncreased, tankHealthPoints)
         {
             this.DefenseMode = true;
         }

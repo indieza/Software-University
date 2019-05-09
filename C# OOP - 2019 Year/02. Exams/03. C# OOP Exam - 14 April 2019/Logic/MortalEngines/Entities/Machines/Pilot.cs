@@ -53,10 +53,19 @@ namespace MortalEngines.Entities.Machines
             {
                 sb.AppendLine($"- {machine.Name}");
                 sb.AppendLine($" *Type: {machine.GetType().Name}");
-                sb.AppendLine($" *Health: {machine.HealthPoints}");
-                sb.AppendLine($" *Attack: {machine.AttackPoints}");
-                sb.AppendLine($" *Defense: {machine.DefensePoints}");
-                sb.AppendLine($" *Targets: {machine.Targets}");
+                sb.AppendLine($" *Health: {machine.HealthPoints:F2}");
+                sb.AppendLine($" *Attack: {machine.AttackPoints:F2}");
+                sb.AppendLine($" *Defense: {machine.DefensePoints:F2}");
+                sb.Append($" *Targets: ");
+
+                if (machine.Targets.Count == 0)
+                {
+                    sb.AppendLine("None");
+                }
+                else
+                {
+                    sb.AppendLine(string.Join(",", machine.Targets));
+                }
             }
 
             return sb.ToString().TrimEnd();

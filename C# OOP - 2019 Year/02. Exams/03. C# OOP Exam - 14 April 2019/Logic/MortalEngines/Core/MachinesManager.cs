@@ -11,30 +11,102 @@
     public class MachinesManager : IMachinesManager
     {
         private IList<IPilot> pilots;
-        private IList<ITank> tanks;
-        private IList<IFighter> fighters;
         private IList<IMachine> machines;
 
         public MachinesManager()
         {
             this.pilots = new List<IPilot>();
-            this.tanks = new List<ITank>();
-            this.fighters = new List<IFighter>();
             this.machines = new List<IMachine>();
+        }
+
+        public string AttackMachines(string attackingMachineName, string defendingMachineName)
+        {
+            IMachine machineOne = (IMachine)this.machines.FirstOrDefault(m => m.Name == attackingMachineName);
+            IMachine machineTwo = (IMachine)this.machines.FirstOrDefault(m => m.Name == defendingMachineName);
+
+            if (machineOne == null || machineTwo == null)
+            {
+                string name = machineOne == null ? machineOne.Name : machineTwo.Name;
+                return string.Format(OutputMessages.MachineNotFound, name);
+            }
+            else if (machineOne.HealthPoints == 0 || machineTwo.HealthPoints == 0)
+            {
+                string name = machineOne.HealthPoints == 0 ? machineOne.Name : machineTwo.Name;
+                return string.Format(OutputMessages.DeadMachineCannotAttack, name);
+            }
+            else
+            {
+                machineOne.Attack(machineTwo);
+                return string.Format(OutputMessages.AttackSuccessful,
+                    defendingMachineName, 
+                    attackingMachineName, 
+                    machineTwo.HealthPoints);
+            }
+        }
+
+        public string EngageMachine(string selectedPilotName, string selectedMachineName)
+        {
+            IPilot pilot = (Pilot)this.pilots
+                .FirstOrDefault(p => p.Name == selectedPilotName && p.GetType().Name == "Pilot");
+            IMachine machine = (BaseMachine)this.machines.FirstOrDefault(m => m.Name == selectedMachineName);
+
+            if (pilot == null)
+            {
+                return string.Format(OutputMessages.PilotNotFound, selectedPilotName);
+            }
+            else if (machine == null)
+            {
+                return string.Format(OutputMessages.MachineNotFound, selectedMachineName);
+            }
+            else if (machine.Pilot != null)
+            {
+                return string.Format(OutputMessages.MachineHasPilotAlready, selectedMachineName);
+            }
+            else
+            {
+                machine.Pilot = pilot;
+                pilot.AddMachine(machine);
+                return string.Format(OutputMessages.MachineEngaged, selectedPilotName, selectedMachineName);
+            }
         }
 
         public string HirePilot(string name)
         {
             Pilot pilot = new Pilot(name);
 
-            if (pilots.Contains(pilot))
+            if (this.pilots.Contains(pilot))
             {
                 return string.Format(OutputMessages.PilotExists, name);
             }
             else
             {
-                pilots.Add(pilot);
+                this.pilots.Add(pilot);
                 return string.Format(OutputMessages.PilotHired, name);
+            }
+        }
+
+        public string MachineReport(string machineName)
+        {
+            return this.machines.FirstOrDefault(m => m.Name == machineName).ToString();
+        }
+
+        public string ManufactureFighter(string name, double attackPoints, double defensePoints)
+        {
+            IFighter fighter = new Fighter(name, attackPoints, defensePoints);
+
+            if (this.machines.Contains(fighter))
+            {
+                return string.Format(OutputMessages.MachineExists, name);
+            }
+            else
+            {
+                this.machines.Add(fighter);
+                string aggressive = fighter.AggressiveMode ? "ON" : "OFF";
+                return string
+                    .Format(OutputMessages.FighterManufactured, fighter.Name,
+                    fighter.AttackPoints,
+                    fighter.DefensePoints,
+                    aggressive);
             }
         }
 
@@ -42,124 +114,54 @@
         {
             Tank tank = new Tank(name, attackPoints, defensePoints);
 
-            if (tanks.Contains(tank))
+            if (this.machines.Contains(tank))
             {
                 return string.Format(OutputMessages.MachineExists, name);
             }
             else
             {
-                tanks.Add(tank);
-                return string.Format(OutputMessages.TankManufactured, name, attackPoints, defensePoints);
-            }
-        }
-
-        public string ManufactureFighter(string name, double attackPoints, double defensePoints)
-        {
-            Fighter fighter = new Fighter(name, attackPoints, defensePoints);
-
-            if (fighters.Contains(fighter))
-            {
-                return string.Format(OutputMessages.MachineExists, name);
-            }
-            else
-            {
-                fighters.Add(fighter);
-                return string.Format(OutputMessages.FighterManufactured, name, attackPoints, defensePoints, fighter.AggressiveMode == true ? "ON" : "OFF");
-            }
-        }
-
-        public string EngageMachine(string selectedPilotName, string selectedMachineName)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public string AttackMachines(string attackingMachineName, string defendingMachineName)
-        {
-            IMachine machineOne = machines.FirstOrDefault(m => m.Name == attackingMachineName);
-            IMachine machineTwo = machines.FirstOrDefault(m => m.Name == defendingMachineName);
-
-            if (machineOne == null)
-            {
-                return string.Format(OutputMessages.MachineNotFound, machineOne.Name);
-            }
-            else if (machineTwo == null)
-            {
-                return string.Format(OutputMessages.MachineNotFound, machineTwo.Name);
-            }
-            else if (machineOne.HealthPoints == 0)
-            {
-                return string.Format(OutputMessages.DeadMachineCannotAttack, machineOne.Name);
-            }
-            else if (machineTwo.HealthPoints == 0)
-            {
-                return string.Format(OutputMessages.DeadMachineCannotAttack, machineTwo.Name);
-            }
-            else
-            {
-                machineOne.Attack(machineTwo);
-                return string.Format(OutputMessages.AttackSuccessful,
-                    defendingMachineName,
-                    attackingMachineName,
-                    machineTwo.HealthPoints);
+                this.machines.Add(tank);
+                return string.Format(OutputMessages.TankManufactured, tank.Name,
+                    tank.AttackPoints,
+                    tank.DefensePoints);
             }
         }
 
         public string PilotReport(string pilotReporting)
         {
-            string result = string.Empty;
-
-            foreach (var pilot in pilots)
-            {
-                if (pilot.Name == pilotReporting)
-                {
-                    result = pilot.Report();
-                }
-            }
-
-            return result;
-        }
-
-        public string MachineReport(string machineName)
-        {
-            string result = string.Empty;
-
-            foreach (var machine in machines)
-            {
-                if (machine.Name == machineName)
-                {
-                    result = machine.ToString();
-                }
-            }
-
-            return result.TrimEnd();
+            return this.pilots.FirstOrDefault(p => p.Name == pilotReporting).Report();
         }
 
         public string ToggleFighterAggressiveMode(string fighterName)
         {
-            foreach (var fighter in fighters)
-            {
-                if (fighter.Name == fighterName)
-                {
-                    fighter.ToggleAggressiveMode();
-                    return string.Format(OutputMessages.FighterOperationSuccessful, fighterName);
-                }
-            }
+            IFighter machine = (IFighter)this.machines
+                .FirstOrDefault(f => f.Name == fighterName && f.GetType().Name == "Fighter");
 
-            return string.Format(OutputMessages.MachineNotFound, fighterName);
+            if (machine == null)
+            {
+                return string.Format(OutputMessages.MachineNotFound, fighterName);
+            }
+            else
+            {
+                machine.ToggleAggressiveMode();
+                return string.Format(OutputMessages.FighterOperationSuccessful, fighterName);
+            }
         }
 
         public string ToggleTankDefenseMode(string tankName)
         {
-            foreach (var tank in tanks)
-            {
-                if (tank.Name == tankName)
-                {
-                    tank.ToggleDefenseMode();
-                    return string.Format(OutputMessages.TankOperationSuccessful, tankName);
-                }
-            }
+            ITank machine = (ITank)this.machines
+                .FirstOrDefault(t => t.Name == tankName && t.GetType().Name == "Tank");
 
-            return string.Format(OutputMessages.MachineNotFound, tankName);
+            if (machine == null)
+            {
+                return string.Format(OutputMessages.MachineNotFound, tankName);
+            }
+            else
+            {
+                machine.ToggleDefenseMode();
+                return string.Format(OutputMessages.TankOperationSuccessful, tankName);
+            }
         }
     }
 }
