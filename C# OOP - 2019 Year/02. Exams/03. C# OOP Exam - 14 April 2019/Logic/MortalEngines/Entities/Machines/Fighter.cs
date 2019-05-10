@@ -10,9 +10,9 @@ namespace MortalEngines.Entities.Machines
         private const int defensePointDecreased = 25;
 
         public Fighter(string name, double attackPoints, double defensePoints)
-            : base(name, 
+            : base(name,
                   attackPoints + attackPointsIncreased,
-                  defensePoints - defensePointDecreased, 
+                  defensePoints - defensePointDecreased,
                   fighterHealthPoints)
         {
             this.AggressiveMode = true;
@@ -25,14 +25,14 @@ namespace MortalEngines.Entities.Machines
             if (this.AggressiveMode == true)
             {
                 this.AggressiveMode = false;
-                this.AttackPoints -= 50;
-                this.DefensePoints += 25;
+                this.AttackPoints -= attackPointsIncreased;
+                this.DefensePoints += defensePointDecreased;
             }
             else
             {
                 this.AggressiveMode = true;
-                this.AttackPoints += 50;
-                this.DefensePoints -= 25;
+                this.AttackPoints += attackPointsIncreased;
+                this.DefensePoints -= defensePointDecreased;
             }
         }
 

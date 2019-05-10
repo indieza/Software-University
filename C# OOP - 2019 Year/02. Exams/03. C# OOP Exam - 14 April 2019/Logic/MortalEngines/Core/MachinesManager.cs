@@ -12,11 +12,15 @@
     {
         private IList<IPilot> pilots;
         private IList<IMachine> machines;
+        private IList<string> machineNames;
+        private IList<string> pilotNames;
 
         public MachinesManager()
         {
             this.pilots = new List<IPilot>();
             this.machines = new List<IMachine>();
+            this.machineNames = new List<string>();
+            this.pilotNames = new List<string>();
         }
 
         public string AttackMachines(string attackingMachineName, string defendingMachineName)
@@ -26,20 +30,20 @@
 
             if (machineOne == null || machineTwo == null)
             {
-                string name = machineOne == null ? machineOne.Name : machineTwo.Name;
+                string name = machineOne == null ? attackingMachineName : defendingMachineName;
                 return string.Format(OutputMessages.MachineNotFound, name);
             }
             else if (machineOne.HealthPoints == 0 || machineTwo.HealthPoints == 0)
             {
-                string name = machineOne.HealthPoints == 0 ? machineOne.Name : machineTwo.Name;
+                string name = machineOne.HealthPoints == 0 ? attackingMachineName : defendingMachineName;
                 return string.Format(OutputMessages.DeadMachineCannotAttack, name);
             }
             else
             {
                 machineOne.Attack(machineTwo);
                 return string.Format(OutputMessages.AttackSuccessful,
-                    defendingMachineName, 
-                    attackingMachineName, 
+                    defendingMachineName,
+                    attackingMachineName,
                     machineTwo.HealthPoints);
             }
         }
@@ -74,13 +78,14 @@
         {
             Pilot pilot = new Pilot(name);
 
-            if (this.pilots.Contains(pilot))
+            if (this.pilotNames.Contains(name))
             {
                 return string.Format(OutputMessages.PilotExists, name);
             }
             else
             {
                 this.pilots.Add(pilot);
+                this.pilotNames.Add(name);
                 return string.Format(OutputMessages.PilotHired, name);
             }
         }
@@ -94,16 +99,17 @@
         {
             IFighter fighter = new Fighter(name, attackPoints, defensePoints);
 
-            if (this.machines.Contains(fighter))
+            if (this.machineNames.Contains(name))
             {
                 return string.Format(OutputMessages.MachineExists, name);
             }
             else
             {
                 this.machines.Add(fighter);
+                this.machineNames.Add(name);
                 string aggressive = fighter.AggressiveMode ? "ON" : "OFF";
                 return string
-                    .Format(OutputMessages.FighterManufactured, fighter.Name,
+                    .Format(OutputMessages.FighterManufactured, name,
                     fighter.AttackPoints,
                     fighter.DefensePoints,
                     aggressive);
@@ -114,14 +120,15 @@
         {
             Tank tank = new Tank(name, attackPoints, defensePoints);
 
-            if (this.machines.Contains(tank))
+            if (this.machineNames.Contains(name))
             {
                 return string.Format(OutputMessages.MachineExists, name);
             }
             else
             {
                 this.machines.Add(tank);
-                return string.Format(OutputMessages.TankManufactured, tank.Name,
+                this.machineNames.Add(name);
+                return string.Format(OutputMessages.TankManufactured, name,
                     tank.AttackPoints,
                     tank.DefensePoints);
             }

@@ -10,7 +10,7 @@ namespace MortalEngines.Entities.Machines
         private const int defensePointIncreased = 30;
 
         public Tank(string name, double attackPoints, double defensePoints)
-            : base(name, attackPoints-attackPointsDecreased, defensePoints+defensePointIncreased, tankHealthPoints)
+            : base(name, attackPoints - attackPointsDecreased, defensePoints + defensePointIncreased, tankHealthPoints)
         {
             this.DefenseMode = true;
         }
@@ -22,14 +22,14 @@ namespace MortalEngines.Entities.Machines
             if (this.DefenseMode == true)
             {
                 this.DefenseMode = false;
-                this.AttackPoints += 40;
-                this.DefensePoints -= 30;
+                this.AttackPoints += attackPointsDecreased;
+                this.DefensePoints -= defensePointIncreased;
             }
             else
             {
                 this.DefenseMode = true;
-                this.AttackPoints -= 40;
-                this.DefensePoints += 30;
+                this.AttackPoints -= attackPointsDecreased;
+                this.DefensePoints += defensePointIncreased;
             }
         }
 
