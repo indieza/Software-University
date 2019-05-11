@@ -52,7 +52,7 @@ namespace PlayersAndMonsters.Repositories.Repostitories
                 throw new ArgumentException("Card cannot be null!");
             }
 
-            this.cards.ToList().Remove(card);
+            this.cards.Remove(card);
             return true;
         }
     }

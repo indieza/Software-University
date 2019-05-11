@@ -1,4 +1,5 @@
 ﻿using PlayersAndMonsters.Models.BattleFields.Contracts;
+using PlayersAndMonsters.Models.Cards.Contracts;
 using PlayersAndMonsters.Models.Players.Contracts;
 using System;
 using System.Linq;
@@ -32,11 +33,37 @@ namespace PlayersAndMonsters.Models.BattleFields.Field
                 }
             }
 
-            attackPlayer.Health += attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
-            enemyPlayer.Health += enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+            int attackerBonusHealth = attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+            attackPlayer.Health += attackerBonusHealth;
 
-            enemyPlayer.TakeDamage(attackPlayer.CardRepository.Cards.Sum(c => c.DamagePoints));
-            attackPlayer.TakeDamage(enemyPlayer.CardRepository.Cards.Sum(c => c.DamagePoints));
+            int enemyBonusHealth = enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+            enemyPlayer.Health += enemyBonusHealth;
+
+            while (attackPlayer.CardRepository.Cards.Count != 0
+                && enemyPlayer.CardRepository.Cards.Count != 0)
+            {
+                ICard attackerCard = attackPlayer.CardRepository.Cards.ToList()[0];
+                ICard enemyCard = enemyPlayer.CardRepository.Cards.ToList()[0];
+
+                enemyPlayer.TakeDamage(attackerCard.DamagePoints);
+
+                if (enemyPlayer.IsDead)
+                {
+                    attackPlayer.CardRepository.Remove(attackerCard);
+                    break;
+                }
+
+                attackPlayer.TakeDamage(enemyCard.DamagePoints);
+
+                if (attackPlayer.IsDead)
+                {
+                    enemyPlayer.CardRepository.Remove(enemyCard);
+                    break;
+                }
+
+                attackPlayer.CardRepository.Cards.ToList().RemoveAt(0);
+                enemyPlayer.CardRepository.Cards.ToList().RemoveAt(0);
+            }
         }
     }
 }
