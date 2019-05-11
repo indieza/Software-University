@@ -1,10 +1,8 @@
 ﻿using PlayersAndMonsters.Core.Factories.Contracts;
 using PlayersAndMonsters.Models.Cards.Contracts;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace PlayersAndMonsters.Core.Factories.Factories
 {

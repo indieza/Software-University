@@ -1,14 +1,9 @@
 ﻿using PlayersAndMonsters.Core.Factories.Contracts;
-using PlayersAndMonsters.Models.Cards.Cards;
-using PlayersAndMonsters.Models.Cards.Contracts;
 using PlayersAndMonsters.Models.Players.Contracts;
-using PlayersAndMonsters.Repositories.Contracts;
 using PlayersAndMonsters.Repositories.Repostitories;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace PlayersAndMonsters.Core.Factories.Factories
 {

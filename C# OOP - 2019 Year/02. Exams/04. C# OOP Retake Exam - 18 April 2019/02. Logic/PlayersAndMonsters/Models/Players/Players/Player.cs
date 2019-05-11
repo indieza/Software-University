@@ -1,8 +1,6 @@
 ﻿using PlayersAndMonsters.Models.Players.Contracts;
 using PlayersAndMonsters.Repositories.Contracts;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PlayersAndMonsters.Models.Players
 {
@@ -63,11 +61,14 @@ namespace PlayersAndMonsters.Models.Players
                 throw new ArgumentException("Damage points cannot be less than zero.");
             }
 
-            this.Health -= damagePoints;
-
-            if (this.Health < 0)
+            if (this.Health - damagePoints < 0)
             {
                 this.Health = 0;
+                this.IsDead = true;
+            }
+            else
+            {
+                this.Health -= damagePoints;
             }
         }
     }

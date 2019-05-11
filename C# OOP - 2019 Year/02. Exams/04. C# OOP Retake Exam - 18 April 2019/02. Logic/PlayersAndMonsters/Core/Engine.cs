@@ -1,7 +1,5 @@
 ﻿using PlayersAndMonsters.Core.Contracts;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PlayersAndMonsters.Core
 {
@@ -12,31 +10,41 @@ namespace PlayersAndMonsters.Core
             string line = Console.ReadLine();
             ManagerController controller = new ManagerController();
 
-            while (line != "Report")
+            while (line != "Exit")
             {
                 string[] items = line.Split();
                 string result = string.Empty;
-
-                switch (items[0])
+                try
                 {
-                    case "AddPlayer":
-                        result = controller.AddPlayer(items[1], items[2]);
-                        break;
+                    switch (items[0])
+                    {
+                        case "AddPlayer":
+                            result = controller.AddPlayer(items[1], items[2]);
+                            break;
 
-                    case "AddCard":
-                        result = controller.AddCard(items[1], items[2]);
-                        break;
+                        case "AddCard":
+                            result = controller.AddCard(items[1], items[2]);
+                            break;
 
-                    case "AddPlayerCard":
-                        result = controller.AddPlayerCard(items[1], items[2]);
-                        break;
+                        case "AddPlayerCard":
+                            result = controller.AddPlayerCard(items[1], items[2]);
+                            break;
 
-                    case "Fight":
-                        result = controller.Fight(items[1], items[2]);
-                        break;
+                        case "Fight":
+                            result = controller.Fight(items[1], items[2]);
+                            break;
 
-                    default:
-                        break;
+                        case "Report":
+                            result = controller.Report();
+                            break;
+
+                        default:
+                            break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    result = ex.Message;
                 }
 
                 Console.WriteLine(result);

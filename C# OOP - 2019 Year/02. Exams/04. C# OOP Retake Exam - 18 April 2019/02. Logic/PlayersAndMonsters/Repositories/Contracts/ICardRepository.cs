@@ -1,8 +1,7 @@
 ﻿namespace PlayersAndMonsters.Repositories.Contracts
 {
-    using System.Collections.Generic;
-
     using Models.Cards.Contracts;
+    using System.Collections.Generic;
 
     public interface ICardRepository
     {

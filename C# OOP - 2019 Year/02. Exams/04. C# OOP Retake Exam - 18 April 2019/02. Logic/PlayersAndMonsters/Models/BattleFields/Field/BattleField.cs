@@ -2,8 +2,6 @@
 using PlayersAndMonsters.Models.Players.Contracts;
 using System;
 using System.Linq;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PlayersAndMonsters.Models.BattleFields.Field
 {
@@ -35,7 +33,7 @@ namespace PlayersAndMonsters.Models.BattleFields.Field
             }
 
             attackPlayer.Health += attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
-            enemyPlayer.Health += attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+            enemyPlayer.Health += enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
 
             enemyPlayer.TakeDamage(attackPlayer.CardRepository.Cards.Sum(c => c.DamagePoints));
             attackPlayer.TakeDamage(enemyPlayer.CardRepository.Cards.Sum(c => c.DamagePoints));

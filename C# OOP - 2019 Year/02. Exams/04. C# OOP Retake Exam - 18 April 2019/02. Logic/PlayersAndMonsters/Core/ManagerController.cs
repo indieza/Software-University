@@ -1,16 +1,15 @@
 ﻿namespace PlayersAndMonsters.Core
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
     using Contracts;
     using PlayersAndMonsters.Common;
     using PlayersAndMonsters.Core.Factories.Factories;
+    using PlayersAndMonsters.Models.BattleFields.Field;
     using PlayersAndMonsters.Models.Cards.Contracts;
     using PlayersAndMonsters.Models.Players.Contracts;
     using PlayersAndMonsters.Repositories.Repostitories;
+    using System.Collections.Generic;
     using System.Linq;
-    using PlayersAndMonsters.Models.Cards.Cards;
+    using System.Text;
 
     public class ManagerController : IManagerController
     {
@@ -20,6 +19,7 @@
         private PlayerRepository playerRepository;
         private PlayerFactory playerFactory;
         private CardFactory cardFactory;
+        private BattleField field;
 
         public ManagerController()
         {
@@ -29,6 +29,7 @@
             this.playerRepository = new PlayerRepository();
             this.playerFactory = new PlayerFactory();
             this.cardFactory = new CardFactory();
+            this.field = new BattleField();
         }
 
         public string AddPlayer(string type, string username)
@@ -49,17 +50,44 @@
 
         public string AddPlayerCard(string username, string cardName)
         {
+            IPlayer player = this.players.FirstOrDefault(p => p.Username == username);
+            ICard card = this.cards.FirstOrDefault(c => c.Name == cardName);
+
+            playerRepository.Find(username).CardRepository.Add(card);
+
+            //this.cardRepository.Remove(this.cards.FirstOrDefault(c => c.Name == cardName));
+            //this.cards.Remove(this.cards.FirstOrDefault(c => c.Name == cardName));
+
             return string.Format(ConstantMessages.SuccessfullyAddedPlayerWithCards, cardName, username);
         }
 
         public string Fight(string attackUser, string enemyUser)
         {
-            throw new NotImplementedException();
+            IPlayer attacker = this.players.FirstOrDefault(p => p.Username == attackUser);
+            IPlayer enemy = this.players.FirstOrDefault(p => p.Username == enemyUser);
+
+            this.field.Fight(attacker, enemy);
+
+            return string.Format(ConstantMessages.FightInfo, attacker.Health, enemy.Health);
         }
 
         public string Report()
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var user in this.players)
+            {
+                sb.AppendLine($"Username: {user.Username} - Health: {user.Health} – Cards {user.CardRepository.Cards.Count}");
+
+                foreach (var card in user.CardRepository.Cards)
+                {
+                    sb.AppendLine($"Card: {card.Name} - Damage: {card.DamagePoints}");
+                }
+
+                sb.AppendLine("###");
+            }
+
+            return sb.ToString().TrimEnd();
         }
     }
 }

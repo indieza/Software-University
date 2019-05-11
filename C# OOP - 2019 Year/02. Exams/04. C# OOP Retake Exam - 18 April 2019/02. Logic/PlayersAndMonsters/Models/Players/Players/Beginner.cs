@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using PlayersAndMonsters.Repositories.Contracts;
+﻿using PlayersAndMonsters.Repositories.Contracts;
 
 namespace PlayersAndMonsters.Models.Players.Players
 {

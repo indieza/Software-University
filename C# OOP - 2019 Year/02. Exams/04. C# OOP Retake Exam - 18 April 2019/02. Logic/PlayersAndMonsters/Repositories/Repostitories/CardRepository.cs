@@ -2,7 +2,6 @@
 using PlayersAndMonsters.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 namespace PlayersAndMonsters.Repositories.Repostitories
@@ -20,7 +19,7 @@ namespace PlayersAndMonsters.Repositories.Repostitories
         {
             get
             {
-                return this.Cards.Count;
+                return this.cards.Count;
             }
         }
 
@@ -43,7 +42,7 @@ namespace PlayersAndMonsters.Repositories.Repostitories
 
         public ICard Find(string name)
         {
-            return this.Cards.FirstOrDefault(c => c.Name == name);
+            return this.cards.FirstOrDefault(c => c.Name == name);
         }
 
         public bool Remove(ICard card)
@@ -53,7 +52,7 @@ namespace PlayersAndMonsters.Repositories.Repostitories
                 throw new ArgumentException("Card cannot be null!");
             }
 
-            this.Cards.ToList().Remove(card);
+            this.cards.ToList().Remove(card);
             return true;
         }
     }
