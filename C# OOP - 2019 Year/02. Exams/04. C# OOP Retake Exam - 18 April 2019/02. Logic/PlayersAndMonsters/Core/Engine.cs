@@ -15,29 +15,31 @@ namespace PlayersAndMonsters.Core
             while (line != "Report")
             {
                 string[] items = line.Split();
+                string result = string.Empty;
 
                 switch (items[0])
                 {
                     case "AddPlayer":
-                        controller.AddPlayer(items[1], items[2]);
+                        result = controller.AddPlayer(items[1], items[2]);
                         break;
 
                     case "AddCard":
-                        controller.AddCard(items[1], items[2]);
+                        result = controller.AddCard(items[1], items[2]);
                         break;
 
                     case "AddPlayerCard":
-                        controller.AddPlayerCard(items[1], items[2]);
+                        result = controller.AddPlayerCard(items[1], items[2]);
                         break;
 
                     case "Fight":
-                        controller.Fight(items[1], items[2]);
+                        result = controller.Fight(items[1], items[2]);
                         break;
 
                     default:
                         break;
                 }
 
+                Console.WriteLine(result);
                 line = Console.ReadLine();
             }
         }

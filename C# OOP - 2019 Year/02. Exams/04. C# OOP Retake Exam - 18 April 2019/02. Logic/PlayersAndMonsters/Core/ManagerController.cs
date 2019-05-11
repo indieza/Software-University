@@ -16,6 +16,8 @@
     {
         private IList<IPlayer> players;
         private IList<ICard> cards;
+        private CardRepository cardRepository;
+        private PlayerRepository playerRepository;
         private PlayerFactory playerFactory;
         private CardFactory cardFactory;
 
@@ -23,6 +25,8 @@
         {
             this.players = new List<IPlayer>();
             this.cards = new List<ICard>();
+            this.cardRepository = new CardRepository();
+            this.playerRepository = new PlayerRepository();
             this.playerFactory = new PlayerFactory();
             this.cardFactory = new CardFactory();
         }
@@ -31,6 +35,7 @@
         {
             IPlayer player = this.playerFactory.CreatePlayer(type, username);
             this.players.Add(player);
+            this.playerRepository.Add(player);
             return string.Format(ConstantMessages.SuccessfullyAddedPlayer, type, username);
         }
 
@@ -38,16 +43,12 @@
         {
             ICard card = this.cardFactory.CreateCard(type, name);
             this.cards.Add(card);
+            cardRepository.Add(card);
             return string.Format(ConstantMessages.SuccessfullyAddedCard, type, name);
         }
 
         public string AddPlayerCard(string username, string cardName)
         {
-            this.players
-                .FirstOrDefault(p => p.Username == username)
-                .CardRepository
-                .Add(this.cards.FirstOrDefault(c => c.Name == cardName));
-
             return string.Format(ConstantMessages.SuccessfullyAddedPlayerWithCards, cardName, username);
         }
 

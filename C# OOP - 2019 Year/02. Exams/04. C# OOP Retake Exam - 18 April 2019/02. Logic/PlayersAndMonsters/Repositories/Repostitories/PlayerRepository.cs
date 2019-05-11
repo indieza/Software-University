@@ -9,6 +9,13 @@ namespace PlayersAndMonsters.Repositories.Repostitories
 {
     public class PlayerRepository : IPlayerRepository
     {
+        private IList<IPlayer> players;
+
+        public PlayerRepository()
+        {
+            this.players = new List<IPlayer>();
+        }
+
         public int Count
         {
             get
@@ -17,7 +24,7 @@ namespace PlayersAndMonsters.Repositories.Repostitories
             }
         }
 
-        public IReadOnlyCollection<IPlayer> Players { get; }
+        public IReadOnlyCollection<IPlayer> Players => this.players.ToList();
 
         public void Add(IPlayer player)
         {
@@ -25,12 +32,12 @@ namespace PlayersAndMonsters.Repositories.Repostitories
             {
                 throw new ArgumentException("Player cannot be null");
             }
-            if (this.Players.FirstOrDefault(p => p.Username == player.Username) != null)
+            if (this.players.FirstOrDefault(p => p.Username == player.Username) != null)
             {
                 throw new ArgumentException($"Player {player.Username} already exists!");
             }
 
-            this.Players.Append(player);
+            this.players.Add(player);
         }
 
         public IPlayer Find(string username)
