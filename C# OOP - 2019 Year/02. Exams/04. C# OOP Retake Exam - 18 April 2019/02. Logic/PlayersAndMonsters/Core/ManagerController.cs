@@ -44,27 +44,21 @@
         {
             ICard card = this.cardFactory.CreateCard(type, name);
             this.cards.Add(card);
-            cardRepository.Add(card);
+            this.cardRepository.Add(card);
             return string.Format(ConstantMessages.SuccessfullyAddedCard, type, name);
         }
 
         public string AddPlayerCard(string username, string cardName)
         {
-            IPlayer player = this.players.FirstOrDefault(p => p.Username == username);
-            ICard card = this.cards.FirstOrDefault(c => c.Name == cardName);
-
-            playerRepository.Find(username).CardRepository.Add(card);
-
-            //this.cardRepository.Remove(this.cards.FirstOrDefault(c => c.Name == cardName));
-            //this.cards.Remove(this.cards.FirstOrDefault(c => c.Name == cardName));
+            playerRepository.Find(username).CardRepository.Add(this.cardRepository.Find(cardName));
 
             return string.Format(ConstantMessages.SuccessfullyAddedPlayerWithCards, cardName, username);
         }
 
         public string Fight(string attackUser, string enemyUser)
         {
-            IPlayer attacker = this.players.FirstOrDefault(p => p.Username == attackUser);
-            IPlayer enemy = this.players.FirstOrDefault(p => p.Username == enemyUser);
+            IPlayer attacker = this.playerRepository.Find(attackUser);
+            IPlayer enemy = this.playerRepository.Find(enemyUser);
 
             this.field.Fight(attacker, enemy);
 

@@ -17,20 +17,12 @@ namespace PlayersAndMonsters.Models.BattleFields.Field
             if (attackPlayer.GetType().Name == "Beginner")
             {
                 attackPlayer.Health += 40;
-
-                foreach (var card in attackPlayer.CardRepository.Cards)
-                {
-                    card.DamagePoints += 30;
-                }
+                attackPlayer.CardRepository.Cards.ToList().ForEach(c => c.DamagePoints += 30);
             }
             if (enemyPlayer.GetType().Name == "Beginner")
             {
                 enemyPlayer.Health += 40;
-
-                foreach (var card in enemyPlayer.CardRepository.Cards)
-                {
-                    card.DamagePoints += 30;
-                }
+                enemyPlayer.CardRepository.Cards.ToList().ForEach(c => c.DamagePoints += 30);
             }
 
             int attackerBonusHealth = attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
@@ -39,8 +31,7 @@ namespace PlayersAndMonsters.Models.BattleFields.Field
             int enemyBonusHealth = enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
             enemyPlayer.Health += enemyBonusHealth;
 
-            while (attackPlayer.CardRepository.Cards.Count != 0
-                && enemyPlayer.CardRepository.Cards.Count != 0)
+            while (attackPlayer.CardRepository.Cards.Count != 0 && enemyPlayer.CardRepository.Cards.Count != 0)
             {
                 ICard attackerCard = attackPlayer.CardRepository.Cards.ToList()[0];
                 ICard enemyCard = enemyPlayer.CardRepository.Cards.ToList()[0];
