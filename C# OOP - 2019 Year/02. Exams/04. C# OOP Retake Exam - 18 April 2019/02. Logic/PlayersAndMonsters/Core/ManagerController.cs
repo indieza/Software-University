@@ -13,8 +13,6 @@
 
     public class ManagerController : IManagerController
     {
-        private IList<IPlayer> players;
-        private IList<ICard> cards;
         private CardRepository cardRepository;
         private PlayerRepository playerRepository;
         private PlayerFactory playerFactory;
@@ -23,8 +21,6 @@
 
         public ManagerController()
         {
-            this.players = new List<IPlayer>();
-            this.cards = new List<ICard>();
             this.cardRepository = new CardRepository();
             this.playerRepository = new PlayerRepository();
             this.playerFactory = new PlayerFactory();
@@ -35,7 +31,6 @@
         public string AddPlayer(string type, string username)
         {
             IPlayer player = this.playerFactory.CreatePlayer(type, username);
-            this.players.Add(player);
             this.playerRepository.Add(player);
             return string.Format(ConstantMessages.SuccessfullyAddedPlayer, type, username);
         }
@@ -43,7 +38,6 @@
         public string AddCard(string type, string name)
         {
             ICard card = this.cardFactory.CreateCard(type, name);
-            this.cards.Add(card);
             this.cardRepository.Add(card);
             return string.Format(ConstantMessages.SuccessfullyAddedCard, type, name);
         }
