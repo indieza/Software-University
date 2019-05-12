@@ -69,7 +69,7 @@
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach (var user in this.players)
+            foreach (var user in this.playerRepository.Players)
             {
                 sb.AppendLine($"Username: {user.Username} - Health: {user.Health} – Cards {user.CardRepository.Cards.Count}");
 
