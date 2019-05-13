@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\02. StackSum\bin\Debug\_02.StackSum.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\02. StackSum\bin\Debug\_02.StackSum.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\02. StackSum\bin\Debug\_02.StackSum.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\02. StackSum\obj\Debug\02. StackSum.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\02. StackSum\obj\Debug\_02.StackSum.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\02. StackSum\obj\Debug\_02.StackSum.pdb
