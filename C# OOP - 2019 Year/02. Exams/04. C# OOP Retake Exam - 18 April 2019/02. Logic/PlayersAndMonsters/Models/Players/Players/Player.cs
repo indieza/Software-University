@@ -52,7 +52,7 @@ namespace PlayersAndMonsters.Models.Players
             }
         }
 
-        public bool IsDead { get; protected set; }
+        public bool IsDead => this.Health <= 0;
 
         public void TakeDamage(int damagePoints)
         {
@@ -61,14 +61,13 @@ namespace PlayersAndMonsters.Models.Players
                 throw new ArgumentException("Damage points cannot be less than zero.");
             }
 
-            if (this.Health - damagePoints <= 0)
+            if (this.Health - damagePoints >= 0)
             {
-                this.Health = 0;
-                this.IsDead = true;
+                this.Health -= damagePoints;
             }
             else
             {
-                this.Health -= damagePoints;
+                this.Health = 0;
             }
         }
     }

@@ -7,17 +7,15 @@
     using PlayersAndMonsters.Models.Cards.Contracts;
     using PlayersAndMonsters.Models.Players.Contracts;
     using PlayersAndMonsters.Repositories.Repostitories;
-    using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
 
     public class ManagerController : IManagerController
     {
-        private CardRepository cardRepository;
-        private PlayerRepository playerRepository;
-        private PlayerFactory playerFactory;
-        private CardFactory cardFactory;
-        private BattleField field;
+        private readonly CardRepository cardRepository;
+        private readonly PlayerRepository playerRepository;
+        private readonly PlayerFactory playerFactory;
+        private readonly CardFactory cardFactory;
+        private readonly BattleField field;
 
         public ManagerController()
         {
@@ -63,16 +61,16 @@
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach (var user in this.playerRepository.Players)
+            foreach (var player in this.playerRepository.Players)
             {
-                sb.AppendLine($"Username: {user.Username} - Health: {user.Health} – Cards {user.CardRepository.Cards.Count}");
+                sb.AppendLine(string.Format(ConstantMessages.PlayerReportInfo, player.Username, player.Health, player.CardRepository.Count));
 
-                foreach (var card in user.CardRepository.Cards)
+                foreach (var card in player.CardRepository.Cards)
                 {
-                    sb.AppendLine($"Card: {card.Name} - Damage: {card.DamagePoints}");
+                    sb.AppendLine(string.Format(ConstantMessages.CardReportInfo, card.Name, card.DamagePoints));
                 }
 
-                sb.AppendLine("###");
+                sb.AppendLine(ConstantMessages.DefaultReportSeparator);
             }
 
             return sb.ToString().TrimEnd();

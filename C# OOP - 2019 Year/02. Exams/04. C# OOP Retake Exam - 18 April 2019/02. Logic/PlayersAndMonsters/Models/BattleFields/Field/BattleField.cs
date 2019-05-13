@@ -1,6 +1,6 @@
 ﻿using PlayersAndMonsters.Models.BattleFields.Contracts;
-using PlayersAndMonsters.Models.Cards.Contracts;
 using PlayersAndMonsters.Models.Players.Contracts;
+using PlayersAndMonsters.Models.Players.Players;
 using System;
 using System.Linq;
 
@@ -14,46 +14,39 @@ namespace PlayersAndMonsters.Models.BattleFields.Field
             {
                 throw new ArgumentException("Player is dead!");
             }
-            if (attackPlayer.GetType().Name == "Beginner")
+            if (attackPlayer.GetType() == typeof(Beginner))
             {
                 attackPlayer.Health += 40;
                 attackPlayer.CardRepository.Cards.ToList().ForEach(c => c.DamagePoints += 30);
             }
-            if (enemyPlayer.GetType().Name == "Beginner")
+            if (enemyPlayer.GetType() == typeof(Beginner))
             {
                 enemyPlayer.Health += 40;
                 enemyPlayer.CardRepository.Cards.ToList().ForEach(c => c.DamagePoints += 30);
             }
 
-            int attackerBonusHealth = attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
-            attackPlayer.Health += attackerBonusHealth;
+            attackPlayer.Health += attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
 
-            int enemyBonusHealth = enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
-            enemyPlayer.Health += enemyBonusHealth;
+            enemyPlayer.Health += enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
 
-            while (attackPlayer.CardRepository.Cards.Count != 0 && enemyPlayer.CardRepository.Cards.Count != 0)
+            while (true)
             {
-                ICard attackerCard = attackPlayer.CardRepository.Cards.ToList()[0];
-                ICard enemyCard = enemyPlayer.CardRepository.Cards.ToList()[0];
+                int attackerAttackPoint = attackPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
 
-                enemyPlayer.TakeDamage(attackerCard.DamagePoints);
+                enemyPlayer.TakeDamage(attackerAttackPoint);
 
-                if (enemyPlayer.IsDead)
+                if (enemyPlayer.Health == 0)
                 {
-                    attackPlayer.CardRepository.Remove(attackerCard);
                     break;
                 }
 
-                attackPlayer.TakeDamage(enemyCard.DamagePoints);
+                int enemyAttackPoint = enemyPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
+                attackPlayer.TakeDamage(enemyAttackPoint);
 
-                if (attackPlayer.IsDead)
+                if (attackPlayer.Health == 0)
                 {
-                    enemyPlayer.CardRepository.Remove(enemyCard);
                     break;
                 }
-
-                attackPlayer.CardRepository.Cards.ToList().RemoveAt(0);
-                enemyPlayer.CardRepository.Cards.ToList().RemoveAt(0);
             }
         }
     }

@@ -1,5 +1,7 @@
 ﻿using PlayersAndMonsters.Core.Contracts;
-using System;
+using PlayersAndMonsters.IO.Contracts;
+using PlayersAndMonsters.IO.IO;
+using System.Reflection;
 
 namespace PlayersAndMonsters.Core
 {
@@ -7,13 +9,17 @@ namespace PlayersAndMonsters.Core
     {
         public void Run()
         {
-            string line = Console.ReadLine();
             ManagerController controller = new ManagerController();
+            IReader reader = new Reader();
+            IWriter writer = new Writer();
+
+            string line = reader.ReadLine();
 
             while (line != "Exit")
             {
                 string[] items = line.Split();
                 string result = string.Empty;
+
                 try
                 {
                     switch (items[0])
@@ -42,13 +48,13 @@ namespace PlayersAndMonsters.Core
                             break;
                     }
                 }
-                catch (Exception ex)
+                catch (TargetInvocationException ex)
                 {
-                    result = ex.Message;
+                    writer.WriteLine(ex.InnerException.Message);
                 }
 
-                Console.WriteLine(result);
-                line = Console.ReadLine();
+                writer.WriteLine(result);
+                line = reader.ReadLine();
             }
         }
     }

@@ -8,22 +8,16 @@ namespace PlayersAndMonsters.Repositories.Repostitories
 {
     public class CardRepository : ICardRepository
     {
-        private IList<ICard> cards;
+        private List<ICard> cards;
 
         public CardRepository()
         {
             this.cards = new List<ICard>();
         }
 
-        public int Count
-        {
-            get
-            {
-                return this.cards.Count;
-            }
-        }
+        public int Count => this.cards.Count;
 
-        public IReadOnlyCollection<ICard> Cards => this.cards.ToList();
+        public IReadOnlyCollection<ICard> Cards => this.cards.AsReadOnly();
 
         public void Add(ICard card)
         {
@@ -32,7 +26,7 @@ namespace PlayersAndMonsters.Repositories.Repostitories
                 throw new ArgumentException("Card cannot be null!");
             }
 
-            if (this.cards.FirstOrDefault(c => c.Name == card.Name) != null)
+            if (this.cards.Any(x => x.Name == card.Name))
             {
                 throw new ArgumentException($"Card {card.Name} already exists!");
             }
@@ -52,8 +46,8 @@ namespace PlayersAndMonsters.Repositories.Repostitories
                 throw new ArgumentException("Card cannot be null!");
             }
 
-            this.cards.Remove(card);
-            return true;
+            bool isRemoved = this.cards.Remove(card);
+            return isRemoved;
         }
     }
 }

@@ -8,30 +8,24 @@ namespace PlayersAndMonsters.Repositories.Repostitories
 {
     public class PlayerRepository : IPlayerRepository
     {
-        private IList<IPlayer> players;
+        private List<IPlayer> players;
 
         public PlayerRepository()
         {
             this.players = new List<IPlayer>();
         }
 
-        public int Count
-        {
-            get
-            {
-                return this.Players.Count;
-            }
-        }
+        public int Count => this.players.Count;
 
-        public IReadOnlyCollection<IPlayer> Players => this.players.ToList();
+        public IReadOnlyCollection<IPlayer> Players => this.players.AsReadOnly();
 
         public void Add(IPlayer player)
         {
             if (player == null)
             {
-                throw new ArgumentException("Player cannot be null");
+                throw new ArgumentException("Player cannot be null!");
             }
-            if (this.players.FirstOrDefault(p => p.Username == player.Username) != null)
+            if (this.players.Any(x => x.Username == player.Username))
             {
                 throw new ArgumentException($"Player {player.Username} already exists!");
             }
@@ -48,12 +42,12 @@ namespace PlayersAndMonsters.Repositories.Repostitories
         {
             if (player == null)
             {
-                throw new ArgumentException("Player cannot be null");
+                throw new ArgumentException("Player cannot be null!");
             }
 
-            this.Players.ToList().Remove(player);
+            bool isRemovedd = this.players.Remove(player);
 
-            return true;
+            return isRemovedd;
         }
     }
 }
