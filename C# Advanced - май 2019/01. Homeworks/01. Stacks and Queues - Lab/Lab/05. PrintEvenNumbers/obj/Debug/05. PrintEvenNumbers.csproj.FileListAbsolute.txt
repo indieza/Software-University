@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\05. PrintEvenNumbers\bin\Debug\_05.PrintEvenNumbers.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\05. PrintEvenNumbers\bin\Debug\_05.PrintEvenNumbers.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\05. PrintEvenNumbers\bin\Debug\_05.PrintEvenNumbers.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\05. PrintEvenNumbers\obj\Debug\05. PrintEvenNumbers.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\05. PrintEvenNumbers\obj\Debug\_05.PrintEvenNumbers.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\05. PrintEvenNumbers\obj\Debug\_05.PrintEvenNumbers.pdb

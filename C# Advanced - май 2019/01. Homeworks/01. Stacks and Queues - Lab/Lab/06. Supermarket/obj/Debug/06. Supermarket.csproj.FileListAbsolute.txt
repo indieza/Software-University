@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\06. Supermarket\bin\Debug\_06.Supermarket.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\06. Supermarket\bin\Debug\_06.Supermarket.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\06. Supermarket\bin\Debug\_06.Supermarket.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\06. Supermarket\obj\Debug\06. Supermarket.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\06. Supermarket\obj\Debug\_06.Supermarket.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\06. Supermarket\obj\Debug\_06.Supermarket.pdb
