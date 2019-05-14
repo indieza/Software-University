@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\04. MatchingBrackets\bin\Debug\_04.MatchingBrackets.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\04. MatchingBrackets\bin\Debug\_04.MatchingBrackets.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\04. MatchingBrackets\bin\Debug\_04.MatchingBrackets.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\04. MatchingBrackets\obj\Debug\04. MatchingBrackets.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\04. MatchingBrackets\obj\Debug\04. MatchingBrackets.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\04. MatchingBrackets\obj\Debug\_04.MatchingBrackets.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\04. MatchingBrackets\obj\Debug\_04.MatchingBrackets.pdb

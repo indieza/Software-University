@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\03. SimpleCalculator\bin\Debug\_03.SimpleCalculator.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\03. SimpleCalculator\bin\Debug\_03.SimpleCalculator.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\03. SimpleCalculator\bin\Debug\_03.SimpleCalculator.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\03. SimpleCalculator\obj\Debug\03. SimpleCalculator.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\03. SimpleCalculator\obj\Debug\_03.SimpleCalculator.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\03. SimpleCalculator\obj\Debug\_03.SimpleCalculator.pdb

@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\01. ReverseStrings\bin\Debug\_01.ReverseStrings.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\01. ReverseStrings\bin\Debug\_01.ReverseStrings.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\01. ReverseStrings\bin\Debug\_01.ReverseStrings.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\01. ReverseStrings\obj\Debug\01. ReverseStrings.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\01. ReverseStrings\obj\Debug\01. ReverseStrings.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\01. ReverseStrings\obj\Debug\_01.ReverseStrings.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\01. Stacks and Queues - Lab\Lab\01. ReverseStrings\obj\Debug\_01.ReverseStrings.pdb
