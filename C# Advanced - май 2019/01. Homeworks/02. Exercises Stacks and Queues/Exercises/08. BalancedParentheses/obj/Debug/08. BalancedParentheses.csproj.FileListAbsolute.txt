@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\08. BalancedParentheses\bin\Debug\_08.BalancedParentheses.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\08. BalancedParentheses\bin\Debug\_08.BalancedParentheses.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\08. BalancedParentheses\bin\Debug\_08.BalancedParentheses.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\08. BalancedParentheses\obj\Debug\08. BalancedParentheses.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\08. BalancedParentheses\obj\Debug\_08.BalancedParentheses.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\08. BalancedParentheses\obj\Debug\_08.BalancedParentheses.pdb

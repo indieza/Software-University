@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\07. TruckTour\bin\Debug\_07.TruckTour.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\07. TruckTour\bin\Debug\_07.TruckTour.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\07. TruckTour\bin\Debug\_07.TruckTour.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\07. TruckTour\obj\Debug\07. TruckTour.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\07. TruckTour\obj\Debug\07. TruckTour.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\07. TruckTour\obj\Debug\_07.TruckTour.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\07. TruckTour\obj\Debug\_07.TruckTour.pdb
