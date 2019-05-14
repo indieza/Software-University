@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\04. FastFood\bin\Debug\_04.FastFood.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\04. FastFood\bin\Debug\_04.FastFood.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\04. FastFood\bin\Debug\_04.FastFood.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\04. FastFood\obj\Debug\04. FastFood.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\04. FastFood\obj\Debug\04. FastFood.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\04. FastFood\obj\Debug\_04.FastFood.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\04. FastFood\obj\Debug\_04.FastFood.pdb
