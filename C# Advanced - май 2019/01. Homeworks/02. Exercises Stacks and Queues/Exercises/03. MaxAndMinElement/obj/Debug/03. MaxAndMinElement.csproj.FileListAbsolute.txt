@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\03. MaxAndMinElement\bin\Debug\_01.MaxAndMinElement.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\03. MaxAndMinElement\bin\Debug\_01.MaxAndMinElement.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\03. MaxAndMinElement\bin\Debug\_01.MaxAndMinElement.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\03. MaxAndMinElement\obj\Debug\03. MaxAndMinElement.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\03. MaxAndMinElement\obj\Debug\03. MaxAndMinElement.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\03. MaxAndMinElement\obj\Debug\_01.MaxAndMinElement.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\03. MaxAndMinElement\obj\Debug\_01.MaxAndMinElement.pdb

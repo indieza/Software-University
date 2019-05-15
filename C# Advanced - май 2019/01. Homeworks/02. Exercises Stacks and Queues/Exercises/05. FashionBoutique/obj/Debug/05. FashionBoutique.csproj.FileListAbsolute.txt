@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\05. FashionBoutique\bin\Debug\_05.FashionBoutique.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\05. FashionBoutique\bin\Debug\_05.FashionBoutique.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\05. FashionBoutique\bin\Debug\_05.FashionBoutique.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\05. FashionBoutique\obj\Debug\05. FashionBoutique.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\05. FashionBoutique\obj\Debug\_05.FashionBoutique.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\05. FashionBoutique\obj\Debug\_05.FashionBoutique.pdb

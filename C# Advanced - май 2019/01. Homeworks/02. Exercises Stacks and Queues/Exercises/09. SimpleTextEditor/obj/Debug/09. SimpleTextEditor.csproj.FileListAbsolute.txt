@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\09. SimpleTextEditor\bin\Debug\_09.SimpleTextEditor.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\09. SimpleTextEditor\bin\Debug\_09.SimpleTextEditor.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\09. SimpleTextEditor\bin\Debug\_09.SimpleTextEditor.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\09. SimpleTextEditor\obj\Debug\09. SimpleTextEditor.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\09. SimpleTextEditor\obj\Debug\_09.SimpleTextEditor.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\09. SimpleTextEditor\obj\Debug\_09.SimpleTextEditor.pdb

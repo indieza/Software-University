@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\06. AutoRepairAndService\bin\Debug\_06.AutoRepairAndService.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\06. AutoRepairAndService\bin\Debug\_06.AutoRepairAndService.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\06. AutoRepairAndService\bin\Debug\_06.AutoRepairAndService.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\06. AutoRepairAndService\obj\Debug\06. AutoRepairAndService.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\06. AutoRepairAndService\obj\Debug\06. AutoRepairAndService.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\06. AutoRepairAndService\obj\Debug\_06.AutoRepairAndService.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\02. Exercises Stacks and Queues\Exercises\06. AutoRepairAndService\obj\Debug\_06.AutoRepairAndService.pdb
