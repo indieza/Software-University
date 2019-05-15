@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\03. Multidimensional Arrays - Lab\Lab\02. SumMatrixColumns\bin\Debug\_02.SumMatrixColumns.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\03. Multidimensional Arrays - Lab\Lab\02. SumMatrixColumns\bin\Debug\_02.SumMatrixColumns.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\03. Multidimensional Arrays - Lab\Lab\02. SumMatrixColumns\bin\Debug\_02.SumMatrixColumns.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\03. Multidimensional Arrays - Lab\Lab\02. SumMatrixColumns\obj\Debug\02. SumMatrixColumns.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\03. Multidimensional Arrays - Lab\Lab\02. SumMatrixColumns\obj\Debug\02. SumMatrixColumns.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\03. Multidimensional Arrays - Lab\Lab\02. SumMatrixColumns\obj\Debug\_02.SumMatrixColumns.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\03. Multidimensional Arrays - Lab\Lab\02. SumMatrixColumns\obj\Debug\_02.SumMatrixColumns.pdb
