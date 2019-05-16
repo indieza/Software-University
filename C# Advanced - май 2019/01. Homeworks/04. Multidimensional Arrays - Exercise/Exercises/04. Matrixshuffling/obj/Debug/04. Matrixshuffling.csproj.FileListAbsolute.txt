@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\04. Matrixshuffling\bin\Debug\_04.Matrixshuffling.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\04. Matrixshuffling\bin\Debug\_04.Matrixshuffling.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\04. Matrixshuffling\bin\Debug\_04.Matrixshuffling.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\04. Matrixshuffling\obj\Debug\04. Matrixshuffling.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\04. Matrixshuffling\obj\Debug\04. Matrixshuffling.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\04. Matrixshuffling\obj\Debug\_04.Matrixshuffling.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\04. Matrixshuffling\obj\Debug\_04.Matrixshuffling.pdb
