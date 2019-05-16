@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\02. SquaresInMatrix\bin\Debug\_02.SquaresInMatrix.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\02. SquaresInMatrix\bin\Debug\_02.SquaresInMatrix.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\02. SquaresInMatrix\bin\Debug\_02.SquaresInMatrix.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\02. SquaresInMatrix\obj\Debug\02. SquaresInMatrix.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\02. SquaresInMatrix\obj\Debug\_02.SquaresInMatrix.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\02. SquaresInMatrix\obj\Debug\_02.SquaresInMatrix.pdb
