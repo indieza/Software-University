@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\05. SnakeMoves\bin\Debug\_05.SnakeMoves.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\05. SnakeMoves\bin\Debug\_05.SnakeMoves.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\05. SnakeMoves\bin\Debug\_05.SnakeMoves.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\05. SnakeMoves\obj\Debug\05. SnakeMoves.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\05. SnakeMoves\obj\Debug\05. SnakeMoves.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\05. SnakeMoves\obj\Debug\_05.SnakeMoves.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\05. SnakeMoves\obj\Debug\_05.SnakeMoves.pdb
