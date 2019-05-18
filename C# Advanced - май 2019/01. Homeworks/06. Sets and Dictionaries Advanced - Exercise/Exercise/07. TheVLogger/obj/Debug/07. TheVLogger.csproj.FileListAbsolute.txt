@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\07. TheVLogger\bin\Debug\_07.TheVLogger.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\07. TheVLogger\bin\Debug\_07.TheVLogger.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\07. TheVLogger\bin\Debug\_07.TheVLogger.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\07. TheVLogger\obj\Debug\07. TheVLogger.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\07. TheVLogger\obj\Debug\07. TheVLogger.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\07. TheVLogger\obj\Debug\_07.TheVLogger.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\07. TheVLogger\obj\Debug\_07.TheVLogger.pdb
