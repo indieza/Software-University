@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\03. MaximalSum\bin\Debug\_03.MaximalSum.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\03. MaximalSum\bin\Debug\_03.MaximalSum.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\03. MaximalSum\bin\Debug\_03.MaximalSum.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\03. MaximalSum\obj\Debug\03. MaximalSum.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\03. MaximalSum\obj\Debug\_03.MaximalSum.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\03. MaximalSum\obj\Debug\_03.MaximalSum.pdb

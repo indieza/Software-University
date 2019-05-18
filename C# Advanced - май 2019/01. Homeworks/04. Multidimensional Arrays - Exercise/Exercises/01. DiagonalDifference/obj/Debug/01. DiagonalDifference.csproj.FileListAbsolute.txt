@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\01. DiagonalDifference\bin\Debug\_01.DiagonalDifference.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\01. DiagonalDifference\bin\Debug\_01.DiagonalDifference.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\01. DiagonalDifference\bin\Debug\_01.DiagonalDifference.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\01. DiagonalDifference\obj\Debug\01. DiagonalDifference.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\01. DiagonalDifference\obj\Debug\01. DiagonalDifference.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\01. DiagonalDifference\obj\Debug\_01.DiagonalDifference.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\04. Multidimensional Arrays - Exercise\Exercises\01. DiagonalDifference\obj\Debug\_01.DiagonalDifference.pdb
