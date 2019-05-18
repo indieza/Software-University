@@ -87,9 +87,10 @@ namespace _07.TheVLogger
             this.Following = new List<string>();
         }
 
-        public string Name { get; set; }
-        public List<string> Followers { get; set; }
+        public string Name { get; private set; }
 
-        public List<string> Following { get; set; }
+        public List<string> Followers { get; private set; }
+
+        public List<string> Following { get; private set; }
     }
 }
