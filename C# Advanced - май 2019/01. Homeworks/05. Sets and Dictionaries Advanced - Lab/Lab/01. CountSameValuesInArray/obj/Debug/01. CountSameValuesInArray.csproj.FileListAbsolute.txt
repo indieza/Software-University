@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\01. CountSameValuesInArray\bin\Debug\_01.CountSameValuesInArray.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\01. CountSameValuesInArray\bin\Debug\_01.CountSameValuesInArray.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\01. CountSameValuesInArray\bin\Debug\_01.CountSameValuesInArray.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\01. CountSameValuesInArray\obj\Debug\01. CountSameValuesInArray.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\01. CountSameValuesInArray\obj\Debug\01. CountSameValuesInArray.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\01. CountSameValuesInArray\obj\Debug\_01.CountSameValuesInArray.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\01. CountSameValuesInArray\obj\Debug\_01.CountSameValuesInArray.pdb
