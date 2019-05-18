@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\02. AverageStudentGrades\bin\Debug\_02.AverageStudentGrades.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\02. AverageStudentGrades\bin\Debug\_02.AverageStudentGrades.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\02. AverageStudentGrades\bin\Debug\_02.AverageStudentGrades.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\02. AverageStudentGrades\obj\Debug\02. AverageStudentGrades.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\02. AverageStudentGrades\obj\Debug\_02.AverageStudentGrades.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\05. Sets and Dictionaries Advanced - Lab\Lab\02. AverageStudentGrades\obj\Debug\_02.AverageStudentGrades.pdb
