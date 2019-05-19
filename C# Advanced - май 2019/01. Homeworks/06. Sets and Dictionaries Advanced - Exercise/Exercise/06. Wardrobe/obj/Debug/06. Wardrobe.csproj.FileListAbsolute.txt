@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\06. Wardrobe\bin\Debug\_06.Wardrobe.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\06. Wardrobe\bin\Debug\_06.Wardrobe.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\06. Wardrobe\bin\Debug\_06.Wardrobe.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\06. Wardrobe\obj\Debug\06. Wardrobe.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\06. Wardrobe\obj\Debug\_06.Wardrobe.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\06. Wardrobe\obj\Debug\_06.Wardrobe.pdb

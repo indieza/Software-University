@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\04. EvenTimes\bin\Debug\_04.EvenTimes.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\04. EvenTimes\bin\Debug\_04.EvenTimes.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\04. EvenTimes\bin\Debug\_04.EvenTimes.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\04. EvenTimes\obj\Debug\04. EvenTimes.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\04. EvenTimes\obj\Debug\04. EvenTimes.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\04. EvenTimes\obj\Debug\_04.EvenTimes.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\04. EvenTimes\obj\Debug\_04.EvenTimes.pdb

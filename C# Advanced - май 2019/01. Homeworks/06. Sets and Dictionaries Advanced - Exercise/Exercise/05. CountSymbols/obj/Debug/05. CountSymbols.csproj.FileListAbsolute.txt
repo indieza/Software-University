@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\05. CountSymbols\bin\Debug\_05.CountSymbols.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\05. CountSymbols\bin\Debug\_05.CountSymbols.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\05. CountSymbols\bin\Debug\_05.CountSymbols.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\05. CountSymbols\obj\Debug\05. CountSymbols.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\05. CountSymbols\obj\Debug\_05.CountSymbols.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\06. Sets and Dictionaries Advanced - Exercise\Exercise\05. CountSymbols\obj\Debug\_05.CountSymbols.pdb
