@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\07. PredicateForNames\bin\Debug\_07.PredicateForNames.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\07. PredicateForNames\bin\Debug\_07.PredicateForNames.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\07. PredicateForNames\bin\Debug\_07.PredicateForNames.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\07. PredicateForNames\obj\Debug\07. PredicateForNames.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\07. PredicateForNames\obj\Debug\_07.PredicateForNames.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\07. PredicateForNames\obj\Debug\_07.PredicateForNames.pdb
