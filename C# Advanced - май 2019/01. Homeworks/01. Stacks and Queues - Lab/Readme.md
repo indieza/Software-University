@@ -10,7 +10,7 @@ Write program that: <br />
 •	Reverses it using a Stack<T> <br />
 •	Prints the result back at the terminal <br />
 
-<p>Examples:</p>
+<p><b>Examples:</b></p>
 
 | Input  | Output |
 | ------------- | ------------- |
