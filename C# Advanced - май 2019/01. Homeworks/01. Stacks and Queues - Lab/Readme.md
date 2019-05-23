@@ -10,6 +10,8 @@ Write program that: <br />
 •	Reverses it using a Stack<T> <br />
 •	Prints the result back at the terminal <br />
 
+<p>Examples:</p>
+
 | Input  | Output |
 | ------------- | ------------- |
 | I Love C#  | #C evoL I  |
