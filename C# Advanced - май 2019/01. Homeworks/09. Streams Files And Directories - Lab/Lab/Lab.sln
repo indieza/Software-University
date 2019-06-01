@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. OddLines", "01. OddLines\01. OddLines.csproj", "{1E7B4B8F-AAD6-47DC-A922-7BF324A03422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. LineNumbers", "02. LineNumbers\02. LineNumbers.csproj", "{5DE8061C-60EA-4B63-93E4-F324FDEA74D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E7B4B8F-AAD6-47DC-A922-7BF324A03422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7B4B8F-AAD6-47DC-A922-7BF324A03422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7B4B8F-AAD6-47DC-A922-7BF324A03422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7B4B8F-AAD6-47DC-A922-7BF324A03422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE8061C-60EA-4B63-93E4-F324FDEA74D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE8061C-60EA-4B63-93E4-F324FDEA74D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE8061C-60EA-4B63-93E4-F324FDEA74D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE8061C-60EA-4B63-93E4-F324FDEA74D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B016F62-DBBD-422D-9C5C-941F232E0E24}
+	EndGlobalSection
+EndGlobal
