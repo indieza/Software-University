@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\02. LineNumbers\bin\Debug\_02.LineNumbers.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\02. LineNumbers\bin\Debug\_02.LineNumbers.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\02. LineNumbers\bin\Debug\_02.LineNumbers.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\02. LineNumbers\obj\Debug\02. LineNumbers.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\02. LineNumbers\obj\Debug\_02.LineNumbers.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\02. LineNumbers\obj\Debug\_02.LineNumbers.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\02. LineNumbers\bin\Debug\Files\Input.txt

@@ -1,8 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\bin\Debug\_01.OddLines.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\bin\Debug\_01.OddLines.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\bin\Debug\_01.OddLines.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\obj\Debug\01. OddLines.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\obj\Debug\01. OddLines.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\obj\Debug\_01.OddLines.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\obj\Debug\_01.OddLines.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\09. Streams Files And Directories - Lab\Lab\01. OddLines\bin\Debug\Files\Input.txt
