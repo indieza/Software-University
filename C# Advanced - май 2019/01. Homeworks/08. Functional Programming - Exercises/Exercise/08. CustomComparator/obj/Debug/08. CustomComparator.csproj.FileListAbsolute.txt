@@ -1,6 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\08. CustomComparator\bin\Debug\_08.CustomComparator.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\08. CustomComparator\bin\Debug\_08.CustomComparator.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\08. CustomComparator\bin\Debug\_08.CustomComparator.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\08. CustomComparator\obj\Debug\08. CustomComparator.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\08. CustomComparator\obj\Debug\_08.CustomComparator.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\08. CustomComparator\obj\Debug\_08.CustomComparator.pdb

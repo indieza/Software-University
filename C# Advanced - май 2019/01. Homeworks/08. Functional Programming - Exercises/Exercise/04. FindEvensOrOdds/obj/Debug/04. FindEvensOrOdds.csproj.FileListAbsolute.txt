@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\04. FindEvensOrOdds\bin\Debug\_04.FindEvensOrOdds.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\04. FindEvensOrOdds\bin\Debug\_04.FindEvensOrOdds.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\04. FindEvensOrOdds\bin\Debug\_04.FindEvensOrOdds.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\04. FindEvensOrOdds\obj\Debug\04. FindEvensOrOdds.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\04. FindEvensOrOdds\obj\Debug\04. FindEvensOrOdds.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\04. FindEvensOrOdds\obj\Debug\_04.FindEvensOrOdds.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\04. FindEvensOrOdds\obj\Debug\_04.FindEvensOrOdds.pdb

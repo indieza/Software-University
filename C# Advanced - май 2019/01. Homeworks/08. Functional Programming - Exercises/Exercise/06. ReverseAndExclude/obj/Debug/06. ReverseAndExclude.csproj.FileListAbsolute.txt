@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\06. ReverseAndExclude\bin\Debug\_06.ReverseAndExclude.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\06. ReverseAndExclude\bin\Debug\_06.ReverseAndExclude.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\06. ReverseAndExclude\bin\Debug\_06.ReverseAndExclude.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\06. ReverseAndExclude\obj\Debug\06. ReverseAndExclude.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\06. ReverseAndExclude\obj\Debug\06. ReverseAndExclude.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\06. ReverseAndExclude\obj\Debug\_06.ReverseAndExclude.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\08. Functional Programming - Exercises\Exercise\06. ReverseAndExclude\obj\Debug\_06.ReverseAndExclude.pdb
