@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\11. Defining Classes - Lab\Lab\CarManufacturer\bin\Debug\CarManufacturer.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\11. Defining Classes - Lab\Lab\CarManufacturer\bin\Debug\CarManufacturer.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\11. Defining Classes - Lab\Lab\CarManufacturer\bin\Debug\CarManufacturer.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\11. Defining Classes - Lab\Lab\CarManufacturer\obj\Debug\CarManufacturer.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\11. Defining Classes - Lab\Lab\CarManufacturer\obj\Debug\CarManufacturer.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\11. Defining Classes - Lab\Lab\CarManufacturer\obj\Debug\CarManufacturer.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\11. Defining Classes - Lab\Lab\CarManufacturer\obj\Debug\CarManufacturer.pdb
