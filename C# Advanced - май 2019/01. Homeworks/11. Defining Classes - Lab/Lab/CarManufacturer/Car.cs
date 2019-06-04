@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CarManufacturer
 {
@@ -13,6 +10,8 @@ namespace CarManufacturer
         private int year;
         private double fuelQuantity;
         private double fuelConsumption;
+        private Engine engine;
+        private Tire[] tires;
 
         public Car()
         {
@@ -36,6 +35,14 @@ namespace CarManufacturer
         {
             this.FuelQuantity = fuelQuantity;
             this.FuelConsumption = fuelConsumption;
+        }
+
+        public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption,
+            Engine engine, Tire[] tires)
+            : this(make, model, year, fuelQuantity, fuelConsumption)
+        {
+            this.Engine = engine;
+            this.Tires = tires;
         }
 
         public string Make
@@ -95,6 +102,30 @@ namespace CarManufacturer
             set
             {
                 this.fuelConsumption = value;
+            }
+        }
+
+        public Engine Engine
+        {
+            get
+            {
+                return this.engine;
+            }
+            set
+            {
+                this.engine = value;
+            }
+        }
+
+        public Tire[] Tires
+        {
+            get
+            {
+                return this.tires;
+            }
+            set
+            {
+                this.tires = value;
             }
         }
 
