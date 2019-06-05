@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\02. HelensAbduction\bin\Debug\_02.HelensAbduction.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\02. HelensAbduction\bin\Debug\_02.HelensAbduction.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\02. HelensAbduction\bin\Debug\_02.HelensAbduction.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\02. HelensAbduction\obj\Debug\02. HelensAbduction.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\02. HelensAbduction\obj\Debug\02. HelensAbduction.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\02. HelensAbduction\obj\Debug\_02.HelensAbduction.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\02. HelensAbduction\obj\Debug\_02.HelensAbduction.pdb
