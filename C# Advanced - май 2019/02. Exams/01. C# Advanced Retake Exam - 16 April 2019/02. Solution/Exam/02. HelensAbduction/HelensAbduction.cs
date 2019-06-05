@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02.HelensAbduction
 {
@@ -19,7 +17,7 @@ namespace _02.HelensAbduction
         private static int targetCol;
         private static int parisRow;
         private static int parisCol;
-        private static bool isDie;
+        private static bool isEnd;
 
         private static void Main()
         {
@@ -29,11 +27,11 @@ namespace _02.HelensAbduction
             cols = currentRow.Count();
 
             field = new char[rows, cols];
-            isDie = false;
+            isEnd = false;
 
             FillFiled();
 
-            while (!isDie)
+            while (!isEnd)
             {
                 ExecuteCommandParameters();
                 field[targetRow, targetCol] = 'S';
@@ -51,50 +49,17 @@ namespace _02.HelensAbduction
                 case "up":
                     if (parisRow - 1 < 0)
                     {
-                        parisEnergy--;
-
-                        if (parisEnergy <= 0)
-                        {
-                            isDie = false;
-                            field[parisRow, parisCol] = 'X';
-                            Console.WriteLine($"Paris died at {parisRow};{parisCol}.");
-                        }
+                        DecreaseParisEnegry();
                     }
                     else
                     {
                         field[parisRow, parisCol] = '-';
                         parisRow--;
-                        parisEnergy--;
+                        DecreaseParisEnegry();
 
-                        if (parisEnergy <= 0)
+                        if (!isEnd)
                         {
-                            isDie = true;
-                            field[parisRow, parisCol] = 'X';
-                            Console.WriteLine($"Paris died at {parisRow};{parisCol}.");
-                        }
-                        else
-                        {
-                            if (field[parisRow, parisCol] == 'S')
-                            {
-                                parisEnergy -= 2;
-
-                                if (parisEnergy <= 0)
-                                {
-                                    isDie = true;
-                                    field[parisRow, parisCol] = 'X';
-                                    Console.WriteLine($"Paris died at {parisRow};{parisCol}.");
-                                }
-                                else
-                                {
-                                    field[parisRow, parisCol] = '-';
-                                }
-                            }
-                            else if (field[parisRow, parisCol] == 'H')
-                            {
-                                isDie = true;
-                                field[parisRow, parisCol] = '-';
-                                Console.WriteLine($"Paris has successfully abducted Helen! Energy left: {parisEnergy}");
-                            }
+                            ParisFindHelenaOrEnemy();
                         }
                     }
                     break;
@@ -102,51 +67,109 @@ namespace _02.HelensAbduction
                 case "down":
                     if (parisRow + 1 >= rows)
                     {
-                        parisEnergy--;
-                        //Check Alive
+                        DecreaseParisEnegry();
                     }
                     else
                     {
                         field[parisRow, parisCol] = '-';
                         parisRow++;
-                        parisEnergy--;
-                        //Check Alive
+                        DecreaseParisEnegry();
+
+                        if (!isEnd)
+                        {
+                            ParisFindHelenaOrEnemy();
+                        }
                     }
                     break;
 
                 case "left":
                     if (parisCol - 1 < 0)
                     {
-                        parisEnergy--;
-                        //CheckAlive
+                        DecreaseParisEnegry();
                     }
                     else
                     {
                         field[parisRow, parisCol] = '-';
                         parisCol--;
-                        parisEnergy--;
-                        //Check Alive
+                        DecreaseParisEnegry();
+
+                        if (!isEnd)
+                        {
+                            ParisFindHelenaOrEnemy();
+                        }
                     }
                     break;
 
                 case "right":
                     if (parisCol + 1 >= cols)
                     {
-                        parisEnergy--;
-                        //Check Alive
+                        DecreaseParisEnegry();
                     }
                     else
                     {
                         field[parisRow, parisCol] = '-';
                         parisCol++;
-                        parisEnergy--;
-                        //Check Alive
+                        DecreaseParisEnegry();
+
+                        if (!isEnd)
+                        {
+                            ParisFindHelenaOrEnemy();
+                        }
                     }
                     break;
 
                 default:
                     break;
             }
+        }
+
+        private static void DecreaseParisEnegry()
+        {
+            parisEnergy--;
+
+            if (parisEnergy <= 0)
+            {
+                ParisDie();
+            }
+        }
+
+        private static void ParisFindHelenaOrEnemy()
+        {
+            if (field[parisRow, parisCol] == 'S')
+            {
+                parisEnergy -= 2;
+
+                if (parisEnergy <= 0)
+                {
+                    ParisDie();
+                }
+                else
+                {
+                    field[parisRow, parisCol] = 'P';
+                }
+            }
+            else if (field[parisRow, parisCol] == 'H')
+            {
+                ParisFindHelena();
+            }
+            else
+            {
+                field[parisRow, parisCol] = 'P';
+            }
+        }
+
+        private static void ParisFindHelena()
+        {
+            isEnd = true;
+            field[parisRow, parisCol] = '-';
+            Console.WriteLine($"Paris has successfully abducted Helen! Energy left: {parisEnergy}");
+        }
+
+        private static void ParisDie()
+        {
+            isEnd = true;
+            field[parisRow, parisCol] = 'X';
+            Console.WriteLine($"Paris died at {parisRow};{parisCol}.");
         }
 
         private static void ExecuteCommandParameters()
@@ -161,7 +184,7 @@ namespace _02.HelensAbduction
 
         private static void FillFiled()
         {
-            for (int col = 0; col < rows; col++)
+            for (int col = 0; col < cols; col++)
             {
                 if (currentRow[col] == 'P')
                 {
@@ -171,11 +194,12 @@ namespace _02.HelensAbduction
 
                 field[0, col] = currentRow[col];
             }
+
             for (int row = 1; row < rows; row++)
             {
                 currentRow = Console.ReadLine().ToCharArray();
 
-                for (int col = 0; col < rows; col++)
+                for (int col = 0; col < cols; col++)
                 {
                     if (currentRow[col] == 'P')
                     {

@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\01. TrojanInvasion\bin\Debug\_01.TrojanInvasion.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\01. TrojanInvasion\bin\Debug\_01.TrojanInvasion.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\01. TrojanInvasion\bin\Debug\_01.TrojanInvasion.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\01. TrojanInvasion\obj\Debug\01. TrojanInvasion.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\01. TrojanInvasion\obj\Debug\01. TrojanInvasion.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\01. TrojanInvasion\obj\Debug\_01.TrojanInvasion.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\01. TrojanInvasion\obj\Debug\_01.TrojanInvasion.pdb
