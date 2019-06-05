@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\FightingArena\bin\Debug\FightingArena.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\FightingArena\bin\Debug\FightingArena.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\FightingArena\bin\Debug\FightingArena.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\FightingArena\obj\Debug\FightingArena.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\FightingArena\obj\Debug\FightingArena.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\FightingArena\obj\Debug\FightingArena.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\01. C# Advanced Retake Exam - 16 April 2019\02. Solution\Exam\FightingArena\obj\Debug\FightingArena.pdb
