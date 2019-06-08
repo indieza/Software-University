@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\SoftUniParking\bin\Debug\_03.SoftUniParking.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\SoftUniParking\bin\Debug\_03.SoftUniParking.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\SoftUniParking\bin\Debug\_03.SoftUniParking.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\SoftUniParking\obj\Debug\SoftUniParking.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\SoftUniParking\obj\Debug\SoftUniParking.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\SoftUniParking\obj\Debug\_03.SoftUniParking.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\SoftUniParking\obj\Debug\_03.SoftUniParking.pdb
