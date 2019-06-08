@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\02. Sneaking\bin\Debug\_02.Sneaking.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\02. Sneaking\bin\Debug\_02.Sneaking.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\02. Sneaking\bin\Debug\_02.Sneaking.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\02. Sneaking\obj\Debug\02. Sneaking.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\02. Sneaking\obj\Debug\_02.Sneaking.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\02. C# Advanced Sample Exam\02. Solution\Exam\02. Sneaking\obj\Debug\_02.Sneaking.pdb
