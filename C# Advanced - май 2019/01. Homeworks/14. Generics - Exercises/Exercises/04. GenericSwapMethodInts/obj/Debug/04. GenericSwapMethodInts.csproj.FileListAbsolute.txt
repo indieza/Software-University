@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\04. GenericSwapMethodInts\bin\Debug\_04.GenericSwapMethodInts.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\04. GenericSwapMethodInts\bin\Debug\_04.GenericSwapMethodInts.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\04. GenericSwapMethodInts\bin\Debug\_04.GenericSwapMethodInts.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\04. GenericSwapMethodInts\obj\Debug\04. GenericSwapMethodInts.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\04. GenericSwapMethodInts\obj\Debug\_04.GenericSwapMethodInts.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\04. GenericSwapMethodInts\obj\Debug\_04.GenericSwapMethodInts.pdb

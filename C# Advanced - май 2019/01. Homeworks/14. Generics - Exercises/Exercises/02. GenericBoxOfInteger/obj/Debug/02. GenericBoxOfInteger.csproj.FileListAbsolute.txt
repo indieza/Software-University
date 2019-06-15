@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\02. GenericBoxOfInteger\bin\Debug\_02.GenericBoxOfInteger.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\02. GenericBoxOfInteger\bin\Debug\_02.GenericBoxOfInteger.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\02. GenericBoxOfInteger\bin\Debug\_02.GenericBoxOfInteger.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\02. GenericBoxOfInteger\obj\Debug\02. GenericBoxOfInteger.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\02. GenericBoxOfInteger\obj\Debug\_02.GenericBoxOfInteger.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\02. GenericBoxOfInteger\obj\Debug\_02.GenericBoxOfInteger.pdb

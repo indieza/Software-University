@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\01. GenericBoxOfString\obj\Debug\01. GenericBoxOfString.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\01. GenericBoxOfString\bin\Debug\_01.GenericBoxOfString.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\01. GenericBoxOfString\bin\Debug\_01.GenericBoxOfString.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\01. GenericBoxOfString\bin\Debug\_01.GenericBoxOfString.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\01. GenericBoxOfString\obj\Debug\_01.GenericBoxOfString.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\01. Homeworks\14. Generics - Exercises\Exercises\01. GenericBoxOfString\obj\Debug\_01.GenericBoxOfString.pdb
