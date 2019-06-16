@@ -31,11 +31,12 @@ namespace HealthyHeaven
             }
             else
             {
+                this.data.Remove(name);
                 return true;
             }
         }
 
-        public Salad GetHealthiestSalad()
+        public string GetHealthiestSalad()
         {
             int min = int.MaxValue;
 
@@ -47,7 +48,7 @@ namespace HealthyHeaven
                 }
             }
 
-            return this.data.Values.FirstOrDefault(s => s.GetTotalCalories() == min);
+            return this.data.Values.FirstOrDefault(s => s.GetTotalCalories() == min).Name;
         }
 
         public string GenerateMenu()
