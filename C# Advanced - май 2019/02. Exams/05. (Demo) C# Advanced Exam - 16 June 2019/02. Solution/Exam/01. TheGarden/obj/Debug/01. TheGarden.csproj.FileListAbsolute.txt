@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\01. TheGarden\bin\Debug\_01.TheGarden.exe.config
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\01. TheGarden\bin\Debug\_01.TheGarden.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\01. TheGarden\bin\Debug\_01.TheGarden.pdb
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\01. TheGarden\obj\Debug\01. TheGarden.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\01. TheGarden\obj\Debug\01. TheGarden.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\01. TheGarden\obj\Debug\_01.TheGarden.exe
+D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\01. TheGarden\obj\Debug\_01.TheGarden.pdb
