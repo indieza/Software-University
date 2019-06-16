@@ -24,19 +24,28 @@ namespace _02.MakeSalad
 
                 if (currentVegetablesCalories < currentCalories)
                 {
-                    int left = currentCalories - currentVegetablesCalories;
+                    int leftCalories = currentCalories - currentVegetablesCalories;
 
-                    while (left > 0)
+                    while (leftCalories > 0 && vegetables.Count != 0)
                     {
                         currentVegetable = vegetables.Dequeue();
-                        left -= ExecuteVegetableCalories(currentVegetable);
+                        leftCalories -= ExecuteVegetableCalories(currentVegetable);
                     }
                 }
 
                 madeSalads.Add(currentCalories);
             }
 
-            Console.WriteLine(string.Join(", ", madeSalads));
+            Console.WriteLine(string.Join(" ", madeSalads));
+
+            if (vegetables.Count != 0)
+            {
+                Console.WriteLine(string.Join(" ", vegetables));
+            }
+            else if (calories.Count != 0)
+            {
+                Console.WriteLine(string.Join(" ", calories));
+            }
         }
 
         private static int ExecuteVegetableCalories(string currentVegetable)
