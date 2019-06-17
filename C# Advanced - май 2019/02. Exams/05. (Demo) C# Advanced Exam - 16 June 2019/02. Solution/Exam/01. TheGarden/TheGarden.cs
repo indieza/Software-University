@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01.TheGarden
 {
@@ -26,7 +24,8 @@ namespace _01.TheGarden
             {
                 { 'C', 0 },
                 { 'P', 0 },
-                { 'L', 0 }
+                { 'L', 0 },
+                { 'H', 0 }
             };
 
             string line = Console.ReadLine();
@@ -40,6 +39,7 @@ namespace _01.TheGarden
             }
 
             PrintField();
+            PrintInformation();
         }
 
         private static void ExecuteCommand()
@@ -70,6 +70,99 @@ namespace _01.TheGarden
 
         private static void MoleCell()
         {
+            switch (directory)
+            {
+                case "up":
+                    if (targetRow >= 0 && targetRow <= rows - 1)
+                    {
+                        int count = 0;
+
+                        for (int row = targetRow; row >= 0; row--)
+                        {
+                            if (targetCol >= 0 && targetCol <= field[targetRow].Length - 1)
+                            {
+                                if (count++ % 2 == 0)
+                                {
+                                    if (field[row][targetCol] != ' ')
+                                    {
+                                        field[row][targetCol] = ' ';
+                                        information['H']++;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    break;
+
+                case "down":
+                    if (targetRow >= 0 && targetRow <= rows - 1)
+                    {
+                        int count = 0;
+
+                        for (int row = targetRow; row < rows; row++)
+                        {
+                            if (targetCol >= 0 && targetCol <= field[targetRow].Length - 1)
+                            {
+                                if (count++ % 2 == 0)
+                                {
+                                    if (field[row][targetCol] != ' ')
+                                    {
+                                        field[row][targetCol] = ' ';
+                                        information['H']++;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    break;
+
+                case "left":
+                    if (targetRow >= 0 && targetRow <= rows - 1)
+                    {
+                        if (targetCol >= 0 && targetCol <= field[targetRow].Length - 1)
+                        {
+                            int count = 0;
+
+                            for (int col = targetCol; col >= 0; col--)
+                            {
+                                if (count++ % 2 == 0)
+                                {
+                                    if (field[targetRow][col] != ' ')
+                                    {
+                                        field[targetRow][col] = ' ';
+                                        information['H']++;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    break;
+
+                case "right":
+                    if (targetRow >= 0 && targetRow <= rows - 1)
+                    {
+                        if (targetCol <= field[targetRow].Length - 1 && targetCol >= 0)
+                        {
+                            int count = 0;
+
+                            for (int col = targetCol; col < field[targetRow].Length; col++)
+                            {
+                                if (count++ % 2 == 0)
+                                {
+                                    if (field[targetRow][col] != ' ')
+                                    {
+                                        field[targetRow][col] = ' ';
+                                        information['H']++;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    break;
+
+                default:
+                    break;
+            }
         }
 
         private static void HarvestCell()
@@ -100,6 +193,34 @@ namespace _01.TheGarden
             for (int row = 0; row < rows; row++)
             {
                 Console.WriteLine(string.Join(" ", field[row]));
+            }
+        }
+
+        private static void PrintInformation()
+        {
+            foreach (var item in information)
+            {
+                switch (item.Key)
+                {
+                    case 'C':
+                        Console.WriteLine($"Carrots: {item.Value}");
+                        break;
+
+                    case 'P':
+                        Console.WriteLine($"Potatoes: {item.Value}");
+                        break;
+
+                    case 'L':
+                        Console.WriteLine($"Lettuce: {item.Value}");
+                        break;
+
+                    case 'H':
+                        Console.WriteLine($"Harmed vegetables: {item.Value}");
+                        break;
+
+                    default:
+                        break;
+                }
             }
         }
     }

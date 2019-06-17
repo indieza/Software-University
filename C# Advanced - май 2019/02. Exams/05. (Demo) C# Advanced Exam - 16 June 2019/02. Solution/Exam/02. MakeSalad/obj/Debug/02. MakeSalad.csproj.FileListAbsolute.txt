@@ -1,7 +1,0 @@
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\02. MakeSalad\bin\Debug\_02.MakeSalad.exe.config
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\02. MakeSalad\bin\Debug\_02.MakeSalad.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\02. MakeSalad\bin\Debug\_02.MakeSalad.pdb
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\02. MakeSalad\obj\Debug\02. MakeSalad.csprojAssemblyReference.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\02. MakeSalad\obj\Debug\02. MakeSalad.csproj.CoreCompileInputs.cache
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\02. MakeSalad\obj\Debug\_02.MakeSalad.exe
-D:\Documents\GitHub\Software-University\C# Advanced - май 2019\02. Exams\05. (Demo) C# Advanced Exam - 16 June 2019\02. Solution\Exam\02. MakeSalad\obj\Debug\_02.MakeSalad.pdb
