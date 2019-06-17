@@ -85,9 +85,13 @@ namespace _01.TheGarden
                                 {
                                     if (field[row][targetCol] != ' ')
                                     {
+                                        //information[field[row][targetCol]]++;
                                         field[row][targetCol] = ' ';
                                         information['H']++;
                                     }
+                                }
+                                else
+                                {
                                 }
                             }
                         }
@@ -107,9 +111,13 @@ namespace _01.TheGarden
                                 {
                                     if (field[row][targetCol] != ' ')
                                     {
+                                        //information[field[row][targetCol]]++;
                                         field[row][targetCol] = ' ';
                                         information['H']++;
                                     }
+                                }
+                                else
+                                {
                                 }
                             }
                         }
@@ -129,9 +137,13 @@ namespace _01.TheGarden
                                 {
                                     if (field[targetRow][col] != ' ')
                                     {
+                                        //information[field[targetRow][col]]++;
                                         field[targetRow][col] = ' ';
                                         information['H']++;
                                     }
+                                }
+                                else
+                                {
                                 }
                             }
                         }
@@ -151,9 +163,13 @@ namespace _01.TheGarden
                                 {
                                     if (field[targetRow][col] != ' ')
                                     {
+                                        //information[field[targetRow][col]]++;
                                         field[targetRow][col] = ' ';
                                         information['H']++;
                                     }
+                                }
+                                else
+                                {
                                 }
                             }
                         }
