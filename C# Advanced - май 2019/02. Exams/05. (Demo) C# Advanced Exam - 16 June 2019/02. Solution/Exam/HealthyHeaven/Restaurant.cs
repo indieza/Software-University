@@ -1,14 +1,12 @@
 namespace HealthyHeaven
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
 
     public class Restaurant
     {
-        private readonly Dictionary<string, Salad> data;
+        private readonly IDictionary<string, Salad> data;
 
         public Restaurant(string name)
         {
@@ -36,19 +34,11 @@ namespace HealthyHeaven
             }
         }
 
-        public string GetHealthiestSalad()
+        public Salad GetHealthiestSalad()
         {
-            int min = int.MaxValue;
+            int min = this.data.Values.Min(s => s.GetTotalCalories());
 
-            foreach (var item in this.data.Values)
-            {
-                if (item.GetTotalCalories() <= min)
-                {
-                    min = item.GetTotalCalories();
-                }
-            }
-
-            return this.data.Values.FirstOrDefault(s => s.GetTotalCalories() == min).Name;
+            return this.data.Values.FirstOrDefault(s => s.GetTotalCalories() == min);
         }
 
         public string GenerateMenu()
@@ -57,7 +47,7 @@ namespace HealthyHeaven
 
             sb.AppendLine($"{this.Name} have {this.data.Count} salads:");
 
-            foreach (var item in this.data)
+            foreach (var item in this.data.Values)
             {
                 sb.AppendLine(item.ToString());
             }

@@ -1,14 +1,12 @@
 namespace HealthyHeaven
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
 
     public class Salad
     {
-        private readonly List<Vegetable> products;
+        private readonly IList<Vegetable> products;
 
         public Salad(string name)
         {

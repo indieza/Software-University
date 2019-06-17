@@ -22,7 +22,12 @@ namespace _01.TheGarden
             field = new char[rows][];
 
             FillField();
-            information = new Dictionary<char, int>();
+            information = new Dictionary<char, int>()
+            {
+                { 'C', 0 },
+                { 'P', 0 },
+                { 'L', 0 }
+            };
 
             string line = Console.ReadLine();
 
@@ -75,6 +80,7 @@ namespace _01.TheGarden
                 {
                     if (field[targetRow][targetCol] != ' ')
                     {
+                        information[field[targetRow][targetCol]]++;
                         field[targetRow][targetCol] = ' ';
                     }
                 }
