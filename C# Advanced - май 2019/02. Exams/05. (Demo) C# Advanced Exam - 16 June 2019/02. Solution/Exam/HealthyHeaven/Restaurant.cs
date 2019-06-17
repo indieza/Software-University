@@ -6,39 +6,39 @@ namespace HealthyHeaven
 
     public class Restaurant
     {
-        private readonly IDictionary<string, Salad> data;
+        private readonly IList<Salad> data;
 
         public Restaurant(string name)
         {
             this.Name = name;
-            this.data = new Dictionary<string, Salad>();
+            this.data = new List<Salad>();
         }
 
         public string Name { get; private set; }
 
         public void Add(Salad salad)
         {
-            this.data.Add(salad.Name, salad);
+            this.data.Add(salad);
         }
 
         public bool Buy(string name)
         {
-            if (!this.data.ContainsKey(name))
+            if (this.data.FirstOrDefault(s => s.Name == name) == null)
             {
                 return false;
             }
             else
             {
-                this.data.Remove(name);
+                this.data.Remove(this.data.FirstOrDefault(s => s.Name == name));
                 return true;
             }
         }
 
         public Salad GetHealthiestSalad()
         {
-            int min = this.data.Values.Min(s => s.GetTotalCalories());
+            int min = this.data.Min(s => s.GetTotalCalories());
 
-            return this.data.Values.FirstOrDefault(s => s.GetTotalCalories() == min);
+            return this.data.FirstOrDefault(s => s.GetTotalCalories() == min);
         }
 
         public string GenerateMenu()
@@ -47,7 +47,7 @@ namespace HealthyHeaven
 
             sb.AppendLine($"{this.Name} have {this.data.Count} salads:");
 
-            foreach (var item in this.data.Values)
+            foreach (var item in this.data)
             {
                 sb.AppendLine(item.ToString());
             }
