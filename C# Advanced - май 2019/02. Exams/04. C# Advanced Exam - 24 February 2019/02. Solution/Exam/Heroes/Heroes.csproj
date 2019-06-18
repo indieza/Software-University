@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCC7E3DF-FD41-4B9D-9789-30B75896BF33}</ProjectGuid>
+    <ProjectGuid>{95237A85-534D-491B-AC3D-636D2BC24202}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_03.Heroes</RootNamespace>
-    <AssemblyName>_03.Heroes</AssemblyName>
+    <RootNamespace>Heroes</RootNamespace>
+    <AssemblyName>Heroes</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

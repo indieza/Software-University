@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02.TronRacers
 {
@@ -11,14 +8,14 @@ namespace _02.TronRacers
         private static int rows;
         private static int cols;
         private static char[,] field;
-        private static string[] commandItems;
-        private static string firstPlayerCommand;
-        private static string secondPlayerCommand;
         private static int firstPlayerRow;
         private static int firstPlayerCol;
         private static int secondPlayerRow;
         private static int secondPlayerCol;
-        private static bool isDead;
+        private static string[] commandItems;
+        private static string firstPlayerCommand;
+        private static string secondPlayerCommand;
+        private static bool end;
 
         private static void Main()
         {
@@ -28,46 +25,28 @@ namespace _02.TronRacers
 
             FillField();
 
-            while (!isDead)
+            while (!end)
             {
                 commandItems = Console.ReadLine().Split();
+
                 firstPlayerCommand = commandItems[0];
                 secondPlayerCommand = commandItems[1];
-                FirstPlayerMakeMove(firstPlayerCommand);
-                if (!isDead)
+
+                ExecuteFirstPlayerCommand();
+
+                if (!end)
                 {
-                    SecondPlayerMakeMove(secondPlayerCommand);
+                    ExecuteSecondPlayerCommand();
                 }
             }
 
-            PrintField();
+            PrintFiled();
         }
 
-        private static void SecondPlayerMakeMove(string command)
+        private static void ExecuteSecondPlayerCommand()
         {
-            switch (command)
+            switch (secondPlayerCommand)
             {
-                case "down":
-                    if (secondPlayerRow + 1 > rows - 1)
-                    {
-                        secondPlayerRow = 0;
-                    }
-                    else
-                    {
-                        secondPlayerRow++;
-                    }
-
-                    if (field[secondPlayerRow, secondPlayerCol] == 'f')
-                    {
-                        isDead = true;
-                        field[secondPlayerRow, secondPlayerCol] = 'x';
-                    }
-                    else
-                    {
-                        field[secondPlayerRow, secondPlayerCol] = 's';
-                    }
-                    break;
-
                 case "up":
                     if (secondPlayerRow - 1 < 0)
                     {
@@ -78,35 +57,35 @@ namespace _02.TronRacers
                         secondPlayerRow--;
                     }
 
-                    if (field[secondPlayerRow, secondPlayerCol] == 'f')
+                    if (field[secondPlayerRow, secondPlayerCol] != 'f')
                     {
-                        isDead = true;
-                        field[secondPlayerRow, secondPlayerCol] = 'x';
+                        field[secondPlayerRow, secondPlayerCol] = 's';
                     }
                     else
                     {
-                        field[secondPlayerRow, secondPlayerCol] = 's';
+                        end = true;
+                        field[secondPlayerRow, secondPlayerCol] = 'x';
                     }
                     break;
 
-                case "left":
-                    if (secondPlayerCol - 1 < 0)
+                case "down":
+                    if (secondPlayerRow + 1 > rows - 1)
                     {
-                        secondPlayerCol = cols - 1;
+                        secondPlayerRow = 0;
                     }
                     else
                     {
-                        secondPlayerCol--;
+                        secondPlayerRow++;
                     }
 
-                    if (field[secondPlayerRow, secondPlayerCol] == 'f')
+                    if (field[secondPlayerRow, secondPlayerCol] != 'f')
                     {
-                        isDead = true;
-                        field[secondPlayerRow, secondPlayerCol] = 'x';
+                        field[secondPlayerRow, secondPlayerCol] = 's';
                     }
                     else
                     {
-                        field[secondPlayerRow, secondPlayerCol] = 's';
+                        end = true;
+                        field[secondPlayerRow, secondPlayerCol] = 'x';
                     }
                     break;
 
@@ -120,14 +99,35 @@ namespace _02.TronRacers
                         secondPlayerCol++;
                     }
 
-                    if (field[secondPlayerRow, secondPlayerCol] == 'f')
+                    if (field[secondPlayerRow, secondPlayerCol] != 'f')
                     {
-                        isDead = true;
-                        field[secondPlayerRow, secondPlayerCol] = 'x';
+                        field[secondPlayerRow, secondPlayerCol] = 's';
                     }
                     else
                     {
+                        end = true;
+                        field[secondPlayerRow, secondPlayerCol] = 'x';
+                    }
+                    break;
+
+                case "left":
+                    if (secondPlayerCol - 1 < 0)
+                    {
+                        secondPlayerCol = cols - 1;
+                    }
+                    else
+                    {
+                        secondPlayerCol--;
+                    }
+
+                    if (field[secondPlayerRow, secondPlayerCol] != 'f')
+                    {
                         field[secondPlayerRow, secondPlayerCol] = 's';
+                    }
+                    else
+                    {
+                        end = true;
+                        field[secondPlayerRow, secondPlayerCol] = 'x';
                     }
                     break;
 
@@ -136,31 +136,10 @@ namespace _02.TronRacers
             }
         }
 
-        private static void FirstPlayerMakeMove(string command)
+        private static void ExecuteFirstPlayerCommand()
         {
-            switch (command)
+            switch (firstPlayerCommand)
             {
-                case "down":
-                    if (firstPlayerRow + 1 > rows - 1)
-                    {
-                        firstPlayerRow = 0;
-                    }
-                    else
-                    {
-                        firstPlayerRow++;
-                    }
-
-                    if (field[firstPlayerRow, firstPlayerCol] == 's')
-                    {
-                        isDead = true;
-                        field[firstPlayerRow, firstPlayerCol] = 'x';
-                    }
-                    else
-                    {
-                        field[firstPlayerRow, firstPlayerCol] = 'f';
-                    }
-                    break;
-
                 case "up":
                     if (firstPlayerRow - 1 < 0)
                     {
@@ -171,35 +150,35 @@ namespace _02.TronRacers
                         firstPlayerRow--;
                     }
 
-                    if (field[firstPlayerRow, firstPlayerCol] == 's')
+                    if (field[firstPlayerRow, firstPlayerCol] != 's')
                     {
-                        isDead = true;
-                        field[firstPlayerRow, firstPlayerCol] = 'x';
+                        field[firstPlayerRow, firstPlayerCol] = 'f';
                     }
                     else
                     {
-                        field[firstPlayerRow, firstPlayerCol] = 'f';
+                        end = true;
+                        field[firstPlayerRow, firstPlayerCol] = 'x';
                     }
                     break;
 
-                case "left":
-                    if (firstPlayerCol - 1 < 0)
+                case "down":
+                    if (firstPlayerRow + 1 > rows - 1)
                     {
-                        firstPlayerCol = cols - 1;
+                        firstPlayerRow = 0;
                     }
                     else
                     {
-                        firstPlayerCol--;
+                        firstPlayerRow++;
                     }
 
-                    if (field[firstPlayerRow, firstPlayerCol] == 's')
+                    if (field[firstPlayerRow, firstPlayerCol] != 's')
                     {
-                        isDead = true;
-                        field[firstPlayerRow, firstPlayerCol] = 'x';
+                        field[firstPlayerRow, firstPlayerCol] = 'f';
                     }
                     else
                     {
-                        field[firstPlayerRow, firstPlayerCol] = 'f';
+                        end = true;
+                        field[firstPlayerRow, firstPlayerCol] = 'x';
                     }
                     break;
 
@@ -213,14 +192,35 @@ namespace _02.TronRacers
                         firstPlayerCol++;
                     }
 
-                    if (field[firstPlayerRow, firstPlayerCol] == 's')
+                    if (field[firstPlayerRow, firstPlayerCol] != 's')
                     {
-                        isDead = true;
-                        field[firstPlayerRow, firstPlayerCol] = 'x';
+                        field[firstPlayerRow, firstPlayerCol] = 'f';
                     }
                     else
                     {
+                        end = true;
+                        field[firstPlayerRow, firstPlayerCol] = 'x';
+                    }
+                    break;
+
+                case "left":
+                    if (firstPlayerCol - 1 < 0)
+                    {
+                        firstPlayerCol = cols - 1;
+                    }
+                    else
+                    {
+                        firstPlayerCol--;
+                    }
+
+                    if (field[firstPlayerRow, firstPlayerCol] != 's')
+                    {
                         field[firstPlayerRow, firstPlayerCol] = 'f';
+                    }
+                    else
+                    {
+                        end = true;
+                        field[firstPlayerRow, firstPlayerCol] = 'x';
                     }
                     break;
 
@@ -229,7 +229,7 @@ namespace _02.TronRacers
             }
         }
 
-        private static void PrintField()
+        private static void PrintFiled()
         {
             for (int row = 0; row < rows; row++)
             {
@@ -248,22 +248,21 @@ namespace _02.TronRacers
         {
             for (int row = 0; row < rows; row++)
             {
-                List<char> currentRow = Console.ReadLine()
-                    .ToCharArray()
-                    .ToList();
+                char[] currentRow = Console.ReadLine().ToCharArray();
 
                 for (int col = 0; col < cols; col++)
                 {
-                    if (currentRow[col] == 's')
-                    {
-                        secondPlayerRow = row;
-                        secondPlayerCol = col;
-                    }
                     if (currentRow[col] == 'f')
                     {
                         firstPlayerRow = row;
                         firstPlayerCol = col;
                     }
+                    if (currentRow[col] == 's')
+                    {
+                        secondPlayerRow = row;
+                        secondPlayerCol = col;
+                    }
+
                     field[row, col] = currentRow[col];
                 }
             }

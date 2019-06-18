@@ -1,4 +1,4 @@
-namespace _03.Heroes
+namespace Heroes
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -6,48 +6,51 @@ namespace _03.Heroes
 
     public class HeroRepository
     {
-        private List<Hero> heroes;
+        private List<Hero> data;
 
         public HeroRepository()
         {
-            this.heroes = new List<Hero>();
+            this.data = new List<Hero>();
         }
 
-        public int Count => this.heroes.Count();
+        public int Count => this.data.Count;
 
         public void Add(Hero hero)
         {
-            this.heroes.Add(hero);
+            this.data.Add(hero);
         }
 
         public void Remove(string name)
         {
-            this.heroes.Remove(this.heroes.FirstOrDefault(h => h.Name == name));
+            this.data.Remove(this.data.FirstOrDefault(h => h.Name == name));
         }
 
         public Hero GetHeroWithHighestStrength()
         {
-            int maxStrength = this.heroes.Select(h => h.Item.Strength).Max();
-            return this.heroes.FirstOrDefault(h => h.Item.Strength == maxStrength);
+            int maxStrength = this.data.Max(h => h.Item.Strength);
+
+            return this.data.FirstOrDefault(h => h.Item.Strength == maxStrength);
         }
 
         public Hero GetHeroWithHighestAbility()
         {
-            int maxAbility = this.heroes.Select(h => h.Item.Ability).Max();
-            return this.heroes.FirstOrDefault(h => h.Item.Ability == maxAbility);
+            int maxAbility = this.data.Max(h => h.Item.Ability);
+
+            return this.data.FirstOrDefault(h => h.Item.Ability == maxAbility);
         }
 
         public Hero GetHeroWithHighestIntelligence()
         {
-            int maxAbility = this.heroes.Select(h => h.Item.Ability).Max();
-            return this.heroes.FirstOrDefault(h => h.Item.Ability == maxAbility);
+            int maxIntelligence = this.data.Max(h => h.Item.Intelligence);
+
+            return this.data.FirstOrDefault(h => h.Item.Intelligence == maxIntelligence);
         }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach (Hero hero in this.heroes)
+            foreach (var hero in this.data)
             {
                 sb.AppendLine(hero.ToString());
             }

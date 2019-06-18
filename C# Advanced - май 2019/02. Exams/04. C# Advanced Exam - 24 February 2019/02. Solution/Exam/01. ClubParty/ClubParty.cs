@@ -8,41 +8,40 @@ namespace _01.ClubParty
     {
         private static void Main()
         {
-            int hallsMaxCapacity = int.Parse(Console.ReadLine());
-            Stack<string> symbols = new Stack<string>(Console.ReadLine()
-                .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries));
+            int hallsCapacity = int.Parse(Console.ReadLine());
+            Stack<string> items = new Stack<string>(Console.ReadLine().Split());
 
             List<string> halls = new List<string>();
             List<int> people = new List<int>();
 
-            while (symbols.Count != 0)
+            while (items.Count != 0)
             {
-                string currentSymbols = symbols.Pop();
+                string currentItem = items.Pop();
 
-                if (int.TryParse(currentSymbols, out int capacityNeeded))
+                if (int.TryParse(currentItem, out int person))
                 {
                     if (halls.Count != 0)
                     {
-                        if (people.Sum() + capacityNeeded <= hallsMaxCapacity)
+                        if (people.Sum() + person <= hallsCapacity)
                         {
-                            people.Add(capacityNeeded);
+                            people.Add(person);
                         }
                         else
                         {
                             Console.WriteLine($"{halls[0]} -> {string.Join(", ", people)}");
-                            halls.RemoveAt(0);
                             people.Clear();
+                            halls.RemoveAt(0);
 
                             if (halls.Count != 0)
                             {
-                                people.Add(capacityNeeded);
+                                people.Add(person);
                             }
                         }
                     }
                 }
                 else
                 {
-                    halls.Add(currentSymbols);
+                    halls.Add(currentItem);
                 }
             }
         }

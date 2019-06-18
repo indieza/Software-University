@@ -1,4 +1,4 @@
-namespace _03.Heroes
+namespace Heroes
 {
     using System.Text;
 
