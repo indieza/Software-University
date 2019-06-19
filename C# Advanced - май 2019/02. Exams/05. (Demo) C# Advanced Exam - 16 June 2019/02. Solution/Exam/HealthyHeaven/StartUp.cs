@@ -4,7 +4,7 @@ namespace HealthyHeaven
 {
     public class StartUp
     {
-        public static void Main()
+        private static void Main()
         {
             // Initialize the repository
             Restaurant restaurant = new Restaurant("Casa Domingo");

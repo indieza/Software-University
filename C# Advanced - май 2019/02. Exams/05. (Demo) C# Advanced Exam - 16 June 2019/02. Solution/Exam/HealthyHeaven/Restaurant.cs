@@ -6,7 +6,7 @@ namespace HealthyHeaven
 
     public class Restaurant
     {
-        private readonly IList<Salad> data;
+        private List<Salad> data;
 
         public Restaurant(string name)
         {
@@ -14,7 +14,7 @@ namespace HealthyHeaven
             this.data = new List<Salad>();
         }
 
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         public void Add(Salad salad)
         {
@@ -23,14 +23,14 @@ namespace HealthyHeaven
 
         public bool Buy(string name)
         {
-            if (this.data.FirstOrDefault(s => s.Name == name) == null)
-            {
-                return false;
-            }
-            else
+            if (this.data.FirstOrDefault(s => s.Name == name) != null)
             {
                 this.data.Remove(this.data.FirstOrDefault(s => s.Name == name));
                 return true;
+            }
+            else
+            {
+                return false;
             }
         }
 
@@ -47,9 +47,9 @@ namespace HealthyHeaven
 
             sb.AppendLine($"{this.Name} have {this.data.Count} salads:");
 
-            foreach (var item in this.data)
+            foreach (var salad in data)
             {
-                sb.AppendLine(item.ToString());
+                sb.AppendLine(salad.ToString());
             }
 
             return sb.ToString().TrimEnd();

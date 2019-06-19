@@ -6,7 +6,7 @@ namespace HealthyHeaven
 
     public class Salad
     {
-        private readonly IList<Vegetable> products;
+        private List<Vegetable> products;
 
         public Salad(string name)
         {
@@ -14,7 +14,7 @@ namespace HealthyHeaven
             this.products = new List<Vegetable>();
         }
 
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         public int GetTotalCalories()
         {
@@ -34,13 +34,12 @@ namespace HealthyHeaven
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-
             sb.AppendLine(
                 $"* Salad {this.Name} is {this.GetTotalCalories()} calories and have {this.GetProductCount()} products:");
 
-            foreach (var item in this.products)
+            foreach (var product in this.products)
             {
-                sb.AppendLine(item.ToString());
+                sb.AppendLine(product.ToString());
             }
 
             return sb.ToString().TrimEnd();
