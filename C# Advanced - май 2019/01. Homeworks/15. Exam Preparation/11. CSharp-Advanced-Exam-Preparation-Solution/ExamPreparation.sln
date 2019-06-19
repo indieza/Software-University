@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubParty", "ClubParty\ClubParty.csproj", "{A76B959B-6813-458F-84D2-6696D513C20B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TronRacers", "TronRacers\TronRacers.csproj", "{F1C48038-04C5-4FCA-9994-869341B930E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes", "Heroes\Heroes.csproj", "{5C95EBF7-A1AA-4A07-8296-3187C4B99DD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76B959B-6813-458F-84D2-6696D513C20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76B959B-6813-458F-84D2-6696D513C20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76B959B-6813-458F-84D2-6696D513C20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76B959B-6813-458F-84D2-6696D513C20B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C48038-04C5-4FCA-9994-869341B930E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C48038-04C5-4FCA-9994-869341B930E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C48038-04C5-4FCA-9994-869341B930E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C48038-04C5-4FCA-9994-869341B930E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C95EBF7-A1AA-4A07-8296-3187C4B99DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C95EBF7-A1AA-4A07-8296-3187C4B99DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C95EBF7-A1AA-4A07-8296-3187C4B99DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C95EBF7-A1AA-4A07-8296-3187C4B99DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABA86E95-CFAA-4FC2-A7D8-6986046BFC55}
+	EndGlobalSection
+EndGlobal
