@@ -1,13 +1,9 @@
-﻿using System.Text;
-
 namespace FightingArena
 {
+    using System.Text;
+
     public class Gladiator
     {
-        private string name;
-        private Stat stat;
-        private Weapon weapon;
-
         public Gladiator(string name, Stat stat, Weapon weapon)
         {
             this.Name = name;
@@ -15,64 +11,29 @@ namespace FightingArena
             this.Weapon = weapon;
         }
 
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-            protected set
-            {
-                this.name = value;
-            }
-        }
+        public string Name { get; set; }
 
-        public Stat Stat
-        {
-            get
-            {
-                return this.stat;
-            }
-            protected set
-            {
-                this.stat = value;
-            }
-        }
+        public Stat Stat { get; set; }
 
-        public Weapon Weapon
-        {
-            get
-            {
-                return this.weapon;
-            }
-            protected set
-            {
-                this.weapon = value;
-            }
-        }
+        public Weapon Weapon { get; set; }
 
         public int GetTotalPower()
         {
-            int statSum = this.Stat.Strength + this.Stat.Flexibility + this.Stat.Agility + this.Stat.Skills + this.Stat.Intelligence;
-            int weaponSum = this.Weapon.Size + this.Weapon.Solidity + this.Weapon.Sharpness;
-
-            int sum = statSum + weaponSum;
-
-            return sum;
+            return this.GetWeaponPower() + this.GetStatPower();
         }
 
         public int GetWeaponPower()
         {
-            int weaponSum = this.Weapon.Size + this.Weapon.Solidity + this.Weapon.Sharpness;
-
-            return weaponSum;
+            return this.Weapon.Size + this.Weapon.Solidity + this.Weapon.Sharpness;
         }
 
         public int GetStatPower()
         {
-            int statSum = this.Stat.Strength + this.Stat.Flexibility + this.Stat.Agility + this.Stat.Skills + this.Stat.Intelligence;
-
-            return statSum;
+            return this.Stat.Strength
+                + this.Stat.Flexibility
+                + this.Stat.Agility
+                + this.Stat.Skills
+                + this.Stat.Intelligence;
         }
 
         public override string ToString()

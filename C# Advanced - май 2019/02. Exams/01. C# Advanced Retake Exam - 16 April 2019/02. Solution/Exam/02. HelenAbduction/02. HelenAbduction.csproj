@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3461DF1F-2557-40A9-92D5-0366B4C55844}</ProjectGuid>
+    <ProjectGuid>{BC23C3C8-7EAA-452C-A74B-363205E93F07}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02.HelensAbduction</RootNamespace>
-    <AssemblyName>_02.HelensAbduction</AssemblyName>
+    <RootNamespace>_02.HelenAbduction</RootNamespace>
+    <AssemblyName>_02.HelenAbduction</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HelensAbduction.cs" />
+    <Compile Include="HelenAbduction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

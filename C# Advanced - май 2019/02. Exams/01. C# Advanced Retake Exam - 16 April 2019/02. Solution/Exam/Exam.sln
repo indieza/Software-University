@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.452
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. TrojanInvasion", "01. TrojanInvasion\01. TrojanInvasion.csproj", "{4C64AF67-FE2D-4C1A-B00D-93C16FB38A1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightingArena", "FightingArena\FightingArena.csproj", "{2671F4B1-A6C7-4A3C-B8F7-543A0C337DE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. HelensAbduction", "02. HelensAbduction\02. HelensAbduction.csproj", "{3461DF1F-2557-40A9-92D5-0366B4C55844}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. TrojanInvasion", "01. TrojanInvasion\01. TrojanInvasion.csproj", "{1A01BA02-CD1C-4A4E-AE33-28508FE441E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightingArena", "FightingArena\FightingArena.csproj", "{D0E33819-4CB9-40B1-B2DD-B3BB72645E8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. HelenAbduction", "02. HelenAbduction\02. HelenAbduction.csproj", "{BC23C3C8-7EAA-452C-A74B-363205E93F07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,23 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C64AF67-FE2D-4C1A-B00D-93C16FB38A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C64AF67-FE2D-4C1A-B00D-93C16FB38A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C64AF67-FE2D-4C1A-B00D-93C16FB38A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C64AF67-FE2D-4C1A-B00D-93C16FB38A1E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3461DF1F-2557-40A9-92D5-0366B4C55844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3461DF1F-2557-40A9-92D5-0366B4C55844}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3461DF1F-2557-40A9-92D5-0366B4C55844}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3461DF1F-2557-40A9-92D5-0366B4C55844}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0E33819-4CB9-40B1-B2DD-B3BB72645E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0E33819-4CB9-40B1-B2DD-B3BB72645E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0E33819-4CB9-40B1-B2DD-B3BB72645E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0E33819-4CB9-40B1-B2DD-B3BB72645E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2671F4B1-A6C7-4A3C-B8F7-543A0C337DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2671F4B1-A6C7-4A3C-B8F7-543A0C337DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2671F4B1-A6C7-4A3C-B8F7-543A0C337DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2671F4B1-A6C7-4A3C-B8F7-543A0C337DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A01BA02-CD1C-4A4E-AE33-28508FE441E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A01BA02-CD1C-4A4E-AE33-28508FE441E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A01BA02-CD1C-4A4E-AE33-28508FE441E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A01BA02-CD1C-4A4E-AE33-28508FE441E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC23C3C8-7EAA-452C-A74B-363205E93F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC23C3C8-7EAA-452C-A74B-363205E93F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC23C3C8-7EAA-452C-A74B-363205E93F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC23C3C8-7EAA-452C-A74B-363205E93F07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2E9E1866-2032-4E78-9312-5EA0399BB5F6}
+		SolutionGuid = {43605360-E552-4D2F-AF55-3E11BC7BDF0E}
 	EndGlobalSection
 EndGlobal

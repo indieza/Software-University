@@ -1,12 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
 namespace FightingArena
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class Arena
     {
         private List<Gladiator> gladiators;
-        private string name;
 
         public Arena(string name)
         {
@@ -14,19 +13,9 @@ namespace FightingArena
             this.gladiators = new List<Gladiator>();
         }
 
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-            protected set
-            {
-                this.name = value;
-            }
-        }
+        public string Name { get; set; }
 
-        public int Count => this.gladiators.Count();
+        public int Count => this.gladiators.Count;
 
         public void Add(Gladiator gladiator)
         {
@@ -40,58 +29,28 @@ namespace FightingArena
 
         public Gladiator GetGladitorWithHighestStatPower()
         {
-            int maxStat = int.MinValue;
+            int max = this.gladiators.Max(g => g.GetStatPower());
 
-            foreach (var currentGladiator in this.gladiators)
-            {
-                if (maxStat < currentGladiator.GetStatPower())
-                {
-                    maxStat = currentGladiator.GetStatPower();
-                }
-            }
-
-            Gladiator gladiator = this.gladiators.FirstOrDefault(g => g.GetStatPower() == maxStat);
-
-            return gladiator;
+            return this.gladiators.FirstOrDefault(g => g.GetStatPower() == max);
         }
 
         public Gladiator GetGladitorWithHighestWeaponPower()
         {
-            int maxWeapon = int.MinValue;
+            int max = this.gladiators.Max(g => g.GetWeaponPower());
 
-            foreach (var currentGladiator in this.gladiators)
-            {
-                if (maxWeapon < currentGladiator.GetWeaponPower())
-                {
-                    maxWeapon = currentGladiator.GetWeaponPower();
-                }
-            }
-
-            Gladiator gladiator = this.gladiators.FirstOrDefault(g => g.GetWeaponPower() == maxWeapon);
-
-            return gladiator;
+            return this.gladiators.FirstOrDefault(g => g.GetWeaponPower() == max);
         }
 
         public Gladiator GetGladitorWithHighestTotalPower()
         {
-            int maxPower = int.MinValue;
+            int max = this.gladiators.Max(g => g.GetTotalPower());
 
-            foreach (var currentGladiator in this.gladiators)
-            {
-                if (maxPower < currentGladiator.GetTotalPower())
-                {
-                    maxPower = currentGladiator.GetTotalPower();
-                }
-            }
-
-            Gladiator gladiator = this.gladiators.FirstOrDefault(g => g.GetTotalPower() == maxPower);
-
-            return gladiator;
+            return this.gladiators.FirstOrDefault(g => g.GetTotalPower() == max);
         }
 
         public override string ToString()
         {
-            return ($"[{this.Name}] - [{this.Count}] gladiators are participating.").TrimEnd();
+            return $"[{this.Name}] - [{this.Count}] gladiators are participating.";
         }
     }
 }

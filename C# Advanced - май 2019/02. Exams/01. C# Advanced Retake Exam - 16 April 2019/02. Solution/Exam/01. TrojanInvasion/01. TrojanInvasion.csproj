@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C64AF67-FE2D-4C1A-B00D-93C16FB38A1E}</ProjectGuid>
+    <ProjectGuid>{1A01BA02-CD1C-4A4E-AE33-28508FE441E9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_01.TrojanInvasion</RootNamespace>
     <AssemblyName>_01.TrojanInvasion</AssemblyName>

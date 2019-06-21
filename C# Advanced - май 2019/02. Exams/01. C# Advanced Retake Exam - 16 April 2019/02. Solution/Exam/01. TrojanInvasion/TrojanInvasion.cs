@@ -10,40 +10,35 @@ namespace _01.TrojanInvasion
         {
             int waves = int.Parse(Console.ReadLine());
 
-            List<int> plates = Console.ReadLine()
-                .Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
-                .ToList();
+            List<int> plates = new List<int>(Console.ReadLine().Split().Select(int.Parse));
             Stack<int> warriors = new Stack<int>();
 
-            for (int i = 1; i <= waves; i++)
+            for (int wave = 1; wave <= waves; wave++)
             {
-                warriors = new Stack<int>(Console.ReadLine()
-                    .Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries)
-                    .Select(int.Parse));
+                warriors = new Stack<int>(Console.ReadLine().Split().Select(int.Parse));
 
-                if (i % 3 == 0)
+                if (wave % 3 == 0)
                 {
-                    int bonusPlate = int.Parse(Console.ReadLine());
-                    plates.Add(bonusPlate);
+                    plates.Add(int.Parse(Console.ReadLine()));
                 }
 
                 while (warriors.Count != 0 && plates.Count != 0)
                 {
-                    int warrior = warriors.Pop();
-                    int plate = plates[0];
+                    int currentPlate = plates[0];
+                    int currentWarrior = warriors.Pop();
 
-                    if (warrior > plate)
+                    if (currentWarrior > currentPlate)
                     {
-                        warrior -= plate;
-                        warriors.Push(warrior);
+                        currentWarrior -= currentPlate;
+                        warriors.Push(currentWarrior);
                         plates.RemoveAt(0);
                     }
-                    else if (plate > warrior)
+                    else if (currentPlate > currentWarrior)
                     {
-                        plates[0] = plate - warrior;
+                        currentPlate -= currentWarrior;
+                        plates[0] = currentPlate;
                     }
-                    else if (warrior == plate)
+                    else
                     {
                         plates.RemoveAt(0);
                     }
@@ -58,18 +53,20 @@ namespace _01.TrojanInvasion
             if (plates.Count == 0)
             {
                 Console.WriteLine("The Trojans successfully destroyed the Spartan defense.");
+
+                if (warriors.Count != 0)
+                {
+                    Console.WriteLine($"Warriors left: {string.Join(", ", warriors)}");
+                }
             }
-            else
+            if (warriors.Count == 0)
             {
                 Console.WriteLine("The Spartans successfully repulsed the Trojan attack.");
-            }
-            if (warriors.Count != 0)
-            {
-                Console.WriteLine($"Warriors left: {string.Join(", ", warriors)}");
-            }
-            if (plates.Count != 0)
-            {
-                Console.WriteLine($"Plates left: {string.Join(", ", plates)}");
+
+                if (plates.Count != 0)
+                {
+                    Console.WriteLine($"Plates left: {string.Join(", ", plates)}");
+                }
             }
         }
     }
