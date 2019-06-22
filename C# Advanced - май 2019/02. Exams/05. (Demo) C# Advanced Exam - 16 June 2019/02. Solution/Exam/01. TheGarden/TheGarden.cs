@@ -9,7 +9,6 @@ namespace _01.TheGarden
         private static int rows;
         private static char[][] field;
         private static string[] commandItems;
-        private static string command;
         private static int targetRow;
         private static int targetCol;
         private static string direction;
@@ -19,16 +18,15 @@ namespace _01.TheGarden
         {
             rows = int.Parse(Console.ReadLine());
             field = new char[rows][];
+            FillField();
 
             information = new Dictionary<char, int>()
             {
-                {'C', 0 },
-                {'P', 0 },
-                {'L', 0 },
-                {'H', 0 }
+                { 'C', 0 },
+                { 'P', 0 },
+                { 'L', 0 },
+                { 'H', 0 }
             };
-
-            FillField();
 
             string line = Console.ReadLine();
 
@@ -74,14 +72,11 @@ namespace _01.TheGarden
 
         private static void ExecuteCommand()
         {
-            command = commandItems[0];
-
-            switch (command)
+            switch (commandItems[0])
             {
                 case "Harvest":
                     targetRow = int.Parse(commandItems[1]);
                     targetCol = int.Parse(commandItems[2]);
-
                     HarvestCommand();
                     break;
 
@@ -89,7 +84,6 @@ namespace _01.TheGarden
                     targetRow = int.Parse(commandItems[1]);
                     targetCol = int.Parse(commandItems[2]);
                     direction = commandItems[3];
-
                     MoleCommand();
                     break;
 
@@ -105,18 +99,18 @@ namespace _01.TheGarden
                 case "up":
                     if (targetRow >= 0 && targetRow <= rows - 1)
                     {
-                        int count = 0;
+                        int counter = 0;
 
                         if (targetCol <= field[targetRow].Length - 1 && targetCol >= 0)
                         {
                             for (int row = targetRow; row >= 0; row--)
                             {
-                                if (count++ % 2 == 0)
+                                if (counter++ % 2 == 0)
                                 {
                                     if (field[row][targetCol] != ' ')
                                     {
-                                        information['H']++;
                                         field[row][targetCol] = ' ';
+                                        information['H']++;
                                     }
                                 }
                             }
@@ -127,18 +121,18 @@ namespace _01.TheGarden
                 case "down":
                     if (targetRow >= 0 && targetRow <= rows - 1)
                     {
-                        int count = 0;
+                        int counter = 0;
 
                         if (targetCol <= field[targetRow].Length - 1 && targetCol >= 0)
                         {
                             for (int row = targetRow; row < rows; row++)
                             {
-                                if (count++ % 2 == 0)
+                                if (counter++ % 2 == 0)
                                 {
                                     if (field[row][targetCol] != ' ')
                                     {
-                                        information['H']++;
                                         field[row][targetCol] = ' ';
+                                        information['H']++;
                                     }
                                 }
                             }
@@ -149,18 +143,18 @@ namespace _01.TheGarden
                 case "left":
                     if (targetRow >= 0 && targetRow <= rows - 1)
                     {
-                        int count = 0;
+                        int counter = 0;
 
                         if (targetCol <= field[targetRow].Length - 1 && targetCol >= 0)
                         {
                             for (int col = targetCol; col >= 0; col--)
                             {
-                                if (count++ % 2 == 0)
+                                if (counter++ % 2 == 0)
                                 {
                                     if (field[targetRow][col] != ' ')
                                     {
-                                        information['H']++;
                                         field[targetRow][col] = ' ';
+                                        information['H']++;
                                     }
                                 }
                             }
@@ -171,18 +165,18 @@ namespace _01.TheGarden
                 case "right":
                     if (targetRow >= 0 && targetRow <= rows - 1)
                     {
-                        int count = 0;
+                        int counter = 0;
 
                         if (targetCol <= field[targetRow].Length - 1 && targetCol >= 0)
                         {
                             for (int col = targetCol; col < field[targetRow].Length; col++)
                             {
-                                if (count++ % 2 == 0)
+                                if (counter++ % 2 == 0)
                                 {
                                     if (field[targetRow][col] != ' ')
                                     {
-                                        information['H']++;
                                         field[targetRow][col] = ' ';
+                                        information['H']++;
                                     }
                                 }
                             }

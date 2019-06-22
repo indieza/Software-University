@@ -34,6 +34,7 @@ namespace HealthyHeaven
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
+
             sb.AppendLine(
                 $"* Salad {this.Name} is {this.GetTotalCalories()} calories and have {this.GetProductCount()} products:");
 

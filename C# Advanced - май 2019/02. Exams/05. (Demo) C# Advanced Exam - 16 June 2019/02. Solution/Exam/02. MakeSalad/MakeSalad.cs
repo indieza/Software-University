@@ -14,26 +14,22 @@ namespace _02.MakeSalad
 
             Stack<int> calories = new Stack<int>(Console.ReadLine()
                 .Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse));
+                .Select(int.Parse)
+                .ToList());
 
             List<int> madeSalads = new List<int>();
 
-            while (vegetables.Count != 0 && calories.Count != 0)
+            while (calories.Count != 0 && vegetables.Count != 0)
             {
                 string currentVegetable = vegetables.Dequeue();
                 int currentCalories = calories.Pop();
+                int currentVegetableCalories = ExecuteVegetableCalories(currentVegetable);
 
-                int currentVegetablesCalories = ExecuteVegetableCalories(currentVegetable);
+                int leftCalories = currentCalories - currentVegetableCalories;
 
-                if (currentCalories > currentVegetablesCalories)
+                while (leftCalories > 0 && vegetables.Count != 0)
                 {
-                    int left = currentCalories - currentVegetablesCalories;
-
-                    while (left > 0 && vegetables.Count != 0)
-                    {
-                        currentVegetable = vegetables.Dequeue();
-                        left -= ExecuteVegetableCalories(currentVegetable);
-                    }
+                    leftCalories -= ExecuteVegetableCalories(vegetables.Dequeue());
                 }
 
                 madeSalads.Add(currentCalories);
@@ -45,17 +41,17 @@ namespace _02.MakeSalad
             {
                 Console.WriteLine(string.Join(" ", calories));
             }
-            else if (vegetables.Count != 0)
+            if (vegetables.Count != 0)
             {
                 Console.WriteLine(string.Join(" ", vegetables));
             }
         }
 
-        private static int ExecuteVegetableCalories(string currentVegetables)
+        private static int ExecuteVegetableCalories(string currentVegetable)
         {
             int calories = 0;
 
-            switch (currentVegetables)
+            switch (currentVegetable)
             {
                 case "tomato":
                     calories = 80;

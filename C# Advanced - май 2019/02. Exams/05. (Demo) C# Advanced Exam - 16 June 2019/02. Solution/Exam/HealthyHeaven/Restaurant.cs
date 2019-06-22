@@ -28,16 +28,13 @@ namespace HealthyHeaven
                 this.data.Remove(this.data.FirstOrDefault(s => s.Name == name));
                 return true;
             }
-            else
-            {
-                return false;
-            }
+
+            return false;
         }
 
         public Salad GetHealthiestSalad()
         {
             int min = this.data.Min(s => s.GetTotalCalories());
-
             return this.data.FirstOrDefault(s => s.GetTotalCalories() == min);
         }
 
@@ -45,9 +42,9 @@ namespace HealthyHeaven
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine($"{this.Name} have {this.data.Count} salads:");
+            sb.AppendLine($"{this.Name} have {this.data.Count()} salads:");
 
-            foreach (var salad in data)
+            foreach (var salad in this.data)
             {
                 sb.AppendLine(salad.ToString());
             }
