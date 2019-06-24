@@ -1,0 +1,7 @@
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusOfStars\bin\Debug\_01.RhombusOfStars.exe.config
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusOfStars\bin\Debug\_01.RhombusOfStars.exe
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusOfStars\bin\Debug\_01.RhombusOfStars.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusOfStars\obj\Debug\01. RhombusOfStars.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusOfStars\obj\Debug\01. RhombusOfStars.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusOfStars\obj\Debug\_01.RhombusOfStars.exe
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusOfStars\obj\Debug\_01.RhombusOfStars.pdb
