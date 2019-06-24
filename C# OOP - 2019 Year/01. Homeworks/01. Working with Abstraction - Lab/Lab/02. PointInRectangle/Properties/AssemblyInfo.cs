@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("01. RhombusOfStars")]
+[assembly: AssemblyTitle("02. PointInRectangle")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("01. RhombusOfStars")]
+[assembly: AssemblyProduct("02. PointInRectangle")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("da82edb3-caeb-434b-9910-43423556072a")]
+[assembly: Guid("38335855-6d86-478d-8af4-29a28f50f2c8")]
 
 // Version information for an assembly consists of the following four values:
 //
