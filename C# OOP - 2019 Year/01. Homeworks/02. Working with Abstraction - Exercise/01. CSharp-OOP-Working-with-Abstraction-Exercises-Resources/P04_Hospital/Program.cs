@@ -11,7 +11,6 @@ namespace P04_Hospital
             Dictionary<string, List<string>> doktori = new Dictionary<string, List<string>>();
             Dictionary<string, List<List<string>>> departments = new Dictionary<string, List<List<string>>>();
 
-
             string command = Console.ReadLine();
             while (command != "Output")
             {

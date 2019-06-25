@@ -1,120 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace P02_CarsSalesman
 {
-    class Engine
+    public class CarSalesman
     {
-        private const string offset = "  ";
-
-        public string model;
-        public int power;
-        public int displacement;
-        public string efficiency;
-
-        public Engine(string model, int power)
-        {
-            this.model = model;
-            this.power = power;
-            this.displacement = -1;
-            this.efficiency = "n/a";
-        }
-
-        public Engine(string model, int power, int displacement)
-        {
-            this.model = model;
-            this.power = power;
-            this.displacement = displacement;
-            this.efficiency = "n/a";
-        }
-
-        public Engine(string model, int power, string efficiency)
-        {
-            this.model = model;
-            this.power = power;
-            this.displacement = -1;
-            this.efficiency = efficiency;
-        }
-
-        public Engine(string model, int power, int displacement, string efficiency)
-        {
-            this.model = model;
-            this.power = power;
-            this.displacement = displacement;
-            this.efficiency = efficiency;
-        }
-
-
-
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0}{1}:\n", offset, this.model);
-            sb.AppendFormat("{0}{0}Power: {1}\n", offset, this.power);
-            sb.AppendFormat("{0}{0}Displacement: {1}\n", offset, this.displacement == -1 ? "n/a" : this.displacement.ToString());
-            sb.AppendFormat("{0}{0}Efficiency: {1}\n", offset, this.efficiency);
-
-            return sb.ToString();
-        }
-    }
-    class Car
-    {
-        private const string offset = "  ";
-
-        public string model;
-        public Engine engine;
-        public int weight;
-        public string color;
-
-        public Car(string model, Engine engine)
-        {
-            this.model = model;
-            this.engine = engine;
-            this.weight = -1;
-            this.color = "n/a";
-        }
-
-        public Car(string model, Engine engine, int weight)
-        {
-            this.model = model;
-            this.engine = engine;
-            this.weight = weight;
-            this.color = "n/a";
-        }
-
-        public Car(string model, Engine engine, string color)
-        {
-            this.model = model;
-            this.engine = engine;
-            this.weight = -1;
-            this.color = color;
-        }
-
-        public Car(string model, Engine engine, int weight, string color)
-        {
-            this.model = model;
-            this.engine = engine;
-            this.weight = weight;
-            this.color = color;
-        }
-
-
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0}:\n", this.model);
-            sb.Append(this.engine.ToString());
-            sb.AppendFormat("{0}Weight: {1}\n", offset, this.weight == -1 ? "n/a" : this.weight.ToString());
-            sb.AppendFormat("{0}Color: {1}", offset, this.color);
-
-            return sb.ToString();
-        }
-    }
-    class CarSalesman
-    {
-        static void Main(string[] args)
+        private static void Main()
         {
             List<Car> cars = new List<Car>();
             List<Engine> engines = new List<Engine>();
@@ -182,5 +74,4 @@ namespace P02_CarsSalesman
             }
         }
     }
-
 }

@@ -2,10 +2,11 @@
 
 namespace P06_Sneaking
 {
-    class Sneaking
+    internal class Sneaking
     {
-        static char[][] room;
-        static void Main()
+        private static char[][] room;
+
+        private static void Main()
         {
             int n = int.Parse(Console.ReadLine());
             room = new char[n][];
@@ -105,22 +106,25 @@ namespace P06_Sneaking
                     Environment.Exit(0);
                 }
 
-
                 room[samPosition[0]][samPosition[1]] = '.';
                 switch (moves[i])
                 {
                     case 'U':
                         samPosition[0]--;
                         break;
+
                     case 'D':
                         samPosition[0]++;
                         break;
+
                     case 'L':
                         samPosition[1]--;
                         break;
+
                     case 'R':
                         samPosition[1]++;
                         break;
+
                     default:
                         break;
                 }
@@ -150,6 +154,5 @@ namespace P06_Sneaking
                 }
             }
         }
-
     }
 }

@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace P03_JediGalaxy
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        private static void Main()
         {
             int[] dimestions = Console.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
             int x = dimestions[0];
@@ -59,7 +59,6 @@ namespace P03_JediGalaxy
             }
 
             Console.WriteLine(sum);
-
         }
     }
 }

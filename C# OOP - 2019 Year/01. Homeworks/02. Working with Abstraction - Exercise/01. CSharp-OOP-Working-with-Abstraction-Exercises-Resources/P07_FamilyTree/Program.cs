@@ -4,146 +4,116 @@ using System.Linq;
 
 namespace P07_FamilyTree
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            var familyTree = new List<Person>();
-            string personInput = Console.ReadLine();
-            Person mainPerson = new Person();
+            var nameBirthday = new List<string>();
+            var parentChild = new List<string>();
 
-            if (IsBirthday(personInput))
+            while (true)
             {
-                mainPerson.Birthday = personInput;
+                var input = Console.ReadLine();
+                if (input == "End")
+                {
+                    break;
+                }
+
+                if (input.Contains("-"))
+                {
+                    parentChild.Add(input);
+                }
+                else
+                {
+                    nameBirthday.Add(input);
+                }
+            }
+
+            var mainPersonName = string.Empty;
+            var mainPersonBirthday = string.Empty;
+
+            if (nameBirthday[0].Contains('/'))
+            {
+                mainPersonBirthday = nameBirthday[0];
+                mainPersonName = nameBirthday
+                   .FirstOrDefault(x => x.Contains(mainPersonBirthday) && x.Length > mainPersonBirthday.Length)
+                   .Replace(mainPersonBirthday, "").Trim();
             }
             else
             {
-                mainPerson.Name = personInput;
+                mainPersonName = nameBirthday[0];
+                mainPersonBirthday = nameBirthday.FirstOrDefault(x => x.Contains(mainPersonName) && x.Contains("/"))
+                    .Replace(mainPersonName, "").Trim();
             }
-
-            familyTree.Add(mainPerson);
-
-            string command;
-            while ((command = Console.ReadLine()) != "End")
+            var mainPerson = new Person()
             {
-                string[] tokens = command.Split(" - ");
-                if (tokens.Length > 1)
+                Name = mainPersonName,
+                Birthday = mainPersonBirthday
+            };
+
+            foreach (var line in parentChild)
+            {
+                if (line.Contains(mainPerson.Name) || line.Contains(mainPerson.Birthday))
                 {
-                    string firstPerson = tokens[0];
-                    string secondPerson = tokens[1];
-
-                    Person currentPerson;
-
-                    if (IsBirthday(firstPerson))
+                    var currentLine = line.Split(" - ", StringSplitOptions.RemoveEmptyEntries);
+                    if (currentLine[0] == mainPerson.Birthday || currentLine[0] == mainPerson.Name)
                     {
-                        currentPerson = familyTree.FirstOrDefault(p => p.Birthday == firstPerson);
-
-                        if (currentPerson == null)
+                        var child = new Person();
+                        if (currentLine[1].Contains("/"))
                         {
-                            currentPerson = new Person();
-                            currentPerson.Birthday = firstPerson;
-                            familyTree.Add(currentPerson);
-                        }
+                            var childBirthday = currentLine[1];
+                            var childName = nameBirthday.FirstOrDefault(x => x.Contains(childBirthday))
+                                .Replace(childBirthday, "").Trim();
+                            child = new Person() { Birthday = childBirthday, Name = childName };
 
-                        SetChild(familyTree, currentPerson, secondPerson);
+                        }
+                        else
+                        {
+                            var childName = currentLine[1];
+                            var childBirthday = nameBirthday.FirstOrDefault(x => x.Contains(childName))
+                                .Replace(childName, "").Trim();
+                            child = new Person() { Birthday = childBirthday, Name = childName };
+                        }
+                        mainPerson.Children.Add(child);
                     }
+
                     else
                     {
-                        currentPerson = familyTree.FirstOrDefault(p => p.Name == firstPerson);
-
-                        if (currentPerson == null)
+                        var parent = new Person();
+                        if (currentLine[0].Contains("/"))
                         {
-                            currentPerson = new Person();
-                            currentPerson.Name = firstPerson;
-                            familyTree.Add(currentPerson);
+                            var parentBirthday = currentLine[0].Trim();
+                            var ParentName = nameBirthday.FirstOrDefault(x => x.Contains(parentBirthday))
+                                .Replace(parentBirthday, "").Trim();
+                            parent = new Person() { Birthday = parentBirthday, Name = ParentName };
+                        }
+                        else
+                        {
+                            var parentName = currentLine[0].Trim();
+                            var ParentBirthday = nameBirthday.FirstOrDefault(x => x.Contains(parentName))
+                                .Replace(parentName, "").Trim();
+                            parent = new Person() { Birthday = ParentBirthday, Name = parentName };
                         }
 
-                        SetChild(familyTree, currentPerson, secondPerson);
-                    }
-                }
-                else
-                {
-                    tokens = tokens[0].Split();
-                    string name = $"{tokens[0]} {tokens[1]}";
-                    string birthday = tokens[2];
-
-                    var person = familyTree.FirstOrDefault(p => p.Name == name || p.Birthday == birthday);
-                    if (person == null)
-                    {
-                        person = new Person();
-                        familyTree.Add(person);
-                    }
-                    person.Name = name;
-                    person.Birthday = birthday;
-
-                    int index = familyTree.IndexOf(person) + 1;
-                    int count = familyTree.Count - index;
-
-                    Person[] copy = new Person[count];
-                    familyTree.CopyTo(index, copy, 0, count);
-
-                    Person copyPerson = copy.FirstOrDefault(p => p.Name == name || p.Birthday == birthday);
-
-                    if (copyPerson != null)
-                    {
-                        familyTree.Remove(copyPerson);
-                        person.Parents.AddRange(copyPerson.Parents);
-                        person.Parents = person.Parents.Distinct().ToList();
-
-                        person.Children.AddRange(copyPerson.Children);
-                        person.Children = person.Children.Distinct().ToList();
+                        mainPerson.Parents.Add(parent);
                     }
                 }
             }
 
-            Console.WriteLine(mainPerson);
+            Console.WriteLine($"{mainPerson}");
             Console.WriteLine("Parents:");
-            foreach (var p in mainPerson.Parents)
+
+            foreach (var parent in mainPerson.Parents)
             {
-                Console.WriteLine(p);
+                Console.WriteLine($"{parent}");
             }
+
             Console.WriteLine("Children:");
-            foreach (var c in mainPerson.Children)
+
+            foreach (var child in mainPerson.Children)
             {
-                Console.WriteLine(c);
+                Console.WriteLine($"{child}");
             }
-        }
-
-        private static void SetChild(List<Person> familyTree, Person parentPerson, string child)
-        {
-            var childPerson = new Person();
-
-            if (IsBirthday(child))
-            {
-                if (!familyTree.Any(p => p.Birthday == child))
-                {
-                    childPerson.Birthday = child;
-                }
-                else
-                {
-                    childPerson = familyTree.First(p => p.Birthday == child);
-                }
-            }
-            else
-            {
-                if (!familyTree.Any(p => p.Name == child))
-                {
-                    childPerson.Name = child;
-                }
-                else
-                {
-                    childPerson = familyTree.First(p => p.Name == child);
-                }
-            }
-
-            parentPerson.Children.Add(childPerson);
-            childPerson.Parents.Add(parentPerson);
-            familyTree.Add(childPerson);
-        }
-
-        static bool IsBirthday(string input)
-        {
-            return Char.IsDigit(input[0]);
         }
     }
 }

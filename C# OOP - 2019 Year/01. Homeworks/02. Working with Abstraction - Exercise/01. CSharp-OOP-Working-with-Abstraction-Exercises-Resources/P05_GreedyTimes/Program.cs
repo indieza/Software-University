@@ -4,10 +4,9 @@ using System.Linq;
 
 namespace P05_GreedyTimes
 {
-
     public class Potato
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             long vhod = long.Parse(Console.ReadLine());
             string[] seif = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
@@ -68,6 +67,7 @@ namespace P05_GreedyTimes
                             continue;
                         }
                         break;
+
                     case "Cash":
                         if (!torba.ContainsKey(kvoE))
                         {
