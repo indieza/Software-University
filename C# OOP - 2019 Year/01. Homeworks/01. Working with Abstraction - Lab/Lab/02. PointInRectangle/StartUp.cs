@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _02.PointInRectangle
+namespace PointInRectangle
 {
     public class StartUp
     {

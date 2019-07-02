@@ -1,4 +1,4 @@
-namespace _04.HotelReservation
+namespace HotelReservation
 {
     public class PriceCalculator
     {

@@ -1,4 +1,4 @@
-﻿namespace _03.StudentSystem
+﻿namespace StudentSystem
 {
     public class StartUp
     {

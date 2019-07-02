@@ -1,4 +1,4 @@
-namespace _02.PointInRectangle
+namespace PointInRectangle
 {
     public class Point
     {

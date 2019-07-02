@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _04.HotelReservation
+namespace HotelReservation
 {
     public class StartUp
     {
