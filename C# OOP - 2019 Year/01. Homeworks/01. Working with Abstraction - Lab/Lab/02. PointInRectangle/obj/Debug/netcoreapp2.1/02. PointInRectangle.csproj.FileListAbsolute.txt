@@ -1,0 +1,11 @@
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\bin\Debug\netcoreapp2.1\02. PointInRectangle.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\bin\Debug\netcoreapp2.1\02. PointInRectangle.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\bin\Debug\netcoreapp2.1\02. PointInRectangle.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\bin\Debug\netcoreapp2.1\02. PointInRectangle.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\bin\Debug\netcoreapp2.1\02. PointInRectangle.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\obj\Debug\netcoreapp2.1\02. PointInRectangle.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\obj\Debug\netcoreapp2.1\02. PointInRectangle.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\obj\Debug\netcoreapp2.1\02. PointInRectangle.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\obj\Debug\netcoreapp2.1\02. PointInRectangle.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\obj\Debug\netcoreapp2.1\02. PointInRectangle.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\02. PointInRectangle\obj\Debug\netcoreapp2.1\02. PointInRectangle.pdb

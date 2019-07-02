@@ -1,0 +1,10 @@
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\bin\Debug\netcoreapp2.2\01. RhombusStars.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\bin\Debug\netcoreapp2.2\01. RhombusStars.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\bin\Debug\netcoreapp2.2\01. RhombusStars.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\bin\Debug\netcoreapp2.2\01. RhombusStars.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\bin\Debug\netcoreapp2.2\01. RhombusStars.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\obj\Debug\netcoreapp2.2\01. RhombusStars.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\obj\Debug\netcoreapp2.2\01. RhombusStars.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\obj\Debug\netcoreapp2.2\01. RhombusStars.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\obj\Debug\netcoreapp2.2\01. RhombusStars.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\01. Working with Abstraction - Lab\Lab\01. RhombusStars\obj\Debug\netcoreapp2.2\01. RhombusStars.pdb
