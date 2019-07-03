@@ -1,0 +1,11 @@
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\bin\Debug\netcoreapp2.1\Zoo.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\bin\Debug\netcoreapp2.1\Zoo.runtimeconfig.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\bin\Debug\netcoreapp2.1\Zoo.runtimeconfig.dev.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\bin\Debug\netcoreapp2.1\Zoo.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\bin\Debug\netcoreapp2.1\Zoo.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\obj\Debug\netcoreapp2.1\Zoo.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\obj\Debug\netcoreapp2.1\Zoo.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\obj\Debug\netcoreapp2.1\Zoo.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\obj\Debug\netcoreapp2.1\Zoo.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\obj\Debug\netcoreapp2.1\Zoo.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Zoo\obj\Debug\netcoreapp2.1\Zoo.pdb

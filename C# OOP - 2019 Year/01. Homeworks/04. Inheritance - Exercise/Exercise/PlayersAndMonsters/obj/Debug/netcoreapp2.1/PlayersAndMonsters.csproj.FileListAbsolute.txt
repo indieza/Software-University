@@ -1,0 +1,11 @@
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\bin\Debug\netcoreapp2.1\PlayersAndMonsters.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\bin\Debug\netcoreapp2.1\PlayersAndMonsters.runtimeconfig.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\bin\Debug\netcoreapp2.1\PlayersAndMonsters.runtimeconfig.dev.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\bin\Debug\netcoreapp2.1\PlayersAndMonsters.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\bin\Debug\netcoreapp2.1\PlayersAndMonsters.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.pdb

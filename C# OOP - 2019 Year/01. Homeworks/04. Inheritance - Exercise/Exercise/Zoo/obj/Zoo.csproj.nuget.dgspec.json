@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Zoo\\Zoo.csproj": {}
+  },
+  "projects": {
+    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Zoo\\Zoo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Zoo\\Zoo.csproj",
+        "projectName": "Zoo",
+        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Zoo\\Zoo.csproj",
+        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
+        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Zoo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
