@@ -1,11 +1,5 @@
-
 namespace PlayersAndMonsters
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
-
     public abstract class Hero
     {
         private string username;
@@ -22,15 +16,16 @@ namespace PlayersAndMonsters
             get => this.username;
             set => this.username = value;
         }
+
         public int Level
         {
             get => this.level;
             set => this.level = value;
         }
+
         public override string ToString()
         {
             return $"Type: {this.GetType().Name} Username: {this.Username} Level: {this.Level}";
         }
-
     }
 }

@@ -1,9 +1,5 @@
 namespace NeedForSpeed.Cars
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class Car : Vehicle
     {
         private const double DefaultFuelConsumption = 3;

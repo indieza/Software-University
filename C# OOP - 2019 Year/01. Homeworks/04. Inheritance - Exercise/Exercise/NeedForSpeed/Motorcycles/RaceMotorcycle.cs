@@ -1,9 +1,5 @@
 namespace NeedForSpeed.Motorcycles
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class RaceMotorcycle : Motorcycle
     {
         private const double DefaultFuelConsumption = 8;

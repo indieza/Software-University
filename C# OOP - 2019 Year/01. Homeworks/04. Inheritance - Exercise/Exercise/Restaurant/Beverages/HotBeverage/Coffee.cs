@@ -1,11 +1,5 @@
-
 namespace Restaurant.Beverages.HotBeverage
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
-
     public class Coffee : HotBeverage
     {
         private const double CoffeeMilliliters = 50;

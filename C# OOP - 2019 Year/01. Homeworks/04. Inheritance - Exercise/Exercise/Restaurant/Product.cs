@@ -1,11 +1,5 @@
-
 namespace Restaurant
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
-
     public class Product
     {
         private string name;
@@ -22,6 +16,7 @@ namespace Restaurant
             get => this.name;
             set => this.name = value;
         }
+
         public decimal Price
         {
             get => this.price;
