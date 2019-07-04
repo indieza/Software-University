@@ -1,12 +1,12 @@
-namespace NeedForSpeed
+namespace NeedForSpeed.Motorcycles
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
 
-    public class FamilyCar : Car
+    public class CrossMotorcycle : Motorcycle
     {
-        public FamilyCar(int horsePower, double fuel)
+        public CrossMotorcycle(int horsePower, double fuel)
             : base(horsePower, fuel)
         {
         }

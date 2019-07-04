@@ -18,3 +18,4 @@ D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inh
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfo.cs
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.dll
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.csprojAssemblyReference.cache

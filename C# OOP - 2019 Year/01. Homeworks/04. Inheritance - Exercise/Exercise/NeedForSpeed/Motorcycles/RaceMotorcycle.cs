@@ -1,14 +1,14 @@
-namespace NeedForSpeed
+namespace NeedForSpeed.Motorcycles
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
 
-    public class SportCar : Car
+    public class RaceMotorcycle : Motorcycle
     {
-        private const double defaultFuelConsumption = 10;
+        private const double defaultFuelConsumption = 8;
 
-        public SportCar(int horsePower, double fuel)
+        public RaceMotorcycle(int horsePower, double fuel)
             : base(horsePower, fuel)
         {
         }
