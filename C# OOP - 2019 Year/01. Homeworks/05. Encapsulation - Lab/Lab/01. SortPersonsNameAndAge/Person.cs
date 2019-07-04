@@ -1,9 +1,5 @@
 namespace PersonsInfo
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class Person
     {
         private string firstName;
