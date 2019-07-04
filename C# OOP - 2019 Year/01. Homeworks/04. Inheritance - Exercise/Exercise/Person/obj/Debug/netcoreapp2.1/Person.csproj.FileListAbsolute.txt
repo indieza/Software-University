@@ -1,4 +1,3 @@
-D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.csprojAssemblyReference.cache
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.csproj.CoreCompileInputs.cache
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.AssemblyInfoInputs.cache
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.AssemblyInfo.cs

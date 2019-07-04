@@ -3,7 +3,6 @@ D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exerci
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.runtimeconfig.dev.json
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.dll
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.pdb
-D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.csprojAssemblyReference.cache
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.csproj.CoreCompileInputs.cache
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfoInputs.cache
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfo.cs
