@@ -694,22 +694,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Animals\\Animals.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Animals\\Animals.csproj",
       "projectName": "Animals",
-      "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Animals\\Animals.csproj",
+      "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Animals\\Animals.csproj",
       "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-      "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Animals\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\04. Inheritance - Exercise\\Exercise\\Animals\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -727,6 +729,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

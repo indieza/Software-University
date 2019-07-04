@@ -1,10 +1,8 @@
-
 namespace NeedForSpeed
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
-
 
     public abstract class Vehicle
     {
@@ -12,8 +10,10 @@ namespace NeedForSpeed
         private double fuelConsumption;
         private double fuel;
         private int horsePower;
-        protected Vehicle(double fuel, int horsePower)
+
+        protected Vehicle(int horsePower, double fuel)
         {
+            this.FuelConsumption = 1.25;
             this.Fuel = fuel;
             this.HorsePower = horsePower;
         }
@@ -23,16 +23,19 @@ namespace NeedForSpeed
             get => this.defaultFuelConsumption;
             set => this.defaultFuelConsumption = value;
         }
+
         public virtual double FuelConsumption
         {
             get => this.fuelConsumption;
-            set => this.fuelConsumption = 1.25;
+            set => this.fuelConsumption = value;
         }
+
         public double Fuel
         {
             get => this.fuel;
             set => this.fuel = value;
         }
+
         public int HorsePower
         {
             get => this.horsePower;
@@ -41,7 +44,7 @@ namespace NeedForSpeed
 
         public virtual void Drive(double kilometers)
         {
-            this.Fuel -= this.FuelConsumption * kilometers/100;
+            this.Fuel -= this.FuelConsumption * kilometers;
         }
     }
 }

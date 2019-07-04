@@ -1,15 +1,13 @@
-
 namespace NeedForSpeed
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
 
-
     public class Motorcycle : Vehicle
     {
-        public Motorcycle(double fuel, int horsePower) 
-            : base(fuel, horsePower)
+        public Motorcycle(int horsePower, double fuel)
+            : base(horsePower, fuel)
         {
         }
     }

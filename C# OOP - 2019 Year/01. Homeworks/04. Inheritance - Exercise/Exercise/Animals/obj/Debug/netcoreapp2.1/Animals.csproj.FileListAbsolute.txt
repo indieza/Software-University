@@ -9,3 +9,13 @@ D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exerci
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfo.cs
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.dll
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\bin\Debug\netcoreapp2.1\Animals.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Animals\obj\Debug\netcoreapp2.1\Animals.pdb

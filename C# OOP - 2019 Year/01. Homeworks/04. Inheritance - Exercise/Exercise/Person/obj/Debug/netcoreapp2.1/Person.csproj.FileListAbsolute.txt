@@ -9,3 +9,13 @@ D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exerci
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\bin\Debug\netcoreapp2.1\Person.pdb
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.dll
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\obj\Debug\netcoreapp2.1\Person.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\bin\Debug\netcoreapp2.1\Person.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\bin\Debug\netcoreapp2.1\Person.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\bin\Debug\netcoreapp2.1\Person.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\bin\Debug\netcoreapp2.1\Person.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\04. Inheritance - Exercise\Exercise\Person\bin\Debug\netcoreapp2.1\Person.pdb

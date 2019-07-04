@@ -4,7 +4,7 @@
 
     public class StartUp
     {
-        public static void Main()
+        private static void Main()
         {
             string name = Console.ReadLine();
             int age = int.Parse(Console.ReadLine());
@@ -14,11 +14,10 @@
                 Child child = new Child(name, age);
                 Console.WriteLine(child);
             }
-            catch (ArgumentException message)
+            catch (ArgumentException ae)
             {
-                Console.WriteLine(message.Message);
+                Console.WriteLine(ae.Message);
             }
-
         }
     }
 }
