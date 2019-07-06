@@ -1,17 +1,14 @@
-
 namespace FootballTeamGenerator.Models
 {
+    using FootballTeamGenerator.Constraints;
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-
 
     public class Team
     {
         private string name;
-        private List<Player> players;
-        private int raiting;
+        private readonly List<Player> players;
 
         public Team(string name)
         {
@@ -22,25 +19,38 @@ namespace FootballTeamGenerator.Models
         public string Name
         {
             get => this.name;
-            set => this.name = value;
+
+            private set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException(ExceptionsMessages.EmptyName);
+                }
+
+                this.name = value;
+            }
         }
+
         public IReadOnlyCollection<Player> Players => this.players.AsReadOnly();
 
         public void AddPlayer(Player player)
         {
-            this.players.Add(player);
+            if (player != null)
+            {
+                this.players.Add(player);
+            }
         }
+
         public void RemovePlayer(string playerName)
         {
-            Player playerToRemove = this.players.FirstOrDefault(p => p.Name == playerName);
-
-            if (playerToRemove == null)
+            if (this.players.All(p => p.Name != playerName))
             {
-                throw new ArgumentException($"Player {playerName} is not in {this.Name} team.");
+                throw new ArgumentException(
+                    string.Format(ExceptionsMessages.PlayeIsNotInTheTeam, playerName, this.Name));
             }
             else
             {
-                this.players.RemoveAll(p=>p.Name == playerName);
+                this.players.RemoveAll(p => p.Name == playerName);
             }
         }
     }

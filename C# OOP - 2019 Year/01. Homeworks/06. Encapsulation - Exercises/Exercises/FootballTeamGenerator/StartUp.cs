@@ -1,5 +1,4 @@
 ﻿using FootballTeamGenerator.Core;
-using System;
 
 namespace FootballTeamGenerator
 {

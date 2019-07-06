@@ -1,10 +1,7 @@
-
 namespace FootballTeamGenerator.Models
 {
+    using FootballTeamGenerator.Constraints;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
-
 
     public class Stat
     {
@@ -28,66 +25,75 @@ namespace FootballTeamGenerator.Models
             get => this.endurance;
 
             private set
-            { 
-                if (value < 0 || value > 100)
+            {
+                if (value < ConstantsRange.MinStatValue || value > ConstantsRange.MaxStatValue)
                 {
-                    throw new ArgumentException(string.Format("{0} should be between 0 and 100.", nameof(Endurance)));
+                    throw new ArgumentException(
+                        string.Format(ExceptionsMessages.InvalidStatRangeException, nameof(Endurance)));
                 }
 
                 this.endurance = value;
             }
         }
+
         public int Sprint
         {
             get => this.sprint;
 
             private set
             {
-                if (value < 0 || value > 100)
+                if (value < ConstantsRange.MinStatValue || value > ConstantsRange.MaxStatValue)
                 {
-                    throw new ArgumentException(string.Format("{0} should be between 0 and 100.", nameof(Sprint)));
+                    throw new ArgumentException(
+                        string.Format(ExceptionsMessages.InvalidStatRangeException, nameof(Sprint)));
                 }
 
                 this.sprint = value;
             }
         }
+
         public int Dribble
         {
             get => this.dribble;
 
             private set
             {
-                if (value < 0 || value > 100)
+                if (value < ConstantsRange.MinStatValue || value > ConstantsRange.MaxStatValue)
                 {
-                    throw new ArgumentException(string.Format("{0} should be between 0 and 100.", nameof(Dribble)));
+                    throw new ArgumentException(
+                        string.Format(ExceptionsMessages.InvalidStatRangeException, nameof(Dribble)));
                 }
 
                 this.dribble = value;
             }
         }
+
         public int Passing
         {
             get => this.passing;
 
             private set
             {
-                if (value < 0 || value > 100)
+                if (value < ConstantsRange.MinStatValue || value > ConstantsRange.MaxStatValue)
                 {
-                    throw new ArgumentException(string.Format("{0} should be between 0 and 100.", nameof(Passing)));
+                    throw new ArgumentException(
+                        string.Format(ExceptionsMessages.InvalidStatRangeException, nameof(Passing)));
                 }
 
                 this.passing = value;
             }
         }
+
         public int Shooting
         {
             get => this.shooting;
 
             private set
             {
-                if (value < 0 || value > 100)
+                if (value < ConstantsRange.MinStatValue || value > ConstantsRange.MaxStatValue)
                 {
-                    throw new ArgumentException(string.Format("{0} should be between 0 and 100.", nameof(Shooting)));
+                    throw new ArgumentException(
+                        string.Format(ExceptionsMessages.InvalidStatRangeException, nameof(Shooting)));
                 }
 
                 this.shooting = value;

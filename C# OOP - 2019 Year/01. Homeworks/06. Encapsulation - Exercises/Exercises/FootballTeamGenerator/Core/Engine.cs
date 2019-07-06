@@ -1,16 +1,14 @@
-
 namespace FootballTeamGenerator.Core
 {
+    using FootballTeamGenerator.Constraints;
     using FootballTeamGenerator.Models;
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-
 
     public class Engine
     {
-        private Dictionary<string, Team> teams;
+        private readonly Dictionary<string, Team> teams;
 
         public Engine()
         {
@@ -19,30 +17,36 @@ namespace FootballTeamGenerator.Core
 
         public void Run()
         {
-            string command = Console.ReadLine();
+            string inputLine = Console.ReadLine();
 
-            while (command != "END")
+            while (inputLine != "END")
             {
                 try
                 {
-                    string[] commandItems = command.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
+                    string[] commandItems = inputLine.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
+                    string command = commandItems[0];
+                    string teamName = commandItems[1];
 
-                    switch (commandItems[0])
+                    if (command != "Team" && !teams.ContainsKey(teamName))
+                    {
+                        throw new ArgumentException(string.Format(ExceptionsMessages.TeamDoesNotExist, teamName));
+                    }
+
+                    switch (command)
                     {
                         case "Team":
                             {
-                                string name = commandItems[1];
-                                Team team = new Team(name);
+                                Team team = new Team(teamName);
 
-                                if (!this.teams.ContainsKey(name) && team != null)
+                                if (!this.teams.ContainsKey(teamName) && team != null)
                                 {
-                                    this.teams.Add(name, new Team(name));
+                                    this.teams.Add(teamName, new Team(teamName));
                                 }
                             }
                             break;
+
                         case "Add":
                             {
-                                string teamName = commandItems[1];
                                 string name = commandItems[2];
                                 int endurance = int.Parse(commandItems[3]);
                                 int sprint = int.Parse(commandItems[4]);
@@ -52,48 +56,40 @@ namespace FootballTeamGenerator.Core
 
                                 Stat stat = new Stat(endurance, sprint, dribble, passing, shooting);
                                 Player player = new Player(name, stat);
-
-                                if (!this.teams.ContainsKey(teamName))
-                                {
-                                    throw new ArgumentException($"Team {teamName} does not exist.");
-                                }
-
                                 this.teams[teamName].AddPlayer(player);
                             }
                             break;
+
                         case "Remove":
                             {
-                                string teamName = commandItems[1];
                                 string playerName = commandItems[2];
                                 this.teams[teamName].RemovePlayer(playerName);
                             }
                             break;
+
                         case "Rating":
                             {
-                                string teamName = commandItems[1];
-
                                 if (!this.teams.ContainsKey(teamName))
                                 {
-                                    throw new ArgumentException("Team {teamName} does not exist.");
+                                    throw new ArgumentException(ExceptionsMessages.TeamDoesNotExist, teamName);
                                 }
 
-                                int totalStat = this.teams[teamName].Players.Sum(p => p.Stats.SumTotalStats());
+                                double totalStat = this.teams[teamName].Players.Sum(p => p.AvarageStat);
 
-                                Console.WriteLine($"{teamName} - {Math.Round(totalStat / 5.0m)}");
+                                Console.WriteLine($"{teamName} - {Math.Round(totalStat)}");
                             }
                             break;
+
                         default:
                             break;
                     }
-
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
 
-                command = Console.ReadLine();
-
+                inputLine = Console.ReadLine();
             }
         }
     }

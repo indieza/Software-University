@@ -1,10 +1,7 @@
-
 namespace FootballTeamGenerator.Models
 {
+    using FootballTeamGenerator.Constraints;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
-
 
     public class Player
     {
@@ -20,12 +17,24 @@ namespace FootballTeamGenerator.Models
         public string Name
         {
             get => this.name;
-            set => this.name = value;
+
+            private set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException(ExceptionsMessages.EmptyName);
+                }
+
+                this.name = value;
+            }
         }
+
         public Stat Stats
         {
             get => this.stats;
             private set => this.stats = value;
         }
+
+        public double AvarageStat => this.Stats.SumTotalStats() / 5.0;
     }
 }
