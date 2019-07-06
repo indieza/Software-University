@@ -9,3 +9,14 @@ D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Enc
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.AssemblyInfo.cs
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.dll
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.runtimeconfig.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.runtimeconfig.dev.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.pdb

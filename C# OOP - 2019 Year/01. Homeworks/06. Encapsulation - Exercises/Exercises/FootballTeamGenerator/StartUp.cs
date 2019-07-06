@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FootballTeamGenerator.Core;
+using System;
 
 namespace FootballTeamGenerator
 {
@@ -6,7 +7,8 @@ namespace FootballTeamGenerator
     {
         private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Engine engine = new Engine();
+            engine.Run();
         }
     }
 }

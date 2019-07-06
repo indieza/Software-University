@@ -694,24 +694,22 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\06. Encapsulation - Exercises\\Exercises\\ClassBoxData\\ClassBoxData.csproj",
+      "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\06. Encapsulation - Exercises\\Exercises\\ClassBoxData\\ClassBoxData.csproj",
       "projectName": "ClassBoxData",
-      "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\06. Encapsulation - Exercises\\Exercises\\ClassBoxData\\ClassBoxData.csproj",
+      "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\06. Encapsulation - Exercises\\Exercises\\ClassBoxData\\ClassBoxData.csproj",
       "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\06. Encapsulation - Exercises\\Exercises\\ClassBoxData\\obj\\",
+      "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\06. Encapsulation - Exercises\\Exercises\\ClassBoxData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -729,7 +727,6 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

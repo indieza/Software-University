@@ -9,3 +9,14 @@ D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Enc
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.AssemblyInfo.cs
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.dll
 D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\bin\Debug\netcoreapp2.1\AnimalFarm.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\bin\Debug\netcoreapp2.1\AnimalFarm.runtimeconfig.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\bin\Debug\netcoreapp2.1\AnimalFarm.runtimeconfig.dev.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\bin\Debug\netcoreapp2.1\AnimalFarm.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\bin\Debug\netcoreapp2.1\AnimalFarm.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\AnimalFarm\obj\Debug\netcoreapp2.1\AnimalFarm.pdb
