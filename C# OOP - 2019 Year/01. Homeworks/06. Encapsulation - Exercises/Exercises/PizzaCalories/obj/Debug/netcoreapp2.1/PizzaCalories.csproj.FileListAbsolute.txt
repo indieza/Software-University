@@ -1,0 +1,11 @@
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\bin\Debug\netcoreapp2.1\PizzaCalories.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\bin\Debug\netcoreapp2.1\PizzaCalories.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\bin\Debug\netcoreapp2.1\PizzaCalories.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\bin\Debug\netcoreapp2.1\PizzaCalories.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\bin\Debug\netcoreapp2.1\PizzaCalories.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\obj\Debug\netcoreapp2.1\PizzaCalories.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\obj\Debug\netcoreapp2.1\PizzaCalories.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\obj\Debug\netcoreapp2.1\PizzaCalories.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\obj\Debug\netcoreapp2.1\PizzaCalories.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\obj\Debug\netcoreapp2.1\PizzaCalories.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\PizzaCalories\obj\Debug\netcoreapp2.1\PizzaCalories.pdb

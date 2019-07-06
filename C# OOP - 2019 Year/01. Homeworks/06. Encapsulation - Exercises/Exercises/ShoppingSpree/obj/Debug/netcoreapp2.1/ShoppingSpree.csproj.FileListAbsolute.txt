@@ -1,0 +1,11 @@
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\bin\Debug\netcoreapp2.1\ShoppingSpree.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\ShoppingSpree\obj\Debug\netcoreapp2.1\ShoppingSpree.pdb

@@ -1,0 +1,11 @@
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\bin\Debug\netcoreapp2.2\FootballTeamGenerator.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\bin\Debug\netcoreapp2.2\FootballTeamGenerator.runtimeconfig.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\bin\Debug\netcoreapp2.2\FootballTeamGenerator.runtimeconfig.dev.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\bin\Debug\netcoreapp2.2\FootballTeamGenerator.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\bin\Debug\netcoreapp2.2\FootballTeamGenerator.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\obj\Debug\netcoreapp2.2\FootballTeamGenerator.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\obj\Debug\netcoreapp2.2\FootballTeamGenerator.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\obj\Debug\netcoreapp2.2\FootballTeamGenerator.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\obj\Debug\netcoreapp2.2\FootballTeamGenerator.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\obj\Debug\netcoreapp2.2\FootballTeamGenerator.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\06. Encapsulation - Exercises\Exercises\FootballTeamGenerator\obj\Debug\netcoreapp2.2\FootballTeamGenerator.pdb
