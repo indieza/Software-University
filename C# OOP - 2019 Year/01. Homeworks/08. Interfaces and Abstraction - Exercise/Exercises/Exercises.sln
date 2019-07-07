@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ferrari", "Ferrari\Ferrari.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telephony", "Telephony\Telephony.csproj", "{CB844954-2EE3-4F76-9938-7EE2321FF580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderControl\BorderControl.csproj", "{015AD351-3859-4AB3-A30C-8ECD612792EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BorderControl", "BorderControl\BorderControl.csproj", "{015AD351-3859-4AB3-A30C-8ECD612792EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayCelebrations", "BirthdayCelebrations\BirthdayCelebrations.csproj", "{D82D2F86-70C7-445F-BD2E-25BFD3A26761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodShortage", "FoodShortage\FoodShortage.csproj", "{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{015AD351-3859-4AB3-A30C-8ECD612792EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{015AD351-3859-4AB3-A30C-8ECD612792EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{015AD351-3859-4AB3-A30C-8ECD612792EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82D2F86-70C7-445F-BD2E-25BFD3A26761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82D2F86-70C7-445F-BD2E-25BFD3A26761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82D2F86-70C7-445F-BD2E-25BFD3A26761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82D2F86-70C7-445F-BD2E-25BFD3A26761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
