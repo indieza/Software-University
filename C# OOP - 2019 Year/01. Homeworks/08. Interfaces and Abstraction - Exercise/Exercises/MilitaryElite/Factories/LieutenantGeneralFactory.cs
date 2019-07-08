@@ -1,17 +1,21 @@
 namespace MilitaryElite
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class LieutenantGeneralFactory
     {
-        public LieutenantGeneral CreateLieutenantGeneral(string[] args)
+        public LieutenantGeneral MakeLieutenantGeneral(string[] args)
         {
             int id = int.Parse(args[1]);
             string firstName = args[2];
             string lastName = args[3];
             decimal salary = decimal.Parse(args[4]);
 
-            LieutenantGeneral soldier = new LieutenantGeneral(id, firstName, lastName, salary);
+            LieutenantGeneral lieutenantGeneral = new LieutenantGeneral(id, firstName, lastName, salary);
 
-            return soldier;
+            return lieutenantGeneral;
         }
     }
 }

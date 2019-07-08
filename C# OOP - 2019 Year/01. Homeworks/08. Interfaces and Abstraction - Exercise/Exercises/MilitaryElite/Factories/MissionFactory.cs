@@ -1,10 +1,15 @@
 namespace MilitaryElite
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class MissionFactory
     {
-        public Mission CreateMission(string codeName, string state)
+        public Mission MakeMission(string codeName, string state)
         {
             Mission mission = new Mission(codeName, state);
+
             return mission;
         }
     }

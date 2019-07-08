@@ -1,5 +1,9 @@
 namespace MilitaryElite
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class Soldier : ISoldier
     {
         public Soldier(int id, string firstName, string lastName)
@@ -9,11 +13,11 @@ namespace MilitaryElite
             this.LastName = lastName;
         }
 
-        public int Id { get; }
+        public int Id { get; private set; }
 
-        public string FirstName { get; }
+        public string FirstName { get; private set; }
 
-        public string LastName { get; }
+        public string LastName { get; private set; }
 
         public override string ToString()
         {

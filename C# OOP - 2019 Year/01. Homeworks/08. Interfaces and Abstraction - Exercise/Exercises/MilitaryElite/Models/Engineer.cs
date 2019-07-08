@@ -4,53 +4,36 @@ namespace MilitaryElite
     using System.Collections.Generic;
     using System.Text;
 
-    public class Engineer : Private, IEngineer
+    public class Engineer : SpecialisedSoldier, IEngineer
     {
         private readonly List<IRepair> repairs;
-        private string corps;
 
-        public Engineer(int id, string firstName, string lastName, decimal salary, string corps)
-            : base(id, firstName, lastName, salary)
+        public Engineer(int id, string firstName, string lastName, decimal salary, string corp)
+            : base(id, firstName, lastName, salary, corp)
         {
-            this.Corps = corps;
             this.repairs = new List<IRepair>();
         }
 
         public IReadOnlyCollection<IRepair> Repairs => this.repairs.AsReadOnly();
 
-        public string Corps
-        {
-            get => this.corps;
-
-            private set
-            {
-                if (value != "Airforces" && value != "Marines")
-                {
-                    throw new Exception("Invalid input");
-                }
-
-                this.corps = value;
-            }
-        }
-
-        public void AddRepair(Repair repair)
+        public void AddRepair(IRepair repair)
         {
             this.repairs.Add(repair);
         }
 
         public override string ToString()
         {
-            StringBuilder engineerInfo = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.ToString());
 
-            engineerInfo.AppendLine($"Corps: {this.corps}");
-            engineerInfo.AppendLine("Repairs:");
+            sb.AppendLine("Repairs:");
 
-            foreach (var repair in this.Repairs)
+            foreach (Repair repair in this.repairs)
             {
-                engineerInfo.AppendLine("  " + repair);
+                sb.AppendLine("  " + repair.ToString());
             }
 
-            return base.ToString() + Environment.NewLine + engineerInfo.ToString().TrimEnd();
+            return sb.ToString().TrimEnd();
         }
     }
 }

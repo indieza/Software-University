@@ -5,41 +5,24 @@ namespace MilitaryElite
     using System.Linq;
     using System.Text;
 
-    public class Commando : Private
+    public class Commando : SpecialisedSoldier, ICommando
     {
-        private readonly List<Mission> missions;
-        private string corps;
+        private readonly List<IMission> missions;
 
-        public Commando(int id, string firstName, string lastName, decimal salary, string corps)
-            : base(id, firstName, lastName, salary)
+        public Commando(int id, string firstName, string lastName, decimal salary, string corp)
+            : base(id, firstName, lastName, salary, corp)
         {
-            this.Corps = corps;
-            this.missions = new List<Mission>();
+            this.missions = new List<IMission>();
         }
 
-        public IReadOnlyCollection<Mission> Missions => this.missions.AsReadOnly();
+        public IReadOnlyCollection<IMission> Missions => this.missions.AsReadOnly();
 
-        public string Corps
+        public void AddMission(IMission mission)
         {
-            get => this.corps;
-
-            private set
+            if (this.missions.Any(m => m.CodeName == mission.CodeName))
             {
-                if (value != "Airforces" && value != "Marines")
-                {
-                    throw new Exception("Invalid input");
-                }
-
-                this.corps = value;
-            }
-        }
-
-        public void AddMission(Mission mission)
-        {
-            if (missions.Any(x => x.CodeName == mission.CodeName))
-            {
-                int index = missions.FindIndex(x => x.CodeName == mission.CodeName);
-                missions[index].CompleteMission();
+                int index = this.missions.FindIndex(m => m.CodeName == mission.CodeName);
+                this.missions[index].CompleteMission();
             }
             else
             {
@@ -52,17 +35,17 @@ namespace MilitaryElite
 
         public override string ToString()
         {
-            StringBuilder commandoInfo = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.ToString());
 
-            commandoInfo.AppendLine($"Corps: {this.corps}");
-            commandoInfo.AppendLine("Missions:");
+            sb.AppendLine("Missions:");
 
-            foreach (var mission in Missions)
+            foreach (Mission mission in this.missions)
             {
-                commandoInfo.AppendLine(" " + mission);
+                sb.AppendLine("  " + mission.ToString());
             }
 
-            return base.ToString() + Environment.NewLine + commandoInfo.ToString().TrimEnd();
+            return sb.ToString().TrimEnd();
         }
     }
 }

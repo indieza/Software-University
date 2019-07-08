@@ -1,9 +1,11 @@
 namespace MilitaryElite
 {
+    using System;
     using System.Collections.Generic;
+    using System.Text;
 
-    public interface ISpecialisedSoldier : IPrivate, ICorp
+    public interface ISpecialisedSoldier : IPrivate
     {
-        IList<ICorp> Corps { get; }
+        string Corp { get; }
     }
 }

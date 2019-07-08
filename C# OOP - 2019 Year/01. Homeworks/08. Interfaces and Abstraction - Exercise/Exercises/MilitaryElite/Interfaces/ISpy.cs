@@ -1,6 +1,10 @@
 namespace MilitaryElite
 {
-    public interface ISpy
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    public interface ISpy : ISoldier
     {
         int CodeNumber { get; }
     }

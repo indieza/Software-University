@@ -1,17 +1,21 @@
 namespace MilitaryElite
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class PrivateFactory
     {
-        public Private CreatePrivate(string[] args)
+        public Private MakePrivateSoldier(string[] args)
         {
             int id = int.Parse(args[1]);
             string firstName = args[2];
             string lastName = args[3];
             decimal salary = decimal.Parse(args[4]);
 
-            Private soldier = new Private(id, firstName, lastName, salary);
+            Private privateSoldier = new Private(id, firstName, lastName, salary);
 
-            return soldier;
+            return privateSoldier;
         }
     }
 }

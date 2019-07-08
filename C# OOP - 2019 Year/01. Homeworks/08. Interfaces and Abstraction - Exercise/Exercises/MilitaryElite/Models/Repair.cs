@@ -1,5 +1,9 @@
 namespace MilitaryElite
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class Repair : IRepair
     {
         public Repair(string partName, int hoursWorked)
@@ -8,9 +12,9 @@ namespace MilitaryElite
             this.HoursWorked = hoursWorked;
         }
 
-        public string PartName { get; }
+        public string PartName { get; private set; }
 
-        public int HoursWorked { get; }
+        public int HoursWorked { get; private set; }
 
         public override string ToString()
         {

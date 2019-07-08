@@ -1,8 +1,12 @@
 namespace MilitaryElite
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class SpyFactory
     {
-        public Spy CreateSpy(string[] args)
+        public Spy MakeSpy(string[] args)
         {
             int id = int.Parse(args[1]);
             string firstName = args[2];
@@ -10,6 +14,7 @@ namespace MilitaryElite
             int codeNumber = int.Parse(args[4]);
 
             Spy spy = new Spy(id, firstName, lastName, codeNumber);
+
             return spy;
         }
     }

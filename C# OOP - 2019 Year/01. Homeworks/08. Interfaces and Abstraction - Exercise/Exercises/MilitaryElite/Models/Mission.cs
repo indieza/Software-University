@@ -1,6 +1,10 @@
 namespace MilitaryElite
 {
-    public class Mission : IMissions
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    public class Mission : IMission
     {
         private string state;
 
@@ -10,32 +14,33 @@ namespace MilitaryElite
             this.State = state;
         }
 
-        public string CodeName { get; }
+        public string CodeName { get; private set; }
 
         public string State
         {
             get => this.state;
-            set
+
+            private set
             {
-                if (value == "inProgress" || value == "Finished")
+                if (value != "inProgress" && value != "Finished")
                 {
-                    this.state = value;
+                    this.state = null;
                 }
                 else
                 {
-                    this.state = null;
+                    this.state = value;
                 }
             }
         }
 
         public void CompleteMission()
         {
-            this.State = "Finished";
+            this.CodeName = "Finished";
         }
 
         public override string ToString()
         {
-            return $"Code Name: {this.CodeName} State: {this.state}";
+            return $"Code Name: {this.CodeName} State: {this.State}";
         }
     }
 }

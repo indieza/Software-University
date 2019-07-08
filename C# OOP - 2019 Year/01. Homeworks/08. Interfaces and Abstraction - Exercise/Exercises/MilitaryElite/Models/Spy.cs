@@ -1,6 +1,8 @@
 namespace MilitaryElite
 {
     using System;
+    using System.Collections.Generic;
+    using System.Text;
 
     public class Spy : Soldier, ISpy
     {
@@ -10,11 +12,16 @@ namespace MilitaryElite
             this.CodeNumber = codeNumber;
         }
 
-        public int CodeNumber { get; }
+        public int CodeNumber { get; private set; }
 
         public override string ToString()
         {
-            return base.ToString() + Environment.NewLine + $"Code Number: {this.CodeNumber}";
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(base.ToString());
+            sb.AppendLine($"Code Number: {this.CodeNumber}");
+
+            return sb.ToString().TrimEnd();
         }
     }
 }

@@ -1,18 +1,22 @@
 namespace MilitaryElite
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class EngineerFactory
     {
-        public Engineer CreateEngineer(string[] args)
+        public Engineer MakeEngineer(string[] args)
         {
             int id = int.Parse(args[1]);
             string firstName = args[2];
             string lastName = args[3];
             decimal salary = decimal.Parse(args[4]);
-            string corps = args[5];
+            string corp = args[5];
 
-            Engineer soldier = new Engineer(id, firstName, lastName, salary, corps);
+            Engineer engineer = new Engineer(id, firstName, lastName, salary, corp);
 
-            return soldier;
+            return engineer;
         }
     }
 }

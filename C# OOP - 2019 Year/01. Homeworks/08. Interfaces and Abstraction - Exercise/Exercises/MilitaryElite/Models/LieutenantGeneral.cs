@@ -14,25 +14,26 @@ namespace MilitaryElite
             this.privates = new List<Private>();
         }
 
-        public IReadOnlyCollection<Private> Privates => this.privates.AsReadOnly();
+        public IReadOnlyCollection<IPrivate> Privates => this.privates.AsReadOnly();
 
-        public void AddPrivate(Private currentPrivate)
+        public void AddPrivate(Private privateSoldier)
         {
-            this.privates.Add(currentPrivate);
+            this.privates.Add(privateSoldier);
         }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine(base.ToString());
             sb.AppendLine("Privates:");
 
-            foreach (var currentPrivate in this.privates)
+            foreach (Private person in this.Privates)
             {
-                sb.AppendLine("  " + currentPrivate);
+                sb.AppendLine("  " + person.ToString());
             }
 
-            return base.ToString() + Environment.NewLine + sb.ToString().TrimEnd();
+            return sb.ToString().TrimEnd();
         }
     }
 }

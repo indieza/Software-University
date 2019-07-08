@@ -1,6 +1,8 @@
-﻿namespace MilitaryElite
+﻿using System;
+
+namespace MilitaryElite
 {
-    public class StartUp
+    public class StratUp
     {
         private static void Main()
         {
