@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telephony", "Telephony\Tele
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BorderControl", "BorderControl\BorderControl.csproj", "{015AD351-3859-4AB3-A30C-8ECD612792EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayCelebrations", "BirthdayCelebrations\BirthdayCelebrations.csproj", "{D82D2F86-70C7-445F-BD2E-25BFD3A26761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayCelebrations", "BirthdayCelebrations\BirthdayCelebrations.csproj", "{D82D2F86-70C7-445F-BD2E-25BFD3A26761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodShortage", "FoodShortage\FoodShortage.csproj", "{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodShortage", "FoodShortage\FoodShortage.csproj", "{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{C0215FCC-39B3-4E56-B147-6107804DDD3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0215FCC-39B3-4E56-B147-6107804DDD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0215FCC-39B3-4E56-B147-6107804DDD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0215FCC-39B3-4E56-B147-6107804DDD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0215FCC-39B3-4E56-B147-6107804DDD3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
