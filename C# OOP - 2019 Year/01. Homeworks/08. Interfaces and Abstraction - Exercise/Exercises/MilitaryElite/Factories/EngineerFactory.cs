@@ -1,9 +1,5 @@
 namespace MilitaryElite
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class EngineerFactory
     {
         public Engineer MakeEngineer(string[] args)

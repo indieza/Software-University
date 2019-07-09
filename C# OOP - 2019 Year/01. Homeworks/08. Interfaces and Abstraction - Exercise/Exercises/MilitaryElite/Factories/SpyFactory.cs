@@ -1,9 +1,5 @@
 namespace MilitaryElite
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class SpyFactory
     {
         public Spy MakeSpy(string[] args)

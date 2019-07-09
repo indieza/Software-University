@@ -1,9 +1,5 @@
 namespace MilitaryElite
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class Soldier : ISoldier
     {
         public Soldier(int id, string firstName, string lastName)

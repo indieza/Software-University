@@ -1,6 +1,6 @@
-﻿namespace MilitaryElite
+﻿namespace ExplicitInterfaces
 {
-    public class StratUp
+    public class StartUp
     {
         private static void Main()
         {

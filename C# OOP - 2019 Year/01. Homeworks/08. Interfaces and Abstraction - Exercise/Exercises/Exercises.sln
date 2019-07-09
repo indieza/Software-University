@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthdayCelebrations", "Bir
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodShortage", "FoodShortage\FoodShortage.csproj", "{8DDF3F54-2AB2-4DE4-8D47-9A3CDC435B82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{C0215FCC-39B3-4E56-B147-6107804DDD3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{C0215FCC-39B3-4E56-B147-6107804DDD3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitInterfaces", "ExplicitInterfaces\ExplicitInterfaces.csproj", "{5291A4E8-B7FC-442B-8FF3-A3B066D3FC16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionHierarchy", "CollectionHierarchy\CollectionHierarchy.csproj", "{BD1B058A-EA58-452E-833D-4A5E3A280B78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{C0215FCC-39B3-4E56-B147-6107804DDD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0215FCC-39B3-4E56-B147-6107804DDD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0215FCC-39B3-4E56-B147-6107804DDD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5291A4E8-B7FC-442B-8FF3-A3B066D3FC16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5291A4E8-B7FC-442B-8FF3-A3B066D3FC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5291A4E8-B7FC-442B-8FF3-A3B066D3FC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5291A4E8-B7FC-442B-8FF3-A3B066D3FC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1B058A-EA58-452E-833D-4A5E3A280B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1B058A-EA58-452E-833D-4A5E3A280B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1B058A-EA58-452E-833D-4A5E3A280B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1B058A-EA58-452E-833D-4A5E3A280B78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
