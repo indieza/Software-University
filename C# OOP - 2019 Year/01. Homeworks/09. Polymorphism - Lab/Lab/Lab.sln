@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operations", "Operations\Operations.csproj", "{DBFC13AC-071A-452E-8438-D70183ACDE9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{0A5E88AF-9DAE-47FA-B90E-1FC88244CCB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{FC068EDB-D33B-499A-9491-33C3A5805463}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBFC13AC-071A-452E-8438-D70183ACDE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFC13AC-071A-452E-8438-D70183ACDE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFC13AC-071A-452E-8438-D70183ACDE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFC13AC-071A-452E-8438-D70183ACDE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A5E88AF-9DAE-47FA-B90E-1FC88244CCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A5E88AF-9DAE-47FA-B90E-1FC88244CCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A5E88AF-9DAE-47FA-B90E-1FC88244CCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A5E88AF-9DAE-47FA-B90E-1FC88244CCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC068EDB-D33B-499A-9491-33C3A5805463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC068EDB-D33B-499A-9491-33C3A5805463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC068EDB-D33B-499A-9491-33C3A5805463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC068EDB-D33B-499A-9491-33C3A5805463}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FC714F1-CEEE-4365-8892-EE20EC020797}
+	EndGlobalSection
+EndGlobal
