@@ -10,7 +10,10 @@ namespace MortalEngines.Models
         private const double IncreaseDefensePoints = 25;
 
         public Fighter(string name, double attackPoints, double defensePoints)
-            : base(name, attackPoints, defensePoints, InitialHealthPoints)
+            : base(name,
+                  attackPoints + IncreaseAttackPoints,
+                  defensePoints - IncreaseDefensePoints,
+                  InitialHealthPoints)
         {
             this.AggressiveMode = true;
         }

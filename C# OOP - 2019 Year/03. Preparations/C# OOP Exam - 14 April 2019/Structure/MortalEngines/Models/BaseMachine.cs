@@ -100,9 +100,9 @@ namespace MortalEngines.Models
 
             sb.AppendLine($"- {this.Name}");
             sb.AppendLine($" *Type: {this.GetType().Name}");
-            sb.AppendLine($" *Health: {this.HealthPoints}");
-            sb.AppendLine($" *Attack: {this.AttackPoints}");
-            sb.AppendLine($" *Defense: {this.DefensePoints}");
+            sb.AppendLine($" *Health: {this.HealthPoints:F2}");
+            sb.AppendLine($" *Attack: {this.AttackPoints:F2}");
+            sb.AppendLine($" *Defense: {this.DefensePoints:F2}");
 
             if (this.Targets.Count == 0)
             {
