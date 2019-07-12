@@ -2,7 +2,7 @@
 {
     public interface IAnimal
     {
-       string Name { get;  }
+        string Name { get; }
 
         int Happiness { get; set; }
 

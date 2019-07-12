@@ -1,12 +1,8 @@
-
 namespace AnimalCentre.Models.Animals
 {
     using AnimalCentre.Constraints;
     using AnimalCentre.Models.Contracts;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
-
 
     public abstract class Animal : IAnimal
     {
@@ -76,6 +72,7 @@ namespace AnimalCentre.Models.Animals
             get => this.IsVaccinated1;
             set => this.IsVaccinated1 = value;
         }
+
         public bool IsVaccinated1 { get; set; }
 
         public override string ToString()

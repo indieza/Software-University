@@ -1,11 +1,8 @@
-
 namespace AnimalCentre.Models.Procedures
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using AnimalCentre.Constraints;
     using AnimalCentre.Models.Contracts;
+    using System;
 
     public class Chip : Procedure
     {
@@ -15,7 +12,7 @@ namespace AnimalCentre.Models.Procedures
         {
             base.CheckTime(animal, procedureTime);
 
-            if (animal.IsChipped==true)
+            if (animal.IsChipped == true)
             {
                 throw new ArgumentException(string.Format(ExceptionsMessages.AnimalIsChipped, animal.Name));
             }

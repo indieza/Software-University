@@ -1,4 +1,3 @@
-
 namespace AnimalCentre.Models.Procedures
 {
     using AnimalCentre.Constraints;
@@ -6,7 +5,6 @@ namespace AnimalCentre.Models.Procedures
     using System;
     using System.Collections.Generic;
     using System.Text;
-
 
     public abstract class Procedure : IProcedure
     {
@@ -16,6 +14,7 @@ namespace AnimalCentre.Models.Procedures
         {
             this.procedureHistory = new List<IAnimal>();
         }
+
         public IReadOnlyCollection<IAnimal> ProcedureHistory => this.procedureHistory.AsReadOnly();
 
         public abstract void DoService(IAnimal animal, int procedureTime);
@@ -24,9 +23,10 @@ namespace AnimalCentre.Models.Procedures
         {
             StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine($"{this.GetType().Name}");
+
             foreach (var animal in this.procedureHistory)
             {
-                sb.AppendLine($"{this.GetType().Name}");
                 sb.AppendLine(animal.ToString());
             }
 

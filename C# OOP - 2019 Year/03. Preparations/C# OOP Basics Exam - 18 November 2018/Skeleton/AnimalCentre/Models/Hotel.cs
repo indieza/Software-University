@@ -1,19 +1,16 @@
-
 namespace AnimalCentre.Models
 {
     using AnimalCentre.Constraints;
     using AnimalCentre.Models.Contracts;
     using System;
     using System.Collections.Generic;
-    using System.Text;
 
-
-    public abstract class Hotel : IHotel
+    public class Hotel : IHotel
     {
         private readonly Dictionary<string, IAnimal> animals;
         private int capacity;
 
-        protected Hotel()
+        public Hotel()
         {
             this.animals = new Dictionary<string, IAnimal>();
             this.capacity = 10;
@@ -23,7 +20,7 @@ namespace AnimalCentre.Models
 
         public void Accommodate(IAnimal animal)
         {
-           if (capacity <= 0)
+            if (capacity <= 0)
             {
                 throw new InvalidOperationException(ExceptionsMessages.NotEnoughtSpaceInTheHotel);
             }

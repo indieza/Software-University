@@ -1,9 +1,5 @@
-
 namespace AnimalCentre.Models.Procedures
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using AnimalCentre.Models.Contracts;
 
     public class DentalCare : Procedure

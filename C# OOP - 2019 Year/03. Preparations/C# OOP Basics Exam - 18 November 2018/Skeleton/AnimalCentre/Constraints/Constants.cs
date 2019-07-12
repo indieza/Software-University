@@ -1,11 +1,5 @@
-
 namespace AnimalCentre.Constraints
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
-
     public class Constants
     {
         public const int MinAnimalHappiness = 0;
