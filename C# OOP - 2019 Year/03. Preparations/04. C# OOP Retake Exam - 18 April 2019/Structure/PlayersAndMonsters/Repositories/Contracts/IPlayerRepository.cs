@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    using Models.Players.Contracts;
+    using PlayersAndMonsters.Models.Players.Contracts;
 
     public interface IPlayerRepository
     {

@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    using Models.Cards.Contracts;
+    using PlayersAndMonsters.Models.Cards.Contracts;
 
     public interface ICardRepository
     {
