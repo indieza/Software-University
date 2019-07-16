@@ -9,20 +9,18 @@ public class Spy
     {
         Type classType = Type.GetType(investigatedClass);
 
-        var fields = classType.GetFields(BindingFlags.Instance | 
+        FieldInfo[] fields = classType.GetFields(BindingFlags.Instance |
             BindingFlags.Static |
-            BindingFlags.NonPublic | 
-            BindingFlags.Public)
-                .Where(f => requestedFields.Contains(f.Name));
+            BindingFlags.NonPublic |
+            BindingFlags.Public);
 
         StringBuilder sb = new StringBuilder();
 
         object classInstance = Activator.CreateInstance(classType, new object[] { });
 
-
         sb.AppendLine($"Class under investigation: {classType}");
 
-        foreach (var field in fields)
+        foreach (var field in fields.Where(f => requestedFields.Contains(f.Name)))
         {
             sb.AppendLine($"{field.Name} = {field.GetValue(classInstance)}");
         }
