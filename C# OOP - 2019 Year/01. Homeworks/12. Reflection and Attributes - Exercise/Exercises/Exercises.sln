@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarvestingFields", "HarvestingFields\HarvestingFields.csproj", "{498F3B46-4714-41DF-9E2F-FE3DFD72BD15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarvestingFields", "HarvestingFields\HarvestingFields.csproj", "{498F3B46-4714-41DF-9E2F-FE3DFD72BD15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBoxInteger", "BlackBoxInteger\BlackBoxInteger.csproj", "{209F787D-9B95-4B2A-A1E1-F312CFE4F59A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarracksWarsNewFactory", "BarracksWarsNewFactory\BarracksWarsNewFactory.csproj", "{9F3F2822-8152-4B53-BCCD-7B7D0D2255FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{498F3B46-4714-41DF-9E2F-FE3DFD72BD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{498F3B46-4714-41DF-9E2F-FE3DFD72BD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{498F3B46-4714-41DF-9E2F-FE3DFD72BD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{209F787D-9B95-4B2A-A1E1-F312CFE4F59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209F787D-9B95-4B2A-A1E1-F312CFE4F59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209F787D-9B95-4B2A-A1E1-F312CFE4F59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209F787D-9B95-4B2A-A1E1-F312CFE4F59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3F2822-8152-4B53-BCCD-7B7D0D2255FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3F2822-8152-4B53-BCCD-7B7D0D2255FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3F2822-8152-4B53-BCCD-7B7D0D2255FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3F2822-8152-4B53-BCCD-7B7D0D2255FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
