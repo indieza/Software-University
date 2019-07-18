@@ -67,7 +67,7 @@ namespace MortalEngines.Entities.Models
 
             double difference = Math.Abs(this.AttackPoints - target.DefensePoints);
 
-            if (difference < 0)
+            if (target.HealthPoints - difference <= 0)
             {
                 target.HealthPoints = 0;
             }
