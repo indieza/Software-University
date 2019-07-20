@@ -1,7 +1,13 @@
-﻿namespace AnimalCentre.Models.Contracts
+﻿using System.Collections.Generic;
+
+namespace AnimalCentre.Models.Contracts
 {
     public interface IProcedure
     {
-       //Implement me
+        IReadOnlyCollection<IAnimal> ProcedureHistory { get; }
+
+        string History();
+
+        void DoService(IAnimal animal, int procedureTime);
     }
 }
