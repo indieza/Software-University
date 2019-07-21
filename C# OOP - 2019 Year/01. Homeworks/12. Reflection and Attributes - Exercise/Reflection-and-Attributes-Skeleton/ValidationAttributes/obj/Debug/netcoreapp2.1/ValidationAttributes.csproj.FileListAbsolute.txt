@@ -1,0 +1,11 @@
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.runtimeconfig.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.runtimeconfig.dev.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\bin\Debug\netcoreapp2.1\ValidationAttributes.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\12. Reflection and Attributes - Exercise\Reflection-and-Attributes-Skeleton\ValidationAttributes\obj\Debug\netcoreapp2.1\ValidationAttributes.pdb
