@@ -1,8 +1,6 @@
 namespace SoftUniRestaurant.Core
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public class Engine
     {
@@ -19,64 +17,61 @@ namespace SoftUniRestaurant.Core
 
             while (line != "END")
             {
-                string[] commandItems = line.Split();
-                string result = string.Empty;
+                string[] commandItems = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
                 try
                 {
                     switch (commandItems[0])
                     {
                         case "AddFood":
-                            result += this.controller.AddFood(commandItems[1],
+                            Console.WriteLine(this.controller.AddFood(commandItems[1],
                                 commandItems[2],
-                                decimal.Parse(commandItems[3]));
+                                decimal.Parse(commandItems[3])));
                             break;
 
                         case "AddDrink":
-                            result += this.controller.AddDrink(commandItems[1],
+                            Console.WriteLine(this.controller.AddDrink(commandItems[1],
                                 commandItems[2],
                                 int.Parse(commandItems[3]),
-                                commandItems[4]);
+                                commandItems[4]));
                             break;
 
                         case "AddTable":
-                            result += this.controller.AddTable(commandItems[1],
+                            Console.WriteLine(this.controller.AddTable(commandItems[1],
                                 int.Parse(commandItems[2]),
-                                int.Parse(commandItems[3]));
+                                int.Parse(commandItems[3])));
                             break;
 
                         case "ReserveTable":
-                            result += this.controller.ReserveTable(int.Parse(commandItems[1]));
+                            Console.WriteLine(this.controller.ReserveTable(int.Parse(commandItems[1])));
                             break;
 
                         case "OrderFood":
-                            result += this.controller.OrderFood(int.Parse(commandItems[1]),
-                                commandItems[2]);
+                            Console.WriteLine(this.controller.OrderFood(int.Parse(commandItems[1]),
+                                commandItems[2]));
                             break;
 
                         case "OrderDrink":
-                            result += this.controller.OrderDrink(int.Parse(commandItems[1]),
+                            Console.WriteLine(this.controller.OrderDrink(int.Parse(commandItems[1]),
                                 commandItems[2],
-                                commandItems[3]);
+                                commandItems[3]));
                             break;
 
                         case "LeaveTable":
-                            result += this.controller.LeaveTable(int.Parse(commandItems[1]));
+                            Console.WriteLine(this.controller.LeaveTable(int.Parse(commandItems[1])));
                             break;
 
                         case "GetFreeTablesInfo":
-                            result += this.controller.GetFreeTablesInfo();
+                            Console.WriteLine(this.controller.GetFreeTablesInfo());
                             break;
 
                         case "GetOccupiedTablesInfo":
-                            result += this.controller.GetOccupiedTablesInfo();
+                            Console.WriteLine(this.controller.GetOccupiedTablesInfo());
                             break;
 
                         default:
                             break;
                     }
-
-                    Console.WriteLine(result);
                 }
                 catch (Exception ex)
                 {

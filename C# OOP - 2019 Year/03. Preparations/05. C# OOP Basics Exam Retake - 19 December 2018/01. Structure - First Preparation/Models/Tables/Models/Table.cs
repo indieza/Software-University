@@ -37,7 +37,7 @@ namespace SoftUniRestaurant.Models.Tables.Models
 
             private set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentException(ExceptionMessages.NegativeTableCapacity);
                 }

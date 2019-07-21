@@ -7,7 +7,6 @@
     using SoftUniRestaurant.Models.Foods.Models;
     using SoftUniRestaurant.Models.Tables.Contracts;
     using SoftUniRestaurant.Models.Tables.Models;
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
@@ -169,12 +168,13 @@
             ITable table = this.tables.FirstOrDefault(t => t.TableNumber == tableNumber);
             decimal bill = table.GetBill();
             table.Clear();
+
             this.totalIncome += bill;
 
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine($"Table: {tableNumber}");
-            sb.AppendLine($"Bill: {bill:f2}");
+            sb.AppendLine($"Bill: {bill:F2}");
 
             return sb.ToString().TrimEnd();
         }

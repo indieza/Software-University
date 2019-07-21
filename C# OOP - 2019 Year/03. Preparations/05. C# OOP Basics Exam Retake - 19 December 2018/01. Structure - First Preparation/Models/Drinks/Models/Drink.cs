@@ -3,8 +3,6 @@ namespace SoftUniRestaurant.Models.Drinks.Models
     using SoftUniRestaurant.Contracts;
     using SoftUniRestaurant.Models.Drinks.Contracts;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public abstract class Drink : IDrink
     {
@@ -59,7 +57,7 @@ namespace SoftUniRestaurant.Models.Drinks.Models
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException(ExceptionMessages.NegativePrice);
+                    throw new ArgumentException(ExceptionMessages.NegativeDrinkPrice);
                 }
 
                 this.price = value;

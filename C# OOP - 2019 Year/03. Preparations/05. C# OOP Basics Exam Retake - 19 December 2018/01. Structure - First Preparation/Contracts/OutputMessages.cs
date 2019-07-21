@@ -1,12 +1,8 @@
 namespace SoftUniRestaurant.Contracts
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class OutputMessages
     {
-        public const string AddFood = "Added {0} ({1}) with price {2:f2} to the pool";
+        public const string AddFood = "Added {0} ({1}) with price {2:F2} to the pool";
 
         public const string AddDrink = "Added {0} ({1}) to the drink pool";
 
@@ -26,6 +22,6 @@ namespace SoftUniRestaurant.Contracts
 
         public const string TableOrderedDrink = "Table {0} ordered {1} {2}";
 
-        public const string TotalIncome = "Total income: {0:f2}lv";
+        public const string TotalIncome = "Total income: {0:F2}lv";
     }
 }

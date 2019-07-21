@@ -1,9 +1,5 @@
 namespace SoftUniRestaurant.Models.Drinks.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class Juice : Drink
     {
         private const decimal JuicePrice = 1.80m;

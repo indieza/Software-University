@@ -3,8 +3,6 @@ namespace SoftUniRestaurant.Models.Foods.Models
     using SoftUniRestaurant.Contracts;
     using SoftUniRestaurant.Models.Foods.Contracts;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public abstract class Food : IFood
     {
@@ -57,7 +55,7 @@ namespace SoftUniRestaurant.Models.Foods.Models
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException(ExceptionMessages.NegativePrice);
+                    throw new ArgumentException(ExceptionMessages.NegativeFoodPrice);
                 }
 
                 this.price = value;
