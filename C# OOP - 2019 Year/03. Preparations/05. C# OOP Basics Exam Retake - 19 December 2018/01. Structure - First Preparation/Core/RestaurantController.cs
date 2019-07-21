@@ -52,8 +52,15 @@
                     break;
             }
 
-            this.menu.Add(food);
-            return string.Format(OutputMessages.AddFood, food.Name, food.GetType().Name, food.Price);
+            string result = string.Empty;
+
+            if (food != null)
+            {
+                this.menu.Add(food);
+                result += string.Format(OutputMessages.AddFood, food.Name, food.GetType().Name, food.Price);
+            }
+
+            return result;
         }
 
         public string AddDrink(string type, string name, int servingSize, string brand)
@@ -82,8 +89,15 @@
                     break;
             }
 
-            this.drinks.Add(drink);
-            return string.Format(OutputMessages.AddDrink, drink.Name, drink.Brand);
+            string result = string.Empty;
+
+            if (drink != null)
+            {
+                this.drinks.Add(drink);
+                result += string.Format(OutputMessages.AddDrink, drink.Name, drink.Brand);
+            }
+
+            return result;
         }
 
         public string AddTable(string type, int tableNumber, int capacity)
@@ -166,6 +180,12 @@
         public string LeaveTable(int tableNumber)
         {
             ITable table = this.tables.FirstOrDefault(t => t.TableNumber == tableNumber);
+
+            if (table == null)
+            {
+                return string.Format(OutputMessages.TableDoesNotExist, tableNumber);
+            }
+
             decimal bill = table.GetBill();
             table.Clear();
 

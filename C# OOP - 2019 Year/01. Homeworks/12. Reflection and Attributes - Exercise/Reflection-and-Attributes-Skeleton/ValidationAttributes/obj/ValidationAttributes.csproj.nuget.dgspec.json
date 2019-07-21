@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mariela\\Desktop\\New folder\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj": {}
+    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\12. Reflection and Attributes - Exercise\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mariela\\Desktop\\New folder\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj": {
+    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\12. Reflection and Attributes - Exercise\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mariela\\Desktop\\New folder\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj",
+        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\12. Reflection and Attributes - Exercise\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj",
         "projectName": "ValidationAttributes",
-        "projectPath": "C:\\Users\\Mariela\\Desktop\\New folder\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj",
-        "packagesPath": "C:\\Users\\Mariela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mariela\\Desktop\\New folder\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\obj\\",
+        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\12. Reflection and Attributes - Exercise\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\ValidationAttributes.csproj",
+        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
+        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\12. Reflection and Attributes - Exercise\\Reflection-and-Attributes-Skeleton\\ValidationAttributes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mariela\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -44,7 +42,6 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
