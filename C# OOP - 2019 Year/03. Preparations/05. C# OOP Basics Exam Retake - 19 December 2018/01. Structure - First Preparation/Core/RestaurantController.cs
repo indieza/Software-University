@@ -70,7 +70,7 @@
                     drink = new FuzzyDrink(name, servingSize, brand);
                     break;
 
-                case "Juicy":
+                case "Juice":
                     drink = new Juice(name, servingSize, brand);
                     break;
 
