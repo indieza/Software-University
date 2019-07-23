@@ -56,7 +56,7 @@ namespace StorageMaster.Entities.Models.Storages
 
         public int SendVehicleTo(int garageSlot, Storage deliveryLocation)
         {
-            throw new NotImplementedException();
+            Vehicle vehicle = this.GetVehicle(garageSlot);
         }
 
         public int UnloadVehicle(int garageSlot)

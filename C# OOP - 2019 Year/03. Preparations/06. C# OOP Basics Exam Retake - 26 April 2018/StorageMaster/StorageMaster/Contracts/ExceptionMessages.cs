@@ -15,5 +15,7 @@ namespace StorageMaster.Contracts
         public const string InvalidGarageSlot = "Invalid garage slot!";
 
         public const string NoVehicleInGarage = "No vehicle in this garage slot!";
+
+        public const string NoFreeRoomInGarage = "No room in garage!";
     }
 }
