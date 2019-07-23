@@ -10,8 +10,8 @@
 
     public class MachinesManager : IMachinesManager
     {
-        private List<IPilot> pilots;
-        private List<IMachine> machines;
+        private readonly List<IPilot> pilots;
+        private readonly List<IMachine> machines;
 
         public MachinesManager()
         {
@@ -44,7 +44,10 @@
                 ITank tank = new Tank(name, attackPoints, defensePoints);
                 this.machines.Add(tank);
 
-                return string.Format(OutputMessages.TankManufactured, tank.Name, tank.AttackPoints, tank.DefensePoints);
+                return string.Format(OutputMessages.TankManufactured,
+                    tank.Name,
+                    tank.AttackPoints,
+                    tank.DefensePoints);
             }
         }
 
@@ -59,8 +62,11 @@
                 IFighter fighter = new Fighter(name, attackPoints, defensePoints);
                 this.machines.Add(fighter);
 
-                return string.Format(
-                    OutputMessages.FighterManufactured, fighter.Name, fighter.AttackPoints, fighter.DefensePoints);
+                return string.Format(OutputMessages.FighterManufactured,
+                    fighter.Name,
+                    fighter.AttackPoints,
+                    fighter.DefensePoints,
+                    fighter.AggressiveMode == true ? "ON" : "OFF");
             }
         }
 
@@ -93,7 +99,33 @@
 
         public string AttackMachines(string attackingMachineName, string defendingMachineName)
         {
-            throw new System.NotImplementedException();
+            IMachine attacker = this.machines.FirstOrDefault(m => m.Name == attackingMachineName);
+
+            if (attacker == null)
+            {
+                return string.Format(OutputMessages.MachineNotFound, attackingMachineName);
+            }
+
+            IMachine enemy = this.machines.FirstOrDefault(m => m.Name == defendingMachineName);
+
+            if (enemy == null)
+            {
+                return string.Format(OutputMessages.MachineNotFound, defendingMachineName);
+            }
+
+            if (attacker.HealthPoints <= 0)
+            {
+                return string.Format(OutputMessages.DeadMachineCannotAttack, attackingMachineName);
+            }
+
+            if (enemy.HealthPoints <= 0)
+            {
+                return string.Format(OutputMessages.DeadMachineCannotAttack, defendingMachineName);
+            }
+
+            attacker.Attack(enemy);
+
+            return string.Format(OutputMessages.AttackSuccessful, enemy.Name, attacker.Name, enemy.HealthPoints);
         }
 
         public string PilotReport(string pilotReporting)

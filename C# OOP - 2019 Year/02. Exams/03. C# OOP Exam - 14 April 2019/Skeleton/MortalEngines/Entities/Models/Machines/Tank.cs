@@ -1,8 +1,6 @@
 namespace MortalEngines.Entities.Models.Machines
 {
     using MortalEngines.Entities.Contracts;
-    using System;
-    using System.Collections.Generic;
     using System.Text;
 
     public class Tank : BaseMachine, ITank
@@ -12,7 +10,10 @@ namespace MortalEngines.Entities.Models.Machines
         private const int DecreaseDeffencePoints = 30;
 
         public Tank(string name, double attackPoints, double defensePoints)
-            : base(name, InitialHealthPoints, attackPoints, defensePoints)
+            : base(name,
+                  InitialHealthPoints,
+                  attackPoints - IncreaseAttackPoints,
+                  defensePoints + DecreaseDeffencePoints)
         {
             this.DefenseMode = true;
         }
