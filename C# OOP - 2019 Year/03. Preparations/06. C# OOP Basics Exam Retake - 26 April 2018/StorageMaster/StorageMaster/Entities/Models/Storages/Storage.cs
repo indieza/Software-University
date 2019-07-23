@@ -57,11 +57,42 @@ namespace StorageMaster.Entities.Models.Storages
         public int SendVehicleTo(int garageSlot, Storage deliveryLocation)
         {
             Vehicle vehicle = this.GetVehicle(garageSlot);
+
+            bool isFreeGarageSlot = deliveryLocation.Garage.Any(g => g == null);
+
+            if (!isFreeGarageSlot)
+            {
+                throw new InvalidOperationException(ExceptionMessages.NoFreeRoomInGarage);
+            }
+
+            this.garage[garageSlot] = null;
+
+            var freeGarageSlotIndex = Array.IndexOf(this.garage, null);
+            this.garage[freeGarageSlotIndex] = vehicle;
+
+            return freeGarageSlotIndex;
         }
 
         public int UnloadVehicle(int garageSlot)
         {
-            throw new NotImplementedException();
+            if (this.IsFull)
+            {
+                throw new InvalidOperationException(ExceptionMessages.FullStorage);
+            }
+
+            Vehicle vehicle = GetVehicle(garageSlot);
+
+            int unloadedProductCount = 0;
+
+            while (!vehicle.IsEmpty && !this.IsFull)
+            {
+                Product product = vehicle.Unload();
+                this.products.Add(product);
+
+                unloadedProductCount++;
+            }
+
+            return unloadedProductCount;
         }
 
         private void FullGarage(int v, IEnumerable<Vehicle> vehicles)

@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\ExceptionMessages.cs" />
+    <Compile Include="Core\StorageMaster.cs" />
     <Compile Include="Entities\Interfaces\IProduct.cs" />
     <Compile Include="Entities\Interfaces\IStorage.cs" />
     <Compile Include="Entities\Interfaces\IVehicle.cs" />
@@ -53,11 +54,17 @@
     <Compile Include="Entities\Models\Products\Product.cs" />
     <Compile Include="Entities\Models\Products\Ram.cs" />
     <Compile Include="Entities\Models\Products\SolidStateDrive.cs" />
+    <Compile Include="Entities\Models\Storages\AutomatedWarehouse.cs" />
+    <Compile Include="Entities\Models\Storages\DistributionCenter.cs" />
     <Compile Include="Entities\Models\Storages\Storage.cs" />
+    <Compile Include="Entities\Models\Storages\Warehouse.cs" />
     <Compile Include="Entities\Models\Vehicles\Semi.cs" />
     <Compile Include="Entities\Models\Vehicles\Truck.cs" />
     <Compile Include="Entities\Models\Vehicles\Van.cs" />
     <Compile Include="Entities\Models\Vehicles\Vehicle.cs" />
+    <Compile Include="Factories\ProductFactory.cs" />
+    <Compile Include="Factories\StorageFactory.cs" />
+    <Compile Include="Factories\VehicleFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartUp.cs" />
   </ItemGroup>

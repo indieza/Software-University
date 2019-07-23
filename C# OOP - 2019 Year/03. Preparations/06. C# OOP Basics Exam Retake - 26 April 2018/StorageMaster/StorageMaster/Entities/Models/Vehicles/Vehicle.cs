@@ -10,17 +10,17 @@ namespace StorageMaster.Entities.Models.Vehicles
 
     public abstract class Vehicle : IVehicle
     {
-        private readonly List<IProduct> trunk;
+        private readonly List<Product> trunk;
 
         protected Vehicle(int capacity)
         {
             this.Capacity = capacity;
-            this.trunk = new List<IProduct>();
+            this.trunk = new List<Product>();
         }
 
         public int Capacity { get; private set; }
 
-        public IReadOnlyCollection<IProduct> Trunk => this.trunk.AsReadOnly();
+        public IReadOnlyCollection<Product> Trunk => this.trunk.AsReadOnly();
 
         public bool IsFull => this.trunk.Sum(p => p.Weight) >= this.Capacity ? true : false;
 

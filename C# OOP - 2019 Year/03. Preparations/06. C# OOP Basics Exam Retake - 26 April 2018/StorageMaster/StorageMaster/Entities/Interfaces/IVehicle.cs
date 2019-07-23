@@ -9,7 +9,7 @@ namespace StorageMaster.Entities.Interfaces
     {
         int Capacity { get; }
 
-        IReadOnlyCollection<IProduct> Trunk { get; }
+        IReadOnlyCollection<Product> Trunk { get; }
 
         bool IsFull { get; }
 
