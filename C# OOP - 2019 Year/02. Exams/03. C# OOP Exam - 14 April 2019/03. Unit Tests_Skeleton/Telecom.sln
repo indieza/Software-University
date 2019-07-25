@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telecom", "Telecom\Telecom.csproj", "{C47A507C-7FB4-47B6-A169-F9655F4A4FFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telecom.Tests", "Telecom.Tests\Telecom.Tests.csproj", "{E81F3C21-A4BA-4C82-BFFE-F42E9CA98BC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C47A507C-7FB4-47B6-A169-F9655F4A4FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47A507C-7FB4-47B6-A169-F9655F4A4FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47A507C-7FB4-47B6-A169-F9655F4A4FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47A507C-7FB4-47B6-A169-F9655F4A4FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81F3C21-A4BA-4C82-BFFE-F42E9CA98BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81F3C21-A4BA-4C82-BFFE-F42E9CA98BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81F3C21-A4BA-4C82-BFFE-F42E9CA98BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81F3C21-A4BA-4C82-BFFE-F42E9CA98BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DD50231-1F0D-4409-96C8-A0F0D315CA01}
+	EndGlobalSection
+EndGlobal
