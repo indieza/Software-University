@@ -45,7 +45,7 @@ namespace ParkingSystem
 
             bool carExists = this.parking.Values
                 .Any(x => x?.RegistrationNumber == car.RegistrationNumber);
-            
+
             if (carExists)
             {
                 throw new InvalidOperationException("Car is already parked!");
