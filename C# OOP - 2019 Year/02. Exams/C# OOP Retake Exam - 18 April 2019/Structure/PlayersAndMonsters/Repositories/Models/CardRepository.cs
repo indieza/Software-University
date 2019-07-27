@@ -11,6 +11,11 @@ namespace PlayersAndMonsters.Repositories.Models
     {
         private readonly List<ICard> cards;
 
+        public CardRepository()
+        {
+            this.cards = new List<ICard>();
+        }
+
         public int Count => this.cards.Count;
 
         public IReadOnlyCollection<ICard> Cards => this.cards.AsReadOnly();
