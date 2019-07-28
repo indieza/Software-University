@@ -1,5 +1,6 @@
 namespace MortalEngines.Entities.Models
 {
+    using MortalEngines.Common;
     using MortalEngines.Entities.Contracts;
     using System;
     using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace MortalEngines.Entities.Models
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException("Pilot name cannot be null or empty string.");
+                    throw new ArgumentNullException(ExceptionMessages.NullPilotName);
                 }
 
                 this.name = value;
@@ -35,7 +36,7 @@ namespace MortalEngines.Entities.Models
         {
             if (machine == null)
             {
-                throw new ArgumentNullException("Null machine cannot be added to the pilot.");
+                throw new ArgumentNullException(ExceptionMessages.NullMachine);
             }
 
             this.machines.Add(machine);

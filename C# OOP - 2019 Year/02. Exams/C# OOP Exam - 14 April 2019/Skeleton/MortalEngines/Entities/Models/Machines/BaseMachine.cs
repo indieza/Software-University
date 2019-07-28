@@ -1,5 +1,6 @@
 namespace MortalEngines.Entities.Models.Machines
 {
+    using MortalEngines.Common;
     using MortalEngines.Entities.Contracts;
     using System;
     using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace MortalEngines.Entities.Models.Machines
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException("Machine name cannot be null or empty.");
+                    throw new ArgumentNullException(ExceptionMessages.NullMachineName);
                 }
 
                 this.name = value;
@@ -42,7 +43,7 @@ namespace MortalEngines.Entities.Models.Machines
             {
                 if (value == null)
                 {
-                    throw new NullReferenceException("Pilot cannot be null.");
+                    throw new NullReferenceException(ExceptionMessages.NullPilot);
                 }
 
                 this.pilot = value;
@@ -61,7 +62,7 @@ namespace MortalEngines.Entities.Models.Machines
         {
             if (target == null)
             {
-                throw new NullReferenceException("Target cannot be null");
+                throw new NullReferenceException(ExceptionMessages.NullTarget);
             }
 
             double difference = Math.Abs(this.AttackPoints - target.DefensePoints);
@@ -72,7 +73,7 @@ namespace MortalEngines.Entities.Models.Machines
             }
             else
             {
-                this.HealthPoints -= difference;
+                target.HealthPoints -= difference;
             }
 
             this.Targets.Add(target.Name);
