@@ -83,7 +83,6 @@ namespace ExtendedDatabase
             return person;
         }
 
-
         public Person FindById(long id)
         {
             if (id < 0)

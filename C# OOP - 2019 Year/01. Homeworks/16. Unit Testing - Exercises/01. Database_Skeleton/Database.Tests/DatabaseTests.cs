@@ -1,12 +1,11 @@
 using NUnit.Framework;
 using System;
-using static Database.Database;
 
 namespace Tests
 {
     public class DatabaseTests
     {
-        private Database database;
+        private Database.Database database;
 
         [SetUp]
         public void Setup()

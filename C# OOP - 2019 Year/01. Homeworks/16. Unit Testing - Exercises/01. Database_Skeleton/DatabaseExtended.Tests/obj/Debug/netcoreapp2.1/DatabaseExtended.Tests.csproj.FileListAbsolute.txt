@@ -1,0 +1,17 @@
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\DatabaseExtended.Tests.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\DatabaseExtended.Tests.runtimeconfig.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\DatabaseExtended.Tests.runtimeconfig.dev.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\DatabaseExtended.Tests.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\DatabaseExtended.Tests.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\DatabaseExtended.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\bin\Debug\netcoreapp2.1\DatabaseExtended.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\obj\Debug\netcoreapp2.1\DatabaseExtended.Tests.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\obj\Debug\netcoreapp2.1\DatabaseExtended.Tests.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\obj\Debug\netcoreapp2.1\DatabaseExtended.Tests.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\obj\Debug\netcoreapp2.1\DatabaseExtended.Tests.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\obj\Debug\netcoreapp2.1\DatabaseExtended.Tests.csproj.CopyComplete
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\obj\Debug\netcoreapp2.1\DatabaseExtended.Tests.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended.Tests\obj\Debug\netcoreapp2.1\DatabaseExtended.Tests.pdb
