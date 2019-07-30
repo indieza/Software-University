@@ -14,11 +14,11 @@ namespace SoftUniRestaurant.Models.Tables.Contracts
 
         int Capacity { get; }
 
-        int NumberOfPeople { get; }
+        int NumberOfPeople { get; set; }
 
         decimal PricePerPerson { get; }
 
-        bool IsReserved { get; }
+        bool IsReserved { get; set; }
 
         decimal Price { get; }
 

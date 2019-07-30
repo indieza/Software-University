@@ -1,13 +1,13 @@
 namespace SoftUniRestaurant.Models.Tables.Models
 {
+    using SoftUniRestaurant.Contracts;
     using SoftUniRestaurant.Models.Drinks.Contracts;
     using SoftUniRestaurant.Models.Foods.Contracts;
     using SoftUniRestaurant.Models.Tables.Contracts;
     using System;
     using System.Collections.Generic;
-    using System.Text;
-    using SoftUniRestaurant.Contracts;
     using System.Linq;
+    using System.Text;
 
     public abstract class Table : ITable
     {
@@ -21,6 +21,8 @@ namespace SoftUniRestaurant.Models.Tables.Models
             this.TableNumber = tableNumber;
             this.Capacity = capacity;
             this.PricePerPerson = pricePerPerson;
+            this.foodOrders = new List<IFood>();
+            this.drinkOrders = new List<IDrink>();
         }
 
         public IReadOnlyCollection<IFood> FoodOrders => this.foodOrders.AsReadOnly();
@@ -48,7 +50,7 @@ namespace SoftUniRestaurant.Models.Tables.Models
         {
             get => this.numberOfPeople;
 
-            private set
+            set
             {
                 if (value <= 0)
                 {
@@ -61,7 +63,7 @@ namespace SoftUniRestaurant.Models.Tables.Models
 
         public decimal PricePerPerson { get; private set; }
 
-        public bool IsReserved { get; private set; }
+        public bool IsReserved { get; set; }
 
         public decimal Price => this.NumberOfPeople * this.PricePerPerson;
 

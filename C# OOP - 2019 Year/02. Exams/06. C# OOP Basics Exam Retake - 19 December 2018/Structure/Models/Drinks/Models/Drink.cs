@@ -1,10 +1,8 @@
 namespace SoftUniRestaurant.Models.Drinks.Models
 {
+    using SoftUniRestaurant.Contracts;
     using SoftUniRestaurant.Models.Drinks.Contracts;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using SoftUniRestaurant.Contracts;
 
     public abstract class Drink : IDrink
     {

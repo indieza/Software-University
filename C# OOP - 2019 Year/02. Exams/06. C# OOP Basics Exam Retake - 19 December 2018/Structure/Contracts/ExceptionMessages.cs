@@ -1,9 +1,5 @@
 namespace SoftUniRestaurant.Contracts
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class ExceptionMessages
     {
         public const string NullFoodName = "Name cannot be null or white space!";
