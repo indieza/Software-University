@@ -1,0 +1,9 @@
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\bin\Debug\netcoreapp2.1\Service.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\bin\Debug\netcoreapp2.1\Service.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\bin\Debug\netcoreapp2.1\Service.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\obj\Debug\netcoreapp2.1\Service.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\obj\Debug\netcoreapp2.1\Service.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\obj\Debug\netcoreapp2.1\Service.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\obj\Debug\netcoreapp2.1\Service.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\obj\Debug\netcoreapp2.1\Service.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\Service\obj\Debug\netcoreapp2.1\Service.pdb

@@ -1,0 +1,9 @@
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\bin\Debug\netcoreapp2.1\CarManager.deps.json
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\bin\Debug\netcoreapp2.1\CarManager.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\bin\Debug\netcoreapp2.1\CarManager.pdb
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\obj\Debug\netcoreapp2.1\CarManager.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\obj\Debug\netcoreapp2.1\CarManager.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\obj\Debug\netcoreapp2.1\CarManager.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\obj\Debug\netcoreapp2.1\CarManager.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\obj\Debug\netcoreapp2.1\CarManager.dll
+D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\CarManager\obj\Debug\netcoreapp2.1\CarManager.pdb
