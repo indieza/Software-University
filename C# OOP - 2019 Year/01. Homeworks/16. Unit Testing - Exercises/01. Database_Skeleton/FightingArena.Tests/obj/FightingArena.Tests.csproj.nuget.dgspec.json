@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj": {
+                "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -57,6 +61,58 @@
             "nunit": {
               "target": "Package",
               "version": "[3.9.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj",
+        "projectName": "FightingArena",
+        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj",
+        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
+        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
             }
           },
           "imports": [

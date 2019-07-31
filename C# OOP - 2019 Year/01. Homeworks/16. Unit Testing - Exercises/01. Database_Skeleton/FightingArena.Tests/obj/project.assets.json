@@ -1640,6 +1640,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "FightingArena/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/FightingArena.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FightingArena.dll": {}
+        }
       }
     }
   },
@@ -5743,10 +5753,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "FightingArena/1.0.0": {
+      "type": "project",
+      "path": "../FightingArena/FightingArena.csproj",
+      "msbuildProject": "../FightingArena/FightingArena.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "FightingArena >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "NUnit3TestAdapter >= 3.9.0",
@@ -5782,7 +5798,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj": {
+              "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
