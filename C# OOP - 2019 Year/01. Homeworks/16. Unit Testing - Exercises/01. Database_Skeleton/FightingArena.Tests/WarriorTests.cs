@@ -44,7 +44,7 @@ namespace Tests
         public void Test_Attack_First_Exception()
         {
             Warrior warrior1 = new Warrior("Name1", 10, 30);
-            Warrior warrior2 = new Warrior("Name2", 10, 10);
+            Warrior warrior2 = new Warrior("Name2", 10, 40);
             Assert.Throws<InvalidOperationException>(() => warrior1.Attack(warrior2));
         }
 
@@ -52,7 +52,7 @@ namespace Tests
         public void Test_Attack_Second_Exception()
         {
             Warrior warrior1 = new Warrior("Name1", 10, 40);
-            Warrior warrior2 = new Warrior("Name2", 10, 10);
+            Warrior warrior2 = new Warrior("Name2", 10, 30);
             Assert.Throws<InvalidOperationException>(() => warrior1.Attack(warrior2));
         }
 
@@ -60,7 +60,7 @@ namespace Tests
         public void Test_Attack_Third_Exception()
         {
             Warrior warrior1 = new Warrior("Name1", 10, 40);
-            Warrior warrior2 = new Warrior("Name2", 50, 40);
+            Warrior warrior2 = new Warrior("Name2", 50, 50);
             Assert.Throws<InvalidOperationException>(() => warrior1.Attack(warrior2));
         }
 

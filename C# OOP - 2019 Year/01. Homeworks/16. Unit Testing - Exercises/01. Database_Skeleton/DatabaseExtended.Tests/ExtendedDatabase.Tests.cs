@@ -16,7 +16,7 @@ namespace Tests
 
             Person[] people = new Person[16];
 
-            for (int i = 0; i <= 15; i++)
+            for (int i = 0; i < people.Length; i++)
             {
                 people[i] = new Person(i, $"Name{i}");
             }
@@ -38,6 +38,13 @@ namespace Tests
         }
 
         [Test]
+        public void Test_Count()
+        {
+            ExtendedDatabase.ExtendedDatabase extendedDatabase = new ExtendedDatabase.ExtendedDatabase();
+            Assert.AreEqual(0, extendedDatabase.Count);
+        }
+
+        [Test]
         public void Test_Add_Range_Exception()
         {
             Person[] people = new Person[17];
@@ -56,6 +63,7 @@ namespace Tests
         {
             this.database.Remove();
             Person targetPerson = new Person(102, "Name1");
+
             Assert.Throws<InvalidOperationException>(() => this.database.Add(targetPerson));
         }
 
@@ -63,7 +71,8 @@ namespace Tests
         public void Test_Add_Third_Exception()
         {
             this.database.Remove();
-            Person targetPerson = new Person(0, "Name102");
+            Person targetPerson = new Person(2, "Name102");
+
             Assert.Throws<InvalidOperationException>(() => this.database.Add(targetPerson));
         }
 
@@ -107,6 +116,7 @@ namespace Tests
         public void Test_Find_By_Username_First_Exception()
         {
             Assert.Throws<ArgumentNullException>(() => this.database.FindByUsername(null));
+            Assert.Throws<ArgumentNullException>(() => this.database.FindByUsername(string.Empty));
         }
 
         [Test]
