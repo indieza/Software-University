@@ -1641,16 +1641,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "CarManager/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/CarManager.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CarManager.dll": {}
-        }
-      },
       "Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -1659,36 +1649,6 @@
         },
         "runtime": {
           "bin/placeholder/Database.dll": {}
-        }
-      },
-      "DatabaseExtended/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/DatabaseExtended.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DatabaseExtended.dll": {}
-        }
-      },
-      "FightingArena/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/FightingArena.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FightingArena.dll": {}
-        }
-      },
-      "Service/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/Service.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Service.dll": {}
         }
       }
     }
@@ -3107,7 +3067,7 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
@@ -3145,7 +3105,7 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
@@ -5794,42 +5754,18 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "CarManager/1.0.0": {
-      "type": "project",
-      "path": "../CarManager/CarManager.csproj",
-      "msbuildProject": "../CarManager/CarManager.csproj"
-    },
     "Database/1.0.0": {
       "type": "project",
       "path": "../Database/Database.csproj",
       "msbuildProject": "../Database/Database.csproj"
-    },
-    "DatabaseExtended/1.0.0": {
-      "type": "project",
-      "path": "../DatabaseExtended/DatabaseExtended.csproj",
-      "msbuildProject": "../DatabaseExtended/DatabaseExtended.csproj"
-    },
-    "FightingArena/1.0.0": {
-      "type": "project",
-      "path": "../FightingArena/FightingArena.csproj",
-      "msbuildProject": "../FightingArena/FightingArena.csproj"
-    },
-    "Service/1.0.0": {
-      "type": "project",
-      "path": "../Service/Service.csproj",
-      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "CarManager >= 1.0.0",
       "Database >= 1.0.0",
-      "DatabaseExtended >= 1.0.0",
-      "FightingArena >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "NUnit3TestAdapter >= 3.9.0",
-      "Service >= 1.0.0",
       "nunit >= 3.9.0"
     ]
   },
@@ -5840,11 +5776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
       "projectName": "Database.Tests",
-      "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
+      "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
       "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-      "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5863,20 +5799,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\CarManager.csproj": {
-              "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\CarManager.csproj"
-            },
-            "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj": {
-              "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj"
-            },
-            "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj": {
-              "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj"
-            },
-            "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj": {
-              "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj"
-            },
-            "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\Service.csproj": {
-              "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\Service.csproj"
+            "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj": {
+              "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj"
             }
           }
         }
@@ -5895,6 +5819,7 @@
             "version": "[15.9.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

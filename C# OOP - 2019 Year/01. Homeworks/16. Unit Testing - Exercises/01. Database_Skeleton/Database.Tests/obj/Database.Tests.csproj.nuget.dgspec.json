@@ -1,69 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj": {}
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\CarManager.csproj": {
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\CarManager.csproj",
-        "projectName": "CarManager",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\CarManager.csproj",
-        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.1": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
         "projectName": "Database.Tests",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\Database.Tests.csproj",
         "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,20 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\CarManager.csproj": {
-                "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\CarManager\\CarManager.csproj"
-              },
-              "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj": {
-                "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj"
-              },
-              "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj": {
-                "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj"
-              },
-              "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj": {
-                "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj"
-              },
-              "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\Service.csproj": {
-                "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\Service.csproj"
+              "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj": {
+                "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj"
               }
             }
           }
@@ -114,6 +50,7 @@
               "version": "[15.9.0, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -135,170 +72,14 @@
         }
       }
     },
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj": {
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj",
-        "projectName": "DatabaseExtended",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj",
-        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.1": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.1": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj",
-        "projectName": "FightingArena",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\FightingArena.csproj",
-        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\FightingArena\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.1": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\Service.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\Service.csproj",
-        "projectName": "Service",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Service\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

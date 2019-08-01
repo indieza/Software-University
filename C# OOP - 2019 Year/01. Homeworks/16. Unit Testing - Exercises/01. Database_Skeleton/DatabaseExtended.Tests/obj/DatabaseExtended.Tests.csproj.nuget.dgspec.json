@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj": {}
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj": {
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj",
         "projectName": "DatabaseExtended.Tests",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\DatabaseExtended.Tests.csproj",
         "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj": {
-                "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj"
+              "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj": {
+                "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj"
               }
             }
           }
@@ -50,6 +50,7 @@
               "version": "[15.9.0, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -71,14 +72,14 @@
         }
       }
     },
-    "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj": {
+    "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj",
         "projectName": "DatabaseExtended",
-        "projectPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\DatabaseExtended.csproj",
         "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# OOP - 2019 Year\\01. Homeworks\\16. Unit Testing - Exercises\\01. Database_Skeleton\\DatabaseExtended\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

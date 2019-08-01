@@ -7,3 +7,12 @@ D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exerc
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.AssemblyInfo.cs
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.dll
 D:\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\bin\Debug\netcoreapp2.1\DatabaseExtended.deps.json
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\bin\Debug\netcoreapp2.1\DatabaseExtended.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\bin\Debug\netcoreapp2.1\DatabaseExtended.pdb
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.dll
+D:\Documents\GitHub\Software-University\C# OOP - 2019 Year\01. Homeworks\16. Unit Testing - Exercises\01. Database_Skeleton\DatabaseExtended\obj\Debug\netcoreapp2.1\DatabaseExtended.pdb

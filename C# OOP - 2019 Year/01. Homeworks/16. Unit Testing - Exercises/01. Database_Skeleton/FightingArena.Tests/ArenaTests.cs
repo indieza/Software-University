@@ -17,7 +17,7 @@ namespace Tests
         [Test]
         public void Test_Constructure()
         {
-            Assert.AreEqual(0, this.arena.Warriors.Count);
+            Assert.AreEqual(0, this.arena.Count);
         }
 
         [Test]
@@ -28,6 +28,7 @@ namespace Tests
 
             this.arena.Enroll(warrior1);
             Assert.Throws<InvalidOperationException>(() => this.arena.Enroll(warrior2));
+            Assert.AreEqual(1, this.arena.Count);
         }
 
         [Test]
@@ -39,6 +40,18 @@ namespace Tests
             this.arena.Enroll(warrior1);
             this.arena.Enroll(warrior2);
             Assert.AreEqual(2, this.arena.Count);
+        }
+
+        [Test]
+        public void Test_Fight_Exception()
+        {
+            Warrior warrior1 = new Warrior("Name1", 10, 30);
+            Warrior warrior2 = new Warrior("Name2", 10, 10);
+
+            this.arena.Enroll(warrior1);
+            this.arena.Enroll(warrior2);
+
+            Assert.Throws<InvalidOperationException>(() => this.arena.Fight("Name1", "Name3"));
         }
     }
 }

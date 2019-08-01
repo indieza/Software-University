@@ -65,6 +65,15 @@ namespace Tests
         }
 
         [Test]
+        public void Test_Attack_This_HP()
+        {
+            Warrior warrior1 = new Warrior("Name1", 41, 35);
+            Warrior warrior2 = new Warrior("Name2", 34, 40);
+            warrior1.Attack(warrior2);
+            Assert.AreEqual(1, warrior1.HP);
+        }
+
+        [Test]
         public void Test_Attack_If_Statment()
         {
             Warrior warrior1 = new Warrior("Name1", 41, 35);
