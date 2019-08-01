@@ -118,8 +118,8 @@ namespace Tests
         [Test]
         public void Test_Find_By_Username()
         {
-            Person targetPerson = new Person(1, "Name1");
-            Assert.AreEqual(targetPerson.Id, this.database.FindByUsername("Name1").Id);
+            Assert.AreEqual(1, this.database.FindByUsername("Name1").Id);
+            Assert.AreEqual("Name1", this.database.FindByUsername("Name1").UserName);
         }
 
         [Test]
@@ -137,8 +137,8 @@ namespace Tests
         [Test]
         public void Test_Find_By_Id()
         {
-            Person targetPerson = new Person(2, "Name2");
-            Assert.AreEqual(targetPerson.UserName, this.database.FindById(2).UserName);
+            Assert.AreEqual(2, this.database.FindById(2).Id);
+            Assert.AreEqual("Name2", this.database.FindById(2).UserName);
         }
     }
 }
