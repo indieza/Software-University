@@ -6,14 +6,92 @@ namespace Tests
 {
     public class ExtendedDatabaseTests
     {
-        private Person person;
+        private Person person1;
+        private Person person2;
+        private Person person3;
         private ExtendedDatabase.ExtendedDatabase database;
 
         [SetUp]
         public void Setup()
         {
-            this.person = new Person(1, "Name");
+            this.person1 = new Person(100, "Pesho");
+            this.person2 = new Person(101, "Gosho");
+            this.person3 = new Person(102, "Shepo");
+            this.database = new ExtendedDatabase.ExtendedDatabase(this.person1, this.person2);
+        }
 
+        [Test]
+        public void Test_Person_Constructor()
+        {
+            Assert.AreEqual(100, this.person1.Id);
+            Assert.AreEqual("Pesho", this.person1.UserName);
+        }
+
+        [Test]
+        public void Test_Database_Constructure()
+        {
+            Assert.AreEqual(2, this.database.Count);
+        }
+
+        [Test]
+        public void Test_Add_Range_Exception()
+        {
+            Person[] people = new Person[17];
+
+            for (int i = 0; i < people.Length; i++)
+            {
+                people[i] = new Person(i, $"Name{i}");
+            }
+
+            Assert.Throws<ArgumentException>(() =>
+                    this.database = new ExtendedDatabase.ExtendedDatabase(people));
+        }
+
+        [Test]
+        public void Test_Add_Range_Exception_With_Empty_People()
+        {
+            Person[] people = new Person[17];
+
+            Assert.Throws<ArgumentException>(() =>
+                    this.database = new ExtendedDatabase.ExtendedDatabase(people));
+        }
+
+        [Test]
+        public void Test_Add_Null_People()
+        {
+            Person[] people = new Person[5];
+
+            Assert.Throws<NullReferenceException>(() =>
+                    this.database = new ExtendedDatabase.ExtendedDatabase(people));
+        }
+
+        [Test]
+        public void Test_Add_Person_Correctly()
+        {
+            this.database.Add(person3);
+
+            Assert.AreEqual(3, this.database.Count);
+        }
+
+        [Test]
+        public void Test_Add_Person_With_Existing_Username()
+        {
+            Person person = new Person(104, "Pesho");
+
+            Assert.Throws<InvalidOperationException>(() => this.database.Add(person));
+        }
+
+        [Test]
+        public void Test_Add_Person_With_Existing_Id()
+        {
+            Person person = new Person(101, "Robot");
+
+            Assert.Throws<InvalidOperationException>(() => this.database.Add(person));
+        }
+
+        [Test]
+        public void Test_Add_Person_In_Full_Database()
+        {
             Person[] people = new Person[16];
 
             for (int i = 0; i < people.Length; i++)
@@ -22,133 +100,67 @@ namespace Tests
             }
 
             this.database = new ExtendedDatabase.ExtendedDatabase(people);
+
+            Assert.Throws<InvalidOperationException>(() => this.database.Add(person3));
         }
 
         [Test]
-        public void Test_Person_Constructor()
-        {
-            Assert.AreEqual(1, this.person.Id);
-            Assert.AreEqual("Name", this.person.UserName);
-        }
-
-        [Test]
-        public void Test_DatabaseCount()
-        {
-            Assert.AreEqual(16, this.database.Count);
-        }
-
-        [Test]
-        public void Test_Count()
-        {
-            ExtendedDatabase.ExtendedDatabase extendedDatabase = new ExtendedDatabase.ExtendedDatabase();
-            Assert.AreEqual(0, extendedDatabase.Count);
-        }
-
-        [Test]
-        public void Test_Add_Range_Exception()
-        {
-            Person[] people = new Person[17];
-            Assert
-                .Throws<ArgumentException>(() => this.database = new ExtendedDatabase.ExtendedDatabase(people));
-        }
-
-        [Test]
-        public void Test_Add_First_Exception()
-        {
-            Assert.Throws<InvalidOperationException>(() => this.database.Add(this.person));
-        }
-
-        [Test]
-        public void Test_Add_Second_Exception()
+        public void Test_Remove_Correctly()
         {
             this.database.Remove();
-            Person targetPerson = new Person(102, "Name1");
 
-            Assert.Throws<InvalidOperationException>(() => this.database.Add(targetPerson));
+            Assert.AreEqual(1, this.database.Count);
         }
 
         [Test]
-        public void Test_Add_Third_Exception()
+        public void Test_Remove_From_Empty_Database()
         {
-            this.database.Remove();
-            Person targetPerson = new Person(2, "Name102");
-
-            Assert.Throws<InvalidOperationException>(() => this.database.Add(targetPerson));
-        }
-
-        [Test]
-        public void Test_Add_Method()
-        {
-            this.database.Remove();
-            this.database.Remove();
-            Person targetPerson = new Person(23, "Name102");
-            this.database.Add(targetPerson);
-            Assert.AreEqual(15, this.database.Count);
-        }
-
-        [Test]
-        public void Test_Remove_Exception()
-        {
-            int count = this.database.Count;
-
-            for (int i = 0; i < count; i++)
-            {
-                this.database.Remove();
-            }
+            this.database = new ExtendedDatabase.ExtendedDatabase();
 
             Assert.Throws<InvalidOperationException>(() => this.database.Remove());
         }
 
         [Test]
-        public void Test_Remove_Method()
+        public void Test_Find_By_Null_Username()
         {
-            int count = this.database.Count - 2;
-
-            for (int i = 0; i < count; i++)
-            {
-                this.database.Remove();
-            }
-
-            Assert.AreEqual(2, this.database.Count);
+            Assert.Throws<ArgumentNullException>(() =>
+                    this.database.FindByUsername(null));
         }
 
         [Test]
-        public void Test_Find_By_Username_First_Exception()
+        public void Test_Find_By_No_Username()
         {
-            Assert.Throws<ArgumentNullException>(() => this.database.FindByUsername(null));
-            Assert.Throws<ArgumentNullException>(() => this.database.FindByUsername(string.Empty));
-        }
-
-        [Test]
-        public void Test_Find_By_Username_Second_Exception()
-        {
-            Assert.Throws<InvalidOperationException>(() => this.database.FindByUsername("Pesho300"));
+            Assert.Throws<InvalidOperationException>(() =>
+                    this.database.FindByUsername(this.person3.UserName));
         }
 
         [Test]
         public void Test_Find_By_Username()
         {
-            Assert.AreEqual(1, this.database.FindByUsername("Name1").Id);
-            Assert.AreEqual("Name1", this.database.FindByUsername("Name1").UserName);
+            Person person = this.database.FindByUsername(person1.UserName);
+            Assert.AreEqual(person, this.person1);
         }
 
         [Test]
-        public void Test_Find_By_Id_First_Exception()
+        public void Test_By_Negative_Id()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => this.database.FindById(-1));
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
+                    this.database.FindById(-10));
         }
 
         [Test]
-        public void Test_Find_By_Id_Second_Exception()
+        public void Test_By_No_Id()
         {
-            Assert.Throws<InvalidOperationException>(() => this.database.FindById(35));
+            Assert.Throws<InvalidOperationException>(() =>
+                    this.database.FindById(102));
         }
 
         [Test]
-        public void Test_Find_By_Id()
+        public void Test_By_Id()
         {
-            Assert.AreEqual(2, this.database.FindById(2).Id);
-            Assert.AreEqual("Name2", this.database.FindById(2).UserName);
+            Person person = this.database.FindById(100);
+
+            Assert.AreEqual(person, this.person1);
         }
     }
 }

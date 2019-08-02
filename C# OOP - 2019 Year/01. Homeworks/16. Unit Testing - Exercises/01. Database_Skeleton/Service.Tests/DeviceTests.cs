@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using Service.Models.Devices;
 
 namespace Service.Tests
 {
@@ -10,7 +11,7 @@ namespace Service.Tests
         }
 
         [Test]
-        public void Test1()
+        public void Test_device_Constructure()
         {
             Assert.Pass();
         }
