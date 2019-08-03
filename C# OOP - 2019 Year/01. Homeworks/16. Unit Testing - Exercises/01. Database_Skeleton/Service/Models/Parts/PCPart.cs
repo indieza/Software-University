@@ -5,15 +5,13 @@
         private const decimal multiplier = 1.2m;
 
         public PCPart(string name, decimal cost)
-            : base (name, cost * multiplier, false)
+            : base(name, cost * multiplier, false)
         {
-            
         }
 
-        public PCPart(string name, decimal cost, bool isBroken) 
+        public PCPart(string name, decimal cost, bool isBroken)
             : base(name, cost * multiplier, isBroken)
         {
-
         }
     }
 }

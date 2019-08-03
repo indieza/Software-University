@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using Service.Models.Parts;
 using System;
-using System.Text;
 
 namespace Tests
 {

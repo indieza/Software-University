@@ -1,16 +1,14 @@
-﻿using System;
-
-using Service.Models.Contracts;
+﻿using Service.Models.Contracts;
 using Service.Models.Parts;
+using System;
 
 namespace Service.Models.Devices
 {
     public class PC : Device
     {
-        public PC(string make) 
+        public PC(string make)
             : base(make)
         {
-
         }
 
         public override void AddPart(IPart part)

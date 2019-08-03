@@ -1,8 +1,7 @@
-﻿using System;
-using System.Linq;
+﻿using Service.Models.Contracts;
+using System;
 using System.Collections.Generic;
-
-using Service.Models.Contracts;
+using System.Linq;
 
 namespace Service.Models.Devices
 {

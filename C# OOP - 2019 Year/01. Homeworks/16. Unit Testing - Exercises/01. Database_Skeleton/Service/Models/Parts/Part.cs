@@ -1,6 +1,5 @@
-﻿using System;
-
-using Service.Models.Contracts;
+﻿using Service.Models.Contracts;
+using System;
 
 namespace Service.Models.Parts
 {
@@ -59,7 +58,7 @@ namespace Service.Models.Parts
 
         public string Report()
         {
-            return $"{this.Name} - {this.Cost:f2}$" + Environment.NewLine + 
+            return $"{this.Name} - {this.Cost:f2}$" + Environment.NewLine +
                 $"Broken: {this.IsBroken}";
         }
     }
