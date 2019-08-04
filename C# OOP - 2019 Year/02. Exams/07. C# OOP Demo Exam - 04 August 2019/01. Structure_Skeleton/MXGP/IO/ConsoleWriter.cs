@@ -1,8 +1,7 @@
 ﻿namespace MXGP.IO
 {
-    using System;
-
     using Contracts;
+    using System;
 
     public class ConsoleWriter : IWriter
     {
