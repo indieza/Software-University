@@ -1,0 +1,9 @@
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\bin\Debug\netcoreapp2.1\TheRace.deps.json
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\bin\Debug\netcoreapp2.1\TheRace.dll
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\bin\Debug\netcoreapp2.1\TheRace.pdb
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\obj\Debug\netcoreapp2.1\TheRace.csprojAssemblyReference.cache
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\obj\Debug\netcoreapp2.1\TheRace.csproj.CoreCompileInputs.cache
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\obj\Debug\netcoreapp2.1\TheRace.AssemblyInfoInputs.cache
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\obj\Debug\netcoreapp2.1\TheRace.AssemblyInfo.cs
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\obj\Debug\netcoreapp2.1\TheRace.dll
+D:\Software-University\C# OOP - 2019 Year\02. Exams\07. C# OOP Demo Exam - 04 August 2019\02. Unit Tests_Skeleton\TheRace\obj\Debug\netcoreapp2.1\TheRace.pdb
