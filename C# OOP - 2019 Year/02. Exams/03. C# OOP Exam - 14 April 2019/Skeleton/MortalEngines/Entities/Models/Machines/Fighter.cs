@@ -6,11 +6,14 @@ namespace MortalEngines.Entities.Models.Machines
     public class Fighter : BaseMachine, IFighter
     {
         private const int InitialHealthPoints = 200;
-        private const int InitialAttackPoints = 50;
-        private const int InitialDefensePoints = 25;
+        private const int IncreaseAttackPoints = 50;
+        private const int DecreaseDefensePoints = 25;
 
         public Fighter(string name, double attackPoints, double defensePoints)
-            : base(name, attackPoints + InitialAttackPoints, defensePoints - InitialDefensePoints, InitialHealthPoints)
+            : base(name,
+                  attackPoints + IncreaseAttackPoints,
+                  defensePoints - DecreaseDefensePoints,
+                  InitialHealthPoints)
         {
             this.AggressiveMode = true;
         }
@@ -22,14 +25,14 @@ namespace MortalEngines.Entities.Models.Machines
             if (this.AggressiveMode == false)
             {
                 this.AggressiveMode = true;
-                this.AttackPoints += InitialAttackPoints;
-                this.DefensePoints -= InitialDefensePoints;
+                this.AttackPoints += IncreaseAttackPoints;
+                this.DefensePoints -= DecreaseDefensePoints;
             }
             else
             {
                 this.AggressiveMode = false;
-                this.AttackPoints -= InitialAttackPoints;
-                this.DefensePoints += InitialDefensePoints;
+                this.AttackPoints -= IncreaseAttackPoints;
+                this.DefensePoints += DecreaseDefensePoints;
             }
         }
 

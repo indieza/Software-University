@@ -36,7 +36,7 @@ namespace MortalEngines.Entities.Models
         {
             if (machine == null)
             {
-                throw new ArgumentNullException(ExceptionMessages.NullMachine);
+                throw new NullReferenceException(ExceptionMessages.NullMachine);
             }
 
             this.machines.Add(machine);

@@ -6,11 +6,14 @@ namespace MortalEngines.Entities.Models.Machines
     public class Tank : BaseMachine, ITank
     {
         private const int InitialHealthPoints = 100;
-        private const int InitialAttackPoints = 40;
-        private const int InitialDefensePoints = 30;
+        private const int IncreaseAttackPoints = 40;
+        private const int DecreaseDefensePoints = 30;
 
         public Tank(string name, double attackPoints, double defensePoints)
-            : base(name, attackPoints - InitialAttackPoints, defensePoints + InitialDefensePoints, InitialHealthPoints)
+            : base(name,
+                  attackPoints - IncreaseAttackPoints,
+                  defensePoints + DecreaseDefensePoints,
+                  InitialHealthPoints)
         {
             this.DefenseMode = true;
         }
@@ -22,14 +25,14 @@ namespace MortalEngines.Entities.Models.Machines
             if (this.DefenseMode == false)
             {
                 this.DefenseMode = true;
-                this.AttackPoints -= InitialAttackPoints;
-                this.DefensePoints += InitialDefensePoints;
+                this.AttackPoints -= IncreaseAttackPoints;
+                this.DefensePoints += DecreaseDefensePoints;
             }
             else
             {
                 this.DefenseMode = false;
-                this.AttackPoints += InitialAttackPoints;
-                this.DefensePoints -= InitialDefensePoints;
+                this.AttackPoints += IncreaseAttackPoints;
+                this.DefensePoints -= DecreaseDefensePoints;
             }
         }
 
