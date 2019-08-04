@@ -1,6 +1,7 @@
 ﻿namespace MXGP.Core.Contracts
 {
-    internal class IEngine
+    public interface IEngine
     {
+        void Run();
     }
 }

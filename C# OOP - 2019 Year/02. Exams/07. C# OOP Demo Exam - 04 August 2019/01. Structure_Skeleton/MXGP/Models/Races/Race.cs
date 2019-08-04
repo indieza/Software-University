@@ -19,6 +19,7 @@ namespace MXGP.Models.Races
         {
             this.Name = name;
             this.Laps = laps;
+            this.riders = new List<IRider>();
         }
 
         public string Name
