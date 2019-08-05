@@ -1,8 +1,7 @@
 ﻿namespace MXGP.Models.Races.Contracts
 {
-    using System.Collections.Generic;
-
     using Riders.Contracts;
+    using System.Collections.Generic;
 
     public interface IRace
     {
