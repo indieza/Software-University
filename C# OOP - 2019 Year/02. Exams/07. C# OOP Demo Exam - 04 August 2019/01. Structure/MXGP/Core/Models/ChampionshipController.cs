@@ -30,32 +30,131 @@ namespace MXGP.Core.Models
 
         public string AddMotorcycleToRider(string riderName, string motorcycleModel)
         {
-            throw new NotImplementedException();
+            IRider rider = this.riderRepository.GetByName(riderName);
+
+            if (rider == null)
+            {
+                throw new InvalidOperationException(string.Format(ExceptionMessages.RiderNotFound, riderName));
+            }
+
+            IMotorcycle motorcycle = this.motorcycleRepository.GetByName(motorcycleModel);
+
+            if (motorcycle == null)
+            {
+                throw new InvalidOperationException(string.Format(ExceptionMessages.MotorcycleNotFound, motorcycleModel));
+            }
+
+            rider.AddMotorcycle(motorcycle);
+
+            return string.Format(OutputMessages.MotorcycleAdded, rider.Name, motorcycle.Model);
         }
 
         public string AddRiderToRace(string raceName, string riderName)
         {
-            throw new NotImplementedException();
+            IRace race = this.raceRepository.GetByName(raceName);
+
+            if (race == null)
+            {
+                throw new InvalidOperationException(string.Format(ExceptionMessages.RaceNotFound, raceName));
+            }
+
+            IRider rider = this.riderRepository.GetByName(riderName);
+
+            if (rider == null)
+            {
+                throw new InvalidOperationException(string.Format(ExceptionMessages.RiderNotFound, riderName));
+            }
+
+            race.AddRider(rider);
+
+            return string.Format(OutputMessages.RiderAdded, rider.Name, race.Name);
         }
 
         public string CreateMotorcycle(string type, string model, int horsePower)
         {
-            throw new NotImplementedException();
+            IMotorcycle motorcycle = this.motorcycleRepository.GetByName(model);
+
+            if (motorcycle != null)
+            {
+                throw new ArgumentException(string.Format(ExceptionMessages.MotorcycleExists, motorcycle.Model));
+            }
+
+            switch (type)
+            {
+                case "Speed":
+                    motorcycle = new SpeedMotorcycle(model, horsePower);
+                    break;
+
+                case "Power":
+                    motorcycle = new PowerMotorcycle(model, horsePower);
+                    break;
+
+                default:
+                    break;
+            }
+
+            this.motorcycleRepository.Add(motorcycle);
+
+            return string.Format(OutputMessages.MotorcycleCreated, motorcycle.GetType().Name, motorcycle.Model);
         }
 
         public string CreateRace(string name, int laps)
         {
-            throw new NotImplementedException();
+            IRace race = this.raceRepository.GetByName(name);
+
+            if (race != null)
+            {
+                throw new InvalidOperationException(string.Format(ExceptionMessages.RaceExists, race.Name));
+            }
+
+            race = new Race(name, laps);
+            this.raceRepository.Add(race);
+
+            return string.Format(OutputMessages.RaceCreated, race.Name);
         }
 
         public string CreateRider(string riderName)
         {
-            throw new NotImplementedException();
+            IRider rider = this.riderRepository.GetByName(riderName);
+
+            if (rider != null)
+            {
+                throw new ArgumentException(string.Format(ExceptionMessages.RiderExists, rider.Name));
+            }
+
+            rider = new Rider(riderName);
+            this.riderRepository.Add(rider);
+
+            return string.Format(OutputMessages.RiderCreated, rider.Name);
         }
 
         public string StartRace(string raceName)
         {
-            throw new NotImplementedException();
+            IRace race = this.raceRepository.GetByName(raceName);
+
+            if (race == null)
+            {
+                throw new InvalidOperationException(string.Format(ExceptionMessages.RaceNotFound, raceName));
+            }
+
+            List<IRider> participants = race.Riders
+                .OrderByDescending(r => r.Motorcycle.CalculateRacePoints(race.Laps))
+                .ToList();
+
+            if (participants.Count < MinParticipantsCount)
+            {
+                throw new InvalidOperationException(string.Format(ExceptionMessages.RaceInvalid, race.Name, MinParticipantsCount));
+            }
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(string.Format(OutputMessages.RiderFirstPosition, participants[0].Name, race.Name));
+            sb.AppendLine(string.Format(OutputMessages.RiderSecondPosition, participants[1].Name, race.Name));
+            sb.AppendLine(string.Format(OutputMessages.RiderThirdPosition, participants[2].Name, race.Name));
+
+            this.raceRepository.Remove(race);
+
+            return sb.ToString().TrimEnd();
         }
     }
 }
