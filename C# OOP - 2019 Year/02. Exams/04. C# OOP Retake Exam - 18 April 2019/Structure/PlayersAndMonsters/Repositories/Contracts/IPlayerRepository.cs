@@ -1,8 +1,7 @@
 ﻿namespace PlayersAndMonsters.Repositories.Contracts
 {
+    using PlayersAndMonsters.Models.Players.Contracts;
     using System.Collections.Generic;
-
-    using Models.Players.Contracts;
 
     public interface IPlayerRepository
     {
