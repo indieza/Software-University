@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace ParkingSystem
+﻿namespace ParkingSystem
 {
     public class StartUp
     {
         public static void Main(string[] args)
         {
-
         }
     }
 }
