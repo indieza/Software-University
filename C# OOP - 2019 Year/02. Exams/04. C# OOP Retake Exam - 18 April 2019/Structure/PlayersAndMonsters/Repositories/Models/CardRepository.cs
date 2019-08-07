@@ -1,5 +1,6 @@
-namespace PlayersAndMonsters.Common
+namespace PlayersAndMonsters.Repositories.Models
 {
+    using PlayersAndMonsters.Common;
     using PlayersAndMonsters.Models.Cards.Contracts;
     using PlayersAndMonsters.Repositories.Contracts;
     using System;
