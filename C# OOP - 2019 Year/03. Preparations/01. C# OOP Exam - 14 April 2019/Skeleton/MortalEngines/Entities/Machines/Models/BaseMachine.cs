@@ -17,6 +17,7 @@ namespace MortalEngines.Entities.Machines.Models
             this.AttackPoints = attackPoints;
             this.DefensePoints = defensePoints;
             this.HealthPoints = healthPoints;
+            this.Targets = new List<string>();
         }
 
         public string Name
