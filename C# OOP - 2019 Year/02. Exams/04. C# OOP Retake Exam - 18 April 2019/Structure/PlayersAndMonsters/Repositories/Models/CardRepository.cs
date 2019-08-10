@@ -29,7 +29,7 @@ namespace PlayersAndMonsters.Repositories.Models
 
             if (this.cards.Any(c => c.Name == card.Name))
             {
-                throw new ArgumentException(string.Format(ExceptionMessages.CardExist, card.Name));
+                throw new ArgumentException(string.Format(ExceptionMessages.ExistingCard, card.Name));
             }
 
             this.cards.Add(card);
@@ -47,8 +47,7 @@ namespace PlayersAndMonsters.Repositories.Models
                 throw new ArgumentException(ExceptionMessages.NullCard);
             }
 
-            this.cards.RemoveAll(c => c.Name == card.Name);
-            return true;
+            return this.cards.Remove(card);
         }
     }
 }

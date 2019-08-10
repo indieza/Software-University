@@ -29,7 +29,7 @@ namespace PlayersAndMonsters.Repositories.Models
 
             if (this.players.Any(p => p.Username == player.Username))
             {
-                throw new ArgumentException(string.Format(ExceptionMessages.PlayerExist, player.Username));
+                throw new ArgumentException(string.Format(ExceptionMessages.ExistingPlayer, player.Username));
             }
 
             this.players.Add(player);
@@ -47,8 +47,7 @@ namespace PlayersAndMonsters.Repositories.Models
                 throw new ArgumentException(ExceptionMessages.NullPlayer);
             }
 
-            this.players.RemoveAll(p => p.Username == player.Username);
-            return true;
+            return this.players.Remove(player);
         }
     }
 }

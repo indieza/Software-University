@@ -5,85 +5,72 @@ namespace ParkingSystem.Tests
 
     public class SoftParkTest
     {
-        private Car car;
-        private SoftPark parking;
+        private Car car1;
+        private Car car2;
+        private SoftPark softPark;
 
         [SetUp]
         public void Setup()
         {
-            this.car = new Car("Make", "Number");
-            this.parking = new SoftPark();
+            this.car1 = new Car("Make1", "Number1");
+            this.car2 = new Car("Make2", "Number2");
+            this.softPark = new SoftPark();
         }
 
         [Test]
-        public void Test_Car_Constructure()
+        public void Test_Constructure()
         {
-            Assert.AreEqual("Make", this.car.Make);
-            Assert.AreEqual("Number", this.car.RegistrationNumber);
+            Assert.AreEqual("Make1", this.car1.Make);
+            Assert.AreEqual("Number1", this.car1.RegistrationNumber);
+
+            Assert.AreEqual(12, this.softPark.Parking.Count);
         }
 
         [Test]
-        public void Test_Park_Constructure()
+        public void Test_Park_On_Not_Existing_Spot()
         {
-            Assert.AreEqual(12, this.parking.Parking.Count);
+            Assert.Throws<ArgumentException>(() => this.softPark.ParkCar("Z3", this.car1));
         }
 
         [Test]
-        public void Test_Add_Car_Spot_Does_Not_Exist()
+        public void Test_Park_On_Taken_Spot()
         {
-            Assert.Throws<ArgumentException>(() => this.parking.ParkCar("G3", this.car));
+            this.softPark.ParkCar("A1", this.car1);
+            Assert.Throws<ArgumentException>(() => this.softPark.ParkCar("A1", this.car2));
         }
 
         [Test]
-        public void Test_Add_Car_Spot_Taken()
+        public void Test_Park_Existing_Car()
         {
-            this.parking.ParkCar("A1", this.car);
-            Car newCar = new Car("Make1", "Number1");
-            Assert.Throws<ArgumentException>(() => this.parking.ParkCar("A1", this.car));
-        }
-
-        [Test]
-        public void Test_Add_Car_Car_Exist()
-        {
-            this.parking.ParkCar("A1", this.car);
-
-            Assert
-                .Throws<InvalidOperationException>
-                (() => this.parking.ParkCar("A2", this.car));
+            this.softPark.ParkCar("A1", this.car1);
+            Assert.Throws<InvalidOperationException>(() => this.softPark.ParkCar("A2", this.car1));
         }
 
         [Test]
         public void Test_Park_Car()
         {
-            Assert
-                .AreEqual
-                ($"Car:{this.car.RegistrationNumber} parked successfully!",
-                this.parking.ParkCar("A1", this.car));
+            Assert.AreEqual($"Car:{this.car1.RegistrationNumber} parked successfully!", this.softPark.ParkCar("A1", this.car1));
         }
 
         [Test]
-        public void Test_Remove_Car_Invalid_Spot()
+        public void Test_Remove_Car_On_Not_Existing_Spot()
         {
-            Assert
-                .Throws<ArgumentException>(() => this.parking.RemoveCar("G4", this.car));
+            Assert.Throws<ArgumentException>(() => this.softPark.RemoveCar("Z3", this.car1));
         }
 
         [Test]
-        public void Test_Remove_Car_Invalid_Car()
+        public void Test_Remove_Not_Existing_Car_On_Spot()
         {
-            Car newCar = new Car("Make1", "Number1");
-
-            Assert
-                .Throws<ArgumentException>(() => this.parking.RemoveCar("A1", newCar));
+            Assert.Throws<ArgumentException>(() => this.softPark.RemoveCar("A1", this.car1));
         }
 
         [Test]
         public void Test_Remove_Car()
         {
-            this.parking.ParkCar("A1", this.car);
+            this.softPark.ParkCar("A1", this.car1);
 
-            Assert.AreEqual($"Remove car:{car.RegistrationNumber} successfully!",
-                this.parking.RemoveCar("A1", this.car));
+            Assert.AreEqual($"Remove car:{this.car1.RegistrationNumber} successfully!",
+                this.softPark.RemoveCar("A1", this.car1));
         }
     }
 }

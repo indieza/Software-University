@@ -18,7 +18,7 @@ namespace PlayersAndMonsters.Core
 
             while (line != "Exit")
             {
-                string[] commandItems = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string[] commandItems = line.Split();
                 string result = string.Empty;
 
                 try
@@ -26,19 +26,23 @@ namespace PlayersAndMonsters.Core
                     switch (commandItems[0])
                     {
                         case "AddPlayer":
-                            result += this.managerController.AddPlayer(commandItems[1], commandItems[2]);
+                            result += this.managerController.AddPlayer(commandItems[1],
+                                commandItems[2]);
                             break;
 
                         case "AddCard":
-                            result += this.managerController.AddCard(commandItems[1], commandItems[2]);
+                            result += this.managerController.AddCard(commandItems[1],
+                                commandItems[2]);
                             break;
 
                         case "AddPlayerCard":
-                            result += this.managerController.AddPlayerCard(commandItems[1], commandItems[2]);
+                            result += this.managerController.AddPlayerCard(commandItems[1],
+                                commandItems[2]);
                             break;
 
                         case "Fight":
-                            result += this.managerController.Fight(commandItems[1], commandItems[2]);
+                            result += this.managerController.Fight(commandItems[1],
+                                commandItems[2]);
                             break;
 
                         case "Report":

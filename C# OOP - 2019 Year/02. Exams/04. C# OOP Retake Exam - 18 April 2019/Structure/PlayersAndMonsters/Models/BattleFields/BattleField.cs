@@ -11,24 +11,26 @@ namespace PlayersAndMonsters.Models.BattleFields
     {
         public void Fight(IPlayer attackPlayer, IPlayer enemyPlayer)
         {
-            IsOnePlayerDeath(attackPlayer, enemyPlayer);
-            IncreaseHealthAndCardsDamagePoints(attackPlayer, enemyPlayer);
-            IncreasePlayerHealth(attackPlayer, enemyPlayer);
+            IsPlayerDeath(attackPlayer, enemyPlayer);
+
+            IncreasePoints(attackPlayer, enemyPlayer);
+
+            TakeBonus(attackPlayer, enemyPlayer);
 
             while (true)
             {
-                int attackerDamage = attackPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
+                int damageAttacker = attackPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
 
-                enemyPlayer.TakeDamage(attackerDamage);
+                enemyPlayer.TakeDamage(damageAttacker);
 
                 if (enemyPlayer.IsDead == true)
                 {
                     break;
                 }
 
-                int enemyDamage = enemyPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
+                int damageEnemy = enemyPlayer.CardRepository.Cards.Sum(c => c.DamagePoints);
 
-                attackPlayer.TakeDamage(enemyDamage);
+                attackPlayer.TakeDamage(damageEnemy);
 
                 if (attackPlayer.IsDead == true)
                 {
@@ -37,13 +39,17 @@ namespace PlayersAndMonsters.Models.BattleFields
             }
         }
 
-        private static void IncreasePlayerHealth(IPlayer attackPlayer, IPlayer enemyPlayer)
+        private static void TakeBonus(IPlayer attackPlayer, IPlayer enemyPlayer)
         {
-            attackPlayer.Health += attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
-            enemyPlayer.Health += enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+            int bonushealthAttacker = attackPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+
+            int bonushealthEnemy = enemyPlayer.CardRepository.Cards.Sum(c => c.HealthPoints);
+
+            attackPlayer.Health += bonushealthAttacker;
+            enemyPlayer.Health += bonushealthEnemy;
         }
 
-        private static void IncreaseHealthAndCardsDamagePoints(IPlayer attackPlayer, IPlayer enemyPlayer)
+        private static void IncreasePoints(IPlayer attackPlayer, IPlayer enemyPlayer)
         {
             if (attackPlayer.GetType().Name == nameof(Beginner))
             {
@@ -65,14 +71,9 @@ namespace PlayersAndMonsters.Models.BattleFields
             }
         }
 
-        private static void IsOnePlayerDeath(IPlayer attackPlayer, IPlayer enemyPlayer)
+        private static void IsPlayerDeath(IPlayer attackPlayer, IPlayer enemyPlayer)
         {
-            if (attackPlayer.IsDead == true)
-            {
-                throw new ArgumentException(ExceptionMessages.DeathPlayer);
-            }
-
-            if (enemyPlayer.IsDead == true)
+            if (attackPlayer.IsDead == true || enemyPlayer.IsDead == true)
             {
                 throw new ArgumentException(ExceptionMessages.DeathPlayer);
             }

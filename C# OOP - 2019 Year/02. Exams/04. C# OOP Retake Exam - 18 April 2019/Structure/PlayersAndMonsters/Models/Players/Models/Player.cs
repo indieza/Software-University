@@ -42,7 +42,7 @@ namespace PlayersAndMonsters.Models.Players.Models
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException(ExceptionMessages.NegativePlayeHealth);
+                    throw new ArgumentException(ExceptionMessages.NegativePlayerHealth);
                 }
 
                 this.health = value;
@@ -58,7 +58,7 @@ namespace PlayersAndMonsters.Models.Players.Models
                 throw new ArgumentException(ExceptionMessages.NegativeDamagePoints);
             }
 
-            if (this.Health - damagePoints < 0)
+            if (this.Health - damagePoints <= 0)
             {
                 this.Health = 0;
                 this.IsDead = true;
