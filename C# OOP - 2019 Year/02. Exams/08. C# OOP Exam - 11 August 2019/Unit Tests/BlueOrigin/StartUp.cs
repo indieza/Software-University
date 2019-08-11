@@ -1,0 +1,12 @@
+﻿using System;
+
+namespace BlueOrigin
+{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
