@@ -33,13 +33,13 @@ namespace BlueOrigin.Tests
         }
 
         [Test]
-        public void Test_Name_Exception()
+        public void Test_Spaceship_Name_Exception()
         {
             Assert.Throws<ArgumentNullException>(() => new Spaceship(null, 10));
         }
 
         [Test]
-        public void Test_Capacity_Exception()
+        public void Test_Spaceship_Capacity_Exception()
         {
             Assert.Throws<ArgumentException>(() => new Spaceship("Name1", -1));
         }

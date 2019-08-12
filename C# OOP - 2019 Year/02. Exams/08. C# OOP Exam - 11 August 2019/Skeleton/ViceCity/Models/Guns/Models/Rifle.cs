@@ -4,6 +4,7 @@ namespace ViceCity.Models.Guns.Models
     {
         private const int InitialBulletsPerBarrel = 50;
         private const int InitialTotalBullets = 500;
+        private const int InitialRifelDamage = 5;
 
         public Rifle(string name)
             : base(name, InitialBulletsPerBarrel, InitialTotalBullets)
@@ -12,18 +13,18 @@ namespace ViceCity.Models.Guns.Models
 
         public override int Fire()
         {
-            if (this.BulletsPerBarrel - 5 <= 0 && this.TotalBullets > 0)
+            if (this.BulletsPerBarrel - InitialRifelDamage <= 0 && this.TotalBullets > 0)
             {
-                this.BulletsPerBarrel -= 5;
+                this.BulletsPerBarrel -= InitialRifelDamage;
                 this.BulletsPerBarrel = InitialBulletsPerBarrel;
                 this.TotalBullets -= InitialBulletsPerBarrel;
-                return 5;
+                return InitialRifelDamage;
             }
 
             if (this.CanFire == true)
             {
-                this.BulletsPerBarrel -= 5;
-                return 5;
+                this.BulletsPerBarrel -= InitialRifelDamage;
+                return InitialRifelDamage;
             }
 
             return 0;

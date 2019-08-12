@@ -13,15 +13,9 @@ namespace ViceCity.Models.Neghbourhoods
             while (true)
             {
                 IGun gun = mainPlayer.GunRepository.Models.FirstOrDefault(g => g.CanFire == true);
-
-                if (gun == null)
-                {
-                    break;
-                }
-
                 IPlayer target = civilPlayers.FirstOrDefault(t => t.IsAlive == true);
 
-                if (target == null)
+                if (gun == null || target == null)
                 {
                     break;
                 }
@@ -33,15 +27,9 @@ namespace ViceCity.Models.Neghbourhoods
             while (true)
             {
                 IPlayer player = civilPlayers.FirstOrDefault(t => t.IsAlive == true);
-
-                if (player == null)
-                {
-                    break;
-                }
-
                 IGun gun = player.GunRepository.Models.FirstOrDefault(g => g.CanFire == true);
 
-                if (gun == null)
+                if (player == null || gun == null)
                 {
                     break;
                 }
