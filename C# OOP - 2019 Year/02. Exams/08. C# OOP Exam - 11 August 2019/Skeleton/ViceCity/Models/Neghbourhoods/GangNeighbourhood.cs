@@ -1,7 +1,8 @@
 namespace ViceCity.Models.Neghbourhoods
 {
-    using System.Collections.Generic;
+    using System;
     using System.Linq;
+    using System.Collections.Generic;
     using ViceCity.Models.Guns.Contracts;
     using ViceCity.Models.Neghbourhoods.Contracts;
     using ViceCity.Models.Players.Contracts;
@@ -13,9 +14,15 @@ namespace ViceCity.Models.Neghbourhoods
             while (true)
             {
                 IGun gun = mainPlayer.GunRepository.Models.FirstOrDefault(g => g.CanFire == true);
+
+                if (gun == null)
+                {
+                    break;
+                }
+
                 IPlayer target = civilPlayers.FirstOrDefault(t => t.IsAlive == true);
 
-                if (gun == null || target == null)
+                if (target == null)
                 {
                     break;
                 }
@@ -27,9 +34,15 @@ namespace ViceCity.Models.Neghbourhoods
             while (true)
             {
                 IPlayer player = civilPlayers.FirstOrDefault(t => t.IsAlive == true);
+
+                if (player == null)
+                {
+                    break;
+                }
+
                 IGun gun = player.GunRepository.Models.FirstOrDefault(g => g.CanFire == true);
 
-                if (player == null || gun == null)
+                if (gun == null)
                 {
                     break;
                 }
