@@ -65,10 +65,22 @@ namespace _01._SummerCocktails
                 Console.WriteLine($"Ingredients left: {ingredientsValues.Sum()}");
             }
 
-            Console.WriteLine($" # Daiquiri --> {items[250]}");
-            Console.WriteLine($" # Mimosa --> {items[150]}");
-            Console.WriteLine($" # Mojito --> {items[400]}");
-            Console.WriteLine($" # Sunshine --> {items[300]}");
+            if (items[250] > 0)
+            {
+                Console.WriteLine($" # Daiquiri --> {items[250]}");
+            }
+            if (items[150] > 0)
+            {
+                Console.WriteLine($" # Mimosa --> {items[150]}");
+            }
+            if (items[400] > 0)
+            {
+                Console.WriteLine($" # Mojito --> {items[400]}");
+            }
+            if (items[300] > 0)
+            {
+                Console.WriteLine($" # Sunshine --> {items[300]}");
+            }
         }
     }
 }

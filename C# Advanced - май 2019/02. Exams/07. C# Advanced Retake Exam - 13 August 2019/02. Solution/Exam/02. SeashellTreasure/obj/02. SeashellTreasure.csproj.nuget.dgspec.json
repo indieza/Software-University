@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj": {}
+    "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj": {}
   },
   "projects": {
-    "D:\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj": {
+    "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj",
         "projectName": "02. SeashellTreasure",
-        "projectPath": "D:\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\02. SeashellTreasure.csproj",
         "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\02. Solution\\Exam\\02. SeashellTreasure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,7 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
