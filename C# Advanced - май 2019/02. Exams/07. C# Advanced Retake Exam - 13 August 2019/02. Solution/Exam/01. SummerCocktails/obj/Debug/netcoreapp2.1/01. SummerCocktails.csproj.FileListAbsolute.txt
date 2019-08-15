@@ -1,0 +1,10 @@
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\obj\Debug\netcoreapp2.1\01. SummerCocktails.csproj.CoreCompileInputs.cache
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\obj\Debug\netcoreapp2.1\01. SummerCocktails.AssemblyInfoInputs.cache
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\obj\Debug\netcoreapp2.1\01. SummerCocktails.AssemblyInfo.cs
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\bin\Debug\netcoreapp2.1\01. SummerCocktails.deps.json
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\bin\Debug\netcoreapp2.1\01. SummerCocktails.runtimeconfig.json
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\bin\Debug\netcoreapp2.1\01. SummerCocktails.runtimeconfig.dev.json
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\bin\Debug\netcoreapp2.1\01. SummerCocktails.dll
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\bin\Debug\netcoreapp2.1\01. SummerCocktails.pdb
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\obj\Debug\netcoreapp2.1\01. SummerCocktails.dll
+D:\Software-University\C# Advanced - май 2019\02. Exams\07. C# Advanced Retake Exam - 13 August 2019\02. Solution\Exam\01. SummerCocktails\obj\Debug\netcoreapp2.1\01. SummerCocktails.pdb
