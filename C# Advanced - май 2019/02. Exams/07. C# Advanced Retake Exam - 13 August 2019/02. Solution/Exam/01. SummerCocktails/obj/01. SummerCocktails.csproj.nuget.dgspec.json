@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\Exam\\01. SummerCocktails\\01. SummerCocktails.csproj": {}
+  },
+  "projects": {
+    "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\Exam\\01. SummerCocktails\\01. SummerCocktails.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\Exam\\01. SummerCocktails\\01. SummerCocktails.csproj",
+        "projectName": "01. SummerCocktails",
+        "projectPath": "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\Exam\\01. SummerCocktails\\01. SummerCocktails.csproj",
+        "packagesPath": "C:\\Users\\Simeon Valev\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\GitHub\\Software-University\\C# Advanced - май 2019\\02. Exams\\07. C# Advanced Retake Exam - 13 August 2019\\Exam\\01. SummerCocktails\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Simeon Valev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
