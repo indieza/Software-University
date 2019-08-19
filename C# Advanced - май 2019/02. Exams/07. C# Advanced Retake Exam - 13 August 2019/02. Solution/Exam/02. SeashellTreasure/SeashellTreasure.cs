@@ -15,6 +15,7 @@ namespace _02._SeashellTreasure
         private static string direction;
         private static List<char> collected;
         private static List<char> stolen;
+        private static bool startPosition;
 
         private static void Main()
         {
@@ -74,6 +75,30 @@ namespace _02._SeashellTreasure
                     targetRow = int.Parse(commandItems[1]);
                     targetCol = int.Parse(commandItems[2]);
                     direction = commandItems[3];
+                    ExecuteDirection();
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private static void ExecuteDirection()
+        {
+            switch (direction)
+            {
+                case "up":
+                    CheckStartPosition();
+
+                    break;
+
+                case "down":
+                    break;
+
+                case "right":
+                    break;
+
+                case "left":
                     break;
 
                 default:
@@ -86,15 +111,25 @@ namespace _02._SeashellTreasure
             targetRow = int.Parse(commandItems[1]);
             targetCol = int.Parse(commandItems[2]);
 
+            CheckStartPosition();
+
+            if (startPosition == true)
+            {
+                if (field[targetRow][targetCol] != '-')
+                {
+                    collected.Add(field[targetRow][targetCol]);
+                    field[targetRow][targetCol] = '-';
+                }
+            }
+        }
+
+        private static void CheckStartPosition()
+        {
             if (targetRow >= 0 && targetRow <= rows - 1)
             {
                 if (targetCol >= 0 && targetCol <= field[targetRow].Length - 1)
                 {
-                    if (field[targetRow][targetCol] != '-')
-                    {
-                        collected.Add(field[targetRow][targetCol]);
-                        field[targetRow][targetCol] = '-';
-                    }
+                    startPosition = true;
                 }
             }
         }
