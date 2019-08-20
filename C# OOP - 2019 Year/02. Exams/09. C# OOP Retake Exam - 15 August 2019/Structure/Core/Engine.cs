@@ -2,8 +2,6 @@
 using SpaceStation.IO;
 using SpaceStation.IO.Contracts;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SpaceStation.Core
 {
@@ -17,6 +15,7 @@ namespace SpaceStation.Core
             this.writer = new Writer();
             this.reader = new Reader();
         }
+
         public void Run()
         {
             while (true)
@@ -30,23 +29,18 @@ namespace SpaceStation.Core
                 {
                     if (input[0] == "AddAstronaut")
                     {
-
                     }
                     else if (input[0] == "AddPlanet")
                     {
-
                     }
                     else if (input[0] == "RetireAstronaut")
                     {
-
                     }
                     else if (input[0] == "ExplorePlanet")
                     {
-
                     }
-                    else if(input[0] == "Report")
+                    else if (input[0] == "Report")
                     {
-
                     }
                 }
                 catch (Exception ex)

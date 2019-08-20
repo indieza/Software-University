@@ -1,6 +1,6 @@
 ﻿namespace SpaceStation.IO.Contracts
 {
-    interface IWriter
+    internal interface IWriter
     {
         void WriteLine(string message);
 

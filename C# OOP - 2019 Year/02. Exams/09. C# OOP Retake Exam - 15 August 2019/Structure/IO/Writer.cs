@@ -2,6 +2,7 @@
 {
     using SpaceStation.IO.Contracts;
     using System;
+
     public class Writer : IWriter
     {
         public void Write(string message)

@@ -1,6 +1,6 @@
 ﻿namespace SpaceStation.IO.Contracts
 {
-    interface IReader
+    internal interface IReader
     {
         string ReadLine();
     }

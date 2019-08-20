@@ -1,6 +1,6 @@
 ﻿namespace SpaceStation.Core.Contracts
 {
-    interface IEngine
+    internal interface IEngine
     {
         void Run();
     }

@@ -1,8 +1,8 @@
 ﻿namespace SpaceStation.Models.Mission
 {
-    using System.Collections.Generic;
     using Astronauts.Contracts;
     using Planets;
+    using System.Collections.Generic;
 
     public interface IMission
     {

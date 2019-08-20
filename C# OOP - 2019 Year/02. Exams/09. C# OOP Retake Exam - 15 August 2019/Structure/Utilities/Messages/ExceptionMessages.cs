@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SpaceStation.Utilities.Messages
+﻿namespace SpaceStation.Utilities.Messages
 {
     public static class ExceptionMessages
     {
@@ -17,9 +13,5 @@ namespace SpaceStation.Utilities.Messages
         public const string InvalidRetiredAstronaut = "Astronaut {0} doesn't exists!";
 
         public const string InvalidAstronautCount = "You need at least one astronaut to explore the planet!";
-
-
-
-
     }
 }

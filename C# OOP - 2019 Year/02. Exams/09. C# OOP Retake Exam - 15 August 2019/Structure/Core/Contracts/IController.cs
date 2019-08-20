@@ -1,7 +1,5 @@
 ﻿namespace SpaceStation.Core.Contracts
 {
-    using Models.Planets;
-
     public interface IController
     {
         string AddAstronaut(string type, string astronautName);
