@@ -1,0 +1,17 @@
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\obj\Debug\netcoreapp2.1\HeroRepository.Tests.csprojAssemblyReference.cache
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\obj\Debug\netcoreapp2.1\HeroRepository.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\obj\Debug\netcoreapp2.1\HeroRepository.Tests.AssemblyInfoInputs.cache
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\obj\Debug\netcoreapp2.1\HeroRepository.Tests.AssemblyInfo.cs
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\HeroRepository.Tests.deps.json
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\HeroRepository.Tests.runtimeconfig.json
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\HeroRepository.Tests.runtimeconfig.dev.json
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\HeroRepository.Tests.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\HeroRepository.Tests.pdb
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\HeroRepository.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\bin\Debug\netcoreapp2.1\HeroRepository.pdb
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\obj\Debug\netcoreapp2.1\HeroRepository.Tests.csproj.CopyComplete
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\obj\Debug\netcoreapp2.1\HeroRepository.Tests.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository.Tests\obj\Debug\netcoreapp2.1\HeroRepository.Tests.pdb

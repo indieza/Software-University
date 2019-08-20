@@ -1,0 +1,11 @@
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\bin\Debug\netcoreapp2.2\HeroRepository.deps.json
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\bin\Debug\netcoreapp2.2\HeroRepository.runtimeconfig.json
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\bin\Debug\netcoreapp2.2\HeroRepository.runtimeconfig.dev.json
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\bin\Debug\netcoreapp2.2\HeroRepository.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\bin\Debug\netcoreapp2.2\HeroRepository.pdb
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\obj\Debug\netcoreapp2.2\HeroRepository.csprojAssemblyReference.cache
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\obj\Debug\netcoreapp2.2\HeroRepository.csproj.CoreCompileInputs.cache
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\obj\Debug\netcoreapp2.2\HeroRepository.AssemblyInfoInputs.cache
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\obj\Debug\netcoreapp2.2\HeroRepository.AssemblyInfo.cs
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\obj\Debug\netcoreapp2.2\HeroRepository.dll
+C:\Users\Slavi\Desktop\final-retake\C#\HeroRepository\HeroRepository\obj\Debug\netcoreapp2.2\HeroRepository.pdb
