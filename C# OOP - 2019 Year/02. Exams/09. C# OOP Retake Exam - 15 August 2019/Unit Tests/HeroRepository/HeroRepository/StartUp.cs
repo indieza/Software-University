@@ -1,9 +1,6 @@
-﻿using System;
-
-class StartUp
+﻿internal class StartUp
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-
     }
 }
