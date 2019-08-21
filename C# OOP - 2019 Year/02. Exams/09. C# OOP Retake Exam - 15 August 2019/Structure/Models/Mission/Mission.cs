@@ -2,7 +2,6 @@ namespace SpaceStation.Models.Mission
 {
     using SpaceStation.Models.Astronauts.Contracts;
     using SpaceStation.Models.Planets;
-    using System;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -19,11 +18,13 @@ namespace SpaceStation.Models.Mission
                     break;
                 }
 
-                foreach (string item in planet.Items)
+                while (planet.Items.Count != 0)
                 {
-                    astronaut.Bag.Items.Add(item);
+                    string item = planet.Items.FirstOrDefault();
                     astronaut.Breath();
-                    planet.Items.Remove(item);
+
+                    astronaut.Bag.AddItem(item);
+                    planet.RemoveItem(item);
 
                     if (astronaut.CanBreath == false)
                     {

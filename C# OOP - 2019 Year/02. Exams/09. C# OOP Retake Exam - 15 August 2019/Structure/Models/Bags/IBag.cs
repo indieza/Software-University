@@ -5,5 +5,7 @@
     public interface IBag
     {
         ICollection<string> Items { get; }
+
+        void AddItem(string item);
     }
 }

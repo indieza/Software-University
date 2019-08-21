@@ -12,5 +12,10 @@ namespace SpaceStation.Models.Bags
         }
 
         public ICollection<string> Items => this.items.AsReadOnly();
+
+        public void AddItem(string item)
+        {
+            this.items.Add(item);
+        }
     }
 }

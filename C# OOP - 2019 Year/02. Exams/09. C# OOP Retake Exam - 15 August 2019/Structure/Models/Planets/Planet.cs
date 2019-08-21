@@ -31,5 +31,18 @@ namespace SpaceStation.Models.Planets
                 this.name = value;
             }
         }
+
+        public void AddItems(string[] planetItems)
+        {
+            foreach (var item in planetItems)
+            {
+                this.items.Add(item);
+            }
+        }
+
+        public void RemoveItem(string item)
+        {
+            this.items.Remove(item);
+        }
     }
 }

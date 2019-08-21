@@ -50,17 +50,16 @@ namespace SpaceStation.Core
             }
 
             this.astronautRepository.Add(astronaut);
-            return string.Format(OutputMessages.AstronautAdded, astronaut.GetType().Name, astronaut.Name);
+            return string.Format(OutputMessages.AstronautAdded,
+                astronaut.GetType().Name,
+                astronaut.Name);
         }
 
         public string AddPlanet(string planetName, params string[] items)
         {
             IPlanet planet = new Planet(planetName);
 
-            foreach (var item in items)
-            {
-                planet.Items.Add(item);
-            }
+            planet.AddItems(items);
 
             this.planetRepository.Add(planet);
             return string.Format(OutputMessages.PlanetAdded, planet.Name);
@@ -68,7 +67,10 @@ namespace SpaceStation.Core
 
         public string ExplorePlanet(string planetName)
         {
-            List<IAstronaut> astronauts = this.astronautRepository.Models.Where(a => a.Oxygen > 60).ToList();
+            List<IAstronaut> astronauts = this.astronautRepository
+                .Models
+                .Where(a => a.Oxygen > 60)
+                .ToList();
 
             if (astronauts.Count == 0)
             {
@@ -98,8 +100,7 @@ namespace SpaceStation.Core
                 sb.AppendLine($"Bag items: {(astronaut.Bag.Items.Count == 0 ? "none" : string.Join(", ", astronaut.Bag.Items))} ");
             }
 
-            return
-                sb.ToString().TrimEnd();
+            return sb.ToString().TrimEnd();
         }
 
         public string RetireAstronaut(string astronautName)

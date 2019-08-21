@@ -14,6 +14,7 @@ namespace SpaceStation.Models.Astronauts.Models
         {
             this.Name = name;
             this.Oxygen = oxygen;
+            this.Bag = new Backpack();
         }
 
         public string Name
