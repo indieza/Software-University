@@ -1,22 +1,20 @@
 CREATE DATABASE People;
-USE People;
-
-SET IDENTITY_INSERT People ON;
+Use People;
 
 CREATE TABLE People(
-[Id] INT IDENTITY PRIMARY KEY,
-[Name] NVARCHAR(200) NOT NULL,
-[Picture] VARBINARY(200),
-[Height] DOUBLE PRECISION(2),
-[Weight] DOUBLE PRECISION(2),
-[Gender] NVARCHAR(1) NOT NULL CHECK([Gender] = 'm' OR [Gender] = 'f'),
-[Birthdate] DATETIME NOT NULL,
-[Biography] NVARCHAR(MAX)
+[Id] INT PRIMARY KEY IDENTITY(1, 1),
+[Name] VARCHAR(30) NOT NULL,
+[Picture] IMAGE,
+[Height] DECIMAL(10, 2),
+[Weight] DECIMAL(10, 2),
+[Gender] VARCHAR(1) NOT NULL CHECK([Gender] = 'f' OR [Gender] = 'm'),
+[Birthdate] DATE NOT NULL,
+[Biography] VARCHAR(MAX)
 );
 
-INSERT INTO People([Id], [Name], [Picture], [Height], [Weight], [Gender], [Birthdate], [Biography])
-VALUES(1, 'Pesho1', NULL, 1.259, 2.356, 'm', '2015-11-05 14:29:36', 'asdfg'),
-	  (2, 'Pesho2', NULL, 1.260, 2.357, 'f', '2015-11-05 14:29:36', 'asdfgh'),
-	  (3, 'Pesho3', NULL, 1.262, 2.358, 'm', '2015-11-05 14:29:36', 'asdfgds'),
-	  (4, 'Pesho4', NULL, 1.261, 2.359, 'm', '2015-11-05 14:29:36', 'afg'),
-	  (5, 'Pesho5', NULL, 1.263, 2.360, 'f', '2015-11-05 14:29:36', 'adfg')
+INSERT INTO People([Name], [Picture], [Height], [Weight], [Gender], [Birthdate], [Biography])
+VALUES('Pesho', NULL, 1.239, 69.236, 'm', '2005/01/13', NULL),
+('Minka', NULL, 1.596, 56.231, 'f', '1996/09/15', 'Az sam Minka'),
+('Gosho', NULL, 2.102, 105.36, 'm', '2001/02/23', NULL),
+('Penka', NULL, 2.012, 68.236, 'f', '1996/02/11', NULL),
+('Petranka', NULL, 1.369, 12.2365, 'f', '1996/06/03', NULL);
