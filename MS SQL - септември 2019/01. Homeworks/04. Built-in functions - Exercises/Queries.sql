@@ -55,4 +55,16 @@ DENSE_RANK() OVER (PARTITION by Salary order by EmployeeID) AS [Rank]
    WHERE Salary BETWEEN 10000 AND 50000
 )     AS MyRanking
    WHERE MyRanking.[Rank] = 2
-ORDER BY MyRanking.Salary DESC
+ORDER BY MyRanking.Salary DESC;
+
+USE Geography;
+
+  SELECT CountryName, IsoCode
+    FROM Countries
+   WHERE CountryName LIKE '%a%a%a%'
+ORDER BY IsoCode;
+
+  SELECT PeakName, RiverName, LOWER(LEFT(PeakName, LEN(PeakName) - 1) + RiverName) AS Mix
+    FROM Peaks, Rivers
+   WHERE RIGHT(PeakName, 1) = LEFT(RiverName, 1)
+ORDER BY Mix;
