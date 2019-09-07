@@ -99,3 +99,8 @@ ORDER BY Username;
     END AS [DurationName]
     FROM Games
 ORDER BY [Name], [DurationName], [Part of the Day]
+
+USE Orders;
+
+SELECT ProductName, OrderDate, DATEADD(DAY, 3, OrderDate) AS [Pay Due],DATEADD(MONTH, 1, OrderDate) AS [Deliver Due] 
+  FROM Orders;
