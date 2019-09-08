@@ -51,3 +51,55 @@ ORDER BY MagicWandCreator, DepositGroup;
   END AS [AgeGroup]
     FROM WizzardDeposits) AS [Ages]
 GROUP BY Ages.AgeGroup;
+
+  SELECT LEFT(FirstName, 1) AS FirstLetter
+    FROM WizzardDeposits
+   WHERE DepositGroup =  'Troll Chest'
+GROUP BY LEFT(FirstName, 1)
+ORDER BY FirstLetter;
+
+  SELECT DepositGroup, IsDepositExpired, AVG(DepositInterest) AS AverageInterest
+    FROM WizzardDeposits
+   WHERE DepositStartDate > '01/01/1985'
+GROUP BY DepositGroup, IsDepositExpired
+ORDER BY DepositGroup DESC, IsDepositExpired;
+
+SELECT SUM(k.Diff)
+  FROM
+(
+SELECT wd.DepositAmount - (SELECT w.DepositAmount FROM WizzardDeposits AS w WHERE w.Id = wd.Id + 1) AS Diff
+  FROM WizzardDeposits AS wd
+) AS k;
+
+USE SoftUni;
+
+  SELECT DepartmentID, SUM(Salary)
+    FROM Employees
+GROUP BY DepartmentID
+ORDER BY DepartmentID;
+
+  SELECT DepartmentID, MIN(Salary)
+    FROM Employees
+   WHERE DepartmentID IN(2, 5, 7) AND HireDate > '01/01/2000'
+GROUP BY DepartmentID;
+
+  SELECT * INTO NewEmployeesTable
+    FROM Employees
+   WHERE Salary > 30000;
+  DELETE FROM NewEmployeesTable
+   WHERE ManagerID = 42;
+  UPDATE NewEmployeesTable
+     SET Salary += 5000
+   WHERE DepartmentID = 1;
+  SELECT DepartmentID, AVG(Salary) AS AverageSalary
+    FROM NewEmployeesTable
+GROUP BY DepartmentID;
+
+  SELECT DepartmentID, MAX(Salary) AS MaxSalary
+    FROM Employees
+GROUP BY DepartmentID
+  HAVING MAX(Salary) NOT BETWEEN 30000 AND 70000
+
+SELECT COUNT(*) AS [Count]
+  FROM Employees
+ WHERE ManagerID IS NULL
