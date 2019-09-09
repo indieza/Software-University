@@ -84,3 +84,7 @@ DELETE
   SELECT CardNumber, JobDuringJourney
     FROM TravelCards
 ORDER BY CardNumber;
+
+  SELECT Id, FirstName + ' ' + LastName AS [FullName], Ucn
+    FROM Colonists
+ORDER BY FirstName, LastName, Id;
