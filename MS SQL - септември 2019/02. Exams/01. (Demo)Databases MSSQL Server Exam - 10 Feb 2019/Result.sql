@@ -135,3 +135,9 @@ ORDER BY s.[Name] DESC;
     JOIN Journeys AS j ON j.DestinationSpaceportId = s.Id) AS Planets
 GROUP BY Planets.PlanetName
 ORDER BY [JourneysCount] DESC, Planets.PlanetName;
+
+  SELECT TOP(1) j.Id, p.[Name], s.[Name], j.Purpose
+    FROM Journeys AS j
+    JOIN Spaceports AS s ON s.Id = j.DestinationSpaceportId
+    JOIN Planets AS p ON p.Id = s.PlanetId
+ORDER BY DATEDIFF(SECOND, j.JourneyStart, j.JourneyEnd);
