@@ -103,3 +103,15 @@ GROUP BY DepartmentID
 SELECT COUNT(*) AS [Count]
   FROM Employees
  WHERE ManagerID IS NULL
+
+  SELECT [RankedTable].DepartmentID, [RankedTable].Salary
+    FROM(
+  SELECT DepartmentID, Salary, DENSE_RANK() OVER (PARTITION BY DepartmentID ORDER BY Salary DESC) AS [Rank]
+    FROM Employees
+GROUP BY DepartmentID, Salary) AS [RankedTable]
+   WHERE [Rank] = 3;
+
+SELECT TOP(10) FirstName, LastName, DepartmentID
+  FROM Employees AS e
+WHERE Salary > (SELECT AVG(Salary) FROM Employees AS em WHERE em.DepartmentID = e.DepartmentID)
+ORDER BY DepartmentID;
