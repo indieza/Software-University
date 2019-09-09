@@ -99,3 +99,9 @@ ORDER BY JourneyStart;
     JOIN TravelCards AS t ON ColonistId = c.Id
    WHERE t.JobDuringJourney = 'Pilot'
 ORDER BY c.Id;
+
+SELECT COUNT(*) AS [Count]
+  FROM TravelCards AS tc
+  JOIN Journeys AS j ON tc.JourneyId = j.Id
+  JOIN Spaceships AS s ON s.Id = j.SpaceshipId
+ WHERE j.Purpose = 'Technical';
