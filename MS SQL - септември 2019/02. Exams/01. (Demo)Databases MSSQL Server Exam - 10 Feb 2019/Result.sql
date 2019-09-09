@@ -105,3 +105,9 @@ SELECT COUNT(*) AS [Count]
   JOIN Journeys AS j ON tc.JourneyId = j.Id
   JOIN Spaceships AS s ON s.Id = j.SpaceshipId
  WHERE j.Purpose = 'Technical';
+
+  SELECT TOP(1) s.[Name] AS [SpaceshipName], ss.[Name] AS [SpaceportName]
+    FROM Spaceships AS s
+    JOIN Journeys AS j ON s.Id = j.SpaceshipId
+    JOIN Spaceports AS ss ON j.DestinationSpaceportId = ss.Id
+ORDER BY s.LightSpeedRate DESC;
