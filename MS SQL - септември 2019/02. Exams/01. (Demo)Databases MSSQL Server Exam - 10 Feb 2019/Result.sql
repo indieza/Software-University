@@ -88,3 +88,8 @@ ORDER BY CardNumber;
   SELECT Id, FirstName + ' ' + LastName AS [FullName], Ucn
     FROM Colonists
 ORDER BY FirstName, LastName, Id;
+
+  SELECT Id, FORMAT(JourneyStart, 'dd/MM/yyyy'), FORMAT(JourneyEnd, 'dd/MM/yyyy')
+    FROM Journeys
+   WHERE Purpose = 'Military'
+ORDER BY JourneyStart;
