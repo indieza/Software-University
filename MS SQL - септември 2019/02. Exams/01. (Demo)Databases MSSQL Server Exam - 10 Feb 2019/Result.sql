@@ -126,3 +126,12 @@ ORDER BY s.[Name];
     JOIN Journeys AS j ON j.DestinationSpaceportId = s.Id
    WHERE j.Purpose = 'Educational'
 ORDER BY s.[Name] DESC;
+
+  SELECT Planets.PlanetName, COUNT(Planets.PlanetName) AS [JourneysCount]
+    FROM (
+  SELECT p.[Name] AS [PlanetName]
+    FROM Planets AS p
+    JOIN Spaceports AS s ON s.PlanetId = p.Id
+    JOIN Journeys AS j ON j.DestinationSpaceportId = s.Id) AS Planets
+GROUP BY Planets.PlanetName
+ORDER BY [JourneysCount] DESC, Planets.PlanetName;
