@@ -80,3 +80,7 @@ DELETE
 DELETE
   FROM Journeys
  WHERE Id IN(1, 2, 3);
+
+  SELECT CardNumber, JobDuringJourney
+    FROM TravelCards
+ORDER BY CardNumber;
