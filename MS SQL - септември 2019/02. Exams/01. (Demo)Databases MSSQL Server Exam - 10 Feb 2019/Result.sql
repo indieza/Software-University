@@ -93,3 +93,9 @@ ORDER BY FirstName, LastName, Id;
     FROM Journeys
    WHERE Purpose = 'Military'
 ORDER BY JourneyStart;
+
+  SELECT c.Id, c.FirstName + ' ' + c.LastName AS [full_name]
+    FROM Colonists as c
+    JOIN TravelCards AS t ON ColonistId = c.Id
+   WHERE t.JobDuringJourney = 'Pilot'
+ORDER BY c.Id;
