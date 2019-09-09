@@ -57,3 +57,15 @@ CREATE TABLE TravelCards
 	ColonistId INT FOREIGN KEY REFERENCES Colonists(Id) NOT NULL,
 	JourneyId INT FOREIGN KEY REFERENCES Journeys(Id) NOT NULL
 );
+
+INSERT INTO Planets([Name]) VALUES
+('Mars'),
+('Earth'),
+('Jupiter'),
+('Saturn');
+
+INSERT INTO Spaceships([Name], Manufacturer, LightSpeedRate) VALUES
+('Golf', 'VW', 3),
+('WakaWaka', 'Wakanda',	4),
+('Falcon9',	'SpaceX', 1),
+('Bed',	'Vidolov', 6);
