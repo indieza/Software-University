@@ -119,3 +119,10 @@ ORDER BY s.LightSpeedRate DESC;
     JOIN Spaceships AS s ON s.Id = j.SpaceshipId
    WHERE DATEDIFF(YEAR, c.BirthDate, '01/01/2019') < 30 AND tc.JobDuringJourney = 'Pilot'
 ORDER BY s.[Name];
+
+  SELECT p.[Name] AS [PlanetName], s.[Name] AS [SpaceportName]
+    FROM Planets AS p
+    JOIN Spaceports AS S ON s.PlanetId = p.Id
+    JOIN Journeys AS j ON j.DestinationSpaceportId = s.Id
+   WHERE j.Purpose = 'Educational'
+ORDER BY s.[Name] DESC;
