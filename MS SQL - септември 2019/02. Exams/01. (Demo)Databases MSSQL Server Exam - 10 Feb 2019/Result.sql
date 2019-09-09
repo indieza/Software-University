@@ -111,3 +111,11 @@ SELECT COUNT(*) AS [Count]
     JOIN Journeys AS j ON s.Id = j.SpaceshipId
     JOIN Spaceports AS ss ON j.DestinationSpaceportId = ss.Id
 ORDER BY s.LightSpeedRate DESC;
+
+  SELECT s.[Name], s.Manufacturer
+    FROM Colonists AS c
+    JOIN TravelCards AS tc ON tc.ColonistId = c.Id
+    JOIN Journeys AS j ON j.Id = tc.JourneyId
+    JOIN Spaceships AS s ON s.Id = j.SpaceshipId
+   WHERE DATEDIFF(YEAR, c.BirthDate, '01/01/2019') < 30 AND tc.JobDuringJourney = 'Pilot'
+ORDER BY s.[Name];
