@@ -111,3 +111,9 @@ GROUP BY s.FirstName, s.LastName;
     JOIN StudentsTeachers AS st ON st.TeacherId = t.Id
 GROUP BY t.FirstName, t.LastName, s.[Name], s.Lessons
 ORDER BY [Students] DESC, [FullName], s.[Name];
+
+  SELECT s.FirstName + ' ' + s.LastName AS [Full Name]
+    FROM Students AS s
+    FULL JOIN StudentsExams AS se ON se.StudentId = s.Id
+   WHERE se.Grade IS NULL
+ORDER BY [Full Name];
