@@ -117,3 +117,9 @@ ORDER BY [Students] DESC, [FullName], s.[Name];
     FULL JOIN StudentsExams AS se ON se.StudentId = s.Id
    WHERE se.Grade IS NULL
 ORDER BY [Full Name];
+
+  SELECT TOP(10) t.FirstName, t.LastName, COUNT(st.StudentId) AS [StudentsCount]
+    FROM Teachers AS t
+    JOIN StudentsTeachers AS st ON st.TeacherId = t.Id
+GROUP BY t.FirstName, t.LastName
+ORDER BY StudentsCount DESC, t.FirstName, t.LastName;
