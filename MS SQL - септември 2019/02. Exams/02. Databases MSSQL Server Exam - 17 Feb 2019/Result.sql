@@ -129,3 +129,11 @@ SELECT TOP(10) s.FirstName, s.LastName, CAST(AVG(se.Grade) AS DECIMAL(15, 2)) AS
   JOIN StudentsExams AS se ON se.StudentId = s.Id
 GROUP BY s.FirstName, s.LastName
 ORDER BY Grade DESC, s.FirstName, s.LastName;
+
+  SELECT FirstName, LastName, Grade
+    FROM (
+  SELECT s.FirstName, s.LastName, se.Grade, ROW_NUMBER() OVER (PARTITION BY FirstName, LastName ORDER BY Grade DESC) AS [Rank] 
+    FROM Students AS s
+    JOIN StudentsSubjects AS se ON se.StudentId = s.Id) AS [Ranked]
+   WHERE [Ranked].[Rank] = 2
+ORDER BY FirstName, LastName;
