@@ -123,3 +123,9 @@ ORDER BY [Full Name];
     JOIN StudentsTeachers AS st ON st.TeacherId = t.Id
 GROUP BY t.FirstName, t.LastName
 ORDER BY StudentsCount DESC, t.FirstName, t.LastName;
+
+SELECT TOP(10) s.FirstName, s.LastName, CAST(AVG(se.Grade) AS DECIMAL(15, 2)) AS [Grade]
+  FROM Students AS s
+  JOIN StudentsExams AS se ON se.StudentId = s.Id
+GROUP BY s.FirstName, s.LastName
+ORDER BY Grade DESC, s.FirstName, s.LastName;
