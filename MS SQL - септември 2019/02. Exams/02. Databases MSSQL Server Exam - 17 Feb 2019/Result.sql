@@ -71,3 +71,7 @@ INSERT INTO Subjects([Name], [Lessons]) VALUES
 ('Health', 10),
 ('Drama', 7),
 ('Sports', 9);
+
+UPDATE StudentsSubjects
+   SET Grade = 6.00
+ WHERE SubjectId IN(1, 2) AND Grade >= 5.50;
