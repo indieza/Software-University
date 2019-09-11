@@ -92,3 +92,8 @@ ORDER BY FirstName, LastName;
     FROM Students
    WHERE [Address] LIKE '%road%'
 ORDER BY FirstName, LastName, [Address];
+
+  SELECT FirstName, [Address], Phone 
+    FROM Students
+   WHERE Phone LIKE '42%' AND MiddleName IS NOT NULL
+ORDER BY FirstName;
