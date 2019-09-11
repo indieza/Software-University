@@ -97,3 +97,8 @@ ORDER BY FirstName, LastName, [Address];
     FROM Students
    WHERE Phone LIKE '42%' AND MiddleName IS NOT NULL
 ORDER BY FirstName;
+
+  SELECT s.FirstName, s.LastName, COUNT(st.StudentId) AS[TeachersCount]
+    FROM Students AS s
+    JOIN StudentsTeachers AS st ON s.Id = st.StudentId
+GROUP BY s.FirstName, s.LastName;
