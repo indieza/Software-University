@@ -137,3 +137,9 @@ ORDER BY Grade DESC, s.FirstName, s.LastName;
     JOIN StudentsSubjects AS se ON se.StudentId = s.Id) AS [Ranked]
    WHERE [Ranked].[Rank] = 2
 ORDER BY FirstName, LastName;
+
+  SELECT s.FirstName + ' ' + ISNULL(s.MiddleName + ' ', '') + s.LastName AS [Full Name]
+    FROM Students AS s
+    FULL JOIN StudentsSubjects AS ss ON ss.StudentId = s.Id
+   WHERE ss.StudentId IS NULL
+ORDER BY [Full Name];
