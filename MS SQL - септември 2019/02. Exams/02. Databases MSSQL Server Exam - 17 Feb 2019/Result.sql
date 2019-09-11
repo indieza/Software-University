@@ -102,3 +102,12 @@ ORDER BY FirstName;
     FROM Students AS s
     JOIN StudentsTeachers AS st ON s.Id = st.StudentId
 GROUP BY s.FirstName, s.LastName;
+
+  SELECT t.FirstName + ' ' + t.LastName AS [FullName],
+         s.[Name] + '-' + CAST(s.Lessons AS NVARCHAR(20)) AS Subjects,
+  	     COUNT(st.StudentId) AS [Students]
+    FROM Teachers AS t
+    JOIN Subjects AS s ON s.Id = t.SubjectId
+    JOIN StudentsTeachers AS st ON st.TeacherId = t.Id
+GROUP BY t.FirstName, t.LastName, s.[Name], s.Lessons
+ORDER BY [Students] DESC, [FullName], s.[Name];
