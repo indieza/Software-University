@@ -102,3 +102,9 @@ ORDER BY t.Price DESC, p.FirstName, p.LastName;
     JOIN Luggages AS l ON l.LuggageTypeId = lt.Id
 GROUP BY lt.[Type], lt.Id
 ORDER BY MostUsedLuggage DESC, lt.[Type];
+
+  SELECT p.FirstName + ' ' + p.LastName AS [Full Name], f.Origin, f.Destination
+    FROM Passengers AS p
+    JOIN Tickets AS t ON t.PassengerId = p.Id
+    JOIN Flights AS f ON f.Id = t.FlightId
+ORDER BY [Full Name], f.Origin, f.Destination;
