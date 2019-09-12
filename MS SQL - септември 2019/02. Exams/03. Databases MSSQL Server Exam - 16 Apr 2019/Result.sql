@@ -155,3 +155,10 @@ ORDER BY k.Price DESC, k.FirstName, k.LastName, k.Destination;
     FULL JOIN Flights AS f ON f.Id = t.FlightId
 GROUP BY f.Destination
 ORDER BY FilesCount DESC, f.Destination;
+
+  SELECT pl.[Name], pl.Seats, COUNT(t.PassengerId) AS [Passengers Count]
+    FROM Planes AS pl
+    FULL JOIN Flights AS f ON f.PlaneId = pl.Id
+    FULL JOIN Tickets AS t ON t.FlightId = f.Id
+GROUP BY pl.[Name], pl.Seats
+ORDER BY [Passengers Count] DESC, pl.[Name], pl.Seats;
