@@ -96,3 +96,9 @@ ORDER BY Price DESC, f.Id;
     FROM Passengers AS p
     JOIN Tickets AS t ON t.PassengerId = p.Id
 ORDER BY t.Price DESC, p.FirstName, p.LastName;
+
+  SELECT lt.[Type], COUNT(lt.Id) AS MostUsedLuggage
+    FROM LuggageTypes AS lt
+    JOIN Luggages AS l ON l.LuggageTypeId = lt.Id
+GROUP BY lt.[Type], lt.Id
+ORDER BY MostUsedLuggage DESC, lt.[Type];
