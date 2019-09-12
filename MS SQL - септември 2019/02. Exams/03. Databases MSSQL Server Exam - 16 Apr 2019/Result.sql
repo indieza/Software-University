@@ -108,3 +108,9 @@ ORDER BY MostUsedLuggage DESC, lt.[Type];
     JOIN Tickets AS t ON t.PassengerId = p.Id
     JOIN Flights AS f ON f.Id = t.FlightId
 ORDER BY [Full Name], f.Origin, f.Destination;
+
+  SELECT p.FirstName, p.LastName, p.Age
+    FROM Passengers AS p
+    FULL JOIN Tickets AS t ON t.PassengerId = p.Id
+    WHERE t.Id IS NULL
+ORDER BY p.Age DESC, p.FirstName, p.LastName;
