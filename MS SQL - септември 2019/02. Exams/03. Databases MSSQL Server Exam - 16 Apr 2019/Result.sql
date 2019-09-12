@@ -80,3 +80,8 @@ DELETE
   SELECT Origin, Destination
     FROM Flights
 ORDER BY Origin, Destination;
+
+  SELECT *
+    FROM Planes
+   WHERE [Name] LIKE '%tr%'
+ORDER BY Id, [Name], Seats, [Range];
