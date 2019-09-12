@@ -120,3 +120,9 @@ ORDER BY p.Age DESC, p.FirstName, p.LastName;
     FULL JOIN Luggages AS l ON l.PassengerId = p.Id
    WHERE l.LuggageTypeId IS NULL
 ORDER BY p.PassportId, p.[Address];
+
+  SELECT p.FirstName, p.LastName, COUNT(t.PassengerId) AS [Total Trips]
+    FROM Passengers AS p
+    FULL JOIN Tickets AS t ON t.PassengerId = p.Id
+GROUP BY p.FirstName, p.LastName
+ORDER BY[Total Trips] DESC, p.FirstName, p.LastName;
