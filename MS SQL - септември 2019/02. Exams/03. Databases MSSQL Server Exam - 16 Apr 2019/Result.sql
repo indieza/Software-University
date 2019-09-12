@@ -114,3 +114,9 @@ ORDER BY [Full Name], f.Origin, f.Destination;
     FULL JOIN Tickets AS t ON t.PassengerId = p.Id
     WHERE t.Id IS NULL
 ORDER BY p.Age DESC, p.FirstName, p.LastName;
+
+  SELECT p.PassportId, p.[Address]
+    FROM Passengers AS p
+    FULL JOIN Luggages AS l ON l.PassengerId = p.Id
+   WHERE l.LuggageTypeId IS NULL
+ORDER BY p.PassportId, p.[Address];
