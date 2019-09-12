@@ -138,3 +138,14 @@ ORDER BY[Total Trips] DESC, p.FirstName, p.LastName;
 	JOIN Luggages AS l ON l.Id = t.LuggageId
 	JOIN LuggageTypes AS lt ON lt.Id = l.LuggageTypeId
 ORDER BY [Full Name], pl.[Name], f.Origin, f.Destination, lt.[Type];
+
+  SELECT k.FirstName, k.LastName, k.Destination, k.Price
+    FROM (
+  SELECT p.FirstName, p.LastName,
+         f.Destination, t.Price,
+		 DENSE_RANK() OVER(PARTITION BY p.FirstName, p.LastName ORDER BY t.Price DESC) [Rank]
+    FROM Passengers AS p
+    JOIN Tickets AS t ON t.PassengerId = p.Id
+	JOIN Flights AS f ON f.Id = t.FlightId) AS k
+   WHERE k.[Rank] = 1
+ORDER BY k.Price DESC, k.FirstName, k.LastName, k.Destination;
