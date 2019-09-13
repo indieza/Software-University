@@ -151,3 +151,20 @@ ORDER BY [Total Price] DESC, Items DESC;
 	JOIN Shifts AS s ON s.EmployeeId = e.Id
    WHERE o.Id IS NULL AND DATEDIFF(HOUR, s.CheckIn, s.CheckOut) > 12
 ORDER BY e.Id;
+
+  SELECT emp.FirstName + ' ' + emp.LastName AS [Full Name],
+         DATEDIFF(HOUR, s.CheckIn, s.CheckOut) AS [WorkHours],
+		 e.[Total Price]
+    FROM (
+  SELECT o.[DateTime],
+         o.EmployeeId,
+  	     SUM(i.Price * oi.Quantity) AS [Total Price],
+  	     ROW_NUMBER() OVER(PARTITION BY o.EmployeeId ORDER BY o.EmployeeId, SUM(i.Price * oi.Quantity) DESC) AS [Rank]
+    FROM Orders AS o
+    JOIN OrderItems AS oi ON oi.OrderId = o.Id
+    JOIN Items AS i ON i.Id = oi.ItemId
+GROUP BY o.[DateTime], o.EmployeeId, o.Id) AS e
+    JOIN Employees AS emp ON emp.Id = e.EmployeeId
+	JOIN Shifts AS s ON s.EmployeeId = e.EmployeeId
+   WHERE e.Rank = 1 AND e.[DateTime] BETWEEN s.CheckIn AND s.CheckOut
+ORDER BY [Full Name], [WorkHours] DESC, [Total Price] DESC;
