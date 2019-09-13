@@ -117,3 +117,10 @@ ORDER BY [ExpensivePrice] DESC, o.Id;
    WHERE o.Id IS NOT NULL
 GROUP BY e.Id, e.FirstName, e.LastName
 ORDER BY e.Id;
+
+  SELECT e.Id, e.FirstName + ' ' + e.LastName AS [Full Name]
+    FROM Employees AS e
+    JOIN Shifts AS s ON s.EmployeeId = e.Id
+   WHERE DATEDIFF(HOUR, s.CheckIn, s.CheckOut) < 4
+GROUP BY e.Id, e.FirstName, e.LastName
+ORDER BY e.Id;
