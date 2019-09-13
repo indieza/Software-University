@@ -135,3 +135,19 @@ ORDER BY e.Id;
    WHERE o.[DateTime] < '2018-06-15'
 GROUP BY e.FirstName, e.LastName
 ORDER BY [Total Price] DESC, Items DESC;
+
+  SELECT e.FirstName + + ' ' + e.LastName AS [Full Name],
+         CASE DATEPART(WEEKDAY, s.CheckIn)  
+			WHEN 1 THEN 'Sunday' 
+			WHEN 2 THEN 'Monday' 
+			WHEN 3 THEN 'Tuesday' 
+			WHEN 4 THEN 'Wednesday' 
+			WHEN 5 THEN 'Thursday' 
+			WHEN 6 THEN 'Friday' 
+			WHEN 7 THEN 'Saturday' 
+         END AS [Day of week]
+    FROM Employees AS e
+    FULL JOIN Orders AS o ON o.EmployeeId = e.Id
+	JOIN Shifts AS s ON s.EmployeeId = e.Id
+   WHERE o.Id IS NULL AND DATEDIFF(HOUR, s.CheckIn, s.CheckOut) > 12
+ORDER BY e.Id;
