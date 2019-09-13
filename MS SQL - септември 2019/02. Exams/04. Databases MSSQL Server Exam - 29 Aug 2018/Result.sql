@@ -73,3 +73,8 @@ DELETE
 DELETE
   FROM Orders
  WHERE Id = 48;
+
+  SELECT Id, FirstName
+    FROM Employees
+   WHERE Salary > 6500
+ORDER BY FirstName, Id;
