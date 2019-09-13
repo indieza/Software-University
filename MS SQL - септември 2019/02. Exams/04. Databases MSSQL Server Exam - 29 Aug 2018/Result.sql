@@ -62,3 +62,7 @@ INSERT INTO Items([Name], [Price], [CategoryId]) VALUES
 ('Juice',	5.32, 1),
 ('Glasses',	10,	8),
 ('Bottle of water',	1, 1);
+
+UPDATE Items
+   SET Price *= 1.27
+ WHERE CategoryId IN (1, 2, 3);
