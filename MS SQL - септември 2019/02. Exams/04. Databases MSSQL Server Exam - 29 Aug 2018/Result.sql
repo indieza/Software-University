@@ -110,3 +110,10 @@ ORDER BY TotalPrice DESC;
     JOIN Items AS i ON i.Id = oi.ItemId
 GROUP BY o.Id
 ORDER BY [ExpensivePrice] DESC, o.Id;
+
+  SELECT e.Id, e.FirstName, e.LastName
+    FROM Employees AS e
+    FULL JOIN Orders AS o ON o.EmployeeId = e.Id
+   WHERE o.Id IS NOT NULL
+GROUP BY e.Id, e.FirstName, e.LastName
+ORDER BY e.Id;
