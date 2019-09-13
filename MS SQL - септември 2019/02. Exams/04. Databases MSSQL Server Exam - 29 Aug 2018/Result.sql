@@ -97,9 +97,16 @@ GROUP BY e.FirstName, e.LastName, e.Id
   HAVING AVG(DATEDIFF(HOUR, s.CheckIn, s.CheckOut)) > 7
 ORDER BY [Work hours] DESC, e.Id;
 
-SELECT TOP(1) oi.OrderId, SUM(i.Price * oi.Quantity) AS TotalPrice
-  FROM Orders AS o
-  JOIN OrderItems AS oi ON oi.OrderId = o.Id
-  JOIN Items AS i ON i.Id = oi.ItemId
+  SELECT TOP(1) oi.OrderId, SUM(i.Price * oi.Quantity) AS TotalPrice
+    FROM Orders AS o
+    JOIN OrderItems AS oi ON oi.OrderId = o.Id
+    JOIN Items AS i ON i.Id = oi.ItemId
 GROUP BY oi.OrderId
-ORDER BY TotalPrice DESC
+ORDER BY TotalPrice DESC;
+
+  SELECT TOP(10) o.Id, MAX(i.Price) AS [ExpensivePrice], MIN(i.Price) AS [CheapPrice]
+    FROM Orders AS o
+    JOIN OrderItems AS oi ON oi.OrderId = o.Id
+    JOIN Items AS i ON i.Id = oi.ItemId
+GROUP BY o.Id
+ORDER BY [ExpensivePrice] DESC, o.Id;
