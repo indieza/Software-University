@@ -78,3 +78,8 @@ DELETE
     FROM Employees
    WHERE Salary > 6500
 ORDER BY FirstName, Id;
+
+  SELECT FirstName + ' ' + LastName AS [Full Name], Phone
+    FROM Employees
+   WHERE Phone LIKE '3%'
+ORDER BY FirstName, Phone;
