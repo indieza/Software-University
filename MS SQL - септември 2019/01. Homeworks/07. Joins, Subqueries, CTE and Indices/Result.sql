@@ -82,3 +82,10 @@ ORDER BY p.Elevation DESC;
     JOIN Mountains AS m ON m.Id = mc.MountainId
    WHERE c.CountryName IN ('United States', 'Russia', 'Bulgaria')
 GROUP BY c.CountryCode;
+
+  SELECT TOP(5) c.CountryName, r.RiverName
+    FROM Countries AS c
+    FULL JOIN CountriesRivers AS cr ON cr.CountryCode = c.CountryCode
+    FULL JOIN Rivers AS r ON r.Id = cr.RiverId
+   WHERE c.ContinentCode = 'AF'
+ORDER BY c.CountryName;
