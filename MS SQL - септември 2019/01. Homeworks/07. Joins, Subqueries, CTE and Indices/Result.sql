@@ -51,3 +51,11 @@ SELECT e.EmployeeID, e.FirstName, IIF(YEAR(p.StartDate) >= 2005, NULL, p.[Name])
     JOIN Employees AS mg ON mg.EmployeeID = e.ManagerID
    WHERE mg.EmployeeID IN (3, 7)
 ORDER BY e.EmployeeID;
+
+  SELECT TOP(50) e.EmployeeID, e.FirstName + ' ' + e.LastName AS [EmployeeName],
+         mg.FirstName + ' ' + mg.LastName AS [ManagerName],
+		 d.[Name] AS [DepartmentName]
+    FROM Employees AS e
+    JOIN Employees AS mg ON mg.EmployeeID = e.ManagerID
+	JOIN Departments AS d ON d.DepartmentID = e.DepartmentID
+ORDER BY e.EmployeeID;
