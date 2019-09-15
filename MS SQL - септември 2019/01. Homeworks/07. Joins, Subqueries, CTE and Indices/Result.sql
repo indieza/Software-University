@@ -119,3 +119,22 @@ SELECT COUNT(*) AS [CountryCode]
     JOIN Rivers AS r ON r.Id = cr.RiverId
 GROUP BY c.CountryName
 ORDER BY [HighestPeakElevation] DESC, [LongestRiverLength] DESC, c.CountryName;
+
+
+   SELECT TOP(5) k.CountryName, 
+          ISNULL(k.[PeakName], '(no highest peak)'),
+		  ISNULL(k.[Highest Peak Elevation], 0),
+		  ISNULL(k.MountainRange, '(no mountain)')
+     FROM (
+   SELECT c.CountryName,
+          p.PeakName,
+   	      MAX(p.Elevation) AS [Highest Peak Elevation],
+   	      m.MountainRange,
+		  DENSE_RANK() OVER (PARTITION BY c.CountryName ORDER BY MAX(p.Elevation) DESC) AS [Rank]
+     FROM Countries AS c
+LEFT JOIN MountainsCountries AS mc ON mc.CountryCode = c.CountryCode
+LEFT JOIN Mountains AS m ON m.Id = mc.MountainId
+LEFT JOIN Peaks AS p ON p.MountainId = m.Id
+ GROUP BY c.CountryName, p.PeakName, m.MountainRange) AS k
+    WHERE k.[Rank] = 1
+ ORDER BY k.CountryName, k.[Highest Peak Elevation];
