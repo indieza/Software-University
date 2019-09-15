@@ -45,3 +45,9 @@ SELECT e.EmployeeID, e.FirstName, IIF(YEAR(p.StartDate) >= 2005, NULL, p.[Name])
   JOIN EmployeesProjects AS ep ON ep.EmployeeID = e.EmployeeID
   JOIN Projects AS p ON p.ProjectID = ep.ProjectID
  WHERE e.EmployeeID = 24;
+
+  SELECT e.EmployeeID, e.FirstName, e.ManagerID, mg.FirstName AS [ManagerName]
+    FROM Employees AS e
+    JOIN Employees AS mg ON mg.EmployeeID = e.ManagerID
+   WHERE mg.EmployeeID IN (3, 7)
+ORDER BY e.EmployeeID;
