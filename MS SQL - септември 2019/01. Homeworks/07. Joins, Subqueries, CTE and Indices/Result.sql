@@ -75,3 +75,10 @@ USE [Geography];
     JOIN Peaks AS p ON p.MountainId = m.Id
    WHERE c.CountryName = 'Bulgaria' AND p.Elevation > 2835
 ORDER BY p.Elevation DESC;
+
+  SELECT c.CountryCode, COUNT(m.MountainRange) AS [MountainRanges]
+    FROM Countries AS c
+    JOIN MountainsCountries AS mc ON mc.CountryCode = c.CountryCode
+    JOIN Mountains AS m ON m.Id = mc.MountainId
+   WHERE c.CountryName IN ('United States', 'Russia', 'Bulgaria')
+GROUP BY c.CountryCode;
