@@ -102,3 +102,8 @@ GROUP BY c.ContinentCode, c.CurrencyCode
   HAVING COUNT(c.CurrencyCode) != 1) AS k
    WHERE k.[Rank] = 1
 ORDER BY k.ContinentCode;
+
+SELECT COUNT(*) AS [CountryCode]
+  FROM Countries AS c
+  FULL JOIN MountainsCountries AS mc ON mc.CountryCode = c.CountryCode
+ WHERE mc.MountainId IS NULL;
