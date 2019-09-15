@@ -59,3 +59,9 @@ ORDER BY e.EmployeeID;
     JOIN Employees AS mg ON mg.EmployeeID = e.ManagerID
 	JOIN Departments AS d ON d.DepartmentID = e.DepartmentID
 ORDER BY e.EmployeeID;
+
+  SELECT TOP(1) AVG(e.Salary) AS [MinAverageSalary]
+    FROM Departments AS d
+    JOIN Employees AS e ON e.DepartmentID = d.DepartmentID
+GROUP BY d.[Name]
+ORDER BY [MinAverageSalary];
