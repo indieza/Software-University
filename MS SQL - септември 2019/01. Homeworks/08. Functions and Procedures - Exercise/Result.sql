@@ -58,3 +58,10 @@ SELECT FirstName, LastName
  WHERE dbo.ufn_GetSalaryLevel(Salary) = @Level
 
 EXEC dbo.usp_EmployeesBySalaryLevel @Level = 'High'
+
+CREATE PROCEDURE usp_GetHoldersFullName
+    AS
+SELECT FirstName + ' ' + LastName AS [Full Name]
+  FROM AccountHolders
+
+EXEC dbo.usp_GetHoldersFullName
