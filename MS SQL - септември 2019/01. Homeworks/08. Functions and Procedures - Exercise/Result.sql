@@ -31,3 +31,22 @@ SELECT e.FirstName, e.LastName
  WHERE t.[Name] = @TownName
 
 EXEC dbo.usp_GetEmployeesFromTown @TownName = 'Sofia'
+
+CREATE FUNCTION ufn_GetSalaryLevel(@Salary DECIMAL(18,4))
+RETURNS VARCHAR(30)
+AS
+BEGIN
+	DECLARE @result VARCHAR(30)
+
+	IF(@Salary < 30000)
+		SET @result = 'Low'
+	IF(@Salary BETWEEN 30000 AND 50000)
+		SET @result = 'Average'
+	IF(@Salary > 50000)
+		SET @result = 'High'
+
+	RETURN @result
+END
+
+SELECT Salary, dbo.ufn_GetSalaryLevel(Salary) AS [Salary Level]
+  FROM Employees
