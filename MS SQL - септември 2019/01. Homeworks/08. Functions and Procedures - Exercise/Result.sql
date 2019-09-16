@@ -21,3 +21,13 @@ SELECT [Name]
  WHERE [Name] LIKE @Input + '%'
 
 EXEC dbo.usp_GetTownsStartingWith @Input = 'b'
+
+CREATE PROCEDURE usp_GetEmployeesFromTown @TownName VARCHAR(50)
+    AS
+SELECT e.FirstName, e.LastName
+  FROM Employees AS e
+  JOIN Addresses AS a ON a.AddressID = e.AddressID
+  JOIN Towns AS T ON t.TownID = a.TownID
+ WHERE t.[Name] = @TownName
+
+EXEC dbo.usp_GetEmployeesFromTown @TownName = 'Sofia'
