@@ -1,4 +1,4 @@
-CREATE PROC usp_GetEmployeesSalaryAbove35000
+CREATE PROCEDURE usp_GetEmployeesSalaryAbove35000
     AS
 SELECT FirstName, LastName
   FROM Employees
@@ -13,3 +13,11 @@ SELECT FirstName, LastName
  WHERE Salary >= @Number
 
 EXEC dbo.usp_GetEmployeesSalaryAboveNumber @Number = 48100
+
+CREATE PROCEDURE usp_GetTownsStartingWith @Input VARCHAR(10)
+    AS
+SELECT [Name]
+  FROM Towns
+ WHERE [Name] LIKE @Input + '%'
+
+EXEC dbo.usp_GetTownsStartingWith @Input = 'b'
