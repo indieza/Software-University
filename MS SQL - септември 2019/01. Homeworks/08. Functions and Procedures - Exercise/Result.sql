@@ -74,3 +74,12 @@ EXEC dbo.usp_GetHoldersFullName
 GROUP BY ah.FirstName, ah.LastName
   HAVING SUM(a.Balance) > @Num
 ORDER BY ah.FirstName, ah.LastName
+
+CREATE FUNCTION ufn_CalculateFutureValue(@Sum DECIMAL(15, 2), @Rate FLOAT, @Tears INT)
+RETURNS DECIMAL(15, 4)
+AS
+BEGIN
+	RETURN @Sum * (POWER(1 + @Rate, @Tears))
+END
+
+SELECT dbo.ufn_CalculateFutureValue(1000, 0.1, 5)
