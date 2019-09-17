@@ -195,3 +195,24 @@ END
 SELECT dbo.udf_ExamGradesToUpdate(12, 6.20)
 SELECT dbo.udf_ExamGradesToUpdate(12, 5.50)
 SELECT dbo.udf_ExamGradesToUpdate(121, 5.50)
+
+CREATE PROCEDURE usp_ExcludeFromSchool(@StudentId INT)
+    AS
+	IF(@StudentId NOT IN (SELECT Id FROM Students))
+		RAISERROR('This school has no student with the provided id!', 16, 1)
+DELETE
+  FROM StudentsExams
+ WHERE StudentId = @StudentId
+DELETE
+  FROM StudentsTeachers
+ WHERE StudentId = @StudentId
+DELETE
+  FROM StudentsSubjects
+ WHERE StudentId = @StudentId
+DELETE
+  FROM Students
+ WHERE Id = @StudentId
+
+EXEC dbo.usp_ExcludeFromSchool 1
+SELECT COUNT(*) FROM Students
+EXEC dbo.usp_ExcludeFromSchool 301
