@@ -183,3 +183,15 @@ END
 SELECT dbo.udf_CalculateTickets('Kolyshley','Rancabolang', 33)
 SELECT dbo.udf_CalculateTickets('Kolyshley','Rancabolang', -1)
 SELECT dbo.udf_CalculateTickets('Invalid','Rancabolang', 33)
+
+SELECT *
+  FROM Flights
+ WHERE ArrivalTime > DepartureTime
+
+CREATE PROCEDURE usp_CancelFlights
+    AS
+UPDATE Flights
+   SET ArrivalTime = NULL, DepartureTime = NULL
+ WHERE ArrivalTime > DepartureTime
+
+EXEC usp_CancelFlights
