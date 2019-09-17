@@ -59,6 +59,34 @@ SELECT FirstName, LastName
 
 EXEC dbo.usp_EmployeesBySalaryLevel @Level = 'High'
 
+CREATE OR ALTER FUNCTION ufn_IsWordComprised(@SetOfLetters VARCHAR(20), @Word VARCHAR(20))
+RETURNS BIT
+AS
+BEGIN
+	DECLARE @result BIT
+	DECLARE @count INT = 1
+
+	WHILE @count <= LEN(@Word)
+	BEGIN
+		DECLARE @currentSymbol VARCHAR(2) = SUBSTRING(@Word, @count, 1)
+
+		IF(CHARINDEX(@currentSymbol, @SetOfLetters)) > 0
+			BEGIN
+				SET @result = 1
+				SET @count+=1
+			END
+		ELSE
+			BEGIN
+				SET @result = 0
+				BREAK
+			END
+	END
+	RETURN @result
+END
+
+SELECT 'oistmiahf', 'Sofiz', dbo.ufn_IsWordComprised('oistmiahf', 'Sofiz')
+SELECT 'oistmiahf', 'Sofia', dbo.ufn_IsWordComprised('oistmiahf', 'Sofia')
+
 CREATE PROCEDURE usp_GetHoldersFullName
     AS
 SELECT FirstName + ' ' + LastName AS [Full Name]
