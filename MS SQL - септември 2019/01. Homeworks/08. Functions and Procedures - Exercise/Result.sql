@@ -165,3 +165,19 @@ SELECT a.AccountHolderId AS [Account Id],
  WHERE a.Id = @AccountID
 
 EXEC usp_CalculateFutureValueForAccount 1, 0.1
+
+-- Problem 13
+CREATE FUNCTION ufn_CashInUsersGames(@GameName VARCHAR(50))
+RETURNS TABLE
+AS
+RETURN
+	SELECT SUM(K.Cash) AS [SumCash]
+      FROM (
+    SELECT ug.Cash AS [Cash], ROW_NUMBER() OVER (PARTITION BY ug.GameId ORDER BY ug.Cash DESC) AS [Row]
+      FROM Games AS g
+      JOIN UsersGames AS ug ON ug.GameId = g.Id
+     WHERE g.[Name] = @GameName) AS k
+     WHERE k.[Row] % 2 = 1
+
+SELECT dbo.ufn_CashInUsersGames('Lily Stargazer')
+SELECT dbo.ufn_CashInUsersGames('Love in a mist')
