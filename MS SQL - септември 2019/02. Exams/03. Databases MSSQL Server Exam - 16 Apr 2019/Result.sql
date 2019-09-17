@@ -163,11 +163,6 @@ ORDER BY FilesCount DESC, f.Destination;
 GROUP BY pl.[Name], pl.Seats
 ORDER BY [Passengers Count] DESC, pl.[Name], pl.Seats;
 
-SELECT *
-  FROM Flights AS f
-  JOIN Tickets AS t ON t.FlightId = f.Id
- WHERE f.Origin = 'Kolyshley' AND f.Destination = 'Rancabolang'
-
 CREATE FUNCTION udf_CalculateTickets(@Origin VARCHAR(50), @Destination VARCHAR(50), @PeopleCount INT)
 RETURNS VARCHAR(MAX)
 AS
