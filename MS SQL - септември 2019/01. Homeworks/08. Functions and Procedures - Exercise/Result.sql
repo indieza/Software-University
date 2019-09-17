@@ -1,3 +1,4 @@
+-- Problem 1
 CREATE PROCEDURE usp_GetEmployeesSalaryAbove35000
     AS
 SELECT FirstName, LastName
@@ -6,6 +7,7 @@ SELECT FirstName, LastName
 
 EXEC dbo.usp_GetEmployeesSalaryAbove35000
 
+-- Problem 2
 CREATE PROCEDURE usp_GetEmployeesSalaryAboveNumber @Number DECIMAL(18,4)
     AS
 SELECT FirstName, LastName
@@ -14,6 +16,7 @@ SELECT FirstName, LastName
 
 EXEC dbo.usp_GetEmployeesSalaryAboveNumber @Number = 48100
 
+-- Problem 3
 CREATE PROCEDURE usp_GetTownsStartingWith @Input VARCHAR(10)
     AS
 SELECT [Name]
@@ -22,6 +25,7 @@ SELECT [Name]
 
 EXEC dbo.usp_GetTownsStartingWith @Input = 'b'
 
+-- Problem 4
 CREATE PROCEDURE usp_GetEmployeesFromTown @TownName VARCHAR(50)
     AS
 SELECT e.FirstName, e.LastName
@@ -32,6 +36,7 @@ SELECT e.FirstName, e.LastName
 
 EXEC dbo.usp_GetEmployeesFromTown @TownName = 'Sofia'
 
+-- Problem 5
 CREATE FUNCTION ufn_GetSalaryLevel(@Salary DECIMAL(18,4))
 RETURNS VARCHAR(30)
 AS
@@ -51,6 +56,7 @@ END
 SELECT Salary, dbo.ufn_GetSalaryLevel(Salary) AS [Salary Level]
   FROM Employees
 
+-- Problem 6
 CREATE PROCEDURE usp_EmployeesBySalaryLevel @Level VARCHAR(30)
     AS
 SELECT FirstName, LastName
@@ -59,7 +65,8 @@ SELECT FirstName, LastName
 
 EXEC dbo.usp_EmployeesBySalaryLevel @Level = 'High'
 
-CREATE OR ALTER FUNCTION ufn_IsWordComprised(@SetOfLetters VARCHAR(20), @Word VARCHAR(20))
+-- Problem 7
+CREATE FUNCTION ufn_IsWordComprised(@SetOfLetters VARCHAR(20), @Word VARCHAR(20))
 RETURNS BIT
 AS
 BEGIN
@@ -87,6 +94,7 @@ END
 SELECT 'oistmiahf', 'Sofiz', dbo.ufn_IsWordComprised('oistmiahf', 'Sofiz')
 SELECT 'oistmiahf', 'Sofia', dbo.ufn_IsWordComprised('oistmiahf', 'Sofia')
 
+-- Problem 8
 CREATE PROCEDURE usp_DeleteEmployeesFromDepartment(@DepartmentId INT)
     AS
  ALTER TABLE Departments
@@ -116,6 +124,7 @@ SELECT COUNT(*)
   FROM Employees
  WHERE DepartmentID = @DepartmentId
 
+-- Problem 9
 CREATE PROCEDURE usp_GetHoldersFullName
     AS
 SELECT FirstName + ' ' + LastName AS [Full Name]
@@ -123,6 +132,7 @@ SELECT FirstName + ' ' + LastName AS [Full Name]
 
 EXEC dbo.usp_GetHoldersFullName
 
+-- Problem 10
   CREATE PROCEDURE usp_GetHoldersWithBalanceHigherThan @Num DECIMAL(15, 2)
       AS
   SELECT FirstName, LastName
@@ -132,6 +142,7 @@ GROUP BY ah.FirstName, ah.LastName
   HAVING SUM(a.Balance) > @Num
 ORDER BY ah.FirstName, ah.LastName
 
+-- Problem 11
 CREATE FUNCTION ufn_CalculateFutureValue(@Sum DECIMAL(15, 2), @Rate FLOAT, @Tears INT)
 RETURNS DECIMAL(15, 4)
 AS
