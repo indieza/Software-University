@@ -162,3 +162,29 @@ ORDER BY FilesCount DESC, f.Destination;
     FULL JOIN Tickets AS t ON t.FlightId = f.Id
 GROUP BY pl.[Name], pl.Seats
 ORDER BY [Passengers Count] DESC, pl.[Name], pl.Seats;
+
+SELECT *
+  FROM Flights AS f
+  JOIN Tickets AS t ON t.FlightId = f.Id
+ WHERE f.Origin = 'Kolyshley' AND f.Destination = 'Rancabolang'
+
+CREATE FUNCTION udf_CalculateTickets(@Origin VARCHAR(50), @Destination VARCHAR(50), @PeopleCount INT)
+RETURNS VARCHAR(MAX)
+AS
+BEGIN
+	IF(@PeopleCount <= 0)
+		RETURN 'Invalid people count!'
+	IF(@Origin NOT IN(SELECT Origin FROM Flights) OR @Destination NOT IN (SELECT Destination FROM Flights))
+		RETURN 'Invalid flight!'
+
+	DECLARE @result DECIMAL(20, 2) = @PeopleCount * (SELECT t.Price
+													   FROM Flights AS f
+													   JOIN Tickets AS t ON t.FlightId = f.Id
+													  WHERE f.Origin = @Origin AND f.Destination = @Destination)
+
+	RETURN 'Total price ' + CONVERT(VARCHAR, CAST(@result AS MONEY))
+END
+
+SELECT dbo.udf_CalculateTickets('Kolyshley','Rancabolang', 33)
+SELECT dbo.udf_CalculateTickets('Kolyshley','Rancabolang', -1)
+SELECT dbo.udf_CalculateTickets('Invalid','Rancabolang', 33)
