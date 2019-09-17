@@ -151,3 +151,17 @@ BEGIN
 END
 
 SELECT dbo.ufn_CalculateFutureValue(1000, 0.1, 5)
+
+-- Problem 12
+CREATE PROCEDURE usp_CalculateFutureValueForAccount(@AccountID INT, @Rate FLOAT)
+    AS
+SELECT a.AccountHolderId AS [Account Id],
+       ah.FirstName,
+	   ah.LastName,
+	   a.Balance,
+	   dbo.ufn_CalculateFutureValue(a.Balance, @Rate, 5) AS [Balance in 5 years]
+  FROM Accounts AS a
+  JOIN AccountHolders AS ah ON ah.Id = a.AccountHolderId
+ WHERE a.Id = @AccountID
+
+EXEC usp_CalculateFutureValueForAccount 1, 0.1
