@@ -172,3 +172,32 @@ SELECT *
   JOIN StudentsExams AS se ON se.StudentId = s.Id
   WHERE s.Id = 12 AND se.Grade BETWEEN 5.50 AND 6
 
+SELECT *
+  FROM Students AS s
+  JOIN StudentsExams AS se ON se.StudentId = s.Id
+  JOIN Exams AS e ON e.Id = se.ExamId
+
+CREATE FUNCTION udf_ExamGradesToUpdate(@StudentId INT, @Grade DECIMAL(15, 2))
+RETURNS VARCHAR(MAX)
+AS
+BEGIN
+	IF(@StudentId NOT IN(SELECT Id FROM Students))
+		RETURN 'The student with provided id does not exist in the school!'
+	IF(@Grade > 6.00)
+		RETURN 'Grade cannot be above 6.00!'
+
+	DECLARE @name VARCHAR(50) = (SELECT s.FirstName
+					               FROM Students AS s
+								  WHERE s.Id = @StudentId)
+	DECLARE @count INT = (SELECT COUNT(*)
+					        FROM Students AS s
+					        JOIN StudentsExams AS se ON se.StudentId = s.Id
+					        JOIN Exams AS e ON e.Id = se.ExamId
+						    WHERE s.Id = @StudentId AND se.Grade BETWEEN @Grade AND @Grade + 0.50)
+
+	RETURN 'You have to update ' +  CAST(@count AS VARCHAR(50)) + ' grades for the student ' + @name
+END
+
+SELECT dbo.udf_ExamGradesToUpdate(12, 6.20)
+SELECT dbo.udf_ExamGradesToUpdate(12, 5.50)
+SELECT dbo.udf_ExamGradesToUpdate(121, 5.50)
