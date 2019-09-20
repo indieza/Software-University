@@ -191,56 +191,44 @@ CREATE TABLE Logs
 	OldSum DECIMAL(15, 2)
 );
 
-CREATE TRIGGER tr_AddBalance ON dbo.Accounts FOR UPDATE
+CREATE TRIGGER tr_AddBalance ON Accounts FOR UPDATE
 AS
-DECLARE @newSum DECIMAL(15, 2) = (SELECT i.Balance FROM INSERTED i)
-DECLARE @oldSum DECIMAL(15, 2) = (SELECT d.Balance FROM DELETED d)
-DECLARE @accountId INT = (SELECT i.Id FROM INSERTED i)
+DECLARE @newSum DECIMAL(15, 2) = (SELECT Balance FROM inserted)
+DECLARE @oldSum DECIMAL(15, 2) = (SELECT Balance FROM deleted)
+DECLARE @accountId INT = (SELECT Id FROM inserted)
 
-INSERT INTO dbo.Logs
-(
-    AccountId,
-    NewSum,
-    OldSum
-)
+INSERT INTO dbo.Logs(AccountId, NewSum, OldSum)
 VALUES
-(
-	@accountId,
-	@newSum,
-	@oldSum
-)
+(@accountId, @newSum, @oldSum)
 
-SELECT * FROM dbo.Accounts a
-WHERE a.Id = 1
+SELECT *
+  FROM Accounts
+ WHERE Id = 1
 
-UPDATE dbo.Accounts
-SET
-    dbo.Accounts.Balance += 10
-WHERE dbo.Accounts.Id = 1
+UPDATE Accounts
+   SET Balance += 10
+ WHERE Id = 1
 
-SELECT * FROM dbo.Logs l
+SELECT * 
+  FROM Logs
 
 -- Problem 15
 CREATE TABLE NotificationEmails
 (
 	Id INT PRIMARY KEY IDENTITY,
-	Recipient INT FOREIGN KEY REFERENCES dbo.Accounts(Id),
+	Recipient INT FOREIGN KEY REFERENCES Accounts(Id),
 	[Subject] VARCHAR(50),
 	Body VARCHAR(MAX)
 );
 
 CREATE TRIGGER tr_LogInfo ON Logs FOR INSERT
 AS
-DECLARE @accountId INT = (SELECT i.AccountId FROM INSERTED i)
-DECLARE @oldSum DECIMAL(15, 2) = (SELECT i.OldSum FROM INSERTED i)
-DECLARE @newSum DECIMAL(15, 2) = (SELECT i.NewSum FROM INSERTED i)
+DECLARE @accountId INT = (SELECT AccountId FROM inserted)
+DECLARE @oldSum DECIMAL(15, 2) = (SELECT OldSum FROM inserted)
+DECLARE @newSum DECIMAL(15, 2) = (SELECT NewSum FROM inserted)
 
-INSERT INTO dbo.NotificationEmails
-(
-    Recipient,
-    [Subject],
-    Body
-)
+INSERT INTO NotificationEmails
+(Recipient, [Subject], Body)
 VALUES
 (
 	@accountId,
@@ -250,21 +238,23 @@ VALUES
 	CAST(@newSum AS VARCHAR(50)) + '.'
 )
 
-SELECT * FROM dbo.Accounts a WHERE a.Id = 1
+SELECT * 
+  FROM Accounts
+ WHERE Id = 1
 
-UPDATE dbo.Accounts
-SET
-    dbo.Accounts.Balance += 100 
-WHERE Id = 1
+UPDATE Accounts
+   SET Balance += 100 
+ WHERE Id = 1
 
-SELECT* FROM dbo.NotificationEmails ne
+SELECT * 
+  FROM NotificationEmails
 
 -- Problem 16
 CREATE PROCEDURE usp_DepositMoney (@AccountId INT, @MoneyAmount DECIMAL(15, 4))
 AS
 BEGIN TRANSACTION
 
-DECLARE @targetAccountId INT = (SELECT a.Id FROM dbo.Accounts a WHERE a.Id = @AccountId)
+DECLARE @targetAccountId INT = (SELECT Id FROM Accounts WHERE Id = @AccountId)
 
 IF(@MoneyAmount < 0 OR @MoneyAmount IS NULL)
 BEGIN
@@ -280,10 +270,9 @@ BEGIN
 	RETURN
 END
 
-UPDATE dbo.Accounts
-SET
-    dbo.Accounts.Balance += @MoneyAmount
-WHERE dbo.Accounts.Id = @targetAccountId
+UPDATE Accounts
+   SET Balance += @MoneyAmount
+ WHERE Id = @targetAccountId
 COMMIT
 
-EXEC usp_DepositMoney 1, 10
+EXEC dbo.usp_DepositMoney 1, 10
