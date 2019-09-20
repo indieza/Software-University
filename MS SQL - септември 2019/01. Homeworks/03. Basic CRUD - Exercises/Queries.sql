@@ -94,24 +94,23 @@ UPDATE Employees
    SET Salary *= 1.12
  WHERE DepartmentID IN(1, 2, 4, 11)
 
--- Problem 22
 SELECT Salary
   FROM Employees
 
 USE [Geography]
 
--- Problem 23
+-- Problem 22
   SELECT PeakName
     FROM Peaks
 ORDER BY PeakName
 
--- Problem 24
+-- Problem 23
   SELECT TOP(30) CountryName, [Population]
     FROM Countries
    WHERE ContinentCode = 'EU'
 ORDER BY [Population] DESC, CountryName ASC
 
--- Problem 25
+-- Problem 24
   SELECT CountryName, CountryCode,
     CASE
     WHEN CurrencyCode = 'EUR' THEN 'Euro'
@@ -122,7 +121,7 @@ ORDER BY CountryName
 
 USE Diablo
 
--- Problem 26
+-- Problem 25
   SELECT [Name]
     FROM Characters
 ORDER BY [Name]
