@@ -183,3 +183,39 @@ SELECT dbo.ufn_CashInUsersGames('Lily Stargazer')
 SELECT dbo.ufn_CashInUsersGames('Love in a mist')
 
 -- Problem 14
+CREATE TABLE Logs
+(
+	Id INT PRIMARY KEY IDENTITY,
+	AccountId INT FOREIGN KEY REFERENCES Accounts(Id),
+	NewSum DECIMAL(15, 2),
+	OldSum DECIMAL(15, 2)
+);
+
+CREATE TRIGGER tr_AddBalance ON dbo.Accounts FOR UPDATE
+AS
+DECLARE @newSum DECIMAL(15, 2) = (SELECT i.Balance FROM INSERTED i)
+DECLARE @oldSum DECIMAL(15, 2) = (SELECT d.Balance FROM DELETED d)
+DECLARE @accountId INT = (SELECT i.Id FROM INSERTED i)
+
+INSERT INTO dbo.Logs
+(
+    AccountId,
+    NewSum,
+    OldSum
+)
+VALUES
+(
+	@accountId,
+	@newSum,
+	@oldSum
+)
+
+SELECT * FROM dbo.Accounts a
+WHERE a.Id = 1
+
+UPDATE dbo.Accounts
+SET
+    dbo.Accounts.Balance += 10
+WHERE dbo.Accounts.Id = 1
+
+SELECT * FROM dbo.Logs l
