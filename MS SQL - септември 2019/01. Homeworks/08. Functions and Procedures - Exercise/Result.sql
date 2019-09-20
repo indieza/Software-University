@@ -219,3 +219,42 @@ SET
 WHERE dbo.Accounts.Id = 1
 
 SELECT * FROM dbo.Logs l
+
+-- Problem 15
+CREATE TABLE NotificationEmails
+(
+	Id INT PRIMARY KEY IDENTITY,
+	Recipient INT FOREIGN KEY REFERENCES dbo.Accounts(Id),
+	[Subject] VARCHAR(50),
+	Body VARCHAR(MAX)
+);
+
+CREATE TRIGGER tr_LogInfo ON Logs FOR INSERT
+AS
+DECLARE @accountId INT = (SELECT i.AccountId FROM INSERTED i)
+DECLARE @oldSum DECIMAL(15, 2) = (SELECT i.OldSum FROM INSERTED i)
+DECLARE @newSum DECIMAL(15, 2) = (SELECT i.NewSum FROM INSERTED i)
+
+INSERT INTO dbo.NotificationEmails
+(
+    Recipient,
+    [Subject],
+    Body
+)
+VALUES
+(
+	@accountId,
+	'Balance change for account: ' + CAST(@accountId AS VARCHAR(15)),
+	'On ' + CAST(GETDATE() AS VARCHAR(50)) + ' your balance was changed from ' +
+	CAST(@oldSum AS VARCHAR(30)) + ' to ' +
+	CAST(@newSum AS VARCHAR(50)) + '.'
+)
+
+SELECT * FROM dbo.Accounts a WHERE a.Id = 1
+
+UPDATE dbo.Accounts
+SET
+    dbo.Accounts.Balance += 100 
+WHERE Id = 1
+
+SELECT* FROM dbo.NotificationEmails ne
