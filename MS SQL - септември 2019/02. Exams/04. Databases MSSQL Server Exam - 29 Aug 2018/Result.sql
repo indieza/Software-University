@@ -168,3 +168,28 @@ GROUP BY o.[DateTime], o.EmployeeId, o.Id) AS e
 	JOIN Shifts AS s ON s.EmployeeId = e.EmployeeId
    WHERE e.Rank = 1 AND e.[DateTime] BETWEEN s.CheckIn AND s.CheckOut
 ORDER BY [Full Name], [WorkHours] DESC, [Total Price] DESC;
+
+CREATE TABLE DeletedOrders
+(
+	OrderId INT,
+	ItemId INT,
+	ItemQuantity INT
+);
+
+CREATE TRIGGER tr_DeletedOrder ON [dbo].[OrderItems] FOR DELETE
+AS
+BEGIN
+	INSERT INTO [dbo].[DeletedOrders]
+	(
+	    [OrderId],
+	    [ItemId],
+	    [ItemQuantity]
+	)
+	SELECT * FROM [DELETED] AS d
+END
+
+DELETE FROM OrderItems
+WHERE OrderId = 5
+
+DELETE FROM Orders
+WHERE Id = 5
