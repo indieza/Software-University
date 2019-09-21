@@ -138,9 +138,9 @@ ORDER BY s.[Name];
 ORDER BY s.[Name] DESC;
 
 -- 13. Select all planets and their journey count
-   SELECT Planets.PlanetName, COUNT(Planets.PlanetName) AS [JourneysCount]
-     FROM (
-   SELECT p.[Name] AS [PlanetName]
+  SELECT Planets.PlanetName, COUNT(Planets.PlanetName) AS [JourneysCount]
+    FROM (
+  SELECT p.[Name] AS [PlanetName]
     FROM Planets AS p
     JOIN Spaceports As s ON s.PlanetId = p.Id
 	JOIN Journeys AS j ON j.DestinationSpaceportId = s.Id) AS Planets
