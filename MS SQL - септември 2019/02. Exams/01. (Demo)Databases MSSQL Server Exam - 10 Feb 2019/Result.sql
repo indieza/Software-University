@@ -83,7 +83,39 @@ DELETE TravelCards
 DELETE Journeys
  WHERE Id IN(1, 2, 3);
 
- -- 05. Select all travel cards
+-- 05. Select all travel cards
   SELECT CardNumber, JobDuringJourney
     FROM TravelCards
 ORDER BY CardNumber;
+
+-- 06. Select all colonists
+  SELECT Id, FirstName + ' ' + LastName AS [FullName], Ucn
+    FROM Colonists
+ORDER BY FirstName, LastName, Id;
+
+-- 07. Select all military journeys
+  SELECT Id, FORMAT(JourneyStart, 'dd/MM/yyyy'), FORMAT(JourneyEnd, 'dd/MM/yyyy')
+    FROM Journeys
+   WHERE Purpose = 'Military'
+ORDER BY JourneyStart;
+
+-- 08. Select all pilots
+  SELECT c.Id, c.FirstName + ' ' + c.LastName AS [full_name]
+    FROM Colonists AS c
+    JOIN TravelCards AS tc ON tc.ColonistId = c.Id
+   WHERE tc.JobDuringJourney = 'Pilot'
+ORDER BY c.Id;
+
+-- 09. Count colonists
+SELECT COUNT(*) AS [count]
+  FROM Colonists AS c
+  JOIN TravelCards AS tc ON tc.ColonistId = c.Id
+  JOIN Journeys AS j ON j.Id = tc.JourneyId
+ WHERE j.Purpose = 'Technical';
+
+-- 10. Select the fastest spaceship
+  SELECT TOP(1) s.[Name], ss.[Name]
+    FROM Spaceships AS s
+    JOIN Journeys AS j ON j.SpaceshipId = s.Id
+    JOIN Spaceports AS ss ON ss.Id = j.DestinationSpaceportId
+ORDER BY s.LightSpeedRate DESC;
