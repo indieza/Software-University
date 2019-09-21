@@ -148,13 +148,13 @@ GROUP BY Planets.PlanetName
 ORDER BY JourneysCount DESC, Planets.PlanetName;
 
 -- 14. Select the shortest journey
-SELECT TOP(1) k.Id, k.PlanetName, k.SpaceportName, k.Purpose
-  FROM (
-SELECT j.Id, p.[Name] AS [PlanetName],
-       s.[Name] As [SpaceportName],
-	   j.Purpose,
-	   DATEDIFF(DAY, j.JourneyStart, j.JourneyEnd) AS [Days]
-  FROM Journeys AS j
-  JOIN Spaceports AS s ON s.Id = j.DestinationSpaceportId
-  JOIN Planets AS p ON p.Id = s.PlanetId) AS k
+  SELECT TOP(1) k.Id, k.PlanetName, k.SpaceportName, k.Purpose
+    FROM (
+  SELECT j.Id, p.[Name] AS [PlanetName],
+         s.[Name] As [SpaceportName],
+  	     j.Purpose,
+  	     DATEDIFF(DAY, j.JourneyStart, j.JourneyEnd) AS [Days]
+    FROM Journeys AS j
+    JOIN Spaceports AS s ON s.Id = j.DestinationSpaceportId
+    JOIN Planets AS p ON p.Id = s.PlanetId) AS k
 ORDER BY k.[Days];
