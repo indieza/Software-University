@@ -158,3 +158,41 @@ ORDER BY JourneysCount DESC, Planets.PlanetName;
     JOIN Spaceports AS s ON s.Id = j.DestinationSpaceportId
     JOIN Planets AS p ON p.Id = s.PlanetId) AS k
 ORDER BY k.[Days];
+
+-- 18. Get Colonists Count
+CREATE FUNCTION dbo.udf_GetColonistsCount(@PlanetName VARCHAR (30))
+RETURNS INT
+AS
+BEGIN
+	RETURN (SELECT COUNT(*)
+             FROM Colonists AS c
+             JOIN TravelCards AS tc ON tc.ColonistId = c.Id
+             JOIN Journeys AS j ON j.Id = tc.JourneyId
+             JOIN Spaceports AS s ON s.Id = j.DestinationSpaceportId
+             JOIN Planets AS p ON p.Id = s.PlanetId
+            WHERE p.[Name] = @PlanetName)
+END
+
+SELECT dbo.udf_GetColonistsCount('Otroyphus')
+
+-- 19. Change Journey Purpose
+CREATE PROCEDURE usp_ChangeJourneyPurpose(@JourneyId INT, @NewPurpose VARCHAR(50))
+    AS
+DECLARE @targetJourneyId INT = (SELECT Id FROM Journeys WHERE Id = @JourneyId)
+
+IF(@targetJourneyId IS NULL)
+	RAISERROR('The journey does not exist!', 16, 1)
+
+DECLARE @targetPurpose VARCHAR(50) = (SELECT Purpose FROM Journeys WHERE Id = @JourneyId)
+
+IF(@targetPurpose = @NewPurpose)
+	RAISERROR('You cannot change the purpose!', 16, 2)
+
+UPDATE Journeys
+   SET Purpose = @NewPurpose
+ WHERE Id = @JourneyId
+
+EXEC usp_ChangeJourneyPurpose 1, 'Technical'
+SELECT * FROM Journeys
+EXEC usp_ChangeJourneyPurpose 2, 'Educational'
+EXEC usp_ChangeJourneyPurpose 196, 'Technical'
