@@ -169,6 +169,13 @@ ORDER BY DATEDIFF(DAY, [j].[JourneyStart], [j].[JourneyEnd]) DESC) AS k
 GROUP BY [tc].[JobDuringJourney], [k].[Id]
 ORDER BY COUNT([tc].[JobDuringJourney]);
 
+-- 17. Planets and Spaceports
+   SELECT [p].[Name], COUNT([s].[Name]) AS [Count]
+     FROM [dbo].[Planets] AS p
+LEFT JOIN [dbo].[Spaceports] AS [s] ON [p].[Id] = [s].[PlanetId]
+ GROUP BY [p].[Name]
+ ORDER BY [Count] DESC, [p].[Name];
+
 -- 18. Get Colonists Count
 CREATE FUNCTION dbo.udf_GetColonistsCount(@PlanetName VARCHAR (30))
 RETURNS INT
