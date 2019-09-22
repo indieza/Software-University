@@ -159,6 +159,9 @@ ORDER BY JourneysCount DESC, Planets.PlanetName;
     JOIN Planets AS p ON p.Id = s.PlanetId) AS k
 ORDER BY k.[Days];
 
+-- 15. Select the less popular job
+
+
 -- 18. Get Colonists Count
 CREATE FUNCTION dbo.udf_GetColonistsCount(@PlanetName VARCHAR (30))
 RETURNS INT
