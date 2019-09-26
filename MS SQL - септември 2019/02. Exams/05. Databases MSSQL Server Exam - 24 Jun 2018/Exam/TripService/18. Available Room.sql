@@ -1,6 +1,0 @@
-CREATE FUNCTION udf_GetAvailableRoom(@HotelId INT, @Date DATE, @People INT)
-RETURNS VARCHAR(MAX)
-AS
-BEGIN
-	
-END
