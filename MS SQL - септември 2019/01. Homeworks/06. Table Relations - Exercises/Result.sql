@@ -1,3 +1,4 @@
+-- Problem 1
 CREATE DATABASE OneToOne;
 
 USE OneToOne;
@@ -30,6 +31,7 @@ SELECT *
   FROM Persons AS p
   JOIN Passports As pass ON pass.PassportID = p.PassportID;
 
+-- Problem 2
 CREATE DATABASE OneToMany;
 
 USE OneToMany;
@@ -65,6 +67,7 @@ SELECT *
   FROM Manufacturers AS m
   JOIN Models AS ml ON ml.ManufacturerID = m.ManufacturerID;
 
+-- Problem 3
 CREATE DATABASE ManyToMany;
 
 USE ManyToMany;
@@ -111,6 +114,7 @@ SELECT *
   JOIN Students AS s ON s.StudentID = se.StudentID
   JOIN Exams AS e ON e.ExamID = se.ExamID;
 
+-- Problem 4
 CREATE DATABASE SelfFeferencing;
 
 USE SelfFeferencing;
@@ -130,6 +134,7 @@ INSERT INTO Teachers([Name], ManagerID) VALUES
 ('Mark', 101),
 ('Greta', 101);
 
+-- Problem 5
 CREATE DATABASE Store;
 
 USE Store;
@@ -174,6 +179,7 @@ CREATE TABLE OrderItems
 	CONSTRAINT PK_OrderItems PRIMARY KEY (OrderID, ItemID)
 );
 
+-- Problem 6
 CREATE DATABASE University;
 
 USE University;
@@ -213,6 +219,7 @@ CREATE TABLE Agenda
 	CONSTRAINT PK_Agenda PRIMARY KEY (StudentID, SubjectID)
 );
 
+--Problem 9
 USE [Geography];
 
   SELECT *
