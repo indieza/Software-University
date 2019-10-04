@@ -27,8 +27,7 @@ BEGIN
       FROM [dbo].[Hotels] AS h
       JOIN [dbo].[Rooms] AS [r] ON [h].[Id] = [r].[HotelId]
       JOIN [dbo].[Trips] AS [t] ON [r].[Id] = [t].[RoomId]
-     WHERE @Date NOT BETWEEN [t].[ArrivalDate] AND
-	       [t].[ReturnDate] AND
+     WHERE @Date NOT BETWEEN [t].[ArrivalDate] AND [t].[ReturnDate] AND
 		   [h].[Id] = @HotelId AND
 		   [r].[Beds] > @People AND
 		   [t].[CancelDate] IS NULL
