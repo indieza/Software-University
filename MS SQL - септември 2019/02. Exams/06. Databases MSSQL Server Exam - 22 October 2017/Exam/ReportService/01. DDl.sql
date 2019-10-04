@@ -1,0 +1,57 @@
+CREATE DATABASE ReportService;
+
+USE ReportService;
+
+CREATE TABLE Users
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	Username NVARCHAR(30) NOT NULL UNIQUE,
+	[Password] NVARCHAR(50) NOT NULL,
+	[Name] NVARCHAR(50),
+	Gender CHAR(1) NOT NULL CHECK(Gender IN ('M', 'F')),
+	BirthDate DATETIME,
+	Age INT,
+	Email NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Departments
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	[Name] NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Employees
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	FirstName NVARCHAR(25),
+	LastName NVARCHAR(25),
+	Gender CHAR(1) NOT NULL CHECK(Gender IN ('M', 'F')),
+	BirthDate DATETIME,
+	Age INT,
+	DepartmentId INT FOREIGN KEY REFERENCES [dbo].[Departments]([Id]) NOT NULL
+);
+
+CREATE TABLE Categories
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	[Name] NVARCHAR(25),
+	DepartmentId INT FOREIGN KEY REFERENCES [dbo].[Departments]([Id])
+);
+
+CREATE TABLE [Status]
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	[Label] VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE Reports
+(
+	Id INT PRIMARY KEY IDENTITY NOT NULL,
+	CategoryId INT FOREIGN KEY REFERENCES [dbo].[Categories]([Id]) NOT NULL,
+	StatusId INT FOREIGN KEY REFERENCES [dbo].[Status]([Id]),
+	OpenDate DATETIME NOT NULL,
+	CloseDate DATETIME,
+	[Description] VARCHAR(200),
+	UserId INT FOREIGN KEY REFERENCES [dbo].[Users]([Id]) NOT NULL,
+	EmployeeId INT FOREIGN KEY REFERENCES [dbo].[Employees]([Id])
+);
