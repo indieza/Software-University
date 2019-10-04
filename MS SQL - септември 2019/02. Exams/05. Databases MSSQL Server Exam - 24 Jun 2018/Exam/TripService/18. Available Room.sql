@@ -25,7 +25,7 @@ BEGIN
 				  [r].[Beds],
 				  ([h].[BaseRate] + [r].[Price]) * @People AS [PriceFull]
       FROM [dbo].[Hotels] AS h
-      JOIN [dbo].[Rooms] AS [r] ON @HotelId = [r].[HotelId]
+      JOIN [dbo].[Rooms] AS [r] ON [h].[Id] = [r].[HotelId]
       JOIN [dbo].[Trips] AS [t] ON [r].[Id] = [t].[RoomId]
      WHERE @Date NOT BETWEEN [t].[ArrivalDate] AND
 	       [t].[ReturnDate] AND
