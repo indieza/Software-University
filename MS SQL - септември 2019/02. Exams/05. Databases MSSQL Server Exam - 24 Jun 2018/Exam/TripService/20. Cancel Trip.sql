@@ -4,5 +4,5 @@ BEGIN
 	UPDATE [dbo].[Trips]
 	   SET
 	       [dbo].[Trips].[CancelDate] = GETDATE()
-	 WHERE [Id] IN (SELECT [d].[Id] FROM [DELETED] AS d WHERE [d].[CancelDate] IS NULL)
+	 WHERE [dbo].[Trips].[Id] IN (SELECT [d].[Id] FROM [DELETED] AS d WHERE [d].[CancelDate] IS NULL)
 END

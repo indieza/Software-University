@@ -1,32 +1,31 @@
 CREATE PROCEDURE usp_SwitchRoom(@TripId INT, @TargetRoomId INT)
 AS
 BEGIN
-	DECLARE @realHotelId INT = (SELECT [h].[Id]
-                                  FROM [dbo].[Hotels] AS h
-								  JOIN [dbo].[Rooms] AS [r] ON [h].[Id] = [r].[HotelId]
-								  JOIN [dbo].[Trips] AS [t] ON [r].[Id] = [t].[RoomId]
-                                 WHERE [t].[Id] = @TripId)
+	DECLARE @roomHotel INT = (SELECT [h].[Id]
+                                FROM [dbo].[Rooms] AS r
+                                JOIN [dbo].[Hotels] AS [h] ON [r].[HotelId] = [h].[Id]
+                               WHERE [r].[Id] = @TargetRoomId)
 
-	DECLARE @checkHotelId INT = (SELECT [h].[Id]
-                                   FROM [dbo].[Hotels] AS h
-                                   JOIN [dbo].[Rooms] AS [r] ON [h].[Id] = [r].[HotelId]
-                                  WHERE [r].[Id] = @TargetRoomId)
+	DECLARE @tripRoomHotel INT = (SELECT [h].[Id]
+                                    FROM [dbo].[Trips] AS t
+                                    JOIN [dbo].[Rooms] AS [r] ON [t].[RoomId] = [r].[Id]
+                                    JOIN [dbo].[Hotels] AS [h] ON [r].[HotelId] = [h].[Id]
+                                   WHERE [t].[Id] = @TripId)
 
-	IF(@realHotelId <> @checkHotelId)
+	IF(@roomHotel <> @tripRoomHotel)
 	BEGIN
 		RAISERROR('Target room is in another hotel!', 16, 1)
 		RETURN
 	END
 
-	DECLARE @realPeopleCount INT = (SELECT COUNT([at].[AccountId])
-                                      FROM [dbo].[AccountsTrips] AS [at]
-                                     WHERE [at].[TripId] = @TripId)
+	DECLARE @peopleCount INT = (SELECT COUNT(*)
+                                  FROM [dbo].[AccountsTrips] AS [at]
+                                 WHERE [at].[TripId] = @TripId)
+	DECLARE @bedsCount INT = (SELECT [r].[Beds]
+                                FROM [dbo].[Rooms] AS r
+                               WHERE [r].[Id] = @TargetRoomId)
 
-	DECLARE @checkRoomsCount INT = (SELECT [r].[Beds]
-                                      FROM [dbo].[Rooms] AS [r]
-                                     WHERE [r].[Id] = @TargetRoomId)
-
-	IF(@realPeopleCount > @checkRoomsCount)
+	IF(@bedsCount < @peopleCount)
 	BEGIN
 		RAISERROR('Not enough beds in target room!', 16, 2)
 		RETURN
