@@ -1,7 +1,9 @@
 CREATE PROCEDURE usp_ExcludeFromSchool(@StudentId INT)
 AS
 BEGIN
-	DECLARE @targetId INT = (SELECT [s].[Id] FROM [dbo].[Students] AS s WHERE [s].[Id] = @StudentId)
+	DECLARE @targetId INT = (SELECT [s].[Id]
+	                           FROM [dbo].[Students] AS s
+							  WHERE [s].[Id] = @StudentId)
 
 	IF(@targetId IS NULL)
 	BEGIN
@@ -18,12 +20,12 @@ BEGIN
 	 WHERE [dbo].[StudentsSubjects].[StudentId] = @StudentId
 
 	DELETE
-	 FROM [dbo].[StudentsTeachers]
-	WHERE [dbo].[StudentsTeachers].[StudentId] = @StudentId
+	  FROM [dbo].[StudentsTeachers]
+	 WHERE [dbo].[StudentsTeachers].[StudentId] = @StudentId
 
-   DELETE
-     FROM [dbo].[Students]
-    WHERE [dbo].[Students].[Id] = @StudentId
+	DELETE
+	  FROM [dbo].[Students]
+	 WHERE [dbo].[Students].[Id] = @StudentId
 END
 
 EXEC usp_ExcludeFromSchool 1
