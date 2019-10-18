@@ -4,7 +4,7 @@
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="DESKTOP-40U9D0R\SQLEXPRESS:DESKTOP-40U9D0R\Simeon Valev">
-          <Created>2019-10-11T14:25:42.1994499+03:00</Created>
+          <Created>2019-10-18T13:15:53.9894385+03:00</Created>
           <Type>SQL</Type>
           <Server>DESKTOP-40U9D0R\SQLEXPRESS</Server>
           <UserName />

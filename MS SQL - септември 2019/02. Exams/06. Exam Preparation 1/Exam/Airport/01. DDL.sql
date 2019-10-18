@@ -1,6 +1,6 @@
 CREATE DATABASE Airport;
 
-USE [Airport];
+USE Airport;
 
 CREATE TABLE Planes
 (

@@ -6,4 +6,4 @@ DELETE
 
 DELETE
   FROM [dbo].[Flights]
- WHERE [dbo].[Flights].[Destination] = 'Ayn Halagim';
+ WHERE [Destination] = 'Ayn Halagim';

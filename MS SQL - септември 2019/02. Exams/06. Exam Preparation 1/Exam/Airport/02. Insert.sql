@@ -54,4 +54,4 @@ VALUES
 ),
 (
     'Shoulder Bag'
-)
+);
