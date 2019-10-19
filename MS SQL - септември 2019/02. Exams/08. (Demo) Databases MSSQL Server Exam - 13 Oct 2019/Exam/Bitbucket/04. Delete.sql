@@ -8,4 +8,4 @@ DELETE
   FROM [dbo].[Issues]
  WHERE [dbo].[Issues].[RepositoryId] IN (SELECT [r].[Id]
                                            FROM [dbo].[Repositories] AS r
-								          WHERE [r].[Name] = 'Softuni-Teamwork');
+										  WHERE [r].[Name] = 'Softuni-Teamwork');
