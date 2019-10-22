@@ -1,9 +1,5 @@
 namespace _04._AddMinion
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public static class Queries
     {
         public const string TakeTownId = "SELECT Id FROM Towns WHERE Name = @townName";

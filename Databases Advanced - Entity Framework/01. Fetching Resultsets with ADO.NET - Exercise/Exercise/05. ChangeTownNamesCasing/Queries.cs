@@ -1,9 +1,5 @@
 namespace _05._ChangeTownNamesCasing
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public static class Queries
     {
         public const string EditTownNames = @"UPDATE Towns
