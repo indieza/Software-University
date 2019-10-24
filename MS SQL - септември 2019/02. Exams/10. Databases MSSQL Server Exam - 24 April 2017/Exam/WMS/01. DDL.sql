@@ -1,0 +1,77 @@
+CREATE DATABASE WMS;
+
+USE [WMS];
+
+CREATE TABLE Clients
+(
+	ClientId INT PRIMARY KEY IDENTITY NOT NULL,
+	FirstName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL,
+	Phone CHAR(12) NOT NULL
+);
+
+
+CREATE TABLE Mechanics
+(
+	MechanicId INT PRIMARY KEY IDENTITY NOT NULL,
+	FirstName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL,
+	[Address] NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Models
+(
+	ModelId INT PRIMARY KEY IDENTITY NOT NULL,
+	[Name] NVARCHAR(50) NOT NULL UNIQUE,
+);
+
+CREATE TABLE Jobs
+(
+	JobId INT PRIMARY KEY IDENTITY NOT NULL,
+	ModelId INT FOREIGN KEY REFERENCES [dbo].[Models]([ModelId]) NOT NULL,
+	[Status] VARCHAR(11) CHECK([Status] IN ('Pending', 'In Progress', 'Finished')) DEFAULT('Pending') NOT NULL,
+	ClientId INT FOREIGN KEY REFERENCES [dbo].[Clients]([ClientId]) NOT NULL,
+	MechanicId INT FOREIGN KEY REFERENCES [dbo].[Mechanics]([MechanicId]),
+	IssueDate DATE NOT NULL,
+	FinishDate DATE
+);
+
+CREATE TABLE Orders
+(
+	OrderId INT PRIMARY KEY IDENTITY NOT NULL,
+	JobId INT FOREIGN KEY REFERENCES [dbo].[Jobs]([JobId]) NOT NULL,
+	IssueDate DATE,
+	Delivered BIT NOT NULL DEFAULT(0)
+);
+
+CREATE TABLE Vendors
+(
+	VendorId INT PRIMARY KEY IDENTITY NOT NULL,
+	[Name] NVARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE Parts
+(
+	PartId INT PRIMARY KEY IDENTITY NOT NULL,
+	SerialNumber NVARCHAR(50) NOT NULL UNIQUE,
+	[Description] NVARCHAR(255),
+	Price DECIMAL(15, 2) NOT NULL CHECK(Price > 0),
+	VendorId INT FOREIGN KEY REFERENCES [dbo].[Vendors]([VendorId]) NOT NULL,
+	StockQty INT NOT NULL CHECK(StockQty >= 0) DEFAULT(0)
+);
+
+CREATE TABLE OrderParts
+(
+	OrderId INT FOREIGN KEY REFERENCES [dbo].[Orders]([OrderId]) NOT NULL,
+	PartId INT FOREIGN KEY REFERENCES [dbo].[Parts]([PartId]) NOT NULL,
+	Quantity INT NOT NULL CHECK(Quantity > 0) DEFAULT(1),
+	CONSTRAINT PK_OrderParts PRIMARY KEY (OrderId, PartId)
+);
+
+CREATE TABLE PartsNeeded
+(
+	JobId INT FOREIGN KEY REFERENCES [dbo].[Jobs]([JobId]) NOT NULL,
+	PartId INT FOREIGN KEY REFERENCES [dbo].[Parts]([PartId]) NOT NULL,
+	Quantity INT NOT NULL CHECK(Quantity > 0) DEFAULT(1),
+	CONSTRAINT PK_PartsNeeded PRIMARY KEY (JobId, PartId)
+);
