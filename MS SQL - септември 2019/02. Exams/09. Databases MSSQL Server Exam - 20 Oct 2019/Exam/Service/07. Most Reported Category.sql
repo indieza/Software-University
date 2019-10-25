@@ -3,4 +3,4 @@
     FROM [dbo].[Reports] AS r
     JOIN [dbo].[Categories] AS [c] ON [r].[CategoryId] = [c].[Id]
 GROUP BY [c].[Name]
-ORDER BY [ReportsNumber] DESC, [CategoryName];
+ORDER BY [ReportsNumber] DESC, [c].[Name];
