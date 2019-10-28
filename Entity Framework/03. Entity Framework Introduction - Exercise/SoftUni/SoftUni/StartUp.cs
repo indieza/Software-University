@@ -1,7 +1,9 @@
-﻿using SoftUni.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SoftUni.Data;
 using SoftUni.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -13,7 +15,7 @@ namespace SoftUni
         {
             using (SoftUniContext context = new SoftUniContext())
             {
-                Console.WriteLine(AddNewAddressToEmployee(context));
+                Console.WriteLine(GetEmployeesInPeriod(context));
             }
         }
 
@@ -114,6 +116,35 @@ namespace SoftUni
             foreach (var employee in employees)
             {
                 sb.AppendLine(employee);
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+
+        public static string GetEmployeesInPeriod(SoftUniContext context)
+        {
+            var employees = context.Employees
+                .Include(x => x.Manager)
+                .Include(x => x.EmployeesProjects)
+                .ThenInclude(x => x.Project)
+                .Where(employee => employee.EmployeesProjects
+                .Any(project => project.Project.StartDate.Year >= 2001
+                             && project.Project.StartDate.Year <= 2003))
+                .Take(10)
+                .ToList();
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var employee in employees)
+            {
+                sb.AppendLine($"{employee.FirstName} {employee.LastName} - Manager: {employee.Manager.FirstName} {employee.Manager.LastName}");
+
+                foreach (var project in employee.EmployeesProjects)
+                {
+                    sb.AppendLine($"--{project.Project.Name} -" +
+                                       $" {project.Project.StartDate.ToString("M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture)} - " +
+                                       $"{(project.Project.EndDate == null ? "not finished" : project.Project.EndDate.Value.ToString("M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture))}");
+                }
             }
 
             return sb.ToString().TrimEnd();
