@@ -1,12 +1,12 @@
-﻿using P01_HospitalDatabase.Data;
+﻿using P03_SalesDatabase.Data;
 
-namespace P01_HospitalDatabase
+namespace P03_SalesDatabase
 {
     public class StartUp
     {
         private static void Main()
         {
-            var db = new HospitalContext();
+            var db = new SalesContext();
             db.Database.EnsureCreated();
         }
     }

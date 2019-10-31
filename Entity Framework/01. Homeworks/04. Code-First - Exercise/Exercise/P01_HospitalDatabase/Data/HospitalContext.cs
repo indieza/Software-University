@@ -15,6 +15,8 @@ namespace P01_HospitalDatabase.Data
 
         public DbSet<Visitation> Visitations { get; set; }
 
+        public DbSet<Doctor> Doctors { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(Configuration.ConnectionString);
@@ -27,6 +29,26 @@ namespace P01_HospitalDatabase.Data
             ConfigurationOnPatient(modelBuilder);
             ConfigurationOnVisitation(modelBuilder);
             ConfigurationOnPatientsMedicaments(modelBuilder);
+            ConfigurtionOnDoctors(modelBuilder);
+        }
+
+        private void ConfigurtionOnDoctors(ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Entity<Doctor>()
+                .HasKey(k => k.DoctorId);
+
+            modelBuilder
+                .Entity<Doctor>()
+                .Property(p => p.Name)
+                .HasMaxLength(100)
+                .IsUnicode();
+
+            modelBuilder
+                .Entity<Doctor>()
+                .Property(p => p.Specialty)
+                .HasMaxLength(100)
+                .IsUnicode();
         }
 
         private void ConfigurationOnPatientsMedicaments(ModelBuilder modelBuilder)
