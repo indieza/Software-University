@@ -33,6 +33,10 @@ namespace P01_HospitalDatabase.Data
         {
             modelBuilder
                 .Entity<PatientMedicament>()
+                .HasKey(k => new { k.MedicamentId, k.PatientId });
+
+            modelBuilder
+                .Entity<PatientMedicament>()
                 .HasOne(p => p.Patient)
                 .WithMany(pm => pm.Prescriptions)
                 .HasForeignKey(k => k.PatientId);
