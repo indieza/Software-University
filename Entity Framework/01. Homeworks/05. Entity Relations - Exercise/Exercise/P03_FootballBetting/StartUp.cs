@@ -1,4 +1,4 @@
-﻿using System;
+﻿using P03_FootballBetting.Data;
 
 namespace P03_FootballBetting
 {
@@ -6,6 +6,9 @@ namespace P03_FootballBetting
     {
         private static void Main()
         {
+            var db = new FootballBettingContext();
+
+            db.Database.EnsureCreated();
         }
     }
 }
