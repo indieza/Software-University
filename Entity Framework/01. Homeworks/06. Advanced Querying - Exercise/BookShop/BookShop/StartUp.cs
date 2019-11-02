@@ -11,11 +11,10 @@
     {
         public static void Main()
         {
-            Console.WriteLine(GetMostRecentBooks(new BookShopContext()));
-            //using (var db = new BookShopContext())
-            //{
-            //    DbInitializer.ResetDatabase(db);
-            //}
+            using (var db = new BookShopContext())
+            {
+                DbInitializer.ResetDatabase(db);
+            }
         }
 
         public static string GetBooksByAgeRestriction(BookShopContext context, string command)
