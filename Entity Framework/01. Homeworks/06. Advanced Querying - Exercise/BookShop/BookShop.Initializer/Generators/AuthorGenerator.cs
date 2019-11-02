@@ -46,7 +46,6 @@
                 "Jane Ortiz",
                 "Randy Morales",
                 "Lisa Davis",
-
             };
 
             int authorCount = authorNames.Length;

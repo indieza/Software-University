@@ -2,7 +2,7 @@
 {
     using BookShop.Models;
 
-    internal class CategoryGenerator 
+    internal class CategoryGenerator
     {
         internal static Category[] CreateCategories()
         {

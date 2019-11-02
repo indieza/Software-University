@@ -1,9 +1,8 @@
 ﻿namespace BookShop.Data.EntityConfiguration
 {
-    using Models;
-
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
+    using Models;
 
     internal class AuthorConfiguration : IEntityTypeConfiguration<Author>
     {

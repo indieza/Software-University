@@ -2,6 +2,7 @@
 {
     internal class Configuration
     {
-        internal static string ConnectionString => "Server=.;Database=BookShop;Integrated Security=True;";
+        public const string ConnectionString =
+            "Server=DESKTOP-40U9D0R\\SQLEXPRESS;Database=BookShop;Integrated Security=true";
     }
 }

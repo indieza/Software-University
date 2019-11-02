@@ -1,10 +1,9 @@
 ﻿namespace BookShop.Initializer
 {
-    using System;
-
     using Data;
-    using Models;
     using Generators;
+    using Models;
+    using System;
 
     public class DbInitializer
     {
