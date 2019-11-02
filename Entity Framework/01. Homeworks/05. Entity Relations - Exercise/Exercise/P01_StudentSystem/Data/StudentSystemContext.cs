@@ -31,6 +31,9 @@ namespace P01_StudentSystem.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder
+                .Entity<StudentCourse>()
+                .HasKey(k => new { k.CourseId, k.StudentId });
         }
     }
 }
