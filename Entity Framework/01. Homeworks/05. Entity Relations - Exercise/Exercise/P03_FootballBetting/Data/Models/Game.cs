@@ -39,7 +39,7 @@ namespace P03_FootballBetting.Data.Models
         public decimal DrawBetRate { get; set; }
 
         [Required]
-        public decimal Result { get; set; }
+        public string Result { get; set; }
 
         public ICollection<PlayerStatistic> PlayerStatistics { get; set; } = new HashSet<PlayerStatistic>();
 

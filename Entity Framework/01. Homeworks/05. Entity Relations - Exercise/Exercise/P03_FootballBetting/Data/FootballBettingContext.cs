@@ -5,6 +5,15 @@ namespace P03_FootballBetting.Data
 
     public class FootballBettingContext : DbContext
     {
+		public FootballBettingContext()
+        {
+        }
+
+        public FootballBettingContext(DbContextOptions dbContextOptions)
+            : base(dbContextOptions)
+        {
+        }
+		
         public DbSet<Bet> Bets { get; set; }
 
         public DbSet<Color> Colors { get; set; }
