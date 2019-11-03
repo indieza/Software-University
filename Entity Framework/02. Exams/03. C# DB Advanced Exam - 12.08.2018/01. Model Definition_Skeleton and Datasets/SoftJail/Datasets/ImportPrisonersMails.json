@@ -1,0 +1,733 @@
+﻿[
+  {
+    "FullName": "",
+    "Nickname": "The Wallaby",
+    "Age": 32,
+    "IncarcerationDate": "29/03/1957",
+    "ReleaseDate": "27/03/2006",
+    "Bail": null,
+    "CellId": 5,
+    "Mails": [
+      {
+        "Description": "Invalid FullName",
+        "Sender": "Invalid Sender",
+        "Address": "No Address"
+      },
+      {
+        "Description": "Do not put this in your code",
+        "Sender": "My Ansell",
+        "Address": "ha-ha-ha"
+      }
+    ]
+  },
+  {
+    "FullName": null,
+    "Nickname": "The Null",
+    "Age": 38,
+    "IncarcerationDate": "12/09/1967",
+    "ReleaseDate": "07/02/1989",
+    "Bail": 93934.2,
+    "CellId": 4,
+    "Mails": [
+      {
+        "Description": "Hello, my name is Mr. Null and I am invisible for computers",
+        "Sender": "Mr. Null",
+        "Address": "6 Riverside Trail str."
+      }
+    ]
+  },
+  {
+    "FullName": "Bobby Bock",
+    "Nickname": "Young and Beautiful",
+    "Age": 14,
+    "IncarcerationDate": "01/01/1967",
+    "ReleaseDate": "01/01/1989",
+    "Bail": 93934.2,
+    "CellId": 4,
+    "Mails": [
+      {
+        "Description": "I am not old enough to be in prison so get out of here :P",
+        "Sender": "Small Bobby",
+        "Address": "6 Riverside Trail str."
+      }
+    ]
+  },
+  {
+    "FullName": "Melanie Simonich",
+    "Nickname": "The Wallaby",
+    "Age": 32,
+    "IncarcerationDate": "29/03/1957",
+    "ReleaseDate": "27/03/2006",
+    "Bail": null,
+    "CellId": 5,
+    "Mails": [
+      {
+        "Description": "please add me to your LinkedIn network",
+        "Sender": "Zonda Vasiljevic",
+        "Address": "51677 Rieder Center str."
+      },
+      {
+        "Description": "Melanie i hope you found the best place for you!",
+        "Sender": "Shell Lofthouse",
+        "Address": "5877 Shoshone Way str."
+      },
+      {
+        "Description": "Turns out they wanted to implement things like fully responsive dynamic content, useful apps, etc – all things I told them they needed in the first place but which they opted not to include.",
+        "Sender": "My Ansell",
+        "Address": "71908 Waubesa Plaza str."
+      }
+    ]
+  },
+  {
+    "FullName": "Amber Duval",
+    "Nickname": "The Leopard",
+    "Age": 5,
+    "IncarcerationDate": "29/06/1967",
+    "ReleaseDate": "26/09/2014",
+    "Bail": null,
+    "CellId": 3,
+    "Mails": [
+      {
+        "Description": "Once the site finally went live, they asked me to start from scratch.",
+        "Sender": "Rosene Nossent",
+        "Address": "2551 Fulton Parkway str."
+      },
+      {
+        "Description": "What do you mean a vector file? What is that? Is not PNG work for you? It has a transparent background!",
+        "Sender": "Abigail Rooper",
+        "Address": "66 Johnson Parkway str."
+      },
+      {
+        "Description": "I do not like this Word file and I am tired of PDFs. Please save it as a jpg so they can enter their info in it that way.",
+        "Sender": "Avril Lotze",
+        "Address": "62 Muir Hill str."
+      },
+      {
+        "Description": "I made a promotional video for a client. I found a perfect song for background use, but it was watermarked with a woman’s voice saying this is a watermark. Please buy a license to remove this voice sample.",
+        "Sender": "Lise Gerin",
+        "Address": "3 2nd Avenue str."
+      },
+      {
+        "Description": "Do you like the song I used?",
+        "Sender": "Constancia Pieche",
+        "Address": "8243 Vermont Plaza str."
+      }
+    ]
+  },
+  {
+    "FullName": "Karel Sancho",
+    "Nickname": null,
+    "Age": 58,
+    "IncarcerationDate": "26/09/1955",
+    "ReleaseDate": "09/08/2001",
+    "Bail": 27299.5,
+    "CellId": 14,
+    "Mails": [
+      {
+        "Description": "This client must have taken a management seminar from every bully in every 80s movie.",
+        "Sender": "Debor Joutapavicius",
+        "Address": "5 Buena Vista Hill str."
+      },
+      {
+        "Description": "What are you talking about? You have not finished half of our first priorities?",
+        "Sender": "Delainey Geertsen",
+        "Address": "9 Eastlawn Plaza str."
+      },
+      {
+        "Description": "How the hell am I supposed to turn them on? I do not know how to do that!",
+        "Sender": "Shirline Leethem",
+        "Address": "0 Annamark Avenue str."
+      },
+      {
+        "Description": "Here is our logo, and here is some text we might change. Make it scream fashion!",
+        "Sender": "Ada Halpen",
+        "Address": "76683 New Castle Avenue str."
+      },
+      {
+        "Description": "Okay, can you give me an example of what is fashionable so I have a better idea of what you mean? ",
+        "Sender": "Kiley McCarty",
+        "Address": "59618 Havey Point str."
+      }
+    ]
+  },
+  {
+    "FullName": "Rosmunda Yoodall",
+    "Nickname": "The Lappet",
+    "Age": 46,
+    "IncarcerationDate": "18/05/1965",
+    "ReleaseDate": null,
+    "Bail": 86810.94,
+    "CellId": 17,
+    "Mails": [
+      {
+        "Description": "The Images that were sent were old posters when it was a club: lens flare, dancing girls, table service…",
+        "Sender": "Billye Hakey",
+        "Address": "64 Sugar Plaza str."
+      },
+      {
+        "Description": "Okay no problem. We just wanna get them in the mail hopefully today. Email me when you are home.",
+        "Sender": "Tanya Ligertwood",
+        "Address": "290 Jenna Court str."
+      },
+      {
+        "Description": "I am so frustrated with our website backend and the complete lack of design flexibility it affords. I want our pages to be DYNAMIC! Our PRINTED material (attached) is WAY more dynamic than our web page. How can this be? I would love any insights you have.",
+        "Sender": "El Done",
+        "Address": "3887 Luster Drive str."
+      }
+    ]
+  },
+  {
+    "FullName": "Benji Ballefant",
+    "Nickname": "The Peccary",
+    "Age": 38,
+    "IncarcerationDate": "12/09/1967",
+    "ReleaseDate": "07/02/1989",
+    "Bail": 93934.2,
+    "CellId": 4,
+    "Mails": [
+      {
+        "Description": "I don not know man, it just looks too wide.",
+        "Sender": "Leona Cutford",
+        "Address": "43901 Dwight Trail str."
+      },
+      {
+        "Description": "Is there a way you can make your voice sound… more like an adult?",
+        "Sender": "Augustine Eickhoff",
+        "Address": "6 Riverside Trail str."
+      }
+    ]
+  },
+  {
+    "FullName": "Aguistin Rawls",
+    "Nickname": "The Sunbird",
+    "Age": 25,
+    "IncarcerationDate": "30/08/1955",
+    "ReleaseDate": "29/09/2005",
+    "Bail": 90533.66,
+    "CellId": 12,
+    "Mails": [
+      {
+        "Description": "The file she sent me was another file, to a different song, still in an incredibly high key. I sent her a sample, to which she unexpectedly approved. I recorded the entire song and sent it to her.",
+        "Sender": "Dynah Lawee",
+        "Address": "751 Linden Hill str."
+      }
+    ]
+  },
+  {
+    "FullName": "Lenette Jorn",
+    "Nickname": "The Pampa",
+    "Age": 61,
+    "IncarcerationDate": "22/12/1970",
+    "ReleaseDate": null,
+    "Bail": 55838.64,
+    "CellId": 19,
+    "Mails": [
+      {
+        "Description": "Nothing is working, we came in this morning and it is all wonky!",
+        "Sender": "Elisha Downey",
+        "Address": "30 Logan Avenue str."
+      },
+      {
+        "Description": "I am a developer, so I understand how this works.",
+        "Sender": "Briant Sperrett",
+        "Address": "816 Crest Line Junction str."
+      },
+      {
+        "Description": "My client sent me two files and asked me to overlay one on top of the other. One was the border of our state and the other was cursive lowercase text. Both were flat bitmaps.",
+        "Sender": "Brennan Patters",
+        "Address": "0 Knutson Point str."
+      },
+      {
+        "Description": "I am currently working with a regular client who sends me work to ghostwrite five days a week. Occasionally, he is a bit unusual with his requests. ",
+        "Sender": "Jaquenette Corran",
+        "Address": "04544 Michigan Center str."
+      }
+    ]
+  },
+  {
+    "FullName": "Odille Smidmore",
+    "Nickname": null,
+    "Age": 38,
+    "IncarcerationDate": "05/10/1961",
+    "ReleaseDate": "15/05/1987",
+    "Bail": 90534.13,
+    "CellId": 3,
+    "Mails": [
+      {
+        "Description": "Yesterday I was asked to do some promo graphics for a local guitar store. He wanted 6 different guitar-shaped stickers, 3 separate t-shirt designs (all of which involved varying levels of copyright infringement), an advertisement for a local magazine, and several web graphics for his online site.",
+        "Sender": "Quintina Matthews",
+        "Address": "142 Manley Way str."
+      },
+      {
+        "Description": "I immediately revised my contract to have a max number of revisions.",
+        "Sender": "Conroy Braycotton",
+        "Address": "6 Columbus Way str."
+      },
+      {
+        "Description": "Who hires someone for the sole purpose of teaching them a lesson?",
+        "Sender": "Malory Duker",
+        "Address": "1228 Grasskamp Circle str."
+      }
+    ]
+  },
+  {
+    "FullName": "Fiona Mattecot",
+    "Nickname": "The Marmot",
+    "Age": 43,
+    "IncarcerationDate": "25/11/1967",
+    "ReleaseDate": null,
+    "Bail": null,
+    "CellId": 6,
+    "Mails": [
+      {
+        "Description": "The past couple of years, our agency has done a brochure for a company that then takes the files and changes out pictures, colors and text for different target audiences.",
+        "Sender": "Adams Mewis",
+        "Address": "9430 Anthes Road str."
+      },
+      {
+        "Description": "Based on all the files, I am not sure this was sent correctly because it was our understanding that all the links would be able to be swapped out and these files are just layered PSDs.",
+        "Sender": "Faythe Laroux",
+        "Address": "0186 Nelson Street str."
+      },
+      {
+        "Description": "I work at a small company in a position unrelated to any design discipline but have a strong background and a good eye for design.",
+        "Sender": "Vito Maleham",
+        "Address": "16447 Melby Point str."
+      },
+      {
+        "Description": "There were flowers on the home page and no one asked what those meant.",
+        "Sender": "Letty Bon",
+        "Address": "9344 Continental Alley str."
+      },
+      {
+        "Description": " I have asked you for a due date several times and you still have not provided one. What is the deadline?",
+        "Sender": "Tyrone Balm",
+        "Address": "3 Farwell Junction str."
+      },
+      {
+        "Description": "Yes! Just fix it.",
+        "Sender": "Shandee Orsi",
+        "Address": "34829 Manufacturers Plaza str."
+      }
+    ]
+  },
+  {
+    "FullName": "Garland Swepstone",
+    "Nickname": "The Skink",
+    "Age": 51,
+    "IncarcerationDate": "10/03/1966",
+    "ReleaseDate": "21/11/1996",
+    "Bail": 16570.98,
+    "CellId": 17,
+    "Mails": [
+      {
+        "Description": "The client does not respond to my reply. Two days later (!) the text arrives. ",
+        "Sender": "Kori Bayless",
+        "Address": "5 Bunting Alley str."
+      },
+      {
+        "Description": "Thanks for your request, we can definitely help you with that and there is plenty of time to get it done. ",
+        "Sender": "Francklyn Rickford",
+        "Address": "5 Bartelt Junction str."
+      }
+    ]
+  },
+  {
+    "FullName": "Boycie Castellaccio",
+    "Nickname": "The Jungle",
+    "Age": 43,
+    "IncarcerationDate": "19/02/1977",
+    "ReleaseDate": "13/03/1989",
+    "Bail": null,
+    "CellId": 8,
+    "Mails": [
+      {
+        "Description": "What is taking so long with my sign? It is been a few weeks since I ordered it, and I still did not see any designs yet.",
+        "Sender": "Quintina Matthews",
+        "Address": "142 Manley Way str."
+      },
+      {
+        "Description": " Well, sure. It wont be black anymore though. Lightening it even slightly will make it a dark grey/charcoal.",
+        "Sender": "Conroy Braycotton",
+        "Address": "6 Columbus Way str."
+      },
+      {
+        "Description": "A client who I had worked with for some years came back to me after an initial draft with a long list of changes.",
+        "Sender": "Malory Duker",
+        "Address": "1228 Grasskamp Circle str."
+      }
+    ]
+  },
+  {
+    "FullName": "Dieter MacFadzan",
+    "Nickname": "The Violet",
+    "Age": 50,
+    "IncarcerationDate": "28/04/1959",
+    "ReleaseDate": "26/09/1983",
+    "Bail": 18761.76,
+    "CellId": 8,
+    "Mails": [
+      {
+        "Description": "Six months later, I got an email asking for printable 1/6 scale keys and the loop started over.",
+        "Sender": "Joannes Seckom",
+        "Address": "90405 Garrison Trail str."
+      }
+    ]
+  },
+  {
+    "FullName": "Hedwiga Ibotson",
+    "Nickname": "The Crane&",
+    "Age": 28,
+    "IncarcerationDate": "20/02/1972",
+    "ReleaseDate": "27/11/1992",
+    "Bail": 18663.51,
+    "CellId": 14,
+    "Mails": [
+      {
+        "Description": "Think you had be a great fit for the show? Let me know at twitter.com/KCarCFH",
+        "Sender": "Leona Cutford",
+        "Address": "43901 Dwight Trail str."
+      },
+      {
+        "Description": "Payment would be in the form of being listed as Co-Author and splitting any profits from the sale of the book and/or movie rights.",
+        "Sender": "Augustine Eickhoff",
+        "Address": "6 Riverside Trail str."
+      }
+    ]
+  },
+  {
+    "FullName": "0",
+    "Nickname": null,
+    "Age": 50,
+    "IncarcerationDate": "03/12/1955",
+    "ReleaseDate": "16/12/1983",
+    "Bail": 93082.56,
+    "CellId": 11,
+    "Mails": [
+      {
+        "Description": "I am invalid",
+        "Sender": "Mahmud Hanaby",
+        "Address": "0562 Esch Alley str."
+      },
+      {
+        "Description": " I will do it for 615 USD.",
+        "Sender": "Prudi Le Galle",
+        "Address": "39604 Northview Trail str."
+      },
+      {
+        "Description": "I know. That is what they cost. In fact, that is cheap. I could not do them for less, I am sorry.",
+        "Sender": "Randie Pomfrey",
+        "Address": "3 Old Shore Point str."
+      }
+    ]
+  },
+  {
+    "FullName": "Twila Brice",
+    "Nickname": null,
+    "Age": 50,
+    "IncarcerationDate": "03/12/1955",
+    "ReleaseDate": "16/12/1983",
+    "Bail": 93082.56,
+    "CellId": 11,
+    "Mails": [
+      {
+        "Description": " It is still expensive :/ Thanks anyway.",
+        "Sender": "Mahmud Hanaby",
+        "Address": "0562 Esch Alley str."
+      },
+      {
+        "Description": "I explained how to re-register the domain, and how to edit the nameservers so the site is accessible again. That kicked off this painful email exchange.",
+        "Sender": "Prudi Le Galle",
+        "Address": "39604 Northview Trail str."
+      },
+      {
+        "Description": "The registrar does not have any contact information available. Nothing at all - not an email or a phone number.",
+        "Sender": "Randie Pomfrey",
+        "Address": "3 Old Shore Point str."
+      }
+    ]
+  },
+  {
+    "FullName": "Maury Pelcheur",
+    "Nickname": "The Black",
+    "Age": 51,
+    "IncarcerationDate": "01/03/1970",
+    "ReleaseDate": "31/01/2010",
+    "Bail": 22243.28,
+    "CellId": 4,
+    "Mails": [
+      {
+        "Description": "What do we do about the logo? It is not masculine enough.",
+        "Sender": "Isabelita Flott",
+        "Address": "985 Kipling Alley str."
+      },
+      {
+        "Description": "I am sorry you feel that way. But can you tell me what you SPECIFICALLY like about these examples?",
+        "Sender": "Ulrikaumeko Huson",
+        "Address": "9 Grayhawk Court str."
+      }
+    ]
+  },
+  {
+    "FullName": "Isis Gasticke",
+    "Nickname": "The Terrorist",
+    "Age": 24,
+    "IncarcerationDate": "04/11/1963",
+    "ReleaseDate": "17/11/2001",
+    "Bail": 47884.63,
+    "CellId": 4,
+    "Mails": [
+      {
+        "Description": "I followed up a few times. Eventually, he texted me to let me know that he had gotten my email but had not had time to respond.",
+        "Sender": "Ulrikaumeko Huson",
+        "Address": "9 Grayhawk Court str."
+      },
+      {
+        "Description": "I sent the list. After a conversation with the other camera operator, it seemed like she knew what to do, so I stepped aside to let her work.",
+        "Sender": "Hedwiga Swainger",
+        "Address": "5 Darwin Alley str."
+      },
+      {
+        "Description": " I mean, sure, but it will be pretty busy. I really recommend you keep it simple for the screen.",
+        "Sender": "Mikey Bothbie",
+        "Address": "4736 Anderson Parkway str."
+      }
+    ]
+  },
+  {
+    "FullName": "Rosanna Lissaman",
+    "Nickname": "The Wallaby",
+    "Age": 35,
+    "IncarcerationDate": "29/11/1964",
+    "ReleaseDate": "09/10/1999",
+    "Bail": 93028.65,
+    "CellId": 20,
+    "Mails": [
+      {
+        "Description": "OK, what do you need to be done? And when?",
+        "Sender": "Christel Peffer",
+        "Address": "74099 Mesta Circle str."
+      },
+      {
+        "Description": "Some animations and pictures and things.",
+        "Sender": "Kimmi Kilian",
+        "Address": "84 Chinook Hill str."
+      }
+    ]
+  },
+  {
+    "FullName": "Verena Fidoe",
+    "Nickname": "The Buffalo",
+    "Age": 42,
+    "IncarcerationDate": "08/03/1963",
+    "ReleaseDate": "20/11/2000",
+    "Bail": 55772.28,
+    "CellId": 13,
+    "Mails": [
+      {
+        "Description": "The next day, my husband got the identical request from her in his FB inbox, giving him TWO days. Not surprisingly, he did not even respond.",
+        "Sender": "Elyssa Largan",
+        "Address": "45 Bashford Terrace str."
+      },
+      {
+        "Description": "Before we talk about any of that, how much will your services cost?",
+        "Sender": "Leona Horribine",
+        "Address": "6333 Thierer Lane str."
+      },
+      {
+        "Description": "Looks great, but only received one copy of the flyer! I had said that I would like to print 250 of them",
+        "Sender": "Sidney O Neary",
+        "Address": "10290 Haas Circle str."
+      }
+    ]
+  },
+  {
+    "FullName": "Young Youngeee",
+    "Nickname": "The Large skill",
+    "Age": 3,
+    "IncarcerationDate": "11/04/1958",
+    "ReleaseDate": "22/11/1998",
+    "Bail": 46290.33,
+    "CellId": 2,
+    "Mails": [
+      {
+        "Description": "Could you make the bed in the background? It looks messy.",
+        "Sender": "Myrna Moylan",
+        "Address": "3604 Lakeland Plaza str."
+      },
+      {
+        "Description": "You mean the functional spec that you edited after it was signed off?",
+        "Sender": "Linn Bertome",
+        "Address": "3540 Logan Alley str."
+      }
+    ]
+  },
+  {
+    "FullName": "Ellette Lante",
+    "Nickname": "The Lolly",
+    "Age": 34,
+    "IncarcerationDate": "23/05/1979",
+    "ReleaseDate": "29/09/2014",
+    "Bail": 85905.16,
+    "CellId": 15,
+    "Mails": [
+      {
+        "Description": "I am trying to offer you a job, but if this is how you do business…",
+        "Sender": "Branden Campagne",
+        "Address": "8 Buhler Trail str."
+      },
+      {
+        "Description": "What is this? We were hoping for something more streamlined and professional.",
+        "Sender": "Kylie Caldayrou",
+        "Address": "4600 West Trail str."
+      },
+      {
+        "Description": "That sounds like an interesting project! What is your budget?",
+        "Sender": "Aindrea Harniman",
+        "Address": "89 Tomscot Parkway str."
+      }
+    ]
+  },
+  {
+    "FullName": "Jenny Rhys",
+    "Nickname": "The Sungazer",
+    "Age": 38,
+    "IncarcerationDate": "17/10/1973",
+    "ReleaseDate": "22/07/1994",
+    "Bail": null,
+    "CellId": 7,
+    "Mails": [
+      {
+        "Description": "Yeah, we prefer to stick to company templates.",
+        "Sender": "Hamil Mathison",
+        "Address": "74 Forster Parkway str."
+      },
+      {
+        "Description": "Well, I am a designer, not a writer. I am just telling you what I need.",
+        "Sender": "Beale Jackman",
+        "Address": "2 Fuller Center str."
+      }
+    ]
+  },
+  {
+    "FullName": "Binni Cornhill",
+    "Nickname": "The Roller",
+    "Age": 34,
+    "IncarcerationDate": "29/04/1967",
+    "ReleaseDate": "18/05/2005",
+    "Bail": null,
+    "CellId": 11,
+    "Mails": [
+      {
+        "Description": "Is there an extra zero or you asked for twenty-five thousands?!",
+        "Sender": "Aindrea Harniman",
+        "Address": "89 Tomscot Parkway str."
+      }
+    ]
+  },
+  {
+    "FullName": "Madelaine Crewther",
+    "Nickname": "The Honey123",
+    "Age": 34,
+    "IncarcerationDate": "18/09/1975",
+    "ReleaseDate": "04/07/2006",
+    "Bail": 72781.22,
+    "CellId": 3,
+    "Mails": [
+      {
+        "Description": "I do a lot of work for local bands.",
+        "Sender": "Hamil Mathison",
+        "Address": "74 Forster Parkway str."
+      }
+    ]
+  },
+  {
+    "FullName": "Diana Ebbs",
+    "Nickname": "The Drongo",
+    "Age": 47,
+    "IncarcerationDate": "21/08/1963",
+    "ReleaseDate": "19/03/1987",
+    "Bail": 53657.9,
+    "CellId": 12,
+    "Mails": [
+      {
+        "Description": "I am still waiting. He originally said the CD company takes 4-6 weeks for turnaround. The album release is in about 2 weeks,  and I still have not heard back.",
+        "Sender": "Beale Jackman",
+        "Address": "2 Fuller Center str."
+      },
+      {
+        "Description": "That is fine, take your time no rush. I like your work and we will like you to take your time.",
+        "Sender": "Lillian MacCrackan",
+        "Address": "62 Longview Terrace str."
+      }
+    ]
+  },
+  {
+    "FullName": "Elayne Mewett",
+    "Nickname": null,
+    "Age": 35,
+    "IncarcerationDate": "25/10/1976",
+    "ReleaseDate": "09/01/2014",
+    "Bail": 10802.64,
+    "CellId": 7,
+    "Mails": [
+      {
+        "Description": "Okay, I have finished my data entry for June.",
+        "Sender": "Kimmi Kilian",
+        "Address": "84 Chinook Hill str."
+      },
+      {
+        "Description": "What do you mean you need to talk with the lawyer to get the details of the case?",
+        "Sender": "Elyssa Largan",
+        "Address": "45 Bashford Terrace str."
+      },
+      {
+        "Description": "So… she fired me because I called you out on blatantly trying to short me? At the meeting she said I have rounded your hours up a bit to give you a little bonus. So obviously she knew what she was doing. She was just hoping I would not say anything.",
+        "Sender": "Leona Horribine",
+        "Address": "6333 Thierer Lane str."
+      }
+    ]
+  },
+  {
+    "FullName": "Alys Dearl",
+    "Nickname": "The Gecko",
+    "Age": 41,
+    "IncarcerationDate": "09/09/1978",
+    "ReleaseDate": "10/05/1980",
+    "Bail": 33974.81,
+    "CellId": 21,
+    "Mails": [
+      {
+        "Description": "What if I find his head from another photo pointing in the right direction? ",
+        "Sender": "Randie Pomfrey",
+        "Address": "3 Old Shore Point str."
+      }
+    ]
+  },
+  {
+    "FullName": "Audrie Billion",
+    "Nickname": "The Rose",
+    "Age": 25,
+    "IncarcerationDate": "22/05/1964",
+    "ReleaseDate": "13/10/1990",
+    "Bail": 59651.38,
+    "CellId": 8,
+    "Mails": [
+      {
+        "Description": "So here is the code. This will make it really easy to update our data.",
+        "Sender": "Mikey Bothbie",
+        "Address": "4736 Anderson Parkway str."
+      },
+      {
+        "Description": "No need to make the text easier to read. The text is hard to understand in itself.",
+        "Sender": "Christel Peffer",
+        "Address": "74099 Mesta Circle str."
+      },
+      {
+        "Description": "You know… (techno) Like The Eagles!",
+        "Sender": "Kimmi Kilian",
+        "Address": "84 Chinook Hill str."
+      }
+    ]
+  }
+]
