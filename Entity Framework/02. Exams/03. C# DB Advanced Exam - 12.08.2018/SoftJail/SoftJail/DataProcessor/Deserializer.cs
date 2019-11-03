@@ -1,6 +1,5 @@
 ﻿namespace SoftJail.DataProcessor
 {
-
     using Data;
     using System;
 
