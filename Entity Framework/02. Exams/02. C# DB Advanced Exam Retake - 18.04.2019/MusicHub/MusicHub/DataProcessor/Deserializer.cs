@@ -1,20 +1,19 @@
 ﻿namespace MusicHub.DataProcessor
 {
-    using System;
-
     using Data;
+    using System;
 
     public class Deserializer
     {
         private const string ErrorMessage = "Invalid data";
 
-        private const string SuccessfullyImportedWriter 
+        private const string SuccessfullyImportedWriter
             = "Imported {0}";
-        private const string SuccessfullyImportedProducerWithPhone 
+        private const string SuccessfullyImportedProducerWithPhone
             = "Imported {0} with phone: {1} produces {2} albums";
         private const string SuccessfullyImportedProducerWithNoPhone
             = "Imported {0} with no phone number produces {1} albums";
-        private const string SuccessfullyImportedSong 
+        private const string SuccessfullyImportedSong
             = "Imported {0} ({1} genre) with duration {2}";
         private const string SuccessfullyImportedPerformer
             = "Imported {0} ({1} songs)";

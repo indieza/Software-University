@@ -1,8 +1,7 @@
 ﻿namespace MusicHub.DataProcessor
 {
-    using System;
-
     using Data;
+    using System;
 
     public class Serializer
     {
