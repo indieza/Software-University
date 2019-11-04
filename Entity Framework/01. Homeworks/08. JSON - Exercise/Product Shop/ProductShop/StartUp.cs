@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using ProductShop.Data;
 using ProductShop.Dto;
 using ProductShop.Models;
@@ -18,7 +19,7 @@ namespace ProductShop
 
             var file = File.ReadAllText(@"D:\Documents\GitHub\Software-University\Entity Framework\01. Homeworks\08. JSON - Exercise\Product Shop\ProductShop\Datasets\categories-products.json");
 
-            Console.WriteLine(GetCategoriesByProductsCount(context));
+            Console.WriteLine(GetSoldProducts(context));
         }
 
         public static string ImportUsers(ProductShopContext context, string inputJson)
@@ -78,27 +79,39 @@ namespace ProductShop
 
         public static string GetSoldProducts(ProductShopContext context)
         {
-            var exportedSoldProducts = context.Users
-                .Where(u => u.ProductsSold.Count() >= 1)
-                .Select(u => new SellerDto
-                {
-                    FirstName = u.FirstName,
-                    LastName = u.LastName,
-                    SoldProducts = u.ProductsSold
-                    .Where(p => p.BuyerId != null)
-                    .Select(p => new SoldProductDto
-                    {
-                        Name = p.Name,
-                        Price = p.Price,
-                        BuyerFirstName = p.Buyer.FirstName,
-                        BuyerLastName = p.Buyer.LastName
-                    })
-                    .ToList()
-                })
-                .OrderBy(u => u.LastName)
-                .ThenBy(u => u.FirstName);
+            var filteredUsers = context.Users
+                 .Where(u => u.ProductsSold.Any(ps => ps.Buyer != null))
+                 .OrderBy(u => u.LastName)
+                 .ThenBy(u => u.FirstName)
+                 .Select(u => new
+                 {
+                     FirstName = u.FirstName,
+                     LastName = u.LastName,
+                     SoldProducts = u.ProductsSold
+                     .Where(p => p.Buyer != null)
+                     .Select(p => new
+                     {
+                         Name = p.Name,
+                         Price = p.Price,
+                         BuyerFirstName = p.Buyer.FirstName,
+                         BuyerLastName = p.Buyer.LastName
+                     })
+                     .ToList()
+                 })
+                 .ToList();
 
-            var json = JsonConvert.SerializeObject(exportedSoldProducts, Formatting.Indented);
+            DefaultContractResolver contractResolver = new DefaultContractResolver()
+
+            {
+                NamingStrategy = new CamelCaseNamingStrategy()
+            };
+
+            var json = JsonConvert.SerializeObject(filteredUsers, new JsonSerializerSettings()
+
+            {
+                ContractResolver = contractResolver,
+                Formatting = Formatting.Indented
+            });
 
             return json;
         }
@@ -119,6 +132,11 @@ namespace ProductShop
             var json = JsonConvert.SerializeObject(exportCategories, Formatting.Indented);
 
             return json;
+        }
+
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+            return "";
         }
     }
 }
