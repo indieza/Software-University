@@ -28,7 +28,8 @@
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=.;Database=ProductShop;Integrated Security=True");
+                optionsBuilder.UseSqlServer(
+                    @"Server=DESKTOP-40U9D0R\SQLEXPRESS;Database=ProductShop;Integrated Security=True");
             }
         }
 
@@ -36,7 +37,7 @@
         {
             modelBuilder.Entity<CategoryProduct>(entity =>
             {
-                entity.HasKey(x => new { x.CategoryId, x.ProductId});
+                entity.HasKey(x => new { x.CategoryId, x.ProductId });
             });
 
             modelBuilder.Entity<User>(entity =>
