@@ -5,7 +5,7 @@ using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using ProductShop.Data;
-using ProductShop.Dto;
+using ProductShop.Dto.Export;
 using ProductShop.Models;
 
 namespace ProductShop
@@ -121,7 +121,7 @@ namespace ProductShop
                     ProductsCount = c.CategoryProducts.Count(),
                     AveragePrice = decimal.Round(c.CategoryProducts
                     .Sum(p => p.Product.Price) / c.CategoryProducts.Count(), 2),
-                    TotalRevenue = decimal.Round(c.CategoryProducts.Sum(p => p.Product.Price), 2)
+                    TotalRevenue = c.CategoryProducts.Sum(p => p.Product.Price)
                 })
                 .ToList();
 

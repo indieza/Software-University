@@ -1,4 +1,4 @@
-namespace ProductShop.Dto
+namespace ProductShop.Dto.Export
 {
     using Newtonsoft.Json;
     using System;

@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using ProductShop.Dto.Export;
+using ProductShop.Models;
 
 namespace ProductShop
 {
