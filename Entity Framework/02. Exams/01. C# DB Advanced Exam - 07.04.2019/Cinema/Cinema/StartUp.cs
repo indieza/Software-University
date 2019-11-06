@@ -10,7 +10,7 @@
 
     public class StartUp
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var context = new CinemaContext();
 
@@ -20,7 +20,7 @@
 
             var projectDir = GetProjectDirectory();
 
-           ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+            ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
 
             ExportEntities(context, projectDir + @"ExportResults/");
 
