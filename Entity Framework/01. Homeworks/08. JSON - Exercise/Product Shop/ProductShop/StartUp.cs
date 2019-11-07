@@ -19,7 +19,7 @@ namespace ProductShop
 
             //var file = File.ReadAllText(@"D:\Documents\GitHub\Software-University\Entity Framework\01. Homeworks\08. JSON - Exercise\Product Shop\ProductShop\Datasets\categories-products.json");
 
-            Console.WriteLine(GetCategoriesByProductsCount(context));
+            Console.WriteLine(GetUsersWithProducts(context));
         }
 
         public static string ImportUsers(ProductShopContext context, string inputJson)
@@ -63,7 +63,7 @@ namespace ProductShop
         {
             var exportedProducts = context.Products
                 .Where(p => p.Price >= 500 && p.Price <= 1000)
-                .Select(p => new ProductDto
+                .Select(p => new ProductInRangeDto
                 {
                     Name = p.Name,
                     Price = p.Price,
@@ -100,12 +100,6 @@ namespace ProductShop
                  })
                  .ToList();
 
-            DefaultContractResolver contractResolver = new DefaultContractResolver()
-
-            {
-                NamingStrategy = new CamelCaseNamingStrategy()
-            };
-
             var json = JsonConvert.SerializeObject(filteredUsers, Formatting.Indented);
 
             return json;
@@ -135,17 +129,17 @@ namespace ProductShop
             var users = context.Users
                 .Where(u => u.ProductsSold.Any(p => p.Buyer != null))
                 .OrderByDescending(p => p.ProductsSold.Count(ps => ps.Buyer != null))
-                .Select(u => new
+                .Select(u => new UserWithProductsDto
                 {
                     FirstName = u.FirstName,
                     LastName = u.LastName,
                     Age = u.Age,
-                    SoldProducts = new
+                    SoldProducts = new SoldProductsToUserDto
                     {
                         Count = u.ProductsSold.Count(p => p.Buyer != null),
                         Products = u.ProductsSold
                         .Where(p => p.Buyer != null)
-                        .Select(p => new
+                        .Select(p => new SoldProductsDto
                         {
                             Name = p.Name,
                             Price = p.Price
@@ -155,25 +149,18 @@ namespace ProductShop
                 })
                 .ToList();
 
-            var result = new
+            var result = new UsersAndProductsDto
             {
                 UsersCount = users.Count(),
                 Users = users
             };
 
-            DefaultContractResolver contractResolver = new DefaultContractResolver()
-
-            {
-                NamingStrategy = new CamelCaseNamingStrategy()
-            };
-
-            var json = JsonConvert.SerializeObject(result, new JsonSerializerSettings()
-
-            {
-                ContractResolver = contractResolver,
-                Formatting = Formatting.Indented,
-                NullValueHandling = NullValueHandling.Ignore
-            });
+            var json = JsonConvert.SerializeObject(result,
+                Formatting.Indented,
+                new JsonSerializerSettings
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                });
 
             return json;
         }

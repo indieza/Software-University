@@ -5,15 +5,12 @@ namespace ProductShop.Dto.Export
     using System.Collections.Generic;
     using System.Text;
 
-    public class ProductDto
+    public class SoldProductsDto
     {
-        [JsonProperty(PropertyName = "name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty(PropertyName = "price")]
+        [JsonProperty("price")]
         public decimal Price { get; set; }
-
-        [JsonProperty(PropertyName = "seller")]
-        public string Seller { get; set; }
     }
 }
