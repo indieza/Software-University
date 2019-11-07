@@ -14,9 +14,9 @@ namespace ProductShop.Dto.Export
         public int ProductsCount { get; set; }
 
         [JsonProperty(PropertyName = "averagePrice")]
-        public decimal AveragePrice { get; set; }
+        public string AveragePrice { get; set; }
 
         [JsonProperty(PropertyName = "totalRevenue")]
-        public decimal TotalRevenue { get; set; }
+        public string TotalRevenue { get; set; }
     }
 }

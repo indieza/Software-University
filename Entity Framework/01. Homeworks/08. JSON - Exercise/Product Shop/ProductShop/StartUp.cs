@@ -19,7 +19,7 @@ namespace ProductShop
 
             //var file = File.ReadAllText(@"D:\Documents\GitHub\Software-University\Entity Framework\01. Homeworks\08. JSON - Exercise\Product Shop\ProductShop\Datasets\categories-products.json");
 
-            Console.WriteLine(GetUsersWithProducts(context));
+            Console.WriteLine(GetCategoriesByProductsCount(context));
         }
 
         public static string ImportUsers(ProductShopContext context, string inputJson)
@@ -113,9 +113,9 @@ namespace ProductShop
                 {
                     Category = c.Name,
                     ProductsCount = c.CategoryProducts.Count(),
-                    AveragePrice = decimal.Round(c.CategoryProducts
-                    .Sum(p => p.Product.Price) / c.CategoryProducts.Count(), 2),
-                    TotalRevenue = c.CategoryProducts.Sum(p => p.Product.Price)
+                    AveragePrice = $@"{c.CategoryProducts
+                    .Sum(p => p.Product.Price) / c.CategoryProducts.Count():F2}",
+                    TotalRevenue = $"{c.CategoryProducts.Sum(p => p.Product.Price):F2}"
                 })
                 .ToList();
 
