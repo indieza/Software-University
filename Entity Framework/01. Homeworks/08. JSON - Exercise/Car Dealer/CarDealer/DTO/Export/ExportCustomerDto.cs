@@ -1,9 +1,6 @@
-namespace CarDealer.DTO
+namespace CarDealer.DTO.Export
 {
     using Newtonsoft.Json;
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public class ExportCustomerDto
     {

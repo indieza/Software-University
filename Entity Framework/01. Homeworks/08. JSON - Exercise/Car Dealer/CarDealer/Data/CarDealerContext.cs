@@ -1,7 +1,5 @@
 ﻿using CarDealer.Models;
-using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace CarDealer.Data
 {
@@ -42,6 +40,14 @@ namespace CarDealer.Data
             modelBuilder.Entity<PartCar>(e =>
             {
                 e.HasKey(k => new { k.CarId, k.PartId });
+
+                e.HasOne(c => c.Car)
+                .WithMany(pc => pc.PartCars)
+                .HasForeignKey(k => k.CarId);
+
+                e.HasOne(p => p.Part)
+                .WithMany(pc => pc.PartCars)
+                .HasForeignKey(k => k.PartId);
             });
         }
     }

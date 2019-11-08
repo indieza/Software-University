@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace CarDealer.Models
 {
@@ -15,6 +13,7 @@ namespace CarDealer.Models
         public int Quantity { get; set; }
 
         public int SupplierId { get; set; }
+
         public Supplier Supplier { get; set; }
 
         public ICollection<PartCar> PartCars { get; set; }

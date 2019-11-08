@@ -1,9 +1,5 @@
-namespace CarDealer.DTO
+namespace CarDealer.DTO.Export
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class ExportLocalSupplierDto
     {
         public int Id { get; set; }

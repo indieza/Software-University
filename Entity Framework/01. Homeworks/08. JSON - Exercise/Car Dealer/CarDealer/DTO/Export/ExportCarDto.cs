@@ -1,19 +1,16 @@
-namespace CarDealer.DTO
+namespace CarDealer.DTO.Export
 {
     using Newtonsoft.Json;
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public class ExportCarDto
     {
+        [JsonProperty("Make")]
         public string Make { get; set; }
 
+        [JsonProperty("Model")]
         public string Model { get; set; }
 
+        [JsonProperty("TravelledDistance")]
         public long TravelledDistance { get; set; }
-
-        [JsonProperty("parts")]
-        public ICollection<ExportPartDto> Parts { get; set; }
     }
 }
