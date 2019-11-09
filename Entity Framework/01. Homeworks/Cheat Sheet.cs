@@ -10,6 +10,15 @@ EntityFrameworkCore.Tools - Add-Migration
 // IMPORT
 var users = JsonConvert.DeserializeObject<User[]>(inputJson);
 ---------------------------------------------------------------------------------------------------------------------
+// Check is objectDto matches the attributes
+private static bool IsValid(object dto)
+{
+    var validationContext = new ValidationContext(dto);
+    var validationResult = new List<ValidationResult>();
+
+    return Validator.TryValidateObject(dto, validationContext, validationResult, true);
+}
+---------------------------------------------------------------------------------------------------------------------
 // EXPORT
 var json = JsonConvert.SerializeObject(exportedSoldProducts, Formatting.Indented);
 ---------------------------------------------------------------------------------------------------------------------
