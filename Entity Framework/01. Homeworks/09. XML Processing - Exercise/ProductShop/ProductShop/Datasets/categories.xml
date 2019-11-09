@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Categories>
+    <Category>
+        <name>Drugs</name>
+    </Category>
+    <Category>
+        <name>Adult</name>
+    </Category>
+    <Category>
+        <name>Electronics</name>
+    </Category>
+    <Category>
+        <name>Garden</name>
+    </Category>
+    <Category>
+        <name>Weapons</name>
+    </Category>
+    <Category>
+        <name>For Children</name>
+    </Category>
+    <Category>
+        <name>Sports</name>
+    </Category>
+    <Category>
+        <name>Fashion</name>
+    </Category>
+    <Category>
+        <name>Autoparts</name>
+    </Category>
+    <Category>
+        <name>Business</name>
+    </Category>
+    <Category>
+        <name>Other</name>
+    </Category>
+</Categories>
