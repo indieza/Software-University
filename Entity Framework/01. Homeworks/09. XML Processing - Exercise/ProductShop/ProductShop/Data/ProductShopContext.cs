@@ -16,15 +16,19 @@
         }
 
         public DbSet<Category> Categories { get; set; }
+
         public DbSet<Product> Products { get; set; }
+
         public DbSet<User> Users { get; set; }
+
         public DbSet<CategoryProduct> CategoryProducts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=.;Database=ProductShop;Integrated Security=True");
+                optionsBuilder.UseSqlServer(
+                    @"Server=DESKTOP-40U9D0R\SQLEXPRESS;Database=ProductShop;Integrated Security=True");
             }
         }
 
@@ -32,7 +36,7 @@
         {
             modelBuilder.Entity<CategoryProduct>(entity =>
             {
-                entity.HasKey(x => new { x.CategoryId, x.ProductId});
+                entity.HasKey(x => new { x.CategoryId, x.ProductId });
             });
 
             modelBuilder.Entity<User>(entity =>
