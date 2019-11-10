@@ -3,7 +3,7 @@ namespace ProductShop.Dtos.Export
     using System.Xml.Serialization;
 
     [XmlType("Product")]
-    public class ExportProductInRangeDto
+    public class ProductInRangeDto
     {
         [XmlElement(ElementName = "name")]
         public string Name { get; set; }
