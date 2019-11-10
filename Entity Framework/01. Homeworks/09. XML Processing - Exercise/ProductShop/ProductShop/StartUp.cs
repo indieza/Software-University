@@ -40,7 +40,7 @@ namespace ProductShop
             //Console.WriteLine(ImportCategories(context, categories));
             //Console.WriteLine(ImportCategoryProducts(context, categoriesProducts));
 
-            Console.WriteLine(GetUsersWithProducts(context));
+            //Console.WriteLine(GetUsersWithProducts(context));
         }
 
         public static string ImportUsers(ProductShopContext context, string inputXml)

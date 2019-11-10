@@ -5,7 +5,7 @@ namespace ProductShop.Dtos.Import
     [XmlType("Category")]
     public class ImportCategoryDto
     {
-        [XmlAttribute(AttributeName = "name")]
+        [XmlElement(ElementName = "name")]
         public string Name { get; set; }
     }
 }
