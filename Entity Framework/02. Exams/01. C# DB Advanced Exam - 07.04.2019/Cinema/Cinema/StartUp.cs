@@ -1,12 +1,10 @@
 ﻿namespace Cinema
 {
+    using AutoMapper;
+    using Data;
+    using Microsoft.EntityFrameworkCore;
     using System;
     using System.IO;
-
-    using AutoMapper;
-    using Microsoft.EntityFrameworkCore;
-
-    using Data;
 
     public class StartUp
     {
@@ -20,7 +18,7 @@
 
             var projectDir = GetProjectDirectory();
 
-           ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+            ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
 
             ExportEntities(context, projectDir + @"ExportResults/");
 
