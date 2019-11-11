@@ -8,10 +8,10 @@ namespace CarDealer.Dtos.Import
     [XmlType("Supplier")]
     public class ImportSupplierDto
     {
-        [XmlAttribute(AttributeName = "name")]
+        [XmlElement(ElementName = "name")]
         public string Name { get; set; }
 
-        [XmlAttribute(AttributeName = "isImporter")]
+        [XmlElement(ElementName = "isImporter")]
         public bool IsImporter { get; set; }
     }
 }

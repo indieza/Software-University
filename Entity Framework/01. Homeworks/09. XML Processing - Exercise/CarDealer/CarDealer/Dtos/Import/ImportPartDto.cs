@@ -8,16 +8,16 @@ namespace CarDealer.Dtos.Import
     [XmlType("Part")]
     public class ImportPartDto
     {
-        [XmlAttribute(AttributeName = "name")]
+        [XmlElement(ElementName = "name")]
         public string Name { get; set; }
 
-        [XmlAttribute(AttributeName = "price")]
+        [XmlElement(ElementName = "price")]
         public decimal Price { get; set; }
 
-        [XmlAttribute(AttributeName = "quantity")]
+        [XmlElement(ElementName = "quantity")]
         public int Quantity { get; set; }
 
-        [XmlAttribute(AttributeName = "supplierId")]
+        [XmlElement(ElementName = "supplierId")]
         public int SupplierId { get; set; }
     }
 }
