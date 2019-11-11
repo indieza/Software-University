@@ -18,7 +18,7 @@
         public long TravelledDistance { get; set; }
 
         public ICollection<Sale> Sales { get; set; }
-		
+
         public ICollection<PartCar> PartCars { get; set; }
     }
 }

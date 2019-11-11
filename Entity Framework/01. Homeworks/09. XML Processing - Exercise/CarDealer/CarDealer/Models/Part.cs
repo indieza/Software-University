@@ -1,5 +1,4 @@
-﻿
-namespace CarDealer.Models
+﻿namespace CarDealer.Models
 {
     using System.Collections.Generic;
 
@@ -7,7 +6,7 @@ namespace CarDealer.Models
     {
         public Part()
         {
-            this.PartCars = new HashSet<PartCar>();    
+            this.PartCars = new HashSet<PartCar>();
         }
 
         public int Id { get; set; }
@@ -19,6 +18,7 @@ namespace CarDealer.Models
         public int Quantity { get; set; }
 
         public int SupplierId { get; set; }
+
         public Supplier Supplier { get; set; }
 
         public ICollection<PartCar> PartCars { get; set; }
