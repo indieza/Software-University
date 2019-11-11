@@ -1,0 +1,74 @@
+[
+  {
+    "Name": "Methocarbamol",
+    "Is4Dx": false,
+    "Is3D": true,
+    "Seats": 52
+  },
+  {
+    "Name": "Glycopyrrolate",
+    "Is4Dx": true,
+    "Is3D": false,
+    "Seats": 36
+  },
+  {
+    "Name": "Corn Grass",
+    "Is4Dx": true,
+    "Is3D": true,
+    "Seats": 40
+  },
+  {
+    "Name": "Aminophylline",
+    "Is4Dx": false,
+    "Is3D": false,
+    "Seats": 31
+  },
+  {
+    "Name": "Aspergillus flavus",
+    "Is4Dx": false,
+    "Is3D": false,
+    "Seats": 34
+  },
+  {
+    "Name": "Pain Relief Plus",
+    "Is4Dx": true,
+    "Is3D": false,
+    "Seats": 24
+  },
+  {
+    "Name": "Vanilla Cupcake Antibacterial Hand Sanitizer",
+    "Is4Dx": false,
+    "Is3D": true,
+    "Seats": 35
+  },
+  {
+    "Name": "Vitalizer",
+    "Is4Dx": false,
+    "Is3D": false,
+    "Seats": 48
+  },
+  {
+    "Name": "Stroped",
+    "Is4Dx": false,
+    "Is3D": false,
+    "Seats": -1
+  },
+  {
+    "Name": "CVS SPF 8",
+    "Is4Dx": true,
+    "Is3D": true,
+    "Seats": 22
+  },
+  {
+    "Name": "CYZONE",
+    "Is4Dx": false,
+    "Is3D": false,
+    "Seats": 22
+  },
+  {
+    "Name": "C",
+    "Is4Dx": false,
+    "Is3D": false,
+    "Seats": 22
+  }
+]
