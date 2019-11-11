@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DataProcessor\ImportDtos\**" />
+    <EmbeddedResource Remove="DataProcessor\ImportDtos\**" />
+    <None Remove="DataProcessor\ImportDtos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
@@ -13,8 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataProcessor\ImportDtos\" />
-    <Folder Include="Data\Models\Enums\" />
+    <Folder Include="DataProcessor\DTO\ExportDtos\" />
     <Folder Include="ImportResults\" />
   </ItemGroup>
 

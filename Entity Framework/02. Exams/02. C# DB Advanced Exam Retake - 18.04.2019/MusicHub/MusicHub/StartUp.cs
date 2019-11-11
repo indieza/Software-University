@@ -5,7 +5,7 @@
 
     using AutoMapper;
     using Microsoft.EntityFrameworkCore;
-   
+
     using Data;
 
     public class StartUp
@@ -19,7 +19,7 @@
             ResetDatabase(context, shouldDropDatabase: true);
 
             var projectDir = GetProjectDirectory();
-            
+
             ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
             ExportEntities(context, projectDir + @"ExportResults/");
 
@@ -32,19 +32,19 @@
         private static void ImportEntities(MusicHubDbContext context, string baseDir, string exportDir)
         {
             var writers = DataProcessor.Deserializer.ImportWriters(context,
-                    File.ReadAllText(baseDir + "Actual - ImportWriters.json"));
+                    File.ReadAllText(baseDir + "ImportWriters.json"));
             PrintAndExportEntityToFile(writers, exportDir + "ImportWriters.txt");
 
             var producerAlbums = DataProcessor.Deserializer.ImportProducersAlbums(context,
-                    File.ReadAllText(baseDir + "Actual - ImportProducersAlbums.json"));
+                    File.ReadAllText(baseDir + "ImportProducersAlbums.json"));
             PrintAndExportEntityToFile(producerAlbums, exportDir + "ImportProducersAlbums.txt");
 
-            var songs = DataProcessor.Deserializer.ImportSongs(context, 
-                File.ReadAllText(baseDir + "Actual - ImportSongs.xml"));
+            var songs = DataProcessor.Deserializer.ImportSongs(context,
+                File.ReadAllText(baseDir + "ImportSongs.xml"));
             PrintAndExportEntityToFile(songs, exportDir + "ImportSongs.txt");
 
-            var performers = DataProcessor.Deserializer.ImportSongPerformers(context, 
-                File.ReadAllText(baseDir + "Actual - ImportSongPerformers.xml"));
+            var performers = DataProcessor.Deserializer.ImportSongPerformers(context,
+                File.ReadAllText(baseDir + "ImportSongPerformers.xml"));
             PrintAndExportEntityToFile(performers, exportDir + "ImportSongPerformers.txt");
         }
 
