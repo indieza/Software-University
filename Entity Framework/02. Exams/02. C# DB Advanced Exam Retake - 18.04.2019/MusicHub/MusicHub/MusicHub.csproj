@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataProcessor\DTO\ExportDtos\" />
     <Folder Include="ImportResults\" />
   </ItemGroup>
 

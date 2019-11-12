@@ -1,10 +1,6 @@
 namespace MusicHub.DataProcessor.DTO.ImportDtos
 {
-    using MusicHub.Data.Models.Enums;
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Text;
     using System.Xml.Serialization;
 
     [XmlType("Song")]

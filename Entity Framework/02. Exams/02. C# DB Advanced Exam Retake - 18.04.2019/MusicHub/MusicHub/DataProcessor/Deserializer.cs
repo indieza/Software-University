@@ -1,5 +1,11 @@
 ﻿namespace MusicHub.DataProcessor
 {
+    using AutoMapper;
+    using Data;
+    using MusicHub.Data.Models;
+    using MusicHub.Data.Models.Enums;
+    using MusicHub.DataProcessor.DTO.ImportDtos;
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -8,12 +14,6 @@
     using System.Linq;
     using System.Text;
     using System.Xml.Serialization;
-    using AutoMapper;
-    using Data;
-    using MusicHub.Data.Models;
-    using MusicHub.Data.Models.Enums;
-    using MusicHub.DataProcessor.DTO.ImportDtos;
-    using Newtonsoft.Json;
     using ValidationContext = System.ComponentModel.DataAnnotations.ValidationContext;
 
     public class Deserializer

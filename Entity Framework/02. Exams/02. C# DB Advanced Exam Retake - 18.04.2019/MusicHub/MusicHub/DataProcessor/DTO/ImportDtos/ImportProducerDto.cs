@@ -1,10 +1,7 @@
 namespace MusicHub.DataProcessor.DTO.ImportDtos
 {
-    using MusicHub.Data.Models;
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Text;
 
     public class ImportProducerDto
     {
