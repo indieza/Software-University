@@ -1,0 +1,303 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<Projections>
+  <Projection>
+    <MovieId>38</MovieId>
+    <HallId>4</HallId>
+    <DateTime>2019-04-27 13:33:20</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>6</MovieId>
+    <HallId>4</HallId>
+    <DateTime>2019-05-12 05:51:29</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>21</MovieId>
+    <HallId>5</HallId>
+    <DateTime>2019-05-03 16:56:12</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>10</MovieId>
+    <HallId>5</HallId>
+    <DateTime>2019-05-01 00:11:21</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>40</MovieId>
+    <HallId>4</HallId>
+    <DateTime>2019-04-26 08:56:57</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>18</MovieId>
+    <HallId>3</HallId>
+    <DateTime>2019-05-16 16:23:07</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>34</MovieId>
+    <HallId>7</HallId>
+    <DateTime>2019-04-23 09:17:46</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>15</MovieId>
+    <HallId>8</HallId>
+    <DateTime>2019-04-21 13:12:29</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>6</MovieId>
+    <HallId>7</HallId>
+    <DateTime>2019-05-01 19:43:03</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>7</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-04-23 12:04:05</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>17</MovieId>
+    <HallId>3</HallId>
+    <DateTime>2019-04-29 08:09:47</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>18</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-04-29 22:49:17</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>17</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-04-21 05:43:19</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>29</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-04-22 08:41:07</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>37</MovieId>
+    <HallId>5</HallId>
+    <DateTime>2019-05-05 02:12:49</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>11</MovieId>
+    <HallId>2</HallId>
+    <DateTime>2019-05-09 06:08:57</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>36</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-05-05 22:49:39</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>28</MovieId>
+    <HallId>5</HallId>
+    <DateTime>2019-04-15 04:55:01</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>28</MovieId>
+    <HallId>5</HallId>
+    <DateTime>2019-05-15 20:33:47</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>6</MovieId>
+    <HallId>5</HallId>
+    <DateTime>2019-04-25 02:56:36</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>11</MovieId>
+    <HallId>6</HallId>
+    <DateTime>2019-05-19 08:00:32</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>8</MovieId>
+    <HallId>3</HallId>
+    <DateTime>2019-05-23 20:22:41</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>9</MovieId>
+    <HallId>2</HallId>
+    <DateTime>2019-05-01 13:12:56</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>6</MovieId>
+    <HallId>6</HallId>
+    <DateTime>2019-05-14 02:11:11</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>12</MovieId>
+    <HallId>6</HallId>
+    <DateTime>2019-04-24 05:08:44</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>9</MovieId>
+    <HallId>5</HallId>
+    <DateTime>2019-05-10 11:08:44</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>4</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-05-10 15:36:16</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>29</MovieId>
+    <HallId>8</HallId>
+    <DateTime>2019-05-22 13:00:40</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>1</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-04-19 18:54:51</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>24</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-04-23 03:43:49</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>31</MovieId>
+    <HallId>6</HallId>
+    <DateTime>2019-05-17 14:59:40</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>28</MovieId>
+    <HallId>4</HallId>
+    <DateTime>2019-05-02 14:21:07</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>31</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-05-08 02:34:10</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>40</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-05-10 23:10:32</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>17</MovieId>
+    <HallId>4</HallId>
+    <DateTime>2019-04-20 03:48:11</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>3</MovieId>
+    <HallId>6</HallId>
+    <DateTime>2019-04-30 19:12:17</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>22</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-04-17 02:58:38</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>27</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-04-25 06:59:11</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>5</MovieId>
+    <HallId>3</HallId>
+    <DateTime>2019-05-14 00:04:12</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>29</MovieId>
+    <HallId>4</HallId>
+    <DateTime>2019-05-08 23:22:41</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>8</MovieId>
+    <HallId>8</HallId>
+    <DateTime>2019-05-18 22:58:37</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>36</MovieId>
+    <HallId>3</HallId>
+    <DateTime>2019-05-15 20:07:25</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>30</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-05-08 04:54:33</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>2</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-05-11 10:10:01</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>1</MovieId>
+    <HallId>7</HallId>
+    <DateTime>2019-05-03 21:27:41</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>28</MovieId>
+    <HallId>7</HallId>
+    <DateTime>2019-05-17 06:28:22</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>32</MovieId>
+    <HallId>7</HallId>
+    <DateTime>2019-05-12 06:31:14</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>25</MovieId>
+    <HallId>8</HallId>
+    <DateTime>2019-04-19 04:21:24</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>1</MovieId>
+    <HallId>2</HallId>
+    <DateTime>2019-05-03 11:50:44</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>34</MovieId>
+    <HallId>6</HallId>
+    <DateTime>2019-05-03 01:36:58</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>19</MovieId>
+    <HallId>8</HallId>
+    <DateTime>2019-04-20 02:16:22</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>36</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-04-15 14:54:56</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>3</MovieId>
+    <HallId>7</HallId>
+    <DateTime>2019-05-08 18:21:11</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>22</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-05-13 00:38:18</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>11</MovieId>
+    <HallId>10</HallId>
+    <DateTime>2019-05-20 14:29:19</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>23</MovieId>
+    <HallId>9</HallId>
+    <DateTime>2019-05-11 21:26:14</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>11</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-05-22 14:31:29</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>30</MovieId>
+    <HallId>7</HallId>
+    <DateTime>2019-05-17 12:40:07</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>14</MovieId>
+    <HallId>3</HallId>
+    <DateTime>2019-04-28 19:53:01</DateTime>
+  </Projection>
+  <Projection>
+    <MovieId>35</MovieId>
+    <HallId>1</HallId>
+    <DateTime>2019-04-22 03:19:34</DateTime>
+  </Projection>
+</Projections>

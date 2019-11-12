@@ -1,0 +1,40 @@
+Invalid data!
+Successfully imported Gui Si (Silk) with genre Drama and rating 9.00!
+Invalid data!
+Invalid data!
+Successfully imported Prey, The (La proie) with genre Action and rating 5.00!
+Successfully imported SIS with genre Action and rating 10.00!
+Invalid data!
+Invalid data!
+Successfully imported Moog with genre Musical and rating 4.00!
+Invalid data!
+Successfully imported Free Willy with genre Drama and rating 1.00!
+Invalid data!
+Invalid data!
+Invalid data!
+Successfully imported T.N.T. with genre Action and rating 8.00!
+Invalid data!
+Successfully imported Host, The (Gwoemul) with genre Comedy and rating 9.00!
+Successfully imported Shaggy D.A., The with genre Children and rating 5.00!
+Successfully imported Silent Partner, The with genre Crime and rating 7.00!
+Invalid data!
+Successfully imported Best Worst Movie with genre Documentary and rating 3.00!
+Successfully imported Sorcerer with genre Action and rating 6.00!
+Invalid data!
+Successfully imported White Man's Burden with genre Drama and rating 7.00!
+Successfully imported Stroker Ace with genre Action and rating 3.00!
+Successfully imported One Day with genre Drama and rating 3.00!
+Invalid data!
+Successfully imported Trojan Eddie with genre Crime and rating 5.00!
+Invalid data!
+Successfully imported Creator with genre Comedy and rating 6.00!
+Invalid data!
+Successfully imported Living 'til the End with genre Drama and rating 5.00!
+Successfully imported Cranford with genre Drama and rating 2.00!
+Invalid data!
+Invalid data!
+Invalid data!
+Successfully imported Absurdistan with genre Comedy and rating 9.00!
+Successfully imported Fahrenhype 9/11 with genre Documentary and rating 8.00!
+Successfully imported Gloriously Wasted with genre Comedy and rating 5.00!
+Invalid data!
