@@ -1,0 +1,261 @@
+[
+  {
+    "Name": "",
+    "Cells": [
+      {
+        "CellNumber": 101,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 102,
+        "HasWindow": false
+      }
+    ]
+  },
+  {
+    "Name": "CSS",
+    "Cells": [
+      {
+        "CellNumber": 0,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 202,
+        "HasWindow": false
+      }
+    ]
+  },
+  {
+    "Name": "Invaliiiiiiiiiiiiiiiiiiiiiiiiiiiiidddddd",
+    "Cells": [
+      {
+        "CellNumber": 101,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 102,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 103,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 104,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 105,
+        "HasWindow": true
+      }
+    ]
+  },
+  {
+    "Name": "Cybersecurity",
+    "Cells": [
+      {
+        "CellNumber": 101,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 102,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 103,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 104,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 105,
+        "HasWindow": true
+      }
+    ]
+  },
+  {
+    "Name": "StackOverflow",
+    "Cells": [
+      {
+        "CellNumber": 201,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 202,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 203,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 204,
+        "HasWindow": false
+      }
+    ]
+  },
+  {
+    "Name": "Blockchain",
+    "Cells": [
+      {
+        "CellNumber": 301,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 302,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 303,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 304,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 305,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 306,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 307,
+        "HasWindow": true
+      }
+    ]
+  },
+  {
+    "Name": "WebSecurity",
+    "Cells": [
+      {
+        "CellNumber": 401,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 402,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 403,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 404,
+        "HasWindow": false
+      }
+    ]
+  },
+  {
+    "Name": "ArtificialIntelligence",
+    "Cells": [
+      {
+        "CellNumber": 501,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 502,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 503,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 504,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 505,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 506,
+        "HasWindow": true
+      }
+    ]
+  },
+  {
+    "Name": "AI",
+    "Cells": [
+      {
+        "CellNumber": 501,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 502,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 503,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 504,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 505,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 506,
+        "HasWindow": true
+      }
+    ]
+  },
+  {
+    "Name": "DeepWeb",
+    "Cells": [
+      {
+        "CellNumber": 601,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 602,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 603,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 604,
+        "HasWindow": false
+      },
+      {
+        "CellNumber": 605,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 606,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 607,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 608,
+        "HasWindow": true
+      }
+    ]
+  },
+  {
+    "Name": "Invalid",
+    "Cells": [
+      {
+        "CellNumber": 0,
+        "HasWindow": true
+      },
+      {
+        "CellNumber": 102,
+        "HasWindow": false
+      }
+    ]
+  }
+]
