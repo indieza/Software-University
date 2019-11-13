@@ -23,8 +23,6 @@
 
   <ItemGroup>
     <Folder Include="DataProcessor\ExportDto\" />
-    <Folder Include="DataProcessor\ImportDto\" />
-    <Folder Include="Data\Models\Enums\" />
     <Folder Include="ImportResults\" />
     <Folder Include="ExportResults\" />
   </ItemGroup>
