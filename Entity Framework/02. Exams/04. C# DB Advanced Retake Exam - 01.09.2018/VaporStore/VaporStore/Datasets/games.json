@@ -1,0 +1,1185 @@
+[
+	{
+		"Price": 0,
+		"ReleaseDate": "2013-07-09",
+		"Developer": "Valid Dev",
+		"Genre": "Valid Genre",
+		"Tags": [
+			"Valid Tag"
+		]
+	},
+	{
+		"Name": "Invalid",
+		"Price": -5,
+		"ReleaseDate": "2013-07-09",
+		"Developer": "Valid Dev",
+		"Genre": "Valid Genre",
+		"Tags": [
+			"Valid Tag"
+		]
+	},
+	{
+		"Name": "Invalid",
+		"Price": 0,
+		"ReleaseDate": "2013-07-09",
+		"Genre": "Valid Genre",
+		"Tags": [
+			"Valid Tag"
+		]
+	},
+	{
+		"Name": "Invalid",
+		"Price": 0,
+		"ReleaseDate": "2013-07-09",
+		"Developer": "Valid Dev",
+		"Tags": [
+			"Valid Tag"
+		]
+	},
+	{
+		"Name": "Invalid",
+		"Price": 0,
+		"ReleaseDate": "2013-07-09",
+		"Developer": "Valid Dev",
+		"Genre": "Valid Genre",
+		"Tags": []
+	},
+	{
+		"Name": "Dota 2",
+		"Price": 0,
+		"ReleaseDate": "2013-07-09",
+		"Developer": "Valve",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"Co-op",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"SteamVR Collectibles",
+			"In-App Purchases",
+			"Valve Anti-Cheat enabled"
+		]
+	},
+	{
+		"Name": "MONSTER HUNTER: WORLD",
+		"Price": 59.99,
+		"ReleaseDate": "2018-08-09",
+		"Developer": "CAPCOM Co., Ltd.",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Steam Achievements",
+			"Partial Controller Support",
+			"Stats"
+		]
+	},
+	{
+		"Name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+		"Price": 29.99,
+		"ReleaseDate": "2017-12-21",
+		"Developer": "PUBG Corporation",
+		"Genre": "Violent",
+		"Tags": [
+			"Multi-player",
+			"Online Multi-Player",
+			"Stats"
+		]
+	},
+	{
+		"Name": "Counter-Strike: Global Offensive",
+		"Price": 12.49,
+		"ReleaseDate": "2012-08-21",
+		"Developer": "Valve",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"In-App Purchases",
+			"Valve Anti-Cheat enabled",
+			"Stats"
+		]
+	},
+	{
+		"Name": "Warframe",
+		"Price": 0,
+		"ReleaseDate": "2013-03-25",
+		"Developer": "Digital Extremes",
+		"Genre": "Violent",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Steam Trading Cards",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "Tom Clancy's Rainbow Six Siege",
+		"Price": 14.99,
+		"ReleaseDate": "2015-12-01",
+		"Developer": "Ubisoft Montreal",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Steam Trading Cards",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "Rocket League",
+		"Price": 12.59,
+		"ReleaseDate": "2015-07-07",
+		"Developer": "Psyonix, Inc.",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Shared/Split Screen",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"Steam Cloud",
+			"Stats"
+		]
+	},
+	{
+		"Name": "Grand Theft Auto V",
+		"Price": 29.99,
+		"ReleaseDate": "2015-04-13",
+		"Developer": "Rockstar North",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Steam Achievements",
+			"Full controller support"
+		]
+	},
+	{
+		"Name": "Planet Coaster",
+		"Price": 37.99,
+		"ReleaseDate": "2016-11-17",
+		"Developer": "Frontier Developments",
+		"Genre": "Simulation",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Warhammer 40,000: Gladius - Relics of War",
+		"Price": 37.99,
+		"ReleaseDate": "2018-07-12",
+		"Developer": "Proxy Studios",
+		"Genre": "Strategy",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Cross-Platform Multiplayer",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Black Desert Online",
+		"Price": 9.99,
+		"ReleaseDate": "2017-05-24",
+		"Developer": "Pearl Abyss",
+		"Genre": "Violent",
+		"Tags": [
+			"Online Multi-Player",
+			"MMO",
+			"Online Co-op",
+			"Steam Trading Cards",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "Jurassic World Evolution",
+		"Price": 54.99,
+		"ReleaseDate": "2018-06-11",
+		"Developer": "Frontier Developments",
+		"Genre": "Violent",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Team Fortress 2",
+		"Price": 0,
+		"ReleaseDate": "2007-10-10",
+		"Developer": "Valve",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Captions available",
+			"Steam Workshop",
+			"In-App Purchases",
+			"Partial Controller Support",
+			"Valve Anti-Cheat enabled",
+			"Stats",
+			"Includes level editor",
+			"Commentary available"
+		]
+	},
+	{
+		"Name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+		"Price": 29.99,
+		"ReleaseDate": "2016-02-04",
+		"Developer": "CyberConnect2 Co. Ltd.",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Cloud",
+			"Steam Leaderboards"
+		]
+	},
+	{
+		"Name": "Path of Exile",
+		"Price": 0,
+		"ReleaseDate": "2013-10-23",
+		"Developer": "Grinding Gear Games",
+		"Genre": "Nudity",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"MMO",
+			"Co-op",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"In-App Purchases"
+		]
+	},
+	{
+		"Name": "Banished",
+		"Price": 18.99,
+		"ReleaseDate": "2014-02-18",
+		"Developer": "Shining Rock Software LLC",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements"
+		]
+	},
+	{
+		"Name": "Raft",
+		"Price": 19.99,
+		"ReleaseDate": "2018-05-23",
+		"Developer": "Redbeet Interactive",
+		"Genre": "Single-player",
+		"Tags": [
+			"Single-player",
+			"Online Multi-Player",
+			"Online Co-op",
+			"Steam Achievements",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "War Thunder",
+		"Price": 0,
+		"ReleaseDate": "2013-08-15",
+		"Developer": "Gaijin Entertainment",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"MMO",
+			"Co-op",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "Football Manager 2018",
+		"Price": 54.99,
+		"ReleaseDate": "2017-11-09",
+		"Developer": "Sports Interactive",
+		"Genre": "Simulation",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Steam Achievements",
+			"Steam Workshop",
+			"Steam Cloud",
+			"Steam Leaderboards"
+		]
+	},
+	{
+		"Name": "Dead by Daylight",
+		"Price": 19.99,
+		"ReleaseDate": "2016-06-14",
+		"Developer": "Behaviour Digital Inc.",
+		"Genre": "Violent",
+		"Tags": [
+			"Multi-player",
+			"Online Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "The Crew 2",
+		"Price": 59.99,
+		"ReleaseDate": "2018-06-28",
+		"Developer": "Ivory Tower",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Online Multi-Player",
+			"MMO",
+			"Online Co-op",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "The Forest",
+		"Price": 16.79,
+		"ReleaseDate": "2018-04-30",
+		"Developer": "Endnight Games Ltd",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Partial Controller Support",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "House Flipper",
+		"Price": 16.79,
+		"ReleaseDate": "2018-05-17",
+		"Developer": "Empyrean",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Stardew Valley",
+		"Price": 13.99,
+		"ReleaseDate": "2016-02-26",
+		"Developer": "ConcernedApe",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Partial Controller Support",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Seeking Dawn",
+		"Price": 33.99,
+		"ReleaseDate": "2018-07-12",
+		"Developer": "Multiverse",
+		"Genre": "Violent",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Co-op",
+			"Online Co-op"
+		]
+	},
+	{
+		"Name": "Paladins",
+		"Price": 0,
+		"ReleaseDate": "2018-05-08",
+		"Developer": "Hi-Rez Studios",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"Online Multi-Player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "Crash Bandicoot N. Sane Trilogy",
+		"Price": 39.99,
+		"ReleaseDate": "2018-06-29",
+		"Developer": "Vicarious Visions",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Partial Controller Support",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "RimWorld",
+		"Price": 27.99,
+		"ReleaseDate": "2016-07-15",
+		"Developer": "Ludeon Studios",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Steam Workshop",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Shadowverse CCG",
+		"Price": 0,
+		"ReleaseDate": "2016-10-27",
+		"Developer": "Cygames, Inc.",
+		"Genre": "Free to Play",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Cross-Platform Multiplayer",
+			"In-App Purchases"
+		]
+	},
+	{
+		"Name": "Touhou: Scarlet Curiosity",
+		"Price": 14.99,
+		"ReleaseDate": "2018-07-11",
+		"Developer": "Ankake Spa",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Partial Controller Support",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Divinity: Original Sin 2",
+		"Price": 44.99,
+		"ReleaseDate": "2017-09-14",
+		"Developer": "Larian Studios",
+		"Genre": "Adventure",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Local Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Local Co-op",
+			"Shared/Split Screen",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Captions available",
+			"Steam Workshop",
+			"Steam Cloud",
+			"Includes level editor"
+		]
+	},
+	{
+		"Name": "Hunt Showdown",
+		"Price": 29.99,
+		"ReleaseDate": "2018-02-22",
+		"Developer": "Crytek",
+		"Genre": "Violent",
+		"Tags": [
+			"Online Multi-Player",
+			"Online Co-op"
+		]
+	},
+	{
+		"Name": "Darksiders III",
+		"Price": 59.99,
+		"ReleaseDate": "2018-11-27",
+		"Developer": "Gunfire Games",
+		"Genre": "Violent",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "FINAL FANTASY XIV Online",
+		"Price": 9.99,
+		"ReleaseDate": "2014-02-18",
+		"Developer": "Square Enix",
+		"Genre": "Massively Multiplayer",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"MMO",
+			"Co-op",
+			"Online Co-op",
+			"Cross-Platform Multiplayer",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "Warface",
+		"Price": 0,
+		"ReleaseDate": "2014-07-01",
+		"Developer": "Crytek",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"MMO",
+			"Co-op",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"In-App Purchases"
+		]
+	},
+	{
+		"Name": "SMITE",
+		"Price": 0,
+		"ReleaseDate": "2015-09-08",
+		"Developer": "Hi-Rez Studios",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"Steam Achievements",
+			"Steam Trading Cards"
+		]
+	},
+	{
+		"Name": "Subnautica",
+		"Price": 22.99,
+		"ReleaseDate": "2018-01-23",
+		"Developer": "Unknown Worlds Entertainment",
+		"Genre": "Adventure",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"VR Support"
+		]
+	},
+	{
+		"Name": "Kingdom Come: Deliverance",
+		"Price": 49.99,
+		"ReleaseDate": "2018-02-13",
+		"Developer": "Warhorse Studios",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "World of Warships",
+		"Price": 0,
+		"ReleaseDate": "2017-11-15",
+		"Developer": "Wargaming Group Limited",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"Online Multi-Player",
+			"MMO",
+			"Co-op",
+			"Online Co-op",
+			"Steam Achievements",
+			"In-App Purchases"
+		]
+	},
+	{
+		"Name": "Rust",
+		"Price": 31.99,
+		"ReleaseDate": "2018-02-08",
+		"Developer": "Facepunch Studios",
+		"Genre": "Nudity",
+		"Tags": [
+			"Multi-player",
+			"Online Multi-Player",
+			"MMO",
+			"Co-op",
+			"Online Co-op",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"In-App Purchases",
+			"Valve Anti-Cheat enabled",
+			"Stats"
+		]
+	},
+	{
+		"Name": "Total War: WARHAMMER II",
+		"Price": 59.99,
+		"ReleaseDate": "2017-09-28",
+		"Developer": "CREATIVE ASSEMBLY",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Steam Achievements",
+			"Steam Trading Cards"
+		]
+	},
+	{
+		"Name": "FOR HONOR",
+		"Price": 14.99,
+		"ReleaseDate": "2017-02-13",
+		"Developer": "Ubisoft Montreal",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Online Multi-Player",
+			"Online Co-op",
+			"Steam Trading Cards",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "ARK: Survival Evolved",
+		"Price": 89.0,
+		"ReleaseDate": "2017-08-29",
+		"Developer": "Studio Wildcard",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"MMO",
+			"Co-op",
+			"Steam Achievements",
+			"Full controller support",
+			"VR Support",
+			"Steam Workshop",
+			"Steam Cloud",
+			"Valve Anti-Cheat enabled",
+			"Includes level editor"
+		]
+	},
+	{
+		"Name": "Dig or Die",
+		"Price": 11.99,
+		"ReleaseDate": "2018-07-10",
+		"Developer": "Gaddy Games",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "NBA 2K18",
+		"Price": 49.99,
+		"ReleaseDate": "2017-09-14",
+		"Developer": "Visual Concepts",
+		"Genre": "Simulation",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Shared/Split Screen",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Terraria",
+		"Price": 9.99,
+		"ReleaseDate": "2011-05-16",
+		"Developer": "Re-Logic",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Wreckfest",
+		"Price": 44.99,
+		"ReleaseDate": "2018-06-14",
+		"Developer": "Bugbear",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Steam Workshop",
+			"Partial Controller Support",
+			"Stats",
+			"Steam Leaderboards"
+		]
+	},
+	{
+		"Name": "Shining Resonance Refrain",
+		"Price": 49.99,
+		"ReleaseDate": "2018-07-09",
+		"Developer": "SEGA",
+		"Genre": "Adventure",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards"
+		]
+	},
+	{
+		"Name": "Trove",
+		"Price": 0,
+		"ReleaseDate": "2015-07-09",
+		"Developer": "Trion Worlds",
+		"Genre": "Action",
+		"Tags": [
+			"Online Multi-Player",
+			"MMO",
+			"Co-op",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"In-App Purchases"
+		]
+	},
+	{
+		"Name": "Yu-Gi-Oh! Duel Links",
+		"Price": 0,
+		"ReleaseDate": "2017-11-16",
+		"Developer": "Konami Digital Entertainment",
+		"Genre": "Free to Play",
+		"Tags": [
+			"Single-player",
+			"Online Multi-Player",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"In-App Purchases"
+		]
+	},
+	{
+		"Name": "Factorio",
+		"Price": 25.0,
+		"ReleaseDate": "2016-02-25",
+		"Developer": "Wube Software LTD.",
+		"Genre": "Casual",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Local Multi-Player",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Steam Cloud",
+			"Includes level editor"
+		]
+	},
+	{
+		"Name": "Frostpunk",
+		"Price": 29.99,
+		"ReleaseDate": "2018-04-24",
+		"Developer": "11 bit studios",
+		"Genre": "Simulation",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Slay the Spire",
+		"Price": 15.99,
+		"ReleaseDate": "2017-11-14",
+		"Developer": "Mega Crit Games",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Cloud",
+			"Stats",
+			"Steam Leaderboards"
+		]
+	},
+	{
+		"Name": "Beat Saber",
+		"Price": 19.99,
+		"ReleaseDate": "2018-05-01",
+		"Developer": "Beat Games",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Steam Leaderboards"
+		]
+	},
+	{
+		"Name": "Bridge Constructor Portal",
+		"Price": 9.99,
+		"ReleaseDate": "2017-12-20",
+		"Developer": "ClockStone",
+		"Genre": "Simulation",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "The Elder Scrolls V: Skyrim Special Edition",
+		"Price": 39.99,
+		"ReleaseDate": "2016-10-27",
+		"Developer": "Bethesda Game Studios",
+		"Genre": "RPG",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Partial Controller Support",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Garry's Mod",
+		"Price": 9.99,
+		"ReleaseDate": "2006-11-29",
+		"Developer": "Facepunch Studios",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Captions available",
+			"Steam Workshop",
+			"Steam Cloud",
+			"Valve Anti-Cheat enabled",
+			"Includes level editor"
+		]
+	},
+	{
+		"Name": "DARK SOULS: REMASTERED",
+		"Price": 39.99,
+		"ReleaseDate": "2018-05-23",
+		"Developer": "QLOC",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Steam Achievements",
+			"Full controller support"
+		]
+	},
+	{
+		"Name": "Guns, Gore and Cannoli 2",
+		"Price": 12.99,
+		"ReleaseDate": "2018-03-02",
+		"Developer": "Crazy Monkey Studios",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Online Multi-Player",
+			"Local Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Local Co-op",
+			"Shared/Split Screen",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Full controller support",
+			"Stats"
+		]
+	},
+	{
+		"Name": "Human: Fall Flat",
+		"Price": 14.99,
+		"ReleaseDate": "2016-07-22",
+		"Developer": "No Brakes Games",
+		"Genre": "Adventure",
+		"Tags": [
+			"Single-player",
+			"Online Multi-Player",
+			"Local Co-op",
+			"Shared/Split Screen",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud",
+			"Stats"
+		]
+	},
+	{
+		"Name": "Call of Duty: Black Ops III",
+		"Price": 59.99,
+		"ReleaseDate": "2015-11-05",
+		"Developer": "Treyarch",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"Valve Anti-Cheat enabled",
+			"Steam Leaderboards"
+		]
+	},
+	{
+		"Name": "Far Cry 5",
+		"Price": 59.99,
+		"ReleaseDate": "2018-03-26",
+		"Developer": "Ubisoft Montreal",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Captions available",
+			"In-App Purchases",
+			"Partial Controller Support",
+			"Includes level editor"
+		]
+	},
+	{
+		"Name": "Conan Exiles",
+		"Price": 39.99,
+		"ReleaseDate": "2018-05-08",
+		"Developer": "Funcom",
+		"Genre": "Nudity",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Workshop"
+		]
+	},
+	{
+		"Name": "Brawlhalla",
+		"Price": 0,
+		"ReleaseDate": "2017-10-17",
+		"Developer": "Blue Mammoth Games",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Local Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Local Co-op",
+			"Shared/Split Screen",
+			"Cross-Platform Multiplayer",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards"
+		]
+	},
+	{
+		"Name": "Vampyr",
+		"Price": 49.99,
+		"ReleaseDate": "2018-06-04",
+		"Developer": "DONTNOD Entertainment",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Squad",
+		"Price": 36.99,
+		"ReleaseDate": "2015-12-14",
+		"Developer": "Offworld Industries",
+		"Genre": "Action",
+		"Tags": [
+			"Multi-player",
+			"Online Multi-Player",
+			"Steam Trading Cards",
+			"Partial Controller Support",
+			"Valve Anti-Cheat enabled"
+		]
+	},
+	{
+		"Name": "Neverwinter",
+		"Price": 0,
+		"ReleaseDate": "2013-12-05",
+		"Developer": "Cryptic Studios",
+		"Genre": "Adventure",
+		"Tags": [
+			"Multi-player",
+			"MMO",
+			"Co-op",
+			"Steam Trading Cards",
+			"In-App Purchases",
+			"Includes level editor"
+		]
+	},
+	{
+		"Name": "Tom Clancy's Ghost Recon Wildlands",
+		"Price": 59.99,
+		"ReleaseDate": "2017-03-06",
+		"Developer": "Ubisoft Paris",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Co-op",
+			"Steam Trading Cards",
+			"In-App Purchases",
+			"Partial Controller Support"
+		]
+	},
+	{
+		"Name": "Arma 3",
+		"Price": 34.99,
+		"ReleaseDate": "2013-09-12",
+		"Developer": "Bohemia Interactive",
+		"Genre": "Action",
+		"Tags": [
+			"Single-player",
+			"Multi-player",
+			"Online Multi-Player",
+			"Local Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Local Co-op",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Captions available",
+			"Steam Workshop",
+			"Partial Controller Support",
+			"Steam Leaderboards",
+			"Includes level editor"
+		]
+	},
+	{
+		"Name": "Soul at Stake",
+		"Price": 14.99,
+		"ReleaseDate": "2018-06-25",
+		"Developer": "Chongming Studio",
+		"Genre": "Violent",
+		"Tags": [
+			"Multi-player",
+			"Online Multi-Player",
+			"Co-op",
+			"Online Co-op",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Dungeon Warfare 2",
+		"Price": 12.49,
+		"ReleaseDate": "2018-07-06",
+		"Developer": "Valsar",
+		"Genre": "Indie",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Steam Workshop",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Pro Cycling Manager 2018",
+		"Price": 39.99,
+		"ReleaseDate": "2018-06-28",
+		"Developer": "Cyanide Studio",
+		"Genre": "Simulation",
+		"Tags": [
+			"Single-player",
+			"Online Multi-Player",
+			"Steam Achievements",
+			"Steam Trading Cards",
+			"Steam Workshop",
+			"Steam Cloud"
+		]
+	},
+	{
+		"Name": "Rules Of Survival",
+		"Price": 2.39,
+		"ReleaseDate": "2018-05-30",
+		"Developer": "Netease Games",
+		"Genre": "Action",
+		"Tags": [
+			"Online Multi-Player",
+			"In-App Purchases"
+		]
+	},
+	{
+		"Name": "The Witcher 3: Wild Hunt",
+		"Price": 29.99,
+		"ReleaseDate": "2015-05-18",
+		"Developer": "CD PROJEKT RED",
+		"Genre": "Nudity",
+		"Tags": [
+			"Single-player",
+			"Steam Achievements",
+			"Full controller support",
+			"Steam Trading Cards",
+			"Steam Cloud"
+		]
+	}
+]
