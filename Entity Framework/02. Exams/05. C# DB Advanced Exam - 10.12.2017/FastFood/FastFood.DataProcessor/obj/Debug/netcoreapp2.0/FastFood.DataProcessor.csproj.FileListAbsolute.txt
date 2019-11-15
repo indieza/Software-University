@@ -1,0 +1,13 @@
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\bin\Debug\netcoreapp2.0\FastFood.DataProcessor.deps.json
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\bin\Debug\netcoreapp2.0\FastFood.DataProcessor.dll
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\bin\Debug\netcoreapp2.0\FastFood.DataProcessor.pdb
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\bin\Debug\netcoreapp2.0\FastFood.Data.dll
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\bin\Debug\netcoreapp2.0\FastFood.Models.dll
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\bin\Debug\netcoreapp2.0\FastFood.Data.pdb
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\bin\Debug\netcoreapp2.0\FastFood.Models.pdb
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\obj\Debug\netcoreapp2.0\FastFood.DataProcessor.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\obj\Debug\netcoreapp2.0\FastFood.DataProcessor.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\obj\Debug\netcoreapp2.0\FastFood.DataProcessor.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\obj\Debug\netcoreapp2.0\FastFood.DataProcessor.csproj.CopyComplete
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\obj\Debug\netcoreapp2.0\FastFood.DataProcessor.dll
+D:\Documents\GitHub\Software-University\Entity Framework\02. Exams\05. C# DB Advanced Exam - 10.12.2017\FastFood\FastFood.DataProcessor\obj\Debug\netcoreapp2.0\FastFood.DataProcessor.pdb
