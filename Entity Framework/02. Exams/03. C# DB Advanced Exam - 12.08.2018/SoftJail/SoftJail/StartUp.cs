@@ -1,9 +1,9 @@
 ﻿namespace SoftJail
 {
-    using System;
-    using Data;
     using AutoMapper;
+    using Data;
     using Microsoft.EntityFrameworkCore;
+    using System;
     using System.IO;
 
     public class StartUp
@@ -60,6 +60,7 @@
             Console.WriteLine(xmlOutput);
             File.WriteAllText(exportDir + "PrisonersInbox.xml", xmlOutput);
         }
+
         private static void ResetDatabase(SoftJailDbContext context, bool shouldDropDatabase = false)
         {
             if (shouldDropDatabase)
