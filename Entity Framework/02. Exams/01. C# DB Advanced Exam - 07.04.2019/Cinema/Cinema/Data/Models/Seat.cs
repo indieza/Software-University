@@ -8,7 +8,7 @@ namespace Cinema.Data.Models
         [Key]
         public int Id { get; set; }
 
-        [ForeignKey("Hall"), Required]
+        [ForeignKey(nameof(Hall)), Required]
         public int HallId { get; set; }
 
         public Hall Hall { get; set; }

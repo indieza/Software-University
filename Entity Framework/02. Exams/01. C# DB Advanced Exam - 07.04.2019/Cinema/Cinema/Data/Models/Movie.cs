@@ -1,4 +1,4 @@
-﻿namespace Cinema.Data.Models
+namespace Cinema.Data.Models
 {
     using Cinema.Data.Models.Enums;
     using System;

@@ -1,5 +1,6 @@
 ﻿namespace Cinema.DataProcessor
 {
+    using AutoMapper;
     using Cinema.Data.Models;
     using Cinema.Data.Models.Enums;
     using Cinema.DataProcessor.ImportDto;
@@ -8,11 +9,11 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Text;
     using System.Xml.Serialization;
+    using ValidationContext = System.ComponentModel.DataAnnotations.ValidationContext;
 
     public class Deserializer
     {
@@ -29,32 +30,26 @@
         public static string ImportMovies(CinemaContext context, string jsonString)
         {
             var moviesDto = JsonConvert.DeserializeObject<ImportMovieDto[]>(jsonString);
+
             List<Movie> movies = new List<Movie>();
 
             StringBuilder sb = new StringBuilder();
 
             foreach (var movieDto in moviesDto)
             {
-                bool isValidDto = IsValid(movieDto);
-                var isAddeTitle = movies.FirstOrDefault(m => m.Title == movieDto.Title);
-                var checkGenre = Enum.TryParse(typeof(Genre), movieDto.Genre, out object result);
+                bool isValidMovie = IsValid(movieDto);
+                bool isValidGenre = Enum.IsDefined(typeof(Genre), movieDto.Genre);
+                bool isTitleExist = movies.Any(m => m.Title == movieDto.Title);
 
-                if (isValidDto == false || isAddeTitle != null || checkGenre == false)
+                if (isValidMovie == false || isValidGenre == false || isTitleExist == true)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                Movie movie = new Movie
-                {
-                    Title = movieDto.Title,
-                    Genre = (Genre)Enum.Parse(typeof(Genre), movieDto.Genre),
-                    Duration = TimeSpan.Parse(movieDto.Duration),
-                    Rating = movieDto.Rating,
-                    Director = movieDto.Director
-                };
-
+                var movie = Mapper.Map<Movie>(movieDto);
                 movies.Add(movie);
+
                 sb.AppendLine(string.Format(SuccessfulImportMovie,
                     movie.Title,
                     movie.Genre.ToString(),
@@ -69,14 +64,15 @@
 
         public static string ImportHallSeats(CinemaContext context, string jsonString)
         {
-            var hallsSeatsDto = JsonConvert.DeserializeObject<ImportHallSeatsDto[]>(jsonString);
+            var hallsDto = JsonConvert.DeserializeObject<ImportHallWithSeatsDto[]>(jsonString);
+
             List<Hall> halls = new List<Hall>();
 
             StringBuilder sb = new StringBuilder();
 
-            foreach (var hallSeatDto in hallsSeatsDto)
+            foreach (var hallDto in hallsDto)
             {
-                bool isValidHall = IsValid(hallSeatDto);
+                bool isValidHall = IsValid(hallDto);
 
                 if (isValidHall == false)
                 {
@@ -86,12 +82,12 @@
 
                 Hall hall = new Hall
                 {
-                    Name = hallSeatDto.Name,
-                    Is4Dx = hallSeatDto.Is4Dx,
-                    Is3D = hallSeatDto.Is3D
+                    Name = hallDto.Name,
+                    Is4Dx = hallDto.Is4Dx,
+                    Is3D = hallDto.Is3D,
                 };
 
-                for (int i = 0; i < hallSeatDto.Seats; i++)
+                for (int i = 0; i < hallDto.Seats; i++)
                 {
                     hall.Seats.Add(new Seat());
                 }
@@ -116,10 +112,11 @@
                 }
 
                 halls.Add(hall);
+
                 sb.AppendLine(string.Format(SuccessfulImportHallSeat,
                     hall.Name,
                     projectionType,
-                    hall.Seats.Count));
+                    hall.Seats.Count()));
             }
 
             context.Halls.AddRange(halls);
@@ -139,30 +136,21 @@
 
             foreach (var projectionDto in projectionsDto)
             {
-                bool isValidProjection = IsValid(projectionDto);
-                var hall = context.Halls.Find(projectionDto.HallId);
-                var movie = context.Movies.Find(projectionDto.MovieId);
+                var projection = Mapper.Map<Projection>(projectionDto);
+                bool isValidProjection = IsValid(projection);
+                var targetMovie = context.Movies.Find(projection.MovieId);
+                var targetHall = context.Halls.Find(projection.HallId);
 
-                if (isValidProjection == false || hall == null || movie == null)
+                if (isValidProjection == false || targetMovie == null || targetHall == null)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                Projection projection = new Projection
-                {
-                    Movie = movie,
-                    MovieId = movie.Id,
-                    Hall = hall,
-                    HallId = hall.Id,
-                    DateTime = DateTime.ParseExact(projectionDto.DateTime,
-                    "yyyy-MM-dd HH:mm:ss",
-                    CultureInfo.InvariantCulture)
-                };
-
                 projections.Add(projection);
+
                 sb.AppendLine(string.Format(SuccessfulImportProjection,
-                    projection.Movie.Title,
+                    targetMovie.Title,
                     projection.DateTime.ToString("MM/dd/yyyy")));
             }
 
@@ -183,39 +171,31 @@
 
             foreach (var customerDto in customersDto)
             {
-                bool isValidCustomer = IsValid(customerDto);
-                var isValidTicket = customerDto.Tickets.All(IsValid);
-                var projections = context.Projections.Select(x => x.Id).ToList();
-                var isValidProjection = projections.Any(p => customerDto.Tickets.Any(c => c.ProjectionId != p));
+                var customer = Mapper.Map<Customer>(customerDto);
+                bool isValidCustomer = IsValid(customer);
 
-                if (isValidCustomer == false || isValidProjection == false || isValidTicket == false)
+                var projections = context.Projections.Select(x => x.Id).ToList();
+                var isValidProjection = projections
+                    .Any(p => customerDto.ProjectionTickets.Any(c => c.ProjectionId != p));
+
+                if (isValidCustomer == false || isValidProjection == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                Customer customer = new Customer
+                foreach (var ticketDto in customerDto.ProjectionTickets)
                 {
-                    FirstName = customerDto.FirstName,
-                    LastName = customerDto.LastName,
-                    Age = customerDto.Age,
-                    Balance = customerDto.Balance
-                };
-
-                foreach (var ticketDto in customerDto.Tickets)
-                {
-                    customer.Tickets.Add(new Ticket
-                    {
-                        Price = ticketDto.Price,
-                        ProjectionId = ticketDto.ProjectionId
-                    });
+                    var ticket = Mapper.Map<Ticket>(ticketDto);
+                    customer.Tickets.Add(ticket);
                 }
 
                 customers.Add(customer);
+
                 sb.AppendLine(string.Format(SuccessfulImportCustomerTicket,
                     customer.FirstName,
                     customer.LastName,
-                    customer.Tickets.Count));
+                    customer.Tickets.Count()));
             }
 
             context.Customers.AddRange(customers);

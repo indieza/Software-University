@@ -17,7 +17,7 @@ namespace Cinema.Data.Models
         [Range(12, 110), Required]
         public int Age { get; set; }
 
-        [Range(0.01, 9999.9)]
+        [Range(0.01, double.MaxValue), Required]
         public decimal Balance { get; set; }
 
         public ICollection<Ticket> Tickets { get; set; } = new HashSet<Ticket>();

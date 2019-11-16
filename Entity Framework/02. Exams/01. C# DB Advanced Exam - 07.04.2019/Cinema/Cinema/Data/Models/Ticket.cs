@@ -8,15 +8,15 @@ namespace Cinema.Data.Models
         [Key]
         public int Id { get; set; }
 
-        [Range(0.01, 9999.99), Required]
+        [Range(0.01, double.MaxValue), Required]
         public decimal Price { get; set; }
 
-        [ForeignKey("Customer"), Required]
+        [ForeignKey(nameof(Customer)), Required]
         public int CustomerId { get; set; }
 
         public Customer Customer { get; set; }
 
-        [ForeignKey("Projection"), Required]
+        [ForeignKey(nameof(Projection)), Required]
         public int ProjectionId { get; set; }
 
         public Projection Projection { get; set; }

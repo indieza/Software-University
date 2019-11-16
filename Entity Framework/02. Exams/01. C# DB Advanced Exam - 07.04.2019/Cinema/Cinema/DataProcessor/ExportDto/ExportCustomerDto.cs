@@ -3,7 +3,7 @@ namespace Cinema.DataProcessor.ExportDto
     using System.Xml.Serialization;
 
     [XmlType("Customer")]
-    public class ExportCustomerInAgeRangeDto
+    public class ExportCustomerDto
     {
         [XmlAttribute(AttributeName = "FirstName")]
         public string FirstName { get; set; }

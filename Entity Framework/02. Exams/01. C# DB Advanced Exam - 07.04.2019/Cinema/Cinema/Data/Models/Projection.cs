@@ -10,12 +10,12 @@ namespace Cinema.Data.Models
         [Key]
         public int Id { get; set; }
 
-        [ForeignKey("Movie"), Required]
+        [ForeignKey(nameof(Movie)), Required]
         public int MovieId { get; set; }
 
         public Movie Movie { get; set; }
 
-        [ForeignKey("Hall"), Required]
+        [ForeignKey(nameof(Hall)), Required]
         public int HallId { get; set; }
 
         public Hall Hall { get; set; }
