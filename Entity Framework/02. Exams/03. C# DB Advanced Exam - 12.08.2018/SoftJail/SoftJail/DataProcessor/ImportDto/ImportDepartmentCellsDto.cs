@@ -3,7 +3,7 @@ namespace SoftJail.DataProcessor.ImportDto
     using SoftJail.Data.Models;
     using System.Collections.Generic;
 
-    public class ImportDepartmentDto
+    public class ImportDepartmentCellsDto
     {
         public string Name { get; set; }
 

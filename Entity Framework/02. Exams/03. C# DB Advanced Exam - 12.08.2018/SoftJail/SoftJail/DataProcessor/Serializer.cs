@@ -17,23 +17,22 @@
         {
             var prisoners = context.Prisoners
                 .Where(p => ids.Contains(p.Id))
-                .OrderBy(p => p.FullName)
                 .Select(p => new ExportPrisonersByCellDto
                 {
                     Id = p.Id,
-                    Name = p.FullName,
                     CellNumber = p.Cell.CellNumber,
-                    Officers = p.PrisonerOfficers.Select(op => new ExportPrisosnerOfficersDto
+                    Name = p.FullName,
+                    Officers = p.PrisonerOfficers.Select(po => new ExportOfficerDto
                     {
-                        OfficerName = op.Officer.FullName,
-                        Department = op.Officer.Department.Name
+                        OfficerName = po.Officer.FullName,
+                        Department = po.Officer.Department.Name
                     })
                     .OrderBy(o => o.OfficerName)
                     .ToList(),
-                    TotalOfficerSalary = p.PrisonerOfficers.Sum(op => op.Officer.Salary) == 0 ?
-					"0" : p.PrisonerOfficers.Sum(op => op.Officer.Salary).ToString("F2")
+                    TotalOfficerSalary = p.PrisonerOfficers.Sum(po => po.Officer.Salary)
                 })
-                .OrderBy(p => p.Id)
+                .OrderBy(p => p.Name)
+                .ThenBy(p => p.Id)
                 .ToList();
 
             var json = JsonConvert.SerializeObject(prisoners, Formatting.Indented);
@@ -60,7 +59,8 @@
                 })
                 .ToArray();
 
-            var xmlSerializer = new XmlSerializer(typeof(ExportPrisonersInboxDto[]), new XmlRootAttribute("Prisoners"));
+            var xmlSerializer = new XmlSerializer(
+                typeof(ExportPrisonersInboxDto[]), new XmlRootAttribute("Prisoners"));
 
             var sb = new StringBuilder();
             var namespaces = new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty });

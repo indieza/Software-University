@@ -32,7 +32,7 @@ namespace SoftJail.Data.Models
 
         public Cell Cell { get; set; }
 
-        public ICollection<Mail> Mails { get; set; }
+        public ICollection<Mail> Mails { get; set; } = new HashSet<Mail>();
 
         public ICollection<OfficerPrisoner> PrisonerOfficers { get; set; } = new HashSet<OfficerPrisoner>();
     }

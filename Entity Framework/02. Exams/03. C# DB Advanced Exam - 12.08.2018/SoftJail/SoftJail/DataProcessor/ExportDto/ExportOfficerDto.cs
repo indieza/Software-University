@@ -2,7 +2,7 @@
 
 namespace SoftJail.DataProcessor.ExportDto
 {
-    public class ExportPrisosnerOfficersDto
+    public class ExportOfficerDto
     {
         [JsonProperty("OfficerName")]
         public string OfficerName { get; set; }
