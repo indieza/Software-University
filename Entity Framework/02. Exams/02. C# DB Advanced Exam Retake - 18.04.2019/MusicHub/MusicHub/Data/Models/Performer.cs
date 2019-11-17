@@ -17,7 +17,7 @@ namespace MusicHub.Data.Models
         [Range(18, 70), Required]
         public int Age { get; set; }
 
-        [Range(0, 9999.99), Required]
+        [Range(0, double.MaxValue), Required]
         public decimal NetWorth { get; set; }
 
         public ICollection<SongPerformer> PerformerSongs { get; set; } = new HashSet<SongPerformer>();

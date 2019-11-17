@@ -1,7 +1,7 @@
-namespace MusicHub.DataProcessor.DTO.ImportDtos
-{
-    using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
+namespace MusicHub.DataProcessor.ImportDtos
+{
     public class ImportAlbumDto
     {
         [MinLength(3), MaxLength(40), Required]

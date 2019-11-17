@@ -1,7 +1,7 @@
 ﻿namespace MusicHub.DataProcessor
 {
     using Data;
-    using MusicHub.DataProcessor.DTO.ExportDtos;
+    using MusicHub.DataProcessor.ExportDtos;
     using Newtonsoft.Json;
     using System.IO;
     using System.Linq;
@@ -16,13 +16,13 @@
         {
             var albums = context.Albums
                 .Where(a => a.ProducerId == producerId)
-                .OrderByDescending(a => a.Price)
+                .OrderByDescending(a => a.Songs.Sum(s => s.Price))
                 .Select(a => new ExportAlbumDto
                 {
                     AlbumName = a.Name,
-                    ReleaseDate = a.ReleaseDate.ToString("MM/dd/yyyy"),
                     ProducerName = a.Producer.Name,
-                    Songs = a.Songs.Select(s => new ExportSongDto
+                    ReleaseDate = a.ReleaseDate.ToString("MM/dd/yyyy"),
+                    Songs = a.Songs.Select(s => new ExportSongForAlbumDto
                     {
                         SongName = s.Name,
                         Price = s.Price.ToString("F2"),
@@ -31,7 +31,7 @@
                     .OrderByDescending(s => s.SongName)
                     .ThenBy(s => s.Writer)
                     .ToList(),
-                    AlbumPrice = a.Price.ToString("F2")
+                    AlbumPrice = a.Songs.Sum(s => s.Price).ToString("F2")
                 })
                 .ToList();
 
@@ -47,21 +47,21 @@
                 .OrderBy(s => s.Name)
                 .ThenBy(s => s.Writer.Name)
                 .ThenBy(s => s.SongPerformers
-                .Select(p => $"{p.Performer.FirstName} {p.Performer.LastName}")
+                .Select(p => p.Performer.FirstName + " " + p.Performer.LastName)
                 .FirstOrDefault())
-                .Select(s => new ExportSongAboveDuration
+                .Select(s => new ExportSongDto
                 {
                     SongName = s.Name,
-                    Writer = s.Writer.Name,
-                    Performer = s.SongPerformers
-                    .Select(p => $"{p.Performer.FirstName} {p.Performer.LastName}")
-                    .FirstOrDefault(),
                     AlbumProducer = s.Album.Producer.Name,
+                    Performer = s.SongPerformers
+                    .Select(p => p.Performer.FirstName + " " + p.Performer.LastName)
+                    .FirstOrDefault(),
+                    Writer = s.Writer.Name,
                     Duration = s.Duration.ToString(@"hh\:mm\:ss")
                 })
                 .ToArray();
 
-            var xmlSerializer = new XmlSerializer(typeof(ExportSongAboveDuration[]), new XmlRootAttribute("Songs"));
+            var xmlSerializer = new XmlSerializer(typeof(ExportSongDto[]), new XmlRootAttribute("Songs"));
 
             var sb = new StringBuilder();
             var namespaces = new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty });

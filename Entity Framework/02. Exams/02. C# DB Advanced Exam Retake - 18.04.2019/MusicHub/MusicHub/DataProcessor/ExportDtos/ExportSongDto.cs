@@ -1,9 +1,9 @@
-namespace MusicHub.DataProcessor.DTO.ExportDtos
+namespace MusicHub.DataProcessor.ExportDtos
 {
     using System.Xml.Serialization;
 
     [XmlType("Song")]
-    public class ExportSongAboveDuration
+    public class ExportSongDto
     {
         [XmlElement(ElementName = "SongName")]
         public string SongName { get; set; }

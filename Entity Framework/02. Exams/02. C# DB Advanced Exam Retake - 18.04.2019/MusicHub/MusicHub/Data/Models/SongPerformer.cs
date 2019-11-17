@@ -5,12 +5,12 @@ namespace MusicHub.Data.Models
 
     public class SongPerformer
     {
-        [ForeignKey("Song"), Required]
+        [ForeignKey(nameof(Song)), Required]
         public int SongId { get; set; }
 
         public Song Song { get; set; }
 
-        [ForeignKey("Performer"), Required]
+        [ForeignKey(nameof(Performer)), Required]
         public int PerformerId { get; set; }
 
         public Performer Performer { get; set; }

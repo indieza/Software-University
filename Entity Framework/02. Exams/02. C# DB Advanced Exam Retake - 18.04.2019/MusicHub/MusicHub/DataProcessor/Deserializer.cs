@@ -4,12 +4,11 @@
     using Data;
     using MusicHub.Data.Models;
     using MusicHub.Data.Models.Enums;
-    using MusicHub.DataProcessor.DTO.ImportDtos;
+    using MusicHub.DataProcessor.ImportDtos;
     using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Text;
@@ -34,23 +33,24 @@
         public static string ImportWriters(MusicHubDbContext context, string jsonString)
         {
             var writersDto = JsonConvert.DeserializeObject<ImportWriterDto[]>(jsonString);
+
             List<Writer> writers = new List<Writer>();
 
             StringBuilder sb = new StringBuilder();
 
-            foreach (var writeDto in writersDto)
+            foreach (var writerDto in writersDto)
             {
-                var writer = Mapper.Map<Writer>(writeDto);
+                var writer = Mapper.Map<Writer>(writerDto);
+                bool isValidWriter = IsValid(writer);
 
-                bool isValid = IsValid(writer);
-
-                if (isValid == false)
+                if (isValidWriter == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
                 writers.Add(writer);
+
                 sb.AppendLine(string.Format(SuccessfullyImportedWriter, writer.Name));
             }
 
@@ -63,38 +63,26 @@
         public static string ImportProducersAlbums(MusicHubDbContext context, string jsonString)
         {
             var producersDto = JsonConvert.DeserializeObject<ImportProducerDto[]>(jsonString);
+
             List<Producer> producers = new List<Producer>();
 
             StringBuilder sb = new StringBuilder();
 
             foreach (var producerDto in producersDto)
             {
-                bool isValidProducer = IsValid(producerDto);
-                bool isValidAlbums = producerDto.Albums.All(s => IsValid(s) == true);
+                var producer = Mapper.Map<Producer>(producerDto);
+                bool isValidProducer = IsValid(producer);
+                bool isValidAlbums = producerDto.Albums.Any(a => IsValid(a) == false);
 
-                if (isValidProducer == false || isValidAlbums == false)
+                if (isValidProducer == false || isValidAlbums == true)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                Producer producer = new Producer
-                {
-                    Name = producerDto.Name,
-                    PhoneNumber = producerDto.PhoneNumber,
-                    Pseudonym = producerDto.Pseudonym
-                };
-
                 foreach (var albumDto in producerDto.Albums)
                 {
-                    Album album = new Album
-                    {
-                        Name = albumDto.Name,
-                        ReleaseDate = DateTime.ParseExact(albumDto.ReleaseDate,
-                        "dd/MM/yyyy",
-                        CultureInfo.InvariantCulture)
-                    };
-
+                    var album = Mapper.Map<Album>(albumDto);
                     producer.Albums.Add(album);
                 }
 
@@ -104,14 +92,14 @@
                 {
                     sb.AppendLine(string.Format(SuccessfullyImportedProducerWithNoPhone,
                         producer.Name,
-                        producer.Albums.Count));
+                        producer.Albums.Count()));
                 }
                 else
                 {
                     sb.AppendLine(string.Format(SuccessfullyImportedProducerWithPhone,
                         producer.Name,
                         producer.PhoneNumber,
-                        producer.Albums.Count));
+                        producer.Albums.Count()));
                 }
             }
 
@@ -125,43 +113,38 @@
         {
             var xmlSerializer = new XmlSerializer(typeof(ImportSongDto[]), new XmlRootAttribute("Songs"));
             var songsDto = (ImportSongDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
+
             List<Song> songs = new List<Song>();
 
             StringBuilder sb = new StringBuilder();
 
             foreach (var songDto in songsDto)
             {
-                bool isValidSong = IsValid(songDto);
                 bool isValidGenre = Enum.IsDefined(typeof(Genre), songDto.Genre);
-                Album isValidAlbum = context.Albums.Find(songDto.AlbumId);
-                Writer isValidWriter = context.Writers.Find(songDto.WriterId);
+                bool isValidAlbum = context.Albums.Any(a => a.Id == songDto.AlbumId);
+                bool isValidWriter = context.Writers.Any(a => a.Id == songDto.WriterId);
 
-                if (isValidSong == false ||
-                    isValidGenre == false ||
-                    isValidAlbum == null ||
-                    isValidWriter == null)
+                if (isValidGenre == false || isValidAlbum == false || isValidWriter == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                Song song = new Song
+                var song = Mapper.Map<Song>(songDto);
+                bool isValidSong = IsValid(song);
+
+                if (isValidSong == false)
                 {
-                    Name = songDto.Name,
-                    Duration = TimeSpan.Parse(songDto.Duration),
-                    CreatedOn = DateTime
-                    .ParseExact(songDto.CreatedOn, "dd/MM/yyyy", CultureInfo.InvariantCulture),
-                    Genre = (Genre)Enum.Parse(typeof(Genre), songDto.Genre),
-                    AlbumId = songDto.AlbumId,
-                    WriterId = songDto.WriterId,
-                    Price = songDto.Price
-                };
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
 
                 songs.Add(song);
+
                 sb.AppendLine(string.Format(SuccessfullyImportedSong,
                     song.Name,
                     song.Genre.ToString(),
-                    song.Duration.ToString()));
+                    song.Duration.ToString(@"hh\:mm\:ss")));
             }
 
             context.Songs.AddRange(songs);
@@ -174,64 +157,45 @@
         {
             var xmlSerializer = new XmlSerializer(typeof(ImportPerformerDto[]), new XmlRootAttribute("Performers"));
             var performersDto = (ImportPerformerDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
+
             List<Performer> performers = new List<Performer>();
 
             StringBuilder sb = new StringBuilder();
 
             foreach (var performerDto in performersDto)
             {
-                bool isValidPerformer = IsValid(performerDto);
+                var performer = Mapper.Map<Performer>(performerDto);
+                bool isValidPerformer = IsValid(performer);
 
-                if (isValidPerformer == false)
+                var songs = context.Songs.Select(x => x.Id).ToList();
+                var songsExists = performerDto.PerformersSongs
+                    .Select(x => x.Id)
+                    .All(value => songs.Contains(value));
+
+                if (isValidPerformer == false || songsExists == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                bool isValidSong = true;
-
                 foreach (var songDto in performerDto.PerformersSongs)
                 {
-                    var targetSong = context.Songs.Find(songDto.Id);
-
-                    if (targetSong == null)
+                    SongPerformer songPerformer = new SongPerformer
                     {
-                        isValidSong = false;
-                        sb.AppendLine(ErrorMessage);
-                        break;
-                    }
-                }
-
-                if (isValidSong == true)
-                {
-                    Performer performer = new Performer
-                    {
-                        FirstName = performerDto.FirstName,
-                        LastName = performerDto.LastName,
-                        Age = performerDto.Age,
-                        NetWorth = performerDto.NetWorth
+                        Performer = performer,
+                        PerformerId = performer.Id,
+                        Song = context.Songs.Find(songDto.Id),
+                        SongId = songDto.Id
                     };
 
-                    foreach (var songDto in performerDto.PerformersSongs)
-                    {
-                        var targetSong = context.Songs.FirstOrDefault(s => s.Id == songDto.Id);
-
-                        SongPerformer songPerformer = new SongPerformer
-                        {
-                            PerformerId = performer.Id,
-                            Performer = performer,
-                            SongId = songDto.Id,
-                            Song = targetSong
-                        };
-
-                        performer.PerformerSongs.Add(songPerformer);
-                    }
-
-                    performers.Add(performer);
-                    sb.AppendLine(string.Format(SuccessfullyImportedPerformer,
-                        performer.FirstName,
-                        performer.PerformerSongs.Count));
+                    performer.PerformerSongs.Add(songPerformer);
                 }
+
+                performers.Add(performer);
+
+                sb.AppendLine(string.Format(SuccessfullyImportedPerformer,
+                    performer.FirstName,
+                    performer.PerformerSongs.Count()));
             }
 
             context.Performers.AddRange(performers);

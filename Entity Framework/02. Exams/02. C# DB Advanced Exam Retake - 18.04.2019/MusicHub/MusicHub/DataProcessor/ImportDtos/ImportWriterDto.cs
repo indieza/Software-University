@@ -1,4 +1,4 @@
-namespace MusicHub.DataProcessor.DTO.ImportDtos
+namespace MusicHub.DataProcessor.ImportDtos
 {
     public class ImportWriterDto
     {
