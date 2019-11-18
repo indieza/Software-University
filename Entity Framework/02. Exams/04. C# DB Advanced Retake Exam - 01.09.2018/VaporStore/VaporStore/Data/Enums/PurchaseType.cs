@@ -1,4 +1,4 @@
-namespace VaporStore.Data.Models.Enums
+namespace VaporStore.Data.Enums
 {
     public enum PurchaseType
     {

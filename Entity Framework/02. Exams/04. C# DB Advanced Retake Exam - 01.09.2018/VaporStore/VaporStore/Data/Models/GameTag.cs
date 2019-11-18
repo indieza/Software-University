@@ -5,12 +5,12 @@ namespace VaporStore.Data.Models
 
     public class GameTag
     {
-        [ForeignKey("Game"), Required]
+        [ForeignKey(nameof(Game)), Required]
         public int GameId { get; set; }
 
         public Game Game { get; set; }
 
-        [ForeignKey("Tag"), Required]
+        [ForeignKey(nameof(Tag)), Required]
         public int TagId { get; set; }
 
         public Tag Tag { get; set; }

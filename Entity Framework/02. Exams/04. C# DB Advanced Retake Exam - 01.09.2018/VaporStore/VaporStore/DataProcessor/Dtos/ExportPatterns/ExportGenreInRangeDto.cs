@@ -1,11 +1,9 @@
-namespace VaporStore.DataProcessor.ExportDto
+namespace VaporStore.DataProcessor.Dtos.ExportPatterns
 {
     using Newtonsoft.Json;
-    using System;
     using System.Collections.Generic;
-    using System.Text;
 
-    public class ExportGenreDto
+    public class ExportGenreInRangeDto
     {
         [JsonProperty("Id")]
         public int Id { get; set; }
@@ -14,7 +12,7 @@ namespace VaporStore.DataProcessor.ExportDto
         public string Genre { get; set; }
 
         [JsonProperty("Games")]
-        public ICollection<ExportGameDto> Games { get; set; }
+        public ICollection<ExportGameInRangeDto> Games { get; set; }
 
         [JsonProperty("TotalPlayers")]
         public int TotalPlayers { get; set; }

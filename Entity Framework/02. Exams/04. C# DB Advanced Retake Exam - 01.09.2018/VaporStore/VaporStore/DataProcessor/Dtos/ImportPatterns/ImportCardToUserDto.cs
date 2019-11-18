@@ -1,6 +1,6 @@
-﻿namespace VaporStore.DataProcessor.ImportDto
+﻿namespace VaporStore.DataProcessor.Dtos.ImportPatterns
 {
-    public class ImportCardDto
+    public class ImportCardToUserDto
     {
         public string Number { get; set; }
 

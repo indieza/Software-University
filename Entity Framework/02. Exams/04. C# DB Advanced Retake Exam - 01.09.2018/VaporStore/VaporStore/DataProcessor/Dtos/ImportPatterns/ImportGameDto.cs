@@ -1,6 +1,5 @@
-namespace VaporStore.DataProcessor.ImportDto
+namespace VaporStore.DataProcessor.Dtos.ImportPatterns
 {
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     public class ImportGameDto
@@ -21,6 +20,6 @@ namespace VaporStore.DataProcessor.ImportDto
         public string Genre { get; set; }
 
         [MinLength(1)]
-        public ICollection<string> Tags { get; set; }
+        public string[] Tags { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace VaporStore.DataProcessor.ExportDto
+namespace VaporStore.DataProcessor.Dtos.ExportPatterns
 {
-    public class ExportGameDto
+    public class ExportGameInRangeDto
     {
         [JsonProperty("Id")]
         public int Id { get; set; }

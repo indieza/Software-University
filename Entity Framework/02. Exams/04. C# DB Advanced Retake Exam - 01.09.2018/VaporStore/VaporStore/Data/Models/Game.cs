@@ -19,19 +19,18 @@ namespace VaporStore.Data.Models
         [Required]
         public DateTime ReleaseDate { get; set; }
 
-        [ForeignKey("Developer"), Required]
+        [ForeignKey(nameof(Developer)), Required]
         public int DeveloperId { get; set; }
 
         public Developer Developer { get; set; }
 
-        [ForeignKey("Genre"), Required]
+        [ForeignKey(nameof(Genre)), Required]
         public int GenreId { get; set; }
 
         public Genre Genre { get; set; }
 
         public ICollection<Purchase> Purchases { get; set; } = new HashSet<Purchase>();
 
-        [Range(1, int.MaxValue)]
         public ICollection<GameTag> GameTags { get; set; } = new HashSet<GameTag>();
     }
 }

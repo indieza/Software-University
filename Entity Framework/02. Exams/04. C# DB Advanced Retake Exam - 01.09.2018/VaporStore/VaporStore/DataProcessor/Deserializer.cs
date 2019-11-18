@@ -12,16 +12,15 @@
     using System.Text;
     using System.Xml.Serialization;
     using VaporStore.Data.Models;
-    using VaporStore.Data.Models.Enums;
-    using VaporStore.DataProcessor.ImportDto;
+    using VaporStore.DataProcessor.Dtos.ImportPatterns;
     using ValidationContext = System.ComponentModel.DataAnnotations.ValidationContext;
 
     public static class Deserializer
     {
         private const string ErrorMessage = "Invalid Data";
-        private const string SuccessfullyAddedGame = "Added {0} ({1}) with {2} tags";
-        private const string SuccessfullyAddedUser = "Imported {0} with {1} cards";
-        private const string SuccessfullyAddedPurchase = "Imported {0} for {1}";
+        private const string SuccessfullAddedGame = "Added {0} ({1}) with {2} tags";
+        private const string SuccessfullAddedUserWithCards = "Imported {0} with {1} cards";
+        private const string SuccessfullAddedPurchase = "Imported {0} for {1}";
 
         public static string ImportGames(VaporStoreDbContext context, string jsonString)
         {
@@ -36,13 +35,16 @@
 
             foreach (var gameDto in gamesDto)
             {
-                if (IsValid(gameDto) == false)
+                bool isValidGameDto = IsValid(gameDto);
+                bool isValidTags = gameDto.Tags.Any(t => IsValid(t) == false);
+
+                if (isValidGameDto == false || isValidTags == true)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                var developer = developers.FirstOrDefault(d => d.Name == gameDto.Developer);
+                Developer developer = developers.FirstOrDefault(d => d.Name == gameDto.Developer);
 
                 if (developer == null)
                 {
@@ -54,7 +56,7 @@
                     developers.Add(developer);
                 }
 
-                var genre = genres.FirstOrDefault(g => g.Name == gameDto.Genre);
+                Genre genre = genres.FirstOrDefault(g => g.Name == gameDto.Genre);
 
                 if (genre == null)
                 {
@@ -70,7 +72,7 @@
 
                 foreach (var tagName in gameDto.Tags)
                 {
-                    var tag = tags.FirstOrDefault(t => t.Name == tagName);
+                    Tag tag = tags.FirstOrDefault(t => t.Name == tagName);
 
                     if (tag == null)
                     {
@@ -78,10 +80,9 @@
                         {
                             Name = tagName
                         };
-
-                        tags.Add(tag);
                     }
 
+                    tags.Add(tag);
                     gameTags.Add(tag);
                 }
 
@@ -98,10 +99,10 @@
 
                 games.Add(game);
 
-                sb.AppendLine(string.Format(SuccessfullyAddedGame,
+                sb.AppendLine(string.Format(SuccessfullAddedGame,
                     game.Name,
                     game.Genre.Name,
-                    game.GameTags.Count()));
+                    gameTags.Count()));
             }
 
             context.Games.AddRange(games);
@@ -112,7 +113,7 @@
 
         public static string ImportUsers(VaporStoreDbContext context, string jsonString)
         {
-            var usersDto = JsonConvert.DeserializeObject<ImportUserDto[]>(jsonString);
+            var usersDto = JsonConvert.DeserializeObject<ImportUserWithCardsDto[]>(jsonString);
 
             List<User> users = new List<User>();
 
@@ -120,29 +121,28 @@
 
             foreach (var userDto in usersDto)
             {
-                bool correctCardsType = userDto.Cards.Any(c => !Enum.IsDefined(typeof(CardType), c.Type));
+                var user = Mapper.Map<User>(userDto);
+                bool isValidUser = IsValid(user);
+                bool hasAnyCards = userDto.UserCards.Count > 0;
+                bool isValidCards = userDto.UserCards.Any(c => IsValid(c) == false);
 
-                if (correctCardsType == true)
+                if (isValidUser == false || hasAnyCards == false || isValidCards == true)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                var user = Mapper.Map<User>(userDto);
-
-                bool isValidUser = IsValid(user);
-                bool hasCards = userDto.Cards.Count > 0;
-                bool isValidCards = user.Cards.Any(c => !IsValid(c));
-
-                if (isValidUser == false || hasCards == false || isValidCards == true)
+                foreach (var cardDto in userDto.UserCards)
                 {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
+                    var card = Mapper.Map<Card>(cardDto);
+                    user.Cards.Add(card);
                 }
 
                 users.Add(user);
 
-                sb.AppendLine(string.Format(SuccessfullyAddedUser, user.Username, user.Cards.Count()));
+                sb.AppendLine(string.Format(SuccessfullAddedUserWithCards,
+                    user.Username,
+                    user.Cards.Count()));
             }
 
             context.Users.AddRange(users);
@@ -153,46 +153,36 @@
 
         public static string ImportPurchases(VaporStoreDbContext context, string xmlString)
         {
-            var xmlSerializer = new XmlSerializer(typeof(ImportPurchaseDto[]), new XmlRootAttribute("Purchases"));
-            var purchesesDto = (ImportPurchaseDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
+            var xmlSerializer = new XmlSerializer(
+                typeof(ImportPurchaseDto[]), new XmlRootAttribute("Purchases"));
+            var purchasesDto = (ImportPurchaseDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
 
             List<Purchase> purchases = new List<Purchase>();
 
             StringBuilder sb = new StringBuilder();
 
-            foreach (var purchesDto in purchesesDto)
+            foreach (var purchaseDto in purchasesDto)
             {
-                bool isValidPurches = IsValid(purchesDto);
-                bool isCorrectType = Enum.IsDefined(typeof(PurchaseType), purchesDto.Type);
-                Game targetGame = context.Games.FirstOrDefault(g => g.Name == purchesDto.Title);
-                Card targetCard = context.Cards.FirstOrDefault(c => c.Number == purchesDto.Card);
+                var purchase = Mapper.Map<Purchase>(purchaseDto);
+                bool isValidPurchase = IsValid(purchase);
+                Card targetCard = context.Cards.FirstOrDefault(c => c.Number == purchaseDto.CardNumber);
+                Game targetGame = context.Games.FirstOrDefault(g => g.Name == purchaseDto.Title);
 
-                if (isValidPurches == false ||
-                    isCorrectType == false ||
-                    targetGame == null ||
-                    targetCard == null)
+                if (isValidPurchase == false || targetCard == null || targetGame == null)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                Purchase purchase = new Purchase
-                {
-                    Card = targetCard,
-                    CardId = targetCard.Id,
-                    Type = (PurchaseType)Enum.Parse(typeof(PurchaseType), purchesDto.Type),
-                    Date = DateTime.ParseExact(
-                        purchesDto.Date, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture),
-                    Game = targetGame,
-                    GameId = targetGame.Id,
-                    ProductKey = purchesDto.Key
-                };
+                purchase.Card = targetCard;
+                purchase.Game = targetGame;
 
+                User targetUser = context.Users.FirstOrDefault(u => u.Id == targetCard.UserId);
                 purchases.Add(purchase);
 
-                sb.AppendLine(string.Format(SuccessfullyAddedPurchase,
-                    purchase.Game.Name,
-                    purchase.Card.User.Username));
+                sb.AppendLine(string.Format(SuccessfullAddedPurchase,
+                    targetGame.Name,
+                    targetUser.Username));
             }
 
             context.Purchases.AddRange(purchases);

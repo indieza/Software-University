@@ -41,26 +41,8 @@
 
         protected override void OnModelCreating(ModelBuilder model)
         {
-            model.Entity<GameTag>(entity =>
-            {
-                entity.HasKey(k => new
-                {
-                    k.GameId,
-                    k.TagId
-                });
-
-                entity
-                .HasOne(g => g.Game)
-                .WithMany(t => t.GameTags)
-                .HasForeignKey(k => k.GameId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-                entity
-                .HasOne(t => t.Tag)
-                .WithMany(g => g.GameTags)
-                .HasForeignKey(k => k.TagId)
-                .OnDelete(DeleteBehavior.Restrict);
-            });
+            model.Entity<GameTag>()
+                .HasKey(k => new { k.GameId, k.TagId });
         }
     }
 }
