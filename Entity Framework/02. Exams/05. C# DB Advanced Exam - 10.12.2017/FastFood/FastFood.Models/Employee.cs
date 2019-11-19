@@ -1,10 +1,8 @@
 namespace FastFood.Models
 {
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Text;
 
     public class Employee
     {
@@ -17,7 +15,7 @@ namespace FastFood.Models
         [Range(15, 80), Required]
         public int Age { get; set; }
 
-        [ForeignKey("Position"), Required]
+        [ForeignKey(nameof(Position)), Required]
         public int PositionId { get; set; }
 
         public Position Position { get; set; }

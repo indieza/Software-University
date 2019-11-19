@@ -1,19 +1,15 @@
 namespace FastFood.Models
 {
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Text;
 
     public class OrderItem
     {
-        [ForeignKey("Order"), Required]
+        [Key, Required]
         public int OrderId { get; set; }
 
         public Order Order { get; set; }
 
-        [ForeignKey("Item"), Required]
+        [Key, Required]
         public int ItemId { get; set; }
 
         public Item Item { get; set; }

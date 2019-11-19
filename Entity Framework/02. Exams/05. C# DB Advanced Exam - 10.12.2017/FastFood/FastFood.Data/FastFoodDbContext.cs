@@ -1,4 +1,5 @@
 ﻿using FastFood.Models;
+using FastFood.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace FastFood.Data
@@ -38,6 +39,18 @@ namespace FastFood.Data
         {
             builder.Entity<OrderItem>()
                 .HasKey(k => new { k.ItemId, k.OrderId });
+
+            builder.Entity<Position>()
+                .HasIndex(p => p.Name)
+                .IsUnique();
+
+            builder.Entity<Item>()
+                .HasIndex(p => p.Name)
+                .IsUnique();
+
+            builder.Entity<Order>()
+                .Property(p => p.Type)
+                .HasDefaultValue(OrderType.ForHere);
         }
     }
 }

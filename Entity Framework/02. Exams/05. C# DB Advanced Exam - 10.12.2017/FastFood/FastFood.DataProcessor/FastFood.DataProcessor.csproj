@@ -5,18 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="6.2.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FastFood.Data\FastFood.Data.csproj" />
     <ProjectReference Include="..\FastFood.Models\FastFood.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Dto\Export\" />
-    <Folder Include="Dto\Import\" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Data.SqlClient;
-using System.IO;
-using AutoMapper;
+﻿using AutoMapper;
 using FastFood.Data;
-using FastFood.DataProcessor;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
+using System;
+using System.IO;
 
 namespace FastFood.App
 {
@@ -28,9 +24,9 @@ namespace FastFood.App
             BonusTask(context);
         }
 
-        private static void ImportEntities(FastFoodDbContext context, string baseDir = @"..\..\..\Datasets\")
+        private static void ImportEntities(FastFoodDbContext context, string baseDir = @"..\..\..\..\Datasets\")
         {
-            const string exportDir = "./ImportResults/";
+            const string exportDir = @"..\..\..\ImportResults/";
 
             var employees = DataProcessor.Deserializer.ImportEmployees(context, File.ReadAllText(baseDir + "employees.json"));
             PrintAndExportEntityToFile(employees, exportDir + "Employees.txt");
@@ -44,7 +40,7 @@ namespace FastFood.App
 
         private static void ExportEntities(FastFoodDbContext context)
         {
-            const string exportDir = "./ImportResults/";
+            const string exportDir = @"..\..\..\ImportResults\";
 
             var jsonOutput = DataProcessor.Serializer.ExportOrdersByEmployee(context, "Avery Rush", "ToGo");
             Console.WriteLine(jsonOutput);
@@ -71,8 +67,6 @@ namespace FastFood.App
         {
             context.Database.EnsureDeleted();
             context.Database.EnsureCreated();
-            context.Database.ExecuteSqlCommand("CREATE UNIQUE INDEX IX_Position_Name ON Positions(Name)");
-            context.Database.ExecuteSqlCommand("CREATE UNIQUE INDEX IX_Item_Name ON Items(Name)");
         }
     }
 }
