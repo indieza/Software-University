@@ -274,7 +274,7 @@
                 .Select(c => new ExportTotalSalesByCustomerDto
                 {
                     FullName = c.Name,
-                    BoughtCars = c.Sales.Sum(s => s.CarId),
+                    BoughtCars = c.Sales.Count(),
                     SpentMoney = c.Sales.SelectMany(s => s.Car.PartCars).Sum(cp => cp.Part.Price)
                     //SpentMoney = c.Sales.Sum(s => s.Car.PartCars.Sum(p => p.Part.Price))
                 })

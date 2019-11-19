@@ -191,11 +191,11 @@ namespace ProductShop
                 {
                     Name = c.Name,
                     Count = c.CategoryProducts.Count(),
-                    AveragePrice = (decimal?)c.CategoryProducts
-                    .Sum(p => p.Product.Price) / c.CategoryProducts.Count(),
+                    AveragePrice = c.CategoryProducts.Average(cp => cp.Product.Price),
                     TotalRevenue = c.CategoryProducts.Sum(p => p.Product.Price)
                 })
                 .OrderByDescending(c => c.Count)
+				.ThenBy(c => c.TotalRevenue)
                 .ToArray();
 
             var xmlSerializer = new XmlSerializer(typeof(CategoriesWithProductsDto[]), new XmlRootAttribute("Categories"));
