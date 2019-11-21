@@ -18,6 +18,8 @@
 
             prisoner.ReleaseDate = DateTime.Now;
             prisoner.CellId = null;
+			
+			context.Prisoners.Update(prisoner);
             context.SaveChanges();
 
             return $"Prisoner {prisoner.FullName} released";

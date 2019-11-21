@@ -24,6 +24,8 @@
             }
 
             user.Email = newEmail;
+			
+			context.Users.Update(user);
             context.SaveChanges();
 
             return $"Changed {username}'s email successfully";

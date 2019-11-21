@@ -16,6 +16,8 @@ namespace FastFood.DataProcessor
 
             decimal oldPrice = item.Price;
             item.Price = newPrice;
+			
+			context.Items.Update(item);
             context.SaveChanges();
 
             return $"{item.Name} Price updated from ${oldPrice:F2} to ${newPrice:F2}";
