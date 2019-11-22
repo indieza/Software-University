@@ -1,4 +1,4 @@
-namespace Cinema.DataProcessor.ImportDto
+﻿namespace Cinema.DataProcessor.ImportDto
 {
     using System.Xml.Serialization;
 
@@ -18,6 +18,6 @@ namespace Cinema.DataProcessor.ImportDto
         public decimal Balance { get; set; }
 
         [XmlArray(ElementName = "Tickets")]
-        public ImportTicketDto[] ProjectionTickets { get; set; }
+        public ImportTicketDto[] CustomerTickets { get; set; }
     }
 }

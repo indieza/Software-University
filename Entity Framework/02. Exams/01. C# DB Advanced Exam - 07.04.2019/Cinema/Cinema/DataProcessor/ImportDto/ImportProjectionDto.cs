@@ -1,4 +1,4 @@
-namespace Cinema.DataProcessor.ImportDto
+﻿namespace Cinema.DataProcessor.ImportDto
 {
     using System.Xml.Serialization;
 

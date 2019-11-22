@@ -13,13 +13,16 @@ namespace Cinema
         public CinemaProfile()
         {
             this.CreateMap<ImportMovieDto, Movie>()
-                .ForMember(x => x.Genre, y => y.MapFrom(x => Enum.Parse(typeof(Genre), x.Genre)))
+                .ForMember(x => x.Genre, y => y.MapFrom(
+                    x => Enum.Parse(typeof(Genre), x.Genre)))
                 .ForMember(x => x.Duration, y => y.MapFrom(
-                      x => TimeSpan.ParseExact(x.Duration, @"hh\:mm\:ss", CultureInfo.InvariantCulture)));
+                    x => TimeSpan.ParseExact(x.Duration, @"hh\:mm\:ss", CultureInfo.InvariantCulture)));
+
+            this.CreateMap<ImportHallWithSeatsDto, Hall>();
 
             this.CreateMap<ImportProjectionDto, Projection>()
                 .ForMember(x => x.DateTime, y => y.MapFrom(
-                    x => DateTime.ParseExact(x.DateTime, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)));
+                    x => DateTime.ParseExact(x.DateTime, @"yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)));
 
             this.CreateMap<ImportCustomerDto, Customer>();
 

@@ -1,4 +1,4 @@
-namespace Cinema.DataProcessor.ExportDto
+﻿namespace Cinema.DataProcessor.ExportDto
 {
     using Newtonsoft.Json;
     using System.Collections.Generic;
@@ -15,6 +15,6 @@ namespace Cinema.DataProcessor.ExportDto
         public string TotalIncomes { get; set; }
 
         [JsonProperty("Customers")]
-        public ICollection<ExportCustomerWithMoviesDto> Customers { get; set; }
+        public ICollection<ExportCustomerByMovieDto> Customers { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-namespace Cinema.DataProcessor.ExportDto
+﻿namespace Cinema.DataProcessor.ExportDto
 {
     using System.Xml.Serialization;
 

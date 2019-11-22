@@ -37,17 +37,25 @@
 
             foreach (var movieDto in moviesDto)
             {
-                bool isValidMovie = IsValid(movieDto);
-                bool isValidGenre = Enum.IsDefined(typeof(Genre), movieDto.Genre);
                 bool isTitleExist = movies.Any(m => m.Title == movieDto.Title);
+                bool isValidGenre = Enum.IsDefined(typeof(Genre), movieDto.Genre);
 
-                if (isValidMovie == false || isValidGenre == false || isTitleExist == true)
+                if (isTitleExist == true || isValidGenre == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
                 var movie = Mapper.Map<Movie>(movieDto);
+
+                bool isValidMovie = IsValid(movie);
+
+                if (isValidMovie == false)
+                {
+                    sb.AppendLine(ErrorMessage);
+                    continue;
+                }
+
                 movies.Add(movie);
 
                 sb.AppendLine(string.Format(SuccessfulImportMovie,
@@ -72,39 +80,35 @@
 
             foreach (var hallDto in hallsDto)
             {
-                bool isValidHall = IsValid(hallDto);
+                var hall = Mapper.Map<Hall>(hallDto);
 
-                if (isValidHall == false)
+                bool isValidHall = IsValid(hall);
+                bool isValidSeatsCount = IsValid(hallDto);
+
+                if (isValidHall == false || isValidSeatsCount == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                Hall hall = new Hall
-                {
-                    Name = hallDto.Name,
-                    Is4Dx = hallDto.Is4Dx,
-                    Is3D = hallDto.Is3D,
-                };
-
-                for (int i = 0; i < hallDto.Seats; i++)
+                for (int i = 0; i < hallDto.SeatsCount; i++)
                 {
                     hall.Seats.Add(new Seat());
                 }
 
                 string projectionType = string.Empty;
 
-                if (hall.Is4Dx == true && hall.Is3D == true)
+                if (hall.Is3D == true && hall.Is4Dx == true)
                 {
                     projectionType = "4Dx/3D";
-                }
-                else if (hall.Is4Dx == true)
-                {
-                    projectionType = "4Dx";
                 }
                 else if (hall.Is3D == true)
                 {
                     projectionType = "3D";
+                }
+                else if (hall.Is4Dx == true)
+                {
+                    projectionType = "4Dx";
                 }
                 else
                 {
@@ -127,7 +131,8 @@
 
         public static string ImportProjections(CinemaContext context, string xmlString)
         {
-            var xmlSerializer = new XmlSerializer(typeof(ImportProjectionDto[]), new XmlRootAttribute("Projections"));
+            var xmlSerializer = new XmlSerializer(
+                typeof(ImportProjectionDto[]), new XmlRootAttribute("Projections"));
             var projectionsDto = (ImportProjectionDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
 
             List<Projection> projections = new List<Projection>();
@@ -137,21 +142,25 @@
             foreach (var projectionDto in projectionsDto)
             {
                 var projection = Mapper.Map<Projection>(projectionDto);
-                bool isValidProjection = IsValid(projection);
-                var targetMovie = context.Movies.Find(projection.MovieId);
-                var targetHall = context.Halls.Find(projection.HallId);
 
-                if (isValidProjection == false || targetMovie == null || targetHall == null)
+                bool isValdiProjection = IsValid(projection);
+                var targetMovie = context.Movies.Find(projectionDto.MovieId);
+                var targetHall = context.Halls.Find(projectionDto.HallId);
+
+                if (isValdiProjection == false || targetMovie == null || targetHall == null)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
+                projection.Movie = targetMovie;
+                projection.Hall = targetHall;
+
                 projections.Add(projection);
 
                 sb.AppendLine(string.Format(SuccessfulImportProjection,
-                    targetMovie.Title,
-                    projection.DateTime.ToString("MM/dd/yyyy")));
+                    projection.Movie.Title,
+                    projection.DateTime.ToString(@"MM/dd/yyyy")));
             }
 
             context.Projections.AddRange(projections);
@@ -174,19 +183,21 @@
                 var customer = Mapper.Map<Customer>(customerDto);
                 bool isValidCustomer = IsValid(customer);
 
-                var projections = context.Projections.Select(x => x.Id).ToList();
-                var isValidProjection = projections
-                    .Any(p => customerDto.ProjectionTickets.Any(c => c.ProjectionId != p));
+                var projectionsIds = context.Projections.Select(p => p.Id).ToList();
+                var isProjectionsExists = customerDto.CustomerTickets
+                    .Select(t => t.ProjectionId)
+                    .All(t => projectionsIds.Contains(t));
 
-                if (isValidCustomer == false || isValidProjection == false)
+                if (isValidCustomer == false || isProjectionsExists == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                foreach (var ticketDto in customerDto.ProjectionTickets)
+                foreach (var ticketDto in customerDto.CustomerTickets)
                 {
                     var ticket = Mapper.Map<Ticket>(ticketDto);
+
                     customer.Tickets.Add(ticket);
                 }
 

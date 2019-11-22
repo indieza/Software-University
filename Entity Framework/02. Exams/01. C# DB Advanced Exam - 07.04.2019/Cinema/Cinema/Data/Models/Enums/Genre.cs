@@ -2,15 +2,15 @@ namespace Cinema.Data.Models.Enums
 {
     public enum Genre
     {
-        Action = 1,
-        Drama = 2,
-        Comedy = 3,
-        Crime = 4,
-        Western = 5,
-        Romance = 6,
-        Documentary = 7,
-        Children = 8,
-        Animation = 9,
-        Musical = 10
+        Action = 0,
+        Drama = 1,
+        Comedy = 2,
+        Crime = 3,
+        Western = 4,
+        Romance = 5,
+        Documentary = 6,
+        Children = 7,
+        Animation = 8,
+        Musical = 9
     }
 }

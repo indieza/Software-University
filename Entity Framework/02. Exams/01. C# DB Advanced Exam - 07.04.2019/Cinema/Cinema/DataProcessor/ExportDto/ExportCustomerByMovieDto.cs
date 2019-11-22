@@ -2,7 +2,7 @@
 
 namespace Cinema.DataProcessor.ExportDto
 {
-    public class ExportCustomerWithMoviesDto
+    public class ExportCustomerByMovieDto
     {
         [JsonProperty("FirstName")]
         public string FirstName { get; set; }
