@@ -1,4 +1,4 @@
-namespace MusicHub.Data.Models
+﻿namespace MusicHub.Data.Models
 {
     using MusicHub.Data.Models.Enums;
     using System;

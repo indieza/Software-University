@@ -1,4 +1,4 @@
-namespace MusicHub.DataProcessor.ImportDtos
+﻿namespace MusicHub.DataProcessor.ImportDtos
 {
     using System.Xml.Serialization;
 
@@ -18,7 +18,7 @@ namespace MusicHub.DataProcessor.ImportDtos
         public string Genre { get; set; }
 
         [XmlElement(ElementName = "AlbumId")]
-        public int? AlbumId { get; set; }
+        public int AlbumId { get; set; }
 
         [XmlElement(ElementName = "WriterId")]
         public int WriterId { get; set; }

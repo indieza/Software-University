@@ -1,8 +1,8 @@
+﻿using Newtonsoft.Json;
+
 namespace MusicHub.DataProcessor.ExportDtos
 {
-    using Newtonsoft.Json;
-
-    public class ExportSongForAlbumDto
+    public class ExportSongsDto
     {
         [JsonProperty("SongName")]
         public string SongName { get; set; }

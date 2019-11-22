@@ -1,4 +1,4 @@
-namespace MusicHub.DataProcessor.ImportDtos
+﻿namespace MusicHub.DataProcessor.ImportDtos
 {
     using System.Xml.Serialization;
 
@@ -18,6 +18,6 @@ namespace MusicHub.DataProcessor.ImportDtos
         public decimal NetWorth { get; set; }
 
         [XmlArray(ElementName = "PerformersSongs")]
-        public ImportSongsToPerformerDto[] PerformersSongs { get; set; }
+        public ImportSongToPerformerDto[] PerformersSongs { get; set; }
     }
 }

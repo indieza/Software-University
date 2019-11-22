@@ -16,22 +16,22 @@
         {
             var albums = context.Albums
                 .Where(a => a.ProducerId == producerId)
-                .OrderByDescending(a => a.Songs.Sum(s => s.Price))
+                .OrderByDescending(a => a.Price)
                 .Select(a => new ExportAlbumDto
                 {
                     AlbumName = a.Name,
                     ProducerName = a.Producer.Name,
-                    ReleaseDate = a.ReleaseDate.ToString("MM/dd/yyyy"),
-                    Songs = a.Songs.Select(s => new ExportSongForAlbumDto
+                    ReleaseDate = a.ReleaseDate.ToString(@"MM/dd/yyyy"),
+                    Songs = a.Songs.Select(s => new ExportSongsDto
                     {
                         SongName = s.Name,
-                        Price = s.Price.ToString("F2"),
-                        Writer = s.Writer.Name
+                        Writer = s.Writer.Name,
+                        Price = s.Price.ToString("F2")
                     })
                     .OrderByDescending(s => s.SongName)
                     .ThenBy(s => s.Writer)
                     .ToList(),
-                    AlbumPrice = a.Songs.Sum(s => s.Price).ToString("F2")
+                    AlbumPrice = a.Price.ToString("F2")
                 })
                 .ToList();
 
@@ -47,21 +47,21 @@
                 .OrderBy(s => s.Name)
                 .ThenBy(s => s.Writer.Name)
                 .ThenBy(s => s.SongPerformers
-                .Select(p => p.Performer.FirstName + " " + p.Performer.LastName)
+                .Select(sp => $"{sp.Performer.FirstName} {sp.Performer.LastName}")
                 .FirstOrDefault())
-                .Select(s => new ExportSongDto
+                .Select(s => new ExportSongInRangeDto
                 {
                     SongName = s.Name,
-                    AlbumProducer = s.Album.Producer.Name,
-                    Performer = s.SongPerformers
-                    .Select(p => p.Performer.FirstName + " " + p.Performer.LastName)
-                    .FirstOrDefault(),
                     Writer = s.Writer.Name,
+                    Performer = s.SongPerformers
+                    .Select(sp => $"{sp.Performer.FirstName} {sp.Performer.LastName}")
+                    .FirstOrDefault(),
+                    AlbumProducer = s.Album.Producer.Name,
                     Duration = s.Duration.ToString(@"hh\:mm\:ss")
                 })
                 .ToArray();
 
-            var xmlSerializer = new XmlSerializer(typeof(ExportSongDto[]), new XmlRootAttribute("Songs"));
+            var xmlSerializer = new XmlSerializer(typeof(ExportSongInRangeDto[]), new XmlRootAttribute("Songs"));
 
             var sb = new StringBuilder();
             var namespaces = new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty });

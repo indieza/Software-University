@@ -72,15 +72,15 @@
             {
                 var producer = Mapper.Map<Producer>(producerDto);
                 bool isValidProducer = IsValid(producer);
-                bool isValidAlbums = producerDto.Albums.Any(a => IsValid(a) == false);
+                bool isInvalidAlbums = producerDto.ProducerAlbums.Any(a => IsValid(a) == false);
 
-                if (isValidProducer == false || isValidAlbums == true)
+                if (isValidProducer == false || isInvalidAlbums == true)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                foreach (var albumDto in producerDto.Albums)
+                foreach (var albumDto in producerDto.ProducerAlbums)
                 {
                     var album = Mapper.Map<Album>(albumDto);
                     producer.Albums.Add(album);
@@ -122,7 +122,7 @@
             {
                 bool isValidGenre = Enum.IsDefined(typeof(Genre), songDto.Genre);
                 bool isValidAlbum = context.Albums.Any(a => a.Id == songDto.AlbumId);
-                bool isValidWriter = context.Writers.Any(a => a.Id == songDto.WriterId);
+                bool isValidWriter = context.Writers.Any(w => w.Id == songDto.WriterId);
 
                 if (isValidGenre == false || isValidAlbum == false || isValidWriter == false)
                 {
@@ -155,7 +155,8 @@
 
         public static string ImportSongPerformers(MusicHubDbContext context, string xmlString)
         {
-            var xmlSerializer = new XmlSerializer(typeof(ImportPerformerDto[]), new XmlRootAttribute("Performers"));
+            var xmlSerializer = new XmlSerializer(
+                typeof(ImportPerformerDto[]), new XmlRootAttribute("Performers"));
             var performersDto = (ImportPerformerDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
 
             List<Performer> performers = new List<Performer>();
@@ -167,29 +168,18 @@
                 var performer = Mapper.Map<Performer>(performerDto);
                 bool isValidPerformer = IsValid(performer);
 
-                var songs = context.Songs.Select(x => x.Id).ToList();
-                var songsExists = performerDto.PerformersSongs
-                    .Select(x => x.Id)
-                    .All(value => songs.Contains(value));
+                var songsIds = context.Songs.Select(s => s.Id).ToList();
+                var isSongsExists = performerDto.PerformersSongs.Select(s => s.Id).All(v => songsIds.Contains(v));
 
-                if (isValidPerformer == false || songsExists == false)
+                if (isValidPerformer == false || isSongsExists == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
 
-                foreach (var songDto in performerDto.PerformersSongs)
-                {
-                    SongPerformer songPerformer = new SongPerformer
-                    {
-                        Performer = performer,
-                        PerformerId = performer.Id,
-                        Song = context.Songs.Find(songDto.Id),
-                        SongId = songDto.Id
-                    };
-
-                    performer.PerformerSongs.Add(songPerformer);
-                }
+                performer.PerformerSongs = performerDto.PerformersSongs
+                    .Select(ps => new SongPerformer { SongId = ps.Id })
+                    .ToList();
 
                 performers.Add(performer);
 

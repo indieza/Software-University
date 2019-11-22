@@ -1,4 +1,4 @@
-namespace MusicHub.Data.Models
+﻿namespace MusicHub.Data.Models
 {
     using System;
     using System.Collections.Generic;

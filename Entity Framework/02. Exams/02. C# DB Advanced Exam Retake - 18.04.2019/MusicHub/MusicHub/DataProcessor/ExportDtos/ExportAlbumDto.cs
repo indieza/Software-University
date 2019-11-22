@@ -1,4 +1,4 @@
-namespace MusicHub.DataProcessor.ExportDtos
+﻿namespace MusicHub.DataProcessor.ExportDtos
 {
     using Newtonsoft.Json;
     using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace MusicHub.DataProcessor.ExportDtos
         public string ProducerName { get; set; }
 
         [JsonProperty("Songs")]
-        public ICollection<ExportSongForAlbumDto> Songs { get; set; }
+        public ICollection<ExportSongsDto> Songs { get; set; }
 
         [JsonProperty("AlbumPrice")]
         public string AlbumPrice { get; set; }
