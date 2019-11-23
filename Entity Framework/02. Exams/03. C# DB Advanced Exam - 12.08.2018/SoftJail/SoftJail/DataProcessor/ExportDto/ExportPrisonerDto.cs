@@ -1,9 +1,9 @@
-namespace SoftJail.DataProcessor.ExportDto
+﻿namespace SoftJail.DataProcessor.ExportDto
 {
     using System.Xml.Serialization;
 
     [XmlType("Prisoner")]
-    public class ExportPrisonersInboxDto
+    public class ExportPrisonerDto
     {
         [XmlElement(ElementName = "Id")]
         public int Id { get; set; }

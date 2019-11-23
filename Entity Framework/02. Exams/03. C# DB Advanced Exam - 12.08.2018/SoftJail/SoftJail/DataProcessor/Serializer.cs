@@ -17,22 +17,22 @@
         {
             var prisoners = context.Prisoners
                 .Where(p => ids.Contains(p.Id))
-                .Select(p => new ExportPrisonersByCellDto
+                .OrderBy(p => p.FullName)
+                .Select(p => new ExportPrisonerByCellDto
                 {
                     Id = p.Id,
-                    CellNumber = p.Cell.CellNumber,
                     Name = p.FullName,
-                    Officers = p.PrisonerOfficers.Select(po => new ExportOfficerDto
+                    CellNumber = p.Cell.CellNumber,
+                    Officers = p.PrisonerOfficers.Select(op => new ExportOfficerByPrisonerDto
                     {
-                        OfficerName = po.Officer.FullName,
-                        Department = po.Officer.Department.Name
+                        OfficerName = op.Officer.FullName,
+                        Department = op.Officer.Department.Name
                     })
                     .OrderBy(o => o.OfficerName)
                     .ToList(),
-                    TotalOfficerSalary = p.PrisonerOfficers.Sum(po => po.Officer.Salary)
+                    TotalOfficerSalary = p.PrisonerOfficers.Sum(op => op.Officer.Salary)
                 })
-                .OrderBy(p => p.Name)
-                .ThenBy(p => p.Id)
+                .OrderBy(p => p.Id)
                 .ToList();
 
             var json = JsonConvert.SerializeObject(prisoners, Formatting.Indented);
@@ -42,25 +42,27 @@
 
         public static string ExportPrisonersInbox(SoftJailDbContext context, string prisonersNames)
         {
+            string[] names = prisonersNames
+                .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+
             var prisoners = context.Prisoners
-                .Where(p => prisonersNames.Contains(p.FullName))
+                .Where(p => names.Contains(p.FullName))
                 .OrderBy(p => p.FullName)
                 .ThenBy(p => p.Id)
-                .Select(p => new ExportPrisonersInboxDto
+                .Select(p => new ExportPrisonerDto
                 {
                     Id = p.Id,
                     Name = p.FullName,
-                    IncarcerationDate = p.IncarcerationDate.ToString("yyyy-MM-dd"),
+                    IncarcerationDate = p.IncarcerationDate.ToString(@"yyyy-MM-dd"),
                     EncryptedMessages = p.Mails.Select(m => new ExportMailDto
                     {
-                        Description = ReverseString(m.Description)
+                        Description = Reverse(m.Description)
                     })
                     .ToArray()
                 })
                 .ToArray();
 
-            var xmlSerializer = new XmlSerializer(
-                typeof(ExportPrisonersInboxDto[]), new XmlRootAttribute("Prisoners"));
+            var xmlSerializer = new XmlSerializer(typeof(ExportPrisonerDto[]), new XmlRootAttribute("Prisoners"));
 
             var sb = new StringBuilder();
             var namespaces = new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty });
@@ -69,9 +71,9 @@
             return sb.ToString().TrimEnd();
         }
 
-        private static string ReverseString(string description)
+        public static string Reverse(string s)
         {
-            char[] charArray = description.ToCharArray();
+            char[] charArray = s.ToCharArray();
             Array.Reverse(charArray);
             return new string(charArray);
         }

@@ -22,9 +22,9 @@
 
         public DbSet<Officer> Officers { get; set; }
 
-        public DbSet<Prisoner> Prisoners { get; set; }
-
         public DbSet<OfficerPrisoner> OfficersPrisoners { get; set; }
+
+        public DbSet<Prisoner> Prisoners { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

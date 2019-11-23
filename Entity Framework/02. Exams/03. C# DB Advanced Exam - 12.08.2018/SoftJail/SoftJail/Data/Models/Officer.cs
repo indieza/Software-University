@@ -1,4 +1,4 @@
-namespace SoftJail.Data.Models
+﻿namespace SoftJail.Data.Models
 {
     using SoftJail.Data.Models.Enums;
     using System.Collections.Generic;

@@ -13,7 +13,7 @@
         "Department": "Blockchain"
       }
     ],
-    "TotalOfficerSalary": "7127.93"
+    "TotalOfficerSalary": 7127.93
   },
   {
     "Id": 5,
@@ -25,7 +25,7 @@
         "Department": "ArtificialIntelligence"
       }
     ],
-    "TotalOfficerSalary": "2339.08"
+    "TotalOfficerSalary": 2339.08
   },
   {
     "Id": 1,
@@ -37,7 +37,7 @@
         "Department": "Blockchain"
       }
     ],
-    "TotalOfficerSalary": "2854.56"
+    "TotalOfficerSalary": 2854.56
   },
   {
     "Id": 7,
@@ -49,6 +49,6 @@
         "Department": "Blockchain"
       }
     ],
-    "TotalOfficerSalary": "3475.44"
+    "TotalOfficerSalary": 3475.44
   }
 ]

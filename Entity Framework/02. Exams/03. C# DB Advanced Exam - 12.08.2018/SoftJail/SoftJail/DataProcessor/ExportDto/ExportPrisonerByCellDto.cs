@@ -1,9 +1,9 @@
-namespace SoftJail.DataProcessor.ExportDto
+﻿namespace SoftJail.DataProcessor.ExportDto
 {
     using Newtonsoft.Json;
     using System.Collections.Generic;
 
-    public class ExportPrisonersByCellDto
+    public class ExportPrisonerByCellDto
     {
         [JsonProperty("Id")]
         public int Id { get; set; }
@@ -15,7 +15,7 @@ namespace SoftJail.DataProcessor.ExportDto
         public int CellNumber { get; set; }
 
         [JsonProperty("Officers")]
-        public ICollection<ExportOfficerDto> Officers { get; set; }
+        public ICollection<ExportOfficerByPrisonerDto> Officers { get; set; }
 
         [JsonProperty("TotalOfficerSalary")]
         public decimal TotalOfficerSalary { get; set; }

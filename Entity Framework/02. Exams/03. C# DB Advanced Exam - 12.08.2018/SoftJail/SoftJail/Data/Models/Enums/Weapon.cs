@@ -1,11 +1,11 @@
-namespace SoftJail.Data.Models.Enums
+﻿namespace SoftJail.Data.Models.Enums
 {
     public enum Weapon
     {
-        Knife = 1,
-        FlashPulse = 2,
-        ChainRifle = 3,
-        Pistol = 4,
-        Sniper = 5
+        Knife = 0,
+        FlashPulse = 1,
+        ChainRifle = 2,
+        Pistol = 3,
+        Sniper = 4
     }
 }

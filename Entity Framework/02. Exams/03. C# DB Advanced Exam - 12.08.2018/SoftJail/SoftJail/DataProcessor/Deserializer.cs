@@ -18,13 +18,13 @@
     public class Deserializer
     {
         private const string ErrorMessage = "Invalid Data";
-        private const string SuccessfullAddedDepartmentWithCells = "Imported {0} with {1} cells";
-        private const string SuccessfullAddedPrisonerWithMails = "Imported {0} {1} years old";
-        private const string SuccessfullAddedOfficerWithPrisoners = "Imported {0} ({1} prisoners)";
+        private const string ImportedDepartment = "Imported {0} with {1} cells";
+        private const string ImportedPrisoner = "Imported {0} {1} years old";
+        private const string ImportedOfficer = "Imported {0} ({1} prisoners)";
 
         public static string ImportDepartmentsCells(SoftJailDbContext context, string jsonString)
         {
-            var departmentsDto = JsonConvert.DeserializeObject<ImportDepartmentCellsDto[]>(jsonString);
+            var departmentsDto = JsonConvert.DeserializeObject<ImportDepartmentDto[]>(jsonString);
 
             List<Department> departments = new List<Department>();
 
@@ -33,6 +33,7 @@
             foreach (var departmentDto in departmentsDto)
             {
                 var department = Mapper.Map<Department>(departmentDto);
+
                 bool isValidDepartment = IsValid(department);
                 bool isValidCells = department.Cells.Any(c => IsValid(c) == false);
 
@@ -43,7 +44,8 @@
                 }
 
                 departments.Add(department);
-                sb.AppendLine(string.Format(SuccessfullAddedDepartmentWithCells,
+
+                sb.AppendLine(string.Format(ImportedDepartment,
                     department.Name,
                     department.Cells.Count()));
             }
@@ -56,7 +58,7 @@
 
         public static string ImportPrisonersMails(SoftJailDbContext context, string jsonString)
         {
-            var prisonersDto = JsonConvert.DeserializeObject<ImportPrisonerWithMailsDto[]>(jsonString);
+            var prisonersDto = JsonConvert.DeserializeObject<ImportPrisonerDto[]>(jsonString);
 
             List<Prisoner> prisoners = new List<Prisoner>();
 
@@ -65,6 +67,7 @@
             foreach (var prisonerDto in prisonersDto)
             {
                 var prisoner = Mapper.Map<Prisoner>(prisonerDto);
+
                 bool isValidPrisoner = IsValid(prisoner);
                 bool isValidMails = prisoner.Mails.Any(m => IsValid(m) == false);
 
@@ -76,7 +79,7 @@
 
                 prisoners.Add(prisoner);
 
-                sb.AppendLine(string.Format(SuccessfullAddedPrisonerWithMails,
+                sb.AppendLine(string.Format(ImportedPrisoner,
                     prisoner.FullName,
                     prisoner.Age));
             }
@@ -89,11 +92,8 @@
 
         public static string ImportOfficersPrisoners(SoftJailDbContext context, string xmlString)
         {
-            var xmlSerializer = new XmlSerializer(
-                typeof(ImportOfficerWithPrisonersDto[]), new XmlRootAttribute("Officers"));
-
-            var officersDto = (ImportOfficerWithPrisonersDto[])xmlSerializer
-                .Deserialize(new StringReader(xmlString));
+            var xmlSerializer = new XmlSerializer(typeof(ImportOfficerDto[]), new XmlRootAttribute("Officers"));
+            var officersDto = (ImportOfficerDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
 
             List<Officer> officers = new List<Officer>();
 
@@ -111,7 +111,6 @@
                 }
 
                 var officer = Mapper.Map<Officer>(officerDto);
-
                 bool isValidOfficer = IsValid(officer);
 
                 if (isValidOfficer == false)
@@ -120,22 +119,13 @@
                     continue;
                 }
 
-                foreach (var prisonerDto in officerDto.Prisoners)
-                {
-                    OfficerPrisoner officerPrisoner = new OfficerPrisoner
-                    {
-                        Officer = officer,
-                        OfficerId = officer.Id,
-                        Prisoner = context.Prisoners.Find(prisonerDto.Id),
-                        PrisonerId = prisonerDto.Id
-                    };
-
-                    officer.OfficerPrisoners.Add(officerPrisoner);
-                }
+                officer.OfficerPrisoners = officerDto.Prisoners
+                    .Select(p => new OfficerPrisoner { PrisonerId = p.Id })
+                    .ToList();
 
                 officers.Add(officer);
 
-                sb.AppendLine(string.Format(SuccessfullAddedOfficerWithPrisoners,
+                sb.AppendLine(string.Format(ImportedOfficer,
                     officer.FullName,
                     officer.OfficerPrisoners.Count()));
             }

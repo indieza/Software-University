@@ -1,4 +1,4 @@
-namespace SoftJail.Data.Models
+﻿namespace SoftJail.Data.Models
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

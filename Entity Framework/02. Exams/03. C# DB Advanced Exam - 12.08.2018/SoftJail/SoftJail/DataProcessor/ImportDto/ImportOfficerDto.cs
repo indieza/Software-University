@@ -1,15 +1,15 @@
-namespace SoftJail.DataProcessor.ImportDto
+﻿namespace SoftJail.DataProcessor.ImportDto
 {
     using System.Xml.Serialization;
 
     [XmlType("Officer")]
-    public class ImportOfficerWithPrisonersDto
+    public class ImportOfficerDto
     {
         [XmlElement(ElementName = "Name")]
-        public string Name { get; set; }
+        public string FullName { get; set; }
 
         [XmlElement(ElementName = "Money")]
-        public decimal Money { get; set; }
+        public decimal Salary { get; set; }
 
         [XmlElement(ElementName = "Position")]
         public string Position { get; set; }
@@ -21,6 +21,6 @@ namespace SoftJail.DataProcessor.ImportDto
         public int DepartmentId { get; set; }
 
         [XmlArray(ElementName = "Prisoners")]
-        public ImportPrisonerToOfficerDto[] Prisoners { get; set; }
+        public ImportPrisonerId[] Prisoners { get; set; }
     }
 }
