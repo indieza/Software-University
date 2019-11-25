@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Users>
+  <User username="mgraveson">
+    <Purchases>
+      <Purchase>
+        <Card>7991 7779 5123 9211</Card>
+        <Cvc>340</Cvc>
+        <Date>2017-08-31 17:09</Date>
+        <Game title="Counter-Strike: Global Offensive">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>12.49</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>7790 7962 4262 5606</Card>
+        <Cvc>966</Cvc>
+        <Date>2018-02-28 08:38</Date>
+        <Game title="Tom Clancy's Ghost Recon Wildlands">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>59.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>72.48</TotalSpent>
+  </User>
+  <User username="vsjollema">
+    <Purchases>
+      <Purchase>
+        <Card>8608 6806 8238 3092</Card>
+        <Cvc>081</Cvc>
+        <Date>2017-10-01 01:14</Date>
+        <Game title="Garry's Mod">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>9.99</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>4846 1275 4235 3039</Card>
+        <Cvc>268</Cvc>
+        <Date>2017-11-12 03:51</Date>
+        <Game title="Total War: WARHAMMER II">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>59.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>69.98</TotalSpent>
+  </User>
+  <User username="bcorcut">
+    <Purchases>
+      <Purchase>
+        <Card>7460 6498 2791 0231</Card>
+        <Cvc>068</Cvc>
+        <Date>2017-12-27 05:10</Date>
+        <Game title="Counter-Strike: Global Offensive">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>12.49</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>7460 6498 2791 0231</Card>
+        <Cvc>068</Cvc>
+        <Date>2018-08-31 15:55</Date>
+        <Game title="Conan Exiles">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>39.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>52.48</TotalSpent>
+  </User>
+  <User username="atobin">
+    <Purchases>
+      <Purchase>
+        <Card>6975 1775 3435 4897</Card>
+        <Cvc>857</Cvc>
+        <Date>2016-04-27 18:40</Date>
+        <Game title="NBA 2K18">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>49.99</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>6975 1775 3435 4897</Card>
+        <Cvc>857</Cvc>
+        <Date>2018-06-22 12:45</Date>
+        <Game title="Warframe">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>49.99</TotalSpent>
+  </User>
+  <User username="aruthven">
+    <Purchases>
+      <Purchase>
+        <Card>5208 8381 5687 8508</Card>
+        <Cvc>624</Cvc>
+        <Date>2016-04-10 17:40</Date>
+        <Game title="Yu-Gi-Oh! Duel Links">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>5208 8381 5687 8508</Card>
+        <Cvc>624</Cvc>
+        <Date>2016-06-29 10:42</Date>
+        <Game title="NARUTO SHIPPUDEN: Ultimate Ninja STORM 4">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>29.99</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>5208 8381 5687 8508</Card>
+        <Cvc>624</Cvc>
+        <Date>2018-01-11 19:46</Date>
+        <Game title="Slay the Spire">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>15.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>45.98</TotalSpent>
+  </User>
+  <User username="asikorsky">
+    <Purchases>
+      <Purchase>
+        <Card>3863 8683 6862 0373</Card>
+        <Cvc>640</Cvc>
+        <Date>2018-06-18 15:45</Date>
+        <Game title="Divinity: Original Sin 2">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>44.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>44.99</TotalSpent>
+  </User>
+  <User username="kmertgen">
+    <Purchases>
+      <Purchase>
+        <Card>1268 2352 8506 0500</Card>
+        <Cvc>693</Cvc>
+        <Date>2017-07-05 05:17</Date>
+        <Game title="Wreckfest">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>44.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>44.99</TotalSpent>
+  </User>
+  <User username="kcarroll">
+    <Purchases>
+      <Purchase>
+        <Card>7716 6230 0769 9366</Card>
+        <Cvc>656</Cvc>
+        <Date>2018-07-04 18:07</Date>
+        <Game title="Planet Coaster">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>37.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>37.99</TotalSpent>
+  </User>
+  <User username="nparadyce">
+    <Purchases>
+      <Purchase>
+        <Card>0798 3871 2521 2016</Card>
+        <Cvc>036</Cvc>
+        <Date>2017-03-27 18:19</Date>
+        <Game title="Rust">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>31.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>31.99</TotalSpent>
+  </User>
+  <User username="gsmallthwaite">
+    <Purchases>
+      <Purchase>
+        <Card>5994 2396 1516 2411</Card>
+        <Cvc>318</Cvc>
+        <Date>2016-09-28 07:57</Date>
+        <Game title="The Witcher 3: Wild Hunt">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>29.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>29.99</TotalSpent>
+  </User>
+  <User username="kroderighi">
+    <Purchases>
+      <Purchase>
+        <Card>7036 3344 0149 7880</Card>
+        <Cvc>094</Cvc>
+        <Date>2017-02-04 00:11</Date>
+        <Game title="Brawlhalla">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>7036 3344 0149 7880</Card>
+        <Cvc>094</Cvc>
+        <Date>2018-01-22 11:51</Date>
+        <Game title="NARUTO SHIPPUDEN: Ultimate Ninja STORM 4">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>29.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>29.99</TotalSpent>
+  </User>
+  <User username="cgara">
+    <Purchases>
+      <Purchase>
+        <Card>5103 9356 9768 6854</Card>
+        <Cvc>493</Cvc>
+        <Date>2016-09-12 22:11</Date>
+        <Game title="FOR HONOR">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>14.99</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>5103 9356 9768 6854</Card>
+        <Cvc>493</Cvc>
+        <Date>2016-12-03 23:16</Date>
+        <Game title="Neverwinter">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>5103 9356 9768 6854</Card>
+        <Cvc>493</Cvc>
+        <Date>2017-01-20 21:52</Date>
+        <Game title="Tom Clancy's Rainbow Six Siege">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>14.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>29.98</TotalSpent>
+  </User>
+  <User username="hrichardson">
+    <Purchases>
+      <Purchase>
+        <Card>5811 6621 2962 1020</Card>
+        <Cvc>375</Cvc>
+        <Date>2016-02-21 22:11</Date>
+        <Game title="RimWorld">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>27.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>27.99</TotalSpent>
+  </User>
+  <User username="spaprotny">
+    <Purchases>
+      <Purchase>
+        <Card>9185 2070 3009 4543</Card>
+        <Cvc>518</Cvc>
+        <Date>2016-09-08 02:54</Date>
+        <Game title="Rules Of Survival">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>2.39</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>9185 2070 3009 4543</Card>
+        <Cvc>518</Cvc>
+        <Date>2018-07-25 18:31</Date>
+        <Game title="House Flipper">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>16.79</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>19.18</TotalSpent>
+  </User>
+  <User username="mgillicuddy">
+    <Purchases>
+      <Purchase>
+        <Card>4499 3123 4695 9542</Card>
+        <Cvc>444</Cvc>
+        <Date>2016-07-20 05:12</Date>
+        <Game title="Banished">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>18.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>18.99</TotalSpent>
+  </User>
+  <User username="wskep">
+    <Purchases>
+      <Purchase>
+        <Card>0327 7877 3023 9451</Card>
+        <Cvc>939</Cvc>
+        <Date>2017-09-10 04:11</Date>
+        <Game title="Rocket League">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>12.59</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>12.59</TotalSpent>
+  </User>
+  <User username="lsilbert">
+    <Purchases>
+      <Purchase>
+        <Card>1833 5024 0553 6211</Card>
+        <Cvc>903</Cvc>
+        <Date>2016-12-07 05:49</Date>
+        <Game title="Dungeon Warfare 2">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>12.49</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>12.49</TotalSpent>
+  </User>
+  <User username="aputland">
+    <Purchases>
+      <Purchase>
+        <Card>2263 5851 7894 9441</Card>
+        <Cvc>192</Cvc>
+        <Date>2017-07-31 12:07</Date>
+        <Game title="FINAL FANTASY XIV Online">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>9.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>9.99</TotalSpent>
+  </User>
+  <User username="bgraith">
+    <Purchases>
+      <Purchase>
+        <Card>4611 7969 4921 6749</Card>
+        <Cvc>519</Cvc>
+        <Date>2018-02-03 06:38</Date>
+        <Game title="Bridge Constructor Portal">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>9.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>9.99</TotalSpent>
+  </User>
+  <User username="cbelchamber">
+    <Purchases>
+      <Purchase>
+        <Card>6842 0546 4406 5606</Card>
+        <Cvc>538</Cvc>
+        <Date>2017-05-16 04:34</Date>
+        <Game title="Black Desert Online">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>9.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>9.99</TotalSpent>
+  </User>
+  <User username="klife">
+    <Purchases>
+      <Purchase>
+        <Card>2962 0872 0998 4724</Card>
+        <Cvc>638</Cvc>
+        <Date>2017-01-03 16:28</Date>
+        <Game title="Terraria">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>9.99</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>0540 4834 3653 5943</Card>
+        <Cvc>943</Cvc>
+        <Date>2017-09-25 05:40</Date>
+        <Game title="Warface">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>9.99</TotalSpent>
+  </User>
+  <User username="svannini">
+    <Purchases>
+      <Purchase>
+        <Card>1642 7380 2920 7598</Card>
+        <Cvc>908</Cvc>
+        <Date>2016-08-29 05:17</Date>
+        <Game title="Path of Exile">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>2175 1623 6855 0876</Card>
+        <Cvc>760</Cvc>
+        <Date>2017-12-12 09:46</Date>
+        <Game title="Terraria">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>9.99</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>9.99</TotalSpent>
+  </User>
+  <User username="bfrontczak">
+    <Purchases />
+    <TotalSpent>0</TotalSpent>
+  </User>
+  <User username="bgunston">
+    <Purchases>
+      <Purchase>
+        <Card>3762 5646 9250 3278</Card>
+        <Cvc>111</Cvc>
+        <Date>2017-10-30 10:16</Date>
+        <Game title="Neverwinter">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>0.00</TotalSpent>
+  </User>
+  <User username="dsharple">
+    <Purchases />
+    <TotalSpent>0</TotalSpent>
+  </User>
+  <User username="ehellard">
+    <Purchases>
+      <Purchase>
+        <Card>3563 6747 1527 9955</Card>
+        <Cvc>727</Cvc>
+        <Date>2017-08-26 16:56</Date>
+        <Game title="Brawlhalla">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>0.00</TotalSpent>
+  </User>
+  <User username="fdedam">
+    <Purchases>
+      <Purchase>
+        <Card>9574 1800 3833 2972</Card>
+        <Cvc>512</Cvc>
+        <Date>2016-04-16 14:45</Date>
+        <Game title="Brawlhalla">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>9574 1800 3833 2972</Card>
+        <Cvc>512</Cvc>
+        <Date>2016-04-25 13:53</Date>
+        <Game title="Team Fortress 2">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>0.00</TotalSpent>
+  </User>
+  <User username="fstoter">
+    <Purchases>
+      <Purchase>
+        <Card>9466 9592 0503 1368</Card>
+        <Cvc>753</Cvc>
+        <Date>2016-02-02 19:38</Date>
+        <Game title="Warframe">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>0.00</TotalSpent>
+  </User>
+  <User username="mdickson">
+    <Purchases>
+      <Purchase>
+        <Card>5317 5177 3653 0084</Card>
+        <Cvc>963</Cvc>
+        <Date>2017-08-25 06:12</Date>
+        <Game title="Warframe">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>0.00</TotalSpent>
+  </User>
+  <User username="rabbison">
+    <Purchases>
+      <Purchase>
+        <Card>5747 3965 9959 7596</Card>
+        <Cvc>463</Cvc>
+        <Date>2016-09-08 17:07</Date>
+        <Game title="SMITE">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+      <Purchase>
+        <Card>5747 3965 9959 7596</Card>
+        <Cvc>463</Cvc>
+        <Date>2017-12-05 17:03</Date>
+        <Game title="Path of Exile">
+          <Genre>VaporStore.Data.Models.Genre</Genre>
+          <Price>0.00</Price>
+        </Game>
+      </Purchase>
+    </Purchases>
+    <TotalSpent>0.00</TotalSpent>
+  </User>
+</Users>
