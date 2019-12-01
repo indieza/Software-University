@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191125181112_InitialMigration.cs" />
+    <Compile Remove="Migrations\20191125181112_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191126124757_AddDistributoPriceToGoods.cs" />
+    <Compile Remove="Migrations\20191126124757_AddDistributoPriceToGoods.Designer.cs" />
+    <Compile Remove="Migrations\20191126131726_AddedKeyAttributeToFood.cs" />
+    <Compile Remove="Migrations\20191126131726_AddedKeyAttributeToFood.Designer.cs" />
+    <Compile Remove="Migrations\20191126132015_AddedKeyAttributeToFood.cs" />
+    <Compile Remove="Migrations\20191126132015_AddedKeyAttributeToFood.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PetStore.Data.Models\PetStore.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>

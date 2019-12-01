@@ -1,0 +1,51 @@
+﻿@model IEnumerable<PetStore.Web.ViewModels.Category.CategoryListingViewModel>
+
+@{
+    ViewData["Title"] = "All";
+}
+
+<div>
+    <a style="margin-top:3.2%" class="btn btn-primary pull-right" asp-action="Create">Create</a>
+    <h2 class="pull-left">Categories</h2>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                #
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ 
+            int counter = 0;
+        }
+@foreach (var item in Model) {
+        counter = counter + 1;
+        <tr>
+            <td>
+                @counter
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id  }, new { @class = "btn btn-sm btn-success" })
+                @Html.ActionLink("Details", "Details", new {  id=item.Id }, new { @class="btn btn-sm btn-info" }) 
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { @class="btn btn-sm btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\PetStore.Data.Models\PetStore.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\PetStore.Data\PetStore.Data.csproj" />
+    <ProjectReference Include="..\PetStore.Services.Models\PetStore.Services.Models.csproj" />
+  </ItemGroup>
+
+</Project>
