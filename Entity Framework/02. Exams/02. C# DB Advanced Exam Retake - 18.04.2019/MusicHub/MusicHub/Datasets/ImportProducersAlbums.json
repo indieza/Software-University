@@ -1,0 +1,251 @@
+[
+  {
+    "Name": "Invalid",
+    "Pseudonym": "Rog Coiley",
+    "PhoneNumber": "(105) 9339880",
+    "Albums": [
+      {
+        "Name": "Sweetbitter",
+        "ReleaseDate": "07/1/2018"
+      },
+      {
+        "Name": "Emergency",
+        "ReleaseDate": "16/09/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Invalid",
+    "Pseudonym": "Rog",
+    "PhoneNumber": "+359 899 323 045",
+    "Albums": [
+      {
+        "Name": "The drawing board",
+        "ReleaseDate": "05/08/2018"
+      },
+      {
+        "Name": "For two songs",
+        "ReleaseDate": "13/09/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Ll",
+    "Pseudonym": "Ashbey Cartledge",
+    "PhoneNumber": "+359 899 323 045",
+    "Albums": [
+      {
+        "Name": "District zero",
+        "ReleaseDate": "05/09/2018"
+      },
+      {
+        "Name": "Eye of the camera",
+        "ReleaseDate": "09/09/2018"
+      },
+      {
+        "Name": "Favoritism",
+        "ReleaseDate": "05/09/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Ab Pittham",
+    "Pseudonym": null,
+    "PhoneNumber": null,
+    "Albums": []
+  },
+  {
+    "Name": "Georgi Milkov",
+    "Pseudonym": "Gosho Goshev",
+    "PhoneNumber": "+359 899 345 045",
+    "Albums": [
+      {
+        "Name": "Fight and flight",
+        "ReleaseDate": "05/11/2018"
+      },
+      {
+        "Name": "Cherry",
+        "ReleaseDate": "09/06/2018"
+      },
+      {
+        "Name": "No history",
+        "ReleaseDate": "05/03/2019"
+      }
+    ]
+  },
+  {
+    "Name": "Maria Sarafova",
+    "Pseudonym": "Mary Ge",
+    "PhoneNumber": "+359 767 324 546",
+    "Albums": [
+      {
+        "Name": "F",
+        "ReleaseDate": "05/11/2018"
+      },
+      {
+        "Name": "Cherry",
+        "ReleaseDate": "09/06/2018"
+      },
+      {
+        "Name": "No history",
+        "ReleaseDate": "05/03/2019"
+      }
+    ]
+  },
+  {
+    "Name": "Jana Karaivanova",
+    "Pseudonym": "Jani Gog",
+    "PhoneNumber": null,
+    "Albums": [
+      {
+        "Name": "Blinded by fame",
+        "ReleaseDate": "12/12/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Evtim Miloshev",
+    "Pseudonym": "Evo Mils",
+    "PhoneNumber": "+359 567 234 345",
+    "Albums": [
+      {
+        "Name": "Barrage of noise",
+        "ReleaseDate": "03/07/2018"
+      },
+      {
+        "Name": "The fat lady sings",
+        "ReleaseDate": "01/06/2018"
+      },
+      {
+        "Name": "Zero gravity",
+        "ReleaseDate": "05/08/2019"
+      }
+    ]
+  },
+  {
+    "Name": "Dobromir Slavchev",
+    "Pseudonym": "Doba Dog",
+    "PhoneNumber": "+359 353 355 789",
+    "Albums": [
+      {
+        "Name": "Hit the road",
+        "ReleaseDate": "03/07/2019"
+      },
+      {
+        "Name": "Louder actions",
+        "ReleaseDate": "01/06/2019"
+      }
+    ]
+  },
+  {
+    "Name": "Denney Allott",
+    "Pseudonym": null,
+    "PhoneNumber": null,
+    "Albums": []
+  },
+  {
+    "Name": "F.O.",
+    "Pseudonym": "Rancell Caughey",
+    "PhoneNumber": "+359 343 244 797",
+    "Albums": [
+      {
+        "Name": "Don't Step to This",
+        "ReleaseDate": "01/07/2018"
+      },
+      {
+        "Name": "Rap Time",
+        "ReleaseDate": "06/06/2019"
+      }
+    ]
+  },
+  {
+    "Name": "Rolph Nibley",
+    "Pseudonym": "Rea Netley",
+    "PhoneNumber": "+359 343 234 454",
+    "Albums": [
+      {
+        "Name": "Game on",
+        "ReleaseDate": "03/07/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Bartholomeus Jerschke",
+    "Pseudonym": "Hertha Dishmon",
+    "PhoneNumber": "+359 567 123 797",
+    "Albums": [
+      {
+        "Name": "on",
+        "ReleaseDate": "03/07/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Evgeni Dimitrov",
+    "Pseudonym": "Evgeni Maestroto",
+    "PhoneNumber": "+359 456 244 321",
+    "Albums": [
+      {
+        "Name": "Two to tango",
+        "ReleaseDate": "03/04/2018"
+      },
+      {
+        "Name": "Flower shower",
+        "ReleaseDate": "17/07/2018"
+      },
+      {
+        "Name": "Devil's advocate",
+        "ReleaseDate": "21/07/2018"
+      },
+      {
+        "Name": "Dark matters",
+        "ReleaseDate": "22/07/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Hudini",
+    "Pseudonym": "Cleve Ancliff",
+    "PhoneNumber": "+359 342 342",
+    "Albums": [
+      {
+        "Name": "The bigger fish",
+        "ReleaseDate": "01/04/2018"
+      },
+      {
+        "Name": "Dedication",
+        "ReleaseDate": "19/07/2018"
+      },
+      {
+        "Name": "Badge of honor",
+        "ReleaseDate": "26/07/2018"
+      },
+      {
+        "Name": "Beads of sweat",
+        "ReleaseDate": "13/07/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Kacie Duigenan",
+    "Pseudonym": "Berky Wells",
+    "PhoneNumber": "(427) 4033109",
+    "Albums": [
+      {
+        "Name": "The bigger fish",
+        "ReleaseDate": "01/04/2018"
+      }
+    ]
+  },
+  {
+    "Name": "Kacie Duigenan",
+    "Pseudonym": "Berky Wells",
+    "PhoneNumber": "(427) 4033109",
+    "Albums": [
+      {
+        "Name": "TestInvalid",
+        "ReleaseDate": "01/04/2018"
+      }
+    ]
+  }
+]
