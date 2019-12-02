@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Officers>
+	<Officer>
+		<Name>Minerva Kitchingman</Name>
+		<Money>2582</Money>
+		<Position>Invalid</Position>
+		<Weapon>ChainRifle</Weapon>
+		<DepartmentId>2</DepartmentId>
+		<Prisoners>
+			<Prisoner id="15" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Minerva Holl</Name>
+		<Money>2582.55</Money>
+		<Position>Overseer</Position>
+		<Weapon>ChainRifle</Weapon>
+		<DepartmentId>2</DepartmentId>
+		<Prisoners>
+			<Prisoner id="15" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Paddy Weiner</Name>
+		<Money>2854.56</Money>
+		<Position>Guard</Position>
+		<Weapon>ChainRifle</Weapon>
+		<DepartmentId>3</DepartmentId>
+		<Prisoners>
+			<Prisoner id="4" />
+			<Prisoner id="1" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Minerva Kitchingman</Name>
+		<Money>2582</Money>
+		<Position>Mishka</Position>
+		<Weapon>ChainRifle</Weapon>
+		<DepartmentId>4</DepartmentId>
+		<Prisoners>
+			<Prisoner id="15" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Rica Muscott</Name>
+		<Money>2339.08</Money>
+		<Position>Overseer</Position>
+		<Weapon>ChainRifle</Weapon>
+		<DepartmentId>5</DepartmentId>
+		<Prisoners>
+			<Prisoner id="8" />
+			<Prisoner id="5" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Rees Bick</Name>
+		<Money>2130.52</Money>
+		<Position>Labour</Position>
+		<Weapon>Pistol</Weapon>
+		<DepartmentId>1</DepartmentId>
+		<Prisoners>
+			<Prisoner id="2" />
+			<Prisoner id="13" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Minerva Kitchingman</Name>
+		<Money>2582</Money>
+		<Position>Overseer</Position>
+		<Weapon>Bazukaaa</Weapon>
+		<DepartmentId>3</DepartmentId>
+		<Prisoners>
+			<Prisoner id="15" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Theo Carde</Name>
+		<Money>3475.44</Money>
+		<Position>Guard</Position>
+		<Weapon>ChainRifle</Weapon>
+		<DepartmentId>3</DepartmentId>
+		<Prisoners>
+			<Prisoner id="7" />
+			<Prisoner id="3" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Oran Janz</Name>
+		<Money>3649.38</Money>
+		<Position>Watcher</Position>
+		<Weapon>Pistol</Weapon>
+		<DepartmentId>5</DepartmentId>
+		<Prisoners>
+			<Prisoner id="17" />
+			<Prisoner id="19" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Linet Bagster</Name>
+		<Money>3262.79</Money>
+		<Position>Labour</Position>
+		<Weapon>Pistol</Weapon>
+		<DepartmentId>3</DepartmentId>
+		<Prisoners>
+			<Prisoner id="9" />
+			<Prisoner id="10" />
+			<Prisoner id="12" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Ki Royl</Name>
+		<Money>2379.58</Money>
+		<Position>Overseer</Position>
+		<Weapon>FlashPulse</Weapon>
+		<DepartmentId>1</DepartmentId>
+		<Prisoners>
+			<Prisoner id="18" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Huntington Warkup</Name>
+		<Money>3930.29</Money>
+		<Position>Watcher</Position>
+		<Weapon>Sniper</Weapon>
+		<DepartmentId>6</DepartmentId>
+		<Prisoners>
+			<Prisoner id="6" />
+			<Prisoner id="11" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Felix Jerdan</Name>
+		<Money>3281.77</Money>
+		<Position>Guard</Position>
+		<Weapon>Sniper</Weapon>
+		<DepartmentId>2</DepartmentId>
+		<Prisoners>
+			<Prisoner id="11" />
+			<Prisoner id="12" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Alex Prawle</Name>
+		<Money>2252.37</Money>
+		<Position>Labour</Position>
+		<Weapon>ChainRifle</Weapon>
+		<DepartmentId>4</DepartmentId>
+		<Prisoners>
+			<Prisoner id="13" />
+			<Prisoner id="18" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Nance Adiscot</Name>
+		<Money>3142.37</Money>
+		<Position>Labour</Position>
+		<Weapon>Knife</Weapon>
+		<DepartmentId>1</DepartmentId>
+		<Prisoners>
+			<Prisoner id="13" />
+			<Prisoner id="12" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Riccardo Fockes</Name>
+		<Money>3623.98</Money>
+		<Position>Overseer</Position>
+		<Weapon>Pistol</Weapon>
+		<DepartmentId>3</DepartmentId>
+		<Prisoners>
+			<Prisoner id="10" />
+			<Prisoner id="16" />
+			<Prisoner id="15" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Arleen Zannolli</Name>
+		<Money>3539.40</Money>
+		<Position>Guard</Position>
+		<Weapon>FlashPulse</Weapon>
+		<DepartmentId>2</DepartmentId>
+		<Prisoners>
+			<Prisoner id="2" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Hailee Kennon</Name>
+		<Money>3652.49</Money>
+		<Position>Labour</Position>
+		<Weapon>Sniper</Weapon>
+		<DepartmentId>5</DepartmentId>
+		<Prisoners>
+			<Prisoner id="3" />
+			<Prisoner id="14" />
+		</Prisoners>
+	</Officer>
+	<Officer>
+		<Name>Lev de Chastelain</Name>
+		<Money>2442.80</Money>
+		<Position>Guard</Position>
+		<Weapon>Sniper</Weapon>
+		<DepartmentId>6</DepartmentId>
+		<Prisoners>
+			<Prisoner id="13" />
+			<Prisoner id="12" />
+		</Prisoners>
+	</Officer>
+</Officers>
