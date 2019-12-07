@@ -50,8 +50,9 @@
                     Name = projectDto.Name,
                     OpenDate = DateTime.ParseExact(
                         projectDto.OpenDate, @"dd/MM/yyyy", CultureInfo.InvariantCulture),
-                    DueDate = string.IsNullOrEmpty(projectDto.DueDate) ? (DateTime?)null
-                    : DateTime.ParseExact(
+                    DueDate = string.IsNullOrEmpty(projectDto.DueDate) ?
+                        (DateTime?)null
+                        : DateTime.ParseExact(
                         projectDto.DueDate, @"dd/MM/yyyy", CultureInfo.InvariantCulture)
                 };
 
