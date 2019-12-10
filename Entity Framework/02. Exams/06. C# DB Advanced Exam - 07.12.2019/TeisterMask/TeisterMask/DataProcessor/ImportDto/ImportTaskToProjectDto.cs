@@ -4,26 +4,26 @@ using System.Xml.Serialization;
 namespace TeisterMask.DataProcessor.ImportDto
 {
     [XmlType("Task")]
-    public class ImportTaskDto
+    public class ImportTaskToProjectDto
     {
-        [MinLength(2), MaxLength(40), Required]
         [XmlElement(ElementName = "Name")]
+        [MinLength(2), MaxLength(40), Required]
         public string Name { get; set; }
 
-        [Required]
         [XmlElement(ElementName = "OpenDate")]
+        [Required]
         public string OpenDate { get; set; }
 
-        [Required]
         [XmlElement(ElementName = "DueDate")]
+        [Required]
         public string DueDate { get; set; }
 
-        [Required]
         [XmlElement(ElementName = "ExecutionType")]
+        [Required]
         public int ExecutionType { get; set; }
 
-        [Required]
         [XmlElement(ElementName = "LabelType")]
+        [Required]
         public int LabelType { get; set; }
     }
 }

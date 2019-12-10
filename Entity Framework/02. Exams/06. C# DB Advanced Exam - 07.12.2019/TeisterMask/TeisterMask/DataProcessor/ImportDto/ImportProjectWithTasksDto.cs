@@ -1,10 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Xml.Serialization;
-
-namespace TeisterMask.DataProcessor.ImportDto
+﻿namespace TeisterMask.DataProcessor.ImportDto
 {
+    using System.ComponentModel.DataAnnotations;
+    using System.Xml.Serialization;
+
     [XmlType("Project")]
-    public class ImportProjectDto
+    public class ImportProjectWithTasksDto
     {
         [XmlElement(ElementName = "Name")]
         [MinLength(2), MaxLength(40), Required]
@@ -18,6 +18,6 @@ namespace TeisterMask.DataProcessor.ImportDto
         public string DueDate { get; set; }
 
         [XmlArray(ElementName = "Tasks")]
-        public ImportTaskDto[] Tasks { get; set; }
+        public ImportTaskToProjectDto[] Tasks { get; set; }
     }
 }

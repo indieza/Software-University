@@ -1,14 +1,14 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
-
-namespace TeisterMask.DataProcessor.ExportDto
+﻿namespace TeisterMask.DataProcessor.ExportDto
 {
+    using Newtonsoft.Json;
+    using System.Collections.Generic;
+
     public class ExportEmployeeDto
     {
         [JsonProperty("Username")]
         public string Username { get; set; }
 
         [JsonProperty("Tasks")]
-        public ICollection<ExportTaskDto> Tasks { get; set; }
+        public ICollection<ExportEmployeeTasksDto> Tasks { get; set; }
     }
 }

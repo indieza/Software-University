@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using TeisterMask.Data.Models.Enums;
-
-namespace TeisterMask.Data.Models
+﻿namespace TeisterMask.Data.Models
 {
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using TeisterMask.Data.Models.Enums;
+
     public class Task
     {
         [Key]

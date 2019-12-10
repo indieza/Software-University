@@ -2,7 +2,7 @@
 
 namespace TeisterMask.DataProcessor.ExportDto
 {
-    public class ExportTaskDto
+    public class ExportEmployeeTasksDto
     {
         [JsonProperty("TaskName")]
         public string TaskName { get; set; }

@@ -20,10 +20,10 @@
                 .Where(p => p.Tasks.Count >= 1)
                 .Select(p => new ExportProjectDto
                 {
-                    TaskCount = p.Tasks.Count,
-                    HasEndDate = p.DueDate == null ? "No" : "Yes",
+                    TasksCount = p.Tasks.Count,
                     ProjectName = p.Name,
-                    Tasks = p.Tasks.Select(t => new ExportProjectTaskDto
+                    HasEndDate = p.DueDate == null ? "No" : "Yes",
+                    Tasks = p.Tasks.Select(t => new ExportProjectTasksDto
                     {
                         Name = t.Name,
                         Label = t.LabelType.ToString()
@@ -31,7 +31,7 @@
                     .OrderBy(t => t.Name)
                     .ToArray()
                 })
-                .OrderByDescending(p => p.TaskCount)
+                .OrderByDescending(p => p.TasksCount)
                 .ThenBy(p => p.ProjectName)
                 .ToArray();
 
@@ -46,7 +46,7 @@
 
         public static string ExportMostBusiestEmployees(TeisterMaskContext context, DateTime date)
         {
-            var emplyees = context.Employees
+            var employees = context.Employees
                 .Where(e => e.EmployeesTasks.Any(t => t.Task.OpenDate >= date))
                 .OrderByDescending(e => e.EmployeesTasks.Count(t => t.Task.OpenDate >= date))
                 .ThenBy(e => e.Username)
@@ -55,22 +55,23 @@
                     Username = e.Username,
                     Tasks = e.EmployeesTasks
                     .Where(t => t.Task.OpenDate >= date)
-                    .Select(t => new ExportTaskDto
+                    .Select(t => new ExportEmployeeTasksDto
                     {
                         TaskName = t.Task.Name,
-                        LabelType = t.Task.LabelType.ToString(),
+                        OpenDate = t.Task.OpenDate.ToString(@"MM/dd/yyyy"),
+                        DueDate = t.Task.DueDate.ToString(@"MM/dd/yyyy"),
                         ExecutionType = t.Task.ExecutionType.ToString(),
-                        DueDate = t.Task.DueDate.ToString(@"d", CultureInfo.InvariantCulture),
-                        OpenDate = t.Task.OpenDate.ToString(@"d", CultureInfo.InvariantCulture)
+                        LabelType = t.Task.LabelType.ToString()
                     })
-                    .OrderByDescending(t => DateTime.ParseExact(t.DueDate, @"d", CultureInfo.InvariantCulture))
+                    .OrderByDescending(t => DateTime.ParseExact(
+                        t.DueDate, @"MM/dd/yyyy", CultureInfo.InvariantCulture))
                     .ThenBy(t => t.TaskName)
                     .ToList()
                 })
                 .Take(10)
                 .ToList();
 
-            var json = JsonConvert.SerializeObject(emplyees, Formatting.Indented);
+            var json = JsonConvert.SerializeObject(employees, Formatting.Indented);
 
             return json;
         }

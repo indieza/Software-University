@@ -28,8 +28,8 @@
         public static string ImportProjects(TeisterMaskContext context, string xmlString)
         {
             var xmlSerializer = new XmlSerializer(
-                typeof(ImportProjectDto[]), new XmlRootAttribute("Projects"));
-            var projectsDto = (ImportProjectDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
+                typeof(ImportProjectWithTasksDto[]), new XmlRootAttribute("Projects"));
+            var projectsDto = (ImportProjectWithTasksDto[])xmlSerializer.Deserialize(new StringReader(xmlString));
 
             List<Project> projects = new List<Project>();
 
@@ -37,9 +37,9 @@
 
             foreach (var projectDto in projectsDto)
             {
-                bool isValidProjectDto = IsValid(projectDto);
+                bool isValidProject = IsValid(projectDto);
 
-                if (isValidProjectDto == false)
+                if (isValidProject == false)
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
@@ -51,9 +51,9 @@
                     OpenDate = DateTime.ParseExact(
                         projectDto.OpenDate, @"dd/MM/yyyy", CultureInfo.InvariantCulture),
                     DueDate = string.IsNullOrEmpty(projectDto.DueDate) ?
-                        (DateTime?)null
-                        : DateTime.ParseExact(
-                        projectDto.DueDate, @"dd/MM/yyyy", CultureInfo.InvariantCulture)
+                        (DateTime?)null :
+                        DateTime.ParseExact(
+                            projectDto.DueDate, @"dd/MM/yyyy", CultureInfo.InvariantCulture)
                 };
 
                 foreach (var taskDto in projectDto.Tasks)
@@ -87,17 +87,17 @@
                         Name = taskDto.Name,
                         OpenDate = taskOpenDate,
                         DueDate = taskDueDate,
-                        ExecutionType = (ExecutionType)
-                            Enum.ToObject(typeof(ExecutionType), taskDto.ExecutionType),
-                        LabelType = (LabelType)
-                            Enum.ToObject(typeof(LabelType), taskDto.LabelType),
-                        Project = project
+                        ExecutionType = (ExecutionType)Enum.ToObject(
+                            typeof(ExecutionType), taskDto.ExecutionType),
+                        LabelType = (LabelType)Enum.ToObject(
+                            typeof(LabelType), taskDto.LabelType)
                     };
 
                     project.Tasks.Add(task);
                 }
 
                 projects.Add(project);
+
                 sb.AppendLine(string.Format(SuccessfullyImportedProject,
                     project.Name,
                     project.Tasks.Count));
@@ -111,7 +111,7 @@
 
         public static string ImportEmployees(TeisterMaskContext context, string jsonString)
         {
-            var employeesDto = JsonConvert.DeserializeObject<ImportEmployeeDto[]>(jsonString);
+            var employeesDto = JsonConvert.DeserializeObject<ImportEmployeeWithTasksDto[]>(jsonString);
 
             List<Employee> employees = new List<Employee>();
 
@@ -136,16 +136,23 @@
 
                 foreach (var taskId in employeeDto.Tasks.Distinct())
                 {
-                    if (context.Tasks.Find(taskId) == null)
+                    Task task = context.Tasks.Find(taskId);
+
+                    if (task == null)
                     {
                         sb.AppendLine(ErrorMessage);
                         continue;
                     }
 
-                    employee.EmployeesTasks.Add(new EmployeeTask { TaskId = taskId });
+                    employee.EmployeesTasks.Add(
+                        new EmployeeTask
+                        {
+                            TaskId = task.Id
+                        });
                 }
 
                 employees.Add(employee);
+
                 sb.AppendLine(string.Format(SuccessfullyImportedEmployee,
                     employee.Username,
                     employee.EmployeesTasks.Count));

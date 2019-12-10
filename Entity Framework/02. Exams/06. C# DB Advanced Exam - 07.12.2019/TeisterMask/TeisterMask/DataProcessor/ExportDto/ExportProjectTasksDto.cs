@@ -3,12 +3,12 @@
 namespace TeisterMask.DataProcessor.ExportDto
 {
     [XmlType("Task")]
-    public class ExportProjectTaskDto
+    public class ExportProjectTasksDto
     {
-        [XmlElement("Name")]
+        [XmlElement(ElementName = "Name")]
         public string Name { get; set; }
 
-        [XmlElement("Label")]
+        [XmlElement(ElementName = "Label")]
         public string Label { get; set; }
     }
 }
