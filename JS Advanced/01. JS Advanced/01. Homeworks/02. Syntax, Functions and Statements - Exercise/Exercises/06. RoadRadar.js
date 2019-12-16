@@ -3,51 +3,51 @@ function solve(elements) {
     let area = elements[1];
 
     switch (area) {
-        case 'motorway':
+        case "motorway":
             if (speed <= 130) {
                 break;
             } else if (speed <= 130 + 20) {
-                console.log('speeding');
+                console.log("speeding");
             } else if (speed <= 130 + 40) {
-                console.log('excessive speeding');
+                console.log("excessive speeding");
             } else {
-                console.log('reckless driving');
+                console.log("reckless driving");
             }
             break;
 
-        case 'interstate':
+        case "interstate":
             if (speed <= 90) {
                 break;
             } else if (speed <= 90 + 20) {
-                console.log('speeding');
+                console.log("speeding");
             } else if (speed <= 90 + 40) {
-                console.log('excessive speeding');
+                console.log("excessive speeding");
             } else {
-                console.log('reckless driving');
+                console.log("reckless driving");
             }
             break;
 
-        case 'city':
+        case "city":
             if (speed <= 50) {
                 break;
             } else if (speed <= 50 + 20) {
-                console.log('speeding');
+                console.log("speeding");
             } else if (speed <= 50 + 40) {
-                console.log('excessive speeding');
+                console.log("excessive speeding");
             } else {
-                console.log('reckless driving');
+                console.log("reckless driving");
             }
             break;
 
-        case 'residential':
+        case "residential":
             if (speed <= 20) {
                 break;
             } else if (speed <= 20 + 20) {
-                console.log('speeding');
+                console.log("speeding");
             } else if (speed <= 20 + 40) {
-                console.log('excessive speeding');
+                console.log("excessive speeding");
             } else {
-                console.log('reckless driving');
+                console.log("reckless driving");
             }
             break;
 

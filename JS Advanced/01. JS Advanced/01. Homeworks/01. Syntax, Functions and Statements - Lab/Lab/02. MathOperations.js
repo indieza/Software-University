@@ -1,21 +1,21 @@
 function solve(num1, num2, operator){
     switch (operator) {
-        case '+':
+        case "+":
             console.log(num1 + num2);
             break;
-        case '-':
+        case "-":
             console.log(num1 - num2);
             break;
-        case '*':
+        case "*":
             console.log(num1 * num2);
             break;
-        case '/':
+        case "/":
             console.log(num1 / num2);
             break;
-        case '%':
+        case "%":
             console.log(num1 % num2);
             break;
-        case '**':
+        case "**":
             console.log(num1 ** num2);
             break;
     

@@ -5,27 +5,27 @@ function solve(elements) {
         const element = elements[i];
 
         switch (element) {
-            case 'chop':
+            case "chop":
                 number /= 2;
                 console.log(number);
                 break;
 
-            case 'dice':
+            case "dice":
                 number = Math.sqrt(number);
                 console.log(number);
                 break;
 
-            case 'spice':
+            case "spice":
                 number += 1;
                 console.log(number);
                 break;
 
-            case 'bake':
+            case "bake":
                 number *= 3;
                 console.log(number);
                 break;
 
-            case 'fillet':
+            case "fillet":
                 number -= number * 0.20;
                 console.log(number);
                 break;

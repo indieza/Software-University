@@ -3,7 +3,7 @@ function solve(n){
         let array = "";
 
         for (let j = 0; j < Number(n); j++) {
-            array += '* ';          
+            array += "* ";          
         }
 
         console.log(String(array));
