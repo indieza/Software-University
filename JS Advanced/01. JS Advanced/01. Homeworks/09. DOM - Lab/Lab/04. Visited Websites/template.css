@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Lato;
+    color: white;
+}
+
+#page1 { background: #2d2d2d; }
+
+.wrapper {
+    display: table;
+    height: 100%; width: 100%;
+}
+
+.stage {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tabled, .middled {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thin { font-weight: 300; }
+.thick { font-weight: 900; }
+
+a {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+p {
+    font-weight: 100;
+    font-size: 80%;
+    margin: 1px;
+}
+
+[class^="link-"] {
+    display: inline-block;
+    margin: 2em
+}
+
+/* linkone */
+.link-1 a:before, .link-1 a:after {
+    content: '';
+    border-bottom: solid 1px white;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+}
+
+.link-1 a:before { left: 0; }
+.link-1 a:after { right: 0; }
+
+.link-1 a:hover:before, .link-1 a:hover:after {
+    width: 50%;
+}
+
+.link-1 a:before, .link-1 a:after {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* linktwo */
+.link-2 a:hover {
+    color: #5CAAEF;
+}
+
+.link-2 a:before {
+    content: '';
+    border-bottom: solid 1px #5CAAEF;
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+
+    opacity: 0;
+}
+
+.link-2 a:hover:before {
+    opacity: 1.0;
+}
+
+.link-2 a, .link-2 a:before {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* linkthree */
+.link-3 a:before {
+    content: '';
+    border-bottom: solid 1px white;
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+}
+
+.link-3 a:hover:before {
+    -webkit-transform: scaleY(4);
+    -moz-transform: scaleY(4);
+    -ms-transform: scaleY(4);
+    -o-transform: scaleY(4);
+    transform: scaleY(4);
+}
+
+.link-3 a:before {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* linkfour */
+.link-4 a:before {
+    content: '';
+    border-bottom: solid 1px white;
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+}
+
+.link-4 a:hover:before {
+    border-bottom: solid thin #5CAAEF;
+}
+
+.link-4 a:before {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* linkfive */
+.link-5 a:before {
+    content: '';
+    border-bottom: solid 1px white;
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+}
+
+.link-5 a:hover:before {
+    -webkit-transform: scaleY(4);
+    -moz-transform: scaleY(4);
+    -ms-transform: scaleY(4);
+    -o-transform: scaleY(4);
+    transform: scaleY(4);
+    border-bottom: solid thin #5CAAEF;
+}
+
+.link-5 a:before {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* linksix */
+.link-6 a:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.link-6 a {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+/* linkseven */
+.link-7 a:before {
+    content: '';
+    border-bottom: solid 1px #d9534f;
+    position: absolute;
+    bottom: 0; left: 30%;
+    width: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.link-7 a:hover:before {
+    border-bottom: solid thin #d9534f;
+    width: 40%;
+    -webkit-animation: heartbeat-x 1.7s infinite ease-in;
+    animation: heartbeat-x 1.7s infinite ease-in;
+}
+
+.link-7 a:hover {
+    -webkit-animation: heartbeat 1.7s infinite ease-in;
+    animation: heartbeat 1.7s infinite ease-in;
+}
+
+@-webkit-keyframes heartbeat {
+    0% { -webkit-transform: scale(1); }
+    10% { -webkit-transform: scale(1.1); }
+    20% { -webkit-transform: scale(1); }
+    30% { -webkit-transform: scale(1.1); }
+    40% { -webkit-transform: scale(1); }
+}
+
+@-webkit-keyframes heartbeat-x {
+    0% { -webkit-transform: scaleX(0); }
+    10% { -webkit-transform: scaleX(1); }
+    20% { -webkit-transform: scaleX(0); }
+    30% { -webkit-transform: scaleX(1); }
+    40% { -webkit-transform: scaleX(0); }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.1); }
+    20% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+    40% { transform: scale(1); }
+}
+
+@keyframes heartbeat-x {
+    0% { transform: scaleX(0); }
+    10% { transform: scaleX(1); }
+    20% { transform: scaleX(0); }
+    30% { transform: scaleX(1); }
+    40% { transform: scaleX(0); }
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    color: #234465;
+}
+
+h4 {
+    width: 75%;
+    margin: 3% auto;
+    padding: 11px;
+    text-align: center;
+}
+
+#exercise {
+    width: 70%;
+    margin: 3% auto;
+    padding: 1rem;
+    border: 1px solid lightgrey;
+}
+
+input[type="button"], button {
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1em;
+    margin: 1rem 0;
+    border: none;
+    color: white;
+    background: #234465;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+#output p, #input {
+    border-bottom: 1px solid lightgrey;
+    padding: 1%;
+    word-wrap: break-word;
+}

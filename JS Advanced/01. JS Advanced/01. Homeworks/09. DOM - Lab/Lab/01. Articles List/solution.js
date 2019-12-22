@@ -1,0 +1,4 @@
+function createArticle() {
+
+	//TODO...
+}
