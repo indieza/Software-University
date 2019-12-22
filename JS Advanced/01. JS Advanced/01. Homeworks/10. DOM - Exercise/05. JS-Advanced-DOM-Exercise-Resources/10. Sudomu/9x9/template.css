@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "PT sans", sans-serif;
+    font-size: 24px;
+    color: #234465;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+#exercise{   
+    width: 70%;
+    float: left;
+    padding: 1rem 0 1rem 1rem;
+}
+main:after{
+    display: block;
+    content:'';
+    clear: both;
+}
+button{
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7em;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    color: white;
+    background: #234465;
+    border-radius: 5px;
+    outline: none;
+}
+
+table{
+    margin: 0 auto;
+    text-align: center;
+    border:none;
+    width: 100%;
+}
+
+td{
+    width: 10%;
+    border:2px solid gray;
+    height: 5vh;
+    color: #234465;
+    font-size: 22px;
+    margin:0;
+    padding:0;
+	background-color: aliceblue;
+	border:1px solid #234465;
+}
+
+input{
+    width: 95%;
+    text-align: center;
+    background: aliceblue;
+    border: none;
+    font-family: Calibri;
+    font-size: 22px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#check{
+	margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "PT sans", sans-serif;
+    font-size: 24px;
+    color: #234465;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+input[type="button"],
+button {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7em;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    color: white;
+    background: #234465;
+    border-radius: 5px;
+    outline: none;
+}
+
+input,
+button {
+    vertical-align: top;
+}
+
+input {
+    width: 20%;
+    font-size: 20px;
+}
+
+#exercise {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#exercise p {
+    border-bottom: 1px solid white;
+    word-wrap: break-word;
+}
+
+#exercise span {
+    font-size: 24px;
+    color: #234465;
+    font-weight: bold;
+}
+
+#exercise div {
+    border-bottom: 1px solid #234465;
+}
+
+.description {
+    width: 60%;
+    padding: 3rem 0 0 0;
+    margin: 0 auto;
+}
+
+.cards {
+    width: 60%;
+    padding: 3rem 0 3rem 0;
+    margin: 0 auto;
+}
+
+#result {
+    text-align: center;
+}
+
+#result:nth-child(2), #history {
+    font-size: 44px;
+    padding: 11px;
+    font-weight: bold;
+}

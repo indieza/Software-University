@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="template.css">
+    <title>NUMBER CONVERTOR</title>
+    <script src="./solution.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <label for="input">Number</label>
+        <input type="number" id="input" /><br>
+        <label for="selectMenuFrom">From</label>
+        <select id="selectMenuFrom">
+            <option selected value="decimal">Decimal</option>
+        </select>
+        <label for="selectMenuTo">To</label>
+        <select id="selectMenuTo">
+            <option selected value=""></option>
+        </select>
+        <button>Convert it</button>
+
+    </div>
+    <footer>
+        <label for="result">Result</label>
+        <input type="text" name="output" id="result" disabled readonly />
+    </footer>
+    <script>
+        solve();
+    </script>
+</body>
+</html>

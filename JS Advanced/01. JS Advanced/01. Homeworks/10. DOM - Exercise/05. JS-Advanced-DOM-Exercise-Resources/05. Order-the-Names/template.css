@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+
+html {
+    font-family: "Lato", sans-serif;
+    color: #234465;
+}
+
+#main {
+    width: 70%;
+    margin: 35px auto;
+    text-align: center;
+}
+
+input[type="button"], button {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7em;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    color: white;
+    background: #234465;
+    border-radius: 5px;
+    outline: none;
+}
+
+ol li {
+    border-bottom: 1px solid #b6c6d7;
+    color: #234465;
+    font-size: 24px;
+    width: 90%;
+    margin-left: 10px;
+    padding-left: 15px;
+    text-align: left;
+    font-family: 'Just Another Hand', cursive;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#exercise div {
+    border: 2px solid #b6c6d7;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+input, button {
+    font-size: 24px;
+    margin: 0 auto;
+    margin-left: 2%;
+    padding: 19px 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#exercise article input {
+    width: 82%;
+    border: 2px solid #b6c6d7;
+    padding: 17px;
+    outline: none;
+}

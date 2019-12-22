@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="template.css">
+    <title>JAVASCRIPT QUIZZ</title>
+    <script src="./solution.js"></script>
+</head>
+
+<body>
+    <div id="quizzie">
+        <h1>JavaScript Quiz</h1>
+
+        <section>
+            <ul class="quiz-step step1 current">
+                <li class="question">
+                    <div class="question-wrap">
+                        <h2>Question #1: Which event occurs when the user clicks on an HTML element?</h2>
+                    </div>
+                </li>
+                <li class="quiz-answer low-value" data-quizIndex="2">
+                    <div class="answer-wrap">
+                        <p class="answer-text">onclick</p>
+                    </div>
+                </li>
+                <li class="quiz-answer high-value" data-quizIndex="4">
+                    <div class="answer-wrap">
+                        <p class="answer-text">onmouseclick</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="hidden">
+            <ul class="quiz-step step1 current">
+                <li class="question">
+                    <div class="question-wrap">
+                        <h2>Question #2: Which function converting JSON to string?</h2>
+                    </div>
+                </li>
+                <li class="quiz-answer low-value" data-quizIndex="2">
+                    <div class="answer-wrap">
+                        <p class="answer-text">JSON.toString()</p>
+                    </div>
+                </li>
+                <li class="quiz-answer high-value" data-quizIndex="4">
+                    <div class="answer-wrap">
+                        <p class="answer-text">JSON.stringify()</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="hidden">
+            <ul class="quiz-step step1 current">
+                <li class="question">
+                    <div class="question-wrap">
+                        <h2>Question #3: What is DOM?</h2>
+                    </div>
+                </li>
+                <li class="quiz-answer low-value" data-quizIndex="2">
+                    <div class="answer-wrap">
+                        <p class="answer-text">A programming API for HTML and XML documents</p>
+                    </div>
+                </li>
+                <li class="quiz-answer high-value" data-quizIndex="4">
+                    <div class="answer-wrap">
+                        <p class="answer-text">The DOM is your source HTML</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <ul id="results">
+            <li class="results-inner">
+                <h1></h1>
+            </li>
+        </ul>
+    </div>
+    </main>
+    </div>
+    <script>
+        solve();
+    </script>
+</body>
+
+</html>

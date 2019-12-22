@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-size: 4vw;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ddd);
+    background-size: cover;
+  }
+  #calculator {
+    width: 12em;
+    height: auto;
+    background: linear-gradient(#4389A2, #5C258D);
+    margin: 1em auto;
+  }
+  .top button.clear {
+    float: left;
+    color: #FFF;
+  }
+  .top #expressionOutput {
+    height: 3em;
+    width: 9em;
+    padding-right: 1em;
+    float: right;
+    color: #FFF;
+    line-height: 3em;
+    text-align: right;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .top #resultOutput {
+    height: 3em;
+    width: 9em;
+    padding-right: 1em;
+    float: right;
+    color: #FFF;
+    line-height: 3em;
+    text-align: right;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .keys,
+  .top {
+    overflow: hidden;
+  }
+  .keys button,
+  .top button.clear {
+    float: left;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    color: #fff;
+    text-align: center;
+    user-select: none;
+    transition: background-color 0.2s ease;
+    background: #4389A2;
+    border-right: 1px solid rgba(134, 147, 204, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .keys button.operator {
+    background: rgba(255, 255, 255, 0.2);
+    border-right: 0;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .keys button.equals {
+    color: #888e5f;
+  }
+  .keys button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #FFF;
+  }
+  .keys button.equals:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  .top button.clear:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+  }
+  

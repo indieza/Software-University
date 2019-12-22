@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+    font-family: "Lato", sans-serif;
+    color: #234465;
+}
+
+input[type="button"], button {
+    padding: 0.3rem 0.5rem;
+    font-size: 22px;
+    margin: 1rem 0 1rem 0;
+    color: #444444;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0px;
+    border: 2px solid #444444;
+    cursor: pointer;
+}
+
+input[type="button"]:hover, button:hover {
+    color: white;
+    background: #444444;
+}
+
+input, select {
+    font-size: 1.0em;
+}
+
+#container, footer {
+    width: 30%;
+    margin: 15px auto;
+    text-align: left;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+input, select {
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 4px;
+    padding: 5px;
+    width: 95%;
+}
