@@ -1,4 +1,17 @@
 function solve() {
+    const links = document.querySelectorAll("a");
+    const visits = document.querySelectorAll("p");
 
-  //TODO...
+    for (let i = 0; i < links.length; i++) {
+        updateVisitors(links[i], visits[i]);
+    }
+
+    function updateVisitors(link, visit) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            let count = parseInt(visit.innerHTML.replace(/^\D+/g, ''));
+            visit.innerText = `visited ${++count} times`;
+        })
+    }
 }
