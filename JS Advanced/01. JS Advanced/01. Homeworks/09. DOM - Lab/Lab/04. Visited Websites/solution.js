@@ -11,7 +11,7 @@ function solve() {
             e.preventDefault();
 
             let count = parseInt(visit.innerHTML.replace(/^\D+/g, ''));
-            visit.innerText = `visited ${++count} times`;
+            visit.innerHTML = `visited ${++count} times`;
         })
     }
 }
