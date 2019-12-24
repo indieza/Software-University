@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>BookUni</title>
+</head>
+
+<body onload="solve()">
+    <h1>Book Store</h1>
+    <form>
+        <label for="book">Book</label>
+        <input type="text" placeholder="Add Title" />
+
+        <label for="year">Year</label>
+        <input type="number" placeholder="Add Year" />
+
+        <label for="price">Price</label>
+        <input type="number" placeholder="Add Price" min="0" />
+
+        <button>Add new book</button>
+    </form>
+    <h1>Total Store Profit: 0 BGN</h1>
+    <div id="outputs">
+        <section>
+            <h2>Old Books</h2>
+            <div class="bookShelf"></div>
+        </section>
+        <section>
+            <h2>New Books</h2>
+            <div class="bookShelf"></div>
+        </section>
+    </div>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Calibri;
+}
+
+#protocol{
+    width: 1000px;
+    height: 1244px;
+    margin: 0 auto;
+    background-image: url("../images/formIcon.png");
+    border:1px solid white;
+}
+
+#protocol section{
+    width: 880px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+#protocol table{
+    width: 880px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+table thead, h1{
+    text-align: center;
+    font-size: 42px;
+}
+
+#protocol table tbody tr#productInfo{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#p td{
+    padding-left: 0.5%;
+    padding-right: 1.5%;
+}
+
+#protocol table input{
+    width: 95%;
+}
+
+#protocol table tbody tr#fields td input, button{
+    font-size: 22px;
+}
+
+#protocol table tbody tr#fields td button{
+    width: 100%;
+}
+
+#fields td, #productInfo td {
+    padding-left: 0.3%;
+    padding-right: 0.2%;
+}
+
+#fields td:first-child{
+    width: 25%;
+}
+
+#fields td:nth-child(4){
+    width: 15%;
+}
+
+p{
+    display: inline-block;
+}
+
+div#warehouse{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+}
+
+div#warehouse hr{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+div#warehouse button{
+    font-size: 26px;
+}
+
+button{
+	margin-left: 1%;
+	background-color: rgb(75,75,77);
+	color: white;
+	border-radius: 5%;
+	padding: 0.5%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color: rgb(75,75,77);
+}
+
+#protocol table {
+    width: 820px;
+}
+
+#protocol table tbody tr#fields td input, button {
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    outline: none;
+    cursor: pointer;
+}
+
+#protocol table tbody tr#productInfo {
+    font-size: 26px;
+    font-weight: normal;
+}
