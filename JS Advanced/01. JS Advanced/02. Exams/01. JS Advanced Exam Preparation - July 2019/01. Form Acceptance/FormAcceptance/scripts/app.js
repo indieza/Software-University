@@ -1,6 +1,4 @@
 function acceptance() {
-	let divCount = 1;
-
 	const button = document.getElementById("acceptance");
 	const warehouse = document.getElementById("warehouse");
 	button.addEventListener("click", function (e) {
@@ -17,16 +15,12 @@ function acceptance() {
 
 			if (productQuantity - productScrape > 0) {
 				let outOfStockButton = document.createElement("button");
-				let buttonNode = document.createTextNode("Out of stock");
-				outOfStockButton.appendChild(buttonNode);
+				outOfStockButton.textContent = "Out of stock";
 
 				let div = document.createElement("div");
-				div.id = `${divCount++}`;
 
 				let createParagraph = document.createElement("p");
-				let paragraphNode = document
-					.createTextNode(`[${company}] ${product} - ${productQuantity - productScrape} pieces`);
-				createParagraph.appendChild(paragraphNode);
+				createParagraph.textContent = `[${company}] ${product} - ${productQuantity - productScrape} pieces`;
 
 				warehouse.appendChild(div);
 				div.appendChild(createParagraph)
@@ -34,7 +28,7 @@ function acceptance() {
 
 				outOfStockButton.addEventListener("click", function (b) {
 					b.preventDefault();
-					warehouse.removeChild(document.getElementById(div.id));
+					this.parentNode.parentNode.removeChild(this.parentNode);
 				})
 			}
 		}
