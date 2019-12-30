@@ -12,7 +12,10 @@ class BookStore {
     stockBooks(newBooks) {
         newBooks.forEach((book) => {
             let [title, author] = book.split('-');
-            this.books.push({ title, author });
+            this.books.push({
+                title,
+                author
+            });
         });
 
         return this.books;
@@ -50,7 +53,7 @@ class BookStore {
         }
 
         let worker = this.workers.filter((w) => w.name === workerName)[0];
-        if(!worker){
+        if (!worker) {
             throw new Error(`${workerName} is not working here`)
         }
 
@@ -66,3 +69,5 @@ class BookStore {
         return result.trim();
     }
 }
+
+module.exports = BookStore;

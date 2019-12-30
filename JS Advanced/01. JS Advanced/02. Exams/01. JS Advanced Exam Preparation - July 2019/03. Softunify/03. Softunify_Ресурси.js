@@ -5,7 +5,11 @@ class SoftUniFy {
 
     downloadSong(artist, song, lyrics) {
         if (!this.allSongs[artist]) {
-            this.allSongs[artist] = {rate: 0, votes: 0, songs: []}
+            this.allSongs[artist] = {
+                rate: 0,
+                votes: 0,
+                songs: []
+            }
         }
 
         this.allSongs[artist]['songs'].push(`${song} - ${lyrics}`);
@@ -20,7 +24,7 @@ class SoftUniFy {
                 .filter((songInfo) => songInfo
                     .split(/ - /)[0] === song);
 
-            if(songs.length > 0){
+            if (songs.length > 0) {
                 acc[cur] = songs;
             }
 
@@ -30,7 +34,7 @@ class SoftUniFy {
         let arr = Object.keys(songArtists);
         let output = "";
 
-        if(arr.length > 0){
+        if (arr.length > 0) {
 
             arr.forEach((artist) => {
                 output += `${artist}:\n`;
@@ -84,3 +88,5 @@ class SoftUniFy {
         return output;
     }
 }
+
+module.exports = SoftUniFy;

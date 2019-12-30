@@ -82,4 +82,5 @@ class PizzUni {
         }
     }
 }
+
 module.exports = PizzUni; // This piece of code exports the PizzUni Class, so it could be accessed in other files.
