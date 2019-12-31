@@ -1,0 +1,116 @@
+body {
+    background-position:center;
+    background-image:url(homeImage.jpeg) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+
+h2 {
+   color: white;
+}
+
+li {
+    list-style-type: square;
+    color: white;
+    text-align: left;
+    font-size: 19px;
+}
+
+.giftsInput {
+    position: relative;
+    display: block;
+    width:100%;
+    margin-left: 3.5%;
+}
+
+#giftText {
+    font-size: 17px;
+}
+
+section {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background-color: rgb(255,0,0, 0.777);
+    width: 25%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container {
+    display: flex; /* or inline-flex */
+    flex-wrap:  wrap ;
+}
+
+.card{
+    min-height: 150px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 150px;
+}
+
+#addGifts {
+    min-height: 150px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 150px;
+}
+#giftsList {
+    min-height: 150px;
+    float: right;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 150px;
+} 
+
+#sentGifts {
+    min-height: 150px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 150px;
+}
+
+#discardedGifts {
+    min-height: 150px;
+    float: right;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 150px;
+}
+
+#addButton {
+    background-color: transparent;
+    background-color:rgb(255,0,0);
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 17px;
+}
+
+#sendButton {
+    background-color: transparent;
+    background-color: green;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#discardButton {
+    background-color: transparent;
+    background-color: darkgrey;
+    color: black;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
