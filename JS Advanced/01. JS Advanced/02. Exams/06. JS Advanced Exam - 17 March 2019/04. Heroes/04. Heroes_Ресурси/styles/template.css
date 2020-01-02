@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "PT sans", sans-serif;
+    font-size: 24px;
+    color: #234465;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+#main{   
+    background: white;
+    background-size: cover;
+    height: 100vh;
+}
+#navigation{
+    background: #234465;
+    display: inline-block;
+    padding: 0.5rem;
+    width: 100%;
+}
+#navigation-text{
+    display: inline-block;
+}
+#lecture-name, #problem-name{
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+#lecture-name{    
+    font-size: 28px;    
+    margin-bottom: 0.8rem;    
+}
+#problem-name{    
+    font-size: 22px;
+    color: white;    
+}
+#logo-img{
+    width: 17%;
+    float: right;
+    padding: 0.5rem 0.5rem 0 0;
+}
+#softUni-person-img{
+    width: 30%;
+    padding: 0;
+    float: left;    
+}
+#workField{
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    margin: 0 auto;
+}
+main:after{
+    display: block;
+    content:'';
+    clear: both;
+}
+#check-judge{
+    color: #FD9F00;
+}
+input[type="button"], button{
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7em;
+    border: none;
+    color: white;
+    background: #234465;
+    border-radius: 5px;
+    outline: none;
+}
+
+#kingdom, #characters{
+    display: inline-block;
+}
+
+#kingdom{
+    width: 15%;
+    margin-right: 11%;
+}
+
+#characters{
+    vertical-align: top;
+    height: 44vh;
+    width: 44%;
+    margin-right: 11%;
+}
+
+#kingdom input{
+    font-size:20px;
+    color: #234465;
+    width: 99%;
+}
+
+#kingdom button{
+    width: 100%;
+}
+
+#characters div{
+    display: inline-block;
+}
+
+#characters div:last-child{
+    display:block;
+    text-align: center;
+    margin-top: 6%;
+}
+
+#characters img{
+    display: block;
+}
+
+#characters input[type="radio"]{
+    margin-left: 48%;
+}
+
+#characters input[type="text"]{
+    font-size: 20px;
+    color: #234465;
+}
+
+#characters button{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    width: 10%;
+    padding: 0.1rem 0.2rem;
+}
+
+hr{
+    background: #234465;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+#actions{
+    vertical-align: top;
+    display: inline-block;
+    width: 15%;
+    margin-top: 3%;
+}
+
+#actions img{
+    margin: 0 auto;
+}
+
+#actions input{
+    font-size: 20px;
+    color: #234465;
+    display:block;
+    width: 95%;
+}
+
+#actions button{
+    margin: 0;
+    font-size: 20px;
+    width: 95%;
+    padding: 0.1rem 0.2rem;
+    margin-bottom: 10%;
+}
+
+#map{
+    margin-top: 2%;
+    display: inline-block;
+    width: 99%;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#map .kingdom{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 30%;
+    margin-top: 2%;
+    vertical-align: top;
+}
+
+#map .kingdom h1{
+    text-decoration: underline;
+}
+
+#map .kingdom fieldset p{
+    text-align: center;
+}
+
+
+#map .kingdom fieldset .armyOutput{
+    border:1px solid black;
+}
+
+.castle{
+    background-image: url("../images/kingdom.png");
+    height: 50vh;
+    border-bottom: 2px solid black;
+}

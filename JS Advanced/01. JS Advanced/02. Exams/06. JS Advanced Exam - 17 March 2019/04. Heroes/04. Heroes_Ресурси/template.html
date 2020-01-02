@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/template.css">
+    <title>Heroes</title>
+</head>
+
+<body>
+    <div id="container">
+        <nav id="navigation">
+            <div id="navigation-text">
+                <p id="lecture-name">JS Advanced Exam - 17 March 2019</p>
+                <p id="problem-name">Heroes</p>
+            </div>
+            <img id="logo-img" src="images/logo.png" alt="logo">
+        </nav>
+        <main id="main">
+            <div id="workField">
+                <section id="kingdom">
+                    <img src="images/kingdomLogo.png">
+                    <div>
+                        <input type="text" placeholder="Kingdom..." />
+                        <input type="text" placeholder="King..." />
+                        <button>Rebuild a kingdom</button>
+                    </div>
+                </section>
+                <section id="characters">
+                    <div>
+                        <img src="images/fighterLogo.png" />
+                        <hr>
+                        <input type="radio" name="characterType" value="fighter" />
+                    </div>
+                    <div>
+                        <img src="images/mageLogo.png" />
+                        <hr>
+                        <input type="radio" name="characterType" value="mage" />
+                    </div>
+                    <div>
+                        <img src="images/tankLogo.png" />
+                        <hr>
+                        <input type="radio" name="characterType" value="tank" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Character..." />
+                        <input type="text" placeholder="Kingdom..." />
+                        <button>Join</button>
+                    </div>
+                </section>
+                <section id="actions">
+                    <img src="images/attack.png" />
+                    <input type="text" placeholder="Attacker..." />
+                    <input type="text" placeholder="Defender..." />
+                    <button>Attack</button>
+                </section>
+                <section id="map">
+                    <div class="kingdom" id="castle" style="display: none"></div>
+                    <div class="kingdom" id="dungeon" style="display: none"></div>
+                    <div class="kingdom" id="fortress" style="display: none"></div>
+                    <div class="kingdom" id="inferno" style="display: none"></div>
+                    <div class="kingdom" id="necropolis" style="display: none"></div>
+                    <div class="kingdom" id="rampart" style="display: none"></div>
+                    <div class="kingdom" id="stronghold" style="display: none"></div>
+                    <div class="kingdom" id="tower" style="display: none"></div>
+                    <div class="kingdom" id="conflux" style="display: none"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="scripts/solution.js"></script>
+</body>
+
+</html>

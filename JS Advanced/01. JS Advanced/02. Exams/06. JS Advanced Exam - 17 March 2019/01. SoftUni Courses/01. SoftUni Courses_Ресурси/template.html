@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/template.css">
+    <title>SoftUni Courses</title>
+</head>
+<body>
+    <div id="container">
+        <nav id="navigation">
+            <div id="navigation-text">
+                <p id="lecture-name">JS Advanced Exam - 17 March 2019</p>
+                <p id="problem-name">SoftUni Courses</p>
+            </div>
+            <img id="logo-img" src="images/logo.png" alt="logo">
+        </nav>
+        <main id="main">
+            <div id="workField">
+                <div id="availableCourses">
+                    <h3>Available Courses</h3>
+                    <div class="courseBody">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="js-fundamentals" value="js-fundamentals"/>
+                                <label>JS Fundamentals - January</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="js-advanced" value="js-advanced"/>
+                                <label>JS Advanced - February</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="js-applications" value="js-applications"/>
+                                <label>JS Applications - March</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="js-web" value="js-web"/>
+                                <label>JS Web - April</label>
+                            </li>
+                        </ul>
+                        <div id="educationForm">
+                            <label>Onsite</label>
+                            <input type="radio" name="educationForm" value="onsite" checked>
+                            <label>Online</label>
+                            <input type="radio" name="educationForm" value="online">
+                        </div>
+                    </div>
+                    <div class="courseFoot">
+                        <button value="signMeUp">Sign me up</button>
+                    </div>
+                </div>
+                <div id="myCourses">
+                    <h3>My Courses</h3>
+                    <div class="courseBody">
+                        <ul></ul>
+                    </div>
+                    <div class="courseFoot">
+                        <p>Cost: 0.00 BGN</p>
+                    </div>
+                </div>
+            </div>
+            <img id="softUni-person-img" src="images/wizard.png" alt="softUni-person">
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="scripts/solution.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "PT sans", sans-serif;
+    font-size: 24px;
+    color: #234465;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+#main{   
+    background: url(../images/background.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+#navigation{
+    background: #234465;
+    display: inline-block;
+    padding: 0.5rem;
+    width: 100%;
+}
+#navigation-text{
+    display: inline-block;
+}
+#lecture-name, #problem-name{
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+#lecture-name{    
+    font-size: 28px;    
+    margin-bottom: 0.8rem;    
+}
+#problem-name{    
+    font-size: 22px;
+    color: white;    
+}
+#logo-img{
+    width: 17%;
+    float: right;
+    padding: 0.5rem 0.5rem 0 0;
+}
+#softUni-person-img{
+    width: 30%;
+    padding: 0;
+    float: left;    
+}
+#workField{
+    width: 70%;
+    float: left;
+    padding: 1rem 0 1rem 1rem;
+}
+main:after{
+    display: block;
+    content:'';
+    clear: both;
+}
+#check-judge{
+    color: #FD9F00;
+}
+input[type="button"]{
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7em;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    color: white;
+    background: #234465;
+    border-radius: 5px;
+    outline: none;
+}
+
+#availableCourses, #myCourses{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+h3{
+    /*border:1px solid black;*/
+    text-align: center;
+    background: #ECEAF0;
+    border: 1px solid #ECEAF0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+ul{
+    list-style: none;
+    background-color: white;
+}
+
+select{
+    font-family: "PT sans", sans-serif;
+    font-size: 20px;
+}
+
+#educationForm{
+    background-color: white;
+}
+
+.courseFoot{
+    background-color: #234465;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1%;
+    text-align: center;
+}
+
+.courseFoot p{
+    color: white;
+}
+
+.courseFoot button{
+    font-size: 0.7em;
+    padding: 1%;
+    border: none;
+    color: #234465;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 auto;
+}
+
+.courseBody{
+    height: 25vh;
+    background-color: white;
+    border: 1px solid #ECEAF0;
+}
+
+#myCourses ul{
+    margin-left: 7%;
+}
+
+select{
+    color: #234465;
+}
+
+#educationForm label{
+    font-weight: normal;
+}
+
+#educationForm{
+    padding-top: 5%;
+}
