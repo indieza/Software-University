@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Freelance Offers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand font-weight-bold" href="#">Freelance Offers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <form class="form-inline my-2 my-lg-0" id="usernameContainer">
+                <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Search"
+                    id="username">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" id="loginBtn">Login</button>
+            </form>
+        </div>
+    </nav>
+    <div class="row">
+        <div id="notification" class="col-md-12 col-md-offset-5 text-center text-danger"></div>
+    </div>
+
+    <div class="container" id="create-offers">
+        <div class="row m-auto">
+            <h1 class="h1 modal-title text-center font-weight-bold col-12 m-auto pt-3">
+                Create offer:
+            </h1>
+        </div>
+
+        <div class="row m-auto">
+            <div class="col-3"></div>
+
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <label for="offerName">Offer name:</label>
+                        <input type="text" class="form-control" id="offerName">
+                        <small class="form-text text-muted">Example: WordPress Website</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company name:</label>
+                        <input type="text" class="form-control" id="company">
+                        <small class="form-text text-muted">Example: SoftUni</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" rows="5" id="description"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6 text-center">
+                            <button type="submit" class="btn btn-dark btn-lg" id="create-offer-Btn">Create
+                                <Offer></Offer></button>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <div class="container" id="offers">
+
+        <div class="row m-auto">
+            <h1 class="h1 modal-title text-center font-weight-bold col-12 m-auto pt-3">
+                Active offers:
+            </h1>
+        </div>
+
+        <div class="row mt-5" id="offers-container">
+
+            <div class="col-3">
+                <div class="card text-white bg-dark mb-3 pb-3" style="max-width: 18rem;">
+                    <div class="card-header">WordPress Website</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Software University</h5>
+                        <p class="card-text">We're seeking a Front-End Developer to create our Blog. The website should
+                            be created with WordPress. The theme is "The 7".</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card text-white bg-dark mb-3 pb-3" style="max-width: 18rem;">
+                    <div class="card-header">Logo Design</div>
+                    <div class="card-body">
+                        <h5 class="card-title">SBTech</h5>
+                        <p class="card-text">We're seeking a creative designer that wants to create our new logo. The
+                            logo should be similar to the current one.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card text-white bg-dark mb-3 pb-3" style="max-width: 18rem;">
+                    <div class="card-header">Landing page</div>
+                    <div class="card-body">
+                        <h5 class="card-title">XS Software</h5>
+                        <p class="card-text">We're seeking a Front-end Developer to create a simple landing page for our
+                            new platform. The developer will work with a complete design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4 bg-light mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                </div>
+                <div class="col-4 mb-4">
+                    <div class="view overlay z-depth-1-half">
+                        <img src="images/1.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: Freelance Offers</div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

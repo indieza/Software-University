@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Bill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <h2>Coffee Bill</h2>
+    <table id="bill">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <section id="add-product">
+        <h3>Add new product</h3>
+        <label>
+            <span>
+                Product:
+            </span>
+            <input type="text">
+        </label>
+        <label>
+            <span>
+                Price:
+            </span>
+            <input type="number">
+        </label>
+        <button onclick="addProduct()">Add</button>
+    </section>
+
+    <script>
+        function addProduct() {
+            const addButton = document.getElementsByTagName("button")[0];
+            const productList = document.getElementById("product-list");
+            const totalSum = document.querySelectorAll("tfoot > tr > td")[1];
+            const productName = document.getElementsByTagName("input")[0].value;
+            const productPrice = Number(document.getElementsByTagName("input")[1].value);
+
+            if (productName !== "" && productPrice !== "" && productPrice > 0) {
+                const tr = document.createElement("tr");
+
+                const tdName = document.createElement("td");
+                tdName.innerHTML = productName;
+
+                const tdPrice = document.createElement("td");
+                tdPrice.innerHTML = productPrice;
+
+                tr.appendChild(tdName);
+                tr.appendChild(tdPrice);
+                productList.appendChild(tr);
+
+
+                document.querySelectorAll("tfoot > tr > td")[1].innerHTML =
+                    Number(document.querySelectorAll("tfoot > tr > td")[1].innerHTML) + productPrice;
+            }
+
+            document.getElementsByTagName("input")[0].value = "";
+            document.getElementsByTagName("input")[1].value = "";
+        }
+    </script>
+
+</body>
+
+</html>

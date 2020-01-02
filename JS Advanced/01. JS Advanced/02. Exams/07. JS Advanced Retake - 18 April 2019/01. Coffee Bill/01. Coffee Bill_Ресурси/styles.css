@@ -1,0 +1,51 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+    margin: 0;
+    background: url("images/background.jpg") no-repeat center;
+}
+
+#bill, #add-product {
+    width: 246px;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: 0 0 0.2rem 0 rgba(68, 68, 68, .2);
+    padding: 8px;
+}
+
+#bill {
+    width: 260px;
+}
+
+#product-list {
+    border: 2px solid black;
+}
+
+label, label span {
+    display: block;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+}
+
+button {
+    background: none;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 6px 11px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 17px;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 0 0.2rem 0 rgba(68, 68, 68, .2);
+    text-decoration: underline;
+    cursor: pointer;
+}
