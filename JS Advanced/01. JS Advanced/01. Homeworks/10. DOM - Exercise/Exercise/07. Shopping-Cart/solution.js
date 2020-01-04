@@ -1,41 +1,53 @@
 function solve() {
-    const addButtons = Array.from(document.querySelectorAll("button")).filter(b => b.innerText === "Add");
-    const checkoutButton = Array.from(document.querySelectorAll("button")).filter(b => b.innerText === "Checkout")[0];
-    const box = document.querySelector("textarea");
 
-    let boughtProducts = new Map();
+    let totalMoney = 0;
+    let shoppingCart = [];
+    let endShopping = false;
 
-    for (const addButton of addButtons) {
-        addButton.addEventListener("click", function (e) {
-            e.preventDefault();
+    const output = document.querySelector("body > div > textarea");
 
-            const productName =
-                addButton.parentElement.parentElement.getElementsByClassName("product-title")[0].innerHTML;
-            const productPrice =
-                Number(addButton.parentElement.parentElement.getElementsByClassName("product-line-price")[0].innerHTML);
+    Object.values(document.getElementsByTagName('button')).map(b => b.addEventListener('click', function (t) {
+        let clickedButton = t.target.className;
+        if (clickedButton === 'add-product' && !endShopping) {
+            addItem(t);
+        } else if (clickedButton === 'checkout' && !endShopping) {
+            checkout();
+        }
+    }));
 
-            box.innerHTML += `Added ${productName} for ${productPrice.toFixed(2)} to the cart.\n`;
+    function addItem(t) {
+        let items = listOfItems();
+        let item = t.target.parentNode.parentNode.children[1].children[0].textContent;
+        let info = `Added ${item} for ${items[item].toFixed(2)} to the cart.`;
 
-            if (!boughtProducts.get(productName)) {
-                boughtProducts.set(productName, 0);
-            }
-
-            boughtProducts.set(productName, boughtProducts.get(productName) + productPrice);
-        })
+        myCart(items, item);
+        printResult(info);
     }
 
-    checkoutButton.addEventListener("click", function (e) {
-        e.preventDefault();
+    function myCart(items, item) {
+        totalMoney += items[item];
 
-        box.innerHTML +=
-            `You bought ${[...boughtProducts]
-                .map(x => x[0]).join(", ")} for ${[...boughtProducts]
-                .reduce((a, b) => a + Number(b[1]), 0)
-                .toFixed(2)}.`;
+        if (!shoppingCart.includes(item)) {
+            shoppingCart.push(item);
+        }
+    }
 
-        checkoutButton.disabled = true;
-        addButtons.forEach(b => {
-            b.disabled = true;
-        });
-    })
+    function checkout() {
+        let info = `You bought ${shoppingCart.join(', ')} for ${totalMoney.toFixed(2)}.`;
+        endShopping = true;
+        printResult(info);
+    }
+
+    function printResult(info) {
+        output.textContent += `${info}\n`;
+    }
+
+    function listOfItems() {
+        let products = {
+            'Bread': 0.80,
+            'Milk': 1.09,
+            'Tomatoes': 0.99
+        }
+        return products;
+    }
 }
