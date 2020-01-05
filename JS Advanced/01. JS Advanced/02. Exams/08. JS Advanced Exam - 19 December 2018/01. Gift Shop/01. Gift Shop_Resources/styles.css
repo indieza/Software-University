@@ -1,0 +1,98 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: Calibri;
+}
+
+body{
+	background-color: skyblue; 
+}
+
+#christmasGiftShop{
+	margin: 0 auto;
+	width: 90%;
+	pointer-events: auto;
+}
+
+#fields{
+	margin: 0 auto;
+	width: 30%;
+	pointer-events: auto;
+	margin-bottom: 3%;
+}
+
+input, button{
+	width: 100%;
+}
+
+input, label, button, textarea{
+	vertical-align: top;
+	font-size:24px;
+}
+
+textarea{
+	width:100%;
+	height: 10vh;
+	resize: none;
+}
+
+#christmasGiftShop h1{
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 3%;
+}
+
+.gift{
+	width: 21.2%;
+	display: inline-block;
+	margin-left: 2.5%;
+	margin-bottom: 3%;
+	vertical-align: top;
+	border:1px solid black;
+}
+
+.gift p, .gift h2, .gift button{
+	width: 100%;
+	text-align: center;
+	word-wrap:break-word;
+}
+
+.gift p{
+	font-style: italic;
+}
+
+
+section{
+  pointer-events: none;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  height:250vh;
+  background: none;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+  -webkit-animation: snow 30s linear infinite;
+  -moz-animation: snow 30s linear infinite;
+  -ms-animation: snow 30s linear infinite;
+  animation: snow 30s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
