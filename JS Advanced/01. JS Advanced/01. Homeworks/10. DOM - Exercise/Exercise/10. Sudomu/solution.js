@@ -15,7 +15,7 @@ function solve() {
         message.children[0].innerHTML = "";
         message.children[0].style.color = "";
         table.style.border = "";
-    })
+    });
 
     checkButton.addEventListener("click", function (e) {
         e.preventDefault();
