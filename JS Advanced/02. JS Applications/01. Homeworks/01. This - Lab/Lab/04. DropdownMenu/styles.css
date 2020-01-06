@@ -1,0 +1,72 @@
+/*buttons */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+#box {
+    margin:auto;
+    text-align: center;
+    margin-top:20px;
+    width:38.5%;
+    border: solid;
+    padding: 10px;
+    background-color: rgb(114, 112, 112);
+    border-color:black;
+    color: white;
+}
+
+.container {
+    /* min-height: 400px; */
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    width:40%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(114, 112, 112);
+    color: white;
+}
+
+button:hover {
+    padding: 1.1%;
+}
+
+ul {
+    display: none;
+    margin: auto;
+    margin-top: 5px;
+    padding: 10px;
+    width: 30%;
+}
+
+li {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(189, 188, 186);
+    border-bottom: solid;
+    border-radius: 5px;
+    list-style-type: none;
+    font-size: 25px;
+}
+.deep{
+    border-bottom-color: rgb(255, 143, 143);
+}
+.deep1{
+    border-bottom-color: rgb(250, 215, 151);
+}
+.deep2{
+    border-bottom-color: rgb(251, 251, 167);
+}
+.deep3{
+    border-bottom-color: rgb(228, 255, 173);
+}
+.deep4{
+    border-bottom-color: rgb(174, 174, 251);
+}
