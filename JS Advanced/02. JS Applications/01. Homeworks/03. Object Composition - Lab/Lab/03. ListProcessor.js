@@ -18,3 +18,4 @@ function solve(data) {
 solve(['add hello', 'add again', 'remove hello', 'add again', 'print']);
 solve(['add pesho', 'add george', 'add peter', 'remove peter', 'print']);
 solve(['add peter', 'add george', 'add peter', 'remove peter', 'print']);
+solve(['add JSFundamentals', 'print', 'add JSAdvanced', 'print', 'add JSApplications', 'print']);
