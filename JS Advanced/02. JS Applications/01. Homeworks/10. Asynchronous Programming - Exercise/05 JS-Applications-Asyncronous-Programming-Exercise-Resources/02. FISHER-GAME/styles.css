@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+    font-family: 'Open Sans', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    width: 45%;
+}
+
+aside {
+    width: 15%;
+    display: inline-block;
+}
+
+button {
+    background-color: rgba(66, 66, 66, 0.32);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 9px 0;
+    border-radius: 4px;
+}
+
+fieldset {
+    display: inline-table;
+    vertical-align: top;
+    border: 2px solid black;
+}
+
+fieldset#main {
+    width: 70%;
+    margin: 0 50px;
+}
+
+input {
+    padding: 5px 6px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    margin: 5px;
+    border:1px solid white;
+}
+
+hr{
+    display:block;
+}
+
+.catch{
+    border: 1px solid black;
+}

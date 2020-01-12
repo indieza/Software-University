@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biggest Catch</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Biggest Catches</h1>
+    <fieldset id="main">
+        <legend>Catches</legend>
+        <div id="catches">
+            <div class="catch" data-id="<id-goes-here>">
+                <label>Angler</label>
+                <input type="text" class="angler" value="Paulo Amorim" />
+                <hr>
+                <label>Weight</label>      
+                <input type="number" class="weight" value="636" />
+                <hr>
+                <label>Species</label>
+                <input type="text" class="species" value="Atlantic Blue Marlin" />
+                <hr>
+                <label>Location</label>
+                <input type="text" class="location" value="Vitória, Brazil" />
+                <hr>
+                <label>Bait</label>
+                <input type="text" class="bait" value="trolled pink" />
+                <hr>
+                <label>Capture Time</label>
+                <input type="number" class="captureTime" value="80" />
+                <hr>
+                <button class="update">Update</button>
+                <button class="delete">Delete</button>
+            </div>
+        </div>
+    </fieldset>
+    <aside>
+        <button class="load">Load</button>
+        <fieldset id="addForm">
+            <legend>Add Catch</legend>
+            <label>Angler</label>
+            <input type="text" class="angler" />
+            <label>Weight</label>
+            <input type="number" class="weight" />
+            <label>Species</label>
+            <input type="text" class="species" />
+            <label>Location</label>
+            <input type="text" class="location" />
+            <label>Bait</label>
+            <input type="text" class="bait" />
+            <label>Capture Time</label>
+            <input type="number" class="captureTime" />
+            <button class="add">Add</button>
+        </fieldset>
+    </aside>
+    <script src="./app.js"></script>
+</body>
+
+</html>
