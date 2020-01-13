@@ -3,6 +3,13 @@
     margin: 0 auto;
 }
 
+div.error-cast {
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    color: red;
+}
+
 div.forecasts {
     display: inline-block;
     width: 30%;
