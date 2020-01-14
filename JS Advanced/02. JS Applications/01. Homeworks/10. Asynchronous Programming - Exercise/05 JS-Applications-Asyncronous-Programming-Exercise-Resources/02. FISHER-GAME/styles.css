@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
     font-family: 'Open Sans', serif;
 }
@@ -52,13 +53,13 @@ input {
 
 label {
     margin: 5px;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
-hr{
-    display:block;
+hr {
+    display: block;
 }
 
-.catch{
+.catch {
     border: 1px solid black;
 }
