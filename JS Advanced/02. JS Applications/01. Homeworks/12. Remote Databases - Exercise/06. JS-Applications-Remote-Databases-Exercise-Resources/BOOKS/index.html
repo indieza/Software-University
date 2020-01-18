@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Books</title>
     <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./requester.js"></script>
 </head>
+
 <body>
     <button id="loadBooks">LOAD ALL BOOKS</button>
     <table>
@@ -19,7 +23,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <!-- <tr>
                 <td>Harry Poter</td>
                 <td>J. K. Rowling</td>
                 <td>0-7475-3269-9</td>
@@ -36,7 +40,7 @@
                     <button>Edit</button>
                     <button>Delete</button>
                 </td>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
 
@@ -48,10 +52,11 @@
         <input type="title" id="author" placeholder="Author...">
         <label>ISBN</label>
         <input type="title" id="isbn" placeholder="Isnb...">
-        <button>Submit</button>
+        <button id="submit">Submit</button>
+        <button class="update" disabled="">Update</button>
     </form>
-    <script src="./app.js"></script>
 </body>
+
 </html>
 
 <!--Feel free to change/update/modify the HTML Structure-->
