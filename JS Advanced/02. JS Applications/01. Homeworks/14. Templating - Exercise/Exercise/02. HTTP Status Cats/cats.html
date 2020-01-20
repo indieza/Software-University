@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Http Status Cats</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../handlebars.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="catSeeder.js"></script>
+</head>
+<body>
+<section id="allCats">
+    <ul>
+        <li>
+            <img src="images/cat100.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="100">
+                    <h4>Status Code: 100</h4>
+                    <p>Continue</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat200.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="200">
+                    <h4 class="card-title">Status Code: 200</h4>
+                    <p class="card-text">Ok</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat204.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="204">
+                    <h4>Status Code: 204</h4>
+                    <p>No content</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat301.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="301">
+                    <h4>Status Code: 301</h4>
+                    <p>Moved permanently</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat304.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="304">
+                    <h4>Status Code: 304</h4>
+                    <p>Not modified</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat400.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="400">
+                    <h4>Status Code: 400</h4>
+                    <p>Bad request</p>
+                </div>
+            </div>
+        </li>
+         <li>
+            <img src="images/cat404.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="404">
+                    <h4>Status Code: 404</h4>
+                    <p>Not Found</p>
+                </div>
+            </div>
+        </li>
+         <li>
+            <img src="images/cat406.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="406">
+                    <h4>Status Code: 406</h4>
+                    <p>Not Acceptable</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat410.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="410">
+                    <h4>Status Code: 410</h4>
+                    <p>Gone</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat500.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="500">
+                    <h4>Status Code: 500</h4>
+                    <p>Internal Server Error</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/cat511.jpg" width="250" height="250" alt="Card image cap">
+            <div class="info">
+                <button class="showBtn">Show status code</button>
+                <div class="status" style="display: none" id="511">
+                    <h4>Status Code: 511</h4>
+                    <p>Network Authentication Required</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+    <script type="text/x-handlebars-template" id="cat-template">
+        <!--Create template here -->
+    </script>
+<script src="template.js"></script>
+</body>
+</html>

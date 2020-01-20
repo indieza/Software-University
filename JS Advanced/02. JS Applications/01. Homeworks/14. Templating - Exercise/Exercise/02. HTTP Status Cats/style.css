@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.info {
+    display: inline-block;
+}
+
+.showBtn {
+    position: relative;
+    left: 1rem;
+    border: none;
+    background-color: #2AA5FE;
+    width: 13rem;
+    height: 3.5rem;
+    color: #fff;
+    border-radius: 17px;
+    font-weight: 600;
+    outline: none;
+}
+
+.status {
+    position: relative;
+    top: 1rem;
+    text-align: center;
+    left: 1rem;
+    font-weight: 600;
+}
+
+.status p {
+    padding: 1rem;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #2AA5FE;
+}
+
+body {
+    padding: 40px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Abel', sans-serif;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    left: 31rem;
+    top: 5rem;
+    width: 31rem;
+    height: 11rem;
+    padding-top: 2rem;
+    background-color: aliceblue;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 5rem;
+    width: 25rem;
+    height: 3rem;
+    font-family: monospace;
+    position: relative;
+    padding-left: 1rem;
+    top: 1.5rem;
+    outline: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    padding-right: 1rem;
+    right: 1rem;
+}
+
+button {
+    position: absolute;
+    top: 7.5rem;
+    left: 12rem;
+    border: none;
+    color: #fff;
+    background-color: lightsalmon;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5rem;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+label {
+    position: relative;
+    bottom: 1.5rem;
+    left: 4rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#root {
+    position: absolute;
+    list-style: none;
+    left: 31rem;
+    top: 17rem;
+    background-color: aliceblue;
+    width: 31rem;
+    padding-left: 2rem;
+}
+
+#root li {
+    margin-bottom: 1rem;
+    width: 27rem;
+    border-bottom: 0.2rem solid grey;
+    font-size: 21px;
+    word-break: break-all;
+}
+
+#root li:nth-child(1) {
+    padding-top: 0.5rem;
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+body {
+  height: 100%;
+  font-family: 'Noto Sans',
+  sans-serif;
+  margin: 0;
+}
+
+section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/forest.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 180vh;
+  padding: 0 5rem;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FFFAEC;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+div.monkeys {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+div.monkey {
+  display: inline-block;
+  width: 30%;
+  padding: 7px;
+}
+
+img {
+  max-height: 250px;
+  border: 2px solid white;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+button:hover {
+ cursor: pointer;
+ text-decoration: underline;
+ background: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 20px;
+  color: #FFFAEC;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 9px;
+  height: 215px;
+}

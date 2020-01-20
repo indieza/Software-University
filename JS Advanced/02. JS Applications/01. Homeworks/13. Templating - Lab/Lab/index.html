@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Contacts</title>
+</head>
+
+<body>
+  <h1>My contacts</h1>
+  <div id="contacts">
+    <div class="contact card">
+      <div>
+        <i class="far fa-user-circle gravatar"></i>
+      </div>
+      <div class="info">
+        <h2>Name: John</h2>
+        <button class="detailsBtn">Details</button>
+        <div class="details" id="1">
+          <p>Phone number: 0847759632</p>
+          <p>Email: john@john.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact card">
+      <div>
+        <i class="far fa-user-circle gravatar"></i>
+      </div>
+      <div class="info">
+        <h2>Name: Merrie</h2>
+        <button class="detailsBtn" onclick="showDetails(2)">Details</button>
+        <div class="details" id="2" style="display: none;">
+          <p>Phone number: 0845996111</p>
+          <p>Email: merrie@merrie.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact card">
+      <div>
+        <i class="far fa-user-circle gravatar"></i>
+      </div>
+      <div class="info">
+        <h2>Name: Adam</h2>
+        <button class="detailsBtn" onclick="showDetails(3)">Details</button>
+        <div class="details" id="3" style="display: none;">
+          <p>Phone number: 0866592475</p>
+          <p>Email: adam@stamat.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact card">
+      <div>
+        <i class="far fa-user-circle gravatar"></i>
+      </div>
+      <div class="info">
+        <h2>Name: Peter</h2>
+        <button class="detailsBtn" onclick="showDetails(4)">Details</button>
+        <div class="details" id="4" style="display: none;">
+          <p>Phone number: 0866592475</p>
+          <p>Email: peter@peter.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact card">
+      <div>
+        <i class="far fa-user-circle gravatar"></i>
+      </div>
+      <div class="info">
+        <h2>Name: Max</h2>
+        <button class="detailsBtn" onclick="showDetails(5)">Details</button>
+        <div class="details" id="5" style="display: none;">
+          <p>Phone number: 0866592475</p>
+          <p>Email: max@max.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact card">
+      <div>
+        <i class="far fa-user-circle gravatar"></i>
+      </div>
+      <div class="info">
+        <h2>Name: David</h2>
+        <button class="detailsBtn" onclick="showDetails(6)">Details</button>
+        <div class="details" id="6" style="display: none;">
+          <p>Phone number: 0866592475</p>
+          <p>Email: david@david.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+  <script src="./contacts.js"></script>
+</body>
+
+</html>
