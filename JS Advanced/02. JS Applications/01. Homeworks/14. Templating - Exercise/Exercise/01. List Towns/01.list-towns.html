@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>List Towns</title>
-    <script src="../handlebars.min.js"></script>
+    <script src="/node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,17 +13,16 @@
     <form action="#" class="content">
         <label for="towns">Towns</label>
         <input id="towns" type="text" />
-        <button id="btnLoadTowns">Load</button>
+        <button id="btnLoadTowns" onclick="loadTowns()">Load</button>
     </form>
     <div id="root">
-        <ul>
+        <!-- <ul>
             <li>Sofiq</li>
             <li>Plovdiv</li>
             <li>Varna</li>
             <li>Burgas</li>
-        </ul>
+        </ul> -->
     </div>
 </body>
-<script src="./app.js"></script>
 
 </html>

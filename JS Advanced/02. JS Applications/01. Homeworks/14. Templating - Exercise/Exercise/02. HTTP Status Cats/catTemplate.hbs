@@ -1,0 +1,15 @@
+<ul>
+    {{#each cats}}
+    <li>
+        <img src="images/{{imageLocation}}.jpg" width="250" height="250" alt="Card image cap">
+        <div class="info">
+            <button class="showBtn" onclick="showData(this.parentNode.children[0], this.parentNode.children[1])">Show
+                status code</button>
+            <div class="status" style="display: none" id="{{id}}">
+                <h4>{{statusCode}}</h4>
+                <p>{{statusMessage}}</p>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>
