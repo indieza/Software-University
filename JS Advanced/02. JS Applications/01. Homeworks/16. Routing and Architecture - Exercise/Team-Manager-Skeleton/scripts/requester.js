@@ -3,62 +3,65 @@ const appKey = "kid_HkTxE7i-L";
 const appSecret = "116518663b144a9d9e15c53013a3e938";
 
 function createAuthorization(type) {
-    return type === "Basic" ?
+    return type === 'Basic' ?
         `Basic ${btoa(`${appKey}:${appSecret}`)}` :
         `Kinvey ${sessionStorage.getItem('authtoken')}`
 }
 
-function makeHeaders(type, method, data) {
+function createHeaders(type, method, data) {
     const headers = {
         method: method,
         headers: {
-            "Authorization": createAuthorization(type),
-            "Content-Type": "application/json"
+            'Authorization': createAuthorization(type),
+            'Content-Type': 'application/json'
         }
-    };
-
-    if (method === "POST" || method === "PUT") {
+    }
+    if (method === 'PUT' || method === 'POST') {
         headers.body = JSON.stringify(data);
     }
-
     return headers;
 }
 
-function handleError(e) {
-    if (!e.ok) {
-        throw new Error(`${e.status} - ${e.statusText}`);
-    }
 
-    return e;
+function get(path, endpoint, type) {
+    const headers = createHeaders(type, 'GET');
+    return fetchRequest(path, endpoint, headers);
 }
 
-function serializeData(x) {
-    return x.json();
+function post(path, endpoint, type, body) {
+    const headers = createHeaders(type, 'POST', body);
+    return fetchRequest(path, endpoint, headers);
 }
 
-function fetchRequest(kinveyModule, endpoint, headers) {
-    const url = `${baseUrl}/${kinveyModule}/${appKey}/${endpoint}`;
+function put(path, endpoint, type, body) {
+    const headers = createHeaders(type, 'PUT', body);
+    return fetchRequest(path, endpoint, headers);
+}
+
+function del(path, endpoint, type) {
+    const headers = createHeaders(type, 'DELETE');
+    return fetchRequest(path, endpoint, headers);
+}
+
+
+function fetchRequest(path, endpoint, headers) {
+    const url = `${baseUrl}/${path}/${appKey}/${endpoint}`;
     return fetch(url, headers)
-        .then(handleError)
-        .then(serializeData);
+        .then(checkForErrors)
+        .then(data => data.json())
+        .catch(console.error)
 }
 
-export function get(kinveyModule, endpoint, type) {
-    const headers = makeHeaders(type, "GET");
-    return fetchRequest(kinveyModule, endpoint, headers);
+function checkForErrors(req) {
+    if (!req.ok) {
+        throw new Error(`${req.status} - ${req.statusText}`);
+    }
+    return req;
 }
 
-export function post(kinveyModule, endpoint, data, type) {
-    const headers = makeHeaders(type, "POST", data);
-    return fetchRequest(kinveyModule, endpoint, headers);
-}
-
-export function put(kinveyModule, endpoint, data, type) {
-    const headers = makeHeaders(type, "PUT", data);
-    return fetchRequest(kinveyModule, endpoint, headers);
-}
-
-export function del(kinveyModule, endpoint, type) {
-    const headers = makeHeaders(type, "DELETE");
-    return fetchRequest(kinveyModule, endpoint, headers);
+export {
+    get,
+    post,
+    put,
+    del
 }
