@@ -24,7 +24,10 @@ import {
         footer: "./templates/common/footer.hbs",
         loginForm: "./templates/login/loginForm.hbs",
         registerForm: "./templates/register/registerForm.hbs",
-        team: "./templates/catalog/team.hbs"
+        team: "./templates/catalog/team.hbs",
+        createForm: "./templates/create/createForm.hbs",
+        teamMember: "./templates/catalog/teamMember.hbs",
+        teamControls: "./templates/catalog/teamControls.hbs"
     };
 
     const app = new Sammy("#main", function () {
@@ -99,9 +102,43 @@ import {
                 .then(data => {
                     context.teams = data;
                     loadPage(context, "./templates/catalog/teamCatalog.hbs");
-                    console.log(data);
+                    //console.log(data);
                 })
                 .catch(console.error);
+        });
+
+        this.get("#/create", function (context) {
+            loadPage(context, "./templates/create/createPage.hbs");
+        });
+
+        this.get("#/catalog/:id", function (context) {
+            const id = context.params.id;
+            //console.log(id);
+
+            get("appdata", `teams/${id}`, "Kinvey")
+                .then(data => {
+                    context.name = data.name;
+                    context.comment = data.comment;
+                    loadPage(context, "./templates/catalog/details.hbs");
+                })
+                .catch(console.error);
+        });
+
+        this.post("#/create", function (context) {
+            const {
+                name,
+                comment
+            } = context.params;
+
+            post("appdata", "teams", {
+                    name,
+                    comment
+                }, "Kinvey")
+                .then(data => {
+                    context.redirect("#/catalog");
+                    //console.log(data);
+                })
+                .catch(console.error());
         });
     });
 
@@ -110,6 +147,7 @@ import {
     function getUserInfo(context) {
         context.loggedIn = sessionStorage.getItem("authtoken");
         context.username = sessionStorage.getItem("username");
+        context.id = sessionStorage.getItem("userId");
     }
 
     function loadPage(context, path) {
@@ -124,6 +162,7 @@ import {
     function saveUserInfo(resources) {
         if (resources.username && resources._kmd.authtoken) {
             sessionStorage.setItem('username', resources['username']);
+            sessionStorage.setItem('userId', resources._id);
             sessionStorage.setItem('authtoken', resources._kmd['authtoken']);
         }
     }
