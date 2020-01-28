@@ -140,6 +140,10 @@ import {
                 })
                 .catch(console.error());
         });
+
+        this.get("#/join/:teamId", function (context) {
+
+        });
     });
 
     app.run();
