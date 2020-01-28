@@ -1,0 +1,298 @@
+/*
+ * Globals
+ */
+
+/* Links */
+
+a, a:focus, a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html, body {
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/homePage-background.jpg');
+  background-attachment: fixed;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: white;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+  color: rgba(255, 255, 255, .8);
+}
+
+.nav-masthead .nav-link+.nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead a:hover {
+  color: #fff;
+  border-bottom-color: white;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+h1 {
+  color: #fff;
+  margin: 40px 0 60px 0;
+  font-weight: 300;
+}
+
+.our-team-main {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px #323233 solid;
+  background: transparent;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  margin-bottom: 28px;
+  color: black;
+}
+
+.our-team-main img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 40%;
+  height: 100%;
+  box-shadow: 0 0 0.2rem 0 rgba(68, 68, 68, .2);
+}
+
+.our-team-main h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.our-team-main p {
+  margin-bottom: 0;
+}
+
+.team-back {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 15px 0 15px;
+  text-align: left;
+  background: white;
+  color: black;
+}
+
+.team-front {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 1);
+  padding: 15px;
+  bottom: 0px;
+  transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front {
+  bottom: -250px;
+  transition: all 0.5s ease;
+}
+
+.our-team-main:hover {
+  border-color: #777;
+  transition: 0.5s;
+}
+
+.back-side-info {
+  display: inline-block;
+  width: 50%;
+}
+
+.back-side-info a {
+  color: black;
+  font-weight: bold;
+}
+
+.back-side-info a:hover {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: white;
+}
+
+img.foodImage {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+#foodNotFound {
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+}
+
+#foodNotFound img {
+  height: auto;
+  border-radius: 15px;
+}
+
+form textarea {
+  height: 100vh;
+  resize: none
+}
+
+.detailsIngredients {
+  display: inline-block;
+  vertical-align: top;
+  width: 29%;
+  word-wrap: break-word;
+}
+
+.detailsFoodImage {
+  display: inline-block;
+  width: 69%;
+  margin-right: 1%;
+}
+
+.detailsFoodImage img {
+  width: 350px;
+  height: auto;
+  border: 1px solid white;
+}
+
+.actions {
+  width: 100%;
+}
+
+.prep-method, .description {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.infoPack {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+}
+
+.recepieInfo {
+  display: inline-block;
+  width: 70%;
+}
+
+.ingredient {
+  text-align: center;
+}
+
+#successBox, #loadingBox, #errorBox {
+  display: none;
+  text-align: center;
+}
+
+/*our-team-main*/
+
+/* .color-gray {
+  background: rgba(255, 255, 255, .7);
+} */
+
+.form-layout {
+  background: rgba(255, 255, 255, .7);
+  border-radius: 4px;
+  margin-top: 50px;
+  color: #050202;
+}
+
+.form-layout button {
+  background: #7D0000;
+  margin-top: 20px !important;
+}
+
+#share-receipt-form select {
+  border-radius: 4px;
+  background: white;
+  width: 100%;
+  padding: 9px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

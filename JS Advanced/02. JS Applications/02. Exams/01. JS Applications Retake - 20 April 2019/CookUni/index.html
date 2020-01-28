@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>CookUni</title>
+</head>
+
+<body>
+    <div id="rooter" class="cover-container w-100 d-flex h-100 p-3 mx-auto flex-column">
+
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">CookUni</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Welcome, {{names}}!</a>
+                    <a class="nav-link" href="#">Share recipe</a>
+                    <a class="nav-link" href="#">Logout</a>
+                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#">Register</a>
+                </nav>
+            </div>
+        </header>
+
+        <div id="notifications">
+            <div id="successBox" class="alert alert-success" role="alert">{Success Message...}</div>
+            <div id="loadingBox" class="alert alert-info" role="alert">Loading...</div>
+            <div id="errorBox" class="alert alert-danger" role="alert">{Error Message...}</div>
+        </div>
+
+        <main role="main" class="inner cover mt-5">
+            <h1 class="cover-heading">Coooooking University</h1>
+            <p class="lead">They say that food passes through the stomach, we say that food passes through CookUni...
+            </p>
+        </main>
+
+        <h1 class="text-center">Our Recipes</h1>
+
+        <div id='foodNotFound'>
+            <img src="https://t4.ftcdn.net/jpg/00/62/17/31/240_F_62173114_ozantkVtkPgzL0fxssAkTqKX1FHPr0UW.jpg" />
+            <h3>Food not found...</h3>
+        </div>
+
+        <div id="sharedRecipes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="our-team-main">
+
+                            <div class="team-front">
+                                <img src="https://cdn.pixabay.com/photo/2017/10/09/19/29/eat-2834549__340.jpg" />
+                                <h3>Meal Name</h3>
+                                <p>Vegetables and legumes/beans CATEGORY</p>
+                            </div>
+
+                            <div class="team-back">
+                                <div class="back-side-info">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>First ingredients</li>
+                                        <li>Second ingredients</li>
+                                        <li>Third ingredients</li>
+                                        <li>...</li>
+                                    </ul>
+                                    <a href="#">View the recepie</a>
+                                </div>
+
+                                <img class="foodImage"
+                                    src="https://t3.ftcdn.net/jpg/00/25/90/48/240_F_25904887_fhZJ692ukng3vQxzHldvuN981OiYVlJ1.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <!--Grain-Food-Template-->
+                    <div class="col-lg-12">
+                        <div class="our-team-main">
+
+                            <div class="team-front">
+                                <img src="https://cdn.pixabay.com/photo/2014/12/11/02/55/corn-syrup-563796__340.jpg" />
+                                <h3>Meal Name</h3>
+                                <p>Grain Food CATEGORY</p>
+                            </div>
+
+                            <div class="team-back">
+                                <div class="back-side-info">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>First ingredients</li>
+                                        <li>Second ingredients</li>
+                                        <li>Third ingredients</li>
+                                        <li>...</li>
+                                    </ul>
+                                    <a href="/#">View the recepie</a>
+                                </div>
+
+                                <img class="foodImage"
+                                    src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__340.jpg" width:
+                                    150; height: auto; />
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Food-Template-->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="our-team-main">
+
+                            <div class="team-front">
+                                <img src="https://cdn.pixabay.com/photo/2017/06/02/18/24/fruit-2367029__340.jpg" />
+                                <h3>Meal Name</h3>
+                                <p>Fruits CATEGORY</p>
+                            </div>
+
+                            <div class="team-back">
+                                <div class="back-side-info">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>First ingredients</li>
+                                        <li>Second ingredients</li>
+                                        <li>Third ingredients</li>
+                                        <li>...</li>
+                                    </ul>
+                                    <a href="/#">View the recepie</a>
+                                </div>
+
+                                <img class="foodImage"
+                                    src="https://t3.ftcdn.net/jpg/00/87/05/06/240_F_87050645_NGkJwdXlikO6DWOppUu93fQwLYeBdDEq.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="our-team-main">
+
+                            <div class="team-front">
+                                <img
+                                    src="https://image.shutterstock.com/image-photo/assorted-dairy-products-milk-yogurt-260nw-530162824.jpg" />
+                                <h3>Meal Name</h3>
+                                <p>Milk, chees, eggs and alternatives CATEGORY</p>
+                            </div>
+
+                            <div class="team-back">
+                                <div class="back-side-info">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>First ingredients</li>
+                                        <li>Second ingredients</li>
+                                        <li>Third ingredients</li>
+                                        <li>...</li>
+                                    </ul>
+                                    <a href="/#">View the recepie</a>
+                                </div>
+
+                                <img class="foodImage"
+                                    src="https://cdn.pixabay.com/photo/2018/01/06/16/24/fried-3065319__340.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="our-team-main">
+
+                            <div class="team-front">
+                                <img
+                                    src="https://t3.ftcdn.net/jpg/01/18/84/52/240_F_118845283_n9uWnb81tg8cG7Rf9y3McWT1DT1ZKTDx.jpg" />
+                                <h3>Meal Name</h3>
+                                <p>Lean meats and poultry, fish... CATEGORY</p>
+                            </div>
+
+                            <div class="team-back">
+                                <div class="back-side-info">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>First ingredients</li>
+                                        <li>Second ingredients</li>
+                                        <li>Third ingredients</li>
+                                        <li>...</li>
+                                    </ul>
+                                    <a href="/#">View the recepie</a>
+                                </div>
+
+                                <img class="foodImage"
+                                    src="https://image.shutterstock.com/image-photo/roasted-dorado-fish-brussels-sprouts-260nw-435521527.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row form-layout p-5">
+            <div class="col-md-12">
+                <div class="recepieInfo">
+                    <div class="detailsFoodImage">
+                        <img src="https://t3.ftcdn.net/jpg/00/25/90/48/240_F_25904887_fhZJ692ukng3vQxzHldvuN981OiYVlJ1.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="infoPack">
+                        <h3 class="my-3">Meal Name</h3>
+                        <p class="prep-method">Method of preparation...</p>
+                        <p class="description">Description ...</p>
+                    </div>
+                    <div class="actions">
+                        <a class="btn btn-danger" href="#">Archive</a>
+                        <a class="btn btn-info" href="#">Edit</a>
+                        <a class="btn btn-success" href="#"> 900 likes</a>
+                    </div>
+                </div>
+
+                <div class="detailsIngredients">
+                    <h3 class="my-3 ingredient">Ingredients</h3>
+                    <ul>
+                        <li>First ingredient</li>
+                        <li>Second ingredient</li>
+                        <li>Third ingredient</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <form class="text-center p-5 form-layout" action="#" method="POST" id="share-receipt-form">
+            <p class="h4 mb-4">Share Recipe</p>
+
+            <input type="text" id="defaultRecepieShareMeal" name="meal" class="form-control mb-4" placeholder="Meal">
+
+            <input type="text" id="defaultRecepieShareIngredients" name="ingredients" class="form-control mb-4"
+                placeholder="Ingredients">
+
+            <textarea type="text" id="defaultRecepieShareMethodOfPreparation" name="prepMethod"
+                class="form-control mb-4" placeholder="Method of preparation"></textarea>
+
+            <textarea type="text" id="defaultRecepieShareDescription" name="description" class="form-control mb-4"
+                placeholder="Description"></textarea>
+
+            <input type="text" id="defaultRecepieShareFoodImageURL" name="foodImageURL" class="form-control mb-4"
+                placeholder="Food Image URL...">
+
+            <select name="category">
+                <option selected>Select category...</option>
+                <option selected>Vegetables and legumes/beans</option>
+                <option selected>Fruits</option>
+                <option selected>Grain Food</option>
+                <option selected>Milk, cheese, eggs and alternatives</option>
+                <option selected>Lean meats and poultry, fish and alternatives</option>
+            </select>
+
+            <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Share it</button>
+        </form>
+
+        <form class="text-center p-5 form-layout" action="#" method="POST" id="edit-receipt-form">
+            <p class="h4 mb-4">Edit Recipe</p>
+        
+            <input type="text" id="defaultRecepieEditMeal" name="meal" class="form-control mb-4" placeholder="Meal"
+                value="">
+        
+            <input type="text" id="defaultRecepieEditIngredients" name="ingredients" class="form-control mb-4"
+                placeholder="Ingredients" value="">
+        
+            <textarea type="text" id="defaultRecepieEditMethodOfPreparation" name="prepMethod" class="form-control mb-4"
+                placeholder="Method of preparation"></textarea>
+        
+            <textarea type="text" id="defaultRecepieEditDescription" name="description" class="form-control mb-4"
+                placeholder="Description"></textarea>
+        
+            <input type="text" id="defaultRecepieEditFoodImageURL" name="foodImageURL" class="form-control mb-4"
+                placeholder="Food Image URL..." value="">
+        
+            <select name="category" select="">
+                <option selected>Select category...</option>
+                <option>Vegetables and legumes/beans</option>
+                <option>Fruits</option>
+                <option>Grain Food</option>
+                <option>Milk, cheese, eggs and alternatives</option>
+                <option>Lean meats and poultry, fish and alternatives</option>
+            </select>
+            <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Edit it</button>
+        
+        </form>
+
+        <form class="text-center p-5 form-layout" action="#" method="POST">
+
+            <p class="h4 mb-4">Sign up</p>
+
+            <div class="form-row mb-4">
+                <div class="col">
+
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" name="firstName"
+                        placeholder="First name">
+                </div>
+                <div class="col">
+
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control" name="lastName"
+                        placeholder="Last name">
+                </div>
+            </div>
+
+            <input type="text" id="defaultRegisterFormUsername" class="form-control mb-4" name="username"
+                placeholder="Username">
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" name="password"
+                placeholder="Password">
+            <hr>
+            <input type="password" id="defaultRegisterRepeatPassword" class="form-control" name="repeatPassword"
+                placeholder="Repeat Password">
+            <button class="btn btn-danger my-4 btn-block w-25 m-auto" type="submit">Sign up</button>
+
+        </form>
+
+        <form class="text-center p-5 form-layout" action="#" method="POST">
+
+            <p class="h4 mb-4">Sign in</p>
+
+            <input type="text" id="defaultRegisterFormUsername" name="username" class="form-control mb-4"
+                placeholder="Username">
+
+            <input type="password" id="defaultRegisterFormPassword" name="password" class="form-control"
+                placeholder="Password">
+            <hr>
+
+            <button class="btn btn-danger w-25 m-auto my-4 btn-block" type="submit">Sign in</button>
+
+        </form>
+
+        <footer class="mastfoot mt-5 text-center text-light">
+            <div class="inner">
+                <p>Made with &hearts; by <a href="#/home">CookUni</a>.</p>
+            </div>
+            <i class="fa fa-heart"></i>
+        </footer>
+    </div>
+</body>
+
+<!-- Libraries -->
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./node_modules/handlebars/dist/handlebars.js"></script>
+<script src="./node_modules/sammy/lib/sammy.js"></script>
+<script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+<!--My Libraries-->
+<!--????-->
+<!--????-->
+<!--????-->
+</html>
