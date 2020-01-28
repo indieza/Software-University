@@ -6,6 +6,28 @@
             this.loadPartials(getPartials())
                 .partial("../templates/home.hbs");
         });
+
+        this.get("/register", function (ctx) {
+            this.loadPartials(getPartials())
+                .partial("../templates/admin/register.hbs");
+        });
+
+        this.post("/register", function (ctx) {
+
+        });
+
+        this.get("/login", function (ctx) {
+            this.loadPartials(getPartials())
+                .partial("../templates/admin/login.hbs");
+        });
+
+        this.post("/login", function (ctx) {
+
+        });
+
+        this.get("/logout", function (ctx) {
+
+        });
     });
 
     function getPartials() {
