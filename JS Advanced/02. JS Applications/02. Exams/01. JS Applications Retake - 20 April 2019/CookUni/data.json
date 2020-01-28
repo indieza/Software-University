@@ -1,0 +1,51 @@
+[
+    {
+        "meal": "Good Old Fashioned Pancakes",
+        "ingredients": [
+            "1 1/12 cups all purpose flour",
+            "3 1/2 teaspoons baking powder",
+            "1 teaspoon salt",
+            "1 tablespoon white sugar",
+            "1 1/4 cups milk",
+            "1 egg",
+            "3 tablespoons butter, melted"
+        ],
+        "prepMethod": "In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth. Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.",
+        "description": "This is a great recipe that I found in my Grandma's recipe book. Judging from the weathered look of this recipe card, this was a family favorite.",
+        "foodImageURL": "https://images.media-allrecipes.com/userphotos/720x405/4948036.jpg",
+        "category": "Grain Food",
+        "likesCounter": 0,
+        "categoryImageURL": "https://cdn.pixabay.com/photo/2014/12/11/02/55/corn-syrup-563796__340.jpg"
+    },
+    {
+        "meal": "Classic Cheesecake",
+        "ingredients": [
+            "Block cream cheese",
+            "Sugar",
+            "Sour cream",
+            "A little flavour",
+            "Eggs"
+        ],
+        "prepMethod": "Four 8-ounce blocks of full-fat cream cheese are the base of this cheesecake. ThatвЂ™s 2 pounds. Make sure youвЂ™re buying the blocks of cream cheese and not cream cheese spread. ThereвЂ™s no diets allowed in cheesecake, so donвЂ™t pick up the reduced fat variety! 1 cup. Not that much considering how many mouths you can feed with this dessert. Over-sweetened cheesecake is hardly cheesecake anymore. Using only 1 cup of sugar gives this cheesecake the opportunity to balance tangy and sweet, just as classic cheesecake should taste. 1 cup. I recently tested cheesecake with 1 cup of heavy cream instead, but ended up sticking with my original (which can be found here with blueberry swirls!). I was curious about the heavy cream addition and figured it would yield a softer cheesecake bite. The cheesecake was soft, but lacked the stability and richness I wanted. It was almost too creamy. Sour cream is most definitely the right choice. 1 teaspoon of pure vanilla extract and 2 of lemon juice. The lemon juice brightens up the cheesecakeвЂ™s overall flavor and vanilla is always a good idea. 3 eggs are the final ingredient. YouвЂ™ll beat the eggs in last, one at a time, until they are *just* incorporated. Do not overmix the batter once the eggs are added. This will whip air into the cheesecake batter, resulting in cheesecake cracking and deflating.",
+        "description": "And as always, make sure all of the cheesecake batter ingredients are at room temperature so the batter remains smooth, even, and combines quickly. Beating cold ingredients together will result in a chunky over-beaten cheesecake batter, hardly the way we want to start!",
+        "foodImageURL": "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2018/05/classic-cheesecake-recipe-3-600x900.jpg",
+        "category": "Milk, cheese, eggs and alternatives",
+        "likesCounter": 0,
+        "categoryImageURL": "https://image.shutterstock.com/image-photo/assorted-dairy-products-milk-yogurt-260nw-530162824.jpg"
+    },
+    {
+        "meal": "Homemade Tortillas",
+        "ingredients": [
+            "2 cups all-purpose flour",
+            "1/2 teaspoon salt",
+            "3/4 cup water",
+            "3 tablespoons olive oit"
+        ],
+        "prepMethod": "In a large bowl, combine flour and salt. Stir in water and oil. Turn onto a floured surface; knead 10-12 times, adding a little flour or water if needed to achieve a smooth dough. Let rest for 10 minutes. Divide dough into 8 portions. On a lightly floured surface, roll each portion into a 7-in. circle. In a greased cast-iron or other heavy skillet, cook tortillas over medium heat until lightly browned, 1 minute on each side. Keep warm.",
+        "description": "I usually have to double this flour tortilla recipe because we go through them so quickly. The homemade tortillas are so tender and chewy, youвЂ™ll never use store-bought again after learning how to make tortillas. вЂ”Kristin Van Dyken, West Richland, Washington",
+        "foodImageURL": "https://cdn.thewhoot.com/wp-content/uploads/2018/05/Tortilla-Homemade-Recipe-2.jpg",
+        "category": "Grain Food",
+        "likesCounter": 0,
+        "categoryImageURL": "https://cdn.pixabay.com/photo/2014/12/11/02/55/corn-syrup-563796__340.jpg"
+    }
+]

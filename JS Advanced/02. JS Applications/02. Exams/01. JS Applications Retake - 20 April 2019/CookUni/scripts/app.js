@@ -1,8 +1,17 @@
+import {
+    get,
+    post,
+    put,
+    del
+} from "../scripts/requester.js";
+
 (() => {
     const app = new Sammy("#rooter", function () {
         this.use("Handlebars", "hbs");
 
         this.get("/index.html", function (ctx) {
+            setHeaderInfo(ctx);
+
             this.loadPartials(getPartials())
                 .partial("../templates/home.hbs");
         });
@@ -13,7 +22,27 @@
         });
 
         this.post("/register", function (ctx) {
+            const {
+                firstName,
+                lastName,
+                username,
+                password,
+                repeatPassword
+            } = ctx.params;
 
+            if (firstName && lastName && username && password && password === repeatPassword) {
+                post("user", "", {
+                        firstName,
+                        lastName,
+                        username,
+                        password
+                    }, "Basic")
+                    .then(userInfo => {
+                        saveAuthInfo(userInfo);
+                        ctx.redirect("/index.html");
+                    })
+                    .catch(console.error);
+            }
         });
 
         this.get("/login", function (ctx) {
@@ -30,6 +59,8 @@
         });
     });
 
+    app.run();
+
     function getPartials() {
         return {
             header: "../templates/common/header.hbs",
@@ -37,5 +68,13 @@
         }
     }
 
-    app.run();
+    function setHeaderInfo(ctx) {
+        ctx.isLogged = sessionStorage.getItem("authtoken") !== null;
+        ctx.names = sessionStorage.getItem("names");
+    }
+
+    function saveAuthInfo(userInfo) {
+        sessionStorage.setItem("authtoken", userInfo._kmd.authtoken);
+        sessionStorage.setItem("names", `${userInfo.firstName} ${userInfo.lastName}`);
+    }
 })();
