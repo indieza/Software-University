@@ -101,6 +101,7 @@ import {
             get("appdata", "teams", "Kinvey")
                 .then(data => {
                     context.teams = data;
+                    context.hasNoTeam = data;
                     loadPage(context, "./templates/catalog/teamCatalog.hbs");
                     //console.log(data);
                 })
@@ -169,6 +170,7 @@ import {
             sessionStorage.setItem('username', resources['username']);
             sessionStorage.setItem('userId', resources._id);
             sessionStorage.setItem('authtoken', resources._kmd['authtoken']);
+            sessionStorage.setItem('teamId', resources.teamId);
         }
     }
 })();
