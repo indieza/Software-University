@@ -51,11 +51,31 @@ import {
         });
 
         this.post("/login", function (ctx) {
+            const {
+                username,
+                password
+            } = ctx.params;
 
+            if (username && password) {
+                post("user", "login", {
+                        username,
+                        password
+                    }, "Basic")
+                    .then(userInfo => {
+                        saveAuthInfo(userInfo);
+                        ctx.redirect("/index.html");
+                    })
+                    .catch(console.error);
+            }
         });
 
         this.get("/logout", function (ctx) {
-
+            post("user", "_logout", {}, "Kinvey")
+                .then(() => {
+                    sessionStorage.clear();
+                    return ctx.redirect("/index.html");
+                })
+                .catch(console.error);
         });
     });
 

@@ -33,6 +33,10 @@ function handleError(e) {
 }
 
 function serializeData(x) {
+    if (x.status === 204) {
+        return x;
+    }
+
     return x.json();
 }
 
