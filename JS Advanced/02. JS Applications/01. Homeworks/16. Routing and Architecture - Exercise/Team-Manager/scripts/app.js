@@ -111,6 +111,24 @@ import {
             loadPage(context, "./templates/create/createPage.hbs");
         });
 
+        this.post("#/create", function (context) {
+            const {
+                name,
+                comment
+            } = context.params;
+
+            post("appdata", "teams", {
+                    name,
+                    comment,
+                    author: sessionStorage.getItem('username')
+                }, "Kinvey")
+                .then(data => {
+                    context.redirect("#/catalog");
+                    //console.log(data);
+                })
+                .catch(console.error());
+        });
+
         this.get("#/catalog/:id", function (context) {
             const id = context.params.id;
             //console.log(id);
@@ -122,23 +140,6 @@ import {
                     loadPage(context, "./templates/catalog/details.hbs");
                 })
                 .catch(console.error);
-        });
-
-        this.post("#/create", function (context) {
-            const {
-                name,
-                comment
-            } = context.params;
-
-            post("appdata", "teams", {
-                    name,
-                    comment
-                }, "Kinvey")
-                .then(data => {
-                    context.redirect("#/catalog");
-                    //console.log(data);
-                })
-                .catch(console.error());
         });
 
         this.get("#/join/:teamId", function (context) {
