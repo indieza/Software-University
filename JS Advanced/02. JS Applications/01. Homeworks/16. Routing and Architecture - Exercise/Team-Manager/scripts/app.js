@@ -81,6 +81,37 @@ import {
                 })
                 .catch(console.error);
         });
+
+        this.get("/catalog", async function (ctx) {
+            setHeaderInfo(ctx);
+            const teams = await get("appdata", "teams", "Kinvey");
+            ctx.teams = teams;
+
+            this.loadPartials(getPartials())
+                .partial("../templates/catalog/teamCatalog.hbs");
+        });
+
+        this.get("/create", function (ctx) {
+            setHeaderInfo(ctx);
+            this.loadPartials(getPartials())
+                .partial("../templates/create/createPage.hbs");
+        });
+
+        this.post("/create", function (ctx) {
+            const {
+                name,
+                comment
+            } = ctx.params;
+
+            post("appdata", "teams", {
+                    name,
+                    comment
+                }, "Kinvey")
+                .then(() => {
+                    ctx.redirect("/catalog");
+                })
+                .catch(console.error);
+        });
     });
 
     app.run();
@@ -88,12 +119,13 @@ import {
     function setHeaderInfo(ctx) {
         ctx.loggedIn = sessionStorage.getItem("authtoken") !== null;
         ctx.username = sessionStorage.getItem("username");
+        ctx.hasNoTeam = sessionStorage.getItem("teamId") !== null;
     }
 
     function saveAuthInfo(userInfo) {
         sessionStorage.setItem("username", userInfo.username);
         sessionStorage.setItem("authtoken", userInfo._kmd.authtoken);
-        sessionStorage.setItem("userId", userInfo._id);
+        sessionStorage.setItem("teamId", userInfo._id);
     }
 
     function getPartials() {
@@ -101,7 +133,11 @@ import {
             header: "../templates/common/header.hbs",
             footer: "../templates/common/footer.hbs",
             loginForm: "../templates/login/loginForm.hbs",
-            registerForm: "../templates/register/registerForm.hbs"
+            registerForm: "../templates/register/registerForm.hbs",
+            team: "../templates/catalog/team.hbs",
+            teamMember: "../templates/catalog/teamMember.hbs",
+            teamControls: "../templates/catalog/teamControls.hbs",
+            createForm: "../templates/create/createForm.hbs"
         }
     }
 })();
