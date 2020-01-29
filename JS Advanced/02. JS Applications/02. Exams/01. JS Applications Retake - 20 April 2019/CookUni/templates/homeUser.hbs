@@ -1,0 +1,31 @@
+<div id="sharedRecipes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="our-team-main">
+
+                    <div class="team-front">
+                        <img src="{{categoryImageURL}}" />
+                        <h3>{{meal}}</h3>
+                        <p>{{category}}</p>
+                    </div>
+
+                    <div class="team-back">
+                        <div class="back-side-info">
+                            <h4>Ingredients</h4>
+                            <ul>
+                                {{#each ingredients}}
+                                <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                            <a href="/recipe/{{_id}}">View the recepie</a>
+                        </div>
+
+                        <img class="foodImage" src="{{foodImageURL}}" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

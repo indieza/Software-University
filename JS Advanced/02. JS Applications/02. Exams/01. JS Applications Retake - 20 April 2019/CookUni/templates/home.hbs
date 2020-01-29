@@ -1,11 +1,15 @@
 {{> header}}
 {{#if isLogged }}
-{{!-- TODO LOGED IN --}}
+<h1 class="text-center">Our Recipes</h1>
+{{#each recipes}}
+{{> homeUser}}
 {{else}}
-<main role="main" class="inner cover mt-5">
-    <h1 class="cover-heading">Coooooking University</h1>
-    <p class="lead">They say that food passes through the stomach, we say that food passes through CookUni...
-    </p>
-</main>
+<div id='foodNotFound'>
+    <img src="https://t4.ftcdn.net/jpg/00/62/17/31/240_F_62173114_ozantkVtkPgzL0fxssAkTqKX1FHPr0UW.jpg" />
+    <h3>Food not found...</h3>
+</div>
+{{/each}}
+{{else}}
+{{> homeAnonymous}}
 {{/if}}
 {{> footer}}
