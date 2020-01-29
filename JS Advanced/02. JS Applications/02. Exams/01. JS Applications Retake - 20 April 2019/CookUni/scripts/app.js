@@ -222,36 +222,7 @@ import {
                     categoryImageURL: recipe.categoryImageURL
                 })
                 .then(() => {
-                    ctx.redirect("/index.html");
-                })
-                .catch(console.error);
-        });
-
-        this.post("/like/:id", function (ctx) {
-            const id = ctx.params.id;
-            setHeaderInfo(ctx);
-            const {
-                meal,
-                ingredients,
-                prepMethod,
-                description,
-                foodImageURL,
-                category,
-                likesCounter
-            } = ctx.params;
-
-            put("appdata", `recipes/${id}`, {
-                    meal,
-                    ingredients: ingredients.split(" "),
-                    prepMethod,
-                    description,
-                    foodImageURL,
-                    category,
-                    likesCounter: likesCounter + 1,
-                    categoryImageURL: categories[category]
-                })
-                .then(() => {
-                    ctx.redirect("/index.html");
+                    ctx.redirect(`/index.html`);
                 })
                 .catch(console.error);
         });
