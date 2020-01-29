@@ -98,20 +98,51 @@ import {
         });
 
         this.post("/create", function (ctx) {
+            setHeaderInfo(ctx);
             const {
                 name,
                 comment
             } = ctx.params;
 
+            let members = [];
+            members.push({
+                "username": sessionStorage.getItem("username")
+            });
+
             post("appdata", "teams", {
                     name,
-                    comment
+                    comment,
+                    members
                 }, "Kinvey")
-                .then(() => {
+                .then(userInfo => {
+                    sessionStorage.setItem("teamId", userInfo._acl.creator);
                     ctx.redirect("/catalog");
                 })
                 .catch(console.error);
         });
+
+        this.get("/catalog/:id", function (ctx) {
+            const id = ctx.params.id;
+            setHeaderInfo(ctx);
+
+            get("appdata", `teams/${id}`, "Kinvey")
+                .then(data => {
+                    ctx.members = data.members;
+                    ctx.comment = data.comment;
+                    ctx.name = data.name;
+                    ctx.teamId = sessionStorage.getItem("teamId");
+                    this.loadPartials(getPartials())
+                        .partial("../templates/catalog/details.hbs");
+                })
+                .catch(console.error);
+        });
+
+        this.get("/edit/:id", function (ctx) {
+            const id = ctx.params.id;
+            setHeaderInfo(ctx);
+            this.loadPartials(getPartials())
+                .partial("../templates/edit/editPage.hbs");
+        })
     });
 
     app.run();
@@ -119,13 +150,16 @@ import {
     function setHeaderInfo(ctx) {
         ctx.loggedIn = sessionStorage.getItem("authtoken") !== null;
         ctx.username = sessionStorage.getItem("username");
-        ctx.hasNoTeam = sessionStorage.getItem("teamId") !== null;
+        ctx.hasNoTeam = sessionStorage.getItem("teamId") === sessionStorage.getItem("userId") ? false : true;
+        ctx.isAuthor = sessionStorage.getItem("teamId") === sessionStorage.getItem("userId") ? true : false;
+        ctx.isOnTeam = sessionStorage.getItem("teamId") === sessionStorage.getItem("userId") ? true : false;
     }
 
     function saveAuthInfo(userInfo) {
         sessionStorage.setItem("username", userInfo.username);
         sessionStorage.setItem("authtoken", userInfo._kmd.authtoken);
-        sessionStorage.setItem("teamId", userInfo._id);
+        sessionStorage.setItem("userId", userInfo._id);
+        //sessionStorage.setItem("teamId", userInfo._acl.creator);
     }
 
     function getPartials() {
@@ -137,7 +171,8 @@ import {
             team: "../templates/catalog/team.hbs",
             teamMember: "../templates/catalog/teamMember.hbs",
             teamControls: "../templates/catalog/teamControls.hbs",
-            createForm: "../templates/create/createForm.hbs"
+            createForm: "../templates/create/createForm.hbs",
+            editForm: "../templates/edit/editForm.hbs"
         }
     }
 })();
