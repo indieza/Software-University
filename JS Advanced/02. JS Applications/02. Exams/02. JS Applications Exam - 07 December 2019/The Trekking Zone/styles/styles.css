@@ -1,0 +1,300 @@
+*{
+  font-family: cursive;
+  
+}
+body{
+  background-image: url("../images/annapurna-3968913_1920\ \(1\).jpg");
+  background-size:cover;
+}
+.container {
+  max-width: 960px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.a-button{
+  color: rgb(46, 45, 45);
+  padding:10px;
+  transition: ease-in-out color .15s;
+}
+.a-button:hover{
+  color: rgb(78, 58, 2);
+  text-decoration: none;
+}
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(27, 27, 27, 0.904);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: rgb(218, 218, 218);
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+footer p{
+   position:relative;
+   float:left;
+}
+
+
+.trek-details{
+    display: block;
+    color: rgb(0, 0, 0);      
+    width: 25%;
+    margin: 1.5rem auto 48px auto;      
+    text-align: center;      
+    border-radius: 15px;    
+    font-size: 18px;
+    /* padding: 0.5rem 0;   */
+    font-weight: bold;
+}
+.card-image{
+  max-height: 50%;
+}
+.card-text{
+  top:10px;
+}
+
+a.trek-details:hover{
+  text-decoration: none;
+  background: #333;
+  color: white;
+  border: 2px solid #333;
+}
+
+form,.profile,.home{
+    background-color:rgba(255, 255, 255, 0.479);
+    padding:2%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top:2%;
+    border:solid;
+    border-radius:1rem;
+    border-color:rgb(241, 179, 6);
+    box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.712);
+}
+
+input.form-control{
+    width: 50%;
+    margin: 0 auto;
+}
+
+textarea.form-control{
+    width: 50%;
+    margin: 0 auto;
+    resize: none;
+    height: 20vh;
+}
+.buttons-together{
+  margin: auto;
+  margin-top:2%;
+}
+form label{
+  display:block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.btn{
+  width: 25%;
+  margin: 0 auto;
+  background-color: rgba(51, 51, 51, 0.842);
+  color: white;
+}
+
+.alreadyUser{
+   margin: 1%;
+}
+
+
+.no-found-template{
+   margin: 0 auto;
+   text-align: center;
+}
+
+#fouronefour{
+   margin: 0 auto;
+   width: 100%;
+   margin-bottom: 2%;
+   border:solid;
+   border-color: rgba(27, 27, 27, 0.904);
+   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.76);
+}
+
+.alert{
+   width: 50%;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 1%;
+}
+
+.imageContainer{
+   border:2px solid black;
+   border-radius: 25px;
+}
+
+.single-trek-details{
+  background-color:rgba(255, 255, 255, 0.849);
+   padding: 2%;
+   margin:auto;
+   max-width: 80%;
+   border:solid;
+   border-radius:1rem;
+   border-color:rgb(241, 179, 6);
+   box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.712);
+}
+
+.infoType{
+   text-decoration: underline;
+}
+
+.trek-description{
+   font-style: italic;
+}
+.text-highlighted{
+  color: rgb(248, 184, 8);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+#successBox, #loadingBox, #errorBox{
+display: none;
+
+margin-bottom: 2%;
+}
+
+nav{
+margin-bottom: 2%;
+}
+
+.treksPlaceholder{
+  background-color:rgba(255, 255, 255, 0.849);
+flex: 0 1 30%;
+margin: 2%;
+max-width:25%;
+border:solid;
+border-color:rgb(241, 179, 6);
+box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.712);
+}
+
+#treks-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.411); 
+   /* border */
+  background: rgb(246, 217, 154);
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.712);
+}
+
+
+.img:before {
+display: block;
+content: '';
+padding-top: 100%;
+}
+
+img {
+display: block;
+width:100%;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+@media screen and (max-width:900px){
+.treksPlaceholder{
+  flex: 0 1 80%;
+ 
+}
+}
+
+.profile-img{
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  position: static;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+.profile-info{
+  padding: 0;
+}
+
+.details-img{
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  position: static;
+  top: 0;
+  left: 0;
+  transform: none;
+  border:1px solid black;
+}
+
+.no-found-picture, .home-picture{
+  top:0;
+  left:0;
+  transform: none;
+  width: 100%;
+  position: static;
+  margin: 0 auto;
+}
+
+.create-trek{
+  background-color:rgba(255, 255, 255, 0.534);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  border-radius:15px;
+  padding:2rem;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.712);
+}
+
+.home{
+  background-color:rgba(255, 255, 255, 0.781);
+  max-width:90%;
+}
+.footer{
+  color: rgba(255, 255, 255, 0.513);
+}
+.no-found-template{
+color: rgba(255, 255, 255, 0.513);
+}
