@@ -144,12 +144,59 @@ import {
         });
 
         this.get("/catalog/:id", function (ctx) {
+            setHeaderInfo(ctx);
+            const id = ctx.params.id;
 
+            get("appdata", `teams/${id}`, "Kinvey")
+                .then(data => {
+                    ctx.members = data.members;
+                    ctx.name = data.name;
+                    ctx.comment = data.comment;
+                    ctx.isAuthor = data.members.find(x => x.username === sessionStorage.getItem("username"));
+                    ctx.isOnTeam = data.members.find(x => x.username === sessionStorage.getItem("username"));
+                    ctx.teamId = data._id;
+                    sessionStorage.setItem("teamId", data._id); // Think
+
+                    this.loadPartials(getPartials())
+                        .partial("../templates/catalog/details.hbs");
+                })
+                .catch(console.error);
         });
 
         this.get("/edit/:id", function (ctx) {
+            const id = ctx.params.id;
+            setHeaderInfo(ctx);
 
+            get("appdata", `teams/${id}`, "Kinvey")
+                .then(data => {
+                    ctx.name = data.name;
+                    ctx.comment = data.comment;
+                    ctx.members = data.members;
+                    ctx.teamId = data._id;
+                    this.loadPartials(getPartials())
+                        .partial("../templates/edit/editPage.hbs");
+                })
+                .catch(console.error);
         });
+
+        this.post("/edit/:id", function (ctx) {
+            const id = ctx.params.id;
+            const {
+                name,
+                comment,
+                members
+            } = ctx.params;
+
+            put("appdata", `teams/${id}`, {
+                    name,
+                    comment,
+                    members
+                }, "Kinvey")
+                .then(() => {
+                    ctx.redirect("/index.html");
+                })
+                .catch(console.error);
+        })
 
         function setHeaderInfo(ctx) {
             ctx.loggedIn = sessionStorage.getItem("authtoken") !== null;
