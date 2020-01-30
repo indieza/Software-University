@@ -1,0 +1,63 @@
+#dashboard-holder{
+  padding:2%;
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+.overflow-hidden { overflow: hidden; }
+
+.details{
+  display: block;
+  color: rgb(0, 0, 0);      
+  width: 25%;
+  margin: 1.5rem auto 48px auto;      
+  text-align: center;      
+  border-radius: 15px;    
+  font-size: 18px;
+  /* padding: 0.5rem 0;   */
+  font-weight: bold;
+}
+.card-image{
+max-height: 50%;
+}
+.card-text{
+top:10px;
+max-height:12%;
+}
+.card-image{
+  height:185px;
+  width: 80%;
+}
+
+.current-card{
+  background-color:rgba(255, 255, 255, 0.849);
+flex: 0 1 30%;
+margin: 2%;
+max-width:250px;
+min-width: 200px;
+border:solid;
+border-color:rgb(153, 221, 75);
+box-shadow:0 0 1.5rem 0 rgba(0, 0, 0, 0.712);
+}
+.current-card:nth-child(3n-1){
+  border-color:rgb(153, 221, 75);
+}
+.current-card:nth-child(3n-2){
+  border-color:rgb(93, 199, 231);
+}
+.current-card:nth-child(3n-3){
+  border-color:rgb(231, 194, 93);
+}
+
+#dashboard-holder{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#dashboard-holder .btn{
+  margin:auto;
+  margin-top:20px;
+  color: white;
+  font-size: 18px;
+}

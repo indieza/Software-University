@@ -1,0 +1,250 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SoftTerest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/home.css" />
+  <link rel="stylesheet" href="./styles/login.css" />
+  <link rel="stylesheet" href="./styles/dashboard.css" />
+  <link rel="stylesheet" href="./styles/ideas.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+      <a class="navbar-brand" href="">
+        <img src="./images/idea.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Dashboard</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="">Create</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="notifications">
+    <div style="display: none;" id="successBox" class="alert alert-success" role="alert">{{Success message}}
+    </div>
+    <div style="display: none;" id="loadingBox" class="alert alert-info" role="alert">Loading...</div>
+    <div style="display: none;" id="errorBox" class="alert alert-danger" role="alert">{{Error message}}</div>
+  </div>
+
+  <div class="container home wrapper  my-md-5 pl-md-5">
+    <div class="d-md-flex flex-md-equal ">
+      <div class="col-md-5">
+        <img class="responsive" src="./images/01.svg" />
+      </div>
+      <div class="home-text col-md-7">
+        <h2 class="featurette-heading">Do you wonder if your idea is good?</h2>
+        <p class="lead">Join our family =)</p>
+        <p class="lead">Post your ideas!</p>
+        <p class="lead">Find what other people think!</p>
+        <p class="lead">Comment on other people's ideas.</p>
+      </div>
+    </div>
+    <div class="bottom text-center">
+      <a class="btn btn-secondary btn-lg " href="">Get Started</a>
+    </div>
+  </div>
+
+  <div class="container home wrapper  my-md-5 pl-md-5">
+    <div class="row-form d-md-flex flex-mb-equal ">
+      <div class="col-md-4">
+        <img class="responsive" src="./images/idea.png" alt="">
+      </div>
+      <form class="form-user col-md-7" action="" method="">
+        <div class="text-center mb-4">
+          <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+        </div>
+        <div class="form-label-group">
+          <label for="inputUsername">Username</label>
+          <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required=""
+            autofocus="">
+        </div>
+        <div class="form-label-group">
+          <label for="inputPassword">Password</label>
+          <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password"
+            required="">
+        </div>
+        <div class="form-label-group">
+          <label for="inputRepeatPassword">Repeat Password</label>
+          <input type="password" id="inputRepeatPassword" name="repeatPassword" class="form-control"
+            placeholder="Repeat Password" required="">
+        </div>
+        <button class="btn btn-lg btn-dark btn-block" type="submit">Sign Up</button>
+        <div class="text-center mb-4">
+          <p class="alreadyUser"> Don't have account? Then just
+            <a href="">Sign-Up</a>!
+          </p>
+        </div>
+        <p class="mt-5 mb-3 text-muted text-center">© SoftTerest - 2019.</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container home wrapper  my-md-5 pl-md-5">
+    <div class="row-form d-md-flex flex-mb-equal ">
+      <div class="col-md-4">
+        <img class="responsive" src="./images/idea.png" alt="">
+      </div>
+      <form class="form-user col-md-7" action="" method="">
+        <div class="text-center mb-4">
+          <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+        </div>
+        <div class="form-label-group">
+          <label for="inputUsername">Username</label>
+          <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required=""
+            autofocus="">
+        </div>
+        <div class="form-label-group">
+          <label for="inputPassword">Password</label>
+          <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password"
+            required="">
+        </div>
+        <div class="text-center mb-4 text-center">
+          <button class="btn btn-lg btn-dark btn-block" type="submit">Sign In</button>
+          <p class="alreadyUser"> Don't have account? Then just
+            <a href="">Sign-Up</a>!
+          </p>
+        </div>
+        <p class="mt-5 mb-3 text-muted text-center">© SoftTerest - 2019.</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container home wrapper  my-md-5 pl-md-5">
+    <div class="profile home-text col-md-6 text-center col-lg">
+      <img class="profile-img" src="./images/user.png" />
+      <div class="profile-info">
+        <p>Username: <small>John</small></p>
+        <p class="infoType">Has 2 ideas =)</p>
+        <p>Dinner Recipe</p>
+        <p>4 easy DIY ideas to try!</p>
+        <p>No ideas yet</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="dashboard-holder">
+    <div class="card overflow-hidden current-card details" style="width: 20rem; height: 18rem;">
+      <div class="card-body">
+        <p class="card-text">Dinner Recipe</p>
+      </div>
+      <img class="card-image" src="./images/dinner.jpg" alt="Card image cap">
+      <a class="btn" href="">Details</a>
+    </div>
+    <div class="card overflow-hidden current-card details" style="width: 20rem; height: 18rem;">
+      <div class="card-body">
+        <p class="card-text">4 easy DIY ideas to try!</p>
+      </div>
+      <img class="card-image" src="./images/brightideacropped.jpg" alt="Card image cap">
+      <a class="btn" href="">Details</a>
+    </div>
+    <div class="card overflow-hidden current-card details" style="width: 20rem; height: 18rem;">
+      <div class="card-body">
+        <p class="card-text">Best Pilates Workouts to Do at Home</p>
+      </div>
+      <img class="card-image" src="./images/best-pilates-youtube-workouts-2__medium_4x3.jpg" alt="Card image cap">
+      <a class="btn" href="">Details</a>
+    </div>
+    <h1>No ideas yet! Be the first one :)</h1>
+  </div>
+
+  <div class="container home some">
+    <img class="det-img" src="./images/dinner.jpg" />
+    <div class="desc">
+      <h2 class="display-5">Dinner Recipe</h2>
+      <p class="infoType">Description:</p>
+      <p class="idea-description">There are few things as comforting as heaping bowl of pasta at the end of a long
+        day. With so many easy pasta recipes out there, there's something for every palate to love. That's why pasta
+        makes such a quick, easy dinner for your family—it's likely to satisfy everyone's cravings, due to its
+        versatility.</p>
+      <p class="infoType">Likes: <large>2</large>
+      </p>
+      <p class="infoType">Comments:</p>
+      <ul>
+        <li class="comment">Jonh: I really like this idea :)</li>
+        <li class="comment">No comments yet :(</li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <a class="btn detb" href="">Delete</a>
+    </div>
+    <form class="text-center" method="" action="">
+      <textarea class="textarea-det" name="newComment" id=""></textarea>
+      <button type="submit" class="btn detb" >Comment</button>
+      <a class="btn detb" href="">Like</a>
+    </form>
+  </div>
+
+  <div class="container home wrapper  my-md-5 pl-md-5">
+    <div class=" d-md-flex flex-mb-equal ">
+      <div class="col-md-6">
+        <img class="responsive-ideas create" src="./images/creativity_painted_face.jpg" alt="">
+      </div>
+      <form class="form-idea col-md-5" action="#/create" method="post">
+        <div class="text-center mb-4">
+          <h1 class="h3 mb-3 font-weight-normal">Share Your Idea</h1>
+        </div>
+        <div class="form-label-group">
+          <label for="ideaTitle">Title</label>
+          <input type="text" id="title" name="title" class="form-control" placeholder="What is your idea?" required=""
+            autofocus="">
+        </div>
+        <div class="form-label-group">
+          <label for="ideaDescription">Description</label>
+          <textarea type="text" name="description" class="form-control" placeholder="Description"
+            required=""></textarea>
+        </div>
+        <div class="form-label-group">
+          <label for="inputURL">Add Image</label>
+          <input type="text" id="imageURl" name="imageURL" class="form-control" placeholder="Image URL" required="">
+
+        </div>
+        <button class="btn btn-lg btn-dark btn-block" type="submit">Create</button>
+
+        <p class="mt-5 mb-3 text-muted text-center">© SoftTerest - 2019.</p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container-footer">
+      <span>© We cherish your ideas! Share them with others!</span>
+    </div>
+  </footer>
+</body>
+
+<!-- Libraries -->
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/handlebars/dist/handlebars.js"></script>
+<script src="node_modules/sammy/lib/sammy.js"></script>
+<script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+<script src="app.js"></script>
+
+</html>
