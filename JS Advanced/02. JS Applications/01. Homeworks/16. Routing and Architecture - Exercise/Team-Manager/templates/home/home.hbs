@@ -5,7 +5,7 @@
         <h1>Home Page</h1>
         {{#if loggedIn}}
         {{#if hasTeam}}
-        <a href="/catalog/:{{teamId}}">Go To Team</a>
+        <a href="/catalog/{{teamId}}">Go To Team</a>
         {{else}}
         <p>You are currently not a member of a team. View the <a href="/catalog">catalog</a> to join or create one.</p>
         {{/if}}
