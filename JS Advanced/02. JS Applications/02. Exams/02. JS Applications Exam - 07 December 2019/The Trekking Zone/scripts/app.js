@@ -123,6 +123,91 @@ import {
                     .catch(console.error);
             }
         });
+
+        this.get("/trek/:id", function (ctx) {
+            const id = ctx.params.id;
+            setHeaderInfo(ctx);
+
+            get("appdata", `treks/${id}`, "Kinvey")
+                .then(trek => {
+                    trek.isCreator = sessionStorage.getItem("userId") === trek._acl.creator;
+
+                    ctx.trek = trek;
+                    this.loadPartials(getPartials())
+                        .partial("../templates/trek/details.hbs");
+                })
+                .catch(console.error);
+        });
+
+        this.get("/edit/:id", function (ctx) {
+            const id = ctx.params.id;
+            setHeaderInfo(ctx);
+
+            get("appdata", `treks/${id}`, "Kinvey")
+                .then(trek => {
+                    ctx.trek = trek;
+
+                    this.loadPartials(getPartials())
+                        .partial("../templates/trek/edit.hbs");
+                })
+                .catch(console.error);
+        });
+
+        this.post("/edit/:id", function (ctx) {
+            const id = ctx.params.id;
+            const {
+                location,
+                dateTime,
+                description,
+                imageURL,
+                likes,
+                organizer
+            } = ctx.params;
+
+            put("appdata", `treks/${id}`, {
+                    location,
+                    dateTime,
+                    description,
+                    imageURL,
+                    likesCounter: likes,
+                    organizer
+                })
+                .then(() => {
+                    ctx.redirect("/index.html");
+                })
+                .catch(console.error);
+        });
+
+        this.get("/close/:id", function (ctx) {
+            setHeaderInfo(ctx);
+            const id = ctx.params.id;
+
+            del("appdata", `treks/${id}`, "Kinvey")
+                .then(() => {
+                    return ctx.redirect("/index.html");
+                })
+                .catch(console.error);
+        });
+
+        this.get("/like/:id", async function (ctx) {
+            const id = ctx.params.id;
+            setHeaderInfo(ctx);
+
+            const trek = await get("appdata", `treks/${id}`, "Kinvey");
+
+            put("appdata", `treks/${id}`, {
+                    location: trek.location,
+                    dateTime: trek.dateTime,
+                    description: trek.description,
+                    imageURL: trek.imageURL,
+                    likesCounter: trek.likesCounter + 1,
+                    organizer: trek.organizer
+                })
+                .then(() => {
+                    ctx.redirect(`/index.html`);
+                })
+                .catch(console.error);
+        });
     });
 
     app.run();
@@ -135,6 +220,7 @@ import {
     function saveAuthInfo(userInfo) {
         sessionStorage.setItem("authtoken", userInfo._kmd.authtoken);
         sessionStorage.setItem("username", userInfo.username);
+        sessionStorage.setItem("userId", userInfo._id);
     }
 
     function getPartials() {
