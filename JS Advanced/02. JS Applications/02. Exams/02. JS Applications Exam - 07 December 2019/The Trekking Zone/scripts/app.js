@@ -15,7 +15,7 @@ import {
             if (ctx.isLogged) {
                 await get("appdata", "treks", "Kinvey")
                     .then(treks => {
-                        ctx.treks = treks;
+                        ctx.treks = treks.sort((a, b) => b.likesCounter - a.likesCounter);
 
                         if (treks.length > 0) {
                             ctx.hasTreks = true;
@@ -55,6 +55,7 @@ import {
                         ctx.redirect("/index.html");
                     })
                     .catch(console.error);
+                displaySuccess("Successfully registered user!");
             }
         });
 
@@ -78,9 +79,10 @@ import {
                     }, "Basic")
                     .then(userInfo => {
                         saveAuthInfo(userInfo);
-                        ctx.redirect("/index.html");
+                        ctx.redirect("/profile");
+                        displaySuccess("Successfully logged user!");
                     })
-                    .catch(console.error);
+                    .catch(displayError("Invalid credentials! Please retry your request with correct credentials."));
             }
         });
 
@@ -91,6 +93,7 @@ import {
                     return ctx.redirect("/index.html");
                 })
                 .catch(console.error);
+            displaySuccess("Logout successful!");
         });
 
         this.get("/create", function (ctx) {
@@ -208,6 +211,19 @@ import {
                 })
                 .catch(console.error);
         });
+
+        this.get("/profile", async function (ctx) {
+            setHeaderInfo(ctx);
+            const allTreks = await get("appdata", "treks", "Kinvey");
+
+            const treks = allTreks.filter(t => t.organizer === sessionStorage.getItem("username"));
+            ctx.username = sessionStorage.getItem("username");
+            ctx.treksCount = treks.length;
+            ctx.treks = treks.map(x => x.location);
+
+            this.loadPartials(getPartials())
+                .partial("../templates/admin/profile.hbs");
+        });
     });
 
     app.run();
@@ -230,5 +246,23 @@ import {
             anonymousHome: "../templates/anonymousHome.hbs",
             noTreksHome: "../templates/noTreksHome.hbs"
         }
+    }
+
+    function displayError(message) {
+        const errorBox = document.getElementById("errorBox");
+        errorBox.style.display = "block";
+        errorBox.textContent = message;
+        setTimeout(() => {
+            errorBox.style.display = "none";
+        }, 5000);
+    }
+
+    function displaySuccess(message) {
+        const errorBox = document.getElementById("successBox");
+        errorBox.style.display = "block";
+        errorBox.textContent = message;
+        setTimeout(() => {
+            errorBox.style.display = "none";
+        }, 5000);
     }
 })();
