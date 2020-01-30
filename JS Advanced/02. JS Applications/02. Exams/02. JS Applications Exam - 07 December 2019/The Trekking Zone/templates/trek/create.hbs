@@ -1,0 +1,32 @@
+{{> header}}
+
+<form class="create-trek" action="/create" method="post">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Wish for a new adventure!</h1>
+        <p>Fill up the following information!</p>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" name="location" class="form-control" placeholder="Location" required="" autofocus="">
+        <label for="inputTrekName">Location</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" name="dateTime" class="form-control" placeholder="Date" required="">
+        <label for="inputTrekDate">Date</label>
+    </div>
+
+    <div class="form-label-group">
+        <textarea type="text" name="description" class="form-control" placeholder="Description" required=""></textarea>
+        <label for="inputTrekDescription">Description</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" name="imageURL" class="form-control" placeholder="Image" required="" autofocus="">
+        <label for="inputTrekImage">Image</label>
+    </div>
+
+    <button class="btn btn-lg btn-dark btn-block" type="submit">Make a wish =)</button>
+</form>
+
+{{> footer}}

@@ -1,0 +1,23 @@
+{{> header}}
+
+{{#if isLogged }}
+{{#if hasTreks}}
+<div id="treks-list">
+    {{#each treks}}
+    <a href="/trek/{{_id}}" class="card overflow-hidden treksPlaceholder trek-details"
+        style="width: 20rem; height: 18rem;">
+        <div class="card-body">
+            <p class="card-text">{{location}}</p>
+        </div>
+        <img class="card-image" src="{{imageURL}}" alt="Card image cap">
+    </a>
+    {{/each}}
+</div>
+{{else}}
+{{> noTreksHome}}
+{{/if}}
+{{else}}
+{{> anonymousHome}}
+{{/if}}
+
+{{>footer}}
