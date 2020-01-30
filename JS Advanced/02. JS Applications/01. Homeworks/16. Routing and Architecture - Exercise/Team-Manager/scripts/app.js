@@ -10,38 +10,36 @@ import {
         this.use("Handlebars", "hbs");
 
         this.get("/index.html", function (ctx) {
+            setHeaderInfo(ctx);
+            ctx.hasTeam = false; // TODO
 
+            this.loadPartials(getPartials())
+                .partial("../templates/home/home.hbs");
         });
 
         this.get("/about", function (ctx) {
+            setHeaderInfo(ctx);
 
+            this.loadPartials(getPartials())
+                .partial("../templates/about/about.hbs");
         });
 
         this.get("/login", function (ctx) {
+            setHeaderInfo(ctx);
 
+            this.loadPartials(getPartials())
+                .partial("../templates/login/loginPage.hbs");
         });
 
         this.post("/login", function (ctx) {
-            const {
-                username,
-                password
-            } = ctx.params;
 
-            if (username && password) {
-                post("user", "login", {
-                        username,
-                        password
-                    }, "Basic")
-                    .then(userInfo => {
-                        saveAuthInfo(userInfo);
-                        ctx.redirect("/index.html");
-                    })
-                    .catch(console.error);
-            }
         });
 
         this.get("/register", function (ctx) {
+            setHeaderInfo(ctx);
 
+            this.loadPartials(getPartials())
+                .partial("../templates/register/registerPage.hbs");
         });
 
         this.post("/register", function (ctx) {
@@ -49,13 +47,7 @@ import {
         });
 
         this.get("/logout", function (ctx) {
-            //setHeaderInfo(ctx);
-            post("user", "_logout", {}, "Kinvey")
-                .then(() => {
-                    sessionStorage.clear();
-                    return ctx.redirect("/index.html");
-                })
-                .catch(console.error);
+
         });
 
         this.get("/catalog", async function (ctx) {
@@ -79,11 +71,12 @@ import {
         });
 
         function setHeaderInfo(ctx) {
-
+            ctx.loggedIn = sessionStorage.getItem("authtoken") !== null;
+            ctx.username = sessionStorage.getItem("username");
         }
 
         function saveAuthInfo(userInfo) {
-
+            sessionStorage.setItem("username", userInfo.username);
         }
     });
 
