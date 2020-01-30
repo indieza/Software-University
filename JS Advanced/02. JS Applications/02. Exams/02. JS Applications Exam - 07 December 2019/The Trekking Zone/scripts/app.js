@@ -21,7 +21,7 @@ import {
                             ctx.hasTreks = true;
                         }
                     })
-                    .catch(console.error);
+                    .catch(displayError);
 
                 this.loadPartials(getPartials())
                     .partial("../templates/home.hbs");
@@ -54,7 +54,7 @@ import {
                         saveAuthInfo(userInfo);
                         ctx.redirect("/index.html");
                     })
-                    .catch(console.error);
+                    .catch(displayError);
                 displaySuccess("Successfully registered user!");
             }
         });
@@ -80,10 +80,10 @@ import {
                     .then(userInfo => {
                         saveAuthInfo(userInfo);
                         ctx.redirect("/profile");
-                        displaySuccess("Successfully logged user!");
                     })
-                    .catch(displayError("Invalid credentials! Please retry your request with correct credentials."));
+                    .catch(displayError);
             }
+            displaySuccess("Successfully logged user!");
         });
 
         this.get("/logout", function (ctx) {
@@ -123,8 +123,10 @@ import {
                     .then(() => {
                         ctx.redirect("/index.html");
                     })
-                    .catch(console.error);
+                    .catch(displayError);
             }
+
+            displaySuccess("Trek created successfully.");
         });
 
         this.get("/trek/:id", function (ctx) {
@@ -139,7 +141,7 @@ import {
                     this.loadPartials(getPartials())
                         .partial("../templates/trek/details.hbs");
                 })
-                .catch(console.error);
+                .catch(displayError);
         });
 
         this.get("/edit/:id", function (ctx) {
@@ -153,7 +155,7 @@ import {
                     this.loadPartials(getPartials())
                         .partial("../templates/trek/edit.hbs");
                 })
-                .catch(console.error);
+                .catch(displayError);
         });
 
         this.post("/edit/:id", function (ctx) {
@@ -178,7 +180,9 @@ import {
                 .then(() => {
                     ctx.redirect("/index.html");
                 })
-                .catch(console.error);
+                .catch(displayError);
+
+            displaySuccess("Trek edited successfully.");
         });
 
         this.get("/close/:id", function (ctx) {
@@ -189,7 +193,9 @@ import {
                 .then(() => {
                     return ctx.redirect("/index.html");
                 })
-                .catch(console.error);
+                .catch(displayError);
+
+            displaySuccess("You closed the trek successfully.");
         });
 
         this.get("/like/:id", async function (ctx) {
@@ -209,7 +215,7 @@ import {
                 .then(() => {
                     ctx.redirect(`/index.html`);
                 })
-                .catch(console.error);
+                .catch(displayError);
         });
 
         this.get("/profile", async function (ctx) {
@@ -248,10 +254,13 @@ import {
         }
     }
 
-    function displayError(message) {
+    function displayError() {
         const errorBox = document.getElementById("errorBox");
         errorBox.style.display = "block";
-        errorBox.textContent = message;
+        errorBox.textContent = "Invalid credentials! Please retry your request with correct credentials.";
+        document.getElementById("inputUsername").value = "";
+        document.getElementById("inputPassword").value = "";
+        document.getElementById("inputRePassword").value = "";
         setTimeout(() => {
             errorBox.style.display = "none";
         }, 5000);
