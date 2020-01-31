@@ -41,7 +41,6 @@ function solve() {
         }
 
         for (let col = 0; col < Math.sqrt(cells.length); col++) {
-
             isValid = hasDuplicates(field.map(x => x[col]));
 
             if (!isValid) {
