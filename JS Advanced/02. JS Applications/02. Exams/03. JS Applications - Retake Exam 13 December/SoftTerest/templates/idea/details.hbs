@@ -1,0 +1,33 @@
+{{> header}}
+
+<div class="container home some">
+    <img class="det-img" src="{{idea.imageURL}}" />
+    <div class="desc">
+        <h2 class="display-5">{{idea.title}}</h2>
+        <p class="infoType">Description:</p>
+        <p class="idea-description">{{idea.description}}</p>
+        <p class="infoType">Likes: <large>{{idea.likes}}</large>
+        </p>
+        <p class="infoType">Comments:</p>
+        <ul>
+            {{#each idea.comments}}
+            <li class="comment">{{this}}</li>
+            {{else}}
+            <li class="comment">No comments yet! :(</li>
+            {{/each}}
+        </ul>
+    </div>
+    {{#if idea.isCreator}}
+    <div class="text-center">
+        <a class="btn detb" href="/delete/{{idea._id}}">Delete</a>
+    </div>
+    {{else}}
+    <form class="text-center" method="" action="/comment/{{idea._id}}">
+        <textarea class="textarea-det" name="newComment" id=""></textarea>
+        <button type="submit" class="btn detb">Comment</button>
+        <a class="btn detb" href="/like/{{idea._id}}">Like</a>
+    </form>
+    {{/if}}
+</div>
+
+{{> footer}}
