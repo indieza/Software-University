@@ -1,0 +1,50 @@
+.home{
+ background-color:rgba(0, 0, 0, 0.308);
+ margin: 0.5em auto;
+ margin-top: 5em;
+}
+
+.responsive {
+  width: 100%;
+  /* max-width: 400px; */
+  height: auto;
+}
+.btn{
+  background-color: rgb(108, 107, 110);
+}
+.home-text{
+  color:white;
+}
+.wrapper {
+  position: relative;
+  padding:2em;
+}
+
+.wrapper .bottom {
+  position: relative;
+  width: 100%;
+  top: 25%;
+}
+
+.btn{
+  min-width: 20%;
+}
+
+textarea {
+  resize: none;
+    width: 100%;
+    height: 6em;
+}
+
+.btn {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(90%);
+  color: white;
+}

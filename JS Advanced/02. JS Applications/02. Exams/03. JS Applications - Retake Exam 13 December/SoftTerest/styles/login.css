@@ -1,0 +1,15 @@
+.form-user{
+  color:white;
+  margin: 2em;
+}
+@media only screen and (min-width: 780px)  {
+  .row-form{
+    position: relative;
+      float: center;
+      top: 20%;
+  }
+}
+.btn{
+  border: none;
+  margin-top: 1em;
+}
