@@ -1,12 +1,12 @@
 class Forum {
     constructor() {
-        this.users = [];
-        this.questions = [];
-        this.id = 1;
+        this._users = [];
+        this._questions = [];
+        this._id = 1;
     }
 
     register(username, password, repeatPassword, email) {
-        if (username === "" || password === "" || repeatPassword === "" || email === "") {
+        if (!username || !password || !repeatPassword || !email) {
             throw new Error("Input can not be empty");
         }
 
@@ -14,24 +14,24 @@ class Forum {
             throw new Error("Passwords do not match");
         }
 
-        if (this.users.find(u => u.username === username) || this.users.find(u => u.email === email)) {
+        if (this._users.find(u => u.username === username) || this._users.find(u => u.email === email)) {
             throw new Error("This user already exists!");
         }
 
         const user = {
             username: username,
             password: password,
-            repeatPassword: repeatPassword,
             email: email,
+            repeatPassword: repeatPassword,
             isLoggedIn: false
         };
 
-        this.users.push(user);
+        this._users.push(user);
         return `${username} with ${email} was registered successfully!`;
     }
 
     login(username, password) {
-        const user = this.users.find(u => u.username === username);
+        const user = this._users.find(u => u.username === username);
 
         if (!user) {
             throw new Error("There is no such user");
@@ -44,12 +44,11 @@ class Forum {
     }
 
     logout(username, password) {
-        const user = this.users.find(u => u.username === username);
+        const user = this._users.find(u => u.username === username);
 
         if (!user) {
             throw new Error("There is no such user");
         }
-
 
         if (user.password === password && user.isLoggedIn === true) {
             user.isLoggedIn = false;
@@ -58,43 +57,45 @@ class Forum {
     }
 
     postQuestion(username, question) {
-        const user = this.users.find(u => u.username === username);
+        const user = this._users.find(u => u.username === username);
 
-        if (!user || !user.isLoggedIn) {
+        if (!user || user.isLoggedIn === false) {
             throw new Error("You should be logged in to post questions");
         }
 
-        if (question === "") {
+        if (!question) {
             throw new Error("Invalid question");
         }
 
         const targetQuestion = {
-            id: this.id++,
+            id: this._id++,
             username: username,
             question: question,
             answers: []
         };
 
-        this.questions.push(targetQuestion);
+        this._questions.push(targetQuestion);
         return "Your question has been posted successfully";
     }
 
     postAnswer(username, questionId, answer) {
-        const user = this.users.find(u => u.username === username);
+        const user = this._users.find(u => u.username === username);
 
-        if (!user || !user.isLoggedIn) {
+        if (!user || user.isLoggedIn === false) {
             throw new Error("You should be logged in to post answers");
         }
 
-        if (answer === "") {
+        if (!answer) {
             throw new Error("Invalid answer");
         }
 
-        if (!this.questions.find(q => q.id === questionId)) {
+        const question = this._questions.find(q => q.id === questionId);
+
+        if (!question) {
             throw new Error("There is no such question");
         }
 
-        this.questions.find(q => q.id === questionId).answers.push({
+        question.answers.push({
             username: username,
             answer: answer
         });
@@ -105,7 +106,7 @@ class Forum {
     showQuestions() {
         let result = "";
 
-        for (const question of this.questions) {
+        for (const question of this._questions) {
             result += `Question ${question.id} by ${question.username}: ${question.question}\n`;
 
             for (const answer of question.answers) {
