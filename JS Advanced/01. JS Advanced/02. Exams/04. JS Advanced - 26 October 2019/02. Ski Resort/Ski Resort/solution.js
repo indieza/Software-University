@@ -60,18 +60,18 @@ class SkiResort {
         if (this.voters === 0) {
             return "No votes yet";
         }
-        let grade = this.hotels.reduce((a, b) => a + b.points, 0)/this.voters;
+        let grade = this.hotels.reduce((a, b) => a + b.points, 0) / this.voters;
         return `Average grade: ${grade.toFixed(2)}`;
     }
 
-    
+
 }
 
 module.exports = SkiResort;
 
 let res = new SkiResort("Some");
 console.log(res.build("Sun", 10));
-console.log(res.build('Avenue',5))
+console.log(res.build('Avenue', 5))
 console.log(res.book('Sun', 5))
 console.log(res.book('Avenue', 5))
 console.log(res.leave('Sun', 3, 2));
@@ -83,4 +83,3 @@ console.log(res.bestHotel);
 
 let r = new SkiResort("a");
 console.log(r.bestHotel);
-
