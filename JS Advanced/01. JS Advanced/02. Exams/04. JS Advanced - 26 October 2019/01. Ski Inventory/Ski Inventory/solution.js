@@ -4,14 +4,14 @@ function solve() {
     const html = {
         availableProductsList: () => document.querySelector("#products > ul"),
         myProductsList: () => document.querySelector("#myProducts > ul"),
-        addButton: () => document.getElementsByTagName("button")[1],
+        addButton: () => document.querySelector('#add-new button'),
         filterButton: () => document.querySelector("#products > div > button"),
         buyButton: () => document.querySelector("#myProducts > button"),
         productFilterInput: () => document.getElementsByTagName("input")[0],
-        productNameInput: () => document.querySelectorAll('#add-new input')[0],
-        productQuantityInput: () => document.querySelectorAll('#add-new input')[1],
-        productPriceInput: () => document.querySelectorAll('#add-new input')[2],
-        totalPriceField: () => document.getElementsByTagName("h1")[1]
+        productNameInput: () => document.querySelectorAll("#add-new input")[0],
+        productQuantityInput: () => document.querySelectorAll("#add-new input")[1],
+        productPriceInput: () => document.querySelectorAll("#add-new input")[2],
+        totalPriceField: () => document.querySelectorAll("h1")[1]
     };
 
     html.addButton().addEventListener("click", addProductToList);
