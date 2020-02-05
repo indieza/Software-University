@@ -93,7 +93,7 @@ import {
                     return ctx.redirect("/index.html");
                 })
                 .catch(console.error);
-            displaySuccess("Logout successful!");
+            displaySucczess("Logout successful!");
         });
 
         this.get("/create", function (ctx) {
