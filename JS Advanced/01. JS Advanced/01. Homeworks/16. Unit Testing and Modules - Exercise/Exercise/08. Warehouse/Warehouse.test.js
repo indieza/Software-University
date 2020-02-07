@@ -45,10 +45,21 @@ describe('Tests', () => {
         });
     });
 
-    describe('Test orderProducts() method', () => {
-        it('Test none products functionality', () => {
-            const result = warehouse.orderProducts("Food");
-            expect(result).to.deep.equal({});
+    describe("Test orderProduct() method", function () {
+        it("Test functionality with available products", function () {
+            warehouse.addProduct("Drink", "A", 2);
+            warehouse.addProduct("Drink", "B", 5);
+            warehouse.addProduct("Food", "Z", 1);
+            warehouse.addProduct("Food", "S", 2);
+
+            const result = JSON.stringify(warehouse.orderProducts("Drink"));
+
+            expect(result).to.equal(`{"B":5,"A":2}`);
+        });
+
+        it("Test functionality without available products", function () {
+            const result = JSON.stringify(warehouse.orderProducts("Drink"));
+            expect(result).to.equal(`{}`);
         });
     });
 
