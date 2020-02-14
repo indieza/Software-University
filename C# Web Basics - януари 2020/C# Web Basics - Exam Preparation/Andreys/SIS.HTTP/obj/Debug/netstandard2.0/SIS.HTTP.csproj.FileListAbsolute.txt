@@ -1,0 +1,8 @@
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\bin\Debug\netstandard2.0\SIS.HTTP.deps.json
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\bin\Debug\netstandard2.0\SIS.HTTP.dll
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\bin\Debug\netstandard2.0\SIS.HTTP.pdb
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.dll
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.HTTP\obj\Debug\netstandard2.0\SIS.HTTP.pdb

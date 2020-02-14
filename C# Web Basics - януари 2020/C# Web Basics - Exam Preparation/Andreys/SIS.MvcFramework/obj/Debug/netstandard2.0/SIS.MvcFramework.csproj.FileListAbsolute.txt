@@ -1,0 +1,11 @@
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.deps.json
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.dll
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.MvcFramework.pdb
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.HTTP.dll
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\bin\Debug\netstandard2.0\SIS.HTTP.pdb
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csprojAssemblyReference.cache
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfoInputs.cache
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.AssemblyInfo.cs
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.csproj.CopyComplete
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.dll
+D:\Documents\GitHub\Software-University\C# Web Basics - януари 2020\C# Web Basics - Exam Preparation\Andreys\SIS.MvcFramework\obj\Debug\netstandard2.0\SIS.MvcFramework.pdb

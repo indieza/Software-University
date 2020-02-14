@@ -6,6 +6,7 @@
 
     using SIS.MvcFramework;
     using SIS.HTTP;
+    using Andreys.Services;
 
     public class Startup : IMvcApplication
     {
@@ -19,6 +20,7 @@
 
         public void ConfigureServices(IServiceCollection serviceCollection)
         {
+            serviceCollection.Add<IUsersService, UsersService>();
         }
     }
 }
