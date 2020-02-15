@@ -23,7 +23,7 @@ namespace SIS.MvcFramework
             application.Configure(routeTable);
             AutoRegisterStaticFilesRoutes(routeTable);
             AutoRegisterActionRoutes(routeTable, application, serviceCollection);
-            
+
             var logger = serviceCollection.CreateInstance<ILogger>();
             logger.Log("Registered routes:");
             foreach (var route in routeTable)

@@ -1,9 +1,9 @@
 ﻿namespace SIS.HTTP
 {
     using System;
-    using System.Web;
-    using System.Text;
     using System.Collections.Generic;
+    using System.Text;
+    using System.Web;
 
     /// <summary>
     /// Represents an HTTP Request with properties for the <c>Request Line</c>, <c>Request Headers</c> and <c>Request Body</c>.

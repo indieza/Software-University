@@ -2,8 +2,6 @@
 {
     using Andreys.Data;
     using Andreys.Models;
-    using System;
-    using System.Collections.Generic;
     using System.Linq;
     using System.Security.Cryptography;
     using System.Text;
@@ -15,6 +13,11 @@
         public UsersService(AndreysDbContext db)
         {
             this.db = db;
+        }
+
+        public bool EmailExists(string email)
+        {
+            return this.db.Users.Any(x => x.Email == email);
         }
 
         public string GetUserId(string username, string password)

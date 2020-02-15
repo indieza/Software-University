@@ -4,9 +4,6 @@
     using Andreys.ViewModels.Users;
     using SIS.HTTP;
     using SIS.MvcFramework;
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public class UsersController : Controller
     {
@@ -19,6 +16,11 @@
 
         public HttpResponse Login()
         {
+            if (this.IsUserLoggedIn())
+            {
+                return this.Redirect("/");
+            }
+
             return this.View();
         }
 
@@ -37,6 +39,11 @@
 
         public HttpResponse Register()
         {
+            if (this.IsUserLoggedIn())
+            {
+                return this.Redirect("/");
+            }
+
             return this.View();
         }
 
@@ -45,31 +52,40 @@
         {
             if (input.Password.Length < 6 || input.Password.Length > 20)
             {
-                return this.Error("Password must be at least 6 characters and at most 20");
+                return this.Redirect("/Users/Register");
             }
 
             if (input.Username.Length < 4 || input.Username.Length > 10)
             {
-                return this.Error("Username must be at least 4 characters and at most 10");
+                return this.Redirect("/Users/Register");
             }
 
             if (input.Password != input.ConfirmPassword)
             {
-                return this.Error("Password should match.");
+                return this.Redirect("/Users/Register");
+            }
+
+            if (this.usersService.EmailExists(input.Email))
+            {
+                return this.Redirect("/Users/Register");
             }
 
             if (this.usersService.UsernameExists(input.Username))
             {
-                return this.Error("Username already in use.");
+                return this.Redirect("/Users/Register");
             }
 
             this.usersService.Register(input.Username, input.Email, input.Password);
             return this.Redirect("/Users/Login");
         }
 
-        [HttpGet("/Logout")]
         public HttpResponse Logout()
         {
+            if (!this.IsUserLoggedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
             this.SignOut();
             return this.Redirect("/");
         }

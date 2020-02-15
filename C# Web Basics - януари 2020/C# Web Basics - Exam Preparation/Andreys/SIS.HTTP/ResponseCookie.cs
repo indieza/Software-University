@@ -64,8 +64,8 @@
         public bool HttpOnly { get; set; }
 
         /// <summary>
-        /// Cookie security attribute - <c>SameSite</c>. 
-        /// SameSite prevents the browser from sending this cookie along with cross-site requests. 
+        /// Cookie security attribute - <c>SameSite</c>.
+        /// SameSite prevents the browser from sending this cookie along with cross-site requests.
         /// The main goal is mitigate the risk of cross-origin information leakage. It also provides some protection against cross-site request forgery attacks.
         /// </summary>
         public SameSiteType SameSite { get; set; }

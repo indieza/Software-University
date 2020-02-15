@@ -1,7 +1,7 @@
 ﻿namespace SIS.HTTP
 {
-    using System.Text;
     using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// Represents an HTTP Response with properties for the <c>Response Status Line</c>, <c>Response Headers</c> and <c>Response Body</c>.

@@ -1,9 +1,7 @@
 ﻿namespace Andreys.Models
 {
     using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Text;
 
     public class User
     {
@@ -21,6 +19,7 @@
         [Required]
         public string Password { get; set; }
 
+        [Required]
         public string Email { get; set; }
     }
 }

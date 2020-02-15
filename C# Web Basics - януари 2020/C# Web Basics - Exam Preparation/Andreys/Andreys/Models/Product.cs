@@ -1,9 +1,6 @@
 ﻿namespace Andreys.Models
 {
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Text;
 
     public class Product
     {
@@ -16,6 +13,7 @@
         [MaxLength(10)]
         public string Description { get; set; }
 
+        [Required]
         public string ImageUrl { get; set; }
 
         [Required]
