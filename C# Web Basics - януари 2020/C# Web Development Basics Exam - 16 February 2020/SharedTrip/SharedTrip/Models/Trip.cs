@@ -26,7 +26,7 @@ namespace SharedTrip.Models
         [Range(typeof(int), "2", "6"), Required]
         public int Seats { get; set; }
 
-        [MinLength(80), Required]
+        [MaxLength(80), Required]
         public string Description { get; set; }
 
         public string ImagePath { get; set; }

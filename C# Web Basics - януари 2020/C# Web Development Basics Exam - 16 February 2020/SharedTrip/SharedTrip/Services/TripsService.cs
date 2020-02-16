@@ -69,8 +69,9 @@
             };
 
             // Make mapping table validation
-            if (!this.dbContext.UserTrips.Any(x => x.TripId == userTrip.TripId && x.UserId == userTrip.UserId))
+            if (!this.dbContext.UserTrips.Any(x => x.TripId == userTrip.TripId && x.UserId == userTrip.UserId) && targetTrip.Seats > 0)
             {
+                targetTrip.Seats -= 1;
                 targetTrip.UserTrips.Add(userTrip);
                 dbContext.SaveChanges();
                 return true;
