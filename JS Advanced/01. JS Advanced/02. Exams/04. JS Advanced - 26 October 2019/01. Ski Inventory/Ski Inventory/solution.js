@@ -80,13 +80,14 @@ function solve() {
         const filterValue = html.productFilterInput().value;
         const allAvailableProducts = document.querySelectorAll("#products ul li span");
 
-        allAvailableProducts.forEach(product => {
-            if (!product.innerHTML.toLocaleLowerCase().includes(filterValue)) {
-                product.parentNode.style.display = "none";
-            } else {
-                product.parentNode.style.display = "block";
-            }
-        });
+		for (var i = 0; i < allAvailableProducts.length; i++) {
+			const product = allAvailableProducts[i];
+			if (!product.innerHTML.toUpperCase().includes(filterValue.toUpperCase())) {
+						product.parentNode.style.display = "none";
+					} else {
+						product.parentNode.style.display = "block";
+					}
+		}
 
         html.productFilterInput().value = "";
     }
