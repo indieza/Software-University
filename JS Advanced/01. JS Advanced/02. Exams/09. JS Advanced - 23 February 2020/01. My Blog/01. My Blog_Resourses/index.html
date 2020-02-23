@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="site">
+        <header>
+            <h1>My Blog</h1>
+            <section>
+                <blockquote>
+                    "Learning never exhausts the mind."
+                    <cite>Leonardo da Vinci</cite>
+                </blockquote>
+            </section>
+        </header>
+        <div class="site-content">
+            <main>
+                <section>
+                    <h2>Articles</h2>
+                </section>
+            </main>
+            <aside>
+                <section>
+                    <h2>Create New Article</h2>
+                    <form>
+                        <p>
+                            <label for="creator">Author</label>
+                            <input type="text" id="creator">
+                        </p>
+                        <p>
+                            <label for="title">Title</label>
+                            <input type="text" id="title">
+                        </p>
+                        <p>
+                            <label for="category">Category</label>
+                            <input type="text" id="category">
+                        </p>
+                        <p>
+                            <label for="content">Content</label>
+                            <textarea name="content" id="content"></textarea>
+                        </p>
+                        <button class="btn create">Create</button>
+                    </form>
+                </section>
+                <section class="archive-section">
+                    <h2>Archive</h2>
+                    <ul>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+        <footer>
+            <p>My Blog &copy; This is the best blog ever!</p>
+        </footer>
+    </div>
+</body>
+<script src="app.js"></script>
+<script>
+    document.onload = solve();
+</script>
+
+</html>

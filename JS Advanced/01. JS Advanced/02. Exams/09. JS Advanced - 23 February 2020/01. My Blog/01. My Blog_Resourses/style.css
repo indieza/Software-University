@@ -1,0 +1,128 @@
+*, *:before, *:after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #234465;
+}
+ul li{
+  list-style-type: square;
+  list-style-position: inside;
+}
+.site{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  border-bottom:0.2rem solid #234465;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #234465;
+  color: white;
+}
+header h1{
+  flex: 1 1 auto;
+  margin: 0.2em 0.2em 0em 0.5em;
+  border:none;
+}
+header section{
+  flex: 1 1 auto;
+  text-align: right;
+  margin:0.5em 0.5em;
+}
+.site-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+p{
+  margin: 0.2em 0;
+}
+h2{
+  border-bottom: 0.1em solid #234465;
+  margin: 0.5rem;
+}
+main, aside{
+  border: dashed 0.1rem #234465;
+  box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281) ;
+  margin: 1rem 1rem;
+  padding: 0.5em;
+}
+main{
+  flex: 1 1 65vw;
+  min-height: 50vh;
+}
+main article{
+  margin: 0.5rem;
+}
+.buttons{
+  text-align: right;
+}
+.btn{
+  font-size: 0.8rem;
+  padding: 0.5em 1em;
+  border:none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  color:white;
+}
+.btn:hover{
+  background-color: #4d657e;
+  color: white;
+}
+aside{
+  flex: 1 1 25vw;
+}
+
+form>p,button{
+  margin: 0.5rem;
+}
+input{
+  padding: 0.5em;
+  border:none;
+  border-bottom: solid 0.1rem #40493B;
+}
+
+form input{
+  width: 100%;
+}
+
+form textarea{
+  width: 100%;
+  height: 10rem;
+  border: solid 0.1rem #40493B
+}
+.archive-section>ul{
+  margin:1em;
+}
+footer{
+  padding: 0.8em ;
+  margin-top: auto;
+  border-top: solid #40493B;
+}
+
+.delete{
+  background-color: rgb(207, 58, 21);
+}
+.archive{
+  background-color: #A3AE9E;
+}
+.create{
+  background-color: #78C25E;
+}
+
+cite{
+  display: block;
+  font-size: 0.6em;
+}
+
+blockquote{
+  font-style: italic;
+  margin-right: 1em;
+}
