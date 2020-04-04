@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DonUni</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <section id="notifications">
+        <div class="p-3 mb-2 bg-success w-50 text-white text-center" id="successNotification">Success</div>
+        <div class="p-3 mb-2 bg-danger w-50 text-white text-center" id="errorNotification">Error</div>
+        <div class="p-3 mb-2 bg-info w-50 text-white text-center" id="loadingNotification">Loading...</div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="">DonUni</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">$$$$$$$$$$$$$$$$$$$</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Logout (CURRENT USERNAME)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ./Navigation -->
+
+    <!-- Home page -->
+    <div style="margin-top:3%; padding-top: 3%;" class="container">
+        <div class="row align-items-center my-5">
+            <div class="col-lg-12">
+                <img style="margin: 0 auto; display:block;" class="img-fluid rounded mb-4 mb-lg-0"
+                    src="https://www.firstmid.com/wp-content/uploads/OpenforBusiness_SBALoan-900x400.png" alt="">
+            </div>
+            <div style="text-align:center;margin-top:5%;" class="col-lg-12">
+                <h1 class="font-weight-light">Does your business need support?</h1>
+
+                <a class="btn btn-primary" href="">Create your cause and seek for donors</a>
+                <a class="btn btn-primary" href="">Register</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- ./Home page -->
+
+    <!-- Login -->
+    <div style="margin: 0 auto; margin-bottom:5%; margin-top:7%;" class="modal-content col-lg-6">
+        <div class="card-body">
+            <form method="" action="">
+                <p class="h4 py-4">Login</p>
+                <hr>
+                <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Your username</label>
+                <input name="username" type="text" id="defaultFormCardNameEx" class="form-control">
+
+                <br>
+
+                <label for="defaultFormCardPasswordEx" class="grey-text font-weight-light">Your password</label>
+                <input name="password" type="password" id="defaultFormCardPasswordEx" class="form-control">
+
+                <div class="text-center py-4 mt-3">
+                    <button class="btn btn-info" type="submit">Logged In</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <!-- Login-->
+
+    <!-- Register -->
+    <div style="margin: 0 auto; margin-bottom:7%; margin-top:7%;" class="modal-content col-lg-6">
+        <div class="card-body">
+            <form method="" action="">
+                <p class="h4 py-4">Register</p>
+                <hr>
+                <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Your username</label>
+                <input name="username" type="text" id="defaultFormCardNameEx" class="form-control">
+                <br>
+                <label for="defaultFormCardPasswordEx" class="grey-text font-weight-light">Your password</label>
+                <input name="password" type="password" id="defaultFormCardPasswordEx" class="form-control">
+                <br>
+                <label for="defaultFormCardRePasswordEx" class="grey-text font-weight-light">Your re-password</label>
+                <input name="rePassword" type="password" id="defaultFormCardRePasswordEx" class="form-control">
+                <div class="text-center py-4 mt-3">
+                    <button class="btn btn-info" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Register-->
+
+    <!-- Dashboard (All Causes View) -->
+    <div style="margin-top:3%; padding-top: 3%;" class="container">
+        <h1 class="text-center">NO CAUSES :(</h1>
+        <div style="margin-bottom:25%;" class="row">
+            <div class="col-lg-12">
+                <div class="card mt-4">
+                    <img style="max-width: 1200px; height: auto; border-radius:25px;" class="card-img-top img-fluid"
+                        src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_960_720.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">CAUSE</h3>
+                        <p class="card-text">DESCRIPTION</p>
+                        <a href="" class="btn btn-success">Become a donor $$$</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./Dashboard (All Causes View) -->
+
+    <!-- Details View (Become a donor) -->
+    <div class="container" style="margin-bottom: 2%; margin-top:5%;">
+        <div class="row">
+            <div class="modal-content col-lg-12">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">Make a donation</h4>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <img style="border-radius: 5px;"
+                            src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_960_720.jpg"
+                            name="aboutme" width="500" height="auto" border="0" class="img-circle">
+                        <h3 class="media-heading">CAUSE</h3>
+                        <span>Collected</span>
+                        <strong class="label text-success">$0.00</strong>
+                        <span> from </span>
+                        <strong class="label text-info">$900000.00</strong>
+                    </center>
+                    <hr>
+                    <center>
+                        <p style="word-wrap: break-word;" class="text-left"><strong>Description: </strong><br>
+                            DESCRIPTION
+                        </p>
+                        <br>
+                        <p style="word-wrap: break-word;" class="text-left"><strong>Donors:</strong><br>
+                            <span>Donor 1</span>
+                            <span>Donor 2</span>
+                            <span>Donor 3</span>
+                            <span>Donor 4</span>
+                        </p>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="btn btn-danger">Close the cause</a>
+                    <form method="" action="">
+                        <label class="grey-text font-weight-light">My donation: </label>
+                        <input name="currentDonation" type="number" min="1" class="form-control" />
+                        <button style="width: 100%;" class="btn btn-success" type="submit">Make the donation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./Details View (Become a donor) -->
+
+    <!-- Look for donation (Create Cause) -->
+    <div style="margin: 0 auto; margin-bottom:7%; margin-top:7%;" class="modal-content col-lg-6">
+        <div class="modal-header info-color white-text">
+            <h4 class="title">
+                <i class="fa fa-pencil-alt"></i> Look for a donation</h4>
+        </div>
+        <div class="modal-body">
+            <form method="" action="">
+                <label for="defaultFormNameModalEx">Your cause</label>
+                <input name="cause" type="text" id="defaultFormNameModalEx" class="form-control form-control-sm"
+                    placeholder="Collage...">
+                <br>
+                <label for="defaultFormEmailModalEx">Your cause picture...</label>
+                <input name="pictureUrl" type="text" id="defaultFormEmailModalEx" class="form-control form-control-sm"
+                    placeholder="https://...">
+                <br>
+                <label for="defaultFormSubjectModalEx">Your needed funds...</label>
+                <input name="neededFunds" type="text" id="defaultFormSubjectModalEx"
+                    class="form-control form-control-sm" placeholder="2400.00">
+                <br>
+                <label for="defaultFormMessageModalEx">Your cause description...</label>
+                <textarea name="description" style="resize: none; height: 150px;" type="text"
+                    id="defaultFormMessageModalEx" class="md-textarea form-control"
+                    placeholder="I'm looking for funds because..."></textarea>
+                <div class="text-center mt-4 mb-2">
+                    <button type="submit" class="btn btn-info">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- ./Look for donation (Create Cause) -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark fixed-bottom">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright © $$ Donation University $$ 2019</p>
+        </div>
+    </footer>
+    <!-- ./Footer -->
+
+    <!-- Node Modules -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./node_modules/sammy/lib/sammy.js"></script>
+    <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- ./Node Modules -->
+
+    <!-- Helpers -->
+    <!-- ./Helpers -->
+
+    <!-- Controllers -->
+    <!-- ./Controllers -->
+
+    <!-- Models -->
+    <!-- ./Models -->
+
+    <!-- APP -->
+    <!-- ./APP -->
+
+</body>
+
+</html>
