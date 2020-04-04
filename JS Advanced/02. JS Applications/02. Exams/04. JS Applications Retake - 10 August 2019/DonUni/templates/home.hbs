@@ -1,0 +1,24 @@
+{{> header}}
+
+<!-- Home page -->
+<div style="margin-top:3%; padding-top: 3%;" class="container">
+    <div class="row align-items-center my-5">
+        <div class="col-lg-12">
+            <img style="margin: 0 auto; display:block;" class="img-fluid rounded mb-4 mb-lg-0"
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/whats-open-new-years-day-1576620679.jpg?resize=480:*"
+                alt="">
+        </div>
+        <div style="text-align:center;margin-top:5%;" class="col-lg-12">
+            <h1 class="font-weight-light">Does your business need support?</h1>
+            {{#if isLogged}}
+            <a class="btn btn-primary" href="/create">Create your cause and seek for donors</a>
+            {{else}}
+            <a class="btn btn-primary" href="/register">Register</a>
+            {{/if}}
+
+        </div>
+    </div>
+</div>
+<!-- ./Home page -->
+
+{{> footer}}

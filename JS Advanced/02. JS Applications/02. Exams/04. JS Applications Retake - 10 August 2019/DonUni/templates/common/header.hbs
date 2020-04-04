@@ -1,0 +1,36 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">DonUni</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                {{#if isLogged}}
+                <li class="nav-item">
+                    <a class="nav-link" href="">$$$$$$$$$$$$$$$$$$$</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout ({{username}})</a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- ./Navigation -->
+
+<section id="notifications">
+    <div class="p-3 mb-2 bg-success w-50 text-white text-center" id="successNotification">Success</div>
+    <div class="p-3 mb-2 bg-danger w-50 text-white text-center" id="errorNotification">Error</div>
+    <div class="p-3 mb-2 bg-info w-50 text-white text-center" id="loadingNotification">Loading...</div>
+</section>
