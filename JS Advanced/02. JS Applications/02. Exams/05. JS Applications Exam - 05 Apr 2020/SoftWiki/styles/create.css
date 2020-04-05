@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em;
+    border: 2px solid white;
+    padding:2em;
+}
+
+.container .img {
+    flex: 1 1 0em;
+    margin: 2em 1em;
+    overflow: hidden;
+    max-height: 31em;
+    min-width: 10em;
+    border: 2px solid white;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+form {
+    flex: 1 1 20em;
+}
+
+p{
+    word-break: break-all;
+}

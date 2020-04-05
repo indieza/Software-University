@@ -1,0 +1,40 @@
+.details {
+    width: 70vw;
+    min-width: 15em;
+    margin: 3em auto;
+}
+
+div.details-content {
+    flex: 1 1 15em;
+    margin: 2em;
+    min-height: 15em;
+}
+
+.details-content h2 {
+    border-bottom: 2px solid white;
+}
+
+.details-content strong {
+    display: block;
+    margin: 0.5em 1em;
+}
+
+.details-content .buttons {
+    margin: 1em;
+    float: right;
+}
+
+.btn {
+    padding: 0.3rem;
+    color:white;
+}
+
+.delete:hover {
+    background-color: lightsalmon;
+    color: white;
+}
+
+.edit:hover {
+    background-color: lightskyblue;
+    color: white;
+}

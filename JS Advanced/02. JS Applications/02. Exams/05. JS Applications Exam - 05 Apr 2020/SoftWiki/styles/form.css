@@ -1,0 +1,72 @@
+form {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form fieldset {
+    border-radius: 1em;
+    min-height: 20em;
+    min-width: 100%;
+    border: none;
+}
+
+form blockquote {
+    margin: 0 1.5em 1.5em 1.5em;
+}
+
+fieldset legend {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 1em 0em;
+    border-bottom: 2px solid white;
+}
+
+form p.field {
+    min-width: 20vw;
+    margin: 1.5em 1em;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.field input {
+    order: 2;
+    margin: 1.2em auto;
+    width: 100%;
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
+.field label {
+    order: 1;
+    position: absolute;
+}
+
+p button.submit {
+    width: 100%;
+    margin: 1em 0 1em 0;
+    padding: 0.3em;
+}
+
+textarea {
+    margin: 1.5em 0 0 0;
+    width: 100%;
+    min-width: 20vw;
+    min-height: 10em;
+    border: 2px solid rgb(151, 150, 150);
+    border-radius: 0.5em;
+    border-bottom-color: lightgrey;
+    border-right-color: lightgrey;
+}
+
+div.container {
+    /* background-color: rgba(245, 245, 245, 0.712); */
+    background-color: rgba(12, 14, 12, 0.575);
+    color: white;
+}

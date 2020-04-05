@@ -1,0 +1,62 @@
+div.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    background-color: rgba(12, 14, 12, 0.575);
+}
+
+section {
+    flex: 1 1 15em;
+}
+
+div.articles {
+    margin-bottom: 1em;
+    max-height: 45em;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    background-color: rgba(47, 79, 79, 0.404);
+    color: white;
+    margin: 1em;
+}
+
+article {
+    flex: 1 1 30em;
+    max-width: 20em;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.849);
+    padding: 1em;
+}
+
+article>a {
+    display: block;
+    background-color: aliceblue;
+    width: 5em;
+    text-align: center;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    margin-left: auto;
+}
+
+.btn.details-btn {
+    border-color: darkslategray;
+    color: darkslategray;
+}
+
+.btn.details-btn:hover {
+    border-color: white;
+    color: white;
+}
+
+h3.no-articles {
+    color: white;
+}
+
+article>p {
+    word-break: break-word;
+}

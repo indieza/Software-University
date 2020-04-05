@@ -1,0 +1,10 @@
+.container.auth{
+    width: 60vw;
+    min-width: 15em;
+    margin: 6em auto;
+}
+
+.auth form legend{
+    margin: 1.5em auto;
+    width: 95%;
+}

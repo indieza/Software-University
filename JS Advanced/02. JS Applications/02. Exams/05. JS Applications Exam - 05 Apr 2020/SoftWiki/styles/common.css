@@ -1,0 +1,79 @@
+html {
+    background-image: url("../images/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg");
+    position: relative;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+body {
+    height: 100vh;
+    min-height: 20em;
+    min-width: 20em;
+    letter-spacing: 0.1em;
+}
+
+header, footer {
+    background-color: darkslategray;
+    color: white;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    flex: 1 1 15px;
+}
+
+header nav {
+    margin: auto 1em;
+}
+
+footer {
+    padding: 0.5em;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-buttons>a:hover {
+    cursor: pointer;
+    color: rgb(204, 248, 204);
+    font-weight: bolder;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: darkslategray;
+    color: white;
+}
+
+.home:hover {
+    color: rgb(204, 248, 204);
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    form {
+        margin: 0;
+        width: 80vw;
+    }
+    form fieldset {
+        margin: 0;
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+    div.articles {
+        max-height: 15em;
+    }
+    footer {
+        position: unset;
+    }
+}

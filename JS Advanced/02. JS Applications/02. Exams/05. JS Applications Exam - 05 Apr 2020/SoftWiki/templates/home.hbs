@@ -1,0 +1,29 @@
+{{> header}}
+
+
+{{#if isLogged }}
+<!-- Home -->
+<div class="content">
+    {{#each articles}}
+    <section class="{{@key}}">
+        <h2>{{@key}}</h2>
+        <div class="articles">
+            {{#if this.length}}
+            {{#each this}}
+            <article>
+                <h3>{{this.title}}</h3>
+                <p>{{this.content}}</p>
+                <a href="/details/{{this._id}}" class="btn details-btn">Details</a>
+            </article>
+            {{/each}}
+            {{else}}
+            <!-- No articles message -->
+            <h3 class="no-articles">No articles yet</h3>
+            {{/if}}
+        </div>
+    </section>
+    {{/each}}
+</div>
+{{/if}}
+
+{{> footer}}
