@@ -1,0 +1,85 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace EnergyDrinks
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            int cafLevel = 0;
+
+            Stack<int> caffeine = CaffeineConsoleInput();
+            Queue<int> drinks = DrinksConsoleInput();
+
+            while (drinks.Any() && caffeine.Any() && cafLevel < 300)
+            {
+                int result = caffeine.Peek() * drinks.Peek();
+
+                if (result + cafLevel <= 300)
+                {
+                    caffeine.Pop();
+                    drinks.Dequeue();
+                    cafLevel += result;
+                }
+                else
+                {
+                    caffeine.Pop();
+                    drinks.Enqueue(drinks.Dequeue());
+                    if (cafLevel < 30)
+                    {
+                        cafLevel = 30;
+                    }
+                    cafLevel -= 30;
+                }
+            }
+
+            if (drinks.Any())
+            {
+                Console.WriteLine($"Drinks left: {string.Join(", ", drinks)}");
+            }
+            else
+            {
+                Console.WriteLine($"At least Stamat wasn't exceeding the maximum caffeine.");
+            }
+
+            Console.WriteLine($"Stamat is going to sleep with {cafLevel} mg caffeine.");
+        }
+
+        public static Stack<int> CaffeineConsoleInput()
+        {
+            int[] input = Console
+                .ReadLine()
+                .Split(", ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+            Stack<int> caffeine = new Stack<int>(input.Length);
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                caffeine.Push(input[i]);
+            }
+
+            return caffeine;
+        }
+
+        public static Queue<int> DrinksConsoleInput()
+        {
+            int[] input = Console
+                .ReadLine()
+                .Split(", ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+
+            Queue<int> drinks = new Queue<int>(input.Length);
+            for (int i = 0; i < input.Length; i++)
+            {
+                drinks.Enqueue(input[i]);
+            }
+
+            return drinks;
+        }
+    }
+}

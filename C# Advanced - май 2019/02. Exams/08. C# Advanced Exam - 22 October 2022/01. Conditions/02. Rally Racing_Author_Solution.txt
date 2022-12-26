@@ -1,0 +1,117 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace RallyRacing
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            int size = int.Parse(Console.ReadLine());
+            string racingNumber = Console.ReadLine();
+
+            int matRow = size;
+            int matCol = size;
+
+            string[,] raceRoute = new string[size, size];
+            int kmCovered = 0;
+            bool isFinished = false;
+
+            int carRow = 0;
+            int carCol = 0;
+
+            for (int row = 0; row < matRow; row++)
+            {
+                string[] rowData = Console.ReadLine()
+                    .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                for (int col = 0; col < matCol; col++)
+                {
+                    raceRoute[row, col] = rowData[col];
+                }
+            }
+
+            string command;
+            while ((command = Console.ReadLine()) != "End")
+            {
+                switch (command)
+                {
+                    case "left":
+                        carCol--;
+                        break;
+                    case "right":
+                        carCol++;
+                        break;
+                    case "up":
+                        carRow--;
+                        break;
+                    case "down":
+                        carRow++;
+                        break;
+                }
+
+                if (raceRoute[carRow,carCol] == ".")
+                {
+                    kmCovered += 10;
+                    continue;
+                }
+                else
+                {
+                    if (raceRoute[carRow,carCol] == "T")
+                    {
+                        kmCovered += 30;
+                        raceRoute[carRow, carCol] = ".";
+                        bool dunePassed = false;
+
+                        for (int row = 0; row < matRow; row++)
+                        {
+                            for (int col = 0; col < matCol; col++)
+                            {
+                                if (raceRoute[row,col] == "T")
+                                {
+                                    dunePassed = true;
+                                    carRow = row;
+                                    carCol = col;
+                                    raceRoute[row, col] = ".";
+                                    break;
+                                }
+                            }
+                            if (dunePassed)
+                            {
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        isFinished = true;
+                        kmCovered += 10;
+                        break;
+                    }
+                }
+            }
+
+            raceRoute[carRow, carCol] = "C";
+
+            if (isFinished)
+            {
+                Console.WriteLine($"Racing car {racingNumber} finished the stage!");
+            }
+            else
+            {
+                Console.WriteLine($"Racing car {racingNumber} DNF.");
+            }
+
+            Console.WriteLine($"Distance covered {kmCovered} km.");
+
+            for (int row = 0; row < matRow; row++)
+            {
+                for (int col = 0; col < matCol; col++)
+                {
+                    Console.Write(raceRoute[row,col]);
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
