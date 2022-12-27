@@ -348,9 +348,18 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-/Portfolio/Portfolio/Server/appsettings.json
-/Portfolio/Portfolio/Client/wwwroot/lib
-/Portfolio/Portfolio/Client/wwwroot/img
-/Portfolio/Portfolio/Server/appsettings.Development.json
-/Portfolio/Portfolio/Server/web.config
-/Portfolio/Portfolio/Client/wwwroot/NotificationSounds
+
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
