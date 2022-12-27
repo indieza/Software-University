@@ -345,21 +345,8 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
-
-# Ionide (cross platform F# VS Code tools) working folder
-.ionide/
-
-node_modules/
-.expo/
-dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
-
-# macOS
-.DS_Store
+/JS Advanced/02. JS Applications/02. Exams/01. JS Applications Retake - 20 April 2019/CookUni/node_modules
+/JS Advanced/02. JS Applications/02. Exams/02. JS Applications Exam - 07 December 2019/The Trekking Zone/node_modules
+/JS Advanced/02. JS Applications/02. Exams/03. JS Applications - Retake Exam 13 December/SoftTerest/node_modules
+/JS Advanced/02. JS Applications/02. Exams/04. JS Applications Retake - 10 August 2019/DonUni/node_modules
+/JS Advanced/02. JS Applications/02. Exams/05. JS Applications Exam - 05 Apr 2020/SoftWiki/node_modules
