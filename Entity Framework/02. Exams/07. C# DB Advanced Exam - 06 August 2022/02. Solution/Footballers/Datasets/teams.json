@@ -1,0 +1,392 @@
+[
+  {
+    "Name": "Brentford F.C.",
+    "Nationality": "The United Kingdom",
+    "Trophies": "5",
+    "Footballers": [
+      28,
+      28,
+      39,
+      57
+    ]
+  },
+  {
+    "Name": "Chelsea F.C.",
+    "Nationality": "The United Kingdom",
+    "Trophies": "34",
+    "Footballers": [
+      38,
+      39,
+      59,
+      62,
+      57,
+      56
+    ]
+  },
+  {
+    "Name": "Liverpool F.C.",
+    "Nationality": "The United Kingdom",
+    "Trophies": "69",
+    "Footballers": [
+      40,
+      57,
+      19,
+      57,
+      18,
+      56,
+      18,
+      20
+    ]
+  },
+  {
+    "Name": "Manchester City F.C.",
+    "Nationality": "The United Kingdom",
+    "Trophies": "36",
+    "Footballers": [
+      11,
+      40,
+      41,
+      58,
+      8,
+      59,
+      9,
+      12,
+      12,
+      73,
+      10
+    ]
+  },
+  {
+    "Name": "Newcastle United F.C.",
+    "Nationality": "The United Kingdom",
+    "Footballers": [
+      37,
+      59,
+      63
+    ]
+  },
+  {
+    "Name": "Tottenham Hotspur F.C.",
+    "Nationality": "The United Kingdom",
+    "Trophies": "26",
+    "Footballers": [
+      44,
+      24,
+      54,
+      74,
+      24,
+      22,
+      24,
+      23
+    ]
+  },
+  {
+    "Name": "Angers SCO",
+    "Nationality": "France",
+    "Trophies": "1",
+    "Footballers": [
+      32,
+      32,
+      32
+    ]
+  },
+  {
+    "Name": "AS Monaco",
+    "Nationality": "France",
+    "Trophies": "16",
+    "Footballers": [
+      76,
+      16
+    ]
+  },
+  {
+    "Name": "Montpellier Herault SC",
+    "Nationality": "France",
+    "Trophies": "3",
+    "Footballers": [
+      77,
+      57,
+      53,
+      91,
+      7,
+      57
+    ]
+  },
+  {
+    "Name": "Olympique de Marseille",
+    "Nationality": "France",
+    "Trophies": "25",
+    "Footballers": [
+      44,
+      45
+    ]
+  },
+  {
+    "Name": "Olympique Lyonnais",
+    "Nationality": "France",
+    "Trophies": "20",
+    "Footballers": [
+      40,
+      42,
+      13,
+      44,
+      15,
+      15,
+      14,
+      57
+    ]
+  },
+  {
+    "Name": "Paris Saint-Germain F.C.",
+    "Nationality": "France",
+    "Trophies": "44",
+    "Footballers": [
+      57,
+      6,
+      6,
+      83,
+      47,
+      3,
+      91,
+      4,
+      6,
+      54,
+      5
+    ]
+  },
+  {
+    "Name": "RC Lens",
+    "Nationality": "France",
+    "Trophies": "2",
+    "Footballers": [
+      107,
+      107,
+      107
+    ]
+  },
+  {
+    "Name": "Stade Rennais F.C.",
+    "Nationality": "France",
+    "Trophies": "3",
+    "Footballers": [
+      41,
+      51,
+      1,
+      21,
+      1,
+      41
+    ]
+  },
+  {
+    "Name": "Ballspielverein Borussia X9 e. V. Dortmund",
+    "Nationality": "Germany",
+    "Trophies": "24",
+    "Footballers": [
+      57,
+      68,
+      42,
+      31,
+      30
+    ]
+  },
+  {
+    "Name": "Bayer 04 Leverkusen",
+    "Nationality": "Germany",
+    "Trophies": "3",
+    "Footballers": [
+      44,
+      47,
+      33,
+      41
+    ]
+  },
+  {
+    "Name": "FC Bayern Munich",
+    "Nationality": "Germany",
+    "Trophies": "3",
+    "Footballers": [
+      81,
+      74,
+      93,
+      45,
+      64,
+      58,
+      52
+    ]
+  },
+  {
+    "Name": "RB Leipzig",
+    "Nationality": "Germany",
+    "Trophies": "4",
+    "Footballers": [
+      99,
+      99
+    ]
+  },
+  {
+    "Name": "SC Freiburg",
+    "Nationality": "Germany",
+    "Trophies": "6",
+    "Footballers": [
+      81,
+      27,
+      52
+    ]
+  },
+  {
+    "Name": "A.C. Milan",
+    "Nationality": "Italy",
+    "Trophies": "52",
+    "Footballers": [
+      65,
+      56,
+      81,
+      81,
+      99
+    ]
+  },
+  {
+    "Name": "A.S. Roma",
+    "Nationality": "Italy",
+    "Trophies": "17",
+    "Footballers": [
+      36,
+      63
+    ]
+  },
+  {
+    "Name": "Atalanta B.C.",
+    "Nationality": "Italy",
+    "Footballers": [
+      81,
+      81,
+      99
+    ]
+  },
+  {
+    "Name": "Inter Milan",
+    "Nationality": "",
+    "Trophies": "42",
+    "Footballers": [
+      97,
+      98,
+      96
+    ]
+  },
+  {
+    "Name": "Juventus F.C.",
+    "Nationality": "Italy",
+    "Trophies": "70",
+    "Footballers": [
+      58,
+      17,
+      43,
+      2
+    ]
+  },
+  {
+    "Name": "S.S. Lazio",
+    "Nationality": "Italy",
+    "Footballers": [
+      81,
+      91,
+      73,
+      74,
+      75
+    ]
+  },
+  {
+    "Name": "S.S.C. Napoli",
+    "Nationality": "",
+    "Trophies": "13",
+    "Footballers": [
+      80,
+      56,
+      57,
+      90
+    ]
+  },
+  {
+    "Name": "Torino F.C.",
+    "Nationality": "Italy",
+    "Trophies": "16",
+    "Footballers": [
+      44,
+      54,
+      34,
+      64,
+      34
+    ]
+  },
+  {
+    "Name": "U.S. Sassuolo Calcio",
+    "Nationality": "Italy",
+    "Footballers": [
+      81,
+      82,
+      73,
+      56
+    ]
+  },
+  {
+    "Name": "Atletico de Madrid",
+    "Nationality": "Spain",
+    "Trophies": "32",
+    "Footballers": [
+      29,
+      29,
+      39,
+      49,
+      49
+    ]
+  },
+  {
+    "Name": "Deportivo Alaves",
+    "Nationality": "Spain",
+    "Trophies": "4",
+    "Footballers": [
+      45,
+      96,
+      63,
+      67,
+      35,
+      96
+    ]
+  },
+  {
+    "Name": "FC Barcelona",
+    "Nationality": "",
+    "Trophies": "90",
+    "Footballers": [
+      73,
+      49,
+      49,
+      58
+    ]
+  },
+  {
+    "Name": "Real Betis Balompie",
+    "Nationality": "Spain",
+    "Footballers": [
+      51,
+      51,
+      49,
+      50,
+      52
+    ]
+  },
+  {
+    "Name": "Real Madrid CF Spain",
+    "Nationality": "Spain",
+    "Trophies": "93",
+    "Footballers": [
+      73,
+      74,
+      47,
+      25,
+      26,
+      73,
+      25
+    ]
+  }
+]

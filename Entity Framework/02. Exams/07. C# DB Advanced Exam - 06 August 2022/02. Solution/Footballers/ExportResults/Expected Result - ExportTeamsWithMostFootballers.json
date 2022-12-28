@@ -1,0 +1,132 @@
+[
+  {
+    "Name": "Manchester City F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Phil Foden",
+        "ContractStartDate": "12/30/2021",
+        "ContractEndDate": "04/13/2025",
+        "BestSkillType": "Dribble",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Ederson",
+        "ContractStartDate": "06/14/2021",
+        "ContractEndDate": "09/26/2024",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Ilkay Gundogan",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "07/29/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Kevin De Bruyne",
+        "ContractStartDate": "09/29/2020",
+        "ContractEndDate": "04/21/2024",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Bernardo Silva",
+        "ContractStartDate": "06/20/2020",
+        "ContractEndDate": "12/07/2022",
+        "BestSkillType": "Pass",
+        "PositionType": "Midfielder"
+      }
+    ]
+  },
+  {
+    "Name": "Liverpool F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Alisson",
+        "ContractStartDate": "01/01/2022",
+        "ContractEndDate": "08/28/2026",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Sadio Mane",
+        "ContractStartDate": "06/08/2020",
+        "ContractEndDate": "02/02/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Andrew Robertson",
+        "ContractStartDate": "06/13/2021",
+        "ContractEndDate": "11/30/2023",
+        "BestSkillType": "Pass",
+        "PositionType": "Defender"
+      }
+    ]
+  },
+  {
+    "Name": "Tottenham Hotspur F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Harry Kane",
+        "ContractStartDate": "12/29/2021",
+        "ContractEndDate": "02/06/2026",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Hugo Lloris",
+        "ContractStartDate": "06/10/2020",
+        "ContractEndDate": "07/19/2024",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      },
+      {
+        "FootballerName": "Son Heung-Min",
+        "ContractStartDate": "06/18/2020",
+        "ContractEndDate": "01/09/2024",
+        "BestSkillType": "Speed",
+        "PositionType": "Forward"
+      }
+    ]
+  },
+  {
+    "Name": "Juventus F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Dusan Vlahovic",
+        "ContractStartDate": "07/25/2020",
+        "ContractEndDate": "06/29/2025",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      },
+      {
+        "FootballerName": "Wojiech Szczesny",
+        "ContractStartDate": "07/28/2020",
+        "ContractEndDate": "01/14/2023",
+        "BestSkillType": "Defence",
+        "PositionType": "Goalkeeper"
+      }
+    ]
+  },
+  {
+    "Name": "Olympique Lyonnais",
+    "Footballers": [
+      {
+        "FootballerName": "Romain Faivre",
+        "ContractStartDate": "01/01/2022",
+        "ContractEndDate": "12/06/2026",
+        "BestSkillType": "Dribble",
+        "PositionType": "Midfielder"
+      },
+      {
+        "FootballerName": "Moussa Dembele",
+        "ContractStartDate": "06/14/2021",
+        "ContractEndDate": "12/01/2023",
+        "BestSkillType": "Shoot",
+        "PositionType": "Forward"
+      }
+    ]
+  }
+]

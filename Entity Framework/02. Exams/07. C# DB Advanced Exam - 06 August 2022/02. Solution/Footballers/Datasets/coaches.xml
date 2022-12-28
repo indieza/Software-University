@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Coaches>
+  <Coach>
+    <Name>Bruno Genesio</Name>
+    <Nationality>France</Nationality>
+    <Footballers>
+      <Footballer>
+        <Name>Benjamin Bourigeaud</Name>
+        <ContractStartDate>22/03/2020</ContractStartDate>
+        <ContractEndDate>24/02/2025</ContractEndDate>
+        <BestSkillType>2</BestSkillType>
+        <PositionType>2</PositionType>
+      </Footballer>
+      <Footballer>
+        <Name>Martin Terrier</Name>
+        <ContractStartDate>29/12/2021</ContractStartDate>
+        <ContractEndDate>16/06/2024</ContractEndDate>
+        <BestSkillType>2</BestSkillType>
+        <PositionType>3</PositionType>
+      </Footballer>
+    </Footballers>
+  </Coach>
+	<Coach>
+		<Name>Alessio Dionisi</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Domenico Berardi</Name>
+				<ContractStartDate>11/06/2021</ContractStartDate>
+				<ContractEndDate>01/01/2025</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Antonio Conte</Name>
+		<Nationality>Italy</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Son Heung-Min</Name>
+				<ContractStartDate>18/06/2020</ContractStartDate>
+				<ContractEndDate>09/01/2024</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Harry Kane</Name>
+				<ContractStartDate>29/12/2021</ContractStartDate>
+				<ContractEndDate>06/02/2026</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Hugo Lloris</Name>
+				<ContractStartDate>10/06/2020</ContractStartDate>
+				<ContractEndDate>19/07/2024</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Carlo Ancelotti</Name>
+		<Nationality>Italy</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Karim Benzema</Name>
+				<ContractStartDate>17/06/2020</ContractStartDate>
+				<ContractEndDate>22/05/2025</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Vinicius Junior</Name>
+				<ContractStartDate></ContractStartDate>
+				<ContractEndDate>19/09/2023</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name></Name>
+				<ContractStartDate>02/10/2020</ContractStartDate>
+				<ContractEndDate>21/03/2023</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Thibaut Courtois</Name>
+				<ContractStartDate>03/10/2020</ContractStartDate>
+				<ContractEndDate>09/09/2025</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Christian Streich</Name>
+		<Nationality>Germany</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Nico Schlotterbeck</Name>
+				<ContractStartDate>25/07/2020</ContractStartDate>
+				<ContractEndDate>21/03/2025</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Diego Simeone</Name>
+		<Nationality>Spain</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Jan Oblak</Name>
+				<ContractStartDate>09/06/2020</ContractStartDate>
+				<ContractEndDate>03/02/2025</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Domenico Tedesco</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Christopher Nkunku</Name>
+				<ContractStartDate>28/12/2021</ContractStartDate>
+				<ContractEndDate>05/02/2026</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Eddie Howe</Name>
+		<Nationality>The United Kingdom</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Bruno Guimaraes</Name>
+				<ContractStartDate>21/06/2020</ContractStartDate>
+				<ContractEndDate>30/07/2024</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Edin Terzic</Name>
+		<Nationality>Germany</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Erling Haland</Name>
+				<ContractStartDate>24/07/2020</ContractStartDate>
+				<ContractEndDate>28/06/2025</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Marco Reus</Name>
+				<ContractStartDate>08/06/2020</ContractStartDate>
+				<ContractEndDate>13/05/2025</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name></Name>
+		<Nationality>France</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Jonathan Clauss</Name>
+				<ContractStartDate>07/07/2021</ContractStartDate>
+				<ContractEndDate>03/03/2026</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Gerald Baticle</Name>
+		<Nationality>France</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Sofiane Boufal</Name>
+				<ContractStartDate>13/06/2021</ContractStartDate>
+				<ContractEndDate>22/07/2025</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Gerardo Seoane</Name>
+		<Nationality>Spain</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Patrik Schick</Name>
+				<ContractStartDate>06/06/2020</ContractStartDate>
+				<ContractEndDate>23/11/2022</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Florian Wirtz</Name>
+				<ContractStartDate>01/01/2025</ContractStartDate>
+				<ContractEndDate>17/10/2024</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Gian Piero Gasperini</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Luis Muriel</Name>
+				<ContractStartDate>01/10/2020</ContractStartDate>
+				<ContractEndDate>20/03/2023</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Ivan Juric</Name>
+		<Nationality>Croatia</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Bremer</Name>
+				<ContractStartDate>27/07/2020</ContractStartDate>
+				<ContractEndDate>04/09/2024</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Jorge Sampaoli</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Dimitri Payet</Name>
+				<ContractStartDate>18/06/2020</ContractStartDate>
+				<ContractEndDate>12/02/2025</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Jose Luis Mendilibar</Name>
+		<Nationality>Spain</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Joselu</Name>
+				<ContractStartDate>31/12/2021</ContractStartDate>
+				<ContractEndDate>14/04/2025</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Jose Mourinho</Name>
+		<Nationality>Portugal</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Lorenzo Pellegrini</Name>
+				<ContractStartDate>30/12/2021</ContractStartDate>
+				<ContractEndDate>17/06/2024</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Julian Nagelsmann</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Robert Lewandowski</Name>
+				<ContractStartDate>23/07/2020</ContractStartDate>
+				<ContractEndDate>09/01/2023</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Joshua Kimmich</Name>
+				<ContractStartDate>04/07/2021</ContractStartDate>
+				<ContractEndDate>21/12/2023</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Thomas Muller</Name>
+				<ContractStartDate>07/06/2020</ContractStartDate>
+				<ContractEndDate>20/09/2023</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Alphonso Davies</Name>
+				<ContractStartDate>12/06/2021</ContractStartDate>
+				<ContractEndDate>21/07/2025</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Serge Gnabry</Name>
+				<ContractStartDate>06/07/2021</ContractStartDate>
+				<ContractEndDate>10/06/2026</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Manuel Neuer</Name>
+				<ContractStartDate>25/03/2020</ContractStartDate>
+				<ContractEndDate>03/05/2024</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Jurgen Klopp</Name>
+		<Nationality>Germany</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Mohamed Salah</Name>
+				<ContractStartDate>22/03/2020</ContractStartDate>
+				<ContractEndDate></ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Trent Alexander-Arnold Somerhalder Morgan</Name>
+				<ContractStartDate>11/06/2021</ContractStartDate>
+				<ContractEndDate>20/07/2025</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Joel Matip</Name>
+				<ContractStartDate>01/01/2025</ContractStartDate>
+				<ContractEndDate>09/11/2024</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Sadio Mane</Name>
+				<ContractStartDate>08/06/2020</ContractStartDate>
+				<ContractEndDate>02/02/2025</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Andrew Robertson</Name>
+				<ContractStartDate>13/06/2021</ContractStartDate>
+				<ContractEndDate>30/11/2023</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Alisson</Name>
+				<ContractStartDate>01/01/2022</ContractStartDate>
+				<ContractEndDate>28/08/2026</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Luciano Spalletti</Name>
+		<Nationality>Italy</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Victor Osimhen</Name>
+				<ContractStartDate>01/01/2025</ContractStartDate>
+				<ContractEndDate>15/01/2024</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Manuel Jose Luis Migeul de Castaneda Pellegrini</Name>
+		<Nationality>Chile</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Nabil Fekir</Name>
+				<ContractStartDate>23/03/2020</ContractStartDate>
+				<ContractEndDate>14/10/2023</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Massimiliano Allegri</Name>
+		<Nationality>Chile</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Dusan Vlahovic</Name>
+				<ContractStartDate>25/07/2020</ContractStartDate>
+				<ContractEndDate>29/06/2025</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Paulo Dybala</Name>
+				<ContractStartDate>01/01/2025</ContractStartDate>
+				<ContractEndDate>31/12/2023</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Wojiech Szczesny</Name>
+				<ContractStartDate>28/07/2020</ContractStartDate>
+				<ContractEndDate>14/01/2023</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Mauricio Pochettino</Name>
+		<Nationality>Argentina</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Kylian Mbappe</Name>
+				<ContractStartDate>01/01/2025</ContractStartDate>
+				<ContractEndDate>14/07/2024</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Lionel Messi</Name>
+				<ContractStartDate>21/03/2020</ContractStartDate>
+				<ContractEndDate>04/07/2023</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Neymar</Name>
+				<ContractStartDate>10/06/2021</ContractStartDate>
+				<ContractEndDate>04/02/2026</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Marco Verratti</Name>
+				<ContractStartDate>25/03/2020</ContractStartDate>
+				<ContractEndDate>11/09/2022</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Gianluigi Donnarumma Giancarlito Pinocchio</Name>
+				<ContractStartDate>21/06/2020</ContractStartDate>
+				<ContractEndDate>08/12/2022</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Keylor Navas</Name>
+				<ContractStartDate>08/07/2021</ContractStartDate>
+				<ContractEndDate>28/01/2025</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Maurizio Sarri</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Sergej Milinkovic-Savic</Name>
+				<ContractStartDate>12/06/2021</ContractStartDate>
+				<ContractEndDate>29/11/2023</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Ciro Immobile</Name>
+				<ContractStartDate>19/06/2020</ContractStartDate>
+				<ContractEndDate>10/01/2024</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Olivier DallOglio</Name>
+		<Nationality>France</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Teji Savanier</Name>
+				<ContractStartDate>07/06/2020</ContractStartDate>
+				<ContractEndDate>12/05/2025</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Pep Guardiola</Name>
+		<Nationality>Spain</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Kevin De Bruyne</Name>
+				<ContractStartDate>29/09/2020</ContractStartDate>
+				<ContractEndDate>21/04/2024</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Rodri</Name>
+				<ContractStartDate></ContractStartDate>
+				<ContractEndDate>06/11/2023</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Joao Cancelo</Name>
+				<ContractStartDate>30/09/2020</ContractStartDate>
+				<ContractEndDate></ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Phil Foden</Name>
+				<ContractStartDate>30/12/2021</ContractStartDate>
+				<ContractEndDate>13/04/2025</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Bernardo Silva</Name>
+				<ContractStartDate>20/06/2020</ContractStartDate>
+				<ContractEndDate>07/12/2022</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Ilkay Gundogan</Name>
+				<ContractStartDate>20/06/2020</ContractStartDate>
+				<ContractEndDate>29/07/2024</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Gabriel Jesus</Name>
+				<ContractStartDate>01/01/2025</ContractStartDate>
+				<ContractEndDate>16/01/2024</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Ederson</Name>
+				<ContractStartDate>14/06/2021</ContractStartDate>
+				<ContractEndDate>26/09/2024</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Peter Bosz</Name>
+		<Nationality>The Netherlands</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Lucas Paqueta</Name>
+				<ContractStartDate>24/03/2020</ContractStartDate>
+				<ContractEndDate>15/10/2023</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Moussa Dembele</Name>
+				<ContractStartDate>14/06/2021</ContractStartDate>
+				<ContractEndDate>01/12/2023</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Romain Faivre</Name>
+				<ContractStartDate>01/01/2022</ContractStartDate>
+				<ContractEndDate>06/12/2026</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Philippe Clement</Name>
+		<Nationality>Belgium</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Aurelien Tchouameni</Name>
+				<ContractStartDate>23/03/2020</ContractStartDate>
+				<ContractEndDate>17/11/2024</ContractEndDate>
+				<BestSkillType>2</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Simone Inzaghi</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Hakan Calhanoglu</Name>
+				<ContractStartDate>26/07/2020</ContractStartDate>
+				<ContractEndDate>16/02/2024</ContractEndDate>
+				<BestSkillType>1</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Ivan Perisic</Name>
+				<ContractStartDate>31/12/2021</ContractStartDate>
+				<ContractEndDate>05/12/2026</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>2</PositionType>
+			</Footballer> 
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Stefano Pioli</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Rafael Leao</Name>
+				<ContractStartDate>19/06/2020</ContractStartDate>
+				<ContractEndDate>28/07/2024</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Thomas Frank</Name>
+		<Nationality>Denmark</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Ivan Toney</Name>
+				<ContractStartDate>24/03/2020</ContractStartDate>
+				<ContractEndDate>02/05/2024</ContractEndDate>
+				<BestSkillType>3</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Thomas Tuchel</Name>
+		<Nationality>Germany</Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Reece James</Name>
+				<ContractStartDate>26/07/2020</ContractStartDate>
+				<ContractEndDate>22/03/2025</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>1</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	<Coach>
+		<Name>Xavi</Name>
+		<Nationality></Nationality>
+		<Footballers>
+			<Footballer>
+				<Name>Ousmane Dembele</Name>
+				<ContractStartDate>30/09/2020</ContractStartDate>
+				<ContractEndDate>19/03/2023</ContractEndDate>
+				<BestSkillType>4</BestSkillType>
+				<PositionType>3</PositionType>
+			</Footballer>
+			<Footballer>
+				<Name>Marc-Andre ter Stegen</Name>
+				<ContractStartDate>27/07/2020</ContractStartDate>
+				<ContractEndDate>17/02/2024</ContractEndDate>
+				<BestSkillType>0</BestSkillType>
+				<PositionType>0</PositionType>
+			</Footballer>
+		</Footballers>
+	</Coach>
+	
+</Coaches>

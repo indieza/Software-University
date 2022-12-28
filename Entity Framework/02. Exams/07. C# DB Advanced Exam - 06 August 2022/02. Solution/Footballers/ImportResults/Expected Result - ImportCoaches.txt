@@ -1,0 +1,46 @@
+Successfully imported coach - Bruno Genesio with 2 footballers.
+Invalid data!
+Successfully imported coach - Antonio Conte with 3 footballers.
+Invalid data!
+Invalid data!
+Successfully imported coach - Carlo Ancelotti with 2 footballers.
+Successfully imported coach - Christian Streich with 1 footballers.
+Successfully imported coach - Diego Simeone with 1 footballers.
+Invalid data!
+Successfully imported coach - Eddie Howe with 1 footballers.
+Successfully imported coach - Edin Terzic with 2 footballers.
+Invalid data!
+Successfully imported coach - Gerald Baticle with 1 footballers.
+Invalid data!
+Successfully imported coach - Gerardo Seoane with 1 footballers.
+Invalid data!
+Successfully imported coach - Ivan Juric with 1 footballers.
+Invalid data!
+Successfully imported coach - Jose Luis Mendilibar with 1 footballers.
+Successfully imported coach - Jose Mourinho with 1 footballers.
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Successfully imported coach - Jurgen Klopp with 3 footballers.
+Invalid data!
+Successfully imported coach - Luciano Spalletti with 0 footballers.
+Invalid data!
+Invalid data!
+Successfully imported coach - Massimiliano Allegri with 2 footballers.
+Invalid data!
+Invalid data!
+Successfully imported coach - Mauricio Pochettino with 4 footballers.
+Invalid data!
+Successfully imported coach - Olivier DallOglio with 1 footballers.
+Invalid data!
+Invalid data!
+Invalid data!
+Successfully imported coach - Pep Guardiola with 5 footballers.
+Successfully imported coach - Peter Bosz with 3 footballers.
+Successfully imported coach - Philippe Clement with 1 footballers.
+Invalid data!
+Invalid data!
+Successfully imported coach - Thomas Frank with 1 footballers.
+Successfully imported coach - Thomas Tuchel with 1 footballers.
+Invalid data!
