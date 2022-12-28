@@ -15,7 +15,7 @@
         {
             var context = new FootballersContext();
 
-            //Mapper.Initialize(config => config.AddProfile<FootballersProfile>());
+            Mapper.Initialize(config => config.AddProfile<FootballersProfile>());
 
             ResetDatabase(context, shouldDropDatabase: true);
 

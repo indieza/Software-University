@@ -13,9 +13,11 @@ namespace Footballers.DataProcessor.ImportDto
     {
         [Required]
         [StringLength(40, MinimumLength = 2)]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
         [Required]
+        [XmlElement("Nationality")]
         public string Nationality { get; set; }
 
         [XmlArray("Footballers")]
