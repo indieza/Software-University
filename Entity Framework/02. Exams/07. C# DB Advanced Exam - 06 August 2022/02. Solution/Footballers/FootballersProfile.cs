@@ -3,6 +3,7 @@
     using AutoMapper;
 
     using Footballers.Data.Models;
+    using Footballers.DataProcessor.ExportDto;
     using Footballers.DataProcessor.ImportDto;
 
     using System;
